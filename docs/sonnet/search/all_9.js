@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['language_5fmay_5fcontain_5fnondeclarations_5fin_5fscope_0',['language_may_contain_nondeclarations_in_scope',['../namespace_sage_interface.html#a17765dab79061cc1fa08cc814f5fa84f',1,'SageInterface']]],
+  ['lastfrontendspecificstatement_1',['lastFrontEndSpecificStatement',['../namespace_sage_interface.html#afb377b8eed49f2e0c109e582b5b720e5',1,'SageInterface']]],
+  ['laststatementofscopewithtokeninfo_2',['lastStatementOfScopeWithTokenInfo',['../namespace_sage_interface.html#a286d91031545c8c551452c4b0da76f5e',1,'SageInterface']]],
+  ['listheaderfiles_3',['listHeaderFiles',['../namespace_sage_interface.html#a5553e6ca693410f81de51797940763c2',1,'SageInterface']]],
+  ['lookupclasssymbolinparentscopes_4',['lookupClassSymbolInParentScopes',['../namespace_sage_interface.html#ad52e0ce6845758c69a8b1d58ef8c3e86',1,'SageInterface']]],
+  ['lookupenumsymbolinparentscopes_5',['lookupEnumSymbolInParentScopes',['../namespace_sage_interface.html#aa916fa68aa73d9a20da781047157f26f',1,'SageInterface']]],
+  ['lookupfunctionsymbolinparentscopes_6',['lookupFunctionSymbolInParentScopes',['../namespace_sage_interface.html#aed2c14051588596b646e2f414a5e420a',1,'SageInterface::lookupFunctionSymbolInParentScopes(const SgName &amp;functionName, SgScopeStatement *currentScope)'],['../namespace_sage_interface.html#aea9c1398103a6fa45870786b993e6693',1,'SageInterface::lookupFunctionSymbolInParentScopes(const SgName &amp;functionName, const SgType *t, SgScopeStatement *currentScope)']]],
+  ['lookupnamedtypeinparentscopes_7',['lookupNamedTypeInParentScopes',['../namespace_sage_interface.html#afe3748299d9008415d4d0d9f586ab1ff',1,'SageInterface']]],
+  ['lookupnamespacesymbolinparentscopes_8',['lookupNamespaceSymbolInParentScopes',['../namespace_sage_interface.html#a6bb5c99e84a0f0fc78b7f6f23f87b120',1,'SageInterface']]],
+  ['lookupnonrealsymbolinparentscopes_9',['lookupNonrealSymbolInParentScopes',['../namespace_sage_interface.html#a9d96f582d10747d641bf838e68d370cd',1,'SageInterface']]],
+  ['lookupsymbolinparentscopes_10',['lookupSymbolInParentScopes',['../namespace_sage_interface.html#a9dd9a2c82dd4508dbe4743db2a3d7884',1,'SageInterface']]],
+  ['lookupsymbolinparentscopesignoringaliassymbols_11',['lookupSymbolInParentScopesIgnoringAliasSymbols',['../namespace_sage_interface.html#a6e0ac8030d2eb5af9b6fea9378bd417c',1,'SageInterface']]],
+  ['lookuptemplateclasssymbolinparentscopes_12',['lookupTemplateClassSymbolInParentScopes',['../namespace_sage_interface.html#ab67b8c2a9d284411474366b4509f4aac',1,'SageInterface']]],
+  ['lookuptemplatefunctionsymbolinparentscopes_13',['lookupTemplateFunctionSymbolInParentScopes',['../namespace_sage_interface.html#ae7f03dad6f891dc757f3575a93b375ae',1,'SageInterface']]],
+  ['lookuptemplatememberfunctionsymbolinparentscopes_14',['lookupTemplateMemberFunctionSymbolInParentScopes',['../namespace_sage_interface.html#a3139e45e46f73288b881bbc63afc3ea5',1,'SageInterface']]],
+  ['lookuptemplatevariablesymbolinparentscopes_15',['lookupTemplateVariableSymbolInParentScopes',['../namespace_sage_interface.html#a7036db562bfbfa1ef39a189054550a3c',1,'SageInterface']]],
+  ['lookuptypedefsymbolinparentscopes_16',['lookupTypedefSymbolInParentScopes',['../namespace_sage_interface.html#aa27f660ce3eaade9073b608c8a063087',1,'SageInterface']]],
+  ['lookupvariablesymbolinparentscopes_17',['lookupVariableSymbolInParentScopes',['../namespace_sage_interface.html#a90ab5113947b265707872ddda942230a',1,'SageInterface']]],
+  ['loopcollapsing_18',['loopCollapsing',['../namespace_sage_interface.html#acdf9179608f2894974738b7beb1f85fd',1,'SageInterface']]],
+  ['loopinterchange_19',['loopInterchange',['../namespace_sage_interface.html#a69c06c565033135bf031e02547d7ffd7',1,'SageInterface']]],
+  ['looptiling_20',['loopTiling',['../namespace_sage_interface.html#abf67276dd03b4d83fd53e8d17cfee342',1,'SageInterface']]],
+  ['loopunrolling_21',['loopUnrolling',['../namespace_sage_interface.html#a3498e34d2aaf17c500171ce96904ee17',1,'SageInterface']]]
+];
