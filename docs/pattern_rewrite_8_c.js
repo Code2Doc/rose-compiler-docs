@@ -1,0 +1,27 @@
+var pattern_rewrite_8_c =
+[
+    [ "DoRewriteRuleDeepVisitor", "class_do_rewrite_rule_deep_visitor.html", "class_do_rewrite_rule_deep_visitor" ],
+    [ "UnaryPattern&lt; Operator &gt;", "class_unary_pattern.html", "class_unary_pattern" ],
+    [ "BinaryPattern&lt; Operator &gt;", "class_binary_pattern.html", "class_binary_pattern" ],
+    [ "VariablePattern&lt; NodeClass &gt;", "class_variable_pattern.html", "class_variable_pattern" ],
+    [ "NullPattern", "class_null_pattern.html", "class_null_pattern" ],
+    [ "ConstantPattern&lt; NodeClass, Data &gt;", "class_constant_pattern.html", "class_constant_pattern" ],
+    [ "AddIntsPattern", "class_add_ints_pattern.html", "class_add_ints_pattern" ],
+    [ "MoveConstantsToLeftInMultiply", "class_move_constants_to_left_in_multiply.html", "class_move_constants_to_left_in_multiply" ],
+    [ "FoldIntConstantsInMultiply", "class_fold_int_constants_in_multiply.html", "class_fold_int_constants_in_multiply" ],
+    [ "SgNULL_FILE", "pattern_rewrite_8_c.html#aadbab08643e41419b9821541a0654e97", null ],
+    [ "doRewriteRuleDeep", "pattern_rewrite_8_c.html#a923847c4d576462d50e1a113e52854db", null ],
+    [ "getAlgebraicRules", "pattern_rewrite_8_c.html#ab886920f417469deb107a6a9e77fbb41", null ],
+    [ "getFiniteDifferencingRules", "pattern_rewrite_8_c.html#a555c57c8d14c3036d58de8fd6fc7ba6e", null ],
+    [ "p_AddOp", "pattern_rewrite_8_c.html#a90ad2080dc0125c3c7f3cba9f70fc70c", null ],
+    [ "p_CommaOp", "pattern_rewrite_8_c.html#a9117e4ce2ba499829c37219d4eb29458", null ],
+    [ "p_int", "pattern_rewrite_8_c.html#a5ff714ef815576f57e09a30b57a40dde", null ],
+    [ "p_MultiplyOp", "pattern_rewrite_8_c.html#a554061fe02c87b923d1b43a1d616bae4", null ],
+    [ "p_PlusAssignOp", "pattern_rewrite_8_c.html#a0492bedb1f0754e57585c653a85ff9b3", null ],
+    [ "p_value", "pattern_rewrite_8_c.html#a3c4e2539e3186da5136080520196887a", null ],
+    [ "p_var", "pattern_rewrite_8_c.html#ab3c433209feda2a2ce49c43b8f6e269a", null ],
+    [ "patact", "pattern_rewrite_8_c.html#a156bfe96fcadc7754108017e1a89634f", null ],
+    [ "replaceChild", "pattern_rewrite_8_c.html#a24831364517ecda95921f11c2adc7b72", null ],
+    [ "rewrite", "pattern_rewrite_8_c.html#a659520e4384cbabd5300295ae14e877c", null ],
+    [ "p_wildcard", "pattern_rewrite_8_c.html#a534a39b3323a680163c40a16ebfaa7e6", null ]
+];

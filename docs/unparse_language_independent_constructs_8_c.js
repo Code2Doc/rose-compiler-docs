@@ -1,0 +1,28 @@
+var unparse_language_independent_constructs_8_c =
+[
+    [ "DEBUG__isAssociatedWithCxx11_initializationList", "unparse_language_independent_constructs_8_c.html#a69d222a0ef2d8e7ff269908cc042613e", null ],
+    [ "DEBUG_BINARY_OPERATORS", "unparse_language_independent_constructs_8_c.html#a72bc51ded73c52d73bb3e0bd7b82a0f2", null ],
+    [ "DEBUG_CAN_BE_UNPARSED", "unparse_language_independent_constructs_8_c.html#a87627ffdb18abfd24b11b0767bd065f2", null ],
+    [ "DEBUG_IMPLICIT_ARROWEXP_WITHIN_LAMBDA", "unparse_language_independent_constructs_8_c.html#ac58689c41d8c67b0e6033e56a599e21a", null ],
+    [ "DEBUG_PARENTHESIS_PLACEMENT", "unparse_language_independent_constructs_8_c.html#a9f0ba0b325773de1f4b704a54b20663c", null ],
+    [ "DEBUG_REDUNDANT_STATEMENT_MAPPING", "unparse_language_independent_constructs_8_c.html#aba2de2a53ce27274bd798305dc4aa2f6", null ],
+    [ "DEBUG_STATEMENT_FROM_FILE", "unparse_language_independent_constructs_8_c.html#a418e2c5fc40eb7deb2a580b4499297e5", null ],
+    [ "DEBUG_UNPARSE_ENUM_VAL", "unparse_language_independent_constructs_8_c.html#ac8162f1686aa67b9f817c2774da3025f", null ],
+    [ "DEBUG_UNPARSE_FROM_TOKENS_NODE_CONTAIN_TRANS", "unparse_language_independent_constructs_8_c.html#a208fa70a53db56c8c622ab661c040460", null ],
+    [ "DEBUG_UNPARSE_STATEMENT", "unparse_language_independent_constructs_8_c.html#a15015fc6945d3c1b9aa9f99cad0e2ebb", null ],
+    [ "DEBUG_USING_CURPRINT", "unparse_language_independent_constructs_8_c.html#a128812a9a33568b4ad8cc4e05c313364", null ],
+    [ "HIGH_FEDELITY_TOKEN_UNPARSING", "unparse_language_independent_constructs_8_c.html#aea690eb5e5ea2e9844772662ec589b6d", null ],
+    [ "NEW_CASE", "unparse_language_independent_constructs_8_c.html#a4da7c0e27be3602800d7a46d8f5ee634", null ],
+    [ "OUTPUT_DEBUGGING_FUNCTION_BOUNDARIES", "unparse_language_independent_constructs_8_c.html#afd74700a6bcad610c61e797bb017c1ab", null ],
+    [ "OUTPUT_DEBUGGING_INFORMATION", "unparse_language_independent_constructs_8_c.html#a85c4bb44daf7edc27d4c59941343ef5c", null ],
+    [ "OUTPUT_EMBEDDED_COLOR_CODES_FOR_STATEMENTS", "unparse_language_independent_constructs_8_c.html#a13e9f72838751afde141be7daa08a8db", null ],
+    [ "OUTPUT_HIDDEN_LIST_DATA", "unparse_language_independent_constructs_8_c.html#a3a2754db70433e0eb392df69f2b4b427", null ],
+    [ "OUTPUT_TOKEN_STREAM_FOR_DEBUGGING", "unparse_language_independent_constructs_8_c.html#ac84e8e97fbbe5a26543c629942379d38", null ],
+    [ "dependenceTypeToString", "unparse_language_independent_constructs_8_c.html#aa45edc33f3309d0b5e08d7cc2f291291", null ],
+    [ "distPolicyToString", "unparse_language_independent_constructs_8_c.html#a5556b58a09b611dcb982aa0fa044eaa5", null ],
+    [ "isAssociatedWithCxx11_initializationList", "unparse_language_independent_constructs_8_c.html#ab27d5ab82262225e6439b2630888a7d0", null ],
+    [ "mapOperatorToString", "unparse_language_independent_constructs_8_c.html#afe5f02e68fc9609bedf69d8bedbfa8a8", null ],
+    [ "reductionOperatorToString", "unparse_language_independent_constructs_8_c.html#aabeda9206e495ea24a9d31072ec14cb2", null ],
+    [ "global_lastStatementUnparsed", "unparse_language_independent_constructs_8_c.html#aa4db2765ac516723bbc5938eccbf08cb", null ],
+    [ "global_unparsed_as", "unparse_language_independent_constructs_8_c.html#a491c094a690cf6f92752f289b100e72d", null ]
+];

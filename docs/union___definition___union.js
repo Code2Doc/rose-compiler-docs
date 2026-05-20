@@ -1,0 +1,26 @@
+var union___definition___union =
+[
+    [ "Dummy_Member", "union___definition___union.html#a9c75e61922512cb5f647ca444152053e", null ],
+    [ "The_Access_Definition", "union___definition___union.html#ac8445e82ca9e55522ba0255a76e67e42", null ],
+    [ "The_Aspect_Specification", "union___definition___union.html#aa0e6adc43d1559b14f487c3fa28b8f6e", null ],
+    [ "The_Component_Definition", "union___definition___union.html#a1c1100a0f5c80093407b3f5a08aa5dc9", null ],
+    [ "The_Constraint", "union___definition___union.html#a6959814f2247d3a48cc3845784d7ce6d", null ],
+    [ "The_Discrete_Range", "union___definition___union.html#aff9f879ae940c6a1f41b7fc64a4c3752", null ],
+    [ "The_Discrete_Subtype_Definition", "union___definition___union.html#a9084fed49f2655095ca70582bc6d6b63", null ],
+    [ "The_Formal_Type_Definition", "union___definition___union.html#adba08fd3db07288d07227550e6cd69fb", null ],
+    [ "The_Known_Discriminant_Part", "union___definition___union.html#a68cb0f66191fd876b43547668a88abb5", null ],
+    [ "The_Null_Component", "union___definition___union.html#a3e4105f65a1435e7a162633f86aedc3a", null ],
+    [ "The_Null_Record_Definition", "union___definition___union.html#a7db835e1a55098ccd7ba5b9765277d2e", null ],
+    [ "The_Others_Choice", "union___definition___union.html#a3bc3d2e4405297f97e359401bd7d7ee0", null ],
+    [ "The_Private_Extension_Definition", "union___definition___union.html#a9ba56fc2cb1ba799c0c34fe315b7cb61", null ],
+    [ "The_Private_Type_Definition", "union___definition___union.html#ad61cffd199e8f6e54a155d79e99ee858", null ],
+    [ "The_Protected_Definition", "union___definition___union.html#a9f6b8f1005eedfbade6f8d49092d187a", null ],
+    [ "The_Record_Definition", "union___definition___union.html#a06e18dc9d1b7eb5066085505e6482d91", null ],
+    [ "The_Subtype_Indication", "union___definition___union.html#a438674f081c87689f0464230cb41eb3d", null ],
+    [ "The_Tagged_Private_Type_Definition", "union___definition___union.html#a5e9109219b4dd996372d5aebf12a4b1d", null ],
+    [ "The_Task_Definition", "union___definition___union.html#a9900ed9ce2fa2dd455a23e01b11c6104", null ],
+    [ "The_Type_Definition", "union___definition___union.html#ac8378c0a4436a633cef3391bb20d5abd", null ],
+    [ "The_Unknown_Discriminant_Part", "union___definition___union.html#aa7236e25e0efe331197a683e87f0fcb3", null ],
+    [ "The_Variant", "union___definition___union.html#aaddd70736b6b35ba5e3f6947ab0ec58a", null ],
+    [ "The_Variant_Part", "union___definition___union.html#ae1896e865c60881a05d1e27b64ce04ca", null ]
+];

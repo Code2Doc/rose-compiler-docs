@@ -1,0 +1,28 @@
+var dir_89312d415162e498ec13add4a2e72940 =
+[
+    [ "artificialFrontier.C", "artificial_frontier_8_c.html", "artificial_frontier_8_c" ],
+    [ "artificialFrontier.h", "artificial_frontier_8h.html", "artificial_frontier_8h" ],
+    [ "createMap.C", "create_map_8_c.html", null ],
+    [ "createMap.h", "create_map_8h.html", "create_map_8h" ],
+    [ "detectMacroExpansionsToBeUnparsedAsAstTransformations.C", "detect_macro_expansions_to_be_unparsed_as_ast_transformations_8_c.html", "detect_macro_expansions_to_be_unparsed_as_ast_transformations_8_c" ],
+    [ "detectMacroExpansionsToBeUnparsedAsAstTransformations.h", "detect_macro_expansions_to_be_unparsed_as_ast_transformations_8h.html", "detect_macro_expansions_to_be_unparsed_as_ast_transformations_8h" ],
+    [ "detectMacroOrIncludeFileExpansions.C", "detect_macro_or_include_file_expansions_8_c.html", "detect_macro_or_include_file_expansions_8_c" ],
+    [ "detectMacroOrIncludeFileExpansions.h", "detect_macro_or_include_file_expansions_8h.html", "detect_macro_or_include_file_expansions_8h" ],
+    [ "doCompleteMapping.C", "do_complete_mapping_8_c.html", "do_complete_mapping_8_c" ],
+    [ "doCompleteMapping.h", "do_complete_mapping_8h.html", "do_complete_mapping_8h" ],
+    [ "frontierDetection.C", "frontier_detection_8_c.html", "frontier_detection_8_c" ],
+    [ "frontierDetection.h", "frontier_detection_8h.html", "frontier_detection_8h" ],
+    [ "linearizeAST.C", "linearize_a_s_t_8_c.html", "linearize_a_s_t_8_c" ],
+    [ "linearizeAST.h", "linearize_a_s_t_8h.html", "linearize_a_s_t_8h" ],
+    [ "main.C", "frontend_2_sage_i_i_i_2ast_token_stream_2main_8_c.html", "frontend_2_sage_i_i_i_2ast_token_stream_2main_8_c" ],
+    [ "maxExtents.C", "max_extents_8_c.html", "max_extents_8_c" ],
+    [ "maxExtents.h", "max_extents_8h.html", "max_extents_8h" ],
+    [ "previousAndNextNode.C", "previous_and_next_node_8_c.html", "previous_and_next_node_8_c" ],
+    [ "previousAndNextNode.h", "previous_and_next_node_8h.html", "previous_and_next_node_8h" ],
+    [ "simpleFrontierDetection.C", "simple_frontier_detection_8_c.html", "simple_frontier_detection_8_c" ],
+    [ "simpleFrontierDetection.h", "simple_frontier_detection_8h.html", "simple_frontier_detection_8h" ],
+    [ "tokenStreamMapping.C", "token_stream_mapping_8_c.html", "token_stream_mapping_8_c" ],
+    [ "tokenStreamMapping.h", "token_stream_mapping_8h.html", "token_stream_mapping_8h" ],
+    [ "unparseMacro.C", "unparse_macro_8_c.html", "unparse_macro_8_c" ],
+    [ "unparseMacro.h", "unparse_macro_8h.html", "unparse_macro_8h" ]
+];

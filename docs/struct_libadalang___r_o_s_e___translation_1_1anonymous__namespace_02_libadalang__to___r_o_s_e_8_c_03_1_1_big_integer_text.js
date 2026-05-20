@@ -1,0 +1,6 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_big_integer_text =
+[
+    [ "BigIntegerText", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_big_integer_text.html#a809508929cd815cbdfa6908f45d5e13e", null ],
+    [ "~BigIntegerText", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_big_integer_text.html#a2e10aebb18c1d7262e5552a6990546d8", null ],
+    [ "operator std::string", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_big_integer_text.html#ab79983ee9fd352af3fece54e59eae864", null ]
+];

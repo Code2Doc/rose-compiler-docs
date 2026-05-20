@@ -1,0 +1,28 @@
+var namespace_rose_1_1_traits =
+[
+    [ "details", "namespace_rose_1_1_traits_1_1details.html", "namespace_rose_1_1_traits_1_1details" ],
+    [ "generated", "namespace_rose_1_1_traits_1_1generated.html", "namespace_rose_1_1_traits_1_1generated" ],
+    [ "grammar__traversal__details", "namespace_rose_1_1_traits_1_1grammar____traversal____details.html", null ],
+    [ "list__base__classes__details", "namespace_rose_1_1_traits_1_1list____base____classes____details.html", null ],
+    [ "traversal__details", "namespace_rose_1_1_traits_1_1traversal____details.html", null ],
+    [ "list_base_classes_details", "namespace_rose_1_1_traits_1_1list__base__classes__details.html", "namespace_rose_1_1_traits_1_1list__base__classes__details" ],
+    [ "grammar_traversal_details", "namespace_rose_1_1_traits_1_1grammar__traversal__details.html", "namespace_rose_1_1_traits_1_1grammar__traversal__details" ],
+    [ "traversal_details", "namespace_rose_1_1_traits_1_1traversal__details.html", "namespace_rose_1_1_traits_1_1traversal__details" ],
+    [ "DescribeField", "struct_rose_1_1_traits_1_1_describe_field.html", null ],
+    [ "DescribeField&lt; NodeT, FieldTypeT NodeT::*, fld_ptr &gt;", "struct_rose_1_1_traits_1_1_describe_field_3_01_node_t_00_01_field_type_t_01_node_t_1_1_5_00_01fld__ptr_01_4.html", null ],
+    [ "DescribeField&lt; void, decltype(nullptr), nullptr &gt;", "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html", "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4" ],
+    [ "DescribeNode", "struct_rose_1_1_traits_1_1_describe_node.html", "struct_rose_1_1_traits_1_1_describe_node" ],
+    [ "DescribeNode&lt; void &gt;", "struct_rose_1_1_traits_1_1_describe_node_3_01void_01_4.html", "struct_rose_1_1_traits_1_1_describe_node_3_01void_01_4" ],
+    [ "is_subclass_of_t", "struct_rose_1_1_traits_1_1is__subclass__of__t.html", "struct_rose_1_1_traits_1_1is__subclass__of__t" ],
+    [ "enable_subclass_of", "namespace_rose_1_1_traits.html#a54ff22c4033bd22677f71820c4471b42", null ],
+    [ "inspect_field", "namespace_rose_1_1_traits.html#ae0a480012253e0501642bb73b8bd1a57", null ],
+    [ "list_all_subclasses", "namespace_rose_1_1_traits.html#ae20bff16bd28834c736d05205917eefa", null ],
+    [ "list_base_classes", "namespace_rose_1_1_traits.html#a72a6c09eaceac8dea3b9d7cf20bce004", null ],
+    [ "list_concrete_subclasses", "namespace_rose_1_1_traits.html#ae6fdb847739903c0fdce192ab96b7b17", null ],
+    [ "podf_selector_t", "namespace_rose_1_1_traits.html#a40623d2fdd3065cd57b43b641bb8f7c5", null ],
+    [ "transcribe_field_desc", "namespace_rose_1_1_traits.html#a611cebeaafc8a3e4fef1d505e2d18cd1", null ],
+    [ "traverse", "namespace_rose_1_1_traits.html#a276c5c124cfce790ae78e27405896fdd", null ],
+    [ "is_subclass_of", "namespace_rose_1_1_traits.html#a99163c6143788812dd1c415914c01a75", null ],
+    [ "isAstNode", "namespace_rose_1_1_traits.html#aa34369250c8cfe9660d592db5e06c207", null ],
+    [ "isAstNodePtr", "namespace_rose_1_1_traits.html#ae06a663f4810320400cda29b7ea3fe29", null ]
+];

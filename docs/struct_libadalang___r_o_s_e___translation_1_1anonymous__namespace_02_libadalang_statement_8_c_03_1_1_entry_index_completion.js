@@ -1,0 +1,7 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_statement_8_c_03_1_1_entry_index_completion =
+[
+    [ "EntryIndexCompletion", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_statement_8_c_03_1_1_entry_index_completion.html#a27bd3d6efd0b6cdcc766732bc537b908", null ],
+    [ "operator()", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_statement_8_c_03_1_1_entry_index_completion.html#a945466b9bf7e5327c327facc7f94ef39", null ],
+    [ "ctx", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_statement_8_c_03_1_1_entry_index_completion.html#a16bd0088d43a334539172650ce7d405b", null ],
+    [ "lal_element", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_statement_8_c_03_1_1_entry_index_completion.html#a2a955dad507ce08ae19772d321ae64fb", null ]
+];

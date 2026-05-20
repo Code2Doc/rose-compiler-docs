@@ -1,0 +1,4 @@
+var struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_gen_file_info =
+[
+    [ "visit", "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_gen_file_info.html#aafad3d2fca9bd236af9175a055941d5f", null ]
+];

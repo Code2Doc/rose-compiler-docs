@@ -1,0 +1,6 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_7950cbd1e956b8ac94a4f83e9a2f2bb5 =
+[
+    [ "areCompatible", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_7950cbd1e956b8ac94a4f83e9a2f2bb5.html#aacba23318a2b2b50a60fe344b17c6a08", null ],
+    [ "operator()", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_7950cbd1e956b8ac94a4f83e9a2f2bb5.html#ada07b092e6f03077f40c327d3ca634c5", null ],
+    [ "operator()", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_7950cbd1e956b8ac94a4f83e9a2f2bb5.html#a1e628252c05a83b2f69968203d71d0ce", null ]
+];

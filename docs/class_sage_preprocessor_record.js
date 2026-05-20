@@ -1,0 +1,28 @@
+var class_sage_preprocessor_record =
+[
+    [ "SagePreprocessorRecord", "class_sage_preprocessor_record.html#a0fc5ec1476719244a47634613a83112b", null ],
+    [ "Defined", "class_sage_preprocessor_record.html#ad7e75ef6eb764269f1f3c67060c85444", null ],
+    [ "Elif", "class_sage_preprocessor_record.html#a11fd9977db4c9ab55cf24154d1413bbd", null ],
+    [ "Else", "class_sage_preprocessor_record.html#a0c5e81e79a28ef0a1ad3840832aa99ec", null ],
+    [ "Endif", "class_sage_preprocessor_record.html#a0722c7d0304896bf6c66bf3df67c868a", null ],
+    [ "EndOfMainFile", "class_sage_preprocessor_record.html#af68dd870bf8eb10bd1e9818bdf327810", null ],
+    [ "Ident", "class_sage_preprocessor_record.html#aaeca72b4b61b1a20b65f08cb543025f1", null ],
+    [ "If", "class_sage_preprocessor_record.html#a330d90e43b9f959df99e5d067b943f5e", null ],
+    [ "Ifdef", "class_sage_preprocessor_record.html#a449274fdc664d8c86aa2d5309223bb86", null ],
+    [ "Ifndef", "class_sage_preprocessor_record.html#a10c77f0055be1932405bec6b52b3f422", null ],
+    [ "InclusionDirective", "class_sage_preprocessor_record.html#acb893b87d68094f76830024a225c9385", null ],
+    [ "MacroDefined", "class_sage_preprocessor_record.html#aee8787e54d0dab83f387a565a9ff8ea3", null ],
+    [ "MacroExpands", "class_sage_preprocessor_record.html#ab8c0b6440627dfb8c7dd8a2dec8b1f58", null ],
+    [ "MacroUndefined", "class_sage_preprocessor_record.html#a8e33c429bf3904a66ebc1b7f23c20a69", null ],
+    [ "pop", "class_sage_preprocessor_record.html#aeb55a0295903136eab5ca89370c47d3c", null ],
+    [ "PragmaComment", "class_sage_preprocessor_record.html#a773e7d6e1f9e2529458c950b9477dbbc", null ],
+    [ "PragmaDiagnostic", "class_sage_preprocessor_record.html#a080973db7d9f526dcf8a45278d6d4134", null ],
+    [ "PragmaDiagnosticPop", "class_sage_preprocessor_record.html#ae0b17a1ebe8e01d4f5eec7983f18befc", null ],
+    [ "PragmaDiagnosticPush", "class_sage_preprocessor_record.html#aaee1583adec9b258ffdb36f959f92bc9", null ],
+    [ "PragmaMessage", "class_sage_preprocessor_record.html#afb5e9ccd29568c033a6323415d335f83", null ],
+    [ "SourceRangeSkipped", "class_sage_preprocessor_record.html#aa03009584bfea44d90c81f9b43f46278", null ],
+    [ "top", "class_sage_preprocessor_record.html#aac2bd80f3a64275d6387798d704384be", null ],
+    [ "logger", "class_sage_preprocessor_record.html#aaf560cde09f0c7e72e25944d468b896f", null ],
+    [ "p_preprocessor_record_list", "class_sage_preprocessor_record.html#a770250eb069b095aa1996b1911c5e9b8", null ],
+    [ "p_source_manager", "class_sage_preprocessor_record.html#a5068520a646288181dedbfc8db6f6f7d", null ]
+];

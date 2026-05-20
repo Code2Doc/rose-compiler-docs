@@ -1,0 +1,25 @@
+var class_processing_phase =
+[
+    [ "ProcessingPhase", "class_processing_phase.html#ad831d688dafa11ab9bc56092820b90c6", null ],
+    [ "ProcessingPhase", "class_processing_phase.html#a706ce888ab0e983c86d009d75e50a120", null ],
+    [ "~ProcessingPhase", "class_processing_phase.html#a85c3cb7b8537480d747fed0395827dd1", null ],
+    [ "get_memory_usage", "class_processing_phase.html#a7a2f06d6f783b4f3659d974fcb3c02cc", null ],
+    [ "get_name", "class_processing_phase.html#a129397162330ce378440ca0d10a22a65", null ],
+    [ "get_performance", "class_processing_phase.html#a470a71a1d9372b4483a912df6d66b515", null ],
+    [ "get_resolution", "class_processing_phase.html#a1c629dc24ce99c39aeed1cee14371966", null ],
+    [ "getCurrentDelta", "class_processing_phase.html#a5cc24654854e6548d2fb301d0e74874d", null ],
+    [ "outputReport", "class_processing_phase.html#a9ab3b739800acac43fd54541012070bf", null ],
+    [ "outputReportHeaderToFile", "class_processing_phase.html#a2efb0436e32f92e33121621d765ca41b", null ],
+    [ "outputReportToFile", "class_processing_phase.html#aff9b679f9685eb8a9b0eb5822f9c73fd", null ],
+    [ "set_memory_usage", "class_processing_phase.html#a967f3d63bc6b04e4dbc31a755ca7e60d", null ],
+    [ "set_name", "class_processing_phase.html#ae7fabf3bbabd81f942f18899ec560a10", null ],
+    [ "set_performance", "class_processing_phase.html#abf6e77cbd744b1ffa5252fb51724e526", null ],
+    [ "set_resolution", "class_processing_phase.html#acec52ba4a2dd3931b28852029a5fc293", null ],
+    [ "stopTiming", "class_processing_phase.html#a36385d1ba2806978f255da231a4f3a46", null ],
+    [ "childList", "class_processing_phase.html#a33f7e858a6504df6916f8cad4351db8f", null ],
+    [ "internalMemoryUsageData", "class_processing_phase.html#ae60ce9b69023a8dbfe3ff7cade23eba7", null ],
+    [ "memoryUsage", "class_processing_phase.html#a1ba72f03b456d23baa44bde16afd9c7c", null ],
+    [ "name", "class_processing_phase.html#abfe35e4dd99eee6a26419276934c35f5", null ],
+    [ "performance", "class_processing_phase.html#ac0833d54fbbf52fcf624518983a6c9a0", null ],
+    [ "resolution", "class_processing_phase.html#a17dc0d2bc736f6964a9a6f3a920801ac", null ]
+];

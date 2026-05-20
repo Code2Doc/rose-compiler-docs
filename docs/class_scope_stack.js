@@ -1,0 +1,26 @@
+var class_scope_stack =
+[
+    [ "begin", "class_scope_stack.html#a8383d46768f0561e1fe71ac47ad04aaf", null ],
+    [ "empty", "class_scope_stack.html#a86a8219419d18f33d520bdce5b07acaa", null ],
+    [ "end", "class_scope_stack.html#a9b07768c56e5cfc3fe48c553ca149c6d", null ],
+    [ "pop", "class_scope_stack.html#ade6f685469b192604995b3f5add8f57b", null ],
+    [ "popBasicBlock", "class_scope_stack.html#a0f43d8afa623dc3e2c3687800e82faf1", null ],
+    [ "popCatchOptionStmt", "class_scope_stack.html#a3e8bfc6566bd0de054fef35852018bd3", null ],
+    [ "popClassDefinition", "class_scope_stack.html#a78171b88a575fbad223bf2420a45311a", null ],
+    [ "popDoWhileStmt", "class_scope_stack.html#a1571f05a347b21a99f0805d6e34791d6", null ],
+    [ "popForStatement", "class_scope_stack.html#adc825cb85bfa53b5656d00b0aba2c477", null ],
+    [ "popFunctionDefinition", "class_scope_stack.html#a581a0589890584b1acf3892312ff7355", null ],
+    [ "popGlobal", "class_scope_stack.html#a19d4018e1c02b0d4939be96033c68dcd", null ],
+    [ "popIfStmt", "class_scope_stack.html#a0d22ad39a695b19fefea2a000767d742", null ],
+    [ "popJavaForEachStatement", "class_scope_stack.html#a920c541ce7331d1abf98b56c3ce92856", null ],
+    [ "popJavaLabelStatement", "class_scope_stack.html#aa315bed54e1633cb088e5c4f644db683", null ],
+    [ "popNamespaceDefinitionStatement", "class_scope_stack.html#a720c29c80ede211ec03bb276c4ad4eea", null ],
+    [ "popPackage", "class_scope_stack.html#ae71a9df7a8870f5f6ca93ae8177b773d", null ],
+    [ "popSwitchStatement", "class_scope_stack.html#aa179364b4883aea9f52435a46d69ccee", null ],
+    [ "popWhileStmt", "class_scope_stack.html#a5a8f2f901fdb0f11b34aead8789431cd", null ],
+    [ "push", "class_scope_stack.html#ae683b8e24a84d0177026969da840759e", null ],
+    [ "rbegin", "class_scope_stack.html#a5d4ec41e1d606f44939de8df485fd986", null ],
+    [ "rend", "class_scope_stack.html#adac1fdff3c0b913d154249c113e3e9f9", null ],
+    [ "size", "class_scope_stack.html#abde9a458a40c100ae1d40ade6ecfecc5", null ],
+    [ "top", "class_scope_stack.html#ad2bea278374e9debac8e90009b1e30c6", null ]
+];

@@ -1,0 +1,28 @@
+var struct_unparse___ada =
+[
+    [ "base", "struct_unparse___ada.html#afb111dcd1e13b30115d5c06230dc7cf7", null ],
+    [ "NameQualMap", "struct_unparse___ada.html#a954a7fa43c801630abcdd90cafc01326", null ],
+    [ "ScopeRenamingContainer", "struct_unparse___ada.html#a5da3ecf5de8670d0c5b4999dcf89e8f2", null ],
+    [ "UsePkgContainer", "struct_unparse___ada.html#aa94277451e8e39c48915c04a151b9861", null ],
+    [ "VisibleScopeContainer", "struct_unparse___ada.html#af3b0f00643a3ff130fe63ffcce1df239", null ],
+    [ "Unparse_Ada", "struct_unparse___ada.html#a33bc94b57d0cd1fd26f20509055f8b62", null ],
+    [ "~Unparse_Ada", "struct_unparse___ada.html#ad290a7f2fdea55838fff9b6f176217ba", null ],
+    [ "languageName", "struct_unparse___ada.html#a64e5d5ea094ef48ae5c6b6b189288219", null ],
+    [ "nameQualificationMap", "struct_unparse___ada.html#a736138fa6c1c04fbb3589e6aafe4ae4e", null ],
+    [ "requiresParentheses", "struct_unparse___ada.html#a2f43f03810289b874990c49dea4d735c", null ],
+    [ "setInitialScope", "struct_unparse___ada.html#aaaa34e1ef17315bff432e4d0e6e08ad3", null ],
+    [ "unparseAdaFile", "struct_unparse___ada.html#a9666b66336c773e062791929c335c37d", null ],
+    [ "unparseExpression", "struct_unparse___ada.html#ab2ec0907ba2df03d5f153c537e9c270e", null ],
+    [ "unparseExprListExp", "struct_unparse___ada.html#afa9200c35a0dccea091114229df252cb", null ],
+    [ "unparseLanguageSpecificExpression", "struct_unparse___ada.html#a6da081439ac4ed32baba02fdbbbff8f3", null ],
+    [ "unparseLanguageSpecificStatement", "struct_unparse___ada.html#a9b3df21465f17cd7285b82b4505cafb2", null ],
+    [ "unparseParameterList", "struct_unparse___ada.html#a8a7d4aa9981d0bc81a020842a1def459", null ],
+    [ "unparser", "struct_unparse___ada.html#a7d6542c0bf56abf436768c7bfc0fdb61", null ],
+    [ "unparseStatement", "struct_unparse___ada.html#a4acc55ba7f0aba11e77e117cdb15e3af", null ],
+    [ "unparseStringVal", "struct_unparse___ada.html#a2bb05644276ac32db479345dfbcaf7c4", null ],
+    [ "unparseType", "struct_unparse___ada.html#a3dc99904df762342632c6d868bd09cc6", null ],
+    [ "unparseType", "struct_unparse___ada.html#af0f61361471edab4c842d0b99669b0f6", null ],
+    [ "withNameQualificationMap", "struct_unparse___ada.html#ac103c3b803014abf59d35a708886e5b2", null ],
+    [ "currentNameQualificationMap", "struct_unparse___ada.html#ae4ee9174f6be96432423f43cd5afb2a3", null ],
+    [ "oldLineWrap", "struct_unparse___ada.html#aa5ecc9162d9d5229b50d3337c2d96e69", null ]
+];

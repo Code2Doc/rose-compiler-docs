@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['languagetranslation_0',['LanguageTranslation',['../namespace_language_translation.html',1,'']]],
+  ['lcs_1',['LCS',['../namespace_l_c_s.html',1,'']]],
+  ['legacy_2',['legacy',['../namespacelegacy.html',1,'']]],
+  ['legacy_3a_3apre_3',['PRE',['../namespacelegacy_1_1_p_r_e.html',1,'legacy']]],
+  ['level_5f_5fpinclient_4',['LEVEL__PINCLIENT',['../namespace_l_e_v_e_l_____p_i_n_c_l_i_e_n_t.html',1,'']]],
+  ['libadalang_5f_5frose_5f_5ftranslation_5',['Libadalang__ROSE__Translation',['../namespace_libadalang_____r_o_s_e_____translation.html',1,'']]],
+  ['libadalang_5f_5frose_5f_5ftranslation_3a_3aanonymous_5f_5fnamespace_5f02adamaker_5f8c_5f03_6',['anonymous__namespace_02AdaMaker_8C_03',['../namespace_libadalang_____r_o_s_e_____translation_1_1anonymous____namespace__02_ada_maker__8_c__03.html',1,'Libadalang__ROSE__Translation']]],
+  ['libadalang_5f_5frose_5f_5ftranslation_3a_3aanonymous_5f_5fnamespace_5f02libadalang_5f_5fto_5f_5frose_5f8c_5f03_7',['anonymous__namespace_02Libadalang__to__ROSE_8C_03',['../namespace_libadalang_____r_o_s_e_____translation_1_1anonymous____namespace__02_libadalang____to_____r_o_s_e__8_c__03.html',1,'Libadalang__ROSE__Translation']]],
+  ['libadalang_5f_5frose_5f_5ftranslation_3a_3aanonymous_5f_5fnamespace_5f02libadalangexpression_5f8c_5f03_8',['anonymous__namespace_02LibadalangExpression_8C_03',['../namespace_libadalang_____r_o_s_e_____translation_1_1anonymous____namespace__02_libadalang_expression__8_c__03.html',1,'Libadalang__ROSE__Translation']]],
+  ['libadalang_5f_5frose_5f_5ftranslation_3a_3aanonymous_5f_5fnamespace_5f02libadalangstatement_5f8c_5f03_9',['anonymous__namespace_02LibadalangStatement_8C_03',['../namespace_libadalang_____r_o_s_e_____translation_1_1anonymous____namespace__02_libadalang_statement__8_c__03.html',1,'Libadalang__ROSE__Translation']]],
+  ['libadalang_5f_5frose_5f_5ftranslation_3a_3aanonymous_5f_5fnamespace_5f02libadalangtype_5f8c_5f03_10',['anonymous__namespace_02LibadalangType_8C_03',['../namespace_libadalang_____r_o_s_e_____translation_1_1anonymous____namespace__02_libadalang_type__8_c__03.html',1,'Libadalang__ROSE__Translation']]],
+  ['libadalang_5frose_5ftranslation_11',['Libadalang_ROSE_Translation',['../namespace_libadalang___r_o_s_e___translation.html',1,'']]],
+  ['libadalang_5frose_5ftranslation_3a_3aanonymous_5fnamespace_7badamaker_2ec_7d_12',['anonymous_namespace{AdaMaker.C}',['../namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_ada_maker_8_c_03.html',1,'Libadalang_ROSE_Translation']]],
+  ['libadalang_5frose_5ftranslation_3a_3aanonymous_5fnamespace_7blibadalang_5fto_5frose_2ec_7d_13',['anonymous_namespace{Libadalang_to_ROSE.C}',['../namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03.html',1,'Libadalang_ROSE_Translation']]],
+  ['libadalang_5frose_5ftranslation_3a_3aanonymous_5fnamespace_7blibadalangexpression_2ec_7d_14',['anonymous_namespace{LibadalangExpression.C}',['../namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03.html',1,'Libadalang_ROSE_Translation']]],
+  ['libadalang_5frose_5ftranslation_3a_3aanonymous_5fnamespace_7blibadalangstatement_2ec_7d_15',['anonymous_namespace{LibadalangStatement.C}',['../namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_statement_8_c_03.html',1,'Libadalang_ROSE_Translation']]],
+  ['libadalang_5frose_5ftranslation_3a_3aanonymous_5fnamespace_7blibadalangtype_2ec_7d_16',['anonymous_namespace{LibadalangType.C}',['../namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_type_8_c_03.html',1,'Libadalang_ROSE_Translation']]],
+  ['llvm_17',['llvm',['../namespacellvm.html',1,'']]]
+];

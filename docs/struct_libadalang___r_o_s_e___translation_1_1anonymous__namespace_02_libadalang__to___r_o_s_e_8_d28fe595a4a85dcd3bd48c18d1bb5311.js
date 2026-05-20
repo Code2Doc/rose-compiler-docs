@@ -1,0 +1,9 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311 =
+[
+    [ "AmbiguousCallExtractor", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311.html#ad8ed25b160c5fd2a37ab72e1967aacc8", null ],
+    [ "operator OverloadMap", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311.html#ad600d5a8040eb2a2aa69c754e3572097", null ],
+    [ "visit", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311.html#a20d31df9dfa9fa14bb123f4a2aa5b29d", null ],
+    [ "inhsyms", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311.html#ad18b1bb06408aca921ce1566ba526a0b", null ],
+    [ "m", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311.html#a476cd6fbce2b2a3a478f68ce16e8c424", null ],
+    [ "reqdisambig", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_d28fe595a4a85dcd3bd48c18d1bb5311.html#a9e09b922c1df4061f2f391da11947068", null ]
+];

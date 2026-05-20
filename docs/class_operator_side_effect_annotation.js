@@ -1,0 +1,28 @@
+var class_operator_side_effect_annotation =
+[
+    [ "const_iterator", "class_operator_side_effect_annotation.html#af081ee0394ccdc2f2a0c3a81b49e3717", null ],
+    [ "OperatorSideEffectAnnotation", "class_operator_side_effect_annotation.html#aace0c82254887619903c1c83068d6c6e", null ],
+    [ "add_call", "class_operator_side_effect_annotation.html#a09bd7c0c31cbd54f15a45d82e31de1a3", null ],
+    [ "add_kill", "class_operator_side_effect_annotation.html#acdf2108b1293aaf7c1770fda92d4850f", null ],
+    [ "add_modify", "class_operator_side_effect_annotation.html#a38d3159a7d22a4f2227ba8341caaa50c", null ],
+    [ "add_read", "class_operator_side_effect_annotation.html#a2101974e93edfdb4a97a7c9200135ac0", null ],
+    [ "Dump", "class_operator_side_effect_annotation.html#a51f2275ae3fe83e5f319eec46d1eca9b", null ],
+    [ "get_call", "class_operator_side_effect_annotation.html#a25fdcb4a6e0779e35689a315b7304072", null ],
+    [ "get_call_descriptor", "class_operator_side_effect_annotation.html#a58bb56c3326fde1e79954ac49a1078aa", null ],
+    [ "get_inst", "class_operator_side_effect_annotation.html#ab9c5580353cfe6dc7658a7dc4cea499b", null ],
+    [ "get_kill", "class_operator_side_effect_annotation.html#a8537094a46b07a9da715e96a56e8219c", null ],
+    [ "get_kill_descriptor", "class_operator_side_effect_annotation.html#a397cdc03d89e363fb384811a2e0d77c0", null ],
+    [ "get_modify", "class_operator_side_effect_annotation.html#aa21f6cb47b8839020354c228a79b32c1", null ],
+    [ "get_modify_descriptor", "class_operator_side_effect_annotation.html#a554732045add30712e6353474c20d948", null ],
+    [ "get_modify_descriptor", "class_operator_side_effect_annotation.html#ab33270ad376b3ff72db16d31dbdca5eb", null ],
+    [ "get_read", "class_operator_side_effect_annotation.html#aa39ebb1e5a6277b3ce3f1dfeaf3c78b1", null ],
+    [ "get_read_descriptor", "class_operator_side_effect_annotation.html#af4eaa54aa508e4043558d12831714b1e", null ],
+    [ "get_read_descriptor", "class_operator_side_effect_annotation.html#a272fe8b221815ea6a63916a9c8ceed8e", null ],
+    [ "register_annot", "class_operator_side_effect_annotation.html#ac5c3340ab72e10876dd6c7850888fcef", null ],
+    [ "write", "class_operator_side_effect_annotation.html#a810089a9b2fe3d24efc55c72489810a6", null ],
+    [ "callInfo", "class_operator_side_effect_annotation.html#aaca596297209429e23c66515429c6c48", null ],
+    [ "inst", "class_operator_side_effect_annotation.html#a991ff237c01aeb5a6353f99873bbcefe", null ],
+    [ "killInfo", "class_operator_side_effect_annotation.html#aa1df2adb2b1d8fef57af0d21d9b51a9e", null ],
+    [ "modInfo", "class_operator_side_effect_annotation.html#a6a6ece92342b916621418add34189f83", null ],
+    [ "readInfo", "class_operator_side_effect_annotation.html#aa19904072c7d392714cd379d59e327fc", null ]
+];

@@ -1,0 +1,38 @@
+var _loop_tree_transform_8h =
+[
+    [ "LoopTreeTransform", "class_loop_tree_transform.html", "class_loop_tree_transform" ],
+    [ "LoopTreeDistributeNode", "class_loop_tree_distribute_node.html", "class_loop_tree_distribute_node" ],
+    [ "LoopTreeSplitStmt", "class_loop_tree_split_stmt.html", "class_loop_tree_split_stmt" ],
+    [ "LoopTreeMergeLoop", "class_loop_tree_merge_loop.html", "class_loop_tree_merge_loop" ],
+    [ "LoopTreeMergeStmtLoop", "class_loop_tree_merge_stmt_loop.html", "class_loop_tree_merge_stmt_loop" ],
+    [ "LoopTreeBlockLoop", "class_loop_tree_block_loop.html", "class_loop_tree_block_loop" ],
+    [ "LoopTreeSwapNodePos", "class_loop_tree_swap_node_pos.html", "class_loop_tree_swap_node_pos" ],
+    [ "LoopTreeEmbedStmt", "class_loop_tree_embed_stmt.html", "class_loop_tree_embed_stmt" ],
+    [ "SelectArray", "class_select_array.html", "class_select_array" ],
+    [ "SelectArray::ArrayDim", "class_select_array_1_1_array_dim.html", "class_select_array_1_1_array_dim" ],
+    [ "SelectArray::const_iterator", "class_select_array_1_1const__iterator.html", "class_select_array_1_1const__iterator" ],
+    [ "SelectArray::iterator", "class_select_array_1_1iterator.html", "class_select_array_1_1iterator" ],
+    [ "CopyArrayConfig", "class_copy_array_config.html", "class_copy_array_config" ],
+    [ "LoopTreeCopyArrayToBuffer", "class_loop_tree_copy_array_to_buffer.html", "class_loop_tree_copy_array_to_buffer" ],
+    [ "LoopTreeReplaceAst", "class_loop_tree_replace_ast.html", "class_loop_tree_replace_ast" ],
+    [ "CopyArrayOpt", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ce", [
+      [ "NONE", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceac157bdf0b85a40d2619cbc8bc1ae5fe2", null ],
+      [ "INIT_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceaa7a0fb227ce4fc2b2c76c89b014afc00", null ],
+      [ "SAVE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceaaffc595a5afee7bb9b58a601d91e7312", null ],
+      [ "INIT_SAVE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceaf14716acfd4f6abc3cddf328bccda4bc", null ],
+      [ "ALLOC_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceadc41abc1b8eedf6a00f9d3cd781266e0", null ],
+      [ "ALLOC_INIT_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea7d6642aafa65386f63241d6e9e1c82bc", null ],
+      [ "ALLOC_SAVE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea6a4d33303de2684446d733dd1b3db426", null ],
+      [ "ALLOC_INIT_SAVE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea18be8afab03d8c3c6a36c70c42b9a8ec", null ],
+      [ "DELETE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceae3826f54f35af9a0dd5e2b6190c0e3b0", null ],
+      [ "ALLOC_DELETE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea4b54712b5f0027d0f7b49d0f501f55a8", null ],
+      [ "ALLOC_INIT_DELETE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea897d768b155e8b16551a67adbb9a4cbc", null ],
+      [ "ALLOC_SAVE_DELETE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea6bce28da0a3c432a145f85747c1c620d", null ],
+      [ "ALLOC_INIT_SAVE_DELETE_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5ceac58b0afd48ac82d7991c81782f2b0283", null ],
+      [ "SHIFT_COPY", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cea9df22c54c45a63bbb71808b01ae3c875", null ],
+      [ "COPY_INSIDE", "_loop_tree_transform_8h.html#ab41cba030fac00d4b89568250e75f5cead853f0fbf2df60184821bd2f4f36df96", null ]
+    ] ],
+    [ "ApplyLoopSplitting", "_loop_tree_transform_8h.html#ac71f88aed3724d5f035fedc1170c38c1", null ],
+    [ "CopyArrayOpt2String", "_loop_tree_transform_8h.html#a50deaf9a8bceb6ff1f1219428434cf96", null ],
+    [ "OptimizeLoopTree", "_loop_tree_transform_8h.html#afb970d05a4326dea62e05e3e52cdae22", null ]
+];
