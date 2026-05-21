@@ -1,0 +1,6 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_scope_details =
+[
+    [ "base", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_scope_details.html#a0ccd851a5693449188c4dd861fa13df7", null ],
+    [ "name", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_scope_details.html#a6edd628d151bae0eec59e0033e61e89a", null ],
+    [ "qualBarrier", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_scope_details.html#a627028f13e7a479d3ff3e7e379aa27a2", null ]
+];

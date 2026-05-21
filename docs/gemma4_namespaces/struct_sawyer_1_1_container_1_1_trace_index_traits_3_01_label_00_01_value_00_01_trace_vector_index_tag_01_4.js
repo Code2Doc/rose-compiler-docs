@@ -1,0 +1,4 @@
+var struct_sawyer_1_1_container_1_1_trace_index_traits_3_01_label_00_01_value_00_01_trace_vector_index_tag_01_4 =
+[
+    [ "Index", "struct_sawyer_1_1_container_1_1_trace_index_traits_3_01_label_00_01_value_00_01_trace_vector_index_tag_01_4.html#a1f46182b35cf69e51c7dc4f0b1313d17", null ]
+];

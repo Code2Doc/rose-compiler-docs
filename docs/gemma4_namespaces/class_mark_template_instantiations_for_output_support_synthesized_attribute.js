@@ -1,0 +1,4 @@
+var class_mark_template_instantiations_for_output_support_synthesized_attribute =
+[
+    [ "MarkTemplateInstantiationsForOutputSupportSynthesizedAttribute", "class_mark_template_instantiations_for_output_support_synthesized_attribute.html#a8e743e0da7071f5fad79161e9106b2b4", null ]
+];

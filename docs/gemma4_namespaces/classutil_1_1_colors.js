@@ -1,0 +1,28 @@
+var classutil_1_1_colors =
+[
+    [ "Colors", "classutil_1_1_colors.html#a0aa57e1992670293feee646f77d6ecbb", null ],
+    [ "createStyle", "classutil_1_1_colors.html#acb4d381e7c4f0ca28ae88899359bdf97", null ],
+    [ "fetchColor", "classutil_1_1_colors.html#ad28b8c79356fd5e4561f659ed90a4810", null ],
+    [ "getColor", "classutil_1_1_colors.html#a97440cd77759790640ba959a7358bf0e", null ],
+    [ "prepare", "classutil_1_1_colors.html#a6b4c2f48ae0e4c62f537895ed3cb520a", null ],
+    [ "black", "classutil_1_1_colors.html#a2d0680caec9a4a34a2cc356f889ba333", null ],
+    [ "blue", "classutil_1_1_colors.html#aae33b20d8f87ce3bf172fc7d8cb9474a", null ],
+    [ "brown", "classutil_1_1_colors.html#a77624ad3c8318497b7f02e89d90d1311", null ],
+    [ "colorCodes", "classutil_1_1_colors.html#a9d974c40c29617405af04db2f38520ca", null ],
+    [ "colors", "classutil_1_1_colors.html#a26b5d4b41a201dd5cf99513a89571e12", null ],
+    [ "darkblue", "classutil_1_1_colors.html#a05e1dc4c2fde59c69863e52adb87d35b", null ],
+    [ "darkgreen", "classutil_1_1_colors.html#ab362aea8c826033f579e1d425b328b55", null ],
+    [ "darkgrey", "classutil_1_1_colors.html#a32edb4b0db20abc360ffca2029cb3cce", null ],
+    [ "fontsize", "classutil_1_1_colors.html#a4729e90f7036dcf39572d81139b7014c", null ],
+    [ "green", "classutil_1_1_colors.html#a15b13996c1acf5d15400460093104fbc", null ],
+    [ "grey", "classutil_1_1_colors.html#a48534e3438fc2dc95cf2a3fc5731994d", null ],
+    [ "lightblue", "classutil_1_1_colors.html#a8210a7a23add8311761d392f2e3ac178", null ],
+    [ "lightgreen", "classutil_1_1_colors.html#a881e3a07de74bcdc5dd215aaacec1657", null ],
+    [ "lightred", "classutil_1_1_colors.html#a4c9b14a4e5a248a49b9b48e688aa8c58", null ],
+    [ "olivegreen", "classutil_1_1_colors.html#a74e5d001a8c3cc317be414b20ba3f381", null ],
+    [ "orange", "classutil_1_1_colors.html#a3c6947c10ffe4d7880352e65071cc864", null ],
+    [ "purple", "classutil_1_1_colors.html#ae2908679c75581fe02b9377fd3eaec07", null ],
+    [ "red", "classutil_1_1_colors.html#abeb139d1e722407d5b55cbea9a2a7cc5", null ],
+    [ "violet", "classutil_1_1_colors.html#ac2a3cba054d5e4e5ce5dba5d5a1325a8", null ],
+    [ "yellow", "classutil_1_1_colors.html#afae38f4c913b08b8c43f712a0331e3e6", null ]
+];

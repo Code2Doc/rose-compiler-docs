@@ -1,5 +1,7 @@
 var NAVTREEINDEX344 =
 {
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a13a23eb014c09357cf8e78bb24628e32":[16,0,2,0,10,2],
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a99ba75c7e5d5c2015a2fb74696e138cc":[15,0,4,0,10,3],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a99ba75c7e5d5c2015a2fb74696e138cc":[16,0,2,0,10,3],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#ac9af0dd587abf75d71bc57248bbdd390":[15,0,4,0,10,1],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#ac9af0dd587abf75d71bc57248bbdd390":[16,0,2,0,10,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX344 =
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#a77763d6e7a63484e14d520bb86a5cee5":[16,0,2,1,2,3],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#a79441e3defeed3145585b5a3581fe011":[15,0,4,2,2,4],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#a79441e3defeed3145585b5a3581fe011":[16,0,2,1,2,4],
-"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#a9fb24734bf9c875ba66176dd01ef294e":[15,0,4,2,2,0],
-"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#a9fb24734bf9c875ba66176dd01ef294e":[16,0,2,1,2,0],
-"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#aac01da47647f9491a3214cb0eb2979c3":[15,0,4,2,2,5]
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03_1_1_record_aggregate_creator.html#a9fb24734bf9c875ba66176dd01ef294e":[15,0,4,2,2,0]
 };

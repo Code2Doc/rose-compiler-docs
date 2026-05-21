@@ -1,5 +1,7 @@
 var NAVTREEINDEX322 =
 {
+"namespacestringify_1_1_display_edge.html#a7d053a0add9557abac92bbbd9a68aa23":[15,0,167,33,0],
+"namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html":[15,0,167,34],
 "namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html#a392543c34ff5ee8ae27d5f81fa3aa88a":[15,0,167,34,3],
 "namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html#aa327d92f4bea72f3fe7216167e98b8b8":[15,0,167,34,1],
 "namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html#ad237632a27bf2d4d34853b2f023821e2":[15,0,167,34,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX322 =
 "namespacestringify_1_1_r_o_s_e___fortran__defs.html#a4bd02abbcdf0c725b0a8a49816641d81":[15,0,167,183,8],
 "namespacestringify_1_1_r_o_s_e___fortran__defs.html#a5f7609e5ccce6f15ac58a530b9637ce8":[15,0,167,183,13],
 "namespacestringify_1_1_r_o_s_e___fortran__defs.html#a8a17725fbe3995f733f3417831a2e7c7":[15,0,167,183,9],
-"namespacestringify_1_1_r_o_s_e___fortran__defs.html#a968e941e150a3d1226b0a04dc459d855":[15,0,167,183,10],
-"namespacestringify_1_1_r_o_s_e___fortran__defs.html#abd149344be7e55fd19c2e831ef869723":[15,0,167,183,6],
-"namespacestringify_1_1_r_o_s_e___fortran__defs.html#ad4b185b52efa58b6be8e78acca666d5d":[15,0,167,183,12]
+"namespacestringify_1_1_r_o_s_e___fortran__defs.html#a968e941e150a3d1226b0a04dc459d855":[15,0,167,183,10]
 };

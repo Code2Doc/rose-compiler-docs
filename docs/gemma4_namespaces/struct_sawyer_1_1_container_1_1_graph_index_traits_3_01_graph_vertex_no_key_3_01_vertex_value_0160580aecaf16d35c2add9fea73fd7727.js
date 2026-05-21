@@ -1,0 +1,4 @@
+var struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_vertex_no_key_3_01_vertex_value_0160580aecaf16d35c2add9fea73fd7727 =
+[
+    [ "Index", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_vertex_no_key_3_01_vertex_value_0160580aecaf16d35c2add9fea73fd7727.html#aecd1a31d3bf91c5bd9ab9d217515351e", null ]
+];

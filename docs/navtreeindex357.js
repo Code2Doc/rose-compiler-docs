@@ -1,5 +1,7 @@
 var NAVTREEINDEX357 =
 {
+"struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html#a05f38c56c0145b13ad6828fe7002d82e":[16,0,55,17,7,7],
+"struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html#a17a734a42a16e41b74de203de75c15f9":[15,0,128,23,10,2],
 "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html#a17a734a42a16e41b74de203de75c15f9":[16,0,55,17,7,2],
 "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html#a1a6b60bec7d8761d609209c65cb27c63":[15,0,128,23,10,0],
 "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html#a1a6b60bec7d8761d609209c65cb27c63":[16,0,55,17,7,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX357 =
 "struct_rose_1_1is__invocable.html#a5a994f27f365d0e84a5229934cf33d31":[16,0,55,34,2],
 "struct_rose_1_1is__invocable.html#ab8bbe3a95dd85dd9ce9a5bc7e45a6b0e":[15,0,128,40,1],
 "struct_rose_1_1is__invocable.html#ab8bbe3a95dd85dd9ce9a5bc7e45a6b0e":[16,0,55,34,1],
-"struct_rose_1_1metaprog_1_1_list.html":[15,0,128,19,3],
-"struct_rose_1_1metaprog_1_1_list.html":[16,0,55,14,3],
-"struct_rose_1_1metaprog_1_1_list.html#a2fbba3f07368d5165ebdd1374f98c9f4":[15,0,128,19,3,1]
+"struct_rose_1_1metaprog_1_1_list.html":[15,0,128,19,3]
 };

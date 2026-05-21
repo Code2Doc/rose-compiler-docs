@@ -437,7 +437,8 @@ var menudata={children:[
 {text:"v",url:"globals_func_v.html#index_v"},
 {text:"w",url:"globals_func_w.html#index_w"},
 {text:"x",url:"globals_func_x.html#index_x"},
-{text:"y",url:"globals_func_y.html#index_y"}]},
+{text:"y",url:"globals_func_y.html#index_y"},
+{text:"z",url:"globals_func_z.html#index_z"}]},
 {text:"Variables",url:"globals_vars.html",children:[
 {text:"_",url:"globals_vars.html#index__5F"},
 {text:"a",url:"globals_vars_a.html#index_a"},

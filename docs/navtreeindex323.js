@@ -1,5 +1,7 @@
 var NAVTREEINDEX323 =
 {
+"namespacestringify_1_1_r_o_s_e___fortran__defs.html#abd149344be7e55fd19c2e831ef869723":[15,0,167,183,6],
+"namespacestringify_1_1_r_o_s_e___fortran__defs.html#ad4b185b52efa58b6be8e78acca666d5d":[15,0,167,183,12],
 "namespacestringify_1_1_r_o_s_e___fortran__defs.html#add2f1e4ba5958e0d2b1d1ccf157478c0":[15,0,167,183,0],
 "namespacestringify_1_1_r_o_s_e___fortran__defs.html#af342912fec8040b5e13fbebc2967d558":[15,0,167,183,7],
 "namespacestringify_1_1_r_o_s_e__token__ids.html":[15,0,167,172],
@@ -247,7 +249,5 @@ var NAVTREEINDEX323 =
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a3b983f70a3ac7ff2dc4698039b18127e":[15,0,167,76,1,6,3],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a548f927648ee099ed47a26b38cb6e030":[15,0,167,76,1,6,0],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a61611d5b6a5d57a27645b819714e0f2f":[15,0,167,76,1,6,1],
-"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a79400ca811e8c27660bbfcf3061611f7":[15,0,167,76,1,6,8],
-"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a839193006596f3b6a81e8f9819a95290":[15,0,167,76,1,6,7],
-"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a90c8e2cbda463876781d95b69a6be475":[15,0,167,76,1,6,5]
+"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a79400ca811e8c27660bbfcf3061611f7":[15,0,167,76,1,6,8]
 };

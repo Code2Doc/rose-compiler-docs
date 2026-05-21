@@ -1,5 +1,7 @@
 var NAVTREEINDEX321 =
 {
+"namespacestringify.html#af7a14c32b11c5facac210b021ea20f92":[15,0,167,2542],
+"namespacestringify.html#af7a666df5dd5987999aa1adc06dfdf75":[15,0,167,2073],
 "namespacestringify.html#af7a91444ecf6523cf55b4bf2c46ba599":[15,0,167,2270],
 "namespacestringify.html#af7e1bad81fc7bd288b2b9b5f82c11550":[15,0,167,1539],
 "namespacestringify.html#af7e89a605cb4d5da660dad6e76340109":[15,0,167,548],
@@ -247,7 +249,5 @@ var NAVTREEINDEX321 =
 "namespacestringify_1_1_dependency_info.html#a9321d1e84bea72f8ac3ae798cf892749":[15,0,167,32,0],
 "namespacestringify_1_1_display_edge.html":[15,0,167,33],
 "namespacestringify_1_1_display_edge.html#a0abbfc513825e19d35b7c4de6acb58d9":[15,0,167,33,2],
-"namespacestringify_1_1_display_edge.html#a56b18a2ce2e5bbafa2e1fbe41ec5fead":[15,0,167,33,1],
-"namespacestringify_1_1_display_edge.html#a7d053a0add9557abac92bbbd9a68aa23":[15,0,167,33,0],
-"namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html":[15,0,167,34]
+"namespacestringify_1_1_display_edge.html#a56b18a2ce2e5bbafa2e1fbe41ec5fead":[15,0,167,33,1]
 };

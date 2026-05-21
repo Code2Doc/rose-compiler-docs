@@ -1,5 +1,7 @@
 var NAVTREEINDEX332 =
 {
+"poet__lex_8c.html#abcefb20c54ce0f92452cfbb9cf657670":[17,0,1,0,0,5,21,163],
+"poet__lex_8c.html#ac0586b8b0b092d02f4ba7d45abe328f2":[17,0,1,0,0,5,21,59],
 "poet__lex_8c.html#ac0d7a1b023b66285e0467d80ae57a51d":[17,0,1,0,0,5,21,22],
 "poet__lex_8c.html#ac2f8b6fccdc516d96b02ac09a4dc01bd":[17,0,1,0,0,5,21,81],
 "poet__lex_8c.html#ac3286b18a2e91b4571b97df96a118e84":[17,0,1,0,0,5,21,93],
@@ -247,7 +249,5 @@ var NAVTREEINDEX332 =
 "poet__yacc_8c.html#a3bcde0b05b9aa4ec5169092d9d211dbd":[17,0,1,0,0,5,24,143],
 "poet__yacc_8c.html#a3c24f879e6be8223acffcd342a886256":[17,0,1,0,0,5,24,213],
 "poet__yacc_8c.html#a3cfec61a89f6f458fca8ec76b3a6029e":[17,0,1,0,0,5,24,26],
-"poet__yacc_8c.html#a3da44afeba217135a680a7477b5e3ce3":[17,0,1,0,0,5,24,23],
-"poet__yacc_8c.html#a3de33738fd3c7e77bffbcfaefc3e7645":[17,0,1,0,0,5,24,53],
-"poet__yacc_8c.html#a3e2101757251d6084a66a33bcd68df0f":[17,0,1,0,0,5,24,174]
+"poet__yacc_8c.html#a3da44afeba217135a680a7477b5e3ce3":[17,0,1,0,0,5,24,23]
 };

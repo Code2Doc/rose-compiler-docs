@@ -25,7 +25,7 @@ var searchData=
   ['rifg_5fnil_22',['RIFG_NIL',['../_r_i_f_g_8h.html#a61740906f18503b2943439656527176b',1,'RIFG.h']]],
   ['right_23',['RIGHT',['../tree__demo_8cc.html#a80fb826a684cf3f0d306b22aa100ddac',1,'tree_demo.cc']]],
   ['root_5fdfnum_24',['ROOT_DFNUM',['../_tarjan_intervals_8_c.html#af7006cc1975df5f4f2f61b4f05398646',1,'TarjanIntervals.C']]],
-  ['rose_5fabort_25',['ROSE_ABORT',['../_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5',1,'ROSE_ABORT.h']]],
+  ['rose_5fabort_25',['ROSE_ABORT',['../_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5',1,'ROSE_ABORT:&#160;ROSE_ABORT.h'],['../attach_preprocessing_info__8_c_8dox.html#a22a360d21e08f28d45bffc6e87d352c5',1,'ROSE_ABORT:&#160;ROSE_ABORT.h']]],
   ['rose_5faffirm_26',['ROSE_AFFIRM',['../_affirm_8h.html#a1a91ab32bc55bd24da4e551277a58031',1,'Affirm.h']]],
   ['rose_5fassert_27',['ROSE_ASSERT',['../_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf',1,'ROSE_ASSERT.h']]],
   ['rose_5fassertion_5fabort_28',['ROSE_ASSERTION_ABORT',['../_diagnostics_8h.html#a3c0bcdda3fb38fb7f8ad5723b7c231f4',1,'Diagnostics.h']]],

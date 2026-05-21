@@ -1,5 +1,7 @@
 var NAVTREEINDEX326 =
 {
+"namespacestringify_1_1_sage_interface_1_1_deferred_transformation.html#a5b8c215457b43e045849c9e0368a579e":[15,0,167,82,0,1],
+"namespacestringify_1_1_sage_interface_1_1_deferred_transformation.html#ac75ba0c45703e413d83999837d6df97f":[15,0,167,82,0,0],
 "namespacestringify_1_1_sage_interface_1_1_deferred_transformation.html#acfb205558c27afe648ed82d72ad16629":[15,0,167,82,0,2],
 "namespacestringify_1_1_sawyer.html":[15,0,167,83],
 "namespacestringify_1_1_sawyer_1_1_access.html":[15,0,167,83,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX326 =
 "namespacestringify_1_1_sg_asm_null_instruction.html":[15,0,167,110],
 "namespacestringify_1_1_sg_asm_null_instruction.html#a65408512788898062af3c3cdba441d69":[15,0,167,110,1],
 "namespacestringify_1_1_sg_asm_null_instruction.html#a7f0c71558b8cd7a11f5ffc281f8c5e3a":[15,0,167,110,0],
-"namespacestringify_1_1_sg_asm_null_instruction.html#acd9337af650f500d0fc21ce9570b1ced":[15,0,167,110,2],
-"namespacestringify_1_1_sg_asm_op.html":[15,0,167,111],
-"namespacestringify_1_1_sg_asm_op.html#a66cb2ec0b450145aefb7c1d1c33d94b6":[15,0,167,111,2]
+"namespacestringify_1_1_sg_asm_null_instruction.html#acd9337af650f500d0fc21ce9570b1ced":[15,0,167,110,2]
 };

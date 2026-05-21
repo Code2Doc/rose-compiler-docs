@@ -1,0 +1,6 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_source_location_calc =
+[
+    [ "handle", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_source_location_calc.html#aa3395af847eefcea53248d4f0f994eae", null ],
+    [ "handle", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_source_location_calc.html#af5fb35c1488ecf9fb1f607920111bfb0", null ],
+    [ "handle", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_source_location_calc.html#a5ac3a23ecfa0159b28ac4a283da0bf49", null ]
+];

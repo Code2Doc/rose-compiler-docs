@@ -1,5 +1,7 @@
 var NAVTREEINDEX349 =
 {
+"struct_dep_info_anal_1_1_stmt_ref_dep.html#a4edd8fb81970ed81ed134151b6e8f331":[16,0,533,2,3],
+"struct_dep_info_anal_1_1_stmt_ref_dep.html#abcbfc94edca7b4e7dc3673f3ef2a6233":[16,0,533,2,2],
 "struct_dep_info_anal_1_1_stmt_ref_dep.html#af49b146f71335a94261fbff74db4908e":[16,0,533,2,0],
 "struct_dep_info_anal_1_1_stmt_ref_info.html":[16,0,533,1],
 "struct_dep_info_anal_1_1_stmt_ref_info.html#a02be10a54a2f6211f0774a745a9cbb16":[16,0,533,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX349 =
 "struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#a58bf48ac8c29824eeb7bc0acc2a6e4c5":[16,0,41,7,6],
 "struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#a6e135ff2afc96a6007b0113185c993c4":[15,0,101,7,1],
 "struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#a6e135ff2afc96a6007b0113185c993c4":[16,0,41,7,1],
-"struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#a9183b76e54c7a9e27a4d32f411631ab8":[15,0,101,7,8],
-"struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#a9183b76e54c7a9e27a4d32f411631ab8":[16,0,41,7,8],
-"struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#ab59a7b0bac9fe10adb092e7478d1f381":[15,0,101,7,2]
+"struct_libadalang___r_o_s_e___translation_1_1_ada_identifier.html#a9183b76e54c7a9e27a4d32f411631ab8":[15,0,101,7,8]
 };

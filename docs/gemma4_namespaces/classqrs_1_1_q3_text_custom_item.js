@@ -1,0 +1,37 @@
+var classqrs_1_1_q3_text_custom_item =
+[
+    [ "Placement", "classqrs_1_1_q3_text_custom_item.html#ab776a1a9fc8c4d5a8a13fde54a07059e", [
+      [ "PlaceInline", "classqrs_1_1_q3_text_custom_item.html#ab776a1a9fc8c4d5a8a13fde54a07059ea554372858d56e65402c763a3bb7ce327", null ],
+      [ "PlaceLeft", "classqrs_1_1_q3_text_custom_item.html#ab776a1a9fc8c4d5a8a13fde54a07059eaabe5b834ba3f091ac4363c8115433508", null ],
+      [ "PlaceRight", "classqrs_1_1_q3_text_custom_item.html#ab776a1a9fc8c4d5a8a13fde54a07059eaa7e5768407980f6d1c395ee5fb0de714", null ]
+    ] ],
+    [ "Q3TextCustomItem", "classqrs_1_1_q3_text_custom_item.html#acd71c43cf37eeef447666348e1987af8", null ],
+    [ "~Q3TextCustomItem", "classqrs_1_1_q3_text_custom_item.html#a5e52801ff8a05ffc577709009b2b925c", null ],
+    [ "adjustToPainter", "classqrs_1_1_q3_text_custom_item.html#a5ca0b0008e06a99b0a4effff64785cea", null ],
+    [ "ascent", "classqrs_1_1_q3_text_custom_item.html#aa8c18e8ce41f4d40c57004380a588e86", null ],
+    [ "down", "classqrs_1_1_q3_text_custom_item.html#a68ce392cb9d2595a04fa1a4ddd5a04dc", null ],
+    [ "draw", "classqrs_1_1_q3_text_custom_item.html#ac154a9a8f0ea901253421e7e9361acf9", null ],
+    [ "enter", "classqrs_1_1_q3_text_custom_item.html#ab9a15d5d847a48342939e654740899d3", null ],
+    [ "enterAt", "classqrs_1_1_q3_text_custom_item.html#a820d466480897aea5e755e4b564c2362", null ],
+    [ "geometry", "classqrs_1_1_q3_text_custom_item.html#acfa0901879647c6b3762fcf6b0c8900f", null ],
+    [ "invalidate", "classqrs_1_1_q3_text_custom_item.html#aed09ffa3c16c273c493b4479273bb1f8", null ],
+    [ "isNested", "classqrs_1_1_q3_text_custom_item.html#ab4ccdb3ce804d62ef52487c840d13a74", null ],
+    [ "minimumWidth", "classqrs_1_1_q3_text_custom_item.html#adb940c5f06393f564bdce838bf60ed02", null ],
+    [ "next", "classqrs_1_1_q3_text_custom_item.html#a13865603d66dece18df998b07962c582", null ],
+    [ "ownLine", "classqrs_1_1_q3_text_custom_item.html#ae0628efd4b7736e0636c12951c71d0a4", null ],
+    [ "pageBreak", "classqrs_1_1_q3_text_custom_item.html#aa3070f46996464c43c2e5037b878d152", null ],
+    [ "paragraph", "classqrs_1_1_q3_text_custom_item.html#a006b47f52cf45ad3bc2de8b0ab89af9d", null ],
+    [ "placeInline", "classqrs_1_1_q3_text_custom_item.html#af55995b1844da5e80b245aecc8e216f4", null ],
+    [ "placement", "classqrs_1_1_q3_text_custom_item.html#abd925134ac060fbe77e9f4aee213b2f8", null ],
+    [ "prev", "classqrs_1_1_q3_text_custom_item.html#ade8df2dbf2d15920743f4734f78fb3da", null ],
+    [ "resize", "classqrs_1_1_q3_text_custom_item.html#a6a0796549e84b04b0c59ebd67f9d6a4f", null ],
+    [ "richText", "classqrs_1_1_q3_text_custom_item.html#a4ea1f20c0e52156ba4449ff39a2452ac", null ],
+    [ "setParagraph", "classqrs_1_1_q3_text_custom_item.html#a291fa3ba5e25c99ac00b393629cf0239", null ],
+    [ "up", "classqrs_1_1_q3_text_custom_item.html#a1e893a20de7bd0f3d0ef1a5430b7ff56", null ],
+    [ "height", "classqrs_1_1_q3_text_custom_item.html#a7fa39032f54d2e8bf61e5beb72a4b5ff", null ],
+    [ "parag", "classqrs_1_1_q3_text_custom_item.html#a214899e0922f493201f6495d3176b513", null ],
+    [ "parent", "classqrs_1_1_q3_text_custom_item.html#a8552cccf1279917dac0537bf7d3dbbee", null ],
+    [ "width", "classqrs_1_1_q3_text_custom_item.html#a49a1bd9731e79e3f4f62286de218cac5", null ],
+    [ "xpos", "classqrs_1_1_q3_text_custom_item.html#ad78f145f0a1da08ece5dfdc0387c4a7d", null ],
+    [ "ypos", "classqrs_1_1_q3_text_custom_item.html#a1923890bf97fb5ea857172f4bdf288b7", null ]
+];

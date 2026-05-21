@@ -3,6 +3,7 @@ var namespacecsharp____translator =
     [ "anonymous__namespace_02csharpBuilder_8C_03", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html", [
       [ "as", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html#a1931a199461859c71247386c41a30a70", null ],
       [ "assert_node_type", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html#a9b99a70e1a63ebb97d3e044c5b07309b", null ],
+      [ "assert_node_type", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html#ad126906a34ad8c36104b291fe0f94240", null ],
       [ "assert_valid_ptr", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html#aadf630db4386b1afee250bf51a111342", null ],
       [ "assert_valid_ptr", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html#a44fa6661502e6cff23532cf4efd459ee", null ],
       [ "dummyFileInfo", "namespacecsharp____translator_1_1anonymous____namespace__02csharp_builder__8_c__03.html#ab71e41bb2d1b74726cc426b2263643b8", null ],

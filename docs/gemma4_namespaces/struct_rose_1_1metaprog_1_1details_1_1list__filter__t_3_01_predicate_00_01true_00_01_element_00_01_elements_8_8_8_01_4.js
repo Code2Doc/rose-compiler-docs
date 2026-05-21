@@ -1,0 +1,4 @@
+var struct_rose_1_1metaprog_1_1details_1_1list__filter__t_3_01_predicate_00_01true_00_01_element_00_01_elements_8_8_8_01_4 =
+[
+    [ "list", "struct_rose_1_1metaprog_1_1details_1_1list__filter__t_3_01_predicate_00_01true_00_01_element_00_01_elements_8_8_8_01_4.html#a091d88c09e36d91a89444fc76e94b851", null ]
+];

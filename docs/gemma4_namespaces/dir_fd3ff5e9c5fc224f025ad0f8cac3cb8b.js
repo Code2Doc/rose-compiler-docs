@@ -1,0 +1,25 @@
+var dir_fd3ff5e9c5fc224f025ad0f8cac3cb8b =
+[
+    [ "QRException.C", "_q_r_exception_8_c.html", null ],
+    [ "QRException.h", "_q_r_exception_8h.html", "_q_r_exception_8h" ],
+    [ "QRGroup.C", "_q_r_group_8_c.html", null ],
+    [ "QRGroup.h", "_q_r_group_8h.html", "_q_r_group_8h" ],
+    [ "QRMacros.h", "_q_r_macros_8h.html", "_q_r_macros_8h" ],
+    [ "QRMain.C", "_q_r_main_8_c.html", null ],
+    [ "QRMain.h", "_q_r_main_8h.html", "_q_r_main_8h" ],
+    [ "QRMain_p.C", "_q_r_main__p_8_c.html", null ],
+    [ "QRMain_p.h", "_q_r_main__p_8h.html", "_q_r_main__p_8h" ],
+    [ "qrose.h", "qrose_8h.html", null ],
+    [ "QRPanel.C", "_q_r_panel_8_c.html", null ],
+    [ "QRPanel.h", "_q_r_panel_8h.html", "_q_r_panel_8h" ],
+    [ "QRSpaceWidget.C", "_q_r_space_widget_8_c.html", null ],
+    [ "QRSpaceWidget.h", "_q_r_space_widget_8h.html", "_q_r_space_widget_8h" ],
+    [ "QRTiledWidget.C", "_q_r_tiled_widget_8_c.html", null ],
+    [ "QRTiledWidget.h", "_q_r_tiled_widget_8h.html", "_q_r_tiled_widget_8h" ],
+    [ "QRWidgetAccess.C", "_q_r_widget_access_8_c.html", null ],
+    [ "QRWidgetAccess.h", "_q_r_widget_access_8h.html", "_q_r_widget_access_8h" ],
+    [ "QRWidgetX.cpp", "_q_r_widget_x_8cpp.html", null ],
+    [ "QRWidgetX.h", "_q_r_widget_x_8h.html", "_q_r_widget_x_8h" ],
+    [ "QRWindow.C", "_q_r_window_8_c.html", null ],
+    [ "QRWindow.h", "_q_r_window_8h.html", "_q_r_window_8h" ]
+];

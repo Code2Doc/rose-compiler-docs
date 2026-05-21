@@ -1,5 +1,7 @@
 var NAVTREEINDEX360 =
 {
+"struct_sage_interface_1_1_ada_1_1_type_description.html":[15,0,146,0,9],
+"struct_sage_interface_1_1_ada_1_1_type_description.html":[16,0,61,0,8],
 "struct_sage_interface_1_1_ada_1_1_type_description.html#a03f3d9c2a9fa0e6002e3e1fc7039a133":[15,0,146,0,9,5],
 "struct_sage_interface_1_1_ada_1_1_type_description.html#a03f3d9c2a9fa0e6002e3e1fc7039a133":[16,0,61,0,8,5],
 "struct_sage_interface_1_1_ada_1_1_type_description.html#a0f5584647950f9c0414b5dfbc4a0380c":[15,0,146,0,9,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX360 =
 "struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aa86b2cae00fea1b96ff150b50b66a593":[15,0,146,0,1,6,27],
 "struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aa86b2cae00fea1b96ff150b50b66a593":[16,0,61,0,0,6,27],
 "struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aabb8a016b292a31a5f52fca6754d1932":[15,0,146,0,1,6,18],
-"struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aabb8a016b292a31a5f52fca6754d1932":[16,0,61,0,0,6,18],
-"struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aae702ea5b01dcccd3a7dd1421210625c":[15,0,146,0,1,6,2],
-"struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aae702ea5b01dcccd3a7dd1421210625c":[16,0,61,0,0,6,2]
+"struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_scope_finder.html#aabb8a016b292a31a5f52fca6754d1932":[16,0,61,0,0,6,18]
 };

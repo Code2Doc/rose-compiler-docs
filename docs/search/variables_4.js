@@ -75,7 +75,7 @@ var searchData=
   ['decl_5f_72',['decl_',['../struct_outliner_1_1_result.html#aa6772b2901fb2308f468795cb6830956',1,'Outliner::Result']]],
   ['decl_5fcolor_73',['decl_color',['../structdot_1_1_dot_printer.html#ac3956cc6a8e9c8c26d1ded7616fe424c',1,'dot::DotPrinter']]],
   ['declaration_74',['Declaration',['../union_element___union.html#a5fc4c3c5a67d92ec939346c1541406ee',1,'Element_Union']]],
-  ['declaration_75',['declaration',['../class_attribute_rec.html#afa45c93263de37a6e6621f1405c0672e',1,'AttributeRec']]],
+  ['declaration_75',['declaration',['../class_attribute_rec.html#afa45c93263de37a6e6621f1405c0672e',1,'AttributeRec::declaration'],['../rosebud__8_c_8dox.html#a25375455172128cffe0d2f89867de728',1,'declaration:&#160;rosebud_8C.dox']]],
   ['declaration_5finterface_5flist_76',['Declaration_Interface_List',['../struct_declaration___struct.html#ad495e258d8158028d655367b5e1c3615',1,'Declaration_Struct']]],
   ['declaration_5fkind_77',['Declaration_Kind',['../struct_declaration___struct.html#aaf241096c5ed52f26cf47b4791e21cff',1,'Declaration_Struct']]],
   ['declaration_5fmemoryfootprint_78',['declaration_memoryFootprint',['../class_r_o_s_e___statistics_1_1_ast_node_memory_pool_statistics.html#a86b1969aeb65bf9952efab80efdd822a',1,'ROSE_Statistics::AstNodeMemoryPoolStatistics']]],

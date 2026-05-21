@@ -1,0 +1,4 @@
+var struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_statement_8_c_03_1_1_dbg_recursion_error =
+[
+    [ "base", "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_statement_8_c_03_1_1_dbg_recursion_error.html#a75a266c59494471bcb873b321c7299d8", null ]
+];

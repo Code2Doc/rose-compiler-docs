@@ -1,0 +1,28 @@
+var classcsharp_builder_p_i_n_v_o_k_e =
+[
+    [ "SWIGExceptionHelper", "classcsharp_builder_p_i_n_v_o_k_e_1_1_s_w_i_g_exception_helper.html", "classcsharp_builder_p_i_n_v_o_k_e_1_1_s_w_i_g_exception_helper" ],
+    [ "SWIGPendingException", "classcsharp_builder_p_i_n_v_o_k_e_1_1_s_w_i_g_pending_exception.html", "classcsharp_builder_p_i_n_v_o_k_e_1_1_s_w_i_g_pending_exception" ],
+    [ "SWIGStringHelper", "classcsharp_builder_p_i_n_v_o_k_e_1_1_s_w_i_g_string_helper.html", "classcsharp_builder_p_i_n_v_o_k_e_1_1_s_w_i_g_string_helper" ],
+    [ "csharpBuilderPINVOKE", "classcsharp_builder_p_i_n_v_o_k_e.html#a71ecb101ab34b6b5317de164bcb00f12", null ],
+    [ "basicFinalChecks", "classcsharp_builder_p_i_n_v_o_k_e.html#ae3e54fb53752e880df98dffaf2d91c4a", null ],
+    [ "beginSeq", "classcsharp_builder_p_i_n_v_o_k_e.html#afb359580e6aa1f5ab2639ae0322f3ff5", null ],
+    [ "binary", "classcsharp_builder_p_i_n_v_o_k_e.html#a3fa71db0d22963c21f70701b4aecd73d", null ],
+    [ "classDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#a17cafb7a92db5ec9207c78df7492c827", null ],
+    [ "closeSeq", "classcsharp_builder_p_i_n_v_o_k_e.html#af6f8d91770d5c73b16498a9478e3154f", null ],
+    [ "helloFromCxx", "classcsharp_builder_p_i_n_v_o_k_e.html#a1c9bbe4c10c7f2748bc6e85333e153df", null ],
+    [ "initVarParamDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#aed53b877c166fc9d67daabc2632a5635", null ],
+    [ "literal", "classcsharp_builder_p_i_n_v_o_k_e.html#a0acd1e1c8cf4e99ad1bdb74529371415", null ],
+    [ "methodDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#ac09df3e0d19c3d811a3636ef18e746c2", null ],
+    [ "name", "classcsharp_builder_p_i_n_v_o_k_e.html#aa96f44b5e8a7c3d404409dd7bb31012e", null ],
+    [ "paramDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#adada082fdeaac76705f2bae946bdeaef", null ],
+    [ "predefinedType", "classcsharp_builder_p_i_n_v_o_k_e.html#a1b1443679346d73b7c96a3c4fb7ad5f8", null ],
+    [ "refFunDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#a197c15e74724b0845c142293d861413d", null ],
+    [ "refVarParamDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#afe945e4e88c7f3ebd23030ca50fc8f4c", null ],
+    [ "returnStmt", "classcsharp_builder_p_i_n_v_o_k_e.html#a28d9fc83e23a467e036f2fdcf3f0e3d1", null ],
+    [ "stageMethodDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#a4d5751e013240ca3cb2d115a9ea677e4", null ],
+    [ "usingDirective", "classcsharp_builder_p_i_n_v_o_k_e.html#abe2b507a536aa2c01e3bad846c49a002", null ],
+    [ "valueInitializer", "classcsharp_builder_p_i_n_v_o_k_e.html#a2237ee2bb858ff69937498ab31767e35", null ],
+    [ "varDecl", "classcsharp_builder_p_i_n_v_o_k_e.html#a4f081480a1d705cc23caf6fbe0a2283f", null ],
+    [ "swigExceptionHelper", "classcsharp_builder_p_i_n_v_o_k_e.html#a9f38fb840fd7c8c81a1a8c76b034d3ba", null ],
+    [ "swigStringHelper", "classcsharp_builder_p_i_n_v_o_k_e.html#aeeffb146bb222b4e3737a53a3654dc1a", null ]
+];

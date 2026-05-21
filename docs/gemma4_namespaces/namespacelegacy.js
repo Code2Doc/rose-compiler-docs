@@ -1,0 +1,26 @@
+var namespacelegacy =
+[
+    [ "PRE", "namespacelegacy_1_1_p_r_e.html", "namespacelegacy_1_1_p_r_e" ],
+    [ "ScopeSetter", "structlegacy_1_1_scope_setter.html", "structlegacy_1_1_scope_setter" ],
+    [ "VarRefBuilder", "structlegacy_1_1_var_ref_builder.html", "structlegacy_1_1_var_ref_builder" ],
+    [ "InitNameCloner", "structlegacy_1_1_init_name_cloner.html", "structlegacy_1_1_init_name_cloner" ],
+    [ "SageInserter", "structlegacy_1_1_sage_inserter.html", "structlegacy_1_1_sage_inserter" ],
+    [ "ExpressionComputedInVisitor", "classlegacy_1_1_expression_computed_in_visitor.html", "classlegacy_1_1_expression_computed_in_visitor" ],
+    [ "ExpressionTreeEqualTo", "classlegacy_1_1_expression_tree_equal_to.html", "classlegacy_1_1_expression_tree_equal_to" ],
+    [ "ReplaceExpressionWithVarrefVisitor", "classlegacy_1_1_replace_expression_with_varref_visitor.html", "classlegacy_1_1_replace_expression_with_varref_visitor" ],
+    [ "FindExpressionsVisitor", "classlegacy_1_1_find_expressions_visitor.html", "classlegacy_1_1_find_expressions_visitor" ],
+    [ "DoPreOnEachFunctionVisitor", "classlegacy_1_1_do_pre_on_each_function_visitor.html", "classlegacy_1_1_do_pre_on_each_function_visitor" ],
+    [ "CfgConfig", "classlegacy_1_1_cfg_config.html", "classlegacy_1_1_cfg_config" ],
+    [ "_append", "namespacelegacy.html#a0417b8b70b2b747a870c15ae98d9d5df", null ],
+    [ "_append", "namespacelegacy.html#a5412ce7d317e6237fb903787b4d21786", null ],
+    [ "accumulate_neighbors", "namespacelegacy.html#aca63b5d15ac300fd4f2a718d4bebfa7d", null ],
+    [ "accumulate_neighbors", "namespacelegacy.html#a36a0b513dd59ee54e218bdf95d499d2d", null ],
+    [ "anyOfListPotentiallyModifiedIn", "namespacelegacy.html#a6d58b33cddce69badf5d9ae3095ca185", null ],
+    [ "anyOfListPotentiallyModifiedIn", "namespacelegacy.html#a1eea4b16b0a3c076b5fea279bdc8a61b", null ],
+    [ "cloneNode", "namespacelegacy.html#ab0f5f41155b0d4fa6a82b4052bcb8ed4", null ],
+    [ "cloneNode", "namespacelegacy.html#a76d13b4e06263e9784c4c255ed3abf67", null ],
+    [ "countComputationsOfExpressionIn", "namespacelegacy.html#a75d1d184c4b2a2d7aeb316d2fb06c36a", null ],
+    [ "expressionComputedIn", "namespacelegacy.html#aad1a4a76d9ba03ea4bc976ab25eab011", null ],
+    [ "sage_inserter", "namespacelegacy.html#a7d1c2d620a2d9f63b2d85be98a4aeab3", null ],
+    [ "sage_inserter", "namespacelegacy.html#ad01c0fbd67ecc2ba3e479d910dfc762a", null ]
+];

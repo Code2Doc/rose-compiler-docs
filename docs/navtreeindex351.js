@@ -1,5 +1,7 @@
 var NAVTREEINDEX351 =
 {
+"struct_libadalang___r_o_s_e___translation_1_1_type_data_t.html#a488685379bd10a7ac1d14c3b41c94be2":[16,0,41,17,5],
+"struct_libadalang___r_o_s_e___translation_1_1_type_data_t.html#a4bafb3af83c58af15db155955dcb6506":[15,0,101,17,12],
 "struct_libadalang___r_o_s_e___translation_1_1_type_data_t.html#a4bafb3af83c58af15db155955dcb6506":[16,0,41,17,12],
 "struct_libadalang___r_o_s_e___translation_1_1_type_data_t.html#a4f7f2984213dcdd38ffe438078f700bc":[15,0,101,17,2],
 "struct_libadalang___r_o_s_e___translation_1_1_type_data_t.html#a4f7f2984213dcdd38ffe438078f700bc":[16,0,41,17,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX351 =
 "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#a783c5351f555c46a056bbe8e983e93d6":[16,0,41,2,4,11],
 "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#a83a4afa2b1e806bb24a546c6bc62d359":[15,0,101,2,4,13],
 "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#a83a4afa2b1e806bb24a546c6bc62d359":[16,0,41,2,4,13],
-"struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#a9e116116bbc7d3dc5fad17e9dcf5648f":[15,0,101,2,4,1],
-"struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#a9e116116bbc7d3dc5fad17e9dcf5648f":[16,0,41,2,4,1],
-"struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#aa0f2039d90673223b94b880436211a2f":[15,0,101,2,4,7]
+"struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03_1_1_rose_requires_scope_qual.html#a9e116116bbc7d3dc5fad17e9dcf5648f":[15,0,101,2,4,1]
 };

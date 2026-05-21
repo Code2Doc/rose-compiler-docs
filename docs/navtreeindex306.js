@@ -1,5 +1,6 @@
 var NAVTREEINDEX306 =
 {
+"namespace_sg_node_helper.html#a1f7a987a45ccf00deb962132ab1f48cb":[15,0,156,50],
 "namespace_sg_node_helper.html#a1fff9ff98176e3ef4f22724b894b4826":[15,0,156,80],
 "namespace_sg_node_helper.html#a248afd367ff767cd63d8572be48389bd":[15,0,156,106],
 "namespace_sg_node_helper.html#a2a16f12354b4c388a5d2e98050155adf":[15,0,156,96],
@@ -248,6 +249,5 @@ var NAVTREEINDEX306 =
 "namespace_vx_util_funcs.html#a5c94883f58169a8978501d870eb5aa8d":[15,0,177,14],
 "namespace_vx_util_funcs.html#a651aba7bf1d0433c57f12c25586d92ac":[15,0,177,20],
 "namespace_vx_util_funcs.html#a6c307f3dfe58993d018ce5803bf3d518":[15,0,177,18],
-"namespace_vx_util_funcs.html#a6de70bae9954fc723be3eac25b4af810":[15,0,177,11],
-"namespace_vx_util_funcs.html#a7e9dabc95d13ae0603927822cee0f636":[15,0,177,29]
+"namespace_vx_util_funcs.html#a6de70bae9954fc723be3eac25b4af810":[15,0,177,11]
 };

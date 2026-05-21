@@ -1,0 +1,5 @@
+var struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_ada_maker_8_c_03_1_1_task_decl_info_result =
+[
+    [ "name", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_ada_maker_8_c_03_1_1_task_decl_info_result.html#adc6d97e2ad4897a82b8d0d3f69e99dd1", null ],
+    [ "spec", "struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_ada_maker_8_c_03_1_1_task_decl_info_result.html#aa156b34a9a3605d05a77baacc885e39c", null ]
+];

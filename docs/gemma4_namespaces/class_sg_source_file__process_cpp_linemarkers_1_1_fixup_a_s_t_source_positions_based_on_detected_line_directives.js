@@ -1,0 +1,6 @@
+var class_sg_source_file__process_cpp_linemarkers_1_1_fixup_a_s_t_source_positions_based_on_detected_line_directives =
+[
+    [ "FixupASTSourcePositionsBasedOnDetectedLineDirectives", "class_sg_source_file__process_cpp_linemarkers_1_1_fixup_a_s_t_source_positions_based_on_detected_line_directives.html#a3e5e3a3cac84fbfbee45a8660e3451f0", null ],
+    [ "visit", "class_sg_source_file__process_cpp_linemarkers_1_1_fixup_a_s_t_source_positions_based_on_detected_line_directives.html#a511772670e8e8e89f424f873eb115310", null ],
+    [ "filenameIdList", "class_sg_source_file__process_cpp_linemarkers_1_1_fixup_a_s_t_source_positions_based_on_detected_line_directives.html#a7724c2e56109593ad681cf0ffab690ec", null ]
+];

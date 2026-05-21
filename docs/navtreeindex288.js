@@ -1,5 +1,6 @@
 var NAVTREEINDEX288 =
 {
+"namespace_rose.html#a92e058a1f685e0d0e0bed210a7ac5634":[15,0,128,2759],
 "namespace_rose.html#a92eba253566f9619f6600427c0f37c4a":[15,0,128,290],
 "namespace_rose.html#a93212f4623e8336dc55756c33da4b9a5":[15,0,128,817],
 "namespace_rose.html#a933345dd2c1f0d384194d21a5a6b3fdb":[15,0,128,2586],
@@ -248,6 +249,5 @@ var NAVTREEINDEX288 =
 "namespace_rose.html#aa9dfbc3daffe28ae22c421b3e29f7811":[15,0,128,1182],
 "namespace_rose.html#aa9fb498ff2a2986919e16f1645bb6235":[15,0,128,1890],
 "namespace_rose.html#aaa273885b39426333f36ff39ac3b5bf0":[15,0,128,2641],
-"namespace_rose.html#aaa369f10037597f4ed4ebb0eff6f2ca2":[15,0,128,2649],
-"namespace_rose.html#aaa4a89f303f85ec25c662550e5a62e03":[15,0,128,975]
+"namespace_rose.html#aaa369f10037597f4ed4ebb0eff6f2ca2":[15,0,128,2649]
 };

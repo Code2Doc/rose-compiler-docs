@@ -1,0 +1,5 @@
+var _predicate_8h =
+[
+    [ "Rose::StringUtility::isContainedIn", "namespace_rose_1_1_string_utility.html#a326eb78c80f76baa38b74de200f74d05", null ],
+    [ "Rose::StringUtility::isLineTerminated", "namespace_rose_1_1_string_utility.html#a09d17e008a92a61cff306b8a2eff4a60", null ]
+];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX324 =
 {
+"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a839193006596f3b6a81e8f9819a95290":[15,0,167,76,1,6,7],
+"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a90c8e2cbda463876781d95b69a6be475":[15,0,167,76,1,6,5],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#ab314556fa846d24fe3374c660aceee21":[15,0,167,76,1,6,4],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#af5cdd5d144ee183cda63334c262d9b94":[15,0,167,76,1,6,2],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html":[15,0,167,76,1,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX324 =
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_basic_block_callback.html#a61591e8c30aa09789552249da589203e":[15,0,167,76,1,20,1,1],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_basic_block_callback.html#aadd0d616d9e5eb8deae2a270b60211d7":[15,0,167,76,1,20,1,2],
 "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_basic_block_callback.html#af6d2e0ec7446df163e0972b8adfc08d1":[15,0,167,76,1,20,1,0],
-"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_data_flow.html":[15,0,167,76,1,20,2],
-"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_data_flow_1_1_df_cfg_vertex.html":[15,0,167,76,1,20,2,0],
-"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_data_flow_1_1_df_cfg_vertex.html#a37a9cee16f684895b896cae870608726":[15,0,167,76,1,20,2,0,1]
+"namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2_1_1_data_flow.html":[15,0,167,76,1,20,2]
 };

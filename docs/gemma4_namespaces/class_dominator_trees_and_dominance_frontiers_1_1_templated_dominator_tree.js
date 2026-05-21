@@ -1,0 +1,27 @@
+var class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree =
+[
+    [ "TemplatedDominatorTree", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a2d979314380a666f3d93db31137715fb", null ],
+    [ "calculateImmediateDominators", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a416d2d86323c1ab5b0c55a53426fc241", null ],
+    [ "depthFirstSearch", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#ac1e06b93bbd0ec8ec6ed8a582fb3fc52", null ],
+    [ "dominates", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#ad627d6671ffcd4dac7eda9a55484ebe1", null ],
+    [ "dominates", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a7c9cb535c26fff1e61d4eba941ac2dfd", null ],
+    [ "eval", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a1d359ab5ec6a1d34b00a679a8454743a", null ],
+    [ "getCFGNodeFromID", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#aa805047deae5ac13d354c34cbc35093d", null ],
+    [ "getDirectDominatedSet", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#adbeb628042f8ce70699842677654b615", null ],
+    [ "getID", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#ae00493ab32387967782f59b947e80064", null ],
+    [ "getImDomID", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a1e290891e48d85428f21aae97edd852e", null ],
+    [ "getImDomID", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a12f267de816f6ec17b033f766814bcf4", null ],
+    [ "getSize", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a02fc20c93aacdffa960cb32a00d1f747", null ],
+    [ "init", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a5d535a158f4fa7d7ad74b2d21139fcc0", null ],
+    [ "link", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a1fc945da6f937540b5e2888a1c09ce7b", null ],
+    [ "printInfo", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a5d04d2a25997fda46dd399313ce075be", null ],
+    [ "writeDot", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a1b232c04a1374ea9d61283d527d530e2", null ],
+    [ "ancestor", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a83a718b94f968b0874ac917b88448c49", null ],
+    [ "buckets", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a8c6de715d5bb64b16eaf6aef54a87966", null ],
+    [ "cfgRoot", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a1f3a540c4fdf3147786aeccc3ff14b76", null ],
+    [ "dfsParent", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#a0c9441a517750fc2b587a03afb5521b3", null ],
+    [ "idom", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#af7780d5c941a8c7de197a303d2ee6fc9", null ],
+    [ "idToNode", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#aad2486e54d2a479fbff22406c93993d4", null ],
+    [ "nodeToIdMap", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#ad81997812409d90f8b19784d6abedead", null ],
+    [ "semi", "class_dominator_trees_and_dominance_frontiers_1_1_templated_dominator_tree.html#ac5bb6da49efb4a811d766cd54038afd5", null ]
+];

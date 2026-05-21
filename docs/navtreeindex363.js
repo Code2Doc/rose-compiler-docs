@@ -1,5 +1,7 @@
 var NAVTREEINDEX363 =
 {
+"struct_sawyer_1_1_command_line_1_1_lexical_cast_3_01_optional_3_01_t_01_4_01_4.html#a81a90eb7183085f9b18b5d369e0e9bac":[15,0,150,4,18,0],
+"struct_sawyer_1_1_command_line_1_1_lexical_cast_3_01_optional_3_01_t_01_4_01_4.html#a81a90eb7183085f9b18b5d369e0e9bac":[16,0,64,2,18,0],
 "struct_sawyer_1_1_command_line_1_1_lexical_cast_3_01_sawyer_1_1_container_1_1_map_3_01std_1_1string_00_01_t_01_4_01_4.html":[15,0,150,4,20],
 "struct_sawyer_1_1_command_line_1_1_lexical_cast_3_01_sawyer_1_1_container_1_1_map_3_01std_1_1string_00_01_t_01_4_01_4.html":[16,0,64,2,20],
 "struct_sawyer_1_1_command_line_1_1_lexical_cast_3_01_sawyer_1_1_container_1_1_map_3_01std_1_1string_00_01_t_01_4_01_4.html#adeade09f67cbcde76afac5374769ec82":[15,0,150,4,20,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX363 =
 "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html":[15,0,150,5,2,16],
 "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html":[16,0,64,3,2,16],
 "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html#a462ed6ccc628354e9357b0aedfd2ddb5":[15,0,150,5,2,16,1],
-"struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html#a462ed6ccc628354e9357b0aedfd2ddb5":[16,0,64,3,2,16,1],
-"struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html#a5fbf9608e04d350c9c8b4b174718b7e2":[15,0,150,5,2,16,0],
-"struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html#a5fbf9608e04d350c9c8b4b174718b7e2":[16,0,64,3,2,16,0]
+"struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html#a462ed6ccc628354e9357b0aedfd2ddb5":[16,0,64,3,2,16,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX377 =
 {
+"structlegacy_1_1_init_name_cloner.html":[15,0,98,3],
+"structlegacy_1_1_init_name_cloner.html":[16,0,40,3],
 "structlegacy_1_1_init_name_cloner.html#a0beee14ae82818f818ca1e1aad2348aa":[15,0,98,3,0],
 "structlegacy_1_1_init_name_cloner.html#a0beee14ae82818f818ca1e1aad2348aa":[16,0,40,3,0],
 "structlegacy_1_1_init_name_cloner.html#a2d1c2f77f72d27818364a0ca1a0d8dae":[15,0,98,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX377 =
 "structnlohmann_1_1detail_1_1is__compatible__string__type.html":[16,0,44,0,50],
 "structnlohmann_1_1detail_1_1is__compatible__string__type__impl.html":[15,0,108,1,49],
 "structnlohmann_1_1detail_1_1is__compatible__string__type__impl.html":[16,0,44,0,48],
-"structnlohmann_1_1detail_1_1is__compatible__string__type__impl_3_01_basic_json_type_00_01_compat6590904cab40fc73f430e4c7518179a2.html":[15,0,108,1,50],
-"structnlohmann_1_1detail_1_1is__compatible__string__type__impl_3_01_basic_json_type_00_01_compat6590904cab40fc73f430e4c7518179a2.html":[16,0,44,0,49],
-"structnlohmann_1_1detail_1_1is__compatible__string__type__impl_3_01_basic_json_type_00_01_compat6590904cab40fc73f430e4c7518179a2.html#adac1e17a2ddf9ac94be736e96e8943a9":[15,0,108,1,50,0]
+"structnlohmann_1_1detail_1_1is__compatible__string__type__impl_3_01_basic_json_type_00_01_compat6590904cab40fc73f430e4c7518179a2.html":[15,0,108,1,50]
 };
