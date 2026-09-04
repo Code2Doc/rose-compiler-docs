@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Traverses the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> to identify and repair null pointer references. </p>
+<p>Fixup specific pointers in the AST that we would like to not have be NULL.</p>
 <p>This function performs a traversal of the provided AST node and its descendants to locate and fix instances of null pointers within the tree structure. It utilizes a specialized traversal class, <a class="el" href="class_fixup_null_pointers_in_a_s_t.html" title="Fixup pointers in the AST that user&#39;s may have left as NULL, but should not be NULL.">FixupNullPointersInAST</a>, to execute the repair logic. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy to ensure that parent nodes are processed before their children, maintaining structural consistency during the fixup process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also includes internal performance monitoring via the <a class="el" href="class_timing_performance.html">TimingPerformance</a> class to track the duration of the fixup operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

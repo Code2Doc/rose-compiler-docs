@@ -103,7 +103,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:acce59c19d0a1a77b5f7c94a473338646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively notifies the AST interface of a tree structure copy operation.  <br /></td></tr>
 <tr class="memitem:ae6a319f87a4820ddfcb138f42618f8c6" id="r_ae6a319f87a4820ddfcb138f42618f8c6"><td class="memItemLeft"><a class="el" href="class_ast_node_ptr.html">AstNodePtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae6a319f87a4820ddfcb138f42618f8c6">GetFunctionDecl</a> (const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;_s)</td></tr>
 <tr class="memdesc:ae6a319f87a4820ddfcb138f42618f8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the function declaration node associated with a given AST node.  <br /></td></tr>
-<tr class="memitem:ab6e1238b471a1fb6c52b3772a0629e03" id="r_ab6e1238b471a1fb6c52b3772a0629e03"><td class="memItemLeft">SgFunctionSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#ab6e1238b471a1fb6c52b3772a0629e03">CreateMinMaxFunction</a> (<a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> *<a class="el" href="namespaceimpl.html">impl</a>, const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, int numOfPars, bool isMin)</td></tr>
+<tr class="memitem:ab6e1238b471a1fb6c52b3772a0629e03" id="r_ab6e1238b471a1fb6c52b3772a0629e03"><td class="memItemLeft">SgFunctionSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#ab6e1238b471a1fb6c52b3772a0629e03">CreateMinMaxFunction</a> (<a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> *<a class="el" href="namespaceimpl.html">impl</a>, const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, int numOfPars, bool isMin)</td></tr>
 <tr class="memdesc:ab6e1238b471a1fb6c52b3772a0629e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) representation of a min or max function.  <br /></td></tr>
 <tr class="memitem:a0ae5950e9f7f353a8ebbabe96750a510" id="r_a0ae5950e9f7f353a8ebbabe96750a510"><td class="memItemLeft"><a class="el" href="class_ast_node_ptr.html">AstNodePtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0ae5950e9f7f353a8ebbabe96750a510">GetOverloadOperatorOpd1</a> (const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;_exp)</td></tr>
 <tr class="memdesc:a0ae5950e9f7f353a8ebbabe96750a510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the first operand of an overloaded operator expression.  <br /></td></tr>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>flatten</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>flatten</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,7 +214,7 @@ If the source is a basic block and flattening is disabled, the function checks f
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="namespaceimpl.html" title="Auto-generated documentation for the impl namespace.">impl</a></td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> instance used to manage the creation of new functions and types. </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier to be assigned to the newly created function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier to be assigned to the newly created function. </td></tr>
     <tr><td class="paramname">numOfPars</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of integer parameters to include in the function signature. </td></tr>
     <tr><td class="paramname">isMin</td><td><a class="el" href="class_a.html">A</a> boolean flag where true indicates the function should compute the minimum value, and false indicates it should compute the maximum.</td></tr>
   </table>
@@ -322,6 +322,7 @@ If the source is a basic block and flattening is disabled, the function checks f
 </div><div class="memdoc">
 
 <p>Converts an <a class="el" href="class_sg_type.html">SgType</a> object into its string representation. </p>
+<p>returns the name of type t</p>
 <p>This function performs a recursive traversal of an <a class="el" href="class_sg_type.html">SgType</a> object to generate a human-readable string that represents the type's name. It handles a wide variety of type variants including primitive types (int, char, float, etc.), complex types (pointers, references, arrays, tuples, matrices), and language-specific constructs (C99 _Bool, C++ templates, and OpenCL modifiers). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a switch statement based on the type variant and recursively calls itself for nested or derived types such as pointers, function signatures, and member pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -562,6 +563,7 @@ For certain types like T_BOOL, the output string may vary depending on whether t
 </div><div class="memdoc">
 
 <p>Performs a traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) using a specified operation. </p>
+<p>Traverse an entire AST, where $op$ is invoked on each AST node to gather information.</p>
 <p>This function initiates a traversal process over the AST starting from a given root node. It wraps the provided root pointer into an internal implementation type and delegates the actual traversal logic to the <a class="el" href="class_sage_process_ast_node.html">SageProcessAstNode</a> utility. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal follows the order specified by the traversal type parameter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -627,6 +629,7 @@ For certain types like T_BOOL, the output string may vary depending on whether t
 </div><div class="memdoc">
 
 <p>Performs a transformation traversal on an AST node using a provided operation. </p>
+<p>Traverse and transform an entire AST, where $op$ is invoked to transform each sub-Tree.</p>
 <p>This function executes a tree traversal over the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from a given node. Depending on the specified traversal visit type, it performs either a pre-order or post-order transformation traversal. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes template-based transformation traversals (<a class="el" href="class_perform_pre_transformation_traversal.html">PerformPreTransformationTraversal</a> or <a class="el" href="class_perform_post_transformation_traversal.html">PerformPostTransformationTraversal</a>) to apply the provided operation function pointer to the nodes in the tree.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

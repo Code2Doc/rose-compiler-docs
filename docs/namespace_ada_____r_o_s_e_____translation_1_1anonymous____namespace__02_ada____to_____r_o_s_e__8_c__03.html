@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a68ed6108dc9d9168627621f6c7a02454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches an AST element to its specific handler based on its kind.  <br /></td></tr>
 <tr class="memitem:ac6aaa96790471a31dee77c071f6a5d5e" id="r_ac6aaa96790471a31dee77c071f6a5d5e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac6aaa96790471a31dee77c071f6a5d5e">handleElementID</a> (<a class="el" href="a__nodes_8h.html#ab3d9e22df7654d0ab00fdad275c9e77e">Element_ID</a> id, AstContext ctx, bool isPrivate=false)</td></tr>
 <tr class="memdesc:ac6aaa96790471a31dee77c071f6a5d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes an element based on its unique identifier.  <br /></td></tr>
-<tr class="memitem:a889e947c2bcc9467a23d3181bf02b1a9" id="r_a889e947c2bcc9467a23d3181bf02b1a9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a889e947c2bcc9467a23d3181bf02b1a9">handleUnit</a> (<a class="el" href="a__nodes_8h.html#ad6d8d8dadaaef3c87d27af48eb8ca849">Unit_Struct</a> &amp;adaUnit, AstContext <a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd">context</a>)</td></tr>
+<tr class="memitem:a889e947c2bcc9467a23d3181bf02b1a9" id="r_a889e947c2bcc9467a23d3181bf02b1a9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a889e947c2bcc9467a23d3181bf02b1a9">handleUnit</a> (<a class="el" href="a__nodes_8h.html#ad6d8d8dadaaef3c87d27af48eb8ca849">Unit_Struct</a> &amp;adaUnit, AstContext <a class="el" href="qnfa_8cpp.html#adeb7e153558d24763f5215622f4469bd">context</a>)</td></tr>
 <tr class="memdesc:a889e947c2bcc9467a23d3181bf02b1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes an Ada unit and populates the AST context.  <br /></td></tr>
 <tr class="memitem:acd308c2420c506ada1d1c4c3e95fe30b" id="r_acd308c2420c506ada1d1c4c3e95fe30b"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#acd308c2420c506ada1d1c4c3e95fe30b">operator&lt;&lt;</a> (std::ostream &amp;os, PrnUnitHeader obj)</td></tr>
 <tr class="memdesc:acd308c2420c506ada1d1c4c3e95fe30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the stream insertion operator to print the details of a PrnUnitHeader object.  <br /></td></tr>
@@ -761,7 +761,7 @@ If <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> set of constant pointers to <a class="el" href="class_sg_type.html">SgType</a> objects representing the collection of expected types identified during the dispatch process.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">call</span> parameter must not be null. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains the types resolved via the dispatch mechanism starting from the parent of the input <span class="tt">call</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on <span class="tt"><a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> and a lambda-based handler to perform a tree traversal. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on <span class="tt"><a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> and a lambda-based handler to perform a tree traversal. </dd></dl>
 
 </div>
 </div>
@@ -796,7 +796,7 @@ If <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> set of pointers to <a class="el" href="class_sg_type.html">SgType</a> objects representing the valid expected types for the call.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">call</span> pointer must not be null. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a non-empty set if valid overloads are found within the call context, otherwise returns an empty set.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt"><a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> to perform a tree traversal, which may involve visiting multiple nodes in the syntax tree hierarchy. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt"><a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> to perform a tree traversal, which may involve visiting multiple nodes in the syntax tree hierarchy. </dd></dl>
 
 </div>
 </div>
@@ -998,7 +998,7 @@ Certain element kinds (e.g., <span class="tt"><a class="el" href="a__nodes_8h.ht
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">adaUnit</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="a__nodes_8h.html#ad6d8d8dadaaef3c87d27af48eb8ca849">Unit_Struct</a> representing the Ada unit to be processed. </td></tr>
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current AstContext used for tracking the AST state, scope, and pragmas.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa_8cpp.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current AstContext used for tracking the AST state, scope, and pragmas.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1734,7 +1734,7 @@ If an empty overload set is encountered, a warning is logged via logWarn(). </dd
 <dl class="section return"><dt>Returns</dt><dd>True if the scope of the function call expression and the scope of the provided type are canonically identical; false otherwise.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function expression <span class="tt">exp</span> must contain a valid function reference that can be cast to <span class="tt">SgFunctionRefExp*</span>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the state of <span class="tt">exp</span> or <span class="tt">ty</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="namespace_sage_interface_1_1_ada.html" title="Auto-generated documentation for the SageInterface::Ada namespace.">si::Ada</a></span> utility functions for operator name conversion and scope determination. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="namespace_sage_interface_1_1_ada.html" title="Contains Ada-specific functionality.">si::Ada</a></span> utility functions for operator name conversion and scope determination. </dd></dl>
 
 </div>
 </div>

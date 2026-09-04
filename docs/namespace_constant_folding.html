@@ -106,12 +106,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3174425188cbd997c932c5771475b7b5" id="r_a3174425188cbd997c932c5771475b7b5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3174425188cbd997c932c5771475b7b5">constantFoldingOptimization</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, bool internalTestingAgainstFrontend=false)</td></tr>
-<tr class="memdesc:a3174425188cbd997c932c5771475b7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the external interface of constant folding:  <br /></td></tr>
-<tr class="memitem:af0b479509c0d0571672fd9c44cbbacaa" id="r_af0b479509c0d0571672fd9c44cbbacaa"><td class="memItemLeft">SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#af0b479509c0d0571672fd9c44cbbacaa">returnConstantFoldedValueExpression</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, bool internalTestingAgainstFrontend)</td></tr>
-<tr class="memdesc:af0b479509c0d0571672fd9c44cbbacaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs constant folding on a given AST node to reduce it to a constant value expression.  <br /></td></tr>
-<tr class="memitem:ae51a91340099755a171b32df092c6183" id="r_ae51a91340099755a171b32df092c6183"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae51a91340099755a171b32df092c6183">constantUnFoldingTest</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:ae51a91340099755a171b32df092c6183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs tests for constant un-folding by generating complex constant expressions.  <br /></td></tr>
+<tr class="memitem:a2ff78c6bafd715e6313f33ceea064fd1" id="r_a2ff78c6bafd715e6313f33ceea064fd1"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a2ff78c6bafd715e6313f33ceea064fd1">constantFoldingOptimization</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, bool internalTestingAgainstFrontend=false)</td></tr>
+<tr class="memdesc:a2ff78c6bafd715e6313f33ceea064fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the external interface of constant folding:  <br /></td></tr>
+<tr class="memitem:a2da516c096656e47be67041bdc8a75ef" id="r_a2da516c096656e47be67041bdc8a75ef"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a2da516c096656e47be67041bdc8a75ef">returnConstantFoldedValueExpression</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, bool internalTestingAgainstFrontend=false)</td></tr>
+<tr class="memdesc:a2da516c096656e47be67041bdc8a75ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs constant folding on a given AST node to reduce it to a constant value expression.  <br /></td></tr>
+<tr class="memitem:a36ff549425c5348324eace7a71d80047" id="r_a36ff549425c5348324eace7a71d80047"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a36ff549425c5348324eace7a71d80047">constantUnFoldingTest</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a36ff549425c5348324eace7a71d80047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs tests for constant un-folding by generating complex constant expressions.  <br /></td></tr>
 <tr class="memitem:a241d46c74b9584edd03dd094f5ff4eca" id="r_a241d46c74b9584edd03dd094f5ff4eca"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
 <tr class="memitem:a241d46c74b9584edd03dd094f5ff4eca template"><td class="memItemLeft">T1&#160;</td><td class="memItemRight"><a class="el" href="#a241d46c74b9584edd03dd094f5ff4eca">cf_get_value_t</a> (T2 *sg_value_exp)</td></tr>
 <tr class="memdesc:a241d46c74b9584edd03dd094f5ff4eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the value from an expression object.  <br /></td></tr>
@@ -129,6 +129,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab063b68d227cdd43ab354921ec60479f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the result of applying a unary operator to a given value.  <br /></td></tr>
 <tr class="memitem:a7030d10f008c4b990e62ed53e1a65524" id="r_a7030d10f008c4b990e62ed53e1a65524"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
 <tr class="memitem:a7030d10f008c4b990e62ed53e1a65524 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a7030d10f008c4b990e62ed53e1a65524">buildResultValueExp_t</a> (SgBinaryOp *binaryOperator, SgValueExp *lhsValue, SgValueExp *rhsValue)</td></tr>
+<tr class="memitem:a04ceec025f1c0f996868f8795a7f66d6" id="r_a04ceec025f1c0f996868f8795a7f66d6"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:a04ceec025f1c0f996868f8795a7f66d6 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a04ceec025f1c0f996868f8795a7f66d6">buildResultValueExp_u_t</a> (SgUnaryOp *unaryOperator, SgValueExp *theValue)</td></tr>
+<tr class="memitem:aaefb77d1a8151d54d92250d4a11c6da2" id="r_aaefb77d1a8151d54d92250d4a11c6da2"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:aaefb77d1a8151d54d92250d4a11c6da2 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#aaefb77d1a8151d54d92250d4a11c6da2">buildResultValueExp_float_t</a> (SgBinaryOp *binaryOperator, SgValueExp *lhsValue, SgValueExp *rhsValue)</td></tr>
+<tr class="memitem:a7030d10f008c4b990e62ed53e1a65524" id="r_a7030d10f008c4b990e62ed53e1a65524"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
+<tr class="memitem:a7030d10f008c4b990e62ed53e1a65524 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a7030d10f008c4b990e62ed53e1a65524">buildResultValueExp_t</a> (SgBinaryOp *binaryOperator, SgValueExp *lhsValue, SgValueExp *rhsValue)</td></tr>
 <tr class="memdesc:a7030d10f008c4b990e62ed53e1a65524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new SgValueExp representing the result of a binary operation via constant folding.  <br /></td></tr>
 <tr class="memitem:a04ceec025f1c0f996868f8795a7f66d6" id="r_a04ceec025f1c0f996868f8795a7f66d6"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
 <tr class="memitem:a04ceec025f1c0f996868f8795a7f66d6 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a04ceec025f1c0f996868f8795a7f66d6">buildResultValueExp_u_t</a> (SgUnaryOp *unaryOperator, SgValueExp *theValue)</td></tr>
@@ -136,12 +142,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aaefb77d1a8151d54d92250d4a11c6da2" id="r_aaefb77d1a8151d54d92250d4a11c6da2"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
 <tr class="memitem:aaefb77d1a8151d54d92250d4a11c6da2 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#aaefb77d1a8151d54d92250d4a11c6da2">buildResultValueExp_float_t</a> (SgBinaryOp *binaryOperator, SgValueExp *lhsValue, SgValueExp *rhsValue)</td></tr>
 <tr class="memdesc:aaefb77d1a8151d54d92250d4a11c6da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new expression representing the result of a floating-point binary operation.  <br /></td></tr>
-<tr class="memitem:a7030d10f008c4b990e62ed53e1a65524" id="r_a7030d10f008c4b990e62ed53e1a65524"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
-<tr class="memitem:a7030d10f008c4b990e62ed53e1a65524 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a7030d10f008c4b990e62ed53e1a65524">buildResultValueExp_t</a> (SgBinaryOp *binaryOperator, SgValueExp *lhsValue, SgValueExp *rhsValue)</td></tr>
-<tr class="memitem:a04ceec025f1c0f996868f8795a7f66d6" id="r_a04ceec025f1c0f996868f8795a7f66d6"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
-<tr class="memitem:a04ceec025f1c0f996868f8795a7f66d6 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#a04ceec025f1c0f996868f8795a7f66d6">buildResultValueExp_u_t</a> (SgUnaryOp *unaryOperator, SgValueExp *theValue)</td></tr>
-<tr class="memitem:aaefb77d1a8151d54d92250d4a11c6da2" id="r_aaefb77d1a8151d54d92250d4a11c6da2"><td class="memTemplParams" colspan="2">template&lt;typename T1, typename T2&gt; </td></tr>
-<tr class="memitem:aaefb77d1a8151d54d92250d4a11c6da2 template"><td class="memItemLeft">static SgValueExp *&#160;</td><td class="memItemRight"><a class="el" href="#aaefb77d1a8151d54d92250d4a11c6da2">buildResultValueExp_float_t</a> (SgBinaryOp *binaryOperator, SgValueExp *lhsValue, SgValueExp *rhsValue)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_constant_folding.html" title="Auto-generated documentation for the ConstantFolding namespace.">ConstantFolding</a> namespace. </p>
@@ -192,7 +192,7 @@ template&lt;typename T1, typename T2&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to a newly allocated SgValueExp of type T1 containing the folded result.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">lhsValue</span> and <span class="tt">rhsValue</span> must be non-null and must be valid pointers to objects of type T1 (or a class derived from T1) to satisfy the <span class="tt">dynamic_cast</span> and <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a></span> checks. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new expression node is allocated on the heap. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source position of the newly created node is synchronized with the current transformation position via <span class="tt"><a class="el" href="namespace_sage_interface.html#aa523e0fdeeb4a8209a85f2ed606afcbd" title="Set current node&#39;s source position as transformation generated.">SageInterface::setOneSourcePositionForTransformation</a></span>.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new expression node is allocated on the heap. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source position of the newly created node is synchronized with the current transformation position via <span class="tt"><a class="el" href="namespace_sage_interface.html#a2d9f0cac1a208b285896a8f38d24910c" title="Set current node&#39;s source position as transformation generated.">SageInterface::setOneSourcePositionForTransformation</a></span>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="#a241d46c74b9584edd03dd094f5ff4eca" title="Retrieves the value from an expression object.">cf_get_value_t</a></span> to extract the numeric value of type T2 from the expression nodes and <span class="tt"><a class="el" href="#a200b14f0613ceec926f9054bf48fb2f7" title="Calculate the result of a binary operation on two constant float-kind values,.">calculate_float_t</a></span> to execute the actual computation logic. </dd></dl>
 
 </div>
@@ -612,21 +612,21 @@ template&lt;typename T1, typename T2&gt; </div>
 
 </div>
 </div>
-<a id="a3174425188cbd997c932c5771475b7b5" name="a3174425188cbd997c932c5771475b7b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3174425188cbd997c932c5771475b7b5">&#9670;&#160;</a></span>constantFoldingOptimization()</h2>
+<a id="a2ff78c6bafd715e6313f33ceea064fd1" name="a2ff78c6bafd715e6313f33ceea064fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff78c6bafd715e6313f33ceea064fd1">&#9670;&#160;</a></span>constantFoldingOptimization()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void ConstantFolding::constantFoldingOptimization </td>
+          <td class="memname">void ConstantFolding::constantFoldingOptimization </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>internalTestingAgainstFrontend</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>internalTestingAgainstFrontend</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -647,14 +647,14 @@ template&lt;typename T1, typename T2&gt; </div>
 
 </div>
 </div>
-<a id="ae51a91340099755a171b32df092c6183" name="ae51a91340099755a171b32df092c6183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae51a91340099755a171b32df092c6183">&#9670;&#160;</a></span>constantUnFoldingTest()</h2>
+<a id="a36ff549425c5348324eace7a71d80047" name="a36ff549425c5348324eace7a71d80047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ff549425c5348324eace7a71d80047">&#9670;&#160;</a></span>constantUnFoldingTest()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void ConstantFolding::constantUnFoldingTest </td>
+          <td class="memname">void ConstantFolding::constantUnFoldingTest </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
           <td></td>
@@ -678,21 +678,21 @@ template&lt;typename T1, typename T2&gt; </div>
 
 </div>
 </div>
-<a id="af0b479509c0d0571672fd9c44cbbacaa" name="af0b479509c0d0571672fd9c44cbbacaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0b479509c0d0571672fd9c44cbbacaa">&#9670;&#160;</a></span>returnConstantFoldedValueExpression()</h2>
+<a id="a2da516c096656e47be67041bdc8a75ef" name="a2da516c096656e47be67041bdc8a75ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da516c096656e47be67041bdc8a75ef">&#9670;&#160;</a></span>returnConstantFoldedValueExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgValueExp * ConstantFolding::returnConstantFoldedValueExpression </td>
+          <td class="memname">SgValueExp * ConstantFolding::returnConstantFoldedValueExpression </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>internalTestingAgainstFrontend</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>internalTestingAgainstFrontend</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

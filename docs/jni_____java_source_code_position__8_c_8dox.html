@@ -95,7 +95,7 @@ $(function(){initNavTree('jni_____java_source_code_position__8_c_8dox.html','','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa7984d7a934a1b5d1cb2eb7f501e3656" id="r_aa7984d7a934a1b5d1cb2eb7f501e3656"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa7984d7a934a1b5d1cb2eb7f501e3656">normalize</a> (<a class="el" href="classstring.html">string</a> <a class="el" href="rose____graph____support__8_c_8dox.html#a90ece7d6c36856bf06d0e1ad2c324df2">source</a>)</td></tr>
+<tr class="memitem:aa7984d7a934a1b5d1cb2eb7f501e3656" id="r_aa7984d7a934a1b5d1cb2eb7f501e3656"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa7984d7a934a1b5d1cb2eb7f501e3656">normalize</a> (<a class="el" href="classstring.html">string</a> <a class="el" href="rose__graph__support_8_c.html#a90ece7d6c36856bf06d0e1ad2c324df2">source</a>)</td></tr>
 <tr class="memdesc:aa7984d7a934a1b5d1cb2eb7f501e3656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes special characters within a string to create a normalized representation.  <br /></td></tr>
 <tr class="memitem:a233fd5146dc19396680f321e99496ae6" id="r_a233fd5146dc19396680f321e99496ae6"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a233fd5146dc19396680f321e99496ae6">convertJavaStringToCxxString</a> (JNIEnv *env, const jstring &amp;java_string)</td></tr>
 <tr class="memdesc:a233fd5146dc19396680f321e99496ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a Java string to a C++ std::string with path normalization.  <br /></td></tr>
@@ -225,25 +225,25 @@ Note that <span class="tt">env</span> cannot be passed into this function as <sp
 <p>This function iterates through each character of the input string and replaces specific control characters and escape characters with their literal string equivalents. Specifically, it transforms null characters, newlines, carriage returns, and backslashes into a human-readable escaped format. This is useful for logging or serializing strings where literal control characters might interfere with parsing or display.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rose____graph____support__8_c_8dox.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that requires normalization.</td></tr>
+    <tr><td class="paramname"><a class="el" href="rose__graph__support_8_c.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that requires normalization.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new string where special characters (\0, <br  />
 , \r, ) are replaced by their escaped string representations (\0, \n, \r, \\).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt"><a class="el" href="rose____graph____support__8_c_8dox.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt"><a class="el" href="rose__graph__support_8_c.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <span class="tt">std::string</span> is returned containing the escaped version of the input.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a simple linear scan (O(n) complexity) through the input string.</dd></dl>
 <p>This function iterates through each character of the input string and replaces specific control characters and escape characters with their literal string representations. Specifically, it transforms null characters, newlines, carriage returns, and backslashes into a human-readable escaped format. This is useful for logging or displaying strings that contain non-printable characters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rose____graph____support__8_c_8dox.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that needs to be normalized.</td></tr>
+    <tr><td class="paramname"><a class="el" href="rose__graph__support_8_c.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that needs to be normalized.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new string where special characters (\0, <br  />
 , \r, ) are replaced by their escaped string equivalents (\0, \n, \r, \\).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt"><a class="el" href="rose____graph____support__8_c_8dox.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt"><a class="el" href="rose__graph__support_8_c.html#a90ece7d6c36856bf06d0e1ad2c324df2" title="Retrieves the source node index from an edge descriptor.">source</a></span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <span class="tt">std::string</span> is returned containing the escaped version of the input.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs a linear scan of the input string, resulting in O(n) time complexity, where n is the length of the input string. </dd></dl>
 

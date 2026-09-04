@@ -96,7 +96,7 @@ $(function(){initNavTree('_experimental_____libadalang_____r_o_s_e_____connectio
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae7fe0edaf6f1e100442633cc238bd01e" id="r_ae7fe0edaf6f1e100442633cc238bd01e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7fe0edaf6f1e100442633cc238bd01e">find_ada_files</a> (std::string dir, std::vector&lt; std::string &gt; &amp;ada_files)</td></tr>
-<tr class="memdesc:ae7fe0edaf6f1e100442633cc238bd01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches a directory for Ada source files and populates a vector with their paths.  <br /></td></tr>
+<tr class="memdesc:ae7fe0edaf6f1e100442633cc238bd01e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to search the input dir for any ada sources files (files that end in .adb or .ads), and add them to ada_files.  <br /></td></tr>
 <tr class="memitem:aa0ce49e40ad69ec5b4aab7f6bba67ff8" id="r_aa0ce49e40ad69ec5b4aab7f6bba67ff8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa0ce49e40ad69ec5b4aab7f6bba67ff8">find_additional_compilation_units</a> (ada_base_entity *lal_root, ada_analysis_context &amp;ctx, std::vector&lt; ada_base_entity &gt; &amp;comp_units_storage)</td></tr>
 <tr class="memdesc:aa0ce49e40ad69ec5b4aab7f6bba67ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans an Ada compilation unit for dependencies and recursively discovers related compilation units.  <br /></td></tr>
 <tr class="memitem:a965dcd75a14bd8191b973b218d08d7ff" id="r_a965dcd75a14bd8191b973b218d08d7ff"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a965dcd75a14bd8191b973b218d08d7ff">libadalang_main</a> (const std::vector&lt; std::string &gt; &amp;args, SgSourceFile *file)</td></tr>
@@ -122,7 +122,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Searches a directory for Ada source files and populates a vector with their paths. </p>
+<p>Function to search the input dir for any ada sources files (files that end in .adb or .ads), and add them to ada_files. </p>
+<p>Searches a directory for Ada source files and populates a vector with their paths.</p>
 <p>This function iterates through the contents of the specified directory using a directory iterator. It inspects each entry to determine if it is a regular file and checks if the file extension matches the Ada source file patterns, specifically ".adb" (Ada body) or ".ads" (Ada specification). Any matching file paths found are appended to the provided vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -135,8 +136,7 @@ Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">ada_files</span> vector will contain the full paths of all files ending in .adb or .ads found within the specified directory. Note that existing elements in <span class="tt">ada_files</span> are preserved.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function only searches the top-level directory provided and does not perform a recursive search into subdirectories. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt">boostfs</span> library for filesystem operations and directory iteration.</dd></dl>
-<p>Searches a directory for Ada source files and populates a vector with their paths. </p>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt">boostfs</span> library for filesystem operations and directory iteration. </dd></dl>
 
 </div>
 </div>
@@ -165,6 +165,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Scans an Ada compilation unit for dependencies and recursively discovers related compilation units. </p>
+<p>Checks for any compilation units required by the given lal_root If found, additional units are added to comp_units, and the function is called recursively on the new units Checks the prelude for ada_with_clause &amp; the body for ada_subunit</p>
 <p>This function performs a deep traversal of the Ada dependency graph starting from a root compilation unit. It identifies additional compilation units to be analyzed by inspecting three specific areas:</p><ol type="1">
 <li><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> fully qualified name of the current unit (checking for parent units in a hierarchical package structure).</li>
 <li><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> 'with' clauses in the prelude of the current unit (identifying imported packages).</li>
@@ -185,8 +186,7 @@ Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">comp_units_storage</span> vector will contain the <span class="tt">lal_root</span>'s dependencies, including any transitive dependencies found during the recursive traversal.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function logs diagnostics and information messages to the <span class="tt"><a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ae0aea78c78497bc557964dbfab151d93">Libadalang_ROSE_Translation::mlog</a></span> stream. </dd>
 <dd>
-If a unit is found to have diagnostics (errors/warnings) during initialization, the function logs the diagnostic details and skips adding that unit to the storage.</dd></dl>
-<p>Checks for any compilation units required by the given lal_root If found, additional units are added to comp_units, and the function is called recursively on the new units Checks the prelude for ada_with_clause &amp; the body for ada_subunit </p>
+If a unit is found to have diagnostics (errors/warnings) during initialization, the function logs the diagnostic details and skips adding that unit to the storage. </dd></dl>
 
 </div>
 </div>

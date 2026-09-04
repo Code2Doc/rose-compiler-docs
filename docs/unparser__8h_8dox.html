@@ -200,6 +200,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Converts an <a class="el" href="class_sg_type.html">SgType</a> object into its string representation. </p>
+<p>returns the name of type t</p>
 <p>This function performs a recursive traversal of an <a class="el" href="class_sg_type.html">SgType</a> object to generate a human-readable string that represents the type's name. It handles a wide variety of type variants including primitive types (int, char, float, etc.), complex types (pointers, references, arrays, tuples, matrices), and language-specific constructs (C99 _Bool, C++ templates, and OpenCL modifiers). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a switch statement based on the type variant and recursively calls itself for nested or derived types such as pointers, function signatures, and member pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -371,6 +372,7 @@ file-&gt;get_binary_only() must return false.</dd></dl>
 </div><div class="memdoc">
 
 <p>Generates a string representation of a declaration statement. </p>
+<p>Unparse the declaration as a string for use in prototypes within the AST rewrite mechanism prefix mechanism.</p>
 <p>Converts a declaration statement into its string representation.</p>
 <p>This function converts an AST declaration statement into a string format suitable for intermediate files. This ensures that transformation code remains compilable by including necessary declarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles various types of declarations including enums, variables, templates, typedefs, classes, and functions. It specifically manages formatting options such as skipping comments, skipping CPP directives (using include, define, etc.), and handling function definitions versus declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -455,7 +457,8 @@ If an unknown variant type is encountered, the function will trigger a ROSE_ABOR
 </div><div class="memdoc">
 
 <p>Recursively unparses a directory structure to the file system. </p>
-<p>This function traverses an SgDirectory IR node and its subdirectories, creating the corresponding physical directories on the disk using the <span class="tt">mkdir -p</span> command. It changes the current working directory to the target directory to perform the unparsing of files and subdirectories, and subsequently moves back up to the parent directory. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes <span class="tt"><a class="el" href="#a1f32c0b107557fee03a659026d06d034" title="Iterates through a list of files and triggers the unparsing process for each valid file.">unparseFileList</a></span> for files within the current directory and calls itself recursively for each subdirectory.</p>
+<p><a class="el" href="class_support.html">Support</a> for handling directories of files in ROSE (useful for code generation).</p>
+<p>This function traverses an SgDirectory IR node and its subdirectories, creating the corresponding physical directories on the disk using the <span class="tt">mkdir -p</span> command. It changes the current working directory to the target directory to perform the unparsing of files and subdirectories, and subsequently moves back up to the parent directory. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes <span class="tt"><a class="el" href="backend_2unparser_2unparser_8h.html#a4669efd2c807ec9e5363f37f0ab4fc47" title="Support for refactored handling directories of files.">unparseFileList</a></span> for files within the current directory and calls itself recursively for each subdirectory.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">directory</td><td><a class="el" href="class_a.html">A</a> pointer to the SgDirectory node representing the directory to be unparsed. </td></tr>
@@ -478,7 +481,7 @@ directory-&gt;get_name() must not return an empty string. </dd>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses if blocks for debugging/logging purposes which can be toggled. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the success of the <span class="tt">mkdir -p</span> shell command and <span class="tt">chdir</span> system calls.</dd></dl>
-<p>This function traverses an SgDirectory IR node and its subdirectories, creating the corresponding physical directories on the disk using the <span class="tt">mkdir -p</span> command. It changes the current working directory to the target directory, unparses the files contained within the directory via <span class="tt"><a class="el" href="#a1f32c0b107557fee03a659026d06d034" title="Iterates through a list of files and triggers the unparsing process for each valid file.">unparseFileList</a></span>, and then recursively calls itself for each subdirectory. After processing the contents, it moves back up to the parent directory using <span class="tt">chdir("..")</span>.</p>
+<p>This function traverses an SgDirectory IR node and its subdirectories, creating the corresponding physical directories on the disk using the <span class="tt">mkdir -p</span> command. It changes the current working directory to the target directory, unparses the files contained within the directory via <span class="tt"><a class="el" href="backend_2unparser_2unparser_8h.html#a4669efd2c807ec9e5363f37f0ab4fc47" title="Support for refactored handling directories of files.">unparseFileList</a></span>, and then recursively calls itself for each subdirectory. After processing the contents, it moves back up to the parent directory using <span class="tt">chdir("..")</span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">directory</td><td><a class="el" href="class_a.html">A</a> pointer to the SgDirectory IR node representing the directory to be unparsed. </td></tr>
@@ -530,6 +533,7 @@ directory-&gt;get_name() must not return an empty string. </dd>
 </div><div class="memdoc">
 
 <p>Generates source code from an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) representation of a file. </p>
+<p>User callable function available if compilation using the backend compiler is not required.</p>
 <p>This function implements the unparsing mechanism for various programming languages supported by ROSE. It determines the appropriate output filename based on the file's language (e.g., C, C++, Java, Ada, etc.), handles file clobbering logic, and manages output directory structures. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function initializes an <a class="el" href="class_unparser.html">Unparser</a> object with specific options, such as line directive generation and include handling, and then traverses the AST nodes (SgSourceFile, SgBinaryComposite, etc.) to write the reconstructed source code to a file. It also supports advanced features like comparing newly generated files against existing ones to detect changes when the noclobber option is enabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -608,6 +612,7 @@ For Java, the function attempts to reconstruct the package folder structure base
 </div><div class="memdoc">
 
 <p>Iterates through a list of files and triggers the unparsing process for each valid file. </p>
+<p><a class="el" href="class_support.html">Support</a> for refactored handling directories of files.</p>
 <p>This function processes a collection of files contained within an SgFileList. It iterates through every SgFile in the list and attempts to invoke the unparseFile method. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function includes logic to handle error signals (if configured to keep going) and performs checks to ensure that only valid source files with no frontend errors are processed. It also provides extensive debug logging capabilities based on the global SgProject debug levels and verbosity settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -674,6 +679,7 @@ Debug output levels are controlled via SgProject::get_unparseHeaderFilesDebug().
 </div><div class="memdoc">
 
 <p>Orchestrates the unparsing process for an entire SgProject, including files and directories. </p>
+<p>User callable function available if compilation using the backend compiler is not required.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided code is a fragment of a C++ implementation and is not a complete or valid function.</p>
 <p>This function performs a comprehensive unparsing of a project by iterating through its constituent files and directories. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves several critical steps:</p><ol type="1">
 <li>Building first and last statements for scopes within the project.</li>
@@ -796,6 +802,7 @@ project-&gt;get_fileList_ptr() must not be null. </dd></dl>
 </div><div class="memdoc">
 
 <p>Converts a statement to a string representation without its basic block or semicolon. </p>
+<p>Unparse header of statements that have bodies (but are not scopes) (e.g. SgDefaultOptionStmt).</p>
 <p>Converts a specific statement to a string representation without its basic block or semicolon.</p>
 <p>This function performs a specialized unparsing of an SgStatement object. It utilizes an SgUnparse_Info configuration designed to strip specific elements from the output, specifically excluding comments, the basic block (body), the trailing semicolon, and all cpp directives (as they are assumed to have been pre-processed). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation specifically handles SgCaseOptionStmt and SgDefaultOptionStmt variants by delegating to globalUnparseToString.</p>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -106,18 +106,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5c8435ecac54a23543608a7de463f39c" id="r_a5c8435ecac54a23543608a7de463f39c"><td class="memItemLeft">Pointer &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5c8435ecac54a23543608a7de463f39c">notnull</a> (Pointer &amp;&amp;pointer)</td></tr>
-<tr class="memdesc:a5c8435ecac54a23543608a7de463f39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that a pointer is not null and returns it.  <br /></td></tr>
+<tr class="memitem:aa9277534b19b6341fc3d55db97f5f333" id="r_aa9277534b19b6341fc3d55db97f5f333"><td class="memTemplParams" colspan="2">template&lt;class Pointer&gt; </td></tr>
+<tr class="memitem:aa9277534b19b6341fc3d55db97f5f333 template"><td class="memItemLeft">Pointer &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa9277534b19b6341fc3d55db97f5f333">notnull</a> (Pointer &amp;&amp;pointer)</td></tr>
+<tr class="memdesc:aa9277534b19b6341fc3d55db97f5f333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that a pointer is not null and returns it.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a5c8435ecac54a23543608a7de463f39c" name="a5c8435ecac54a23543608a7de463f39c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c8435ecac54a23543608a7de463f39c">&#9670;&#160;</a></span>notnull()</h2>
+<a id="aa9277534b19b6341fc3d55db97f5f333" name="aa9277534b19b6341fc3d55db97f5f333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9277534b19b6341fc3d55db97f5f333">&#9670;&#160;</a></span>notnull()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Pointer&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Pointer &amp; <a class="el" href="namespace_rose.html#a5c8435ecac54a23543608a7de463f39c">Rose::notnull</a> </td>
+          <td class="memname">Pointer &amp; <a class="el" href="namespace_rose.html#aa9277534b19b6341fc3d55db97f5f333">Rose::notnull</a> </td>
           <td>(</td>
           <td class="paramtype">Pointer &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>pointer</em></span></td><td>)</td>
           <td></td>
@@ -126,7 +129,21 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Validates that a pointer is not null and returns it. </p>
-<p>This function checks the validity of a given rvalue reference to a Pointer. If the pointer is not null, the function returns a reference to the original pointer. If the pointer is null, the function throws an AffirmationError to signal a violation of the expected non-null state.</p>
+<p>Check for non-null pointer.</p>
+<p>This is just a wrapper around affirm that uses a better default error message of "null pointer".</p>
+<p>Example: Say we have a pointer to an <code>SgAssignOp</code> object and we don't know if it's a null pointer. If it's not a null pointer then we want to get the type of its right operand, which we also want to make sure is not null. Here's how ROSE was typically used:</p>
+<div class="fragment"><div class="line"><a class="code hl_define" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a>(ass != <span class="keyword">nullptr</span>);</div>
+<div class="line">SgExpression *temp1 = ass-&gt;get_rhs_operand();</div>
+<div class="line"><a class="code hl_define" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a>(temp1 != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a class="code hl_class" href="class_sg_type.html">SgType</a> *<a class="code hl_variable" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = temp1-&gt;get_type();</div>
+<div class="line"><a class="code hl_define" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a>(<a class="code hl_variable" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> != <span class="keyword">nullptr</span>);</div>
+<div class="ttc" id="a_r_o_s_e___a_s_s_e_r_t_8h_html_ac9f4fc9bf4f2fabed3195887675711cf"><div class="ttname"><a href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a></div><div class="ttdeci">#define ROSE_ASSERT</div><div class="ttdef"><b>Definition</b> ROSE_ASSERT.h:55</div></div>
+<div class="ttc" id="aclass_sg_type_html"><div class="ttname"><a href="class_sg_type.html">SgType</a></div><div class="ttdef"><b>Definition</b> dataStructureTest_1.C:6</div></div>
+<div class="ttc" id="arosebud__8_c_8dox_html_aa71e9d96a125fdf363134896dfb0e61a"><div class="ttname"><a href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a></div><div class="ttdeci">**param file A pointer to the AST file object containing the tokens to be parsed *param runningCppStack The current stack of C parsing contexts *(unused in this implementation). **@return An Ast returns an empty pointer if no property is found or if a parsing error occurs **pre The file parameter must not be null *post If a property is successfully the file token stream is advanced to the end *of the property and the property object is populated with * type</div><div class="ttdef"><b>Definition</b> rosebud_8C.dox:658</div></div>
+</div><!-- fragment --><p>This can now be expressed more succinctly and functionally as:</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="class_sg_type.html">SgType</a> *<a class="code hl_variable" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = <a class="code hl_function" href="#aa9277534b19b6341fc3d55db97f5f333">notnull</a>(<a class="code hl_function" href="#aa9277534b19b6341fc3d55db97f5f333">notnull</a>(<a class="code hl_function" href="#aa9277534b19b6341fc3d55db97f5f333">notnull</a>(ass)-&gt;get_rhs_operand())-&gt;get_type());</div>
+<div class="ttc" id="a_sawyer_generator_8_c_html_aa9277534b19b6341fc3d55db97f5f333"><div class="ttname"><a href="#aa9277534b19b6341fc3d55db97f5f333">notnull</a></div><div class="ttdeci">Pointer &amp; notnull(Pointer &amp;&amp;pointer)</div><div class="ttdoc">Validates that a pointer is not null and returns it.</div><div class="ttdef"><b>Definition</b> Affirm.h:195</div></div>
+</div><!-- fragment --><p>This function checks the validity of a given rvalue reference to a Pointer. If the pointer is not null, the function returns a reference to the original pointer. If the pointer is null, the function throws an AffirmationError to signal a violation of the expected non-null state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pointer</td><td>An rvalue reference to a Pointer object to be checked.</td></tr>

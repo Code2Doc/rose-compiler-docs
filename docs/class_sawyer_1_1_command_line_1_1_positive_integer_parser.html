@@ -127,7 +127,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a0c255484e8258aff14274052a3e98ad5" id="r_a0c255484e8258aff14274052a3e98ad5"><td class="memItemLeft">virtual <a class="el" href="class_sawyer_1_1_command_line_1_1_parsed_value.html">ParsedValue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0c255484e8258aff14274052a3e98ad5">operator()</a> (const char *<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, const char **rest, const <a class="el" href="struct_sawyer_1_1_command_line_1_1_location.html">Location</a> &amp;loc)</td></tr>
+<tr class="memitem:a0c255484e8258aff14274052a3e98ad5" id="r_a0c255484e8258aff14274052a3e98ad5"><td class="memItemLeft">virtual <a class="el" href="class_sawyer_1_1_command_line_1_1_parsed_value.html">ParsedValue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0c255484e8258aff14274052a3e98ad5">operator()</a> (const char *<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, const char **rest, const <a class="el" href="struct_sawyer_1_1_command_line_1_1_location.html">Location</a> &amp;loc)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -150,7 +150,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt;<br />
 class Sawyer::CommandLine::PositiveIntegerParser&lt; T &gt;</div><p>Parses a positive integer and converts it to numeric type <code class="param">T</code>.</p>
 <p>Matches a positive integer in the mathematical sense in C++ decimal, octal, or hexadecimal format, and attempts to convert it to the type <code class="param">T</code>. If the integer cannot be converted to type <code class="param">T</code> then an <code>std::range_error</code> is thrown, which is most likely caught by higher layers of the library and converted to an <code>std::runtime_error</code> with additional information about the failure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> syntax is that which is recognized by the <code>strtoull</code> function except that a leading minus sign is not allowed (yes, strtoull parses negative numbers and returns them as unsigned), plus trailing white space.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html#ga434b16c37adac32945dc48b54764f926" title="positiveIntegerParser">positiveIntegerParser</a> factory, and <a class="el" href="group__sawyer__parser__factories.html" title="Command line parser factories">Command line parser factories</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html#gab1b11af6f285d1025593acd014308c7e" title="positiveIntegerParser">positiveIntegerParser</a> factory, and <a class="el" href="group__sawyer__parser__factories.html" title="Command line parser factories">Command line parser factories</a>. </dd></dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a84df9e01f22e6924b317c3482ab8f10c" name="a84df9e01f22e6924b317c3482ab8f10c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84df9e01f22e6924b317c3482ab8f10c">&#9670;&#160;</a></span>Ptr</h2>
@@ -251,7 +251,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_positive_integer_parser.html">PositiveIntegerParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#ga434b16c37adac32945dc48b54764f926" title="positiveIntegerParser">positiveIntegerParser</a> factory instead, which requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
+<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_positive_integer_parser.html">PositiveIntegerParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#gab1b11af6f285d1025593acd014308c7e" title="positiveIntegerParser">positiveIntegerParser</a> factory instead, which requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_positive_integer_parser.html">PositiveIntegerParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#ga434b16c37adac32945dc48b54764f926" title="positiveIntegerParser">positiveIntegerParser</a> factory instead, which takes the same arguments, but requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
+<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_positive_integer_parser.html">PositiveIntegerParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#gab1b11af6f285d1025593acd014308c7e" title="positiveIntegerParser">positiveIntegerParser</a> factory instead, which takes the same arguments, but requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
 
 </div>
 </div>

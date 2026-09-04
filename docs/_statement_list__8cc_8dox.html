@@ -115,7 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Iterates through a vector of statements and prints their memory addresses and type names to standard error. </p>
-<p>This function is a debugging utility designed to inspect a collection of SgStatement pointers. For each statement in the provided vector, the function attempts to identify the underlying SgLocatedNode. If the statement is an instance of SgExprStatement, the function retrieves the associated expression node to ensure the most specific node type is logged. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output sent to std::cerr includes the raw pointer address and the result of the typeid operator's <a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name()</a> method.</p>
+<p>This function is a debugging utility designed to inspect a collection of SgStatement pointers. For each statement in the provided vector, the function attempts to identify the underlying SgLocatedNode. If the statement is an instance of SgExprStatement, the function retrieves the associated expression node to ensure the most specific node type is logged. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output sent to std::cerr includes the raw pointer address and the result of the typeid operator's <a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name()</a> method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vec</td><td><a class="el" href="class_a.html">A</a> reference to a vector of SgStatement pointers to be inspected and logged.</td></tr>

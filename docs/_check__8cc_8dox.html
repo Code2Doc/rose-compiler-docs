@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if the statement contains a call to __builtin_va_start, false otherwise.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer s must be a valid pointer to an SgStatement object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the SgStatement s remains unchanged (read-only inspection).</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> with the V_SgFunctionRefExp criteria to locate potential calls. </dd>
+<dl class="section note"><dt>Note</dt><dd>This function uses <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> with the V_SgFunctionRefExp criteria to locate potential calls. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs a const_cast on the input pointer to facilitate the query, but does not modify the underlying AST structure. </dd></dl>
 
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if any variable references or declarations within a statement involve hidden types. </p>
-<p>This function traverses the subtree of a given SgStatement to identify if any SgVarRefExp (variable references) or SgVariableDeclaration (variable declarations) utilize a type that is classified as a hidden type via the isHiddenType function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation performs two separate queries using <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a>: first, it iterates through all variable references to check their associated types, and second, it iterates through all variable declarations to check the types of all initialized names within those declarations.</p>
+<p>This function traverses the subtree of a given SgStatement to identify if any SgVarRefExp (variable references) or SgVariableDeclaration (variable declarations) utilize a type that is classified as a hidden type via the isHiddenType function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation performs two separate queries using <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a>: first, it iterates through all variable references to check their associated types, and second, it iterates through all variable declarations to check the types of all initialized names within those declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="class_a.html">A</a> pointer to the SgStatement to be inspected.</td></tr>
@@ -197,7 +197,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if at least one variable reference or declaration within the statement contains a type identified as hidden; false otherwise.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer s must be a valid pointer to an SgStatement or nullptr. If s is nullptr, the behavior of <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> depends on the implementation of the query engine.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer s must be a valid pointer to an SgStatement or nullptr. If s is nullptr, the behavior of <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> depends on the implementation of the query engine.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the SgStatement s remains unchanged as the function performs read-only inspections, although const_cast is used internally for the query.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the isHiddenType function to determine the hidden status of a type. </dd></dl>
 
@@ -219,7 +219,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if a given statement contains a va_start operation. </p>
-<p>This function performs a subtree query on the provided SgStatement to determine if any nodes matching the V_SgVarArgStartOp pattern exist within its scope. It utilizes the <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> mechanism to search for specific variable argument start operations.</p>
+<p>This function performs a subtree query on the provided SgStatement to determine if any nodes matching the V_SgVarArgStartOp pattern exist within its scope. It utilizes the <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> mechanism to search for specific variable argument start operations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="class_a.html">A</a> pointer to the SgStatement to be inspected.</td></tr>

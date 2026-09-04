@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Call Graph — Code2Doc</title>
+<!-- All assets are local and resolved by relative path: this page must work
+     from file:// and from an offline static host. No CDNs, no web fonts. -->
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<div id="app">
+
+  <header id="topbar">
+    <span id="title">Call Graph</span>
+    <input id="search" type="search" placeholder="Search functions&hellip;  (press /)"
+           autocomplete="off" spellcheck="false" aria-label="Search functions">
+    <span id="search-status" role="status" aria-live="polite"></span>
+    <button id="btn-fit" class="btn" type="button">Fit</button>
+    <button id="btn-relayout" class="btn" type="button">Re-layout</button>
+    <button id="btn-reset" class="btn" type="button" hidden>Reset</button>
+    <select id="entrypoints" class="btn" hidden aria-label="Jump to an entrypoint"></select>
+    <div id="legend">
+      <span class="legend-item"><span class="swatch root"></span>entrypoint</span>
+      <span class="legend-item"><span class="swatch documented"></span>documented</span>
+      <span class="legend-item"><span class="swatch external"></span>undocumented</span>
+    </div>
+    <span id="stats"></span>
+  </header>
+
+  <main id="main">
+    <div id="cy"></div>
+    <div id="empty-state">Loading&hellip;</div>
+
+    <aside id="drawer" aria-label="Function details">
+      <div id="drawer-head">
+        <div id="drawer-title">
+          <div id="drawer-name"></div>
+          <div id="drawer-sub"></div>
+        </div>
+        <button id="drawer-close" type="button" title="Close (Esc)" aria-label="Close">&times;</button>
+      </div>
+      <div id="drawer-body"></div>
+    </aside>
+  </main>
+
+</div>
+
+<script src="vendor/cytoscape.min.js"></script>
+<script src="vendor/dagre.min.js"></script>
+<script src="vendor/cytoscape-dagre.js"></script>
+<script>
+// The payload is selectable so several graphs can share one copy of the viewer
+// and its 664 KB of vendored libraries:
+//     viewer.html?data=graph_data.outline-tutorial.js
+// Scripts are injected rather than fetched because fetch() of a local file is
+// blocked under file://; async=false preserves execution order.
+(function () {
+  var m = /[?&]data=([A-Za-z0-9._-]+\.js)/.exec(window.location.search);
+  // Restricted to a bare filename: no slashes, no traversal.
+  var payload = m ? m[1] : 'graph_data.js';
+  ['' + payload, 'viewer.js'].forEach(function (src) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.async = false;
+    document.head.appendChild(s);
+  });
+})();
+</script>
+</body>
+</html>

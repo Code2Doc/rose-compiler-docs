@@ -231,7 +231,7 @@ There is a known TODO regarding the handling of scalar types such as floating po
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to a new SgValueExp containing the folded result if the operand is a constant and the operation is supported; otherwise, returns NULL.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>unaryOperator must not be NULL. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>If the operand is a constant, a new SgValueExp is returned representing the result of the unary operation.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>For SgSgBoolValExp, special handling is implemented to extract the integer representation and rebuild it using <a class="el" href="namespace_sage_builder.html#add057024b3da7a51a01792d9572f9548" title="Build an integer value expression.">SageBuilder::buildIntVal</a>. </dd>
+<dl class="section note"><dt>Note</dt><dd>For SgSgBoolValExp, special handling is implemented to extract the integer representation and rebuild it using <a class="el" href="namespace_sage_builder.html#af61dc9c05155d9b67d3a879b08cda8fd" title="Build an integer value expression.">SageBuilder::buildIntVal</a>. </dd>
 <dd>
 For SgSgFloatVal, the function promotes the value to a double during the folding process to prevent loss of accuracy. </dd>
 <dd>

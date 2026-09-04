@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates AST symbol tables to accommodate aliased symbols resulting from use declarations. </p>
+<p>Fixup C++ symbol tables to use aliasing symbols for using declarations.</p>
 <p>This function performs a traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node to update symbol tables. It specifically addresses the requirements for C++ symbol aliasing, such as those introduced by 'using' declarations or other directives. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes a preorder traversal strategy via the <a class="el" href="class_fixup_ast_symbol_tables_to_support_aliased_symbols.html">FixupAstSymbolTablesToSupportAliasedSymbols</a> visitor. Additionally, it ensures that the global set of causal nodes for alias symbols maintained in SgSymbolTable is cleared after the traversal to prevent stale data from persisting.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

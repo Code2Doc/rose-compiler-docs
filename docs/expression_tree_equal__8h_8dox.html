@@ -121,6 +121,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a deep structural equality comparison between two expression trees. </p>
+<p>Are two expressions equal (using a deep comparison)?</p>
 <p>This function recursively traverses two SgExpression trees to determine if they are structurally identical. It compares the variant types of the nodes and then descends into the children of the nodes (such as operands in binary/unary operators, elements in expression lists, or arguments in function calls). For certain node types, such as variable references or function references, equality is determined by comparing the underlying declarations. For value expressions, it compares the literal values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -176,6 +177,7 @@ Certain expression types like SgDeleteExp and SgNewExp are explicitly treated as
 </div><div class="memdoc">
 
 <p>Compares two lists of expression pointers for structural equality. </p>
+<p>Are corresponding expressions in two lists equal (using a deep comparison)?</p>
 <p>This function performs an element-wise comparison between two lists of expression pointers. It iterates through both lists simultaneously, invoking expressionTreeEqual for each corresponding pair of elements. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison is considered successful only if both lists have the same number of elements and every pair of elements is determined to be equal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

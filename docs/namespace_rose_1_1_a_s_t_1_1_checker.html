@@ -93,7 +93,7 @@ $(function(){initNavTree('namespace_rose_1_1_a_s_t_1_1_checker.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_a_s_t_1_1_checker.html" title="Auto-generated documentation for the Rose::AST::Checker namespace.">Rose::AST::Checker</a> namespace.  
+<p>Checking function that apply to the whole <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -105,11 +105,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a221faa2b1f86f311959f70f47449863a" id="r_a221faa2b1f86f311959f70f47449863a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a221faa2b1f86f311959f70f47449863a">all</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
 <tr class="memdesc:a221faa2b1f86f311959f70f47449863a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply all existing Checkers.  <br /></td></tr>
 <tr class="memitem:a75bd869ff477c11b40c5911cdd53eeb2" id="r_a75bd869ff477c11b40c5911cdd53eeb2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a75bd869ff477c11b40c5911cdd53eeb2">integrity</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a75bd869ff477c11b40c5911cdd53eeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">check multiple low-level properties of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>'s graph.  <br /></td></tr>
+<tr class="memdesc:a75bd869ff477c11b40c5911cdd53eeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">check multiple low-level properties of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>'s graph.  <br /></td></tr>
+<tr class="memitem:a962d70af926142614741ddcaedb5f818" id="r_a962d70af926142614741ddcaedb5f818"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a962d70af926142614741ddcaedb5f818">integrity_edges</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:a962d70af926142614741ddcaedb5f818"><td class="mdescLeft">&#160;</td><td class="mdescRight">for all valid node in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>'s graph check that the target of all edges are valid.  <br /></td></tr>
 <tr class="memitem:a66570a0cbdc0154c5e718936e434a447" id="r_a66570a0cbdc0154c5e718936e434a447"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a66570a0cbdc0154c5e718936e434a447">integrity_declarations</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
 <tr class="memdesc:a66570a0cbdc0154c5e718936e434a447"><td class="mdescLeft">&#160;</td><td class="mdescRight">check all declaration subgraphs (1st-nondef / defn)  <br /></td></tr>
-<tr class="memitem:a962d70af926142614741ddcaedb5f818" id="r_a962d70af926142614741ddcaedb5f818"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a962d70af926142614741ddcaedb5f818">integrity_edges</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a962d70af926142614741ddcaedb5f818"><td class="mdescLeft">&#160;</td><td class="mdescRight">for all valid node in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>'s graph check that the target of all edges are valid.  <br /></td></tr>
 <tr class="memitem:a62d4c62ccf13f09365668cf909f595e5" id="r_a62d4c62ccf13f09365668cf909f595e5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a62d4c62ccf13f09365668cf909f595e5">integrity_symbols</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
 <tr class="memdesc:a62d4c62ccf13f09365668cf909f595e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">check all symbol subgraphs.  <br /></td></tr>
 <tr class="memitem:a28d1223f55f76b49f01f2c545c0fc348" id="r_a28d1223f55f76b49f01f2c545c0fc348"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a28d1223f55f76b49f01f2c545c0fc348">integrity_types</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
@@ -119,8 +119,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:af961545e65ba0e51925688698d71ef18"><td class="mdescLeft">&#160;</td><td class="mdescRight">check (potentially complex) rules  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_a_s_t_1_1_checker.html" title="Auto-generated documentation for the Rose::AST::Checker namespace.">Rose::AST::Checker</a> namespace. </p>
-<p>Checking function that apply to the whole <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<div class="textblock"><p>Checking function that apply to the whole <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>. </p>
+<p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_a_s_t_1_1_checker.html" title="Checking function that apply to the whole AST.">Rose::AST::Checker</a> namespace.</p>
 <p>Two categories of checker: integrity and consistency If integrity checker reports defects then the consistency checker might <em>fail</em>. Similarly, if the edges integrity checker reports defects then the other integrity checkers might <em>fail</em>. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a221faa2b1f86f311959f70f47449863a" name="a221faa2b1f86f311959f70f47449863a"></a>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>check multiple low-level properties of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>'s graph. </p>
+<p>check multiple low-level properties of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>'s graph. </p>
 <p>Performs a comprehensive integrity check on the provided SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -298,7 +298,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>for all valid node in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>'s graph check that the target of all edges are valid. </p>
+<p>for all valid node in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>'s graph check that the target of all edges are valid. </p>
 <p>Verifies the integrity of edges within the project structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

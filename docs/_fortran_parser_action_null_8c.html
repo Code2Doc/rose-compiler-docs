@@ -1108,7 +1108,7 @@ Functions</h2></td></tr>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">SrgExprListExp</span> containing loop control information is deleted. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent pointers of the loop control expressions (lower bound, upper bound, and increment) are updated to point to the new <span class="tt">SgImpliedDo</span> object.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses if blocks for debugging and state output via <span class="tt"><a class="el" href="fortran____support__8_c_8dox.html#a0ea74ad98b703896378ac9ea73173d82" title="Outputs the current state of various AST construction stacks for debugging.">outputState</a></span>. </dd>
+<dl class="section note"><dt>Note</dt><dd>This function uses if blocks for debugging and state output via <span class="tt"><a class="el" href="fortran__support_8_c.html#a0ea74ad98b703896378ac9ea73173d82" title="Outputs the current state of various AST construction stacks for debugging.">outputState</a></span>. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the loop control information is provided by a previous rule (R471) and passed through the stack. </dd></dl>
 
@@ -1123,7 +1123,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void c_action_ac_implied_do_control </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasStride</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1238,7 +1238,7 @@ If <span class="tt">hasStride</span> is false, a <span class="tt">SgNullExpressi
         <tr>
           <td class="memname">void c_action_ac_value_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1429,12 +1429,12 @@ Debugging information is printed to stdout if SgProject::get_verbose() exceeds D
         <tr>
           <td class="memname">void c_action_access_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1486,17 +1486,17 @@ Debugging information is printed to stdout if SgProject::get_verbose() exceeds D
         <tr>
           <td class="memname">void c_action_access_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasList</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2774,7 +2774,7 @@ If <span class="tt">SgProject::get_verbose()</span> is set above the <span class
         <tr>
           <td class="memname">void c_action_array_spec </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2826,7 +2826,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_array_spec_element </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3271,12 +3271,12 @@ This function relies on the global or accessible state of astExpressionStack and
         <tr>
           <td class="memname">void c_action_attr_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>attrKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>attr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3656,17 +3656,17 @@ Some attributes, such as <span class="tt">AttrSpec_DIMENSION</span>, involve add
         <tr>
           <td class="memname">void c_action_binding_private_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>privateKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4033,7 +4033,7 @@ Some attributes, such as <span class="tt">AttrSpec_DIMENSION</span>, involve add
         <tr>
           <td class="memname">void c_action_boz_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>boz_const</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4445,7 +4445,7 @@ This implementation treats boz constants as typeless until assignment. </dd></dl
         <tr>
           <td class="memname">void c_action_char_length </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasTypeParamValue</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4494,17 +4494,17 @@ This implementation treats boz constants as typeless until assignment. </dd></dl
         <tr>
           <td class="memname">void c_action_char_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>digitString</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4566,27 +4566,27 @@ This implementation treats boz constants as typeless until assignment. </dd></dl
         <tr>
           <td class="memname">void c_action_char_selector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>type_keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>optional_keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>kindOrLen1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>kindOrLen2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasAsterisk</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5103,7 +5103,7 @@ Debugging information is printed to stdout if the SgProject verbose level is gre
         <tr>
           <td class="memname">void c_action_component_array_spec </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>isExplicit</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5152,12 +5152,12 @@ Debugging information is printed to stdout if the SgProject verbose level is gre
         <tr>
           <td class="memname">void c_action_component_attr_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>attrKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>specType</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5211,7 +5211,7 @@ Debugging information is printed to stdout if the SgProject verbose level is gre
         <tr>
           <td class="memname">void c_action_component_attr_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5318,27 +5318,27 @@ Debugging output via outputState is currently disabled via if 0. </dd></dl>
         <tr>
           <td class="memname">void c_action_component_decl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasComponentArraySpec</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasCoArraySpec</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasCharLength</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasComponentInitialization</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5401,7 +5401,7 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
         <tr>
           <td class="memname">void c_action_component_decl_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5490,7 +5490,7 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
         <tr>
           <td class="memname">void c_action_component_def_stmt </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -6029,17 +6029,17 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
         <tr>
           <td class="memname">void c_action_data_component_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasSpec</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6765,12 +6765,12 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
         <tr>
           <td class="memname">void c_action_declaration_type_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>udtKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6967,7 +6967,7 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
         <tr>
           <td class="memname">void c_action_deferred_shape_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -7089,12 +7089,12 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
         <tr>
           <td class="memname">void c_action_defined_operator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>definedOp</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>isExtendedIntrinsicOp</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7215,12 +7215,12 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
         <tr>
           <td class="memname">void c_action_derived_type_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>typeName</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasTypeParamSpecList</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -7279,32 +7279,32 @@ This implementation is wrapped in if !SKIP_C_ACTION_IMPLEMENTATION. </dd></dl>
         <tr>
           <td class="memname">void c_action_derived_type_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasTypeAttrSpecList</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_5</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasGenericNameList</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -9140,27 +9140,27 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_end_type_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>endKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>typeKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -9217,7 +9217,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source position of the scope at the top of the stack is reset to the position of <span class="tt">endKeyword</span>. </dd>
 <dd>
-<span class="tt"><a class="el" href="fortran____support__8_c_8dox.html#a6eefbf3b63bfb35a4a172db9ad6b4aa9" title="Fixes function return types that may be incomplete or incorrectly resolved due to use statements.">fixup_possible_incomplete_function_return_type()</a></span> is called to ensure type consistency.</dd></dl>
+<span class="tt"><a class="el" href="fortran__support_8_c.html#a6eefbf3b63bfb35a4a172db9ad6b4aa9" title="Fixes function return types that may be incomplete or incorrectly resolved due to use statements.">fixup_possible_incomplete_function_return_type()</a></span> is called to ensure type consistency.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function uses if and ifnot preprocessor directives to conditionally execute debugging output and the core implementation logic. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may print debug information to stdout if <span class="tt">SgProject::get_verbose()</span> exceeds <span class="tt"><a class="el" href="java__support_8h.html#a1baaf4d63314abf0072d9b00b2e14c9f">DEBUG_RULE_COMMENT_LEVEL</a></span>. </dd></dl>
@@ -9404,7 +9404,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_entity_decl_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -9587,27 +9587,27 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_enum_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>enumKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>bindKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -9708,17 +9708,17 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_enumerator_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>enumeratorKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -10344,7 +10344,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_explicit_shape_spec </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasUpperBound</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -10394,7 +10394,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_explicit_shape_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -11580,12 +11580,12 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_generic_binding </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasAccessSpec</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -11636,7 +11636,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_generic_name_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -11709,7 +11709,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_generic_name_list_part </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>ident</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -12066,17 +12066,17 @@ If the global <span class="tt">SgProject</span> verbose level is set higher than
         <tr>
           <td class="memname">void c_action_imag_part </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasIntConstant</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasRealConstant</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -12375,12 +12375,12 @@ If the global <span class="tt">SgProject</span> verbose level is set higher than
         <tr>
           <td class="memname">void c_action_initialization </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasNullInit</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -12686,7 +12686,7 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
         <tr>
           <td class="memname">void c_action_int_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -12741,12 +12741,12 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
         <tr>
           <td class="memname">void c_action_int_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>digitString</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>kindParam</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -12823,17 +12823,17 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
         <tr>
           <td class="memname">void c_action_intent_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>intentKeyword1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>intentKeyword2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>intent</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -13133,7 +13133,7 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
         <tr>
           <td class="memname">void c_action_internal_subprogram_part </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -13270,22 +13270,22 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
         <tr>
           <td class="memname">void c_action_intrinsic_type_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyword1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyword2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasKindSelector</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -13593,7 +13593,7 @@ If <span class="tt">hasKindSelector</span> is true, the relevant elements are po
         <tr>
           <td class="memname">void c_action_kind_param </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>kind</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -13643,17 +13643,17 @@ If <span class="tt">hasKindSelector</span> is true, the relevant elements are po
         <tr>
           <td class="memname">void c_action_kind_selector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>token1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>token2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasExpression</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -13715,7 +13715,7 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
         <tr>
           <td class="memname">void c_action_label </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>lbl</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -13825,7 +13825,7 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
         <tr>
           <td class="memname">void c_action_label_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -13908,17 +13908,17 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
         <tr>
           <td class="memname">void c_action_language_binding_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasName</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -13977,17 +13977,17 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
         <tr>
           <td class="memname">void c_action_length_selector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>len_keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>kindOrLen</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasAsterisk</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -14342,17 +14342,17 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
         <tr>
           <td class="memname">void c_action_logical_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>logicalValue_keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>isTrue</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>kindParam</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -14992,7 +14992,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_name </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -15369,7 +15369,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_null_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -16674,17 +16674,17 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_private_components_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>privateKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -16821,17 +16821,17 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_proc_binding_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -17009,22 +17009,22 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_proc_component_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>procedureKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasInterface</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -17590,12 +17590,12 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_real_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>realConstant</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>kindParam</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -17653,17 +17653,17 @@ realConstant-&gt;text must not be NULL.</dd></dl>
         <tr>
           <td class="memname">void c_action_real_part </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasIntConstant</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasRealConstant</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -18694,17 +18694,17 @@ realConstant-&gt;text must not be NULL.</dd></dl>
         <tr>
           <td class="memname">void c_action_sequence_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>sequenceKeyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -18751,7 +18751,7 @@ realConstant-&gt;text must not be NULL.</dd></dl>
         <tr>
           <td class="memname">void c_action_signed_int_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>sign</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -18801,7 +18801,7 @@ realConstant-&gt;text must not be NULL.</dd></dl>
         <tr>
           <td class="memname">void c_action_signed_real_literal_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>sign</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -19725,17 +19725,17 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_attr_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyword</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>specType</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -19791,7 +19791,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_attr_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -19861,12 +19861,12 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_bound_procedure_part </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasBindingPrivateStmt</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -19918,17 +19918,17 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_declaration_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numAttributes</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -20105,12 +20105,12 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_decl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasInit</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -20236,12 +20236,12 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_or_comp_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -20321,7 +20321,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyWord</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -20370,7 +20370,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -20452,17 +20452,17 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_value </td>
           <td>(</td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasExpr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasAsterisk</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasColon</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

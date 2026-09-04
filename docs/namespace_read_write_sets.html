@@ -170,12 +170,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab459b8cdadb45e838c1a89c7c7c5c4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string representation of a variable type into its corresponding <a class="el" href="#ab01191dede303cce34fbb4bea60d018a" title="The type (well, general class of type) of the variable being read or written to.">VarType</a> enum value.  <br /></td></tr>
 <tr class="memitem:ad7aeb7c79a5c6f1448ade1abefa1dc8d" id="r_ad7aeb7c79a5c6f1448ade1abefa1dc8d"><td class="memItemLeft"><a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad7aeb7c79a5c6f1448ade1abefa1dc8d">accessTypeFromString</a> (const std::string &amp;accessTypeStr)</td></tr>
 <tr class="memdesc:ad7aeb7c79a5c6f1448ade1abefa1dc8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string representation of an access type into its corresponding <a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123" title="The type of access of the variable. Made to include Address_Of and dereference operations.">AccessType</a> enum value.  <br /></td></tr>
-<tr class="memitem:a96e59680552b1d12e58651611a9e530f" id="r_a96e59680552b1d12e58651611a9e530f"><td class="memItemLeft"><a class="el" href="#a89e9c117a468f9c78b9ce4181e52fbe8">Globality</a>&#160;</td><td class="memItemRight"><a class="el" href="#a96e59680552b1d12e58651611a9e530f">determineGlobality</a> (SgFunctionDefinition *funcDef, SgNode *current, SgNode *accessOrigin, std::string &amp;noteStr)</td></tr>
-<tr class="memdesc:a96e59680552b1d12e58651611a9e530f"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines the globality of current  <br /></td></tr>
+<tr class="memitem:a81d3baf19cc316067c1f46821d02bea8" id="r_a81d3baf19cc316067c1f46821d02bea8"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a81d3baf19cc316067c1f46821d02bea8">generateAccessNameStrings</a> (SgFunctionDeclaration *funcDecl, SgThisExp *thisExp)</td></tr>
+<tr class="memitem:aa5fd2eb031122b5d15d6ddc24d3f856e" id="r_aa5fd2eb031122b5d15d6ddc24d3f856e"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa5fd2eb031122b5d15d6ddc24d3f856e">generateAccessNameStrings</a> (SgInitializedName *coarseName, <a class="el" href="#a89e9c117a468f9c78b9ce4181e52fbe8">ReadWriteSets::Globality</a> globality)</td></tr>
+<tr class="memitem:ab3831a08752137ce2f62fb415992a74a" id="r_ab3831a08752137ce2f62fb415992a74a"><td class="memItemLeft"><a class="el" href="#a89e9c117a468f9c78b9ce4181e52fbe8">ReadWriteSets::Globality</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab3831a08752137ce2f62fb415992a74a">determineGlobality</a> (SgFunctionDefinition *funcDef, SgNode *current, SgNode *accessOrigin, std::string &amp;noteStr)</td></tr>
+<tr class="memdesc:ab3831a08752137ce2f62fb415992a74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines the globality of current  <br /></td></tr>
 <tr class="memitem:a1ed53355219de3d0c1de18337f7f6866" id="r_a1ed53355219de3d0c1de18337f7f6866"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1ed53355219de3d0c1de18337f7f6866">leafFieldInsert</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;set, std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;records)</td></tr>
 <tr class="memdesc:a1ed53355219de3d0c1de18337f7f6866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate down to bottom field and insert record. Used to insert field AccessSetRecords when recursing down an a.b.c type access. (Because it seems to be the only way to get the ordering right).  <br /></td></tr>
-<tr class="memitem:a1967c28d929a3ec2281d4c237b15829e" id="r_a1967c28d929a3ec2281d4c237b15829e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1967c28d929a3ec2281d4c237b15829e">recursiveInsert</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;set, const AccessKSetRecord &amp;record)</td></tr>
-<tr class="memdesc:a1967c28d929a3ec2281d4c237b15829e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively inserts an <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> into a set, merging fields if a record with the same identity exists.  <br /></td></tr>
+<tr class="memitem:a39e8448184d4205bec2a8f4e5851199e" id="r_a39e8448184d4205bec2a8f4e5851199e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a39e8448184d4205bec2a8f4e5851199e">recursiveInsert</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;set, const <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &amp;record)</td></tr>
+<tr class="memdesc:a39e8448184d4205bec2a8f4e5851199e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert index into indexes of record in set.  <br /></td></tr>
 <tr class="memitem:a1a03bc3aaaebf8a320f2d6e75d7643e2" id="r_a1a03bc3aaaebf8a320f2d6e75d7643e2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1a03bc3aaaebf8a320f2d6e75d7643e2">recursiveMerge</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;targetSet, const std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;sourceSet)</td></tr>
 <tr class="memdesc:a1a03bc3aaaebf8a320f2d6e75d7643e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses recursive insert to merge sourceSet into targetSet.  <br /></td></tr>
 <tr class="memitem:a503336563fbe1ed5c7d323dbf322042b" id="r_a503336563fbe1ed5c7d323dbf322042b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a503336563fbe1ed5c7d323dbf322042b">recursiveMerge</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;targetSet, const std::vector&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;sourceSet)</td></tr>
@@ -192,24 +194,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:adfbcb00e701d1f80d9c94e0465dbf888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify all accessTypes, except "this". When determining accessType in recursivelyMakeAccessRecord, sometimes we don't know the correct accessType when we make the <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one.  <br /></td></tr>
 <tr class="memitem:a296084030f42ee766f96d9c2088041a0" id="r_a296084030f42ee766f96d9c2088041a0"><td class="memItemLeft">std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a296084030f42ee766f96d9c2088041a0">updateAccessVarTypes</a> (const std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;inSet, <a class="el" href="#ab01191dede303cce34fbb4bea60d018a">VarType</a> newVarType, <a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a> <a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a>)</td></tr>
 <tr class="memdesc:a296084030f42ee766f96d9c2088041a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify all varTypes and accessTypes. Used for arrays, where we sometimes have to update both varType and accessType to an array related type.  <br /></td></tr>
-<tr class="memitem:a0485c06c6bd3ea956c07bf394d7ed1c7" id="r_a0485c06c6bd3ea956c07bf394d7ed1c7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0485c06c6bd3ea956c07bf394d7ed1c7">to_json</a> (<a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;recordJson, const <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &amp;record)</td></tr>
-<tr class="memdesc:a0485c06c6bd3ea956c07bf394d7ed1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to write to json, works with &gt;&gt; operator  <br /></td></tr>
-<tr class="memitem:ad24de0671b055461e5641e332cc55cd7" id="r_ad24de0671b055461e5641e332cc55cd7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad24de0671b055461e5641e332cc55cd7">from_json</a> (const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;recordJson, <a class="el" href="class_read_write_sets_1_1_access_set_record.html">ReadWriteSets::AccessSetRecord</a> &amp;record)</td></tr>
-<tr class="memdesc:ad24de0671b055461e5641e332cc55cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to create <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from json, works with &gt;&gt; operator  <br /></td></tr>
-<tr class="memitem:a4154ffcc966ef800c01dc580dd19bdb4" id="r_a4154ffcc966ef800c01dc580dd19bdb4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4154ffcc966ef800c01dc580dd19bdb4">to_json</a> (<a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;funcJson, const <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> &amp;record)</td></tr>
-<tr class="memdesc:a4154ffcc966ef800c01dc580dd19bdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to write to json, works with &gt;&gt; operator  <br /></td></tr>
+<tr class="memitem:aecdac367509154b85bc976b983d2fbc5" id="r_aecdac367509154b85bc976b983d2fbc5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aecdac367509154b85bc976b983d2fbc5">to_json</a> (<a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;funcJson, const <a class="el" href="class_read_write_sets_1_1_access_set_record.html">ReadWriteSets::AccessSetRecord</a> &amp;record)</td></tr>
+<tr class="memdesc:aecdac367509154b85bc976b983d2fbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to write to json, works with &gt;&gt; operator  <br /></td></tr>
+<tr class="memitem:a81b1033c98b5bed06d956241e970a0df" id="r_a81b1033c98b5bed06d956241e970a0df"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a81b1033c98b5bed06d956241e970a0df">from_json</a> (const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;funcJson, <a class="el" href="class_read_write_sets_1_1_access_set_record.html">ReadWriteSets::AccessSetRecord</a> &amp;record)</td></tr>
+<tr class="memdesc:a81b1033c98b5bed06d956241e970a0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to create <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from json, works with &gt;&gt; operator  <br /></td></tr>
+<tr class="memitem:a69a62cbbee2a1bb494011accc21a7661" id="r_a69a62cbbee2a1bb494011accc21a7661"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a69a62cbbee2a1bb494011accc21a7661">to_json</a> (<a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;funcJson, const <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">ReadWriteSets::FunctionReadWriteRecord</a> &amp;record)</td></tr>
+<tr class="memdesc:a69a62cbbee2a1bb494011accc21a7661"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to write to json, works with &gt;&gt; operator  <br /></td></tr>
 <tr class="memitem:a045793174837b9c5f43921ca30b03ac7" id="r_a045793174837b9c5f43921ca30b03ac7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a045793174837b9c5f43921ca30b03ac7">from_json</a> (const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;funcJson, <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">ReadWriteSets::FunctionReadWriteRecord</a> &amp;record)</td></tr>
 <tr class="memdesc:a045793174837b9c5f43921ca30b03ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">nlohmann's default way to create <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from json, works with &gt;&gt; operator  <br /></td></tr>
-<tr class="memitem:aa9ba6413d93b420a9e887f76012ed84f" id="r_aa9ba6413d93b420a9e887f76012ed84f"><td class="memItemLeft"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9ba6413d93b420a9e887f76012ed84f">convertCacheToJson</a> (const std::unordered_set&lt; <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a>, <a class="el" href="struct_read_write_sets_1_1_function_read_write_record__hash.html">FunctionReadWriteRecord_hash</a> &gt; &amp;rwSetCache)</td></tr>
-<tr class="memitem:af43aee50671667f62ea637abe3be0dd6" id="r_af43aee50671667f62ea637abe3be0dd6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af43aee50671667f62ea637abe3be0dd6">readCacheFromJson</a> (const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;jsonDocument, std::unordered_set&lt; <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a>, <a class="el" href="struct_read_write_sets_1_1_function_read_write_record__hash.html">FunctionReadWriteRecord_hash</a> &gt; &amp;rwSetCache)</td></tr>
-<tr class="memitem:a81d3baf19cc316067c1f46821d02bea8" id="r_a81d3baf19cc316067c1f46821d02bea8"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a81d3baf19cc316067c1f46821d02bea8">generateAccessNameStrings</a> (SgFunctionDeclaration *funcDecl, SgThisExp *thisExp)</td></tr>
-<tr class="memitem:aa5fd2eb031122b5d15d6ddc24d3f856e" id="r_aa5fd2eb031122b5d15d6ddc24d3f856e"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa5fd2eb031122b5d15d6ddc24d3f856e">generateAccessNameStrings</a> (SgInitializedName *coarseName, <a class="el" href="#a89e9c117a468f9c78b9ce4181e52fbe8">ReadWriteSets::Globality</a> globality)</td></tr>
-<tr class="memitem:a39e8448184d4205bec2a8f4e5851199e" id="r_a39e8448184d4205bec2a8f4e5851199e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a39e8448184d4205bec2a8f4e5851199e">recursiveInsert</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;set, const <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &amp;record)</td></tr>
-<tr class="memdesc:a39e8448184d4205bec2a8f4e5851199e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert index into indexes of record in set.  <br /></td></tr>
 <tr class="memitem:a5eca82bcbe0c99ec3169c4ba1af59b4e" id="r_a5eca82bcbe0c99ec3169c4ba1af59b4e"><td class="memItemLeft"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5eca82bcbe0c99ec3169c4ba1af59b4e">convertCacheToJson</a> (const std::unordered_set&lt; <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">ReadWriteSets::FunctionReadWriteRecord</a>, <a class="el" href="struct_read_write_sets_1_1_function_read_write_record__hash.html">ReadWriteSets::FunctionReadWriteRecord_hash</a> &gt; &amp;rwSetCache)</td></tr>
 <tr class="memdesc:a5eca82bcbe0c99ec3169c4ba1af59b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a cache of function read-write records into a JSON object.  <br /></td></tr>
 <tr class="memitem:ac21bdaecc0129c4ebc3ef698d7503259" id="r_ac21bdaecc0129c4ebc3ef698d7503259"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac21bdaecc0129c4ebc3ef698d7503259">readCacheFromJson</a> (const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;jsonDocument, std::unordered_set&lt; <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">ReadWriteSets::FunctionReadWriteRecord</a>, <a class="el" href="struct_read_write_sets_1_1_function_read_write_record__hash.html">ReadWriteSets::FunctionReadWriteRecord_hash</a> &gt; &amp;rwSetCache)</td></tr>
 <tr class="memdesc:ac21bdaecc0129c4ebc3ef698d7503259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreates the rwSetCache from a jsonDocument.  <br /></td></tr>
+<tr class="memitem:a1967c28d929a3ec2281d4c237b15829e" id="r_a1967c28d929a3ec2281d4c237b15829e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1967c28d929a3ec2281d4c237b15829e">recursiveInsert</a> (std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;set, const AccessKSetRecord &amp;record)</td></tr>
+<tr class="memdesc:a1967c28d929a3ec2281d4c237b15829e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively inserts an <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> into a set, merging fields if a record with the same identity exists.  <br /></td></tr>
+<tr class="memitem:aa9ba6413d93b420a9e887f76012ed84f" id="r_aa9ba6413d93b420a9e887f76012ed84f"><td class="memItemLeft"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9ba6413d93b420a9e887f76012ed84f">convertCacheToJson</a> (const std::unordered_set&lt; <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a>, <a class="el" href="struct_read_write_sets_1_1_function_read_write_record__hash.html">FunctionReadWriteRecord_hash</a> &gt; &amp;rwSetCache)</td></tr>
+<tr class="memitem:af43aee50671667f62ea637abe3be0dd6" id="r_af43aee50671667f62ea637abe3be0dd6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af43aee50671667f62ea637abe3be0dd6">readCacheFromJson</a> (const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;jsonDocument, std::unordered_set&lt; <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a>, <a class="el" href="struct_read_write_sets_1_1_function_read_write_record__hash.html">FunctionReadWriteRecord_hash</a> &gt; &amp;rwSetCache)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -420,14 +420,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a96e59680552b1d12e58651611a9e530f" name="a96e59680552b1d12e58651611a9e530f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96e59680552b1d12e58651611a9e530f">&#9670;&#160;</a></span>determineGlobality()</h2>
+<a id="ab3831a08752137ce2f62fb415992a74a" name="ab3831a08752137ce2f62fb415992a74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3831a08752137ce2f62fb415992a74a">&#9670;&#160;</a></span>determineGlobality()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a89e9c117a468f9c78b9ce4181e52fbe8">ReadWriteSets::Globality</a> ReadWriteSets::determineGlobality </td>
+          <td class="memname"><a class="el" href="#a89e9c117a468f9c78b9ce4181e52fbe8">Globality</a> ReadWriteSets::determineGlobality </td>
           <td>(</td>
           <td class="paramtype">SgFunctionDefinition *</td>          <td class="paramname"><span class="paramname"><em>funcDef</em></span>, </td>
         </tr>
@@ -454,6 +454,16 @@ Variables</h2></td></tr>
 <p>determineGlobality</p>
 <p>param[in] funcDef : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function the reference came from, mostly for error messages param[in] current : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> reference to investigate usually an SgInitializedName, but may also be a function reference or thisExp param[in] accessOrigin : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> line where the access is actually performed. Only used for noteStr <br  />
  param[out] noteStr : Sometimes gives a useful message about errors or why globality was determined</p>
+<p>This function attempts to insert a node into a read or writeset or a message explaining why it can't. This can be quite a fraught process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coarseName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node given as a read or write. Not always sensible. meetsGlobalityConstraints</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>tests a reference to see if it meets globality contraints</p>
+<p>param[in] funcDef : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function the reference came from, mostly for error messages param[in] current : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> reference to investigate usually an SgInitializedName, but may also be a function reference or thisExp param[in] accessOrigin : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> line where the access is actually performed. Only used for noteStr <br  />
+ param[out] noteStr : If a violation is found, an expination his put here</p>
 <p>Empty function or ill-formed function detected. /</p>
 <p>Determines the scope and globality of a variable or expression access within a function.</p>
 <p>This function analyzes a specific node in the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) to categorize its visibility and scope relative to a given function definition. It evaluates whether the access refers to a local variable, a function parameter, a class member, a static member, or a global/file-scope variable. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation performs type checking on the <span class="tt">current</span> node, specifically looking for <span class="tt">SgInitializedName</span> to resolve variable scopes, and handles various expression types like function references, constructor initializers, and the <span class="tt">this</span> pointer.</p>
@@ -471,22 +481,53 @@ Variables</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">noteStr</span> parameter may be modified with diagnostic information if the access does not follow standard local/member patterns.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt"><a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a></span> if it encounters an unhandled reference type or an unexpected template member function reference expression. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <span class="tt"><a class="el" href="virtual_c_f_g_8h.html#a35a6c605ff35d4db1bc7084d8896d51b">isSgInitializedName</a></span> and <span class="tt">isSgGlobal</span> to traverse the scope hierarchy.</dd></dl>
-<p>This function attempts to insert a node into a read or writeset or a message explaining why it can't. This can be quite a fraught process.</p>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <span class="tt"><a class="el" href="virtual_c_f_g_8h.html#a35a6c605ff35d4db1bc7084d8896d51b">isSgInitializedName</a></span> and <span class="tt">isSgGlobal</span> to traverse the scope hierarchy. </dd></dl>
+
+</div>
+</div>
+<a id="a81b1033c98b5bed06d956241e970a0df" name="a81b1033c98b5bed06d956241e970a0df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b1033c98b5bed06d956241e970a0df">&#9670;&#160;</a></span>from_json() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWriteSets::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>funcJson</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_read_write_sets_1_1_access_set_record.html">ReadWriteSets::AccessSetRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>record</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>nlohmann's default way to create <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from json, works with &gt;&gt; operator </p>
+<p>Deserializes an <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from a JSON object.</p>
+<p>This function implements the <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> deserialization pattern, allowing an <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> to be populated directly from a JSON object (compatible with the &gt;&gt; operator). It extracts various metadata fields including variable name, globality, access type, variable type, node ID, type, filename, and notes. It also recursively processes a "fields" array to populate the record's fields collection.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">coarseName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node given as a read or write. Not always sensible. meetsGlobalityConstraints</td></tr>
+    <tr><td class="paramname">recordJson</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source JSON object containing the serialized data for the record. </td></tr>
+    <tr><td class="paramname">record</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> instance that will be populated with the parsed data.</td></tr>
   </table>
   </dd>
 </dl>
-<p>tests a reference to see if it meets globality contraints</p>
-<p>param[in] funcDef : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function the reference came from, mostly for error messages param[in] current : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> reference to investigate usually an SgInitializedName, but may also be a function reference or thisExp param[in] accessOrigin : <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> line where the access is actually performed. Only used for noteStr <br  />
- param[out] noteStr : If a violation is found, an expination his put here </p>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> recordJson object must contain the following keys: "name", "globality", "accessType", "varType", "NodeId", "type", "filename", "note", and "fields". </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> values for "globality", "accessType", and "varType" must be strings that can be successfully parsed by globalityFromString, accessTypeFromString, and varTypeFromString respectively. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> record object is updated with the values extracted from recordJson. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> record.nodePtr is explicitly set to nullptr after the parsing process.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> "indexes" parsing logic is currently commented out in the implementation. </dd>
+<dd>
+This function relies on the existence of helper functions globalityFromString, accessTypeFromString, and varTypeFromString. </dd></dl>
 
 </div>
 </div>
 <a id="a045793174837b9c5f43921ca30b03ac7" name="a045793174837b9c5f43921ca30b03ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a045793174837b9c5f43921ca30b03ac7">&#9670;&#160;</a></span>from_json() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a045793174837b9c5f43921ca30b03ac7">&#9670;&#160;</a></span>from_json() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,47 +559,6 @@ Variables</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd>funcJson must contain the following keys: "filename", "NodeId", "globality", "varType", "accessType", "commandLine", "calledFunctions", "readSet", and "writeSet". </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> record object is updated with the values extracted from funcJson.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> "calledFunctions" are processed using a reverse iterator to ensure the output matches the input order during specific JSON testing scenarios. </dd></dl>
-
-</div>
-</div>
-<a id="ad24de0671b055461e5641e332cc55cd7" name="ad24de0671b055461e5641e332cc55cd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad24de0671b055461e5641e332cc55cd7">&#9670;&#160;</a></span>from_json() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ReadWriteSets::from_json </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>recordJson</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_read_write_sets_1_1_access_set_record.html">ReadWriteSets::AccessSetRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>record</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>nlohmann's default way to create <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from json, works with &gt;&gt; operator </p>
-<p>Deserializes an <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> from a JSON object.</p>
-<p>This function implements the <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> deserialization pattern, allowing an <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> to be populated directly from a JSON object (compatible with the &gt;&gt; operator). It extracts various metadata fields including variable name, globality, access type, variable type, node ID, type, filename, and notes. It also recursively processes a "fields" array to populate the record's fields collection.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">recordJson</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source JSON object containing the serialized data for the record. </td></tr>
-    <tr><td class="paramname">record</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> instance that will be populated with the parsed data.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> recordJson object must contain the following keys: "name", "globality", "accessType", "varType", "NodeId", "type", "filename", "note", and "fields". </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> values for "globality", "accessType", and "varType" must be strings that can be successfully parsed by globalityFromString, accessTypeFromString, and varTypeFromString respectively. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> record object is updated with the values extracted from recordJson. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> record.nodePtr is explicitly set to nullptr after the parsing process.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> "indexes" parsing logic is currently commented out in the implementation. </dd>
-<dd>
-This function relies on the existence of helper functions globalityFromString, accessTypeFromString, and varTypeFromString. </dd></dl>
 
 </div>
 </div>
@@ -685,7 +685,7 @@ This function relies on the existence of helper functions globalityFromString, a
 <p>This function populates the <span class="tt"><a class="el" href="#aa24b3fe2a8e530774ea7d44aed34a88c" title="Map to convert strings to accessType.">stringToAccessTypeMap</a></span> member variable by inserting predefined pairs of strings and their corresponding <span class="tt"><a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123" title="The type of access of the variable. Made to include Address_Of and dereference operations.">ReadWriteSets::AccessType</a></span> values. This mapping is used to facilitate the conversion of string-based identifiers (often parsed from configuration files or metadata) into strongly-typed access type enumerations.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="#aa24b3fe2a8e530774ea7d44aed34a88c" title="Map to convert strings to accessType.">stringToAccessTypeMap</a></span> container must be initialized and ready for insertion. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="#aa24b3fe2a8e530774ea7d44aed34a88c" title="Map to convert strings to accessType.">stringToAccessTypeMap</a></span> will contain entries for "NORMAL", "FIELD_ACCESS", "ARRAY_INDEX", "ADDRESS_OF", "POINTER_DEREFERENCE", "POINTER_ARROW", "FUNCTION_POINTER_DEREF", and "ACCESSTYPE_UNKNOWN".</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function performs manual insertion of each pair. If the map already contains these keys, the existing values will not be overwritten by the <span class="tt"><a class="el" href="qeditor__8cpp_8dox.html#a11bad09a2d66c3753f40bbd385b68161" title="Inserts a string of text at the beginning of the specified document cursor position.">insert</a></span> method. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function performs manual insertion of each pair. If the map already contains these keys, the existing values will not be overwritten by the <span class="tt"><a class="el" href="qeditor_8cpp.html#a6a196afc85adf047e9e27e89db740720">insert</a></span> method. </dd></dl>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ This function relies on the existence of helper functions globalityFromString, a
         <tr>
           <td class="memname">void ReadWriteSets::leafFieldInsert </td>
           <td>(</td>
-          <td class="paramtype">std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>targetSet</em></span>, </td>
+          <td class="paramtype">std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>set</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -755,8 +755,8 @@ This function relies on the existence of helper functions globalityFromString, a
 </div><div class="memdoc">
 
 <p>Iterate down to bottom field and insert record. Used to insert field AccessSetRecords when recursing down an a.b.c type access. (Because it seems to be the only way to get the ordering right). </p>
-<p>Iterate down to bottom field and insert record. Used to insert field AccessSetRecords when recursing down an a.b.c type access.</p>
 <p>Recursively inserts access set records into a target set of field records.</p>
+<p>Iterate down to bottom field and insert record. Used to insert field AccessSetRecords when recursing down an a.b.c type access.</p>
 <p>This function performs a recursive insertion of records from a source set into a target set. If the target set is empty, it performs a bulk insertion of all elements from the records set. If the target set is not empty, the function traverses the fields within each existing record in the target set and recursively calls itself to insert the new records into those nested field sets. This effectively propagates the insertion down to the leaf level of the access set structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1008,7 +1008,7 @@ This function relies on the existence of helper functions globalityFromString, a
         <tr>
           <td class="memname">std::set&lt; std::string &gt; ReadWriteSets::recursivelyMakeName </td>
           <td>(</td>
-          <td class="paramtype">std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>inputSet</em></span></td><td>)</td>
+          <td class="paramtype">std::set&lt; <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>targetSet</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1053,6 +1053,7 @@ This function relies on the recursive structure of the <a class="el" href="class
 
 <p>Uses recursive insert to merge sourceSet into targetSet. </p>
 <p>Merges the elements of a source access set into a target access set using recursive insertion.</p>
+<p>Uses recursive insert to merge sourceSet into targetSet</p>
 <p>This function iterates through every element contained within the sourceSet and attempts to insert them into the targetSet. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> insertion process utilizes the recursiveInsert method, which ensures that the structural properties and access rules defined by the <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> are maintained during the merge. This is particularly useful when dealing with nested or hierarchical access patterns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1063,8 +1064,7 @@ This function relies on the recursive structure of the <a class="el" href="class
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>targetSet and sourceSet must be valid, initialized std::set objects. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>targetSet will contain all elements from sourceSet, processed via recursive insertion, effectively performing a deep or structural merge.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation depends on the complexity of the recursiveInsert implementation and the number of elements in sourceSet.</dd></dl>
-<p>Uses recursive insert to merge sourceSet into targetSet </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation depends on the complexity of the recursiveInsert implementation and the number of elements in sourceSet. </dd></dl>
 
 </div>
 </div>
@@ -1089,6 +1089,7 @@ This function relies on the recursive structure of the <a class="el" href="class
 
 <p>Uses recursive insert to merge sourceSet into targetSet. </p>
 <p>Merges all records from a source vector into a target set using recursive insertion.</p>
+<p>Uses recursive insert to merge sourceSet into targetSet</p>
 <p>This function iterates through every element contained within the provided source vector and attempts to insert each record into the target set. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> merging process relies on the recursiveInsert method to handle the logic of combining or updating existing records within the target set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1099,13 +1100,12 @@ This function relies on the recursive structure of the <a class="el" href="class
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>targetSet must be a valid, initialized std::set of <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>targetSet will contain all records from sourceSet, processed via recursive insertion.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation depends on the implementation of recursiveInsert and the number of elements in sourceSet.</dd></dl>
-<p>Uses recursive insert to merge sourceSet into targetSet </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation depends on the implementation of recursiveInsert and the number of elements in sourceSet. </dd></dl>
 
 </div>
 </div>
-<a id="a4154ffcc966ef800c01dc580dd19bdb4" name="a4154ffcc966ef800c01dc580dd19bdb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4154ffcc966ef800c01dc580dd19bdb4">&#9670;&#160;</a></span>to_json() <span class="overload">[1/2]</span></h2>
+<a id="aecdac367509154b85bc976b983d2fbc5" name="aecdac367509154b85bc976b983d2fbc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecdac367509154b85bc976b983d2fbc5">&#9670;&#160;</a></span>to_json() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1118,42 +1118,7 @@ This function relies on the recursive structure of the <a class="el" href="class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>record</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>nlohmann's default way to write to json, works with &gt;&gt; operator </p>
-<p>Serializes a <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> into an <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> object.</p>
-<p>This function implements the standard <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> serialization pattern, allowing a <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> to be written to a JSON object. It maps the fields of the record, such as filename, nodeId, globality, varType, accessType, and commandLine, into a JSON object. Additionally, it processes the calledFunctions, readSet, and writeSet members. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> calledFunctions list is explicitly sorted alphabetically before serialization to ensure deterministic output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> readSet and writeSet are converted from their container types into JSON arrays.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">funcJson</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> destination JSON object where the serialized data will be stored. </td></tr>
-    <tr><td class="paramname">record</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> instance containing the data to be serialized.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>funcJson must be a valid, mutable <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>funcJson will contain a JSON object with keys "filename", "NodeId", "globality", "varType", "accessType", "commandLine", "calledFunctions", "readSet", and "writeSet". <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> "calledFunctions" array will be sorted lexicographically.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> sorting of calledFunctions is performed using std::sort on a temporary vector to maintain consistency, whereas readSet and writeSet are not explicitly sorted because they are derived from set containers which are inherently ordered. </dd></dl>
-
-</div>
-</div>
-<a id="a0485c06c6bd3ea956c07bf394d7ed1c7" name="a0485c06c6bd3ea956c07bf394d7ed1c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0485c06c6bd3ea956c07bf394d7ed1c7">&#9670;&#160;</a></span>to_json() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ReadWriteSets::to_json </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>recordJson</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_read_write_sets_1_1_access_set_record.html">AccessSetRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>record</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="class_read_write_sets_1_1_access_set_record.html">ReadWriteSets::AccessSetRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>record</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1171,6 +1136,41 @@ This function relies on the recursive structure of the <a class="el" href="class
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> recordJson object must be a valid, mutable <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> instance. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> recordJson object will contain a JSON object representing the record, including a "fields" array containing the serialized field records.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This implementation relies on helper functions such as globalityToString, varTypeToString, and accessTypeToString to convert enum-like values into human-readable strings. </dd></dl>
+
+</div>
+</div>
+<a id="a69a62cbbee2a1bb494011accc21a7661" name="a69a62cbbee2a1bb494011accc21a7661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a62cbbee2a1bb494011accc21a7661">&#9670;&#160;</a></span>to_json() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWriteSets::to_json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>funcJson</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">ReadWriteSets::FunctionReadWriteRecord</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>record</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>nlohmann's default way to write to json, works with &gt;&gt; operator </p>
+<p>Serializes a <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> into an <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> object.</p>
+<p>This function implements the standard <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> serialization pattern, allowing a <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> to be written to a JSON object. It maps the fields of the record, such as filename, nodeId, globality, varType, accessType, and commandLine, into a JSON object. Additionally, it processes the calledFunctions, readSet, and writeSet members. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> calledFunctions list is explicitly sorted alphabetically before serialization to ensure deterministic output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> readSet and writeSet are converted from their container types into JSON arrays.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">funcJson</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> destination JSON object where the serialized data will be stored. </td></tr>
+    <tr><td class="paramname">record</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_read_write_sets_1_1_function_read_write_record.html">FunctionReadWriteRecord</a> instance containing the data to be serialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>funcJson must be a valid, mutable <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>funcJson will contain a JSON object with keys "filename", "NodeId", "globality", "varType", "accessType", "commandLine", "calledFunctions", "readSet", and "writeSet". <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> "calledFunctions" array will be sorted lexicographically.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> sorting of calledFunctions is performed using std::sort on a temporary vector to maintain consistency, whereas readSet and writeSet are not explicitly sorted because they are derived from set containers which are inherently ordered. </dd></dl>
 
 </div>
 </div>
@@ -1195,6 +1195,7 @@ This function relies on the recursive structure of the <a class="el" href="class
 
 <p>Modify all accessTypes. When determining accessType in recursivelyMakeAccessRecord, sometimes we don't know the correct accessType when we make the <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one. </p>
 <p>Updates the access type for all records within a set of access set records.</p>
+<p>Modify all accessTypes. When determining accessType in recursivelyMakeAccessRecord, sometimes we don't know the correct accessType when we make the <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one.</p>
 <p>This function iterates through every record contained in the provided input set, modifies each record's access type to the specified new access type, and constructs a new set containing these updated records. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original set remains unchanged due to the const reference qualifier.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1206,8 +1207,7 @@ This function relies on the recursive structure of the <a class="el" href="class
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new std::set containing the updated <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> objects, where each record now reflects the newAccessType.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> inSet parameter should be a valid, initialized set of <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new set is returned containing the same number of elements as inSet, but with all elements updated to the newAccessType.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this function is O(N log N), where <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> is the number of elements in inSet, due to the insertion operations into the new set.</dd></dl>
-<p>Modify all accessTypes. When determining accessType in recursivelyMakeAccessRecord, sometimes we don't know the correct accessType when we make the <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one. </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this function is O(N log N), where <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> is the number of elements in inSet, due to the insertion operations into the new set. </dd></dl>
 
 </div>
 </div>
@@ -1225,13 +1225,14 @@ This function relies on the recursive structure of the <a class="el" href="class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a></td>          <td class="paramname"><span class="paramname"><em>newAccessType</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a></td>          <td class="paramname"><span class="paramname"><em>newType</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Modify all accessTypes, except "this". When determining accessType in recursivelyMakeAccessRecord, sometimes we don't know the correct accessType when we make the <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a>, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one. </p>
 <p>Updates the access type of all records in a set, excluding those associated with the "this" variable.</p>
+<p>Modify all accessTypes if not this There's one special case this-&gt;, which isn't really a POINTERS. But there's no way to check without cracking open the set, so just do that here.</p>
 <p>This function iterates through a provided set of access set records. For every record where the variable name is not equal to the string "this", the function updates the record's access type to the specified new access type. Records associated with the "this" variable remain unchanged in terms of their access type. <a class="el" href="class_a.html">A</a> new set containing the updated (or original) records is constructed and returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1242,9 +1243,8 @@ This function relies on the recursive structure of the <a class="el" href="class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new set of <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> objects containing the updated access types for non-"this" variables.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input set <span class="tt">inSet</span> should be a valid, initialized set of <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> objects. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new set is returned containing the same number of elements as <span class="tt">inSet</span>, with modified access types for all records where <span class="tt"><a class="el" href="namespace_virtual_c_f_g.html#a628512d2e52cd793afd1f4c53c3eb6d2" title="Retrieves the string representation of a variable name from an initialized name object.">variableName</a></span> is not "this".</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the original <span class="tt">inSet</span> but returns a new set.</dd></dl>
-<p>Modify all accessTypes if not this There's one special case this-&gt;, which isn't really a POINTERS. But there's no way to check without cracking open the set, so just do that here. </p>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new set is returned containing the same number of elements as <span class="tt">inSet</span>, with modified access types for all records where <span class="tt">variableName</span> is not "this".</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the original <span class="tt">inSet</span> but returns a new set. </dd></dl>
 
 </div>
 </div>
@@ -1267,13 +1267,14 @@ This function relies on the recursive structure of the <a class="el" href="class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a></td>          <td class="paramname"><span class="paramname"><em>newAccessType</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#ae5a63ebc68e74c571f3cd0f67690c123">AccessType</a></td>          <td class="paramname"><span class="paramname"><em>AccessType</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Modify all varTypes and accessTypes. Used for arrays, where we sometimes have to update both varType and accessType to an array related type. </p>
 <p>Updates the variable type and access type for all records in a set of access set records.</p>
+<p>Modify all varTypes. When determining varType in recursivelyMakeVarRecord, sometimes we don't know the correct varType when we make the VarSetRecord, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one.</p>
 <p>This function iterates through every record contained within the provided input set. For each record, it applies a new variable type and a new access type, effectively creating a transformed copy of the original set where all elements share the same updated metadata. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a simple linear traversal of the input set and constructs a new set to avoid modifying the original input.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1286,8 +1287,7 @@ This function relies on the recursive structure of the <a class="el" href="class
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new set of <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> objects where each record has been updated with the provided newVarType and newAccessType.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input set <span class="tt">inSet</span> should be a valid, initialized set of <a class="el" href="class_read_write_sets_1_1_access_set_record.html" title="Represents an entry in a Read or Write set.">AccessSetRecord</a> objects. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new set is returned containing the same number of elements as <span class="tt">inSet</span>, but with updated internal state for each element. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original <span class="tt">inSet</span> remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation is O(N log N), where <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> is the number of elements in <span class="tt">inSet</span>, due to the insertion of <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> elements into a new std::set.</dd></dl>
-<p>Modify all varTypes. When determining varType in recursivelyMakeVarRecord, sometimes we don't know the correct varType when we make the VarSetRecord, so we have to modify it later. But you can't modify set items in place, so I had to make this function to handle this case. It just makes a new set to replace the old one. </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation is O(N log N), where <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> is the number of elements in <span class="tt">inSet</span>, due to the insertion of <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> elements into a new std::set. </dd></dl>
 
 </div>
 </div>

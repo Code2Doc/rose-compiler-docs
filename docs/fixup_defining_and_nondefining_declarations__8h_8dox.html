@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fixes up the relationship between defining and non-defining declarations in the AST. </p>
+<p>Fixup all SgDeclarationStatement references to defining and non-defining declarations.</p>
 <p>This function performs a traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) to ensure that defining declarations and their corresponding non-defining declarations are correctly identified and linked. It utilizes a specialized traversal class, <a class="el" href="class_fixup_ast_defining_and_nondefining_declarations.html">FixupAstDefiningAndNondefiningDeclarations</a>, to navigate the nodes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal specifically uses the memory pool approach to ensure that declarations hidden within types (such as SgClassType) are visited and processed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

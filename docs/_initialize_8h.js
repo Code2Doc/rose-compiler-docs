@@ -1,8 +1,8 @@
 var _initialize_8h =
 [
     [ "ROSE_INITIALIZE", "_initialize_8h.html#a179e60fce9b51ce471fe5436d414bf4c", null ],
-    [ "Rose::checkConfigToken", "namespace_rose.html#a71c8121584f44ff7bbe25a41151816cc", null ],
-    [ "Rose::checkVersionNumber", "namespace_rose.html#addf2aa27a67bba8220bd5398de53f560", null ],
-    [ "Rose::initialize", "namespace_rose.html#af33aa6af24a48a55a0664622f9ff27a9", null ],
-    [ "Rose::isInitialized", "namespace_rose.html#a0ae0d5e99d6e03f201fa374473247234", null ]
+    [ "Rose::checkConfigToken", "namespace_rose.html#aa476787d38fa8089b588fc3d936a1be1", null ],
+    [ "Rose::checkVersionNumber", "namespace_rose.html#afc1306fbacbd1e74c9f4e9480f56499e", null ],
+    [ "Rose::initialize", "namespace_rose.html#afd5358a00e577cdb15a3a93733211467", null ],
+    [ "Rose::isInitialized", "namespace_rose.html#a56971e697fa6668e7760f622c5cba9e9", null ]
 ];

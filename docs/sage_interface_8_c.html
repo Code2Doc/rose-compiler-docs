@@ -176,6 +176,7 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a3557a517ad1eb6451d7a9d3bed4aedf3" id="r_a3557a517ad1eb6451d7a9d3bed4aedf3"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt; </td></tr>
 <tr class="memitem:a3557a517ad1eb6451d7a9d3bed4aedf3 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_sage_interface.html#a3557a517ad1eb6451d7a9d3bed4aedf3">SageInterface::setSourcePositionToDefault</a> (<a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a3557a517ad1eb6451d7a9d3bed4aedf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the source position information of a given node to default values.  <br /></td></tr>
 <tr class="memitem:a86aa593d098a2ae1d9a8329408e0b6f5" id="r_a86aa593d098a2ae1d9a8329408e0b6f5"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a86aa593d098a2ae1d9a8329408e0b6f5">getVariantName</a> (VariantT v)</td></tr>
 <tr class="memdesc:a86aa593d098a2ae1d9a8329408e0b6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the string representation of a given variant type.  <br /></td></tr>
 <tr class="memitem:a05f4dceac3234024ab60d91e780bdf78" id="r_a05f4dceac3234024ab60d91e780bdf78"><td class="memTemplParams" colspan="2">template&lt;class SageDecl&gt; </td></tr>
@@ -190,7 +191,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae93538f262f6f7ad63db49e2cac662ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates the symbol table with label symbols found within a specific scope.  <br /></td></tr>
 <tr class="memitem:ad0fa1d714885acc3127397b0427d4f64" id="r_ad0fa1d714885acc3127397b0427d4f64"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad0fa1d714885acc3127397b0427d4f64">hasEmptyCondition</a> (SgForStatement *<a class="el" href="deep_colored_functions3_8_c.html#ad1351d85ffec3c1176dc31d8e8f8e28a">f</a>)</td></tr>
 <tr class="memitem:a47411a78eb036f07f169d4dc81d7ee93" id="r_a47411a78eb036f07f169d4dc81d7ee93"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a47411a78eb036f07f169d4dc81d7ee93">getSwitchCasesHelper</a> (SgStatement *top, <a class="el" href="classvector.html">vector</a>&lt; SgStatement * &gt; &amp;result)</td></tr>
-<tr class="memitem:a50df693b7c45f12f0aba0786cb1a4243" id="r_a50df693b7c45f12f0aba0786cb1a4243"><td class="memItemLeft">static const SgVariableSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#a50df693b7c45f12f0aba0786cb1a4243">getVarSymFromName_const</a> (const SgInitializedName *<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
+<tr class="memitem:a50df693b7c45f12f0aba0786cb1a4243" id="r_a50df693b7c45f12f0aba0786cb1a4243"><td class="memItemLeft">static const SgVariableSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#a50df693b7c45f12f0aba0786cb1a4243">getVarSymFromName_const</a> (const SgInitializedName *<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>)</td></tr>
 <tr class="memdesc:a50df693b7c45f12f0aba0786cb1a4243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an existing variable symbol for the given initialized name.  <br /></td></tr>
 <tr class="memitem:a47957901308e4be7026a58422a08340f" id="r_a47957901308e4be7026a58422a08340f"><td class="memItemLeft">static const SgVariableSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#a47957901308e4be7026a58422a08340f">getVarSym_const</a> (const SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
 <tr class="memdesc:a47957901308e4be7026a58422a08340f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SgVariableSymbol associated with an SgVarRefExp or SgInitializedName, or 0 if none.  <br /></td></tr>
@@ -207,9 +208,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:af1d219987b956dd1cc35903d0929e7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an executable statement (possibly compound), is a structured block.  <br /></td></tr>
 <tr class="memitem:aa72f5415d631f591b8c3ebdb12eb6211" id="r_aa72f5415d631f591b8c3ebdb12eb6211"><td class="memItemLeft">SgVariableSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#aa72f5415d631f591b8c3ebdb12eb6211">addArg</a> (SgFunctionParameterList *paraList, SgInitializedName *initName, bool isPrepend)</td></tr>
 <tr class="memdesc:aa72f5415d631f591b8c3ebdb12eb6211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new argument to a function parameter list and manages associated symbol metadata.  <br /></td></tr>
-<tr class="memitem:a10b81b80a960acbc015c5d346d1935fb" id="r_a10b81b80a960acbc015c5d346d1935fb"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a10b81b80a960acbc015c5d346d1935fb">isNotRelPos</a> (const <a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>, <a class="el" href="class_preprocessing_info.html#ae538689c20a5660f89683f0647692fc1">PreprocessingInfo::RelativePositionType</a> pos)</td></tr>
+<tr class="memitem:a10b81b80a960acbc015c5d346d1935fb" id="r_a10b81b80a960acbc015c5d346d1935fb"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a10b81b80a960acbc015c5d346d1935fb">isNotRelPos</a> (const <a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>, <a class="el" href="class_preprocessing_info.html#ae538689c20a5660f89683f0647692fc1">PreprocessingInfo::RelativePositionType</a> pos)</td></tr>
 <tr class="memdesc:a10b81b80a960acbc015c5d346d1935fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 'true' iff the given info object is valid and has the specified position.  <br /></td></tr>
-<tr class="memitem:ad56c53a7968b60bcfbc2b2f3cd3fc129" id="r_ad56c53a7968b60bcfbc2b2f3cd3fc129"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad56c53a7968b60bcfbc2b2f3cd3fc129">isRelPos</a> (const <a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>, <a class="el" href="class_preprocessing_info.html#ae538689c20a5660f89683f0647692fc1">PreprocessingInfo::RelativePositionType</a> pos)</td></tr>
+<tr class="memitem:ad56c53a7968b60bcfbc2b2f3cd3fc129" id="r_ad56c53a7968b60bcfbc2b2f3cd3fc129"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad56c53a7968b60bcfbc2b2f3cd3fc129">isRelPos</a> (const <a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>, <a class="el" href="class_preprocessing_info.html#ae538689c20a5660f89683f0647692fc1">PreprocessingInfo::RelativePositionType</a> pos)</td></tr>
 <tr class="memdesc:ad56c53a7968b60bcfbc2b2f3cd3fc129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 'true' iff the given info object is valid and does not have the specified position.  <br /></td></tr>
 <tr class="memitem:a9b2c97f2df588c142499014069da8234" id="r_a9b2c97f2df588c142499014069da8234"><td class="memItemLeft">static <a class="el" href="rose__attributes__list_8h.html#ad4b5f34bc0846e58b38e0ba5e8aac8b0">AttachedPreprocessingInfoType</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9b2c97f2df588c142499014069da8234">createInfoList</a> (SgLocatedNode *s)</td></tr>
 <tr class="memitem:a426bfa5e7c3504817cf56abfc2b5eafb" id="r_a426bfa5e7c3504817cf56abfc2b5eafb"><td class="memTemplParams" colspan="2">template&lt;class ParentNode&gt; </td></tr>
@@ -249,7 +250,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a8381b8c86129f20ad90e64c95d9bf11f" id="r_a8381b8c86129f20ad90e64c95d9bf11f"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="namespaceanonymous__namespace_02sage_interface_8_c_03.html#a8381b8c86129f20ad90e64c95d9bf11f">anonymous_namespace{sageInterface.C}::create_mulop</a> (SgExpression *lhs, const SgExpression *rhs)</td></tr>
 <tr class="memitem:a6796ff2c75f08f0358847b5932d291ee" id="r_a6796ff2c75f08f0358847b5932d291ee"><td class="memItemLeft">std::pair&lt; std::vector&lt; SgExpression * &gt;, <a class="el" href="class_sg_type.html">SgType</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespaceanonymous__namespace_02sage_interface_8_c_03.html#a6796ff2c75f08f0358847b5932d291ee">anonymous_namespace{sageInterface.C}::get_C_array_dimensions_aux</a> (const SgArrayType &amp;arr_type)</td></tr>
 <tr class="memitem:af8e0d173c8ea9018a28a40c62c3be726" id="r_af8e0d173c8ea9018a28a40c62c3be726"><td class="memItemLeft">std::vector&lt; SgExpression * &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespaceanonymous__namespace_02sage_interface_8_c_03.html#af8e0d173c8ea9018a28a40c62c3be726">anonymous_namespace{sageInterface.C}::get_C_array_dimensions_aux</a> (const SgArrayType &amp;arrtype, const <a class="el" href="structanonymous__namespace_02sage_interface_8_c_03_1_1_varref_builder.html">VarrefBuilder</a> &amp;varrefBuilder)</td></tr>
-<tr class="memitem:acff188ee42ec7d5e3c6c584294c69a75" id="r_acff188ee42ec7d5e3c6c584294c69a75"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#acff188ee42ec7d5e3c6c584294c69a75">isBeginDirective</a> (<a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
+<tr class="memitem:acff188ee42ec7d5e3c6c584294c69a75" id="r_acff188ee42ec7d5e3c6c584294c69a75"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#acff188ee42ec7d5e3c6c584294c69a75">isBeginDirective</a> (<a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
 <tr class="memitem:a0be2484980cff4492121cc664df30be1" id="r_a0be2484980cff4492121cc664df30be1"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0be2484980cff4492121cc664df30be1">moveInofListToNewPlace</a> (<a class="el" href="rose__attributes__list_8h.html#ad4b5f34bc0846e58b38e0ba5e8aac8b0">AttachedPreprocessingInfoType</a> *infoList, int cidx, set&lt; <a class="el" href="rose__attributes__list_8h.html#ad4b5f34bc0846e58b38e0ba5e8aac8b0">AttachedPreprocessingInfoType</a> * &gt; &amp;relatedInfoList, SgLocatedNode *lnode, int &amp;retVal)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
@@ -1006,7 +1007,20 @@ template&lt;class ParentNode&gt; </div>
 </div><div class="memdoc">
 
 <p>Retrieves the n-th lexicographical permutation of a sequence of size n. </p>
-<p><a class="el" href="class_a.html">A</a> helper function to return a permutation order for n elements based on a lexicographical order number. See also, <a class="el" href="namespace_rose_1_1_combinatorics.html#a9f1573f8286796e4f451b25d740f09d5" title="Rearranges elements of a vector into a specific permutation.">Combinatorics::permute()</a>, which is faster but does not use strict lexicographic ordering. </p>
+<p><a class="el" href="class_a.html">A</a> helper function to return a permutation order for n elements based on a lexicographical order number. See also, Combinatorics::permute(), which is faster but does not use strict lexicographic ordering.</p>
+<p>This function computes the specific permutation of the sequence {0, 1, ..., n-1} that corresponds to the given lexicographical index (lexicoOrder). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> algorithm uses a factorial-based approach to determine which element from the remaining available set should be placed at each position. It iteratively calculates the index of the element to be moved to the current position by dividing the lexicographical order by the factorial of the remaining elements, then shifts the elements in the vector to maintain the relative order of the remaining items.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of elements in the permutation sequence. </td></tr>
+    <tr><td class="paramname">lexicoOrder</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> zero-based lexicographical index of the permutation to retrieve.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> vector of <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> containing the elements of the permutation in the specified lexicographical order.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>n must be such that (n-1)! can be computed and stored in a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>, and lexicoOrder must be less than n!. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains a permutation of the integers from 0 to n-1.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If lexicoOrder is greater than or equal to n!, the function will print an error message and trigger a <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation is specifically designed for strict lexicographical ordering. For cases where strict ordering is not required, Combinatorics::permute() may offer better performance. </dd></dl>
 
 </div>
 </div>
@@ -1363,7 +1377,18 @@ template&lt;class ParentNode&gt; </div>
 </div><div class="memdoc">
 
 <p>Check if an executable statement (possibly compound), is a structured block. </p>
-<p>Determines if a given statement block is structured. </p>
+<p>Determines if a given statement block is structured.</p>
+<p>This function checks whether a statement block follows structured programming principles by verifying the absence of certain control flow disruptions. Specifically, it inspects the block for the presence of break statements that target loop-relevant nodes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes <a class="el" href="namespace_sg_node_helper.html#a03a71e614ff50810e8b8bfbf5584b414" title="returns a set of SgNode where each node is a break node, but properly excludes all nested loops.">SgNodeHelper::loopRelevantBreakStmtNodes</a> to identify if any break statements exist within the scope of the provided statement.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td><a class="el" href="class_a.html">A</a> pointer to the SgStatement representing the block to be inspected.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the block is considered structured (contains no loop-relevant break statements), false otherwise.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>s must not be NULL. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> return value indicates the structural integrity of the block regarding break statements.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current implementation does not yet account for goto statements that jump to targets outside the block, nor does it explicitly check for longjmp() or throw() operations, though calls to exit() are permitted. </dd></dl>
 
 </div>
 </div>
@@ -1411,7 +1436,7 @@ targetBlock-&gt;containsOnlyDeclarations() must be true.</dd></dl>
 Preprocessing information (such as endif) is moved from the source block to the target block.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If sourceBlock and targetBlock are the same pointer, the function logs a warning to cerr and returns without performing any operations. </dd>
 <dd>
-This function relies on moveOneStatement, moveSymbolTableBetweenBlocks, and <a class="el" href="namespace_sage_interface.html#aaa3bfd072d05f92dcc259c87c0e92bc8" title="Identical to movePreprocessingInfo(), except for the stale name and confusing order of parameters....">SageInterface::moveUpPreprocessingInfo</a> to complete the relocation process. </dd></dl>
+This function relies on moveOneStatement, moveSymbolTableBetweenBlocks, and <a class="el" href="namespace_sage_interface.html#a283532aef637c65f6d103afc09d5fd71" title="Identical to movePreprocessingInfo(), except for the stale name and confusing order of parameters....">SageInterface::moveUpPreprocessingInfo</a> to complete the relocation process. </dd></dl>
 
 </div>
 </div>
@@ -1532,7 +1557,7 @@ template&lt;class T1, class T2&gt; </div>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> sourceBlock's statement list will be empty, and all its statements will have been moved to targetBlock. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> symbol table and preprocessing information are updated accordingly.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If sourceBlock and targetBlock are the same pointer, the function logs a warning to stderr and returns without performing any operations. </dd>
 <dd>
-This function relies on moveOneStatement, moveSymbolTableBetweenBlocks, and <a class="el" href="namespace_sage_interface.html#aaa3bfd072d05f92dcc259c87c0e92bc8" title="Identical to movePreprocessingInfo(), except for the stale name and confusing order of parameters....">SageInterface::moveUpPreprocessingInfo</a> to complete the migration. </dd></dl>
+This function relies on moveOneStatement, moveSymbolTableBetweenBlocks, and <a class="el" href="namespace_sage_interface.html#a283532aef637c65f6d103afc09d5fd71" title="Identical to movePreprocessingInfo(), except for the stale name and confusing order of parameters....">SageInterface::moveUpPreprocessingInfo</a> to complete the migration. </dd></dl>
 
 </div>
 </div>
@@ -1592,7 +1617,7 @@ This function relies on moveOneStatement, moveSymbolTableBetweenBlocks, and <a c
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_a.html">A</a> helper function to calculate n! See also, <a class="el" href="namespace_rose_1_1_combinatorics.html#af86b495134673c723573494af344e133" title="Computes the factorial of a given value.">Combinatorics::factorial()</a>, which also checks for overflow. </p>
+<p><a class="el" href="class_a.html">A</a> helper function to calculate n! See also, <a class="el" href="namespace_rose_1_1_combinatorics.html#aba25d92e7e59e6ac514f6e052e61bb03">Combinatorics::factorial()</a>, which also checks for overflow. </p>
 
 </div>
 </div>
@@ -1725,7 +1750,7 @@ This function relies on moveOneStatement, moveSymbolTableBetweenBlocks, and <a c
 <dd>
 Every SgLabelStatement found within the scope must belong to the same scope provided in the arguments.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> symbolTable will contain new SgLabelSymbol entries for every SgLabelStatement found within the provided scope.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> with the V_SgLabelStatement criteria to perform the search. </dd>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> with the V_SgLabelStatement criteria to perform the search. </dd>
 <dd>
 This function performs dynamic memory allocation for new SgLabelSymbol objects. </dd></dl>
 

@@ -1,10 +1,10 @@
 var _color_8_c =
 [
-    [ "Rose::Color::ansiColorEscape", "namespace_rose_1_1_color.html#a201496f729b9e721fb63570a1372d64b", null ],
+    [ "Rose::Color::ansiColorEscape", "namespace_rose_1_1_color.html#afcce9bf04c4ea99a90328c5e7726d740", null ],
     [ "Rose::Color::colorizationParser", "namespace_rose_1_1_color.html#a04fa2d42850f4b58048f4bfdf684b1a2", null ],
-    [ "Rose::Color::colorName", "namespace_rose_1_1_color.html#ae99ad35b40ac313263757ed7e133fd49", null ],
-    [ "Rose::Color::darken", "namespace_rose_1_1_color.html#a32d310ff98ce4f750892779f96c4b0d3", null ],
-    [ "Rose::Color::fade", "namespace_rose_1_1_color.html#a8c82727df61b41bb26218b03c1e1ebe1", null ],
+    [ "Rose::Color::colorName", "namespace_rose_1_1_color.html#a33a81872df411d37ab4435a7ad51ea58", null ],
+    [ "Rose::Color::darken", "namespace_rose_1_1_color.html#ab2a42505a5f8aab5abcf73b7471de776", null ],
+    [ "Rose::Color::fade", "namespace_rose_1_1_color.html#a2d5bfb3e987a0b0cdd3ab0fa03a818fa", null ],
     [ "Rose::Color::HSV_BLACK", "namespace_rose_1_1_color.html#a7c2f9283397aa29a977e893822e1a0e2", null ],
     [ "Rose::Color::HSV_BLUE", "namespace_rose_1_1_color.html#ae243e4d92d768dfb112b4957dcbd7b73", null ],
     [ "Rose::Color::HSV_CLEAR", "namespace_rose_1_1_color.html#adfc8d012c6979388c44aebf44057f416", null ],
@@ -15,13 +15,13 @@ var _color_8_c =
     [ "Rose::Color::HSV_RED", "namespace_rose_1_1_color.html#ab8eb67a2c13794c51ad8535c53ad2c1a", null ],
     [ "Rose::Color::HSV_WHITE", "namespace_rose_1_1_color.html#a55a4a474fe845beb7f7dc019a3132c08", null ],
     [ "Rose::Color::HSV_YELLOW", "namespace_rose_1_1_color.html#acdbb7da21309e5ffea5bef62ce30fb11", null ],
-    [ "Rose::Color::invertBrightness", "namespace_rose_1_1_color.html#a5bf749901d19d52a626e2a73aa4a949b", null ],
-    [ "Rose::Color::lighten", "namespace_rose_1_1_color.html#a893bb1a3385fbd91fbe7b6fff09d61e8", null ],
-    [ "Rose::Color::operator<<", "namespace_rose_1_1_color.html#a0a654a4a2b75b0d1e38139d69a6bf6fa", null ],
-    [ "Rose::Color::operator<<", "namespace_rose_1_1_color.html#a8bd248e0ad6c397684a950dadca6b2bc", null ],
-    [ "Rose::Color::operator<<", "namespace_rose_1_1_color.html#a0cf8c806db9b11ee4f4d467f185a156d", null ],
-    [ "Rose::Color::rgb_from_hue", "namespace_rose_1_1_color.html#a5c324c196565dc9ba20eeba673aeddc1", null ],
-    [ "Rose::Color::terminal", "namespace_rose_1_1_color.html#a9c3bc0a217b391bf7b719cbdfced46d7", null ],
-    [ "Rose::Color::toAnsi", "namespace_rose_1_1_color.html#a23849d3dac81d945759ce535daed95b1", null ],
-    [ "Rose::Color::toHtml", "namespace_rose_1_1_color.html#ac4146859075390d34034a9f9ee14796d", null ]
+    [ "Rose::Color::invertBrightness", "namespace_rose_1_1_color.html#acdf2952ab56a48e16f6dd8e54b62ef1c", null ],
+    [ "Rose::Color::lighten", "namespace_rose_1_1_color.html#a957faa4b71460379f40336dbd2ac1871", null ],
+    [ "Rose::Color::operator<<", "namespace_rose_1_1_color.html#a77aa5fdce4fa2324dafff1b216a55a99", null ],
+    [ "Rose::Color::operator<<", "namespace_rose_1_1_color.html#a4811a60b72c363a5b124a1fd1f90dc56", null ],
+    [ "Rose::Color::operator<<", "namespace_rose_1_1_color.html#a38ee7a28b1c50a463f53d09fcf5b4359", null ],
+    [ "Rose::Color::rgb_from_hue", "namespace_rose_1_1_color.html#a531a299a5342fbbe75d0bcfb960a50bd", null ],
+    [ "Rose::Color::terminal", "namespace_rose_1_1_color.html#aea8e56b895b782bd0ba8c594b9450866", null ],
+    [ "Rose::Color::toAnsi", "namespace_rose_1_1_color.html#a004e9a49145fe28e17b14828c9472dae", null ],
+    [ "Rose::Color::toHtml", "namespace_rose_1_1_color.html#a92ec6beb00a575d8b08525ac9faecc83", null ]
 ];

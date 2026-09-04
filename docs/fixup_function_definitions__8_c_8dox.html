@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a traversal to fix up function definitions within the AST. </p>
+<p>Fixup SgFunctionDefinition (missing body).</p>
 <p>Performs a traversal of the AST to fix up function definitions.</p>
 <p>This function initiates a specialized traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node. It utilizes the <a class="el" href="class_fixup_function_definitions.html">FixupFunctionDefinitions</a> traversal class to identify and rectify function definitions that may be missing bodies or require structural updates. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process is implemented using a preorder traversal strategy to ensure that parent nodes are processed before their children, maintaining consistency across the tree.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also incorporates performance tracking via the <a class="el" href="class_timing_performance.html">TimingPerformance</a> class to monitor the execution time of the fixup process.</p>

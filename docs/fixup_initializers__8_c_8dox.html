@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fixes initializers that rely on include files within an SgProject. </p>
+<p>Fixup known ways in which inlcude files are used to initialized variable.</p>
 <p>Fixes up initializers that utilize include files within an SgProject.</p>
 <p>This function performs a traversal of the SgProject AST to identify and correct initializers that are self-referential or dependent on include files. It utilizes a specialized traversal mechanism and an inherited attribute to manage the state of the fixup process across the AST nodes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process specifically targets files that are designated for unparsing.</p>
 <dl class="params"><dt>Parameters</dt><dd>

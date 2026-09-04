@@ -133,8 +133,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:aab38ac8f4d88e69a108441c5e321d5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the floating-point usage statistics associated with a specific node.  <br /></td></tr>
 <tr class="memitem:a8232e87d43fdc22913ba2c6ed4ce42d4" id="r_a8232e87d43fdc22913ba2c6ed4ce42d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8232e87d43fdc22913ba2c6ed4ce42d4">addFPCount</a> (SgLocatedNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, <a class="el" href="#a171d06ca546efd2090707381acbd18f8">fp_operation_kind_enum</a> c_type, int i)</td></tr>
 <tr class="memdesc:a8232e87d43fdc22913ba2c6ed4ce42d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the count of a specific floating-point operation type on a given node.  <br /></td></tr>
-<tr class="memitem:a2969711b0e864fd087da81fee87f255e" id="r_a2969711b0e864fd087da81fee87f255e"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2969711b0e864fd087da81fee87f255e">scalar_or_array</a> (<a class="el" href="class_sg_type.html">SgType</a> *t)</td></tr>
-<tr class="memdesc:a2969711b0e864fd087da81fee87f255e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies whether a given type is a scalar or an array type.  <br /></td></tr>
+<tr class="memitem:ad922d7d91f1b7effa6b7d426f689253c" id="r_ad922d7d91f1b7effa6b7d426f689253c"><td class="memItemLeft">static <a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad922d7d91f1b7effa6b7d426f689253c">scalar_or_array</a> (<a class="el" href="class_sg_type.html">SgType</a> *t)</td></tr>
+<tr class="memdesc:ad922d7d91f1b7effa6b7d426f689253c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies whether a given type is a scalar or an array type.  <br /></td></tr>
 <tr class="memitem:af20057888e4077231074ff7599c5354f" id="r_af20057888e4077231074ff7599c5354f"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af20057888e4077231074ff7599c5354f">getSizeOf</a> (<a class="el" href="class_sg_type.html">SgType</a> *t)</td></tr>
 <tr class="memdesc:af20057888e4077231074ff7599c5354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the size of some types, workaround of sizeof.  <br /></td></tr>
 <tr class="memitem:adeca20570d8b1354025f5a3c6829b87a" id="r_adeca20570d8b1354025f5a3c6829b87a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adeca20570d8b1354025f5a3c6829b87a">getVariablesProcessedByInnerLoops</a> (SgStatement *current_loop_body, bool isRead, std::set&lt; SgInitializedName * &gt; &amp;var_set)</td></tr>
@@ -143,15 +143,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8a530075cad91a7b0d63052b3e52abc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an expression like 8*sizeof(int)+ 3*sizeof(float) + 5*sizeof(double) for a list of variables accessed (either read or write).  <br /></td></tr>
 <tr class="memitem:ad5b09b453e2a8705a0240201ac0bd2b8" id="r_ad5b09b453e2a8705a0240201ac0bd2b8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad5b09b453e2a8705a0240201ac0bd2b8">pointerUsedAsArray</a> (SgInitializedName *iname, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:ad5b09b453e2a8705a0240201ac0bd2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if a pointer is ever used as an array  <br /></td></tr>
-<tr class="memitem:a39702b4a194aaf503dc50dab5e87388d" id="r_a39702b4a194aaf503dc50dab5e87388d"><td class="memItemLeft">std::set&lt; SgInitializedName * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a39702b4a194aaf503dc50dab5e87388d">filterVariables</a> (const std::set&lt; SgInitializedName * &gt; &amp;<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, SgScopeStatement *scope)</td></tr>
+<tr class="memitem:a39702b4a194aaf503dc50dab5e87388d" id="r_a39702b4a194aaf503dc50dab5e87388d"><td class="memItemLeft">std::set&lt; SgInitializedName * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a39702b4a194aaf503dc50dab5e87388d">filterVariables</a> (const std::set&lt; SgInitializedName * &gt; &amp;<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:a39702b4a194aaf503dc50dab5e87388d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters a set of initialized names to retain only those that are arrays or used as arrays.  <br /></td></tr>
-<tr class="memitem:a4e70d15b8d3d894d66eba26dd19fc8e2" id="r_a4e70d15b8d3d894d66eba26dd19fc8e2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4e70d15b8d3d894d66eba26dd19fc8e2">CountLoadStoreBytes</a> (SgLocatedNode *<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, std::pair&lt; SgExpression *, SgExpression * &gt; &amp;result, bool includeScalars, bool)</td></tr>
+<tr class="memitem:a4e70d15b8d3d894d66eba26dd19fc8e2" id="r_a4e70d15b8d3d894d66eba26dd19fc8e2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4e70d15b8d3d894d66eba26dd19fc8e2">CountLoadStoreBytes</a> (SgLocatedNode *<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, std::pair&lt; SgExpression *, SgExpression * &gt; &amp;result, bool includeScalars, bool)</td></tr>
 <tr class="memdesc:a4e70d15b8d3d894d66eba26dd19fc8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the total bytes for load and store operations within a given code block.  <br /></td></tr>
-<tr class="memitem:a05a615735b40b1a9afe21b246340ce4e" id="r_a05a615735b40b1a9afe21b246340ce4e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a05a615735b40b1a9afe21b246340ce4e">CountMemOperations</a> (SgLocatedNode *<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, bool includeScalars=false, bool includeIntType=false)</td></tr>
+<tr class="memitem:a05a615735b40b1a9afe21b246340ce4e" id="r_a05a615735b40b1a9afe21b246340ce4e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a05a615735b40b1a9afe21b246340ce4e">CountMemOperations</a> (SgLocatedNode *<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, bool includeScalars=false, bool includeIntType=false)</td></tr>
 <tr class="memdesc:a05a615735b40b1a9afe21b246340ce4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count memory load/store operations, store into attribute <a class="el" href="class_arithmetic_intensity_measurement_1_1_f_p_counters.html">FPCounters</a>.  <br /></td></tr>
 <tr class="memitem:a16b8aeeefc66de486a4e52b96e171327" id="r_a16b8aeeefc66de486a4e52b96e171327"><td class="memItemLeft"><a class="el" href="class_arithmetic_intensity_measurement_1_1_f_p_counters.html">FPCounters</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a16b8aeeefc66de486a4e52b96e171327">calculateArithmeticIntensity</a> (SgLocatedNode *body, bool includeScalars, bool includeIntType)</td></tr>
 <tr class="memdesc:a16b8aeeefc66de486a4e52b96e171327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the arithmetic intensity of a given code block.  <br /></td></tr>
-<tr class="memitem:a71d794c0e7aa46940fa56d78a87e47ba" id="r_a71d794c0e7aa46940fa56d78a87e47ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a71d794c0e7aa46940fa56d78a87e47ba">CountFPOperations</a> (SgLocatedNode *<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>)</td></tr>
+<tr class="memitem:a71d794c0e7aa46940fa56d78a87e47ba" id="r_a71d794c0e7aa46940fa56d78a87e47ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a71d794c0e7aa46940fa56d78a87e47ba">CountFPOperations</a> (SgLocatedNode *<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>)</td></tr>
 <tr class="memdesc:a71d794c0e7aa46940fa56d78a87e47ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count floating point operations seen in a subtree.  <br /></td></tr>
 <tr class="memitem:a177a6a20916cd29c52103f5cc7a6cbc6" id="r_a177a6a20916cd29c52103f5cc7a6cbc6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a177a6a20916cd29c52103f5cc7a6cbc6">parse_fp_counter_clause</a> (<a class="el" href="#a171d06ca546efd2090707381acbd18f8">fp_operation_kind_enum</a> *fp_op_kind, int *op_count)</td></tr>
 <tr class="memdesc:a177a6a20916cd29c52103f5cc7a6cbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a floating-point operation kind and its associated count from the current input stream.  <br /></td></tr>
@@ -477,7 +477,7 @@ per_iter_bytecount_exp must not be NULL.</dd></dl>
 <p>This function traverses the provided subtree to identify and count binary operations that involve floating-point data types. It specifically looks for addition, subtraction, multiplication, and division operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles different execution modes: in static counting mode, it increments counts directly, whereas in dynamic accumulation mode, it utilizes a map to ensure that each operation is only counted once, preventing double-counting when operations are nested within multiple loops. After processing the nodes, it updates the global floating-point counters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca" title="Empty function or ill-formed function detected. /.">input</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root node of the subtree to be analyzed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root node of the subtree to be analyzed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -485,7 +485,7 @@ per_iter_bytecount_exp must not be NULL.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> floating-point counters associated with the input node are updated, and the total count is recalculated.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the global state of <span class="tt"><a class="el" href="#a2395aaa196168734c4f7eb5597733444">running_mode</a></span>, <span class="tt"><a class="el" href="#adee0f8bd3cd8c661bcc59334e44bc291">FPVisitMAP</a></span>, and <span class="tt"><a class="el" href="#a54611151225b67d5846dc30982495203">debug</a></span> to determine the counting logic and logging behavior. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses <span class="tt"><a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a></span> to find all nodes of type <span class="tt">V_SgBinaryOp</span> within the subtree. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses <span class="tt"><a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a></span> to find all nodes of type <span class="tt">V_SgBinaryOp</span> within the subtree. </dd></dl>
 
 </div>
 </div>
@@ -519,10 +519,10 @@ per_iter_bytecount_exp must not be NULL.</dd></dl>
 </div><div class="memdoc">
 
 <p>Calculates the total bytes for load and store operations within a given code block. </p>
-<p>This function performs a side-effect analysis on a provided SgLocatedNode (typically a loop body) to determine the memory footprint of read and write operations. It utilizes the <a class="el" href="namespace_sage_interface.html#a27e1cebd7e6144c4f735e9ac27cac7f9" title="Collects unique variables that are either read from or written to within a given statement.">SageInterface::collectReadWriteVariables</a> mechanism to identify all initialized names being read from or written to. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then calculates the byte sizes of these accesses, with an option to filter out scalar variables based on the provided scope.</p>
+<p>This function performs a side-effect analysis on a provided SgLocatedNode (typically a loop body) to determine the memory footprint of read and write operations. It utilizes the <a class="el" href="namespace_sage_interface.html#a6f105a896675002a0b111ae38a489d7f" title="Collect unique variables which are read or written within a statement. Note that a variable can be bo...">SageInterface::collectReadWriteVariables</a> mechanism to identify all initialized names being read from or written to. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then calculates the byte sizes of these accesses, with an option to filter out scalar variables based on the provided scope.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca" title="Empty function or ill-formed function detected. /.">input</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgLocatedNode representing the code block (e.g., a statement or loop body) to be analyzed. </td></tr>
+    <tr><td class="paramname"><a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgLocatedNode representing the code block (e.g., a statement or loop body) to be analyzed. </td></tr>
     <tr><td class="paramname">result</td><td><a class="el" href="class_a.html">A</a> reference to a pair of SgExpression pointers. Upon success, result.first will contain the expression representing the total bytes for loads, and result.second will contain the expression representing the total bytes for stores. </td></tr>
     <tr><td class="paramname">includeScalars</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether scalar variables should be included in the byte calculation. If false, variables are filtered using the enclosing function scope.</td></tr>
   </table>
@@ -566,7 +566,7 @@ If the analysis fails due to function calls, a warning is printed to the standar
 <p>This function traverses the provided SgLocatedNode to calculate the total number of bytes involved in memory load and store operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> results are extracted via CountLoadStoreBytes and then persisted into the <a class="el" href="class_arithmetic_intensity_measurement_1_1_f_p_counters.html">FPCounters</a> object associated with the input node. If the counting process fails, an error code is set on the <a class="el" href="class_arithmetic_intensity_measurement_1_1_f_p_counters.html">FPCounters</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca" title="Empty function or ill-formed function detected. /.">input</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgLocatedNode to be analyzed. This node must not be null. </td></tr>
+    <tr><td class="paramname"><a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgLocatedNode to be analyzed. This node must not be null. </td></tr>
     <tr><td class="paramname">includeScalars</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether scalar memory operations should be included in the count. Defaults to false. </td></tr>
     <tr><td class="paramname">includeIntType</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether operations involving integer types should be included in the count. Defaults to false.</td></tr>
   </table>
@@ -603,7 +603,7 @@ If the analysis fails due to function calls, a warning is printed to the standar
 <p>This function iterates through a provided set of SgInitializedName pointers and evaluates each name to determine if it represents an array type or is being used in an array-like context within a specific scope. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> filtering logic checks the underlying type of the name using isSgArrayType and also performs a check via pointerUsedAsArray to identify array access patterns.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca" title="Empty function or ill-formed function detected. /.">input</a></td><td><a class="el" href="class_a.html">A</a> set of SgInitializedName pointers to be filtered. </td></tr>
+    <tr><td class="paramname"><a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a></td><td><a class="el" href="class_a.html">A</a> set of SgInitializedName pointers to be filtered. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="class_a.html">A</a> pointer to the SgScopeStatement defining the context in which the array usage is evaluated.</td></tr>
   </table>
   </dd>
@@ -1065,11 +1065,14 @@ If a non-NULL <a class="el" href="class_arithmetic_intensity_measurement_1_1_f_p
 
 </div>
 </div>
-<a id="a2969711b0e864fd087da81fee87f255e" name="a2969711b0e864fd087da81fee87f255e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2969711b0e864fd087da81fee87f255e">&#9670;&#160;</a></span>scalar_or_array()</h2>
+<a id="ad922d7d91f1b7effa6b7d426f689253c" name="ad922d7d91f1b7effa6b7d426f689253c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad922d7d91f1b7effa6b7d426f689253c">&#9670;&#160;</a></span>scalar_or_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classstring.html">string</a> ArithmeticIntensityMeasurement::scalar_or_array </td>
@@ -1078,6 +1081,11 @@ If a non-NULL <a class="el" href="class_arithmetic_intensity_measurement_1_1_f_p
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Identifies whether a given type is a scalar or an array type. </p>

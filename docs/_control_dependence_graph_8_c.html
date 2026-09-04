@@ -104,6 +104,7 @@ $(function(){initNavTree('_control_dependence_graph_8_c.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a539e8ce4400e3a3644c3db1709b8088b" id="r_a539e8ce4400e3a3644c3db1709b8088b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a539e8ce4400e3a3644c3db1709b8088b">dfsVisit</a> (<a class="el" href="_dependence_graph_8h.html#a7bbe2a8d3f2507566e44cc7082e694b3">SliceCFGNode</a> p)</td></tr>
+<tr class="memdesc:a539e8ce4400e3a3644c3db1709b8088b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a Depth-First Search (DFS) traversal to identify strongly connected components.  <br /></td></tr>
 <tr class="memitem:ac45c63937d864d3b783f6155a4791bf5" id="r_ac45c63937d864d3b783f6155a4791bf5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac45c63937d864d3b783f6155a4791bf5">articualtionPoints</a> (<a class="el" href="_dependence_graph_8h.html#a7bbe2a8d3f2507566e44cc7082e694b3">SliceCFGNode</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
@@ -146,6 +147,28 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Performs a Depth-First Search (DFS) traversal to identify strongly connected components. </p>
+<p>This function implements a variation of Tarjan's strongly connected components algorithm. It traverses the Control Flow <a class="el" href="class_graph.html">Graph</a> (<a class="el" href="class_c_f_g.html">CFG</a>) starting from node p, maintaining discovery times (dfsnum) and low-link values (low) to identify nodes belonging to the same strongly connected component. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> algorithm uses a stack (L) to keep track of the nodes in the current search path and a set (T) to track visited nodes. When a root of a strongly connected component is identified (where low[p] == dfsnum[p]), the function pops nodes from the stack until the root is reached.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current <a class="el" href="_dependence_graph_8h.html#a7bbe2a8d3f2507566e44cc7082e694b3">SliceCFGNode</a> being visited in the depth-first traversal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global or class-member variables L (stack), dfsnum (map/array), <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a> (counter), low (map/array), and T (set) must be properly initialized. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node p and its descendants in the DFS tree are processed, and if p is the root of a strongly connected component, the nodes belonging to that component are popped from the stack L.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation relies on external state (L, dfsnum, <a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a>, low, T) which must be managed by the caller or the containing class.</dd></dl>
+<p>This function implements a variation of Tarjan's algorithm for finding strongly connected components (SCCs) within a Slice Control Flow <a class="el" href="class_graph.html">Graph</a> (<a class="el" href="class_c_f_g.html">CFG</a>). It uses a stack-based approach to track nodes in the current search path and maintains discovery times (dfsnum) and low-link values (low) to identify the roots of SCCs. As the recursion unwinds, nodes belonging to the same SCC are popped from the stack.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current <a class="el" href="_dependence_graph_8h.html#a7bbe2a8d3f2507566e44cc7082e694b3">SliceCFGNode</a> being visited during the depth-first traversal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global or class-member structures <span class="tt"><a class="el" href="#ab9c164cd07b223f1b81811407874f065">L</a></span> (stack), <span class="tt"><a class="el" href="#a02036240b24b13baf553e6bf0e281349">dfsnum</a></span> (discovery time array/map), <span class="tt"><a class="el" href="#ac97896111473a989d262e842be0b70f4">low</a></span> (low-link value array/map), <span class="tt"><a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a></span> (global counter), and <span class="tt"><a class="el" href="#af40713911bb5d86f82a7057cc45a65ff">T</a></span> (set of visited nodes) must be properly initialized. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node <span class="tt">p</span> and all its reachable descendants in the current SCC will have their <span class="tt"><a class="el" href="#a02036240b24b13baf553e6bf0e281349">dfsnum</a></span> and <span class="tt"><a class="el" href="#ac97896111473a989d262e842be0b70f4">low</a></span> values updated. If <span class="tt">p</span> is the root of an SCC, the nodes belonging to that SCC will be popped from the stack <span class="tt"><a class="el" href="#ab9c164cd07b223f1b81811407874f065">L</a></span>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation relies on external state (e.g., <span class="tt"><a class="el" href="#ab9c164cd07b223f1b81811407874f065">L</a></span>, <span class="tt"><a class="el" href="#a02036240b24b13baf553e6bf0e281349">dfsnum</a></span>, <span class="tt"><a class="el" href="#ac97896111473a989d262e842be0b70f4">low</a></span>, <span class="tt"><a class="el" href="namespace_n.html" title="Auto-generated documentation for the N namespace.">N</a></span>, <span class="tt"><a class="el" href="#af40713911bb5d86f82a7057cc45a65ff">T</a></span>) which must be managed by the caller or the containing class. </dd></dl>
 
 </div>
 </div>

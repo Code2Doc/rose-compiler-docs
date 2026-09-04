@@ -117,6 +117,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Repairs and updates the hierarchy and contents of AST symbol tables. </p>
+<p>Fixup global and local symbol tables.</p>
 <p>This function performs a comprehensive fixup of both global and local symbol tables within the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST). It ensures that the global function type table is rebuilt to account for potential name resets in templates during post-processing. Additionally, it validates the parent-child relationships for the global function type table and the global type table, ensuring they are correctly attached to a valid scope such as an SgProject or SgFile. Finally, it initiates a traversal using <a class="el" href="class_fixup_ast_symbol_tables.html">FixupAstSymbolTables</a> to update local symbol tables throughout the provided node's subtree.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -156,6 +157,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates and resolves the global function type symbol table. </p>
+<p>Fixup the names used build the global function symbol table.</p>
 <p>This function performs a fixup operation on the provided global function type symbol table. It utilizes a visitor pattern via the <a class="el" href="class_fix_up_global_function_type_table.html">FixUpGlobalFunctionTypeTable</a> class to traverse nodes stored in the memory pool for both SgFunctionType and SgMemberFunctionType. This ensures that both standard global functions and member function types are correctly processed and resolved within the symbol table, which is critical for resolving function pointers and member function pointers referenced from the global scope.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

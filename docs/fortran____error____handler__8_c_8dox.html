@@ -119,7 +119,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handles fatal errors during the <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> parsing process. </p>
-<p>This function serves as a signal handler or error callback to manage fatal execution errors. It attempts to identify the source of the error by retrieving the current filename via <span class="tt"><a class="el" href="fortran____support__8_c_8dox.html#a8d10171e560ed92ca3eebf3873f898d5" title="Retrieves the name of the current file being processed.">getCurrentFilename()</a></span>. It then inspects the top of the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> to locate the most recent <span class="tt">SgScopeStatement</span>. By traversing the statement list of the current scope, the function identifies the last processed statement to extract its line number. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> error message is then printed to <span class="tt">stderr</span> or <span class="tt">std::cerr</span> with specific file and line information if available. Finally, it flushes all standard I/O streams, calls <span class="tt"><a class="el" href="fortran__error__handler_8_c.html#a8210c4534c162e8ebbba0fab95eeb613" title="Restores the default signal handlers for SIGABRT and SIGSEGV.">fortran_error_handler_end()</a></span>, and terminates the program with an exit code of -1.</p>
+<p>handling error occured due to failed assertion this error handler only works during parser phase since it uses <a class="el" href="class_token__t.html">Token_t</a> to know the line number</p>
+<p>TODO: we need to make this function more general</p>
+<p>This function serves as a signal handler or error callback to manage fatal execution errors. It attempts to identify the source of the error by retrieving the current filename via <span class="tt"><a class="el" href="fortran__support_8_c.html#a8d10171e560ed92ca3eebf3873f898d5" title="Retrieves the name of the current file being processed.">getCurrentFilename()</a></span>. It then inspects the top of the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> to locate the most recent <span class="tt">SgScopeStatement</span>. By traversing the statement list of the current scope, the function identifies the last processed statement to extract its line number. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> error message is then printed to <span class="tt">stderr</span> or <span class="tt">std::cerr</span> with specific file and line information if available. Finally, it flushes all standard I/O streams, calls <span class="tt"><a class="el" href="#a8210c4534c162e8ebbba0fab95eeb613" title="Restores the default signal handlers for SIGABRT and SIGSEGV.">fortran_error_handler_end()</a></span>, and terminates the program with an exit code of -1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signum</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> signal number that triggered the error handler.</td></tr>
@@ -128,10 +130,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> should be initialized and contain valid <span class="tt">SgScopeStatement</span> pointers if the parser is in a valid state. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program is terminated with an exit status of -1. All standard I/O streams are flushed.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on global or externally accessible objects such as <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> and functions like <span class="tt"><a class="el" href="fortran____support__8_c_8dox.html#a8d10171e560ed92ca3eebf3873f898d5" title="Retrieves the name of the current file being processed.">getCurrentFilename()</a></span>. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function calls <span class="tt">exit(-1)</span>, which will immediately terminate the entire process.</dd></dl>
-<p>handling error occured due to failed assertion this error handler only works during parser phase since it uses <a class="el" href="class_token__t.html">Token_t</a> to know the line number</p>
-<p>TODO: we need to make this function more general </p>
+<dl class="section note"><dt>Note</dt><dd>This function relies on global or externally accessible objects such as <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> and functions like <span class="tt"><a class="el" href="fortran__support_8_c.html#a8d10171e560ed92ca3eebf3873f898d5" title="Retrieves the name of the current file being processed.">getCurrentFilename()</a></span>. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function calls <span class="tt">exit(-1)</span>, which will immediately terminate the entire process. </dd></dl>
 
 </div>
 </div>
@@ -151,6 +151,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the signal handlers for <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> error management. </p>
+<p>starting the interception of SIGABRT and SIGSEGV Laksono 2009.12.14: I think we need to set the priority of action handler</p>
 <p>This function sets up custom signal handlers for SIGABRT and SIGSEGV using the sigaction API. It ensures that the fortran_error_handler function is registered to intercept these specific signals, allowing for controlled error reporting or cleanup when a program aborts or encounters a segmentation fault.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses the sigaction structure to define the handler, clears the signal mask using sigemptyset, and sets the sa_flags to 0. If the registration of SIGABRT fails, an error message is printed to stderr. If SIGABRT is successfully registered, it proceeds to attempt registration of SIGSEGV.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system must support the sigaction API and the signals SIGABRT and SIGSEGV must be available.</dd></dl>
@@ -161,8 +162,7 @@ Functions</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>If the sigaction call fails for either SIGABRT or SIGSEGV, an error message is printed to stderr.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system must support the sigaction API and the signals SIGABRT and SIGSEGV must be available.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> signal handlers for SIGABRT and SIGSEGV are configured to point to fortran_error_handler, provided the registration was successful.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the define FEH_DEBUG macro is active, a confirmation message is printed to stdout indicating that the handler has been masked.</dd></dl>
-<p>starting the interception of SIGABRT and SIGSEGV Laksono 2009.12.14: I think we need to set the priority of action handler </p>
+<dl class="section note"><dt>Note</dt><dd>If the define FEH_DEBUG macro is active, a confirmation message is printed to stdout indicating that the handler has been masked. </dd></dl>
 
 </div>
 </div>
@@ -183,6 +183,7 @@ Functions</h2></td></tr>
 
 <p>Restores the default signal handlers for SIGABRT and SIGSEGV. </p>
 <p>Empty function or ill-formed function detected. /.</p>
+<p>ending the interception of SIGABRT and SIGSEGV</p>
 <p>This function is responsible for cleaning up the error handling environment by resetting the signal actions for SIGABRT and SIGSEGV to their default behavior (SIG_DFL). It uses the sigaction system call to unset any custom handlers that might have been installed by a <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> error handler. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation attempts to reset SIGABRT first, and if successful, proceeds to reset SIGSEGV.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process must have the necessary permissions to modify signal handlers. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> signal handlers for SIGABRT and SIGSEGV are restored to SIG_DFL, and the signal masks are cleared.</dd></dl>
@@ -194,8 +195,7 @@ If the define FEH_DEBUG macro is active, a confirmation message is printed to st
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process must have the necessary permissions to modify signal handlers. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> signal handlers for SIGABRT and SIGSEGV are restored to SIG_DFL, assuming the sigaction calls succeed.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If ifdef FEH_DEBUG is active, a message is printed to stdout indicating that the handler has been unmasked. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>If the sigaction call fails for either SIGABRT or SIGSEGV, an error message is printed to stderr.</dd></dl>
-<p>ending the interception of SIGABRT and SIGSEGV </p>
+<dl class="section warning"><dt>Warning</dt><dd>If the sigaction call fails for either SIGABRT or SIGSEGV, an error message is printed to stderr. </dd></dl>
 
 </div>
 </div>

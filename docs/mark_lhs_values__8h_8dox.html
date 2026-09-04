@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks left-hand side values within an AST node. </p>
+<p>Mark relavant expressions as l-values explicitly.</p>
 <p>Marks the left-hand side (LHS) values within an AST node.</p>
 <p>This function performs a traversal of the provided SgNode to identify and mark nodes that represent left-hand side (LHS) values. It utilizes the <a class="el" href="class_mark_lhs_values.html" title="Explicitly mark lhs operands of specific operators as lvalues.">MarkLhsValues</a> traversal class to execute the marking logic. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy to ensure that parent nodes are processed before their children, maintaining consistency with standard interface expectations.</p>
 <dl class="params"><dt>Parameters</dt><dd>

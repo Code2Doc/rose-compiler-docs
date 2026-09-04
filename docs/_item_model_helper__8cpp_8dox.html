@@ -131,6 +131,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Searches for a specific SgNode within a QAbstractItemModel hierarchy. </p>
+<p>used by drag and drop functions</p>
 <p>This function performs a depth-first search (DFS) through the rows of a given model, starting from a specified parent index. It iterates through each row in the current level of the model for the specified column, retrieves the SgNode pointer stored in the SgNodeRole, and compares it to the target node. If a match is not found at the current level, the function recursively traverses the children of the current index.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

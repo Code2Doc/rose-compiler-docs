@@ -101,7 +101,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:add50bcda4c88def0dc0899c475eb4033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the XOMP runtime library and handles region instrumentation setup.  <br /></td></tr>
 <tr class="memitem:a7474458ecac1f16a2d1c6eb44de15ff2" id="r_a7474458ecac1f16a2d1c6eb44de15ff2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7474458ecac1f16a2d1c6eb44de15ff2">XOMP_terminate</a> (int exitcode)</td></tr>
 <tr class="memdesc:a7474458ecac1f16a2d1c6eb44de15ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function or ill-formed function detected. /.  <br /></td></tr>
-<tr class="memitem:aa2e0b33f830c0204808bfbdb4532395f" id="r_aa2e0b33f830c0204808bfbdb4532395f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa2e0b33f830c0204808bfbdb4532395f">XOMP_parallel_start</a> (void(*<a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>)(void *), void *data, unsigned ifClauseValue, unsigned numThreadsSpecified, char *file_name, int line_no)</td></tr>
+<tr class="memitem:aa2e0b33f830c0204808bfbdb4532395f" id="r_aa2e0b33f830c0204808bfbdb4532395f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa2e0b33f830c0204808bfbdb4532395f">XOMP_parallel_start</a> (void(*<a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>)(void *), void *data, unsigned ifClauseValue, unsigned numThreadsSpecified, char *file_name, int line_no)</td></tr>
 <tr class="memdesc:aa2e0b33f830c0204808bfbdb4532395f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates a parallel region with instrumentation and thread management.  <br /></td></tr>
 <tr class="memitem:a7917f0114c3f1265faaac780e8d59be5" id="r_a7917f0114c3f1265faaac780e8d59be5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7917f0114c3f1265faaac780e8d59be5">XOMP_parallel_end</a> (char *file_name, int line_no)</td></tr>
 <tr class="memdesc:a7917f0114c3f1265faaac780e8d59be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes a parallel region and logs instrumentation data.  <br /></td></tr>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a6423cd0826e67decee3588f2323a0909" id="r_a6423cd0826e67decee3588f2323a0909"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6423cd0826e67decee3588f2323a0909">XOMP_loop_default</a> (int lower, int upper, int stride, long *n_lower, long *n_upper)</td></tr>
 <tr class="memdesc:a6423cd0826e67decee3588f2323a0909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the thread-specific iteration bounds for a parallel loop.  <br /></td></tr>
 <tr class="memitem:ac70df5f63343b29c6e36b8f9ecdf10cf" id="r_ac70df5f63343b29c6e36b8f9ecdf10cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac70df5f63343b29c6e36b8f9ecdf10cf">XOMP_loop_static_init</a> (int lower, int upper, int stride, int chunk_size)</td></tr>
-<tr class="memdesc:ac70df5f63343b29c6e36b8f9ecdf10cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the static loop scheduler, specifically for OMNI.  <br /></td></tr>
+<tr class="memdesc:ac70df5f63343b29c6e36b8f9ecdf10cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional init functions, mostly used for working with omni RTL.  <br /></td></tr>
 <tr class="memitem:a1e99ab8d795fec5b8b44a6bcd4eaf826" id="r_a1e99ab8d795fec5b8b44a6bcd4eaf826"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e99ab8d795fec5b8b44a6bcd4eaf826">XOMP_loop_dynamic_init</a> (int lower, int upper, int stride, int chunk_size)</td></tr>
 <tr class="memdesc:a1e99ab8d795fec5b8b44a6bcd4eaf826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the dynamic loop scheduler, specifically for OMNI.  <br /></td></tr>
 <tr class="memitem:a5d9b70e223f39288b94d0bd086fb23d1" id="r_a5d9b70e223f39288b94d0bd086fb23d1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5d9b70e223f39288b94d0bd086fb23d1">XOMP_loop_guided_init</a> (int lower, int upper, int stride, int chunk_size)</td></tr>
@@ -367,7 +367,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void XOMP_flush_all </td>
           <td>(</td>
-          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1900,8 +1900,9 @@ If chunk_size is provided as 0, the function defaults it to 1 to ensure a valid 
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the static loop scheduler, specifically for OMNI. </p>
+<p>Optional init functions, mostly used for working with omni RTL. </p>
 <p>Initializes the static loop scheduler, specifically for OMNI usage.</p>
+<p>Initializes the static loop scheduler, specifically for OMNI.</p>
 <p>This function performs the initialization of the static scheduling parameters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation behavior depends on whether the USE_ROSE_GOMP_OPENMP_LIBRARY macro is defined. If the macro is not defined, the function adjusts the inclusive upper bound of the XOMP iteration space to match the non-inclusive bounds required by GOMP and OMNI. This is achieved by incrementing the upper bound if the stride is positive, or decrementing it if the stride is non-positive, before calling the internal _ompc_static_sched_init function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2234,8 +2235,8 @@ If chunk_size is provided as 0, the function defaults it to 1 to ensure a valid 
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="class_a.html">A</a> pointer to the function to be executed in parallel. </td></tr>
-    <tr><td class="paramname">data</td><td><a class="el" href="class_a.html">A</a> pointer to the data passed to the function <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span>. </td></tr>
+    <tr><td class="paramname"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="class_a.html">A</a> pointer to the function to be executed in parallel. </td></tr>
+    <tr><td class="paramname">data</td><td><a class="el" href="class_a.html">A</a> pointer to the data passed to the function <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span>. </td></tr>
     <tr><td class="paramname">ifClauseValue</td><td>An unsigned integer representing the value of the OpenMP <span class="tt"><a class="el" href="poet__lex_8c.html#ad4a65b873df5c05570846b5413b41dfd">if</a></span> clause. <a class="el" href="class_a.html">A</a> non-zero value indicates the clause is active. </td></tr>
     <tr><td class="paramname">numThreadsSpecified</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of threads specified via the <span class="tt">num_threads</span> clause. </td></tr>
     <tr><td class="paramname">file_name</td><td><a class="el" href="class_a.html">A</a> string representing the name of the source file for instrumentation purposes. </td></tr>
@@ -2244,7 +2245,7 @@ If chunk_size is provided as 0, the function defaults it to 1 to ensure a valid 
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file pointer <span class="tt"><a class="el" href="xomp_8c.html#aa065f30aa9f5f9a42132c82c787ee70b">fp</a></span> must be valid and open for writing if <span class="tt"><a class="el" href="libxomp_8h.html#afae947d27608970bda7b9d3dc04941eb">env_region_instr_val</a></span> is true. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> is executed, and the parallel region is initiated according to the active backend implementation.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> is executed, and the parallel region is initiated according to the active backend implementation.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the global variable <span class="tt"><a class="el" href="libxomp_8h.html#afae947d27608970bda7b9d3dc04941eb">env_region_instr_val</a></span> and the global file pointer <span class="tt"><a class="el" href="xomp_8c.html#aa065f30aa9f5f9a42132c82c787ee70b">fp</a></span> for instrumentation logging. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of thread count calculation depends on the ifdef USE_ROSE_GOMP_OPENMP_LIBRARY directive.</dd></dl>
@@ -2255,8 +2256,8 @@ If chunk_size is provided as 0, the function defaults it to 1 to ensure a valid 
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="class_a.html">A</a> pointer to the function to be executed in parallel. </td></tr>
-    <tr><td class="paramname">data</td><td><a class="el" href="class_a.html">A</a> pointer to the data structure or argument passed to the function <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span>. </td></tr>
+    <tr><td class="paramname"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="class_a.html">A</a> pointer to the function to be executed in parallel. </td></tr>
+    <tr><td class="paramname">data</td><td><a class="el" href="class_a.html">A</a> pointer to the data structure or argument passed to the function <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span>. </td></tr>
     <tr><td class="paramname">ifClauseValue</td><td>An unsigned integer representing the value of the OpenMP 'if' clause. Used to determine if the parallel region should be executed serially or in parallel. </td></tr>
     <tr><td class="paramname">numThreadsSpecified</td><td>An unsigned integer representing the number of threads specified via the 'num_threads' clause. </td></tr>
     <tr><td class="paramname">file_name</td><td><a class="el" href="class_a.html">A</a> character pointer to a string containing the name of the source file where the parallel region is located. </td></tr>
@@ -2265,7 +2266,7 @@ If chunk_size is provided as 0, the function defaults it to 1 to ensure a valid 
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file pointer <span class="tt"><a class="el" href="xomp_8c.html#aa065f30aa9f5f9a42132c82c787ee70b">fp</a></span> must be valid and open for writing if <span class="tt"><a class="el" href="libxomp_8h.html#afae947d27608970bda7b9d3dc04941eb">env_region_instr_val</a></span> is true. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> is executed, and a parallel region is established according to the underlying library implementation (GOMP or OMPC).</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> is executed, and a parallel region is established according to the underlying library implementation (GOMP or OMPC).</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic for <span class="tt">numThread</span> calculation assumes that if <span class="tt">ifClauseValue</span> is 0, the thread count is set to 1 to indicate a single-threaded execution path within the GOMP context. </dd></dl>
 
 </div>

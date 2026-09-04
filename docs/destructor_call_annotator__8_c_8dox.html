@@ -111,11 +111,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a8766db5805520b2efb8281f6e7fefbfd" id="r_a8766db5805520b2efb8281f6e7fefbfd"><td class="memItemLeft"><a class="el" href="destructor_call_annotator_8_c.html#a1e1813f9525738919cd914bf76dd4827">in_list</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8766db5805520b2efb8281f6e7fefbfd">blockObjectsAllocated</a> (SgStatement *block, SgStatement *stop)</td></tr>
 <tr class="memdesc:a8766db5805520b2efb8281f6e7fefbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies and collects objects allocated within a specific block of statements.  <br /></td></tr>
 <tr class="memitem:a90754981dd572bcc0f6c10e433f4864a" id="r_a90754981dd572bcc0f6c10e433f4864a"><td class="memItemLeft"><a class="el" href="destructor_call_annotator_8_c.html#a1e1813f9525738919cd914bf76dd4827">in_list</a>&#160;</td><td class="memItemRight"><a class="el" href="#a90754981dd572bcc0f6c10e433f4864a">objectsAllocated</a> (SgStatement *<a class="el" href="rose_independent_support__2dot2gml__2main__8_c_8dox.html#a02a23997c3c3535cbabe21b50b18e78b">statement</a>, StopCond stopCond)</td></tr>
-<tr class="memdesc:a90754981dd572bcc0f6c10e433f4864a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies all objects allocated within the scope of a given statement and its ancestors.  <br /></td></tr>
 <tr class="memitem:a0ae32a4800b9fd9e641faec5a6f7212a" id="r_a0ae32a4800b9fd9e641faec5a6f7212a"><td class="memItemLeft"><a class="el" href="destructor_call_annotator_8_c.html#a1e1813f9525738919cd914bf76dd4827">in_list</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0ae32a4800b9fd9e641faec5a6f7212a">auxObjectsAllocated</a> (SgStatement *stmt)</td></tr>
 <tr class="memdesc:a0ae32a4800b9fd9e641faec5a6f7212a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies and collects auxiliary objects allocated within a statement's control structure.  <br /></td></tr>
 <tr class="memitem:a817d958cd2017a57c1a5c92ba187dfa8" id="r_a817d958cd2017a57c1a5c92ba187dfa8"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt; </td></tr>
-<tr class="memitem:a817d958cd2017a57c1a5c92ba187dfa8 template"><td class="memItemLeft"><a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a817d958cd2017a57c1a5c92ba187dfa8">GetAttribute</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
+<tr class="memitem:a817d958cd2017a57c1a5c92ba187dfa8 template"><td class="memItemLeft"><a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a817d958cd2017a57c1a5c92ba187dfa8">GetAttribute</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>)</td></tr>
 <tr class="memdesc:a817d958cd2017a57c1a5c92ba187dfa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an existing attribute from an SgNode or creates a new one if it does not exist.  <br /></td></tr>
 <tr class="memitem:adde3807a22c14153648e635a2e23037a" id="r_adde3807a22c14153648e635a2e23037a"><td class="memTemplParams" colspan="2">template&lt;typename NodeType&gt; </td></tr>
 <tr class="memitem:adde3807a22c14153648e635a2e23037a template"><td class="memItemLeft">NodeType *&amp;&#160;</td><td class="memItemRight"><a class="el" href="#adde3807a22c14153648e635a2e23037a">findReference</a> (NodeType *<a class="el" href="structnode.html">node</a>)</td></tr>
@@ -129,7 +128,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a351dd0eabc8d34819be33bb375aa44a3" id="r_a351dd0eabc8d34819be33bb375aa44a3"><td class="memItemLeft">SgStatement *&#160;</td><td class="memItemRight"><a class="el" href="#a351dd0eabc8d34819be33bb375aa44a3">buildDestructorStmt</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
 <tr class="memdesc:a351dd0eabc8d34819be33bb375aa44a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a statement representing a destructor call for a given node.  <br /></td></tr>
 <tr class="memitem:aac4dc9b8f301c7bb62d3c78b9cd454ac" id="r_aac4dc9b8f301c7bb62d3c78b9cd454ac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aac4dc9b8f301c7bb62d3c78b9cd454ac">destroyTemporariesInFollowingPositions</a> (NodeType *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, SgNode *tempSrc)</td></tr>
-<tr class="memdesc:aac4dc9b8f301c7bb62d3c78b9cd454ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes temporary variables by inserting destructor statements into subsequent positions in the IR.  <br /></td></tr>
 <tr class="memitem:ab64787f778530dd7de1456e533b6876e" id="r_ab64787f778530dd7de1456e533b6876e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab64787f778530dd7de1456e533b6876e">moveForInitializers</a> (SgForStatement *forStmt)</td></tr>
 <tr class="memdesc:ab64787f778530dd7de1456e533b6876e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the initialization statements of a for-loop into a newly created basic block.  <br /></td></tr>
 <tr class="memitem:a9dad1bfdc6520d35e58068ccf04647b0" id="r_a9dad1bfdc6520d35e58068ccf04647b0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9dad1bfdc6520d35e58068ccf04647b0">destructorCallAnnotator</a> (SgProject *prj)</td></tr>
@@ -379,20 +377,6 @@ An assertion is performed to ensure the variable symbol is found in the scope. <
       </table>
 </div><div class="memdoc">
 
-<p>Removes temporary variables by inserting destructor statements into subsequent positions in the IR. </p>
-<p>This function identifies temporary variables associated with a specific source node (tempSrc) and attempts to insert corresponding destructor statements into the positions following node 'n'. If no following positions are found for 'n' but temporaries exist, the function attempts a structural correction by moving the parent statement of the temporary source into a SgForInitStatement context to create new valid positions. If the correction fails to establish valid positions, a warning is issued regarding potential missed destructors.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to a node of type NodeType representing the reference point after which destructors should be inserted. </td></tr>
-    <tr><td class="paramname">tempSrc</td><td><a class="el" href="class_a.html">A</a> pointer to an SgNode representing the source of the temporaries that require destruction.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node 'n' and 'tempSrc' must be valid pointers. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Destructor statements for all temporaries in 'tempSrc' are inserted into the identified following positions of 'n'. If structural relocation occurs, the IR hierarchy of the parent statement of 'tempSrc' may be modified.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of the Temporaries() helper to retrieve the list of temporaries and <a class="el" href="analysis_utils__8_c_8dox.html#a5bbeb1b360d3c40b2c3c10440cdeed28" title="Finds the list of statement positions that follow a given initialized name.">findFollowingPositions()</a> to determine insertion points. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>If the function cannot find any following positions and cannot perform the structural relocation to a for-loop initialization context, a warning is printed to standard output indicating that some destructors may not be called. </dd></dl>
-
 </div>
 </div>
 <a id="a9dad1bfdc6520d35e58068ccf04647b0" name="a9dad1bfdc6520d35e58068ccf04647b0"></a>
@@ -504,7 +488,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode where the attribute is stored or will be created. </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier for the attribute to be retrieved or created.</td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier for the attribute to be retrieved or created.</td></tr>
   </table>
   </dd>
 </dl>
@@ -600,20 +584,6 @@ Any SgDeclarationStatement within the moved initializers will have its storage m
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Identifies all objects allocated within the scope of a given statement and its ancestors. </p>
-<p>This function traverses the hierarchy of statements upwards from the provided starting statement. For each ancestor statement encountered, it utilizes the blockObjectsAllocated function to determine which objects are allocated within that specific block. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process continues iteratively until the stopCond predicate returns true, effectively aggregating all allocated objects found along the path to the stopping point.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="rose_independent_support__2dot2gml__2main__8_c_8dox.html#a02a23997c3c3535cbabe21b50b18e78b">statement</a></td><td><a class="el" href="class_a.html">A</a> pointer to the starting SgStatement from which the upward traversal begins. </td></tr>
-    <tr><td class="paramname">stopCond</td><td><a class="el" href="class_a.html">A</a> predicate function (StopCond) used to determine when the upward traversal should terminate.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="destructor_call_annotator_8_c.html#a1e1813f9525738919cd914bf76dd4827">in_list</a> containing the collection of all objects identified as allocated during the traversal.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided statement must not be null, and its parent must be a valid SgStatement to satisfy the <a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT(parent)</a> check during the first iteration. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned <a class="el" href="destructor_call_annotator_8_c.html#a1e1813f9525738919cd914bf76dd4827">in_list</a> contains a flattened collection of all objects found in the traversed blocks.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the blockObjectsAllocated function to perform the actual allocation detection for each parent node. </dd></dl>
 
 </div>
 </div>

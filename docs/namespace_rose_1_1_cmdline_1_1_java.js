@@ -1,17 +1,17 @@
 var namespace_rose_1_1_cmdline_1_1_java =
 [
     [ "Ecj", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html", [
-      [ "GetRoseClasspath", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#aa776a8689da98b55fab0b06aae79d34c", null ],
-      [ "Process", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#ac17a74e36a5d527a036827bef7d4377e", null ],
-      [ "ProcessBatchMode", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a866c65164b3d20d26db198cd24b87e42", null ],
-      [ "ProcessEnableRemoteDebugging", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a0f99a72f62c9ea95ce1125a62518d230", null ],
-      [ "ProcessJvmOptions", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a9e44eede7bd575619678ba02d3ce828e", null ],
-      [ "StripRoseOptions", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a320da8eb8d8322666ad86d7d5f4fd1d5", null ],
+      [ "GetRoseClasspath", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a055dbec2b9d57484e0a5e154b97ec0fc", null ],
+      [ "Process", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#ad1b80e2ddd52df7233b361d5ae918947", null ],
+      [ "ProcessBatchMode", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a21eda11afcca752ab5f8c80d77024f87", null ],
+      [ "ProcessEnableRemoteDebugging", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a3c0c5edc03c6c5035480d15df8341cbf", null ],
+      [ "ProcessJvmOptions", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a587825c9cb46e33d4930ef4f2ef2b0eb", null ],
+      [ "StripRoseOptions", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a6f65d5680ebdfe086a2e949ab83a2b26", null ],
       [ "batch_mode", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#a2485acb3c597d47940e69c7c376b79a8", null ],
       [ "jvm_options", "namespace_rose_1_1_cmdline_1_1_java_1_1_ecj.html#ab6d444c32d0316522c93d8d04e9d3b9f", null ]
     ] ],
     [ "ExpandArglist", "namespace_rose_1_1_cmdline_1_1_java.html#a8826dca4118022c026726331da24fd17", null ],
-    [ "ExpandArglist", "namespace_rose_1_1_cmdline_1_1_java.html#a32a329d533bc001ea82ac0f1803e6a5e", null ],
+    [ "ExpandArglist", "namespace_rose_1_1_cmdline_1_1_java.html#a0ebbe96e688c9c4ea13cc336005d16a0", null ],
     [ "GetListFromFile", "namespace_rose_1_1_cmdline_1_1_java.html#ad0e78191f11331b3c35e05c885a34dce", null ],
     [ "OptionRequiresArgument", "namespace_rose_1_1_cmdline_1_1_java.html#abac79daf0a47cd56d3edba0e59e74945", null ],
     [ "Process", "namespace_rose_1_1_cmdline_1_1_java.html#a201e4a3201c82093778399af7f729615", null ],
@@ -27,7 +27,7 @@ var namespace_rose_1_1_cmdline_1_1_java =
     [ "ProcessSource", "namespace_rose_1_1_cmdline_1_1_java.html#a3ccf6d9bcea06650b95e10f153827085", null ],
     [ "ProcessSourceDestdir", "namespace_rose_1_1_cmdline_1_1_java.html#af2fc180bc50946083f889ff7fc245970", null ],
     [ "ProcessSourcepath", "namespace_rose_1_1_cmdline_1_1_java.html#ac830c62d9a9a9ad850f854ce4044086f", null ],
-    [ "ProcessTarget", "namespace_rose_1_1_cmdline_1_1_java.html#a83c73d0f09909b09650ca816c13f7271", null ],
+    [ "ProcessTarget", "namespace_rose_1_1_cmdline_1_1_java.html#a7babbf83135c78f5cad3d3f72b6c5aa2", null ],
     [ "ProcessVerbose", "namespace_rose_1_1_cmdline_1_1_java.html#a1c5d4ebd1844d64c9faec086b1b36b0d", null ],
     [ "StripRoseOptions", "namespace_rose_1_1_cmdline_1_1_java.html#ab25f140669b9e4042e617aef4df2c861", null ],
     [ "option_prefix", "namespace_rose_1_1_cmdline_1_1_java.html#a0dad966c9e6a1f13a5bc7d7331258763", null ]

@@ -1,9 +1,9 @@
 var _parser_8h =
 [
     [ "Rose::CommandLine::GenericSwitchArgs", "struct_rose_1_1_command_line_1_1_generic_switch_args.html", "struct_rose_1_1_command_line_1_1_generic_switch_args" ],
-    [ "Rose::CommandLine::createEmptyParser", "namespace_rose_1_1_command_line.html#a15c2cfe4c8890b3d90289b16a43c737e", null ],
-    [ "Rose::CommandLine::createEmptyParserStage", "namespace_rose_1_1_command_line.html#a6e5e1d3a8593a0513b27161003f27325", null ],
-    [ "Rose::CommandLine::genericSwitches", "namespace_rose_1_1_command_line.html#aa45373f941972ac9daa3851f7c290fcb", null ],
-    [ "Rose::CommandLine::insertBooleanSwitch", "namespace_rose_1_1_command_line.html#abbda48716c9378f51343266830559c1d", null ],
-    [ "Rose::CommandLine::insertBooleanSwitch", "namespace_rose_1_1_command_line.html#aa21bf32951e8e3ce3150728861c53da4", null ]
+    [ "Rose::CommandLine::createEmptyParser", "namespace_rose_1_1_command_line.html#a7ab8e49554ee762ef4274c33d3e477b0", null ],
+    [ "Rose::CommandLine::createEmptyParserStage", "namespace_rose_1_1_command_line.html#a6b2c06d5cf595b2e4ca6bcf6bedef15c", null ],
+    [ "Rose::CommandLine::genericSwitches", "namespace_rose_1_1_command_line.html#aaa8ec6d1a46c4aeb51725bd288a198db", null ],
+    [ "Rose::CommandLine::insertBooleanSwitch", "namespace_rose_1_1_command_line.html#a7c22134e6ee5574c73e5d79303b29e65", null ],
+    [ "Rose::CommandLine::insertBooleanSwitch", "namespace_rose_1_1_command_line.html#a585d6a14230986f2342ae3e58d47acb9", null ]
 ];

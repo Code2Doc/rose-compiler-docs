@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks nodes within an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> for inclusion in code generation output. </p>
+<p>Mark an AST subtree as compiler generated and to be output in the source file (code generation phase).</p>
 <p>Marks nodes in the AST for inclusion in the code generation output.</p>
 <p>This function performs a traversal of the provided SgNode and its descendants to identify and flag specific nodes that should be treated as compiler-generated code during the unparsing process. It utilizes an internal traversal mechanism, specifically the <a class="el" href="class_mark_for_output_in_code_generation.html" title="Mark an AST subtree as compiler generated and to be output in the source file (code generation phase)...">MarkForOutputInCodeGeneration</a> traversal class, to apply modifications to the AST. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy to ensure that parent nodes are processed before their children, maintaining a uniform interface for AST transformations.</p>
 <dl class="params"><dt>Parameters</dt><dd>

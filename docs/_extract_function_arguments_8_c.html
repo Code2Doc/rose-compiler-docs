@@ -139,7 +139,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determines if a given expression consists entirely of variable references. </p>
-<p>Returns true if the given expression refers to a variable. This could include using the dot and arrow operator to access member variables. <a class="el" href="class_a.html">A</a> comma op counts as a variable references if all its members are variable references (not just the last expression in the list). </p>
+<p>Returns true if the given expression refers to a variable. This could include using the dot and arrow operator to access member variables. <a class="el" href="class_a.html">A</a> comma op counts as a variable references if all its members are variable references (not just the last expression in the list).</p>
+<p>This function performs a recursive traversal of an expression tree to verify if every component of the expression is a variable reference. It checks for direct variable references, the <span class="tt">this</span> pointer, and recursively validates the operands of member access (dot and arrow operators), comma operators, and unary operators such as pointer dereferencing, casting, and address-of operations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expression</td><td><a class="el" href="class_a.html">A</a> pointer to the SgExpression to be evaluated.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the expression and all its constituent sub-expressions are variable references; false otherwise.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>expression should not be a null pointer. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the expression tree remains unchanged.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function treats the comma operator as a variable reference only if both the left-hand side and right-hand side operands are also variable references. </dd></dl>
 
 </div>
 </div>

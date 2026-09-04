@@ -17,9 +17,8 @@ var searchData=
   ['usage_20of_20moc_14',['Usage of moc',['../autotools.html#makefile_mocfiles',1,'']]],
   ['usage_20of_20the_20roseqt_20gui_15',['Usage of the RoseQt GUI',['../rose_qt_usage.html',1,'']]],
   ['use_20qt_20widgets_16',['Different approaches howto use Qt-Widgets',['../methods_of_usage.html',1,'']]],
-  ['use_20roseqtwidgets_17',['Projects that already use RoseQtWidgets',['../index.html#using_projects',1,'']]],
-  ['user_20perspective_18',['User perspective',['../namespace_rose_1_1_command_line.html#rose_commandline_user_perspective',1,'']]],
-  ['using_20a_20facility_20in_20the_20rose_20library_20or_20tools_19',['Using a facility in the ROSE library or tools',['../namespace_rose_1_1_diagnostics.html#diagnostics_facility_usage',1,'']]],
-  ['using_20rose_20qt_20widgets_20in_20your_20project_20',['Tutorial for using ROSE Qt-Widgets in your project',['../tutorial_usage.html',1,'']]],
-  ['utility_20classes_21',['Utility classes',['../impl_guide.html#impl_guide_utility_classes',1,'']]]
+  ['user_20perspective_17',['User perspective',['../namespace_rose_1_1_command_line.html#rose_commandline_user_perspective',1,'']]],
+  ['using_20a_20facility_20in_20the_20rose_20library_20or_20tools_18',['Using a facility in the ROSE library or tools',['../namespace_rose_1_1_diagnostics.html#diagnostics_facility_usage',1,'']]],
+  ['using_20rose_20qt_20widgets_20in_20your_20project_19',['Tutorial for using ROSE Qt-Widgets in your project',['../tutorial_usage.html',1,'']]],
+  ['utility_20classes_20',['Utility classes',['../impl_guide.html#impl_guide_utility_classes',1,'']]]
 ];

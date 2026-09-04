@@ -160,6 +160,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the address of a specific expression has been taken within a given node tree. </p>
+<p>Does expression expr potentially have its address taken somewhere in the tree pointed to by root?</p>
 <p>This function determines whether the expression provided by <span class="tt">expr</span> is subject to an address-of operation or is part of a pointer-related expression (such as a pointer array reference or pointer dereference) within the scope of the <span class="tt">root</span> node. It first performs a local check on the expression itself to see if it is inherently an address-taking expression. If not, it utilizes a <span class="tt"><a class="el" href="class_has_address_taken_visitor.html">HasAddressTakenVisitor</a></span> to traverse the <span class="tt">root</span> tree in preorder to search for any occurrences where the address of <span class="tt">expr</span> is taken.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -245,6 +246,7 @@ Functions</h2></td></tr>
 
 <p>Determines if a specific expression is potentially modified within a given node tree. </p>
 <p>Determines if a specific expression might have been modified within a given node scope.</p>
+<p>Is expression expr potentially modified (assigned to, address taken, passed by non-const reference) somewhere in the tree pointed to by root?</p>
 <p>This function performs a traversal of the provided SgNode tree starting from the root to detect if the target SgExpression is subject to modifications. It utilizes the <a class="el" href="class_is_potentially_modified_visitor.html">IsPotentiallyModifiedVisitor</a> pattern to perform a preorder traversal of the AST. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor checks for any operations or assignments that could alter the state or value of the expression in question.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

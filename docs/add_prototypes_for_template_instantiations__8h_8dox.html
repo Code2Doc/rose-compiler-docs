@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds prototype declarations for template instantiations marked for output. </p>
+<p>Fixups transformations that have added template instantiations or caused template instantiations to be output so that there is a proper prototype declaration before the template instantation is called.</p>
 <p>This function identifies template instantiations that are marked as output and ensures they have corresponding prototype declarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves two main stages: first, a traversal using <a class="el" href="class_collect_template_instantiations_marked_for_output.html">CollectTemplateInstantiationsMarkedForOutput</a> to find the first location of the template instantiation call; second, an iterative traversal using <a class="el" href="class_add_prototypes_for_template_instantiations.html">AddPrototypesForTemplateInstantiations</a> to insert the necessary prototype declarations. This is specifically required for instantiations that do not already possess a prototype declaration. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function operates on an SgFile or SgProject level to allow for the necessary scope to locate and insert declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

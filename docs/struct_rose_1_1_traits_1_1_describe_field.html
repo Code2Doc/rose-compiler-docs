@@ -94,16 +94,16 @@ $(function(){initNavTree('struct_rose_1_1_traits_1_1_describe_field.html','','')
 <div class="contents">
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeT, typename FieldPtrT = decltype(nullptr), FieldPtrT fld_ptr = nullptr&gt;<br />
-struct Rose::Traits::DescribeField&lt; NodeT, FieldPtrT, fld_ptr &gt;</div><p>Describes a field of an <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> node</p>
+struct Rose::Traits::DescribeField&lt; NodeT, FieldPtrT, fld_ptr &gt;</div><p>Describes a field of an <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> node</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">NodeT</td><td>the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> node class </td></tr>
+    <tr><td class="paramname">NodeT</td><td>the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> node class </td></tr>
     <tr><td class="paramname">FieldPtrT</td><td>the type of the pointer-to-member </td></tr>
     <tr><td class="paramname">fld_ptr</td><td>the the pointer-to-member</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo</a></b></dt><dd>c++17 with auto non-type template parameter: -&gt; remove the need for FieldPtrT -&gt; remove the need for partial spec (c++17 has "get base-type of field-pointer-type") -&gt; remove the need for describe_field_t::bind which is here because c++14 don't want to initialize a pointer-to-member template argument from a constexpr variable. (it requires <span class="tt">&amp;X::mbr</span> form) It must be: <span class="tt">using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;&amp;X::mbr&gt;;</span> not <span class="tt">constexpr auto Xmbr = &amp;X::mbr; using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;Xmbr&gt;;</span>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo</a></b></dt><dd>c++17 with auto non-type template parameter: -&gt; remove the need for FieldPtrT -&gt; remove the need for partial spec (c++17 has "get base-type of field-pointer-type") -&gt; remove the need for describe_field_t::bind which is here because c++14 don't want to initialize a pointer-to-member template argument from a constexpr variable. (it requires <span class="tt">&amp;X::mbr</span> form) It must be: <span class="tt">using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;&amp;X::mbr&gt;;</span> not <span class="tt">constexpr auto Xmbr = &amp;X::mbr; using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;Xmbr&gt;;</span>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>using decltype(nullptr) instead of nullptr_t because of ICC 19 </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/Users/billx/git/rose/src/Rose/Traits/describe/<a class="el" href="fields_8h_source.html">fields.h</a></li>

@@ -1,8 +1,8 @@
 var namespace_sawyer_1_1_container =
 [
     [ "AddressMapImpl", "namespace_sawyer_1_1_container_1_1_address_map_impl.html", "namespace_sawyer_1_1_container_1_1_address_map_impl" ],
-    [ "Algorithm", "namespace_sawyer_1_1_container_1_1_algorithm.html", "namespace_sawyer_1_1_container_1_1_algorithm" ],
     [ "BitVectorSupport", "namespace_sawyer_1_1_container_1_1_bit_vector_support.html", "namespace_sawyer_1_1_container_1_1_bit_vector_support" ],
+    [ "Algorithm", "namespace_sawyer_1_1_container_1_1_algorithm.html", "namespace_sawyer_1_1_container_1_1_algorithm" ],
     [ "TraceDetail", "namespace_sawyer_1_1_container_1_1_trace_detail.html", "namespace_sawyer_1_1_container_1_1_trace_detail" ],
     [ "AddressMapTraits", "struct_sawyer_1_1_container_1_1_address_map_traits.html", "struct_sawyer_1_1_container_1_1_address_map_traits" ],
     [ "AddressMapTraits&lt; const AddressMap &gt;", "struct_sawyer_1_1_container_1_1_address_map_traits_3_01const_01_address_map_01_4.html", "struct_sawyer_1_1_container_1_1_address_map_traits_3_01const_01_address_map_01_4" ],

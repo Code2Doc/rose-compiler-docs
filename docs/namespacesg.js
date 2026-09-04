@@ -1,7 +1,7 @@
 var namespacesg =
 [
-    [ "anonymous__namespace_02sageGeneric_8h_03", "namespacesg_1_1anonymous____namespace__02sage_generic__8h__03.html", null ],
     [ "anonymous_namespace{sageGeneric.h}", "namespacesg_1_1anonymous__namespace_02sage_generic_8h_03.html", "namespacesg_1_1anonymous__namespace_02sage_generic_8h_03" ],
+    [ "anonymous__namespace_02sageGeneric_8h_03", "namespacesg_1_1anonymous____namespace__02sage_generic__8h__03.html", null ],
     [ "ConstLike", "structsg_1_1_const_like.html", "structsg_1_1_const_like" ],
     [ "ConstLike&lt; const T1, T2 &gt;", "structsg_1_1_const_like_3_01const_01_t1_00_01_t2_01_4.html", "structsg_1_1_const_like_3_01const_01_t1_00_01_t2_01_4" ],
     [ "ConditionalEnable", "structsg_1_1_conditional_enable.html", null ],
@@ -55,8 +55,8 @@ var namespacesg =
     [ "dispatchHelper", "namespacesg.html#abd3937b587b3d2207aee50a92c184a40", null ],
     [ "linkParentChild", "namespacesg.html#a91351a81d99e4846a19091fb87330205", null ],
     [ "operator<", "namespacesg.html#aee9afa84d3eb7bd9cb5424d99bd34c92", null ],
-    [ "report_error", "namespacesg.html#a612279d3c0a664df440ca8ed3242a945", null ],
-    [ "report_error_if", "namespacesg.html#ad38278fd55baf4a12afd6e8c15a78b2b", null ],
+    [ "report_error", "namespacesg.html#aed26b4878990f9aca957f38bff7f3d73", null ],
+    [ "report_error_if", "namespacesg.html#a934fc2730ce910cdc1574d1a5fb68aaf", null ],
     [ "swap_child", "namespacesg.html#a4ac8306fe9358b57d635c626a89bf473", null ],
     [ "swap_parent", "namespacesg.html#ab5889fc5d7bbd374a16c14fab999ec64", null ],
     [ "swap_parent", "namespacesg.html#ab66ea170ec507e2094f8e47cd5de4c21", null ],
@@ -64,7 +64,7 @@ var namespacesg =
     [ "traverseChildren", "namespacesg.html#a9fffa3452a1a5073ff61069774f263fe", null ],
     [ "traverseChildren", "namespacesg.html#a95cfe51a3276b26596c867501bc31c77", null ],
     [ "traverseChildren", "namespacesg.html#aa9683029d02c0457fc37e4e1ad3810ef", null ],
-    [ "unexpected_node", "namespacesg.html#a3a2d334536ee8dc56ca41ef1312f3d8b", null ],
+    [ "unexpected_node", "namespacesg.html#a94c40d5a37467288eafb7cae437b676a", null ],
     [ "unused", "namespacesg.html#ad20d21ee84fc409a7014cd8990e211c4", null ],
     [ "unused", "namespacesg.html#a7f54fac5ec5b46e9d96b6633fb1cdd95", null ]
 ];

@@ -164,7 +164,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Returns a /qpixmap.html&gt;QPixmap object from an XPM data-structure. </p>
 <p>QRose and Qt use the /qpixmap.html&gt;QPixmap class to deal with images and icons in widgets, such as buttons. All QRose icons are stored in xpm format in the include/icons directory. You can use QPixmap::getPixmap to convert an xpm file into QPixmap object the first time it is accessed, and stored for subsequent accesses. All instances of QPixmap stored are automatically destroyed at the end of the program cycle.</p>
-<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="attribute__8_c_8dox.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="feature_tests_8_c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
 <div class="line">  QRGUI::init(argc, argv);</div>
 <div class="line">  QRDialog *d = QRGUI::getDialog(0);</div>
 <div class="line">  QRTestWidget *w = <span class="keyword">new</span> QRTestWidget(d);</div>
@@ -174,8 +174,8 @@ Static Protected Attributes</h2></td></tr>
 <div class="line">  QRGUI::exec();</div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aattribute__8_c_8dox_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="attribute__8_c_8dox.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Serves as the entry point of the application to demonstrate attribute management.</div><div class="ttdef"><b>Definition</b> featureTests.C:55</div></div>
 <div class="ttc" id="aclassqrs_1_1_q_r_pixmap_html_ac7267f0e58a05e8577b16edf9f379674"><div class="ttname"><a href="#ac7267f0e58a05e8577b16edf9f379674">qrs::QRPixmap::getPixmap</a></div><div class="ttdeci">static QPixmap * getPixmap(const char **pixdef)</div><div class="ttdoc">Returns a /qpixmap.html&gt;QPixmap object from an XPM data-structure.</div><div class="ttdef"><b>Definition</b> QRPixmap.C:41</div></div>
+<div class="ttc" id="afeature_tests_8_c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="feature_tests_8_c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Serves as the entry point of the application to demonstrate attribute management.</div><div class="ttdef"><b>Definition</b> featureTests.C:55</div></div>
 <div class="ttc" id="anamespace_rose_icons_html_aeff3c62702858fe4af4963029ab58f89"><div class="ttname"><a href="namespace_rose_icons.html#aeff3c62702858fe4af4963029ab58f89">RoseIcons::no</a></div><div class="ttdeci">const char * no[]</div></div>
 </div><!-- fragment --> </dd></dl>
 

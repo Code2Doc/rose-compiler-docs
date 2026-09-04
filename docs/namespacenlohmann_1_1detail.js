@@ -1,5 +1,6 @@
 var namespacenlohmann_1_1detail =
 [
+    [ "dtoa_impl", "namespacenlohmann_1_1detail_1_1dtoa__impl.html", "namespacenlohmann_1_1detail_1_1dtoa__impl" ],
     [ "dtoa__impl", "namespacenlohmann_1_1detail_1_1dtoa____impl.html", [
       [ "append_exponent", "namespacenlohmann_1_1detail_1_1dtoa____impl.html#a478418e2c911952d73501cdaaa64fedf", null ],
       [ "compute_boundaries", "namespacenlohmann_1_1detail_1_1dtoa____impl.html#ac9ec276dc9382f415d5635ab3423717e", null ],
@@ -12,7 +13,6 @@ var namespacenlohmann_1_1detail =
       [ "grisu2_round", "namespacenlohmann_1_1detail_1_1dtoa____impl.html#acb13bedbe19697dc8d84ab3c6c03f40b", null ],
       [ "reinterpret_bits", "namespacenlohmann_1_1detail_1_1dtoa____impl.html#abc38d70cf95aa825e37f37a49a1c3a68", null ]
     ] ],
-    [ "dtoa_impl", "namespacenlohmann_1_1detail_1_1dtoa__impl.html", "namespacenlohmann_1_1detail_1_1dtoa__impl" ],
     [ "position_t", "structnlohmann_1_1detail_1_1position__t.html", "structnlohmann_1_1detail_1_1position__t" ],
     [ "exception", "classnlohmann_1_1detail_1_1exception.html", "classnlohmann_1_1detail_1_1exception" ],
     [ "parse_error", "classnlohmann_1_1detail_1_1parse__error.html", "classnlohmann_1_1detail_1_1parse__error" ],
@@ -199,7 +199,7 @@ var namespacenlohmann_1_1detail =
       [ "binary", "namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a9d7183f16acce70658f686ae7f1a4d20", null ],
       [ "discarded", "namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46", null ]
     ] ],
-    [ "combine", "namespacenlohmann_1_1detail.html#a3de9150989c40e5a06ed80e07d269e83", null ],
+    [ "combine", "namespacenlohmann_1_1detail.html#a66eb4d912b6f872d6983f7d0826f32c6", null ],
     [ "from_json", "namespacenlohmann_1_1detail.html#a296327bab35a14c8ea910709f68394c3", null ],
     [ "from_json", "namespacenlohmann_1_1detail.html#a839b0ab50d2c9bce669068f56bc41202", null ],
     [ "from_json", "namespacenlohmann_1_1detail.html#acec851f53109b173f721c30883933de0", null ],
@@ -252,7 +252,7 @@ var namespacenlohmann_1_1detail =
     [ "input_adapter", "namespacenlohmann_1_1detail.html#a28f60c85f6705a652a2a78d0f31010f9", null ],
     [ "input_adapter", "namespacenlohmann_1_1detail.html#a7908f7aa06f20e6083619d1d4b4eb769", null ],
     [ "int_to_string", "namespacenlohmann_1_1detail.html#a3c45286b0a2f15ea0a756cb87a76cf9b", null ],
-    [ "little_endianess", "namespacenlohmann_1_1detail.html#ad2860d9bcd96cd7b8258a5b94674508c", null ],
+    [ "little_endianess", "namespacenlohmann_1_1detail.html#a36f47a8771a667cbaf92057b603737e3", null ],
     [ "operator<", "namespacenlohmann_1_1detail.html#a09169efff3bd1771fff29bd92cea19e0", null ],
     [ "to_chars", "namespacenlohmann_1_1detail.html#a8699aa6a5eb883d32740d173c7fe2063", null ],
     [ "to_chars", "namespacenlohmann_1_1detail.html#a4ceeb4ec7f2cd493dd9cf328044c1e3c", null ],

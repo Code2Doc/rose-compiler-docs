@@ -839,7 +839,7 @@ If <span class="tt">hasStride</span> is false, a <span class="tt">SgNullExpressi
         <tr>
           <td class="memname">void c_action_ac_value_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -917,7 +917,7 @@ If <span class="tt">hasStride</span> is false, a <span class="tt">SgNullExpressi
 <dl class="section post"><dt>Postcondition</dt><dd>If a conversion occurs, the astTypeStack will contain the new SgArrayType instead of the previous base type. </dd>
 <dd>
 If a conversion occurs, the top element of the astAttributeSpecStack is popped.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the global state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> stacks (astExpressionStack, astTypeStack, and astAttributeSpecStack). </dd>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the global state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> stacks (astExpressionStack, astTypeStack, and astAttributeSpecStack). </dd>
 <dd>
 Debugging information is printed to stdout if SgProject::get_verbose() exceeds DEBUG_RULE_COMMENT_LEVEL. </dd>
 <dd>
@@ -2296,7 +2296,7 @@ Debugging information is printed to stdout if SgProject::get_verbose() exceeds D
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>All provided token pointers should be valid and not null if they are intended to be accessed during the arithmetic evaluation. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the processed arithmetic if-statement.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the processed arithmetic if-statement.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the core action processing logic for arithmetic conditional statements.</dd></dl>
 <p>This function serves as a diagnostic utility to print the details of six provided tokens to the standard output. It iterates through each provided pointer, checking for nullity before attempting to call print_token. This is primarily used for debugging the construction or processing of arithmetic if-statement nodes in the parser/AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2336,7 +2336,7 @@ Debugging information is printed to stdout if SgProject::get_verbose() exceeds D
         <tr>
           <td class="memname">void c_action_array_spec </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2449,7 +2449,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
     <tr><td class="paramname">label</td><td>Optional statement label. </td></tr>
     <tr><td class="paramname">goKeyword</td><td>T_GO or T_GOTO token. </td></tr>
     <tr><td class="paramname">toKeyword</td><td>T_TO token if given; null otherwise. </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td>T_IDENT token for name subrule. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td>T_IDENT token for name subrule. </td></tr>
     <tr><td class="paramname">eos</td><td>T_EOS token. Note: This is a deleted feature. </td></tr>
   </table>
   </dd>
@@ -2487,7 +2487,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided pointers carg_0 and carg_1 must not be null and must point to valid <a class="el" href="class_token__t.html">Token_t</a> instances representing a valid assignment structure. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> assignment statement is processed, and the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the assignment action.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> assignment statement is processed, and the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the assignment action.</dd></dl>
 <p>This function serves as a callback or action handler for an assignment statement. It prints a diagnostic message to the standard output indicating the number of arguments and then attempts to print the contents of the provided tokens. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation checks for NULL pointers to prevent dereferencing errors during the printing process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3505,7 +3505,7 @@ This implementation treats boz constants as typeless until assignment.</dd></dl>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided <a class="el" href="class_token__t.html">Token_t</a> pointers must be valid and not null, representing a well-formed case statement structure in the token stream. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the processed case statement.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the processed case statement.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the action-driven parsing logic and relies on the correctness of the preceding token stream analysis.</dd></dl>
 <p>This function serves as an action handler for a case statement, responsible for printing the details of four provided tokens to the standard output. It performs null-pointer checks for each argument to ensure that the print_token function is only called on valid memory addresses, preventing segmentation faults.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3737,7 +3737,7 @@ This implementation treats boz constants as typeless until assignment.</dd></dl>
 <p>Processes a character literal constant during C action execution.</p>
 <p>Logs the details of tokens associated with a character literal constant action.</p>
 <p>Processes a character literal constant action within the parser.</p>
-<p>This function is responsible for handling the semantic action associated with the identification of a character literal constant. It typically manages the construction of the corresponding <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> node or the evaluation of the character value during the parsing phase.</p>
+<p>This function is responsible for handling the semantic action associated with the identification of a character literal constant. It typically manages the construction of the corresponding <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> node or the evaluation of the character value during the parsing phase.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td>Pointer to the first token involved in the character literal operation. </td></tr>
@@ -3760,7 +3760,7 @@ This implementation treats boz constants as typeless until assignment.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0, carg_1, and carg_2 should ideally point to valid <a class="el" href="class_token__t.html">Token_t</a> structures, though the function handles NULL pointers gracefully. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints the state of the provided tokens to the standard output.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a print_token function to handle the actual formatting of the <a class="el" href="class_token__t.html">Token_t</a> contents.</dd></dl>
-<p>This function handles the semantic action for character literals in C. It extracts the content within the quotes, determines if single or double quotes were used, and creates an SgStringVal object representing the character literal. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting value is then pushed onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> expression stack. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on ifdef or ifndef logic controlled by SKIP_C_ACTION_IMPLEMENTATION.</p>
+<p>This function handles the semantic action for character literals in C. It extracts the content within the quotes, determines if single or double quotes were used, and creates an SgStringVal object representing the character literal. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting value is then pushed onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> expression stack. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on ifdef or ifndef logic controlled by SKIP_C_ACTION_IMPLEMENTATION.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">digitString</td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="class_token__t.html">Token_t</a> representing the digit string component. </td></tr>
@@ -3855,7 +3855,7 @@ This implementation treats boz constants as typeless until assignment.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0 and carg_1 should be valid memory addresses or NULL. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints information to the standard output; no state changes are made to the input arguments.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of the print_token function to handle the printing of <a class="el" href="class_token__t.html">Token_t</a> objects.</dd></dl>
-<p>This function handles the semantic actions associated with parsing C-style character type selectors. It manages the movement of type information between various <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> stacks (astExpressionStack, astTypeParameterStack, and astTypeKindStack) based on whether the input specifies a kind, a length, or an asterisk-based shape. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation accounts for specific logic changes in OFP 0.8.2 regarding how kind and length parameters are processed.</p>
+<p>This function handles the semantic actions associated with parsing C-style character type selectors. It manages the movement of type information between various <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> stacks (astExpressionStack, astTypeParameterStack, and astTypeKindStack) based on whether the input specifies a kind, a length, or an asterisk-based shape. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation accounts for specific logic changes in OFP 0.8.2 regarding how kind and length parameters are processed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type_keyword</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_token__t.html">Token_t</a> representing the primary type keyword. </td></tr>
@@ -3874,7 +3874,7 @@ If kindOrLen2 is KindLenParam_kind, astExpressionStack must have exactly one ele
 <dl class="section post"><dt>Postcondition</dt><dd>If kindOrLen1 or kindOrLen2 is KindLenParam_kind, the top element of astExpressionStack is moved to the front of astTypeKindStack. </dd>
 <dd>
 If kindOrLen1 is KindLenParam_none and hasAsterisk is true, the front element of astTypeParameterStack is moved to the front of astExpressionStack.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ROSE_ASSERT to validate the state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> stacks during processing. </dd>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ROSE_ASSERT to validate the state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> stacks during processing. </dd>
 <dd>
 Debugging information is printed to stdout if the SgProject verbose level is greater than DEBUG_RULE_COMMENT_LEVEL.</dd></dl>
 <p>R424 char-selector : T_ASTERISK char_length (T_COMMA)? | T_LPAREN (T_KIND | T_LEN) T_EQUALS type_param_value ( T_COMMA (T_KIND | T_LEN) T_EQUALS type_param_value )? T_RPAREN | T_LPAREN type_param_value ( T_COMMA (T_KIND T_EQUALS)? expr )? T_RPAREN</p>
@@ -4181,7 +4181,7 @@ Debugging information is printed to stdout if the SgProject verbose level is gre
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0, carg_1, and carg_2 must be valid, non-null pointers to <a class="el" href="class_token__t.html">Token_t</a> objects unless the specific action code in carg_3 allows for null inputs. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> may be modified based on the contents of the provided tokens and the action code.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> may be modified based on the contents of the provided tokens and the action code.</dd></dl>
 <p>This function serves as a debugging or logging utility that prints the values of four provided arguments to the standard output. It specifically checks for nullity for the first three pointer arguments and uses the <span class="tt">print_token</span> function to display their contents. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> fourth argument, an integer, is printed directly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4340,7 +4340,7 @@ Debugging information is printed to stdout if the SgProject verbose level is gre
         <tr>
           <td class="memname">void c_action_component_attr_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4526,7 +4526,7 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
         <tr>
           <td class="memname">void c_action_component_decl_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4711,7 +4711,7 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
 <p>Empty function or ill-formed function detected. /. </p>
 <p>Logs the details of tokens associated with a computed goto statement.</p>
 <p>Processes a computed goto statement action within the C parser.</p>
-<p>This function handles the semantic actions associated with a computed goto statement in a C-like language. It processes the tokens representing the statement and updates the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction accordingly.</p>
+<p>This function handles the semantic actions associated with a computed goto statement in a C-like language. It processes the tokens representing the statement and updates the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction accordingly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td>Pointer to the first token associated with the computed goto statement. </td></tr>
@@ -4999,7 +4999,7 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
 
 <p>Processes a continue statement action within the C parser. </p>
 <p>Logs the details of tokens associated with a continue statement action.</p>
-<p>This function handles the logic associated with a 'continue' statement during the parsing or semantic analysis phase. It is responsible for updating the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction to reflect the presence of a continue control flow instruction.</p>
+<p>This function handles the logic associated with a 'continue' statement during the parsing or semantic analysis phase. It is responsible for updating the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction to reflect the presence of a continue control flow instruction.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td>Pointer to the first token associated with the continue statement. </td></tr>
@@ -5021,7 +5021,7 @@ If SKIP_C_ACTION_IMPLEMENTATION is defined, the function performs no declaration
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0, carg_1, and carg_2 should ideally point to valid <a class="el" href="class_token__t.html">Token_t</a> objects, though the function handles NULL pointers gracefully. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints the token information or NULL status to stdout.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is primarily used for debugging and tracing the construction or traversal of continue statement nodes in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is primarily used for debugging and tracing the construction or traversal of continue statement nodes in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</dd></dl>
 <p>R848 continue_stmt : (label)? T_CONTINUE</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5625,7 +5625,7 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
 <dl class="section pre"><dt>Precondition</dt><dd>carg_0 should ideally point to a valid, initialized <a class="el" href="class_token__t.html">Token_t</a> object to ensure meaningful output, though the function handles NULL safely.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function outputs diagnostic information to the standard output.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is primarily used for debugging purposes and relies on the existence of the print_token function to process the <a class="el" href="class_token__t.html">Token_t</a> object.</dd></dl>
-<p>This function is responsible for handling the type specification part of a variable declaration. It interprets the provided type specification (e.g., intrinsic, type, or class) and manages the transition of type information between the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> type stack and the base type stack. Specifically, it can modify existing type nodes in the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a71411b3f0edd6baf04143d58a5bc40c6">astTypeStack</a></span> based on the <span class="tt"><a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a></span> parameter and ensures that the identified type is moved to the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#af37b597779b11f01f59c6ead6461872c">astBaseTypeStack</a></span> for subsequent rule processing.</p>
+<p>This function is responsible for handling the type specification part of a variable declaration. It interprets the provided type specification (e.g., intrinsic, type, or class) and manages the transition of type information between the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> type stack and the base type stack. Specifically, it can modify existing type nodes in the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a71411b3f0edd6baf04143d58a5bc40c6">astTypeStack</a></span> based on the <span class="tt"><a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a></span> parameter and ensures that the identified type is moved to the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#af37b597779b11f01f59c6ead6461872c">astBaseTypeStack</a></span> for subsequent rule processing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">udtKeyword</td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="class_token__t.html">Token_t</a> representing the user-defined type keyword. Can be NULL. </td></tr>
@@ -5739,7 +5739,7 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
         <tr>
           <td class="memname">void c_action_deferred_shape_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5886,7 +5886,7 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
 </div><div class="memdoc">
 
 <p>Empty function or ill-formed function detected. /. </p>
-<p>Handles the action for a defined operator by pushing it onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> name stack.</p>
+<p>Handles the action for a defined operator by pushing it onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> name stack.</p>
 <p>Logs the arguments passed to the defined operator action.</p>
 <p>Performs an action related to a defined operator.</p>
 <p>This function handles the logic associated with a specific operator definition within the context of the provided token and boolean flag. It is intended to process the operator's properties based on the input parameters.</p>
@@ -5909,7 +5909,7 @@ If the implementation is not skipped via if !SKIP_C_ACTION_IMPLEMENTATION, an er
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>carg_0 should ideally point to a valid, initialized <a class="el" href="class_token__t.html">Token_t</a> object if token details are to be inspected. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints the status of carg_0 and the value of carg_1 to stdout.</dd></dl>
-<p>This function is responsible for managing the state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> name stack when a defined operator is encountered. It logs debugging information if the verbosity level is sufficiently high and ensures that the operator token is added to the front of the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#aabc6c028480cfc6a29a194f8e457083e">astNameStack</a></span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also checks if the stack is already non-empty to prevent redundant or confusing stack states.</p>
+<p>This function is responsible for managing the state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> name stack when a defined operator is encountered. It logs debugging information if the verbosity level is sufficiently high and ensures that the operator token is added to the front of the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#aabc6c028480cfc6a29a194f8e457083e">astNameStack</a></span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also checks if the stack is already non-empty to prevent redundant or confusing stack states.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">definedOp</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_token__t.html">Token_t</a> representing the defined operator. Must not be NULL. </td></tr>
@@ -6075,23 +6075,23 @@ This implementation is wrapped in if !SKIP_C_ACTION_IMPLEMENTATION.</dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasTypeAttrSpecList</em></span>, </td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasGenericNameList</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_5</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Empty function or ill-formed function detected. /. </p>
-<p>Processes and constructs a <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> derived type statement in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<p>Processes and constructs a <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> derived type statement in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
 <p>Logs the arguments associated with a derived type statement action.</p>
 <p>Processes a derived type statement in the context of C-style language actions.</p>
 <p>This function handles the semantic or syntactic processing of a derived type statement, utilizing provided tokens and boolean flags to determine the appropriate action for the type definition.</p>
@@ -6123,7 +6123,7 @@ This implementation is wrapped in if !SKIP_C_ACTION_IMPLEMENTATION.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0, carg_1, carg_2, and carg_3 should point to valid <a class="el" href="class_token__t.html">Token_t</a> objects or be NULL. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function outputs the state of all arguments to the standard output.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is primarily used for debugging or tracing the parsing process of derived type statements.</dd></dl>
-<p>This function handles the semantic action for a derived type statement during parsing. It is responsible for creating a SgDerivedTypeStatement, associating it with the current scope, and managing the definition and declaration modifiers. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation ensures that the derived type statement is appended to the current scope stack and updates the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> scope stack with the new definition. It also handles the configuration of access modifiers to ensure consistency between defining and non-defining declarations.</p>
+<p>This function handles the semantic action for a derived type statement during parsing. It is responsible for creating a SgDerivedTypeStatement, associating it with the current scope, and managing the definition and declaration modifiers. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation ensures that the derived type statement is appended to the current scope stack and updates the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> scope stack with the new definition. It also handles the configuration of access modifiers to ensure consistency between defining and non-defining declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td><a class="el" href="class_a.html">A</a> token representing the label of the statement, if present. </td></tr>
@@ -6137,7 +6137,7 @@ This implementation is wrapped in if !SKIP_C_ACTION_IMPLEMENTATION.</dd></dl>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current scope stack must not be empty, and the top of the scope stack must be valid. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> SgDerivedTypeStatement is created and appended to the current scope. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> definition of the derived type is pushed onto the astScopeStack.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses ifndef SKIP_C_ACTION_IMPLEMENTATION to conditionally execute the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction logic. </dd>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses ifndef SKIP_C_ACTION_IMPLEMENTATION to conditionally execute the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction logic. </dd>
 <dd>
 Access modifiers are explicitly set to undefined for the declaration modifier to prevent the unparser from generating an explicit "PUBLIC" attribute, maintaining compatibility with specific <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> accessibility requirements.</dd></dl>
 <p>R430 derived_type_stmt</p>
@@ -6437,7 +6437,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided <a class="el" href="class_token__t.html">Token_t</a> pointers must be valid and not null if they are required for the specific execution context. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the associated <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the processed do-statement.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the associated <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the processed do-statement.</dd></dl>
 <p>This function serves as a diagnostic utility that prints the contents of five token pointers and one boolean flag to the standard output. It iterates through each provided <a class="el" href="class_token__t.html">Token_t</a> pointer, checking for NULLity before attempting to call print_token to avoid segmentation faults. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also outputs the value of the boolean flag.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6611,7 +6611,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 
 <p>Performs an action related to the specification of a DTV type. </p>
 <p>Performs an action for the dtv_type_spec token type.</p>
-<p>This function is designed to handle the logic associated with the specification of a DTV (Data Type Value) type within the parser or semantic analyzer. It processes the provided token to update or validate the type specification based on the current state of the symbol table or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction.</p>
+<p>This function is designed to handle the logic associated with the specification of a DTV (Data Type Value) type within the parser or semantic analyzer. It processes the provided token to update or validate the type specification based on the current state of the symbol table or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="class_token__t.html">Token_t</a> structure representing the token associated with the type specification.</td></tr>
@@ -6801,7 +6801,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 
 <p>Processes the action associated with an else-if statement in the syntax tree. </p>
 <p>Logs the contents of tokens associated with an else-if statement action.</p>
-<p>This function handles the semantic or structural processing required when an else-if construct is encountered during parsing or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction. It manages the linkage between the preceding if-statement and the subsequent else-if block.</p>
+<p>This function handles the semantic or structural processing required when an else-if construct is encountered during parsing or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction. It manages the linkage between the preceding if-statement and the subsequent else-if block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td>Pointer to the first token related to the else-if statement. </td></tr>
@@ -6884,7 +6884,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided <a class="el" href="class_token__t.html">Token_t</a> pointers must be valid and not null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> or internal representation is updated to include the else branch.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> or internal representation is updated to include the else branch.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the core action processing logic for control flow statements.</dd></dl>
 <p>This function serves as a callback or action handler for an else statement in a parser. It prints a header indicating the action type and the number of arguments, then iterates through the four provided <a class="el" href="class_token__t.html">Token_t</a> pointers. For each pointer, it checks if the token is non-null; if valid, it calls print_token to display the token's details, otherwise, it logs that the token is NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -6959,7 +6959,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>All provided token pointers should be valid and not null, unless the implementation specifically handles nullity for certain arguments. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the 'elsewhere' action.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the 'elsewhere' action.</dd></dl>
 <p>This function serves as a diagnostic or logging utility for the elsewhere statement action. It iterates through five provided <a class="el" href="class_token__t.html">Token_t</a> pointers, checking each for nullity. If a token is not NULL, its contents are printed to the standard output using the print_token function. If a token is NULL, a notification indicating the token is NULL is printed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7399,7 +7399,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
     <tr><td class="paramname">label</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> label. </td></tr>
     <tr><td class="paramname">keyword1</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> END or ENDFUNCTION keyword token. </td></tr>
     <tr><td class="paramname">keyword2</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> FUNCTION keyword token (may be null). </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the function. </td></tr>
     <tr><td class="paramname">eos</td><td>End of statement token. </td></tr>
     <tr><td class="paramname">id</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> identifier, if present. Otherwise null. </td></tr>
   </table>
@@ -7860,7 +7860,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 
 <p>Finalizes the processing of a select-type statement action. </p>
 <p>Logs the details of tokens associated with an end select type statement action.</p>
-<p>This function is responsible for handling the end of a select-type statement within the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction phase. It processes the provided tokens to ensure the statement structure is correctly closed and integrated into the existing syntax tree.</p>
+<p>This function is responsible for handling the end of a select-type statement within the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction phase. It processes the provided tokens to ensure the statement structure is correctly closed and integrated into the existing syntax tree.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td>Pointer to the first token associated with the statement. </td></tr>
@@ -7969,7 +7969,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
     <tr><td class="paramname">label</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> label. </td></tr>
     <tr><td class="paramname">keyword1</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> END or ENDSUBROUTINE keyword token. </td></tr>
     <tr><td class="paramname">keyword2</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SUBROUTINE keyword token (may be null). </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the subroutine (may be null). </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the subroutine (may be null). </td></tr>
     <tr><td class="paramname">eos</td><td>End of statement token. </td></tr>
   </table>
   </dd>
@@ -7996,7 +7996,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>typeKeyword</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -8006,7 +8006,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -8043,7 +8043,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the print_token function is available and correctly handles the <a class="el" href="class_token__t.html">Token_t</a> structure. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function outputs diagnostic information to the standard output stream.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is primarily used for tracing the state of tokens during the execution of end type statement actions.</dd></dl>
-<p>This function handles the closing logic for a C action that terminates a type definition. It is responsible for updating the source position of the current scope, popping the class definition from the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> scope stack, and performing necessary fixups for potentially incomplete function return types. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the state of the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> to identify the scope being closed.</p>
+<p>This function handles the closing logic for a C action that terminates a type definition. It is responsible for updating the source position of the current scope, popping the class definition from the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> scope stack, and performing necessary fixups for potentially incomplete function return types. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the state of the <span class="tt"><a class="el" href="backend_2unparser_2language_independence_support_2_fortran_parser_state_8h.html#a8f6564f43ebfc87bb672f0b6dc0a86fc">astScopeStack</a></span> to identify the scope being closed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td><a class="el" href="class_a.html">A</a> token representing the label associated with the statement. </td></tr>
@@ -8063,7 +8063,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source position of the scope at the top of the stack is reset to the position of <span class="tt">endKeyword</span>. </dd>
 <dd>
-<span class="tt"><a class="el" href="fortran____support__8_c_8dox.html#a6eefbf3b63bfb35a4a172db9ad6b4aa9" title="Fixes function return types that may be incomplete or incorrectly resolved due to use statements.">fixup_possible_incomplete_function_return_type()</a></span> is called to ensure type consistency.</dd></dl>
+<span class="tt"><a class="el" href="fortran__support_8_c.html#a6eefbf3b63bfb35a4a172db9ad6b4aa9" title="Fixes function return types that may be incomplete or incorrectly resolved due to use statements.">fixup_possible_incomplete_function_return_type()</a></span> is called to ensure type consistency.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function uses if and ifnot preprocessor directives to conditionally execute debugging output and the core implementation logic. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may print debug information to stdout if <span class="tt">SgProject::get_verbose()</span> exceeds <span class="tt"><a class="el" href="java__support_8h.html#a1baaf4d63314abf0072d9b00b2e14c9f">DEBUG_RULE_COMMENT_LEVEL</a></span>.</dd></dl>
@@ -8396,27 +8396,27 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_enum_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>enumKeyword</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>bindKeyword</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_4</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -8440,7 +8440,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to include the new enum definition.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to include the new enum definition.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function assumes that the sequence of tokens follows the expected grammar for an enum definition statement.</dd></dl>
 <p>This function serves as an action handler for enum definition statements. It iterates through five provided token pointers and prints their contents to the standard output using print_token. For each argument, the function checks if the pointer is non-null before attempting to access it to prevent segmentation faults.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -8458,7 +8458,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of the print_token function to display the actual token data.</dd></dl>
 <p>This function handles the semantic and structural processing of an enumeration definition within the parser. It identifies the components of the enum statement, including the enum keyword, the identifier, and the end-of-statement token.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided tokens (label, enumKeyword, bindKeyword, id, and eos) must be validly parsed tokens from the source stream. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> enumeration definition is registered or processed within the abstract syntax tree (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>) or symbol table.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> enumeration definition is registered or processed within the abstract syntax tree (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>) or symbol table.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the C-language action processing logic.</dd></dl>
 <p>R461 enum_def_stmt : (label)? T_ENUM T_COMMA T_BIND T_LPAREN T_IDENT T_RPAREN T_EOS</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -8525,17 +8525,17 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_enumerator_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>enumeratorKeyword</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -8566,7 +8566,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0, carg_1, and carg_2 should ideally point to valid <a class="el" href="class_token__t.html">Token_t</a> structures, though the function handles NULL values gracefully. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints the status and content of the provided tokens to the standard output.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of the print_token function to display the token contents.</dd></dl>
-<p>This function is responsible for handling the syntax and semantic processing of an enumerator definition statement within the parser. It identifies the components of the statement, including the label, the keyword indicating the start of the enumerator, and the end-of-statement token. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation typically involves updating the abstract syntax tree (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>) or the symbol table based on the tokens provided.</p>
+<p>This function is responsible for handling the syntax and semantic processing of an enumerator definition statement within the parser. It identifies the components of the statement, including the label, the keyword indicating the start of the enumerator, and the end-of-statement token. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation typically involves updating the abstract syntax tree (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>) or the symbol table based on the tokens provided.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">label</td><td><a class="el" href="class_a.html">A</a> pointer to the token representing the label associated with the enumerator definition, if present. </td></tr>
@@ -8851,7 +8851,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null, or must point to legally accessible memory within the compiler's token stream. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the presence of the exit statement.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the presence of the exit statement.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the action handling mechanism for specific language constructs.</dd></dl>
 <p>This function serves as an action handler for an exit statement, primarily used for debugging or tracing purposes. It iterates through four provided token pointers, checking each for nullity, and prints their contents to the standard output using the print_token function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -9008,7 +9008,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_explicit_shape_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -9515,7 +9515,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null if they are required for the specific construct being processed. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the construct or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated based on the provided tokens.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the construct or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated based on the provided tokens.</dd></dl>
 <p>This function serves as an action handler for a forall construct statement. It prints a header indicating the action name and the number of arguments, then proceeds to check each of the four provided <a class="el" href="class_token__t.html">Token_t</a> pointers. If a pointer is not NULL, the function calls print_token to output the token's details; otherwise, it logs that the specific argument is NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -10032,7 +10032,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 
 <p>Initializes the beginning of a C action function statement. </p>
 <p>Logs the beginning of a function statement action.</p>
-<p>This function serves as a placeholder or entry point for handling the start of a C action function statement within the compiler's internal representation or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> processing logic. It is intended to be overridden or extended by specific implementation logic during the traversal of the syntax tree.</p>
+<p>This function serves as a placeholder or entry point for handling the start of a C action function statement within the compiler's internal representation or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> processing logic. It is intended to be overridden or extended by specific implementation logic during the traversal of the syntax tree.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parser must have successfully identified a C action function statement node.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the statement processor is prepared to handle the subsequent contents of the function body.</dd></dl>
 <p>This function serves as a placeholder or logging hook for the start of a function statement action. It prints a formatted message to the standard output indicating that the action "function_stmt__begin" is starting and specifies the number of arguments associated with this action.</p>
@@ -10045,7 +10045,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
   <table class="params">
     <tr><td class="paramname">label</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> label. </td></tr>
     <tr><td class="paramname">keyword</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ENTRY keyword token. </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the function. </td></tr>
     <tr><td class="paramname">eos</td><td>End of statement token. </td></tr>
     <tr><td class="paramname">hasGenericNameList</td><td>True if has a generic name list. </td></tr>
     <tr><td class="paramname">hasSuffix</td><td>True if has a suffix. </td></tr>
@@ -10117,12 +10117,12 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_generic_binding </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasAccessSpec</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -10209,7 +10209,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
 <dl class="section pre"><dt>Precondition</dt><dd>None.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints a formatted string to the standard output.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is currently a stub and does not process any actual parameters or complex logic.</dd></dl>
-<p>This function serves as a placeholder for the start of a generic name list processing operation. It does not perform any immediate manipulation of the name list because the implementation relies on a stack-based approach where items are handled during subsequent push operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function primarily serves to validate the current state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> name stack.</p>
+<p>This function serves as a placeholder for the start of a generic name list processing operation. It does not perform any immediate manipulation of the name list because the implementation relies on a stack-based approach where items are handled during subsequent push operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function primarily serves to validate the current state of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> name stack.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> astNameStack must be empty at the start of this operation to ensure no nested or overlapping name list operations are currently active.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> astNameStack remains empty.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function includes a debug output via outputState when if 1 is active, providing visibility into the stack state during the execution of <a class="el" href="_fortran_parser_action_r_o_s_e_8_c.html#a50b61b0f7b823c8787554c460c076153" title="Empty function or ill-formed function detected. /.">c_action_generic_name_list__begin()</a>.</dd></dl>
@@ -10233,7 +10233,7 @@ Access modifiers are explicitly set to undefined for the declaration modifier to
         <tr>
           <td class="memname">void c_action_generic_name_list_part </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>ident</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -10332,7 +10332,7 @@ If the global <span class="tt">SgProject</span> verbose level is set higher than
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keyword</td><td>OPERATOR or ASSIGNMENT keyword (null otherwise). </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the spec (null unless first option T_IDENT). </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the spec (null unless first option T_IDENT). </td></tr>
     <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a></td><td>Type of generic-spec. </td></tr>
   </table>
   </dd>
@@ -10880,7 +10880,7 @@ If the global <span class="tt">SgProject</span> verbose level is set higher than
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function logs the state of the input parameters to the console.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is primarily used for debugging and tracing the initialization sequence of the action system.</dd></dl>
 <p>Initializes C-style actions by processing expression initializers.</p>
-<p>This function handles the initialization logic for C-style actions within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction process. It determines how to handle initializers based on whether an expression is present and whether a null initialization is required. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages the transfer of expressions from the astExpressionStack to an SgExprListExp structure when necessary. It also includes debugging capabilities to log the state of the stacks and the input parameters.</p>
+<p>This function handles the initialization logic for C-style actions within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction process. It determines how to handle initializers based on whether an expression is present and whether a null initialization is required. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages the transfer of expressions from the astExpressionStack to an SgExprListExp structure when necessary. It also includes debugging capabilities to log the state of the stacks and the input parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hasExpr</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether the action contains an explicit expression for initialization. </td></tr>
@@ -11128,7 +11128,7 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
         <tr>
           <td class="memname">void c_action_int_constant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -11623,7 +11623,7 @@ This function may call ROSE_ABORT if an expected initializer cannot be found on 
 </div><div class="memdoc">
 
 <p>Performs an action related to intrinsic type specification. </p>
-<p>Processes and builds intrinsic type specifications for the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<p>Processes and builds intrinsic type specifications for the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
 <p>Logs the arguments passed to the intrinsic type specification action.</p>
 <p>This function handles the logic for processing or applying intrinsic type specifications within the context of a C-style action. It processes token streams and configuration flags to determine how intrinsic types should be interpreted or transformed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -12002,7 +12002,7 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
 </div><div class="memdoc">
 
 <p>Empty function or ill-formed function detected. /. </p>
-<p>Processes a token to create and track a label symbol in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<p>Processes a token to create and track a label symbol in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
 <p>Prints debug information regarding a label action and its associated token.</p>
 <p>Performs an action associated with a label token.</p>
 <p>This function is designed to handle the logic required when a label token is encountered during the processing of the token stream. It serves as a placeholder for label-related actions within the compiler or parser logic.</p>
@@ -12054,7 +12054,7 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
         <tr>
           <td class="memname">void c_action_label_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -12185,8 +12185,8 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0 and carg_1 should be valid <a class="el" href="class_token__t.html">Token_t</a> pointers or NULL. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function outputs diagnostic information to the standard output stream.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of the print_token function to display token details.</dd></dl>
-<p>Handles the specification of C action language bindings within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
-<p>This function processes the tokens associated with a C action language binding specification. It performs logging for debugging purposes if the verbosity level is sufficiently high, ensures the identifier is valid, and updates the global <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> name stack. Additionally, it updates the declaration attributes to indicate that a language binding is present.</p>
+<p>Handles the specification of C action language bindings within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
+<p>This function processes the tokens associated with a C action language binding specification. It performs logging for debugging purposes if the verbosity level is sufficiently high, ensures the identifier is valid, and updates the global <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> name stack. Additionally, it updates the declaration attributes to indicate that a language binding is present.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keyword</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_token__t.html">Token_t</a> representing the keyword used in the specification. </td></tr>
@@ -12309,7 +12309,7 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
 <p>Empty function or ill-formed function detected. /. </p>
 <p>Logs the contents of two tokens associated with a letter specification action.</p>
 <p>Processes a letter specification action within the parser.</p>
-<p>This function handles the logic associated with a letter specification token, likely used during the semantic analysis or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> construction phase of the compiler/parser. It processes the provided tokens to update the internal state or build necessary nodes based on the character specification.</p>
+<p>This function handles the logic associated with a letter specification token, likely used during the semantic analysis or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> construction phase of the compiler/parser. It processes the provided tokens to update the internal state or build necessary nodes based on the character specification.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">carg_0</td><td><a class="el" href="class_a.html">A</a> pointer to the first <a class="el" href="class_token__t.html">Token_t</a> structure representing the primary token. </td></tr>
@@ -12529,7 +12529,7 @@ If token2 is NULL or an assignment, the front of astExpressionStack is moved to 
 </div><div class="memdoc">
 
 <p>Performs an action for a logical literal constant. </p>
-<p>Creates and pushes a boolean literal expression onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> expression stack.</p>
+<p>Creates and pushes a boolean literal expression onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> expression stack.</p>
 <p>Logs the arguments passed to the logical literal constant action.</p>
 <p>This function handles the processing of a logical literal constant within the compiler/parser context. It likely associates a boolean value with a specific token representation in the abstract syntax tree or symbol table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -12890,7 +12890,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers (carg_0 through carg_3) should be valid and not null, unless the specific implementation of the module statement allows for optional arguments. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the module or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> may be modified based on the contents of the provided tokens.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the module or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> may be modified based on the contents of the provided tokens.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the core action module processing pipeline.</dd></dl>
 <p>This function serves as a diagnostic or callback utility that prints the details of four provided <a class="el" href="class_token__t.html">Token_t</a> pointers to the standard output. It iterates through each argument, checking for NULL pointers to prevent dereferencing errors, and utilizes the print_token function to display the token information if the pointer is valid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -13140,7 +13140,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
 </div><div class="memdoc">
 
 <p>Performs a specific action associated with the provided token. </p>
-<p>Pushes a token identifier onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> name stack.</p>
+<p>Pushes a token identifier onto the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> name stack.</p>
 <p>Prints debug information regarding the provided token.</p>
 <p>This function is designed to execute logic based on the properties of the input token. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation details depend on the specific state of the <a class="el" href="class_token__t.html">Token_t</a> object passed to the function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -13974,7 +13974,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the processed action parameter.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the processed action parameter.</dd></dl>
 <p>This function serves as a diagnostic utility to print the details of three specific tokens (carg_0, carg_1, and carg_2) to the standard output. It checks for the validity of each pointer to prevent null pointer dereferencing during the printing process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses the print_token function to display the internal data of each <a class="el" href="class_token__t.html">Token_t</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -14361,7 +14361,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated based on the contents of the provided tokens.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated based on the contents of the provided tokens.</dd></dl>
 <p>This function serves as a diagnostic or callback utility that prints the details of three provided <a class="el" href="class_token__t.html">Token_t</a> pointers to the standard output. It checks each pointer for nullity before attempting to invoke print_token. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output includes a header indicating the action type and the number of arguments processed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -14806,7 +14806,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_private_components_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -14816,7 +14816,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -14847,8 +14847,8 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0, carg_1, and carg_2 should point to valid <a class="el" href="class_token__t.html">Token_t</a> objects or be NULL. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function prints the status and contents of the provided tokens to the standard output stream.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is intended for debugging or logging purposes and relies on the existence of the print_token function.</dd></dl>
-<p>Marks the current class definition as private within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
-<p>This function handles the semantic action for a private component statement in C. In the context of the ROSE tool, this statement is implemented as a type attribute rather than a standalone statement. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function identifies the current class definition from the top of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> scope stack and updates its visibility property to private.</p>
+<p>Marks the current class definition as private within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
+<p>This function handles the semantic action for a private component statement in C. In the context of the ROSE tool, this statement is implemented as a type attribute rather than a standalone statement. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function identifies the current class definition from the top of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> scope stack and updates its visibility property to private.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">privateKeyword</td><td><a class="el" href="class_a.html">A</a> pointer to the token representing the 'private' keyword. </td></tr>
@@ -14907,7 +14907,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers carg_0 and carg_1 must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> attribute specifications are processed and applied to the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> attribute specifications are processed and applied to the internal state of the parser or <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</dd></dl>
 <p>This function serves as a diagnostic or logging utility to inspect the contents of the tokens and integer values passed during the processing of a proc_attr_spec action. It checks for the validity of the provided <a class="el" href="class_token__t.html">Token_t</a> pointers and utilizes the print_token function to display their contents.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -14940,7 +14940,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_proc_binding_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -14950,7 +14950,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -15151,22 +15151,22 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
         <tr>
           <td class="memname">void c_action_proc_component_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>procedureKeyword</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasInterface</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_3</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -15293,7 +15293,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
 
 <p>Initializes the beginning of a declaration list for C actions. </p>
 <p>Prints a diagnostic message indicating the start of a procedure declaration list action.</p>
-<p>This function serves as a marker or initialization routine to signal the start of a sequence of procedure declarations within a C action context. It is typically used during the parsing or construction phase of an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>) to establish the scope for subsequent declarations.</p>
+<p>This function serves as a marker or initialization routine to signal the start of a sequence of procedure declarations within a C action context. It is typically used during the parsing or construction phase of an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>) to establish the scope for subsequent declarations.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parser or context manager must be in a state ready to process a new declaration list.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state is updated to indicate that a new declaration list has commenced.</dd></dl>
 <p>This function serves as a logging or diagnostic utility that outputs a formatted string to the standard output. It specifically identifies the beginning of the <span class="tt">proc_decl_list__begin</span> action and reports the number of arguments associated with it, which in this implementation is hardcoded to zero.</p>
@@ -15599,7 +15599,7 @@ If SgProject::get_verbose() is greater than DEBUG_RULE_COMMENT_LEVEL, the functi
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null, or must point to valid memory structures that the function can safely dereference. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> may be updated based on the contents of the provided tokens.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> may be updated based on the contents of the provided tokens.</dd></dl>
 <p>This function serves as a diagnostic or callback action that prints the details of three provided <a class="el" href="class_token__t.html">Token_t</a> pointers to the standard output. It checks each pointer for NULL before attempting to call print_token to prevent segmentation faults. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function explicitly identifies the action as "protected_stmt" and logs the status of each argument.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -16597,23 +16597,23 @@ realConstant-&gt;text must not be NULL.</dd></dl>
         <tr>
           <td class="memname">void c_action_sequence_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>sequenceKeyword</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_2</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Processes an action sequence statement within the compiler/parser context. </p>
-<p>Marks a class definition as a sequence statement within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<p>Marks a class definition as a sequence statement within the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
 <p>Logs the contents of three tokens associated with a sequence statement action.</p>
 <p>This function is responsible for handling the logic associated with a C-style action sequence statement. It processes the provided tokens to identify and structure the sequence of actions defined in the source code.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -16678,7 +16678,7 @@ realConstant-&gt;text must not be NULL.</dd></dl>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>carg_0 must not be a null pointer and must point to a valid <a class="el" href="class_token__t.html">Token_t</a> object representing a signed integer literal. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the presence of the processed integer constant.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the parser or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the presence of the processed integer constant.</dd></dl>
 <p>This function serves as a callback or action handler for processing a signed integer literal constant within the parser. It logs the presence of the token and, if the token is not null, prints its detailed contents using the print_token utility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -17257,7 +17257,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
   <table class="params">
     <tr><td class="paramname">label</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> label. </td></tr>
     <tr><td class="paramname">keyword</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SUBROUTINE keyword token. </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the subroutine. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the subroutine. </td></tr>
     <tr><td class="paramname">eos</td><td>End of statement token. </td></tr>
     <tr><td class="paramname">hasPrefix</td><td>True if has a prefix </td></tr>
     <tr><td class="paramname">hasDummyArgList</td><td>True if has an argument list. </td></tr>
@@ -17841,7 +17841,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided token pointers must be valid and not null, or must point to well-defined token structures within the current parsing context. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> may be modified to reflect the application of the type guard.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> may be modified to reflect the application of the type guard.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the core action processing logic and relies on the integrity of the token stream.</dd></dl>
 <p>This function serves as a debugging or logging utility that prints the details of five provided <a class="el" href="class_token__t.html">Token_t</a> pointers to the standard output. For each argument, the function checks if the pointer is non-NULL; if valid, it invokes print_token to display the token's information, otherwise, it logs that the token is NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -17917,12 +17917,12 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_decl </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>hasInit</em></span>&#160;)</td>
+          <td class="paramtype">ofp_bool</td>          <td class="paramname"><span class="paramname"><em>carg_1</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -18064,7 +18064,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_or_comp_def_stmt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>eos</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -18131,7 +18131,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_spec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>keyWord</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_token__t.html">Token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -18188,7 +18188,7 @@ If <span class="tt">sign</span> is "+" and the expression is a <span class="tt">
         <tr>
           <td class="memname">void c_action_type_param_spec_list </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>count</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>carg_0</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -18505,7 +18505,7 @@ If hasAsterisk is false, the front element of astExpressionStack is moved to the
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided pointers carg_0, carg_1, and carg_2 must not be null and must point to valid <a class="el" href="class_token__t.html">Token_t</a> objects. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is updated to reflect the volatile qualifier application.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the tokens or the underlying <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is updated to reflect the volatile qualifier application.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is part of the C-specific action processing logic.</dd></dl>
 <p>This function serves as an action handler for volatile statement processing. It prints a header indicating the action name and the number of arguments, then proceeds to inspect each of the three provided <a class="el" href="class_token__t.html">Token_t</a> pointers. For each pointer, the function checks for NULLity; if the pointer is valid, it calls print_token to output the token's details to the standard output. If a pointer is NULL, it logs that the specific argument is NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>

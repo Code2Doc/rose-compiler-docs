@@ -110,6 +110,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3d1e9fab7e8d22fa08f844d0631129e2" id="r_a3d1e9fab7e8d22fa08f844d0631129e2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3d1e9fab7e8d22fa08f844d0631129e2">DebugDefUseChain</a> ()</td></tr>
+<tr class="memdesc:a3d1e9fab7e8d22fa08f844d0631129e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the debug definition-use chain option is enabled in the command options.  <br /></td></tr>
 <tr class="memitem:a04c793eb9e1658c8508944eb9dc0f4a4" id="r_a04c793eb9e1658c8508944eb9dc0f4a4"><td class="memTemplParams" colspan="2">template&lt;class Node&gt; </td></tr>
 <tr class="memitem:a04c793eb9e1658c8508944eb9dc0f4a4 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a04c793eb9e1658c8508944eb9dc0f4a4">DumpDefSet</a> (const std::vector&lt; Node * &gt; &amp;defvec, const <a class="el" href="_reaching_definition_8h.html#a43c5a7a3fcb7e6ee38b7fb8994eafa6d">ReachingDefinitions</a> &amp;in)</td></tr>
 <tr class="memitem:aa0ad229e513c4c9190fcf30ae1ce3ceb" id="r_aa0ad229e513c4c9190fcf30ae1ce3ceb"><td class="memTemplParams" colspan="2">template&lt;class Node&gt; </td></tr>
@@ -130,6 +131,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checks if the debug definition-use chain option is enabled in the command options. </p>
+<p>This function determines whether the "-debugdefusechain" flag is present in the global command options. It utilizes a static integer variable to cache the result of the check after the first invocation, ensuring that the lookup in the <a class="el" href="class_cmd_options.html">CmdOptions</a> singleton occurs only once during the program execution.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the "-debugdefusechain" option is enabled; false otherwise.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_cmd_options.html">CmdOptions</a> singleton must be properly initialized before the first call to this function. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal state of the function (the static variable r) is updated to reflect the result of the initial check.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a static variable to optimize performance by avoiding repeatedly querying the <a class="el" href="class_cmd_options.html">CmdOptions</a> instance. </dd></dl>
 
 </div>
 </div>

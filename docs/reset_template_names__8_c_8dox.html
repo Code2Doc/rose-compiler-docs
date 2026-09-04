@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the template names within the provided AST node or project. </p>
+<p>Sets names of template classes (calls custom traversal).</p>
 <p>This function iterates through template instantiation declarations, function declarations, and member function declarations to reset their associated template names. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes a memory pool traversal strategy via <a class="el" href="class_reset_template_names_on_memory_pool.html">ResetTemplateNamesOnMemoryPool</a> to efficiently target relevant IR nodes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is specifically optimized to visit only the subset of nodes related to template instantiations, which improves performance by avoiding a full memory pool scan.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

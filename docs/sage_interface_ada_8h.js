@@ -44,7 +44,7 @@ var sage_interface_ada_8h =
     [ "SageInterface::Ada::canonicalScope", "namespace_sage_interface_1_1_ada.html#a7ec43bef5ee4d41fcc89cd4f137b62f3", null ],
     [ "SageInterface::Ada::characterBaseType", "namespace_sage_interface_1_1_ada.html#a780d8a5cc148d09a2ce4f6fc6f92ecd5", null ],
     [ "SageInterface::Ada::characterBaseType", "namespace_sage_interface_1_1_ada.html#a77ef7fc6a89c4dbd51096d452b4cf002", null ],
-    [ "SageInterface::Ada::conversionTraversal", "namespace_sage_interface_1_1_ada.html#ad3ffa6c680fe43b383582ff1fe58b335", null ],
+    [ "SageInterface::Ada::conversionTraversal", "namespace_sage_interface_1_1_ada.html#a03c88ea7531b2ea91346e1f61c83cf04", null ],
     [ "SageInterface::Ada::conversionTraversal", "namespace_sage_interface_1_1_ada.html#a13bff655aeb960d26c8693f4d9220f2f", null ],
     [ "SageInterface::Ada::convertAdaToCxxComments", "namespace_sage_interface_1_1_ada.html#ad36baef106acd662b5bc09aafb07b403", null ],
     [ "SageInterface::Ada::convertCharLiteral", "namespace_sage_interface_1_1_ada.html#a9b0ccdda796f856a2cb79ec93d97ef90", null ],

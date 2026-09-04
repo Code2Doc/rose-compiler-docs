@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks the subtrees of any IR node marked as a transformation for output. </p>
+<p>Fixups transformations (which are often marked at a high level and need to be marked properly through their subtree).</p>
 <p>This function performs a traversal over the provided SgNode and its descendants to identify and mark nodes that are part of a transformation. This marking process is essential for the unparsing phase, as the unparser must distinguish between standard IR nodes and nodes that have been explicitly marked for output, including compiler-generated IR nodes.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes a specialized traversal mechanism, specifically <a class="el" href="class_mark_transformations_for_output.html">MarkTransformationsForOutput</a> traversal, combined with a <a class="el" href="class_mark_transformations_for_output_inherited_attribute.html" title="Inherited attribute required for MarkTemplateSpecializationsForOutput class.">MarkTransformationsForOutputInheritedAttribute</a> to propagate the marking status through the tree structure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is executed to ensure all relevant subtrees are updated.</p>
 <dl class="params"><dt>Parameters</dt><dd>

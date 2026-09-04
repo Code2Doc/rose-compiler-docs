@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks all overloaded template instantiations within the provided AST node. </p>
+<p>Mark any template instatiations that are overloaded (we can't output these since g++ can't resolve them).</p>
 <p>This function performs a traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node. It utilizes the <a class="el" href="class_mark_overloaded_template_instantiations.html" title="Mark any template instatiations that are overloaded (we can&#39;t output these since g++ can&#39;t resolve th...">MarkOverloadedTemplateInstantiations</a> traversal class to identify and flag specific template instantiation patterns that are overloaded. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is executed using a preorder strategy to ensure that interfaces remain uniform and that parent nodes are processed before their children.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

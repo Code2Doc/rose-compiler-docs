@@ -120,7 +120,33 @@ Functions</h2></td></tr>
 
 <p>Overloads the stream insertion operator to serialize a <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> object. </p>
 <p>Calls the function to convert the cache to json. Writes out.</p>
-<p>param[in] os: the output stream written to and returned param[in] rwset: the <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> to write out </p>
+<p>param[in] os: the output stream written to and returned param[in] rwset: the <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> to write out</p>
+<p>Calls the function to convert the cache to json. Writes out.</p>
+<p>param[in] os: the output stream written to and returned param[in] rwset: the <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> to write out</p>
+<p>This function provides a way to output the contents of a <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> to an output stream, typically for logging or file serialization. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation checks if the internal rwSetCache is empty. If the cache is empty, it outputs an empty JSON object "{}" to ensure compatibility with JSON parsers (like nlohmann/json) that may encounter issues with empty files. If the cache contains data, it utilizes the <a class="el" href="namespace_read_write_sets.html#a5eca82bcbe0c99ec3169c4ba1af59b4e" title="Converts a cache of function read-write records into a JSON object.">ReadWriteSets::convertCacheToJson</a> method to format the cache as a JSON string with an indentation of 4 spaces.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream where the serialized data will be written. </td></tr>
+    <tr><td class="paramname">rwset</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> instance to be serialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the modified output stream (os) to allow for chained operations.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> rwset object must be a valid, initialized instance of <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream os will contain the JSON representation of the rwSetCache, followed by a newline character.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation relies on the existence of the <a class="el" href="namespace_read_write_sets.html#a5eca82bcbe0c99ec3169c4ba1af59b4e" title="Converts a cache of function read-write records into a JSON object.">ReadWriteSets::convertCacheToJson</a> static method and assumes the rwSetCache member is accessible.</dd></dl>
+<p>This function provides a way to output the contents of a <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> to an output stream, typically in a JSON-compatible format. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation checks if the internal rwSetCache is empty. If the cache is empty, it outputs an empty JSON object "{}" to ensure compatibility with JSON parsers (like nlohmann/json) that may encounter issues with empty files. If the cache contains data, it utilizes the <a class="el" href="namespace_read_write_sets.html#a5eca82bcbe0c99ec3169c4ba1af59b4e" title="Converts a cache of function read-write records into a JSON object.">ReadWriteSets::convertCacheToJson</a> method to format the cache contents into a JSON string with a 4-space indentation, which is then streamed to the provided output stream.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream where the serialized data will be written. </td></tr>
+    <tr><td class="paramname">rwset</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_local_r_w_set_generator.html">LocalRWSetGenerator</a> instance to be serialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the modified output stream (os) to allow for chained operations.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">os</span> must be in a valid state for writing. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream <span class="tt">os</span> will contain the JSON representation of the rwSetCache, followed by a newline.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation specifically handles the edge case of empty caches to prevent errors in downstream JSON processing. </dd></dl>
 
 </div>
 </div>

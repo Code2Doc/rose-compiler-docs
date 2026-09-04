@@ -98,12 +98,12 @@ $(function(){initNavTree('namespace_rose_1_1_keep_going.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:Backend" id="r_Backend"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_rose_1_1_keep_going_1_1_backend.html">Backend</a></td></tr>
-<tr class="memdesc:namespace_rose_1_1_keep_going_1_1_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_keep_going_1_1_backend.html" title="Auto-generated documentation for the Rose::KeepGoing::Backend namespace.">Rose::KeepGoing::Backend</a> namespace. <br /></td></tr>
 <tr class="memitem:Frontend" id="r_Frontend"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_rose_1_1_keep_going_1_1_frontend.html">Frontend</a></td></tr>
 <tr class="memdesc:namespace_rose_1_1_keep_going_1_1_frontend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_keep_going_1_1_frontend.html" title="Auto-generated documentation for the Rose::KeepGoing::Frontend namespace.">Rose::KeepGoing::Frontend</a> namespace. <br /></td></tr>
 <tr class="memitem:Midend" id="r_Midend"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_rose_1_1_keep_going_1_1_midend.html">Midend</a></td></tr>
 <tr class="memdesc:namespace_rose_1_1_keep_going_1_1_midend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_keep_going_1_1_midend.html" title="Auto-generated documentation for the Rose::KeepGoing::Midend namespace.">Rose::KeepGoing::Midend</a> namespace. <br /></td></tr>
+<tr class="memitem:Backend" id="r_Backend"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_rose_1_1_keep_going_1_1_backend.html">Backend</a></td></tr>
+<tr class="memdesc:namespace_rose_1_1_keep_going_1_1_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_keep_going_1_1_backend.html" title="Auto-generated documentation for the Rose::KeepGoing::Backend namespace.">Rose::KeepGoing::Backend</a> namespace. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -115,8 +115,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac29e43df83d37b2e9427fc1e4171c364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a global signal handler for specific system signals.  <br /></td></tr>
 <tr class="memitem:af4f5da475b93b19515cef923c824ac15" id="r_af4f5da475b93b19515cef923c824ac15"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af4f5da475b93b19515cef923c824ac15">ShowUsage</a> (std::string program_name)</td></tr>
 <tr class="memdesc:af4f5da475b93b19515cef923c824ac15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the command-line usage instructions and available options to the standard error stream.  <br /></td></tr>
-<tr class="memitem:aaef25bcef238b60c5e5d8f450584648d" id="r_aaef25bcef238b60c5e5d8f450584648d"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aaef25bcef238b60c5e5d8f450584648d">GetTimestamp</a> (const std::string &amp;format)</td></tr>
-<tr class="memdesc:aaef25bcef238b60c5e5d8f450584648d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a formatted string representing the current local timestamp.  <br /></td></tr>
+<tr class="memitem:a18276cb287037d39899a5044f1743348" id="r_a18276cb287037d39899a5044f1743348"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a18276cb287037d39899a5044f1743348">GetTimestamp</a> (const std::string &amp;format=&quot;%Y-%m-%d %H:%M:%S&quot;)</td></tr>
+<tr class="memdesc:a18276cb287037d39899a5044f1743348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a formatted string representing the current local timestamp.  <br /></td></tr>
 <tr class="memitem:a02b3eeb75cb4d7dfb76971e5738cab71" id="r_a02b3eeb75cb4d7dfb76971e5738cab71"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a02b3eeb75cb4d7dfb76971e5738cab71">StripPrefix</a> (const std::string &amp;prefix, const std::string &amp;str)</td></tr>
 <tr class="memdesc:a02b3eeb75cb4d7dfb76971e5738cab71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the specified prefix from the beginning of a string if it exists.  <br /></td></tr>
 <tr class="memitem:a9aa62b2153c89736c33d212eccab7cf5" id="r_a9aa62b2153c89736c33d212eccab7cf5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9aa62b2153c89736c33d212eccab7cf5">AppendToFile</a> (const std::string &amp;filename, const std::string &amp;msg)</td></tr>
@@ -185,8 +185,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Append msg to a file. </p>
-<p>AppendToFile a message.</p>
 <p>Appends a message string to a specified file using a file-locking mechanism.</p>
+<p>AppendToFile a message.</p>
 <p>This function implements a thread-safe and process-safe append operation by utilizing a sidecar lock file (filename + ".lock"). It ensures that multiple processes attempting to write to the same file are synchronized using boost::interprocess::file_lock. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function creates the target file and the lock file using a touch operation if they do not exist, acquires a scoped lock, appends the message, flushes the stream, and finally removes the lock file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -352,8 +352,8 @@ Arguments starting with &ndash;report, &ndash;report-fail, or &ndash;report-pass
 
 </div>
 </div>
-<a id="aaef25bcef238b60c5e5d8f450584648d" name="aaef25bcef238b60c5e5d8f450584648d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaef25bcef238b60c5e5d8f450584648d">&#9670;&#160;</a></span>GetTimestamp()</h2>
+<a id="a18276cb287037d39899a5044f1743348" name="a18276cb287037d39899a5044f1743348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18276cb287037d39899a5044f1743348">&#9670;&#160;</a></span>GetTimestamp()</h2>
 
 <div class="memitem">
 <div class="memproto">

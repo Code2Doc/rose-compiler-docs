@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a traversal of the AST to correct Fortran-style array and function references. </p>
+<p>Fixup <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> array vs. function references.</p>
 <p>This function utilizes a specialized AST traversal mechanism, <a class="el" href="class_fixup_fortran_references.html">FixupFortranReferences</a>, to identify and rectify discrepancies in how <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> array references and function calls are represented within the SgNode hierarchy. It employs a preorder traversal strategy to ensure that parent nodes are processed before their children, maintaining consistency during the fixup process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also includes internal timing instrumentation via <a class="el" href="class_timing_performance.html">TimingPerformance</a> to monitor the execution overhead of this specific transformation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -116,11 +116,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9843e9a9fbb1e54bb4379c8e9a2558c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a traversal of an integer literal constant node.  <br /></td></tr>
 <tr class="memitem:a53b217529ddbd1a4abdc82646c05dbe0" id="r_a53b217529ddbd1a4abdc82646c05dbe0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a53b217529ddbd1a4abdc82646c05dbe0">WalkWith</a> (parser::IntLiteralConstant &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, SgExpression *&amp;<a class="el" href="namespacesg.html">sg</a>)</td></tr>
 <tr class="memdesc:a53b217529ddbd1a4abdc82646c05dbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a specialized tree walk on an integer literal constant using a Flang expression visitor.  <br /></td></tr>
-<tr class="memitem:ae721629723f4dd5bca23a05ab382225c" id="r_ae721629723f4dd5bca23a05ab382225c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="class_a.html">A</a>, typename V&gt; </td></tr>
-<tr class="memitem:ae721629723f4dd5bca23a05ab382225c template"><td class="memItemLeft">std::enable_if_t&lt; EmptyTrait&lt; <a class="el" href="class_a.html">A</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae721629723f4dd5bca23a05ab382225c">Walk</a> (const <a class="el" href="class_a.html">A</a> &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, V &amp;visitor, SgExpression *&amp;<a class="el" href="namespacesg.html">sg</a>)</td></tr>
 <tr class="memitem:ad7fe3efdc6ad7513fba49a162c2426f6" id="r_ad7fe3efdc6ad7513fba49a162c2426f6"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt; </td></tr>
 <tr class="memitem:ad7fe3efdc6ad7513fba49a162c2426f6 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad7fe3efdc6ad7513fba49a162c2426f6">WalkWith</a> (<a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, SgExpression *&amp;<a class="el" href="namespacesg.html">sg</a>)</td></tr>
 <tr class="memdesc:ad7fe3efdc6ad7513fba49a162c2426f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses a structure using a <a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a> and updates an SgExpression.  <br /></td></tr>
+<tr class="memitem:ae721629723f4dd5bca23a05ab382225c" id="r_ae721629723f4dd5bca23a05ab382225c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="class_a.html">A</a>, typename V&gt; </td></tr>
+<tr class="memitem:ae721629723f4dd5bca23a05ab382225c template"><td class="memItemLeft">std::enable_if_t&lt; EmptyTrait&lt; <a class="el" href="class_a.html">A</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae721629723f4dd5bca23a05ab382225c">Walk</a> (const <a class="el" href="class_a.html">A</a> &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, V &amp;visitor, SgExpression *&amp;<a class="el" href="namespacesg.html">sg</a>)</td></tr>
 <tr class="memitem:abcafcdc352dea4fb02629e0cba0266cb" id="r_abcafcdc352dea4fb02629e0cba0266cb"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="class_a.html">A</a>, typename M&gt; </td></tr>
 <tr class="memitem:abcafcdc352dea4fb02629e0cba0266cb template"><td class="memItemLeft">std::enable_if_t&lt; EmptyTrait&lt; <a class="el" href="class_a.html">A</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abcafcdc352dea4fb02629e0cba0266cb">Walk</a> (<a class="el" href="class_a.html">A</a> &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, M &amp;mutator, SgExpression *&amp;<a class="el" href="namespacesg.html">sg</a>)</td></tr>
 <tr class="memitem:adef97ac3db8e3b00a2045248252ea10e" id="r_adef97ac3db8e3b00a2045248252ea10e"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="class_a.html">A</a>, typename V&gt; </td></tr>
@@ -361,16 +361,16 @@ Functions</h2></td></tr>
 <tr class="memitem:adc087e6a4b66dafbaa4b940155aec4c3" id="r_adc087e6a4b66dafbaa4b940155aec4c3"><td class="memTemplParams" colspan="2">template&lt;typename M&gt; </td></tr>
 <tr class="memitem:adc087e6a4b66dafbaa4b940155aec4c3 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adc087e6a4b66dafbaa4b940155aec4c3">Walk</a> (OmpLinearClause::WithoutModifier &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, M &amp;mutator, SgExpression *&amp;<a class="el" href="namespacesg.html">sg</a>)</td></tr>
 <tr class="memdesc:adc087e6a4b66dafbaa4b940155aec4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a traversal of an OmpLinearClause::WithoutModifier object using a mutator.  <br /></td></tr>
-<tr class="memitem:a30ff2f294b6e014406ba82324601a4ba" id="r_a30ff2f294b6e014406ba82324601a4ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a30ff2f294b6e014406ba82324601a4ba">UnparseSage</a> (llvm::raw_ostream &amp;out, const parser::Program &amp;<a class="el" href="#a3a58449af8e39b521c129c34bf00a55e">program</a>, parser::Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">parser::preStatementType</a> *preStatement)</td></tr>
+<tr class="memitem:afb9422c8933fb9b01eec6e8d700f3bab" id="r_afb9422c8933fb9b01eec6e8d700f3bab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb9422c8933fb9b01eec6e8d700f3bab">UnparseSage</a> (llvm::raw_ostream &amp;out, const Fortran::parser::Program &amp;<a class="el" href="#a3a58449af8e39b521c129c34bf00a55e">program</a>, Fortran::parser::Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">Fortran::parser::preStatementType</a> *preStatement)</td></tr>
+<tr class="memdesc:afb9422c8933fb9b01eec6e8d700f3bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> program structure back into a string representation (unparsing).  <br /></td></tr>
 <tr class="memitem:a6c5cca11bbc4a3f3a1318a27e5cca7b0" id="r_a6c5cca11bbc4a3f3a1318a27e5cca7b0"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="class_a.html">A</a>&gt; </td></tr>
 <tr class="memitem:a6c5cca11bbc4a3f3a1318a27e5cca7b0 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c5cca11bbc4a3f3a1318a27e5cca7b0">Unparse</a> (llvm::raw_ostream &amp;out, <a class="el" href="class_a.html">A</a> &amp;root, Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, parser::AllCookedSources *cooked, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">preStatementType</a> *preStatement)</td></tr>
 <tr class="memdesc:a6c5cca11bbc4a3f3a1318a27e5cca7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a syntax graph root into a string representation via an output stream.  <br /></td></tr>
-<tr class="memitem:afb9422c8933fb9b01eec6e8d700f3bab" id="r_afb9422c8933fb9b01eec6e8d700f3bab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb9422c8933fb9b01eec6e8d700f3bab">UnparseSage</a> (llvm::raw_ostream &amp;out, const Fortran::parser::Program &amp;<a class="el" href="#a3a58449af8e39b521c129c34bf00a55e">program</a>, Fortran::parser::Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">Fortran::parser::preStatementType</a> *preStatement)</td></tr>
-<tr class="memdesc:afb9422c8933fb9b01eec6e8d700f3bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> program structure back into a string representation (unparsing).  <br /></td></tr>
 <tr class="memitem:a2d17994fd54bd7dd4be3113a29f582c9" id="r_a2d17994fd54bd7dd4be3113a29f582c9"><td class="memItemLeft">template void&#160;</td><td class="memItemRight"><a class="el" href="#a2d17994fd54bd7dd4be3113a29f582c9">Unparse&lt; Program &gt;</a> (llvm::raw_ostream &amp;, Program &amp;, Encoding, bool, bool, parser::AllCookedSources *, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">preStatementType</a> *)</td></tr>
 <tr class="memitem:a55ffb16b75a0ee8c433e22d156378a14" id="r_a55ffb16b75a0ee8c433e22d156378a14"><td class="memItemLeft">template void&#160;</td><td class="memItemRight"><a class="el" href="#a55ffb16b75a0ee8c433e22d156378a14">Unparse&lt; Expr &gt;</a> (llvm::raw_ostream &amp;, Expr &amp;, Encoding, bool, bool, parser::AllCookedSources *, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">preStatementType</a> *)</td></tr>
 <tr class="memitem:a45f7c899878b3a2a7e70c1b35abe80c4" id="r_a45f7c899878b3a2a7e70c1b35abe80c4"><td class="memItemLeft">template void&#160;</td><td class="memItemRight"><a class="el" href="#a45f7c899878b3a2a7e70c1b35abe80c4">Unparse</a> (llvm::raw_ostream &amp;out, Program &amp;<a class="el" href="#a3a58449af8e39b521c129c34bf00a55e">program</a>, Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, parser::AllCookedSources *, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">preStatementType</a> *preStatement)</td></tr>
 <tr class="memitem:ac56481b79225029a934411845a10ffd6" id="r_ac56481b79225029a934411845a10ffd6"><td class="memItemLeft">template void&#160;</td><td class="memItemRight"><a class="el" href="#ac56481b79225029a934411845a10ffd6">Unparse</a> (llvm::raw_ostream &amp;out, Expr &amp;<a class="el" href="#a3af18db366f87e7588e79bc736d7cadd">expr</a>, Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, parser::AllCookedSources *, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">preStatementType</a> *preStatement)</td></tr>
+<tr class="memitem:a30ff2f294b6e014406ba82324601a4ba" id="r_a30ff2f294b6e014406ba82324601a4ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a30ff2f294b6e014406ba82324601a4ba">UnparseSage</a> (llvm::raw_ostream &amp;out, const parser::Program &amp;<a class="el" href="#a3a58449af8e39b521c129c34bf00a55e">program</a>, parser::Encoding encoding, bool capitalizeKeywords, bool backslashEscapes, <a class="el" href="#a89388ee5b7398429296e13c024f803a1">parser::preStatementType</a> *preStatement)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1032,7 +1032,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AcSpec specification object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the mutation logic, specifically providing Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is updated during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is updated during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1073,7 +1073,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ArrayElement to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods for the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression used during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression used during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1114,7 +1114,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the CaseValueRange::Range object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1155,7 +1155,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the CharSelector::LengthAndKind object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods for the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is passed through the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is passed through the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1197,7 +1197,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> CoindexedNamedObject to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods for the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression used during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression used during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1239,7 +1239,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> CommonStmt object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods for modifying or inspecting the statement during traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, used to maintain context or state during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, used to maintain context or state during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1280,7 +1280,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the CompilerDirective being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1461,7 +1461,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AcSpec object to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that implements the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be modified during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be modified during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1502,7 +1502,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ArrayElement to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that implements Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression used during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression used during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1543,7 +1543,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> range of case values to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1584,7 +1584,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> CharSelector::LengthAndKind structure to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal events. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to be updated or used during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to be updated or used during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1626,7 +1626,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> CoindexedNamedObject to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods for processing nodes. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to track or modify the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to track or modify the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1667,7 +1667,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a common::Indirection object containing the value to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> reference to a visitor object that defines the operations to be performed during the walk. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, which may be modified during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, which may be modified during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1709,7 +1709,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> common statement to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the required interface for pre- and post-traversal operations. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1751,7 +1751,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> compiler directive to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the necessary interface for traversing the syntax tree nodes. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1792,7 +1792,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> class declaration specification to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods for handling nodes during the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1834,7 +1834,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration type specification structure to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the necessary interface for pre- and post-traversal operations. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1876,7 +1876,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Designator object to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the required interface for traversing the structure. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to maintain or update the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to maintain or update the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1918,7 +1918,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> control edit description structure to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods for processing nodes. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to be updated or used during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to be updated or used during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1959,7 +1959,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> description of the derived type data edit to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2000,7 +2000,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> format item to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods for processing nodes. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track or modify the expression state.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track or modify the expression state.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2041,7 +2041,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> format specification object to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the necessary interface for pre- and post-traversal operations. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to hold the state or result of the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to hold the state or result of the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2082,7 +2082,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> intrinsic type data edit descriptor to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods for the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track or update the current expression context during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track or update the current expression context during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2124,7 +2124,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a FunctionReference object representing the node to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> reference to a visitor object of type V that defines the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, intended to track or update the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, intended to track or update the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2165,7 +2165,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ImportStmt node to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object used to define the actions to be taken during traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track or update the current expression context during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to track or update the current expression context during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2206,7 +2206,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> IntLiteralConstant terminal node being visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object used to implement the traversal logic via Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current state or constructed expression in the syntax tree.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current state or constructed expression in the syntax tree.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2249,7 +2249,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> intrinsic character specification element to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the required Pre and Post interface for traversing the expression tree. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context in the syntax graph.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context in the syntax graph.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2291,7 +2291,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complex intrinsic type specification to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the required interface for pre- and post-traversal actions. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2333,7 +2333,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logical representation of the intrinsic type specification to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal events. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2375,7 +2375,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> constant reference to the intrinsic type specification real value to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> reference to a visitor object that implements the required interface for Pre and Post traversal operations. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression node in the syntax graph.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression node in the syntax graph.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2416,7 +2416,7 @@ template&lt;typename <a class="el" href="class_a.html">A</a>, typename <a class=
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a LoopBounds object containing the bounds information (name, lower, upper, and step). </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> reference to a visitor object that implements Pre and Post methods to handle the traversal events. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, intended to track the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, intended to track the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2457,7 +2457,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="a__nodes_8h.html#a1d5f558a9b635a9acc4c0bcbafa8743f">Name</a> object representing the current node to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that defines the Pre and Post traversal actions. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to track or modify the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to track or modify the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2499,7 +2499,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> OpenMP linear clause structure containing modifiers and associated elements to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post traversal methods to process the nodes. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track or modify the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track or modify the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2541,7 +2541,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> OpenMP linear clause structure without modifiers to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal steps. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2582,7 +2582,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> RealLiteralConstant node to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track the current expression context during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track the current expression context during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2623,7 +2623,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> real literal constant value to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object used to define the actions to be taken during the walk. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2665,7 +2665,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> signed integer literal constant to be visited. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that implements the necessary traversal interface. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2707,7 +2707,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> statement node to be visited, containing source and statement components. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to be updated or used during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, intended to be updated or used during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2748,7 +2748,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> StructureComponent representing the current node in the structure to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that implements the traversal logic (e.g., Pre and Post methods). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to hold or track the expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to hold or track the expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2790,7 +2790,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Suffix structure to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object of type V that defines the Pre and Post traversal actions. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be modified during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be modified during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2831,7 +2831,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TypeBoundProcedureStmt::WithInterface structure to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements the traversal logic, typically providing Pre and Post methods to handle the nodes during the walk. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to maintain or update the current expression context during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to maintain or update the current expression context during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2873,7 +2873,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TypeBoundProcedureStmt::WithoutInterface object to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used for tracking or modifying the expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used for tracking or modifying the expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2914,7 +2914,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> unlabeled statement to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object used to perform operations during the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, which may be modified during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2956,7 +2956,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> UseStmt node to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post traversal methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used for tracking the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used for tracking the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2997,7 +2997,7 @@ template&lt;typename V&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> WriteStmt node to be traversed. </td></tr>
     <tr><td class="paramname">visitor</td><td><a class="el" href="class_a.html">A</a> visitor object that implements Pre and Post methods for node processing. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3038,7 +3038,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the current class declaration structure being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation logic, specifically providing Pre and Post methods to be called during the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3079,7 +3079,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration type specification object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation logic, providing Pre and Post hooks for the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3120,7 +3120,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Designator object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the mutation logic, specifically providing Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be modified during the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be modified during the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3161,7 +3161,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the format::ControlEditDesc object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object of type M that implements the mutation logic, potentially containing Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3203,7 +3203,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the format::DerivedTypeDataEditDesc object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object of type M that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3244,7 +3244,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> format item being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation logic and traversal hooks (Pre and Post). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the expression tree context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the expression tree context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3285,7 +3285,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the format specification object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object of type M that defines the behavior of the walk, potentially providing Pre and Post hooks for the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context in the syntax graph.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context in the syntax graph.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3326,7 +3326,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the format::IntrinsicTypeDataEditDesc object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object used to apply transformations or perform actions during the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3367,7 +3367,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the FunctionReference being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods for transformation or inspection. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3408,7 +3408,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ImportStmt node being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the mutation logic, specifically providing Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3450,7 +3450,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> IntLiteralConstant node being visited. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the transformation or inspection logic to be applied during the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current context or state within the expression tree.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, representing the current context or state within the expression tree.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3491,7 +3491,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the IntrinsicTypeSpec::Character being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation logic (Pre/Post hooks). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3533,7 +3533,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the IntrinsicTypeSpec::Complex object being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods to handle the traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3574,7 +3574,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the IntrinsicTypeSpec::Logical object being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object of type M that defines the mutation or traversal logic (e.g., providing Pre and Post hooks). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context in the syntax graph.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context in the syntax graph.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3615,7 +3615,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the intrinsic type specification real value to be walked. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M used to apply transformations or monitor the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression representing the current expression node.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression representing the current expression node.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3656,7 +3656,7 @@ template&lt;typename <a class="el" href="class_a.html">A</a>, typename <a class=
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to a LoopBounds object containing the bounds information (name, lower, upper, and step) to be processed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> reference to a mutator object used to apply transformations or perform actions during the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3697,7 +3697,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="a__nodes_8h.html#a1d5f558a9b635a9acc4c0bcbafa8743f">Name</a> object being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation logic (e.g., containing Pre and Post methods). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3739,7 +3739,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> OmpLinearClause::WithModifier object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the traversal logic (e.g., Pre and Post methods). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3779,7 +3779,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> OmpLinearClause::WithoutModifier object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the mutation logic (e.g., Pre and Post methods). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is part of the traversal context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is part of the traversal context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3821,7 +3821,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the RealLiteralConstant object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object of type M that implements the mutation logic (e.g., Pre and Post methods). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3862,7 +3862,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the RealLiteralConstant::Real object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation or traversal logic (e.g., providing Pre and Post hooks). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the associated expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that represents the associated expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3904,7 +3904,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SignedIntLiteralConstant node being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods to interact with the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3945,7 +3945,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="a__nodes_8h.html#a82c09635158e5c30c9b5820ba8c59309">Statement</a> object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the mutation logic and traversal hooks (Pre and Post). </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3986,7 +3986,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> StructureComponent to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the transformation or visitation logic via Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to hold the state or result of the traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, intended to hold the state or result of the traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4027,7 +4027,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Suffix object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the Pre and Post mutation interface used during the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is updated or maintained during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that is updated or maintained during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4068,7 +4068,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the TypeBoundProcedureStmt::WithInterface structure to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements Pre and Post methods for the traversal. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be used or modified during the walk.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be used or modified during the walk.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4109,7 +4109,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the TypeBoundProcedureStmt::WithoutInterface node to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td><a class="el" href="class_a.html">A</a> mutable object of type M that implements Pre and Post methods for the traversal process. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be updated during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that may be updated during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4151,7 +4151,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> UnlabeledStatement object to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that defines the transformation or traversal logic via Pre and Post methods. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context being processed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression context being processed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4192,7 +4192,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> UseStmt node to be traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the mutation logic, potentially containing Pre and Post traversal hooks. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of an SgExpression, used to track the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4233,7 +4233,7 @@ template&lt;typename M&gt; </div>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> WriteStmt node being traversed. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M that implements the mutation logic, potentially providing Pre and Post hooks. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, used to track or manipulate the current expression context during traversal.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, used to track or manipulate the current expression context during traversal.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4274,7 +4274,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to a common::Indirection object containing the target value. </td></tr>
     <tr><td class="paramname">mutator</td><td>An object of type M used to perform the mutation or traversal logic. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression node in the syntax graph.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression, representing the current expression node in the syntax graph.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4308,7 +4308,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the parser::IntLiteralConstant node to be traversed. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that will be updated or assigned during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of SgExpression that will be updated or assigned during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4339,16 +4339,16 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
 </div><div class="memdoc">
 
 <p>Traverses a structure using a <a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a> and updates an SgExpression. </p>
-<p>This function performs a deep traversal of a given object <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></span> using the <span class="tt"><a class="el" href="#a6722f744bf215f0a0206c4b70beec9e3" title="Performs a tree walk on an IntLiteralConstant node using a visitor pattern.">Walk</a></span> mechanism combined with a <span class="tt"><a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a></span>. During the traversal, the <span class="tt"><a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a></span> processes the elements of <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></span>, and the provided <span class="tt"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></span> pointer (an <span class="tt">SgExpression</span>) is updated or managed by the visitor. After the traversal is complete, the function explicitly calls the <span class="tt">Done</span> method on the visitor to finalize the expression construction or transformation.</p>
+<p>This function performs a deep traversal of a given object <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></span> using the <span class="tt"><a class="el" href="#a6722f744bf215f0a0206c4b70beec9e3" title="Performs a tree walk on an IntLiteralConstant node using a visitor pattern.">Walk</a></span> mechanism combined with a <span class="tt"><a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a></span>. During the traversal, the <span class="tt"><a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a></span> processes the elements of <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></span>, and the provided <span class="tt"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></span> pointer (an <span class="tt">SgExpression</span>) is updated or managed by the visitor. After the traversal is complete, the function explicitly calls the <span class="tt">Done</span> method on the visitor to finalize the expression construction or transformation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></td><td><a class="el" href="class_a.html">A</a> reference to the object of type T to be traversed. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, which is updated during the traversal process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></td><td><a class="el" href="class_a.html">A</a> reference to a pointer of type SgExpression, which is updated during the traversal process.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> object <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a></span> must be compatible with the <span class="tt"><a class="el" href="#a6722f744bf215f0a0206c4b70beec9e3" title="Performs a tree walk on an IntLiteralConstant node using a visitor pattern.">Walk</a></span> function and the <span class="tt"><a class="el" href="class_fortran_1_1parser_1_1_flang_expr_visitor.html">FlangExprVisitor</a></span>. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="namespacesg.html" title="Auto-generated documentation for the sg namespace.">sg</a></span> pointer will point to the resulting <span class="tt">SgExpression</span> produced by the visitor's traversal and finalization.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="namespacesg.html" title="This namespace contains template functions that operate on the ROSE AST.">sg</a></span> pointer will point to the resulting <span class="tt">SgExpression</span> produced by the visitor's traversal and finalization.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation is wrapped in a if 1 block, ensuring the traversal logic is always active in the current configuration. </dd></dl>
 
 </div>

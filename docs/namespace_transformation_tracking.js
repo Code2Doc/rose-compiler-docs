@@ -3,7 +3,7 @@ var namespace_transformation_tracking =
     [ "visitorTraversal", "class_transformation_tracking_1_1visitor_traversal.html", "class_transformation_tracking_1_1visitor_traversal" ],
     [ "addInputNode", "namespace_transformation_tracking.html#ae943472729878d309c563b06a62b8642", null ],
     [ "clearId", "namespace_transformation_tracking.html#a8ac8fb2916ef629f1cbfe7f9fdd9919c", null ],
-    [ "copyBeginAndEndFileInfo", "namespace_transformation_tracking.html#af396befc991e7a9a9e033d8e5dc46884", null ],
+    [ "copyBeginAndEndFileInfo", "namespace_transformation_tracking.html#a8a4aa830ccd3b9fceed0df993309e41f", null ],
     [ "getFileInfo", "namespace_transformation_tracking.html#af2cf8c368b707d9ba17bd801643ade13", null ],
     [ "getId", "namespace_transformation_tracking.html#a30c1f3f087751aac17c6fbc34beb75de", null ],
     [ "getNextId", "namespace_transformation_tracking.html#af37cf8fc11b71c00ba9080939462add0", null ],

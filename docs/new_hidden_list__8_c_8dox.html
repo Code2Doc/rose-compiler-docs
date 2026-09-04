@@ -97,7 +97,7 @@ $(function(){initNavTree('new_hidden_list__8_c_8dox.html','',''); });
 Functions</h2></td></tr>
 <tr class="memitem:a9e3e64213b66d84345c816436277f88f" id="r_a9e3e64213b66d84345c816436277f88f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9e3e64213b66d84345c816436277f88f">newBuildHiddenTypeAndDeclarationLists</a> (SgNode *<a class="el" href="structnode.html">node</a>, std::set&lt; SgNode * &gt; &amp;referencedNameSet)</td></tr>
 <tr class="memdesc:a9e3e64213b66d84345c816436277f88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates hidden type and declaration lists for name qualification support.  <br /></td></tr>
-<tr class="memitem:a4200497efd17a7baa8477ac56e4ac220" id="r_a4200497efd17a7baa8477ac56e4ac220"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4200497efd17a7baa8477ac56e4ac220">numberOfSymbolsWithName</a> (const SgName &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, SgScopeStatement *scope)</td></tr>
+<tr class="memitem:a4200497efd17a7baa8477ac56e4ac220" id="r_a4200497efd17a7baa8477ac56e4ac220"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4200497efd17a7baa8477ac56e4ac220">numberOfSymbolsWithName</a> (const SgName &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:a4200497efd17a7baa8477ac56e4ac220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of symbols within a given scope that share the same name.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
@@ -171,7 +171,7 @@ Functions</h2></td></tr>
 <p>This function iterates through the symbols in the provided scope starting from the first symbol found that matches the specified name. It traverses the scope's symbol chain using next_any_symbol() to determine how many symbols are associated with the provided SgName. This is particularly useful for identifying name collisions or overloaded symbols within a specific scope.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgName object representing the name to be searched for within the scope. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgName object representing the name to be searched for within the scope. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="class_a.html">A</a> pointer to the SgScopeStatement in which the symbol search is performed.</td></tr>
   </table>
   </dd>
@@ -185,7 +185,7 @@ Debugging information may be printed to the log if DEBUG_NAME_QUALIFICATION_LEVE
 <p>This function iterates through the symbols in the provided scope to identify and count all symbols that match the specified SgName. It begins by looking up the initial function symbol associated with the name and then traverses the scope using next_any_symbol() to find all subsequent occurrences. This is particularly useful for identifying symbol shadowing or multiple declarations within the same scope.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgName object representing the name to be searched for. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgName object representing the name to be searched for. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="class_a.html">A</a> pointer to the SgScopeStatement in which the search is performed.</td></tr>
   </table>
   </dd>

@@ -108,6 +108,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a189ec2685106ea473c6918eac4aad323" id="r_a189ec2685106ea473c6918eac4aad323"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="class_sawyer_1_1_command_line_1_1_switch_group.html">Sawyer::CommandLine::SwitchGroup</a>&#160;</td><td class="memItemRight"><a class="el" href="#a189ec2685106ea473c6918eac4aad323">commandLineSwitches</a> ()</td></tr>
+<tr class="memdesc:a189ec2685106ea473c6918eac4aad323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a description of the outliner's command-line switches. When these switches are parsed, they will adjust settings.  <br /></td></tr>
+<tr class="memitem:a55ca74f11000c896c74fae729784ebd6" id="r_a55ca74f11000c896c74fae729784ebd6"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a55ca74f11000c896c74fae729784ebd6">validateSettings</a> ()</td></tr>
+<tr class="memdesc:a55ca74f11000c896c74fae729784ebd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate outliner settings. This should be called after outliner settings are adjusted (directly or by command-line.  <br /></td></tr>
+<tr class="memitem:aea1ebd822aed7f7e211d6ae35e8db4f5" id="r_aea1ebd822aed7f7e211d6ae35e8db4f5"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#aea1ebd822aed7f7e211d6ae35e8db4f5">commandLineProcessing</a> (std::vector&lt; std::string &gt; &amp;argvList)</td></tr>
+<tr class="memdesc:aea1ebd822aed7f7e211d6ae35e8db4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a set of command line options to adjust internal behaviors.  <br /></td></tr>
+<tr class="memitem:a2742ad7b96a9093ae3b310879641d892" id="r_a2742ad7b96a9093ae3b310879641d892"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a2742ad7b96a9093ae3b310879641d892">isOutlineable</a> (const SgStatement *s, bool <a class="el" href="_cxx_grammar_meta_program_8_c.html#ab3f078684998b83967d507d0f453f454">verbose</a>=false)</td></tr>
+<tr class="memdesc:a2742ad7b96a9093ae3b310879641d892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the statement is "outlineable.".  <br /></td></tr>
+<tr class="memitem:a0c8a1fbdf24115f098a36b0de83e15cf" id="r_a0c8a1fbdf24115f098a36b0de83e15cf"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a0c8a1fbdf24115f098a36b0de83e15cf">generateFuncName</a> (const SgStatement *stmt)</td></tr>
+<tr class="memdesc:a0c8a1fbdf24115f098a36b0de83e15cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique outlined-function name for the specified statement.  <br /></td></tr>
+<tr class="memitem:a0d267e027cec35b3c81600029cde6ee3" id="r_a0d267e027cec35b3c81600029cde6ee3"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a0d267e027cec35b3c81600029cde6ee3">generateFuncArgName</a> (const SgStatement *stmt)</td></tr>
+<tr class="memdesc:a0d267e027cec35b3c81600029cde6ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique outlined-function's wrapper argument name for the specified statement.  <br /></td></tr>
+<tr class="memitem:a890b2bcc423d47939aee4d535577641c" id="r_a890b2bcc423d47939aee4d535577641c"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a890b2bcc423d47939aee4d535577641c">outline</a> (SgStatement *s)</td></tr>
+<tr class="memdesc:a890b2bcc423d47939aee4d535577641c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outlines the given statement. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> main programming interface.  <br /></td></tr>
+<tr class="memitem:ac8a43c53458693f25b58564aad5d1cca" id="r_ac8a43c53458693f25b58564aad5d1cca"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac8a43c53458693f25b58564aad5d1cca">outline</a> (SgStatement *s, const std::string &amp;func_name)</td></tr>
+<tr class="memdesc:ac8a43c53458693f25b58564aad5d1cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outline to a new function with the specified name, calling preprocessing internally.  <br /></td></tr>
+<tr class="memitem:ab7127063d3d6c9eb6feebd15fda41d88" id="r_ab7127063d3d6c9eb6feebd15fda41d88"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab7127063d3d6c9eb6feebd15fda41d88">outline</a> (SgPragmaDeclaration *s)</td></tr>
+<tr class="memdesc:ab7127063d3d6c9eb6feebd15fda41d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">If 's' is an outline pragma, this function "executes" it.  <br /></td></tr>
+<tr class="memitem:aa2dcce4e8595818de08705bbef158e0a" id="r_aa2dcce4e8595818de08705bbef158e0a"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa2dcce4e8595818de08705bbef158e0a">outlineAll</a> (SgProject *)</td></tr>
+<tr class="memdesc:aa2dcce4e8595818de08705bbef158e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outlines all regions marked by outlining pragmas.  <br /></td></tr>
 <tr class="memitem:a2e3b137c6fbaf1e9c8aae738a9e9879b" id="r_a2e3b137c6fbaf1e9c8aae738a9e9879b"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2e3b137c6fbaf1e9c8aae738a9e9879b">outlineBlock</a> (SgBasicBlock *s, const <a class="el" href="classstring.html">string</a> &amp;func_name_str)</td></tr>
 <tr class="memdesc:a2e3b137c6fbaf1e9c8aae738a9e9879b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a basic block and transforms it into a separate function call.  <br /></td></tr>
 <tr class="memitem:a369a8f239385ca93efc33aa6bd17f9df" id="r_a369a8f239385ca93efc33aa6bd17f9df"><td class="memItemLeft">SgSourceFile *&#160;</td><td class="memItemRight"><a class="el" href="#a369a8f239385ca93efc33aa6bd17f9df">generateNewSourceFile</a> (SgBasicBlock *s, const <a class="el" href="classstring.html">string</a> &amp;file_name)</td></tr>
@@ -116,56 +136,36 @@ Functions</h2></td></tr>
 <tr class="memdesc:a2d03914ec568c3beba3135203e3a74d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new function declaration by outlining a specified basic block.  <br /></td></tr>
 <tr class="memitem:aedc413a99106907b01430608eadd3498" id="r_aedc413a99106907b01430608eadd3498"><td class="memItemLeft">SgStatement *&#160;</td><td class="memItemRight"><a class="el" href="#aedc413a99106907b01430608eadd3498">generateCall</a> (SgFunctionDeclaration *out_func, const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, const std::set&lt; SgInitializedName * &gt; &amp;varsUsingOriginalForm, std::string wrapper_name, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:aedc413a99106907b01430608eadd3498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a function call statement for a newly outlined function.  <br /></td></tr>
-<tr class="memitem:a76b006b423efe347d4fadd41d12ba45f" id="r_a76b006b423efe347d4fadd41d12ba45f"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_switch_group.html">Sawyer::CommandLine::SwitchGroup</a>&#160;</td><td class="memItemRight"><a class="el" href="#a76b006b423efe347d4fadd41d12ba45f">commandLineSwitches</a> ()</td></tr>
-<tr class="memdesc:a76b006b423efe347d4fadd41d12ba45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and configures a group of command-line switches for the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a>.  <br /></td></tr>
-<tr class="memitem:ad2da4464bd107c6d70fab7ad5cfed825" id="r_ad2da4464bd107c6d70fab7ad5cfed825"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2da4464bd107c6d70fab7ad5cfed825">validateSettings</a> ()</td></tr>
-<tr class="memdesc:ad2da4464bd107c6d70fab7ad5cfed825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates and sanitizes the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> configuration settings and ensures directory existence.  <br /></td></tr>
-<tr class="memitem:afe699976eeae02e6fdc121d489d84b9f" id="r_afe699976eeae02e6fdc121d489d84b9f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afe699976eeae02e6fdc121d489d84b9f">commandLineProcessing</a> (std::vector&lt; std::string &gt; &amp;argvList)</td></tr>
-<tr class="memdesc:afe699976eeae02e6fdc121d489d84b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a set of command line options to adjust internal behaviors.  <br /></td></tr>
-<tr class="memitem:a3ce763e733cda8dc5c5ffd6164e5e96e" id="r_a3ce763e733cda8dc5c5ffd6164e5e96e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3ce763e733cda8dc5c5ffd6164e5e96e">isOutlineable</a> (const SgStatement *s, bool <a class="el" href="_cxx_grammar_meta_program_8_c.html#ab3f078684998b83967d507d0f453f454">verbose</a>=false)</td></tr>
-<tr class="memdesc:a3ce763e733cda8dc5c5ffd6164e5e96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the statement is "outlineable.".  <br /></td></tr>
-<tr class="memitem:adce9e549205ee9a9671d383cade147eb" id="r_adce9e549205ee9a9671d383cade147eb"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#adce9e549205ee9a9671d383cade147eb">generateFuncName</a> (const SgStatement *stmt)</td></tr>
-<tr class="memdesc:adce9e549205ee9a9671d383cade147eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique outlined-function name for the specified statement.  <br /></td></tr>
-<tr class="memitem:a6403ef9eff830f38771210d067aff67a" id="r_a6403ef9eff830f38771210d067aff67a"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6403ef9eff830f38771210d067aff67a">generateFuncArgName</a> (const SgStatement *stmt)</td></tr>
-<tr class="memdesc:a6403ef9eff830f38771210d067aff67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique outlined-function's wrapper argument name for the specified statement.  <br /></td></tr>
-<tr class="memitem:af0b72d8175710c37eefd714190c93f02" id="r_af0b72d8175710c37eefd714190c93f02"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#af0b72d8175710c37eefd714190c93f02">outline</a> (SgStatement *s)</td></tr>
-<tr class="memdesc:af0b72d8175710c37eefd714190c93f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outlines the given statement. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> main programming interface.  <br /></td></tr>
-<tr class="memitem:ae6af9ad5e655169e0db049f1712bc185" id="r_ae6af9ad5e655169e0db049f1712bc185"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae6af9ad5e655169e0db049f1712bc185">outline</a> (SgStatement *s, const std::string &amp;func_name)</td></tr>
-<tr class="memdesc:ae6af9ad5e655169e0db049f1712bc185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outline to a new function with the specified name, calling preprocessing internally.  <br /></td></tr>
-<tr class="memitem:a9c5c2108c5b80b07350a5db0df479c52" id="r_a9c5c2108c5b80b07350a5db0df479c52"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9c5c2108c5b80b07350a5db0df479c52">outline</a> (SgPragmaDeclaration *s)</td></tr>
-<tr class="memdesc:a9c5c2108c5b80b07350a5db0df479c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">If 's' is an outline pragma, this function "executes" it.  <br /></td></tr>
-<tr class="memitem:aa2dcce4e8595818de08705bbef158e0a" id="r_aa2dcce4e8595818de08705bbef158e0a"><td class="memItemLeft"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa2dcce4e8595818de08705bbef158e0a">outlineAll</a> (SgProject *)</td></tr>
-<tr class="memdesc:aa2dcce4e8595818de08705bbef158e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outlines all regions marked by outlining pragmas.  <br /></td></tr>
 <tr id="func-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">The following routines, intended for debugging, mirror the</div></td></tr>
 <tr><td colspan="2" class="ititle"><div class="groupText"><p>core outlining routines above, but only run the outlining preprocessing phase, returning the outlineable statement if present. </p>
 </div></td></tr>
-<tr class="memitem:a8c49b29b2a2e70487189ae47c486a320" id="r_a8c49b29b2a2e70487189ae47c486a320"><td class="memItemLeft">SgBasicBlock *&#160;</td><td class="memItemRight"><a class="el" href="#a8c49b29b2a2e70487189ae47c486a320">preprocess</a> (SgStatement *s)</td></tr>
-<tr class="memdesc:a8c49b29b2a2e70487189ae47c486a320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocesses a given statement to determine its outlineability and prepare its target.  <br /></td></tr>
-<tr class="memitem:a6ff8142667067076283d31d780e90118" id="r_a6ff8142667067076283d31d780e90118"><td class="memItemLeft">SgBasicBlock *&#160;</td><td class="memItemRight"><a class="el" href="#a6ff8142667067076283d31d780e90118">preprocess</a> (SgPragmaDeclaration *decl)</td></tr>
-<tr class="memdesc:a6ff8142667067076283d31d780e90118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a pragma declaration to identify and return a basic block.  <br /></td></tr>
-<tr class="memitem:abbee1f66c7345c99679a44fb7df584dc" id="r_abbee1f66c7345c99679a44fb7df584dc"><td class="memItemLeft"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#abbee1f66c7345c99679a44fb7df584dc">preprocessAll</a> (SgProject *proj)</td></tr>
-<tr class="memdesc:abbee1f66c7345c99679a44fb7df584dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs preprocessing on all relevant targets within a given project.  <br /></td></tr>
+<tr class="memitem:a4c81737ccfa587716035a22a3f25b2f8" id="r_a4c81737ccfa587716035a22a3f25b2f8"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgBasicBlock *&#160;</td><td class="memItemRight"><a class="el" href="#a4c81737ccfa587716035a22a3f25b2f8">preprocess</a> (SgStatement *s)</td></tr>
+<tr class="memdesc:a4c81737ccfa587716035a22a3f25b2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocesses a given statement to determine its outlineability and prepare its target.  <br /></td></tr>
+<tr class="memitem:a194ff5e9176243ac3be3d596cc43f74d" id="r_a194ff5e9176243ac3be3d596cc43f74d"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgBasicBlock *&#160;</td><td class="memItemRight"><a class="el" href="#a194ff5e9176243ac3be3d596cc43f74d">preprocess</a> (SgPragmaDeclaration *s)</td></tr>
+<tr class="memdesc:a194ff5e9176243ac3be3d596cc43f74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a pragma declaration to identify and return a basic block.  <br /></td></tr>
+<tr class="memitem:a5bc21da5f3c2cfaee65d6d2c56996f14" id="r_a5bc21da5f3c2cfaee65d6d2c56996f14"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5bc21da5f3c2cfaee65d6d2c56996f14">preprocessAll</a> (SgProject *)</td></tr>
+<tr class="memdesc:a5bc21da5f3c2cfaee65d6d2c56996f14"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> driver for preprocessing.  <br /></td></tr>
+<tr class="memitem:a8efdff340430258645bc258414806b60" id="r_a8efdff340430258645bc258414806b60"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8efdff340430258645bc258414806b60">outlineBlock</a> (SgBasicBlock *<a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a>, const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>)</td></tr>
+<tr class="memdesc:a8efdff340430258645bc258414806b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outlines the given basic block into a function named 'name'.  <br /></td></tr>
 <tr class="memitem:abeafa44be8408cd3c454f9ba607f990b" id="r_abeafa44be8408cd3c454f9ba607f990b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abeafa44be8408cd3c454f9ba607f990b">collectVars</a> (const SgStatement *s, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms)</td></tr>
 <tr class="memdesc:abeafa44be8408cd3c454f9ba607f990b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the set of variables in 's' that need to be passed to the outlined routine (semantically equivalent to shared variables in OpenMP).  <br /></td></tr>
-<tr class="memitem:a39445e88ee8cd3bda1b33009dd5bacc8" id="r_a39445e88ee8cd3bda1b33009dd5bacc8"><td class="memItemLeft">SgSourceFile *&#160;</td><td class="memItemRight"><a class="el" href="#a39445e88ee8cd3bda1b33009dd5bacc8">getLibSourceFile</a> (SgBasicBlock *<a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>)</td></tr>
+<tr class="memitem:a46d3090ada6867d30117700b09553fb0" id="r_a46d3090ada6867d30117700b09553fb0"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgSourceFile *&#160;</td><td class="memItemRight"><a class="el" href="#a46d3090ada6867d30117700b09553fb0">generateNewSourceFile</a> (SgBasicBlock *<a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>, const std::string &amp;file_name)</td></tr>
+<tr class="memdesc:a46d3090ada6867d30117700b09553fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> a new source file under the same SgProject as target, the file's base name is file_name_str. Suffix is automatically generated according to the file suffix of s.  <br /></td></tr>
+<tr class="memitem:a39445e88ee8cd3bda1b33009dd5bacc8" id="r_a39445e88ee8cd3bda1b33009dd5bacc8"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgSourceFile *&#160;</td><td class="memItemRight"><a class="el" href="#a39445e88ee8cd3bda1b33009dd5bacc8">getLibSourceFile</a> (SgBasicBlock *<a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>)</td></tr>
 <tr class="memdesc:a39445e88ee8cd3bda1b33009dd5bacc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the file handle to the separated source file storing outlined functions. <br  />
  This file will be compiled to .so dynamically loadable library. target is the input code block for outlining. It provides SgProject and input file name info. the lib source file's name convention is rose_input_lib.[c|cxx].  <br /></td></tr>
-<tr class="memitem:ae4726051a0d6cfe4ca40e5413f6104fe" id="r_ae4726051a0d6cfe4ca40e5413f6104fe"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ae4726051a0d6cfe4ca40e5413f6104fe">generateLibSourceFileName</a> (SgBasicBlock *<a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>)</td></tr>
+<tr class="memitem:ae4726051a0d6cfe4ca40e5413f6104fe" id="r_ae4726051a0d6cfe4ca40e5413f6104fe"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> std::string&#160;</td><td class="memItemRight"><a class="el" href="#ae4726051a0d6cfe4ca40e5413f6104fe">generateLibSourceFileName</a> (SgBasicBlock *<a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>)</td></tr>
 <tr class="memdesc:ae4726051a0d6cfe4ca40e5413f6104fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">the lib source file's name convention is rose_input_lib.[c|cxx].  <br /></td></tr>
-<tr class="memitem:ab4422aa0e8c436d9c90a8cfeeb685866" id="r_ab4422aa0e8c436d9c90a8cfeeb685866"><td class="memItemLeft">SgClassDeclaration *&#160;</td><td class="memItemRight"><a class="el" href="#ab4422aa0e8c436d9c90a8cfeeb685866">generateParameterStructureDeclaration</a> (SgBasicBlock *s, const std::string &amp;func_name_str, const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;pdSyms, SgScopeStatement *func_scope)</td></tr>
+<tr class="memitem:ab4422aa0e8c436d9c90a8cfeeb685866" id="r_ab4422aa0e8c436d9c90a8cfeeb685866"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgClassDeclaration *&#160;</td><td class="memItemRight"><a class="el" href="#ab4422aa0e8c436d9c90a8cfeeb685866">generateParameterStructureDeclaration</a> (SgBasicBlock *s, const std::string &amp;func_name_str, const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;pdSyms, SgScopeStatement *func_scope)</td></tr>
 <tr class="memdesc:ab4422aa0e8c436d9c90a8cfeeb685866"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> a struct declaration to wrap all variables to be passed to the outlined function There are two ways to wrap a variable: Using its value vs. Using its address (pointer type).  <br /></td></tr>
-<tr class="memitem:adf8c22a345ac3d56941fd1acefd138cd" id="r_adf8c22a345ac3d56941fd1acefd138cd"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#adf8c22a345ac3d56941fd1acefd138cd">generatePackingStatements</a> (SgStatement *<a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;pdsyms, SgClassDeclaration *struct_decl=NULL)</td></tr>
-<tr class="memdesc:adf8c22a345ac3d56941fd1acefd138cd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> packing (wrapping) statements for the variables to be passed.  <br /></td></tr>
-<tr class="memitem:a62490826b1d63989f328f1456f159164" id="r_a62490826b1d63989f328f1456f159164"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a62490826b1d63989f328f1456f159164">insert</a> (SgFunctionDeclaration *<a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>, SgGlobal *scope, SgBasicBlock *outlining_target)</td></tr>
-<tr class="memdesc:a62490826b1d63989f328f1456f159164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an outlined-function declaration into global scope.  <br /></td></tr>
-<tr class="memitem:a247c3af6de882adf67d2f21c1502a29c" id="r_a247c3af6de882adf67d2f21c1502a29c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a247c3af6de882adf67d2f21c1502a29c">appendIndividualFunctionCallArgs</a> (const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, const std::set&lt; SgInitializedName * &gt; varUsingOriginalType, SgExprListExp *e_list)</td></tr>
-<tr class="memdesc:a247c3af6de882adf67d2f21c1502a29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a function call parameter list using a set of symbols.  <br /></td></tr>
-<tr class="memitem:a8efdff340430258645bc258414806b60" id="r_a8efdff340430258645bc258414806b60"><td class="memItemLeft"><a class="el" href="struct_outliner_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8efdff340430258645bc258414806b60">outlineBlock</a> (SgBasicBlock *<a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a>, const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
-<tr class="memdesc:a8efdff340430258645bc258414806b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outlines the given basic block into a function named 'name'.  <br /></td></tr>
-<tr class="memitem:a46d3090ada6867d30117700b09553fb0" id="r_a46d3090ada6867d30117700b09553fb0"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgSourceFile *&#160;</td><td class="memItemRight"><a class="el" href="#a46d3090ada6867d30117700b09553fb0">generateNewSourceFile</a> (SgBasicBlock *<a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>, const std::string &amp;file_name)</td></tr>
-<tr class="memdesc:a46d3090ada6867d30117700b09553fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> a new source file under the same SgProject as target, the file's base name is file_name_str. Suffix is automatically generated according to the file suffix of s.  <br /></td></tr>
 <tr class="memitem:affbde8163818adf3c26ad08cd91da262" id="r_affbde8163818adf3c26ad08cd91da262"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgFunctionDeclaration *&#160;</td><td class="memItemRight"><a class="el" href="#affbde8163818adf3c26ad08cd91da262">generateFunction</a> (SgBasicBlock *s, const std::string &amp;func_name_str, const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;pdSyms, const std::set&lt; SgInitializedName * &gt; &amp;restoreVars, SgClassDeclaration *struct_decl, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:affbde8163818adf3c26ad08cd91da262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new outlined function containing a deep-copy of s.  <br /></td></tr>
+<tr class="memitem:adf8c22a345ac3d56941fd1acefd138cd" id="r_adf8c22a345ac3d56941fd1acefd138cd"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> std::string&#160;</td><td class="memItemRight"><a class="el" href="#adf8c22a345ac3d56941fd1acefd138cd">generatePackingStatements</a> (SgStatement *<a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421">target</a>, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;pdsyms, SgClassDeclaration *struct_decl=NULL)</td></tr>
+<tr class="memdesc:adf8c22a345ac3d56941fd1acefd138cd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> packing (wrapping) statements for the variables to be passed.  <br /></td></tr>
+<tr class="memitem:a81a9d1ede63234e9d3fe7b27a5d8919b" id="r_a81a9d1ede63234e9d3fe7b27a5d8919b"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="struct_sage_interface_1_1_deferred_transformation.html">SageInterface::DeferredTransformation</a>&#160;</td><td class="memItemRight"><a class="el" href="#a81a9d1ede63234e9d3fe7b27a5d8919b">insert</a> (SgFunctionDeclaration *<a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>, SgGlobal *scope, SgBasicBlock *outlining_target)</td></tr>
+<tr class="memdesc:a81a9d1ede63234e9d3fe7b27a5d8919b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an outlined-function declaration into global scope.  <br /></td></tr>
+<tr class="memitem:a247c3af6de882adf67d2f21c1502a29c" id="r_a247c3af6de882adf67d2f21c1502a29c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a247c3af6de882adf67d2f21c1502a29c">appendIndividualFunctionCallArgs</a> (const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, const std::set&lt; SgInitializedName * &gt; varUsingOriginalType, SgExprListExp *e_list)</td></tr>
+<tr class="memdesc:a247c3af6de882adf67d2f21c1502a29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a function call parameter list using a set of symbols.  <br /></td></tr>
 <tr class="memitem:aa24d442f144d3ab17e7898841a2e8692" id="r_aa24d442f144d3ab17e7898841a2e8692"><td class="memItemLeft">SgStatement *&#160;</td><td class="memItemRight"><a class="el" href="#aa24d442f144d3ab17e7898841a2e8692">generateCall</a> (SgFunctionDeclaration *out_func, const <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;syms, const std::set&lt; SgInitializedName * &gt; readOnlyVars, std::string wrapper_arg_name, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:aa24d442f144d3ab17e7898841a2e8692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a call to an outlined function.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -264,9 +264,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Computes the set of variables in 's' that need to be passed to the outlined routine (semantically equivalent to shared variables in OpenMP). </p>
-<p>Collect the variables to be passed if 's' is to be outlined.</p>
 <p>Identifies the set of variables that must be passed as parameters to an outlined function.</p>
-<p>Note: user codes should handle non-generic variable handling on their own. <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> only handles generic operations. For example, in OpenMP translation calling outliner: OpenMP specific variables such as private, firstprivate, reduction variables are handled by <a class="el" href="namespace_omp_support.html#aae6cc8b390263dbf73ed354c09db93b2" title="Translate clauses with variable lists, such as private, firstprivate, lastprivate,...">OmpSupport::transOmpVariables()</a> before it calls outliner. So the outliner can focus on generic operations while the caller should handle their special variables in advance.</p>
+<p>Collect the variables to be passed if 's' is to be outlined.</p>
+<p>Note: user codes should handle non-generic variable handling on their own. <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> only handles generic operations. For example, in OpenMP translation calling outliner: OpenMP specific variables such as private, firstprivate, reduction variables are handled by <a class="el" href="namespace_omp_support.html#ab54d95c4bc86f91702abe852004c605d" title="Translate clauses with variable lists, such as private, firstprivate, lastprivate,...">OmpSupport::transOmpVariables()</a> before it calls outliner. So the outliner can focus on generic operations while the caller should handle their special variables in advance.</p>
 <p>This function determines which variable symbols used within a specific statement <span class="tt">s</span> need to be included in the parameter list of a newly created outlined function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic distinguishes between variables defined locally within the statement and those referenced from outer scopes.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation follows these steps:</p><ol type="1">
 <li>Identifies the enclosing function definition for the statement <span class="tt">s</span>.</li>
@@ -290,14 +290,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe699976eeae02e6fdc121d489d84b9f" name="afe699976eeae02e6fdc121d489d84b9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe699976eeae02e6fdc121d489d84b9f">&#9670;&#160;</a></span>commandLineProcessing()</h2>
+<a id="aea1ebd822aed7f7e211d6ae35e8db4f5" name="aea1ebd822aed7f7e211d6ae35e8db4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1ebd822aed7f7e211d6ae35e8db4f5">&#9670;&#160;</a></span>commandLineProcessing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void Outliner::commandLineProcessing </td>
+          <td class="memname">void Outliner::commandLineProcessing </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>argvList</em></span></td><td>)</td>
           <td></td>
@@ -306,9 +306,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accept a set of command line options to adjust internal behaviors. </p>
-<p>Set internal options based on command line options.</p>
 <p>Sets internal outliner options based on provided command line arguments.</p>
-<p>This function parses a list of command line arguments to configure the internal state of the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> object. It checks for various flags prefixed with <span class="tt">-rose:outline:</span> to enable or disable specific features such as debugging, preprocessing-only mode, parameter wrapping, template support, and dlopen-based function discovery. It also handles parameters that require additional string values, such as <span class="tt">abstract_handle</span> and <span class="tt"><a class="el" href="#a28567920a5f8f33fb421f8eeb5fcaa31">output_path</a></span>. If the <span class="tt">--help</span> or <span class="tt">-help</span> flags are detected, the function prints a comprehensive usage guide for all available outliner options to the standard output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function concludes by calling <span class="tt"><a class="el" href="#ad2da4464bd107c6d70fab7ad5cfed825" title="Validates and sanitizes the Outliner configuration settings and ensures directory existence.">validateSettings()</a></span> to ensure the parsed configuration is consistent.</p>
+<p>Set internal options based on command line options.</p>
+<p>This function parses a list of command line arguments to configure the internal state of the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> object. It checks for various flags prefixed with <span class="tt">-rose:outline:</span> to enable or disable specific features such as debugging, preprocessing-only mode, parameter wrapping, template support, and dlopen-based function discovery. It also handles parameters that require additional string values, such as <span class="tt">abstract_handle</span> and <span class="tt"><a class="el" href="#a28567920a5f8f33fb421f8eeb5fcaa31">output_path</a></span>. If the <span class="tt">--help</span> or <span class="tt">-help</span> flags are detected, the function prints a comprehensive usage guide for all available outliner options to the standard output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function concludes by calling <span class="tt"><a class="el" href="#a55ca74f11000c896c74fae729784ebd6" title="Validate outliner settings. This should be called after outliner settings are adjusted (directly or b...">validateSettings()</a></span> to ensure the parsed configuration is consistent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argvList</td><td><a class="el" href="class_a.html">A</a> reference to a vector of strings containing the command line arguments to be processed.</td></tr>
@@ -316,19 +316,19 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">argvList</span> should contain the arguments passed to the application. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal member variables of the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> instance are updated according to the flags found in <span class="tt">argvList</span>, and <span class="tt"><a class="el" href="#ad2da4464bd107c6d70fab7ad5cfed825" title="Validates and sanitizes the Outliner configuration settings and ensures directory existence.">validateSettings()</a></span> is invoked.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> internal member variables of the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> instance are updated according to the flags found in <span class="tt">argvList</span>, and <span class="tt"><a class="el" href="#a55ca74f11000c896c74fae729784ebd6" title="Validate outliner settings. This should be called after outliner settings are adjusted (directly or b...">validateSettings()</a></span> is invoked.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may modify <span class="tt">argvList</span> internally, specifically when the <span class="tt">-rose:outline:<a class="el" href="#ae9fb8ca9fe9349391dd100fc8b1f13d4">select_omp_loop</a></span> option is detected, by appending the <span class="tt">-rose:openmp:ast_only</span> flag. </dd></dl>
 
 </div>
 </div>
-<a id="a76b006b423efe347d4fadd41d12ba45f" name="a76b006b423efe347d4fadd41d12ba45f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76b006b423efe347d4fadd41d12ba45f">&#9670;&#160;</a></span>commandLineSwitches()</h2>
+<a id="a189ec2685106ea473c6918eac4aad323" name="a189ec2685106ea473c6918eac4aad323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189ec2685106ea473c6918eac4aad323">&#9670;&#160;</a></span>commandLineSwitches()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="class_sawyer_1_1_command_line_1_1_switch_group.html">Sawyer::CommandLine::SwitchGroup</a> Outliner::commandLineSwitches </td>
+          <td class="memname"><a class="el" href="class_sawyer_1_1_command_line_1_1_switch_group.html">Sawyer::CommandLine::SwitchGroup</a> Outliner::commandLineSwitches </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -336,8 +336,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates and configures a group of command-line switches for the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a>. </p>
-<p>Return a description of the outliner's command-line switches. When these switches are parsed, they will adjust settings.</p>
+<p>Return a description of the outliner's command-line switches. When these switches are parsed, they will adjust settings. </p>
+<p>Creates and configures a group of command-line switches for the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a>.</p>
 <p>Description of outliner command-line.</p>
 <p>This function creates a description of command-line switches that are recognized by the outliner. This description can be incorporated into a <a class="el" href="class_sawyer_1_1_command_line_1_1_parser.html" title="Sawyer::CommandLine::Parser">Sawyer::CommandLine::Parser</a> by tools that need to create a parser that recognizes outliner switches. When the command-line is parsed with these descriptions, various settings in this object are adjusted.</p>
 <p>This function initializes a <a class="el" href="class_sawyer_1_1_command_line_1_1_switch_group.html">Sawyer::CommandLine::SwitchGroup</a> named "Outliner switches" and populates it with various configuration options used to control the behavior of the ROSE outliner. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> switches allow users to toggle features such as debugging, preprocessing modes, parameter wrapping, template handling, and output path customization.</p>
@@ -445,14 +445,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6403ef9eff830f38771210d067aff67a" name="a6403ef9eff830f38771210d067aff67a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6403ef9eff830f38771210d067aff67a">&#9670;&#160;</a></span>generateFuncArgName()</h2>
+<a id="a0d267e027cec35b3c81600029cde6ee3" name="a0d267e027cec35b3c81600029cde6ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d267e027cec35b3c81600029cde6ee3">&#9670;&#160;</a></span>generateFuncArgName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Outliner::generateFuncArgName </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> Outliner::generateFuncArgName </td>
           <td>(</td>
           <td class="paramtype">const SgStatement *</td>          <td class="paramname"><span class="paramname"><em>stmt</em></span></td><td>)</td>
           <td></td>
@@ -479,14 +479,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adce9e549205ee9a9671d383cade147eb" name="adce9e549205ee9a9671d383cade147eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adce9e549205ee9a9671d383cade147eb">&#9670;&#160;</a></span>generateFuncName()</h2>
+<a id="a0c8a1fbdf24115f098a36b0de83e15cf" name="a0c8a1fbdf24115f098a36b0de83e15cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8a1fbdf24115f098a36b0de83e15cf">&#9670;&#160;</a></span>generateFuncName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Outliner::generateFuncName </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> Outliner::generateFuncName </td>
           <td>(</td>
           <td class="paramtype">const SgStatement *</td>          <td class="paramname"><span class="paramname"><em>stmt</em></span></td><td>)</td>
           <td></td>
@@ -560,10 +560,10 @@ Variables</h2></td></tr>
 <p>Returns a new outlined function containing a deep-copy of s. </p>
 <p>Create a function named 'func_name_str', with a parameter list from 'syms'.</p>
 <p>This function only creates and returns an outlined function definition, f. Although it sets the scope of 'f' to be the first scope surrounding 's' that may contain a function (or member function) definition, it does not insert 'f' into that scope.</p>
-<p>This function is an "inner" outlining routine which does not properly handle non-local control flow. To outline statements containing non-local flow, a caller should instead call <a class="el" href="#af0b72d8175710c37eefd714190c93f02" title="Outliner::outline()">Outliner::outline()</a>, which preprocesses non-local control flow appropriately. See Outliner::transformNonLocalControlFlow() for more details.</p>
+<p>This function is an "inner" outlining routine which does not properly handle non-local control flow. To outline statements containing non-local flow, a caller should instead call <a class="el" href="#a890b2bcc423d47939aee4d535577641c" title="Outliner::outline()">Outliner::outline()</a>, which preprocesses non-local control flow appropriately. See Outliner::transformNonLocalControlFlow() for more details.</p>
 <p>pdSyms is used to store symbols which must be replaced with their corresponding pointer dereferencing if replaced during outlining. Used to support -rose:outline:temp_variable It is also used to support struct wrapper parameter to indicate if a variable is stored by its address (not value) in the wrapper.</p>
 <p>// pSyms are OpenMP private variables, or dead variables (neither livein nor liveout)</p>
-<p>Note: private, firstprivate, reduction variables are handled by <a class="el" href="namespace_omp_support.html#aae6cc8b390263dbf73ed354c09db93b2" title="Translate clauses with variable lists, such as private, firstprivate, lastprivate,...">OmpSupport::transOmpVariables()</a> They are not in actual use anymore.</p>
+<p>Note: private, firstprivate, reduction variables are handled by <a class="el" href="namespace_omp_support.html#ab54d95c4bc86f91702abe852004c605d" title="Translate clauses with variable lists, such as private, firstprivate, lastprivate,...">OmpSupport::transOmpVariables()</a> They are not in actual use anymore.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> statement does not contain non-local control flow. </dd></dl>
 
 </div>
@@ -664,7 +664,7 @@ If <span class="tt"><a class="el" href="#afff9560f669f58f997898d67877d5035">Outl
 <p>This function determines the filename for a generated library file by locating the enclosing SgFile node for the provided SgBasicBlock. It extracts the base filename and the file extension from the original source file, then constructs a new filename using the pattern "rose_[original_name]_lib.[extension]". If an output_path is configured, the function prepends this path to the generated filename. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on finding the root SgFile via getEnclosingNode and uses StringUtility for path and suffix manipulation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421" title="Retrieves the target node index from an edge descriptor.">target</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgBasicBlock that serves as the basis for determining the source file context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421" title="Retrieves the target node index from an edge descriptor.">target</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgBasicBlock that serves as the basis for determining the source file context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -779,7 +779,7 @@ If a file with the same name already exists at the target path, it is removed.</
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation iterates through the provided symbol set and inserts statements before the target statement. If a structure wrapper is used, it handles member access, pointer transformations (adding a "_p" suffix for pointer types), and array element copying. If an array of pointers is used, it performs C-style casts to void*.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421" title="Retrieves the target node index from an edge descriptor.">target</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgStatement before which the new variable declaration and assignment statements will be inserted. </td></tr>
+    <tr><td class="paramname"><a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421" title="Retrieves the target node index from an edge descriptor.">target</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgStatement before which the new variable declaration and assignment statements will be inserted. </td></tr>
     <tr><td class="paramname">syms</td><td><a class="el" href="class_a.html">A</a> set of variable symbols that need to be packed into the wrapper. </td></tr>
     <tr><td class="paramname">pdsyms</td><td><a class="el" href="class_a.html">A</a> set of variable symbols that are treated as pointer types, requiring address-of operations and specific naming conventions. </td></tr>
     <tr><td class="paramname">struct_decl</td><td><a class="el" href="class_a.html">A</a> pointer to the SgClassDeclaration defining the structure to be used as the wrapper. This must not be NULL if useStructureWrapper is enabled.</td></tr>
@@ -793,7 +793,7 @@ If useStructureWrapper is true, struct_decl must not be NULL and must point to a
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> target statement's preceding scope will contain a new variable declaration and a series of assignment statements.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the global or class-member state of useStructureWrapper to determine the wrapping strategy. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <a class="el" href="namespace_sage_interface.html#a4c6d2cc0cba234ff6cd943378f64b6ce" title="Insert a statement before a target statement.">SageInterface::insertStatementBefore</a> to modify the AST. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <a class="el" href="namespace_sage_interface.html#adab9927218b2709b3d99544db4386dc2" title="Insert a statement before a target statement.">SageInterface::insertStatementBefore</a> to modify the AST. </dd></dl>
 
 </div>
 </div>
@@ -875,13 +875,13 @@ For array types, the function applies specific logic to strip types and handle p
 
 <p>Obtain the file handle to the separated source file storing outlined functions. <br  />
  This file will be compiled to .so dynamically loadable library. target is the input code block for outlining. It provides SgProject and input file name info. the lib source file's name convention is rose_input_lib.[c|cxx]. </p>
+<p>Retrieves or creates a library source file associated with a specific basic block.</p>
 <p>Obtain the file handle to the separated source file storing outlined functions. <br  />
  This file will be compiled to .so dynamically loadable library. target is the input code block for outlining. It provides SgProject and input file name info. the lib source file's name convention is rose_input_lib.[c|cxx] by default. Or overrided by file_name.</p>
-<p>Retrieves or creates a library source file associated with a specific basic block.</p>
 <p>This function attempts to find an existing SgSourceFile within the enclosing project that matches a generated library filename derived from the target basic block. If no such file is found, the function creates a new source file by copying the contents of the original input file (the file containing the target). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> newly created file is processed to transform non-static function definitions into function prototypes to facilitate library generation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rose____graph____support__8_c_8dox.html#a9c07f47890a4e3a23ab5ba09604f1421" title="Retrieves the target node index from an edge descriptor.">target</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgBasicBlock that serves as the reference point for determining the library source file.</td></tr>
+    <tr><td class="paramname"><a class="el" href="rose__graph__support_8_c.html#a9c07f47890a4e3a23ab5ba09604f1421" title="Retrieves the target node index from an edge descriptor.">target</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgBasicBlock that serves as the reference point for determining the library source file.</td></tr>
   </table>
   </dd>
 </dl>
@@ -896,18 +896,18 @@ For array types, the function applies specific logic to strip types and handle p
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on include and define logic via ROSE_ASSERT for validating the existence of the enclosing project and file. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes <a class="el" href="namespace_rose.html#add50016be90f1271a41cb5cab90752c0" title="Extracts the file name from a full file path string.">Rose::utility_stripPathFromFileName</a> to normalize the generated filename. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes <a class="el" href="namespace_rose.html#a1379accc8173dfd425c21b3c35e54b35" title="Extracts the file name from a full file path string.">Rose::utility_stripPathFromFileName</a> to normalize the generated filename. </dd></dl>
 
 </div>
 </div>
-<a id="a62490826b1d63989f328f1456f159164" name="a62490826b1d63989f328f1456f159164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62490826b1d63989f328f1456f159164">&#9670;&#160;</a></span>insert()</h2>
+<a id="a81a9d1ede63234e9d3fe7b27a5d8919b" name="a81a9d1ede63234e9d3fe7b27a5d8919b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a9d1ede63234e9d3fe7b27a5d8919b">&#9670;&#160;</a></span>insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="struct_sage_interface_1_1_deferred_transformation.html">SageInterface::DeferredTransformation</a> Outliner::insert </td>
+          <td class="memname">Outliner::insert </td>
           <td>(</td>
           <td class="paramtype">SgFunctionDeclaration *</td>          <td class="paramname"><span class="paramname"><em>func</em></span>, </td>
         </tr>
@@ -925,14 +925,14 @@ For array types, the function applies specific logic to strip types and handle p
 </div><div class="memdoc">
 
 <p>Inserts an outlined-function declaration into global scope. </p>
-<p>Insert func into scope (could be either original scope or the new scope from a new file),.</p>
 <p>Inserts an outlined function into a target scope and manages associated prototypes and transformations.</p>
+<p>Insert func into scope (could be either original scope or the new scope from a new file),.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> caller specifies the global scope into which this routine will insert the declaration. This is needed since we support inserting into the original global scope and a global scope in a new file.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> caller also provides the original target to be outlined This information is used to insert the prototypes into the correct places in the AST.</p>
 <p>This function handles the complex process of "outlining" a function, which involves moving a function definition to a new location (either a new file or a different part of the existing file) and ensuring that all necessary C/C++ prototypes, friend declarations, and symbol table updates are correctly performed. It manages the linkage, physical file IDs, and the creation of non-defining declarations (prototypes) to maintain valid compilation units. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also supports deferred transformations for header files to optimize performance.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function declaration to be outlined. This must be a defining declaration. </td></tr>
+    <tr><td class="paramname"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function declaration to be outlined. This must be a defining declaration. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global scope where the function is being inserted. If <a class="el" href="#a28bf5f3d0382b912bd86659dc4186ffa">Outliner::useNewFile</a> is true, this scope may differ from the original function's scope. </td></tr>
     <tr><td class="paramname">target_outlined_code</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> basic block in the target location where the outlined code is being placed.</td></tr>
   </table>
@@ -950,9 +950,9 @@ target_outlined_code must not be NULL. </dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> enclosing function of target_outlined_code must have a valid parameter list with a valid parent. </dd>
 <dd>
 If <a class="el" href="#a28bf5f3d0382b912bd86659dc4186ffa">Outliner::useNewFile</a> is true, the provided scope must be different from the original function's global scope (unless specifically allowed by the logic).</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> is appended to the provided <span class="tt">scope</span>. </dd>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> is appended to the provided <span class="tt">scope</span>. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scope of <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> and its parent are updated to <span class="tt">scope</span>. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scope of <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> and its parent are updated to <span class="tt">scope</span>. </dd>
 <dd>
 If C/C++ is the language, necessary prototypes and friend declarations are prepared (either inserted immediately or deferred via the returned transformation). </dd>
 <dd>
@@ -964,28 +964,28 @@ Physical file IDs are updated for the function's construction range to ensure co
 
 </div>
 </div>
-<a id="a3ce763e733cda8dc5c5ffd6164e5e96e" name="a3ce763e733cda8dc5c5ffd6164e5e96e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ce763e733cda8dc5c5ffd6164e5e96e">&#9670;&#160;</a></span>isOutlineable()</h2>
+<a id="a2742ad7b96a9093ae3b310879641d892" name="a2742ad7b96a9093ae3b310879641d892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2742ad7b96a9093ae3b310879641d892">&#9670;&#160;</a></span>isOutlineable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> bool Outliner::isOutlineable </td>
+          <td class="memname">bool Outliner::isOutlineable </td>
           <td>(</td>
           <td class="paramtype">const SgStatement *</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>verbose</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>verbose</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns true iff the statement is "outlineable.". </p>
-<p>Check whether the candidate statement satisfies the conditions of an outlineable statement.</p>
 <p>Determines whether a given statement can be extracted into a separate function (outlined).</p>
+<p>Check whether the candidate statement satisfies the conditions of an outlineable statement.</p>
 <p>This function performs a comprehensive series of checks to verify if a specific AST statement is a valid candidate for outlining. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves verifying the structural integrity of the statement, its context within the function declaration, and its compatibility with various language features such as templates, variable declarations, and control flow constructs. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function evaluates constraints related to template instantiations, hidden types, built-in functions like __builtin_va_start, and specific language-specific constructs like Fortran-style WHERE blocks or loop components.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1008,14 +1008,14 @@ Outlining of template instantiations or template declarations is restricted depe
 
 </div>
 </div>
-<a id="a9c5c2108c5b80b07350a5db0df479c52" name="a9c5c2108c5b80b07350a5db0df479c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c5c2108c5b80b07350a5db0df479c52">&#9670;&#160;</a></span>outline() <span class="overload">[1/3]</span></h2>
+<a id="ab7127063d3d6c9eb6feebd15fda41d88" name="ab7127063d3d6c9eb6feebd15fda41d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7127063d3d6c9eb6feebd15fda41d88">&#9670;&#160;</a></span>outline() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_outliner_1_1_result.html">Outliner::Result</a> Outliner::outline </td>
+          <td class="memname"><a class="el" href="struct_outliner_1_1_result.html">Result</a> Outliner::outline </td>
           <td>(</td>
           <td class="paramtype">SgPragmaDeclaration *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
           <td></td>
@@ -1041,14 +1041,14 @@ Outlining of template instantiations or template declarations is restricted depe
 
 </div>
 </div>
-<a id="af0b72d8175710c37eefd714190c93f02" name="af0b72d8175710c37eefd714190c93f02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0b72d8175710c37eefd714190c93f02">&#9670;&#160;</a></span>outline() <span class="overload">[2/3]</span></h2>
+<a id="a890b2bcc423d47939aee4d535577641c" name="a890b2bcc423d47939aee4d535577641c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890b2bcc423d47939aee4d535577641c">&#9670;&#160;</a></span>outline() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> <a class="el" href="struct_outliner_1_1_result.html">Result</a> Outliner::outline </td>
+          <td class="memname"><a class="el" href="struct_outliner_1_1_result.html">Result</a> Outliner::outline </td>
           <td>(</td>
           <td class="paramtype">SgStatement *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
           <td></td>
@@ -1059,7 +1059,7 @@ Outlining of template instantiations or template declarations is restricted depe
 <p>Outlines the given statement. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> main programming interface. </p>
 <p>Generates an outline for a given statement.</p>
 <p>This function pre-process the target stmt first and outlines the specified statement, s. It creates a new outlined function definition, f, inserts f into the first scope surrounding s that may contain a function (or member function) definition, replaces s with a call to f, and finally returns f.</p>
-<p>It can also does pre-processing only if directed by the internal flag, which is specified by user command line option and processed by <a class="el" href="#afe699976eeae02e6fdc121d489d84b9f" title="Accept a set of command line options to adjust internal behaviors.">commandLineProcessing()</a>;</p>
+<p>It can also does pre-processing only if directed by the internal flag, which is specified by user command line option and processed by <a class="el" href="#aea1ebd822aed7f7e211d6ae35e8db4f5" title="Accept a set of command line options to adjust internal behaviors.">commandLineProcessing()</a>;</p>
 <p>Programmers are expected to tell if a statement is outlineable before calling this function.</p>
 <p>This function serves as a high-level wrapper for the outline process. It first generates a unique function name based on the provided statement using generateFuncName, and then invokes the overloaded outline method that accepts both the statement and the generated name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1075,14 +1075,14 @@ Outlining of template instantiations or template declarations is restricted depe
 
 </div>
 </div>
-<a id="ae6af9ad5e655169e0db049f1712bc185" name="ae6af9ad5e655169e0db049f1712bc185"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6af9ad5e655169e0db049f1712bc185">&#9670;&#160;</a></span>outline() <span class="overload">[3/3]</span></h2>
+<a id="ac8a43c53458693f25b58564aad5d1cca" name="ac8a43c53458693f25b58564aad5d1cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a43c53458693f25b58564aad5d1cca">&#9670;&#160;</a></span>outline() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_outliner_1_1_result.html">Result</a> Outliner::outline </td>
+          <td class="memname">Outliner::outline </td>
           <td>(</td>
           <td class="paramtype">SgStatement *</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
         </tr>
@@ -1096,7 +1096,7 @@ Outlining of template instantiations or template declarations is restricted depe
 
 <p>Outline to a new function with the specified name, calling preprocessing internally. </p>
 <p>Performs code outlining on a given statement to extract a block into a new function.</p>
-<p>This function takes a source code statement and attempts to outline a portion of it into a separate function named <span class="tt">func_name</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process begins by applying a preprocessing phase to the input statement via the <span class="tt"><a class="el" href="#a8c49b29b2a2e70487189ae47c486a320" title="Preprocesses a given statement to determine its outlineability and prepare its target.">preprocess</a></span> function to prepare the AST for transformation. If the global <span class="tt"><a class="el" href="#abaaaea4d6849c7e5cc1c129aefa47c58">preproc_only_</a></span> flag is set (which can be triggered via command-line arguments like <span class="tt">-rose:outline:preproc-only</span>), the function returns a dummy result without performing the actual outlining. Otherwise, it proceeds to call <span class="tt"><a class="el" href="#a2e3b137c6fbaf1e9c8aae738a9e9879b" title="Extracts a basic block and transforms it into a separate function call.">outlineBlock</a></span> to execute the structural transformation of the AST.</p>
+<p>This function takes a source code statement and attempts to outline a portion of it into a separate function named <span class="tt">func_name</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process begins by applying a preprocessing phase to the input statement via the <span class="tt"><a class="el" href="#a4c81737ccfa587716035a22a3f25b2f8" title="Preprocesses a given statement to determine its outlineability and prepare its target.">preprocess</a></span> function to prepare the AST for transformation. If the global <span class="tt"><a class="el" href="#abaaaea4d6849c7e5cc1c129aefa47c58">preproc_only_</a></span> flag is set (which can be triggered via command-line arguments like <span class="tt">-rose:outline:preproc-only</span>), the function returns a dummy result without performing the actual outlining. Otherwise, it proceeds to call <span class="tt"><a class="el" href="#a8efdff340430258645bc258414806b60" title="Outlines the given basic block into a function named &#39;name&#39;.">outlineBlock</a></span> to execute the structural transformation of the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="class_a.html">A</a> pointer to the <span class="tt">SgStatement</span> representing the block of code to be outlined. </td></tr>
@@ -1122,7 +1122,7 @@ Outlining of template instantiations or template declarations is restricted depe
         <tr>
           <td class="memname"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> Outliner::outlineAll </td>
           <td>(</td>
-          <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>project</em></span></td><td>)</td>
+          <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1133,10 +1133,10 @@ Outlining of template instantiations or template declarations is restricted depe
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of outline directives processed.</dd></dl>
 <p>This function iterates through various possible targets for code outlining, such as abstract handles, Fortran-specific source comments, C/C++ pragmas, and OpenMP loop statements. It identifies valid targets based on the current configuration and the language of the project, attempts to outline them, and tracks the total number of successful outlinings.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation follows a hierarchical selection logic:</p><ol type="1">
-<li>If abstract handles are registered in <span class="tt"><a class="el" href="#a0bb1363da0509da774d8fa6ed952956e">Outliner::handles</a></span>, it uses <span class="tt"><a class="el" href="_pragma_interface__8cc_8dox.html#aee6bebc1d07d9e942b41097a1b3bcb20" title="Iterates through the project files to identify and collect matching statement handles.">collectAbstractHandles</a></span> to find targets.</li>
-<li>If no abstract handles exist and the project is identified as <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, it uses <span class="tt"><a class="el" href="_pragma_interface__8cc_8dox.html#a86ca9599dc8ab4bbe991e878590c2ec8" title="Identifies and collects Fortran target statements from a project.">collectFortranTarget</a></span>.</li>
-<li>Otherwise, it searches for C/C++ pragmas using <span class="tt"><a class="el" href="_pragma_interface__8cc_8dox.html#ad39d042158df8ab0665c697eeb7d6058" title="Collects and processes all pragma declarations within a given SgProject.">collectPragmas</a></span>. If <span class="tt"><a class="el" href="#abaaaea4d6849c7e5cc1c129aefa47c58">preproc_only_</a></span> is false, the AST nodes associated with these pragmas are deleted after processing.</li>
-<li>Additionally, if <span class="tt"><a class="el" href="#ae9fb8ca9fe9349391dd100fc8b1f13d4">select_omp_loop</a></span> is enabled, it searches for OpenMP for-loop statements using <span class="tt"><a class="el" href="_pragma_interface__8cc_8dox.html#a46c7b20e6fd8d3832dc483d2d6782a56" title="Collects all OpenMP for statements from a given SgProject into a container.">collectOmpLoops</a></span> and attempts to outline the loop bodies.</li>
+<li>If abstract handles are registered in <span class="tt"><a class="el" href="#a0bb1363da0509da774d8fa6ed952956e">Outliner::handles</a></span>, it uses <span class="tt"><a class="el" href="_pragma_interface_8cc.html#af1fac979bfdaa9af04178d2e7f29622e" title="Collect outlining targets specified using abstract handles.">collectAbstractHandles</a></span> to find targets.</li>
+<li>If no abstract handles exist and the project is identified as <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, it uses <span class="tt"><a class="el" href="_pragma_interface_8cc.html#aad63f631c958796c99b4ed706219b30f" title="Collect target Fortran statement with matching comments for rose_outline.">collectFortranTarget</a></span>.</li>
+<li>Otherwise, it searches for C/C++ pragmas using <span class="tt"><a class="el" href="_pragma_interface_8cc.html#aadf070a203332eaba31e3191b3a88ef9" title="Collects all outlining pragmas.">collectPragmas</a></span>. If <span class="tt"><a class="el" href="#abaaaea4d6849c7e5cc1c129aefa47c58">preproc_only_</a></span> is false, the AST nodes associated with these pragmas are deleted after processing.</li>
+<li>Additionally, if <span class="tt"><a class="el" href="#ae9fb8ca9fe9349391dd100fc8b1f13d4">select_omp_loop</a></span> is enabled, it searches for OpenMP for-loop statements using <span class="tt"><a class="el" href="_pragma_interface_8cc.html#aa2eb10c1e0c4da61db10b2aee960f0a0">collectOmpLoops</a></span> and attempts to outline the loop bodies.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1149,7 +1149,7 @@ Outlining of template instantiations or template declarations is restricted depe
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of successful outlinings is returned, and depending on the <span class="tt"><a class="el" href="#abaaaea4d6849c7e5cc1c129aefa47c58">preproc_only_</a></span> flag, certain pragma-related AST nodes may be deleted.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function's behavior regarding memory management (deletion of AST nodes) is dependent on the state of the <span class="tt"><a class="el" href="#abaaaea4d6849c7e5cc1c129aefa47c58">preproc_only_</a></span> member variable. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ifdef logic (via if 0) and checks for <span class="tt"><a class="el" href="namespace_sage_interface.html#a950baa805b1ccf606a9bbe3b444b55ea" title="Checks if the current language context is Fortran.">SageInterface::is_Fortran_language</a></span> to determine the parsing strategy. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ifdef logic (via if 0) and checks for <span class="tt"><a class="el" href="namespace_sage_interface.html#a83cad0fd2592f95e81d55335eb6b71c0" title="Checks if the current language context is Fortran.">SageInterface::is_Fortran_language</a></span> to determine the parsing strategy. </dd></dl>
 
 </div>
 </div>
@@ -1222,8 +1222,8 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
 
 </div>
 </div>
-<a id="a6ff8142667067076283d31d780e90118" name="a6ff8142667067076283d31d780e90118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff8142667067076283d31d780e90118">&#9670;&#160;</a></span>preprocess() <span class="overload">[1/2]</span></h2>
+<a id="a194ff5e9176243ac3be3d596cc43f74d" name="a194ff5e9176243ac3be3d596cc43f74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194ff5e9176243ac3be3d596cc43f74d">&#9670;&#160;</a></span>preprocess() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1231,7 +1231,7 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
         <tr>
           <td class="memname">SgBasicBlock * Outliner::preprocess </td>
           <td>(</td>
-          <td class="paramtype">SgPragmaDeclaration *</td>          <td class="paramname"><span class="paramname"><em>decl</em></span></td><td>)</td>
+          <td class="paramtype">SgPragmaDeclaration *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1252,14 +1252,14 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
 
 </div>
 </div>
-<a id="a8c49b29b2a2e70487189ae47c486a320" name="a8c49b29b2a2e70487189ae47c486a320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c49b29b2a2e70487189ae47c486a320">&#9670;&#160;</a></span>preprocess() <span class="overload">[2/2]</span></h2>
+<a id="a4c81737ccfa587716035a22a3f25b2f8" name="a4c81737ccfa587716035a22a3f25b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c81737ccfa587716035a22a3f25b2f8">&#9670;&#160;</a></span>preprocess() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> SgBasicBlock * Outliner::preprocess </td>
+          <td class="memname">SgBasicBlock * Outliner::preprocess </td>
           <td>(</td>
           <td class="paramtype">SgStatement *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
           <td></td>
@@ -1268,7 +1268,7 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
 </div><div class="memdoc">
 
 <p>Preprocesses a given statement to determine its outlineability and prepare its target. </p>
-<p>This function evaluates whether a specific statement can be outlined into a separate basic block. It utilizes the <span class="tt"><a class="el" href="#a3ce763e733cda8dc5c5ffd6164e5e96e" title="Returns true iff the statement is &quot;outlineable.&quot;.">isOutlineable</a></span> check with the current project's verbosity level. If the statement is found to be not outlineable, an error is reported to stderr and an assertion is triggered. If the statement is valid for outlining, the function delegates to <span class="tt"><a class="el" href="namespace_outliner_1_1_preprocess.html#a561ec1886ad9d9b7a7745e8cc1556076" title="Preprocesses the outline target and returns an equivalent SgBasicBlock to outline.">Preprocess::preprocessOutlineTarget</a></span> to perform the actual transformation and returns the resulting basic block.</p>
+<p>This function evaluates whether a specific statement can be outlined into a separate basic block. It utilizes the <span class="tt"><a class="el" href="#a2742ad7b96a9093ae3b310879641d892" title="Returns true iff the statement is &quot;outlineable.&quot;.">isOutlineable</a></span> check with the current project's verbosity level. If the statement is found to be not outlineable, an error is reported to stderr and an assertion is triggered. If the statement is valid for outlining, the function delegates to <span class="tt"><a class="el" href="namespace_outliner_1_1_preprocess.html#a561ec1886ad9d9b7a7745e8cc1556076" title="Preprocesses the outline target and returns an equivalent SgBasicBlock to outline.">Preprocess::preprocessOutlineTarget</a></span> to perform the actual transformation and returns the resulting basic block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input statement to be processed for outlining.</td></tr>
@@ -1276,15 +1276,15 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the resulting SgBasicBlock after the preprocessing transformation.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input statement <span class="tt">s</span> must be outlineable according to the logic defined in <span class="tt"><a class="el" href="#a3ce763e733cda8dc5c5ffd6164e5e96e" title="Returns true iff the statement is &quot;outlineable.&quot;.">isOutlineable</a></span>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input statement <span class="tt">s</span> must be outlineable according to the logic defined in <span class="tt"><a class="el" href="#a2742ad7b96a9093ae3b310879641d892" title="Returns true iff the statement is &quot;outlineable.&quot;.">isOutlineable</a></span>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a non-null <span class="tt">SgBasicBlock</span> if the input statement was successfully preprocessed.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ifdef <b>linux</b> to enable debug logging of the function signature via __PRETTY_FUNCTION__ if <span class="tt"><a class="el" href="#aa4eb731f2da94ead8d9748a11566d86c">enable_debug</a></span> is true. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>If the statement <span class="tt">s</span> is not outlineable, the function will trigger a <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a></span> failure and print an error message to <span class="tt">cerr</span>. </dd></dl>
 
 </div>
 </div>
-<a id="abbee1f66c7345c99679a44fb7df584dc" name="abbee1f66c7345c99679a44fb7df584dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbee1f66c7345c99679a44fb7df584dc">&#9670;&#160;</a></span>preprocessAll()</h2>
+<a id="a5bc21da5f3c2cfaee65d6d2c56996f14" name="a5bc21da5f3c2cfaee65d6d2c56996f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc21da5f3c2cfaee65d6d2c56996f14">&#9670;&#160;</a></span>preprocessAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1292,14 +1292,14 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
         <tr>
           <td class="memname"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> Outliner::preprocessAll </td>
           <td>(</td>
-          <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>proj</em></span></td><td>)</td>
+          <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs preprocessing on all relevant targets within a given project. </p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> driver for preprocessing.</p>
+<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> driver for preprocessing. </p>
+<p>Performs preprocessing on all relevant targets within a given project.</p>
 <p>This function iterates through the targets in an SgProject and applies preprocessing logic based on the detected programming language. For <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> projects, the function searches for specific source comments to identify targets. For C/C++ projects, it identifies targets via pragma directives. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function tracks the number of successfully preprocessed targets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1318,14 +1318,14 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
 
 </div>
 </div>
-<a id="ad2da4464bd107c6d70fab7ad5cfed825" name="ad2da4464bd107c6d70fab7ad5cfed825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2da4464bd107c6d70fab7ad5cfed825">&#9670;&#160;</a></span>validateSettings()</h2>
+<a id="a55ca74f11000c896c74fae729784ebd6" name="a55ca74f11000c896c74fae729784ebd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ca74f11000c896c74fae729784ebd6">&#9670;&#160;</a></span>validateSettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void Outliner::validateSettings </td>
+          <td class="memname">void Outliner::validateSettings </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -1333,11 +1333,11 @@ If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_
       </table>
 </div><div class="memdoc">
 
-<p>Validates and sanitizes the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> configuration settings and ensures directory existence. </p>
-<p>Validate outliner settings. This should be called after outliner settings are adjusted (directly or by command-line.</p>
+<p>Validate outliner settings. This should be called after outliner settings are adjusted (directly or by command-line. </p>
+<p>Validates and sanitizes the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a> configuration settings and ensures directory existence.</p>
 <p>Validate and adjust analysis settings.</p>
 <p>This function should be called after changing analysis settings (directly or via command-line parsing) to ensure they are all in a consistent state before any analysis is performed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo</a></b></dt><dd>Ideally this should happen automatically by those functions that perform analysis so the user doesn't have to remember this, but I'm not familiar enough which the code to know which functions those are. Originally, the outliner only validated its settings when they were changed by its <a class="el" href="#afe699976eeae02e6fdc121d489d84b9f" title="commandLineProcessing">commandLineProcessing</a> function, which still happes. [Robb <a class="el" href="namespace_p.html" title="Auto-generated documentation for the P namespace.">P</a> Matzke 2016-09-11] </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo</a></b></dt><dd>Ideally this should happen automatically by those functions that perform analysis so the user doesn't have to remember this, but I'm not familiar enough which the code to know which functions those are. Originally, the outliner only validated its settings when they were changed by its <a class="el" href="#aea1ebd822aed7f7e211d6ae35e8db4f5" title="commandLineProcessing">commandLineProcessing</a> function, which still happes. [Robb <a class="el" href="namespace_p.html" title="Auto-generated documentation for the P namespace.">P</a> Matzke 2016-09-11] </dd></dl>
 <p>This function performs several validation and synchronization tasks for the <a class="el" href="namespace_outliner.html" title="Auto-generated documentation for the Outliner namespace.">Outliner</a>'s internal state. It first checks the <span class="tt"><a class="el" href="#a28567920a5f8f33fb421f8eeb5fcaa31">output_path</a></span> string; if it is not empty, it removes any trailing slashes and attempts to create the directory using the <span class="tt">bfs</span> library if it does not already exist. It also verifies that the resulting path is indeed a valid directory.</p>
 <p>Furthermore, the function manages side effects between different configuration flags. For instance, enabling <span class="tt"><a class="el" href="#afabb54a316a6bc3d05453050890084c8">useStructureWrapper</a></span> automatically enables <span class="tt"><a class="el" href="#a7dea5b844ec434c33c2b9191e2002022">useParameterWrapper</a></span>. If <span class="tt"><a class="el" href="#a31a8983fc2f7b6cf8e50870e9863a31d">use_dlopen</a></span> or <span class="tt"><a class="el" href="#a61835c548ac3ed32efd568f2987edc2a">use_dlopen_simple</a></span> are active, the function enforces a specific set of related settings including <span class="tt"><a class="el" href="#a28bf5f3d0382b912bd86659dc4186ffa">useNewFile</a></span>, <span class="tt"><a class="el" href="#a7dea5b844ec434c33c2b9191e2002022">useParameterWrapper</a></span>, <span class="tt"><a class="el" href="#ab7bcbbe64304348bd5c422a95bc8e9c4" title="A set of flags to control the internal behavior of the outliner.">temp_variable</a></span>, and <span class="tt"><a class="el" href="#a0d1a49397c25cf4a80a49b12667407f8">exclude_headers</a></span>, and ensures <span class="tt"><a class="el" href="#a28567920a5f8f33fb421f8eeb5fcaa31">output_path</a></span> defaults to "/tmp" if it was empty.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="#a28567920a5f8f33fb421f8eeb5fcaa31">output_path</a></span> string should contain a valid path format if it is to be used. </dd></dl>

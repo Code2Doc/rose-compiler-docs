@@ -126,16 +126,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a50340be061a32b86c91ebc6fdc043808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs partial redundancy elimination on a specific expression within a control flow graph.  <br /></td></tr>
 <tr class="memitem:ae91de446d269c85e304e46a6a108bc45" id="r_ae91de446d269c85e304e46a6a108bc45"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae91de446d269c85e304e46a6a108bc45">partialRedundancyEliminationFunction</a> (SgFunctionDefinition *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
 <tr class="memdesc:ae91de446d269c85e304e46a6a108bc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs partial redundancy elimination on a given function definition.  <br /></td></tr>
-<tr class="memitem:a3c7c935e7ef25d08a9a0c18294798151" id="r_a3c7c935e7ef25d08a9a0c18294798151"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3c7c935e7ef25d08a9a0c18294798151">partialRedundancyElimination</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a3c7c935e7ef25d08a9a0c18294798151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do partial redundancy elimination on all functions within the scope n.  <br /></td></tr>
+<tr class="memitem:a19339e63e2ac210183184289a5ca94ff" id="r_a19339e63e2ac210183184289a5ca94ff"><td class="memItemLeft">void <a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a>&#160;</td><td class="memItemRight"><a class="el" href="#a19339e63e2ac210183184289a5ca94ff">partialRedundancyElimination</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a19339e63e2ac210183184289a5ca94ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do partial redundancy elimination on all functions within the scope n.  <br /></td></tr>
 <tr class="memitem:a9d8bb76781229582486f0139e20ad85b" id="r_a9d8bb76781229582486f0139e20ad85b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9d8bb76781229582486f0139e20ad85b">makeCfg</a> (SgFunctionDefinition *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, <a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">ControlFlowGraph</a> &amp;graph)</td></tr>
 <tr class="memdesc:a9d8bb76781229582486f0139e20ad85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the control flow graph for a given node.  <br /></td></tr>
-<tr class="memitem:a15f3cf18a952052c8212e5b45dd4f1ed" id="r_a15f3cf18a952052c8212e5b45dd4f1ed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a15f3cf18a952052c8212e5b45dd4f1ed">addEdgeInsertionPoints</a> (<a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">PRE::ControlFlowGraph</a> &amp;controlflow)</td></tr>
-<tr class="memdesc:a15f3cf18a952052c8212e5b45dd4f1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines and sets the appropriate insertion points for edges within a Control Flow <a class="el" href="class_graph.html">Graph</a>.  <br /></td></tr>
-<tr class="memitem:a4f6c48ca24304898f65b0c5b963e723d" id="r_a4f6c48ca24304898f65b0c5b963e723d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4f6c48ca24304898f65b0c5b963e723d">printCfgAsDot</a> (<a class="el" href="classostream.html">ostream</a> &amp;dotfile, const <a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">PRE::ControlFlowGraph</a> &amp;controlflow)</td></tr>
-<tr class="memdesc:a4f6c48ca24304898f65b0c5b963e723d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports a Control Flow <a class="el" href="class_graph.html">Graph</a> to a DOT format string for visualization.  <br /></td></tr>
+<tr class="memitem:aa2ac9f1a321bfc433abcf11f35597e89" id="r_aa2ac9f1a321bfc433abcf11f35597e89"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa2ac9f1a321bfc433abcf11f35597e89">addEdgeInsertionPoints</a> (<a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">ControlFlowGraph</a> &amp;controlflow)</td></tr>
+<tr class="memdesc:aa2ac9f1a321bfc433abcf11f35597e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines and sets the appropriate insertion points for edges within a Control Flow <a class="el" href="class_graph.html">Graph</a>.  <br /></td></tr>
 <tr class="memitem:ab6130a87f44f80ffff8d681e348d3462" id="r_ab6130a87f44f80ffff8d681e348d3462"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab6130a87f44f80ffff8d681e348d3462">printCfgAsDot</a> (std::ostream &amp;dotfile, const <a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">ControlFlowGraph</a> &amp;controlflow)</td></tr>
 <tr class="memdesc:ab6130a87f44f80ffff8d681e348d3462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out a <a class="el" href="class_c_f_g.html">CFG</a> as a dot file.  <br /></td></tr>
+<tr class="memitem:a4f6c48ca24304898f65b0c5b963e723d" id="r_a4f6c48ca24304898f65b0c5b963e723d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4f6c48ca24304898f65b0c5b963e723d">printCfgAsDot</a> (<a class="el" href="classostream.html">ostream</a> &amp;dotfile, const <a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">PRE::ControlFlowGraph</a> &amp;controlflow)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespacelegacy_1_1_p_r_e.html" title="Auto-generated documentation for the legacy::PRE namespace.">legacy::PRE</a> namespace. </p>
@@ -309,8 +308,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a15f3cf18a952052c8212e5b45dd4f1ed" name="a15f3cf18a952052c8212e5b45dd4f1ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15f3cf18a952052c8212e5b45dd4f1ed">&#9670;&#160;</a></span>addEdgeInsertionPoints()</h2>
+<a id="aa2ac9f1a321bfc433abcf11f35597e89" name="aa2ac9f1a321bfc433abcf11f35597e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ac9f1a321bfc433abcf11f35597e89">&#9670;&#160;</a></span>addEdgeInsertionPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,7 +386,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">PRE::ControlFlowGraph</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a7e4eacf560f2734a28163a177e4fc94f">ControlFlowGraph</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -408,14 +407,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c7c935e7ef25d08a9a0c18294798151" name="a3c7c935e7ef25d08a9a0c18294798151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c7c935e7ef25d08a9a0c18294798151">&#9670;&#160;</a></span>partialRedundancyElimination()</h2>
+<a id="a19339e63e2ac210183184289a5ca94ff" name="a19339e63e2ac210183184289a5ca94ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19339e63e2ac210183184289a5ca94ff">&#9670;&#160;</a></span>partialRedundancyElimination()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> legacy::PRE::partialRedundancyElimination </td>
+          <td class="memname">void legacy::PRE::partialRedundancyElimination </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
           <td></td>
@@ -546,19 +545,6 @@ If an insertion point cannot be found for an edge, the function will trigger a <
       </table>
 </div><div class="memdoc">
 
-<p>Exports a Control Flow <a class="el" href="class_graph.html">Graph</a> to a DOT format string for visualization. </p>
-<p>This function iterates through the vertices and edges of a provided Control Flow <a class="el" href="class_graph.html">Graph</a> (<a class="el" href="class_c_f_g.html">CFG</a>) to generate a Graphviz DOT representation. For each vertex, it aggregates the associated SgNode statements into a single record-shaped node label, including information about expression parents where applicable. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also iterates through all edges, assigning colors based on the edge type (e.g., green for true branches, red for false) and labeling edges with insertion point information if available. Special characters such as '&lt;', '&gt;', and '"' are escaped to ensure the resulting DOT file is syntactically valid.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dotfile</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream where the DOT formatted graph will be written. </td></tr>
-    <tr><td class="paramname">controlflow</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Control Flow <a class="el" href="class_graph.html">Graph</a> structure containing vertices, edges, node statements, and edge metadata to be visualized.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> dotfile stream must be open and writable. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> dotfile stream will contain a valid Graphviz 'digraph' definition representing the provided controlflow.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses record-shaped nodes in Graphviz to represent the internal structure of the <a class="el" href="class_c_f_g.html">CFG</a> nodes. </dd></dl>
-
 </div>
 </div>
 <a id="ab6130a87f44f80ffff8d681e348d3462" name="ab6130a87f44f80ffff8d681e348d3462"></a>
@@ -581,6 +567,18 @@ If an insertion point cannot be found for an edge, the function will trigger a <
 </div><div class="memdoc">
 
 <p>Print out a <a class="el" href="class_c_f_g.html">CFG</a> as a dot file. </p>
+<p>Exports a Control Flow <a class="el" href="class_graph.html">Graph</a> to a DOT format string for visualization.</p>
+<p>This function iterates through the vertices and edges of a provided Control Flow <a class="el" href="class_graph.html">Graph</a> (<a class="el" href="class_c_f_g.html">CFG</a>) to generate a Graphviz DOT representation. For each vertex, it aggregates the associated SgNode statements into a single record-shaped node label, including information about expression parents where applicable. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also iterates through all edges, assigning colors based on the edge type (e.g., green for true branches, red for false) and labeling edges with insertion point information if available. Special characters such as '&lt;', '&gt;', and '"' are escaped to ensure the resulting DOT file is syntactically valid.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dotfile</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream where the DOT formatted graph will be written. </td></tr>
+    <tr><td class="paramname">controlflow</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Control Flow <a class="el" href="class_graph.html">Graph</a> structure containing vertices, edges, node statements, and edge metadata to be visualized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> dotfile stream must be open and writable. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> dotfile stream will contain a valid Graphviz 'digraph' definition representing the provided controlflow.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses record-shaped nodes in Graphviz to represent the internal structure of the <a class="el" href="class_c_f_g.html">CFG</a> nodes. </dd></dl>
 
 </div>
 </div>

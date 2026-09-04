@@ -95,7 +95,7 @@ $(function(){initNavTree('unparse_var_decl_stmt__8_c_8dox.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4a4cb78ac1000a5f3e293a589de5879d" id="r_a4a4cb78ac1000a5f3e293a589de5879d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a4cb78ac1000a5f3e293a589de5879d">unparse_alignas</a> (SgInitializedName *decl_item, <a class="el" href="class_unparse___expr_stmt.html">Unparse_ExprStmt</a> &amp;unparser, SgUnparse_Info &amp;<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
+<tr class="memitem:a4a4cb78ac1000a5f3e293a589de5879d" id="r_a4a4cb78ac1000a5f3e293a589de5879d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a4cb78ac1000a5f3e293a589de5879d">unparse_alignas</a> (SgInitializedName *decl_item, <a class="el" href="class_unparse___expr_stmt.html">Unparse_ExprStmt</a> &amp;unparser, SgUnparse_Info &amp;<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
 <tr class="memdesc:a4a4cb78ac1000a5f3e293a589de5879d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the string representation for the C11 _Alignas keyword.  <br /></td></tr>
 <tr class="memitem:acaf1e987bb30ff69d4e6c3f99a98cd3c" id="r_acaf1e987bb30ff69d4e6c3f99a98cd3c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acaf1e987bb30ff69d4e6c3f99a98cd3c">setup_decl_item_type_unparse_infos</a> (SgUnparse_Info &amp;ninfo_for_type, SgVariableDeclaration *vdecl, SgInitializedName *decl_item, <a class="el" href="class_sg_type.html">SgType</a> *decl_type, std::string &amp;unparse_str)</td></tr>
 <tr class="memdesc:acaf1e987bb30ff69d4e6c3f99a98cd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures unparsing information for type declarations within a variable declaration.  <br /></td></tr>
@@ -171,7 +171,7 @@ Debugging information may be printed to stdout if the DEBUG__build_decl_item_asm
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is a valid, non-null std::string.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes if DEBUG__build_decl_item_name to perform logging of the input parameters and intermediate processing steps during debug builds. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function checks for C++ specific behavior using <a class="el" href="namespace_sage_interface.html#a1014f45108b312d26ee7b77e2fbeb1cd" title="Checks if the current language context is C++.">SageInterface::is_Cxx_language()</a>. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function checks for C++ specific behavior using <a class="el" href="namespace_sage_interface.html#af05a80a2ebfff2af0adea468853b95c8" title="Checks if the current language context is C++.">SageInterface::is_Cxx_language()</a>. </dd></dl>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Debugging information may be printed to stdout if the DEBUG__build_decl_item_asm
   <table class="params">
     <tr><td class="paramname">decl_item</td><td><a class="el" href="class_a.html">A</a> pointer to the SgInitializedName representing the declaration to be unparsed. </td></tr>
     <tr><td class="paramname">unparser</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_unparse___expr_stmt.html">Unparse_ExprStmt</a> object used to manage the unparsing stream and printing operations. </td></tr>
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="class_a.html">A</a> reference to the SgUnparse_Info object containing context information for the unparsing process.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="class_a.html">A</a> reference to the SgUnparse_Info object containing context information for the unparsing process.</td></tr>
   </table>
   </dd>
 </dl>

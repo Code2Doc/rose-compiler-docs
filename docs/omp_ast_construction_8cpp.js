@@ -44,10 +44,10 @@ var omp_ast_construction_8cpp =
     [ "OmpSupport::processOpenMP", "namespace_omp_support.html#af61ca3e72cc3ce57c0a429fa3bb4a8fd", null ],
     [ "OmpSupport::replace_expression_with_macro_value", "namespace_omp_support.html#a711035003cda803fb7238b3c60dd520f", null ],
     [ "OmpSupport::replaceOmpPragmaWithOmpStatement", "namespace_omp_support.html#a3b3a1e7a61f6320d4b9b5ee847ca6c39", null ],
-    [ "OmpSupport::setClauseVariableList", "namespace_omp_support.html#a4855b2fe029e87ab97d6b843e3a632fd", null ],
-    [ "OmpSupport::toSgOmpClauseDependenceType", "namespace_omp_support.html#afa616d6726cf44dbdaa80a96dbe9f22e", null ],
-    [ "OmpSupport::toSgOmpClauseMapOperator", "namespace_omp_support.html#a2ba99cb0c27fa08c9adcb5200f63594d", null ],
-    [ "OmpSupport::toSgOmpClauseReductionOperator", "namespace_omp_support.html#a8ca57d27995c8c191c820a215c50b9f8", null ],
+    [ "OmpSupport::setClauseVariableList", "namespace_omp_support.html#adf8c6114768c2b1384d1568e2f97ae8e", null ],
+    [ "OmpSupport::toSgOmpClauseDependenceType", "namespace_omp_support.html#ac1b7ec65bc1e952a49a2b9928b39293b", null ],
+    [ "OmpSupport::toSgOmpClauseMapOperator", "namespace_omp_support.html#a07a5c8b0fac91171e0533634e887ea70", null ],
+    [ "OmpSupport::toSgOmpClauseReductionOperator", "namespace_omp_support.html#a0cba5ea2cfc6781fdcbbe98388660540", null ],
     [ "OmpSupport::omp_comment_list", "namespace_omp_support.html#a69df6ef7e9db9462659224bf3c0e421c", null ],
     [ "OmpSupport::omp_pragma_list", "namespace_omp_support.html#a7506da9d7166b9dc1edb3638eca1a8f5", null ]
 ];

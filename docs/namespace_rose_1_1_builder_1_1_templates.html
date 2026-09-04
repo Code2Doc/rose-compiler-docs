@@ -126,16 +126,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad4faccdcc8601ba9472f7a774c893960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs template instantiation for non-real reference expressions by replacing template parameters with their corresponding arguments.  <br /></td></tr>
 <tr class="memitem:a1001f3b6dfa3bfe9786958503ebf65f8" id="r_a1001f3b6dfa3bfe9786958503ebf65f8"><td class="memItemLeft"><a class="el" href="class_sg_type.html">SgType</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a1001f3b6dfa3bfe9786958503ebf65f8">instantiateNonrealTypes</a> (<a class="el" href="class_sg_type.html">SgType</a> *<a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a>, std::vector&lt; SgTemplateParameter * &gt; &amp;tpl_params, std::vector&lt; SgTemplateArgument * &gt; &amp;tpl_args)</td></tr>
 <tr class="memdesc:a1001f3b6dfa3bfe9786958503ebf65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively instantiates non-real template types and their arguments.  <br /></td></tr>
-<tr class="memitem:a684a19ce1ca696203f70b777a71eb867" id="r_a684a19ce1ca696203f70b777a71eb867"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a684a19ce1ca696203f70b777a71eb867">strTemplateArgumentList</a> (Args... args)</td></tr>
-<tr class="memdesc:a684a19ce1ca696203f70b777a71eb867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a variadic list of template arguments into a string representation.  <br /></td></tr>
+<tr class="memitem:a747d4c0417712121129029a26fceae1d" id="r_a747d4c0417712121129029a26fceae1d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a747d4c0417712121129029a26fceae1d template"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a747d4c0417712121129029a26fceae1d">strTemplateArgumentList</a> (Args... args)</td></tr>
+<tr class="memdesc:a747d4c0417712121129029a26fceae1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a variadic list of template arguments into a string representation.  <br /></td></tr>
 <tr class="memitem:aa06633435929d745e0dafbbd41574aa0" id="r_aa06633435929d745e0dafbbd41574aa0"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:aa06633435929d745e0dafbbd41574aa0 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa06633435929d745e0dafbbd41574aa0">fillTemplateArgumentList</a> (std::vector&lt; SgTemplateArgument * &gt; &amp;tpl_args, Args... args)</td></tr>
 <tr class="memdesc:aa06633435929d745e0dafbbd41574aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates a vector of template arguments using a variadic parameter pack.  <br /></td></tr>
 <tr class="memitem:ac3a3a49e1a8536f8c8c646fa1cc53666" id="r_ac3a3a49e1a8536f8c8c646fa1cc53666"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:ac3a3a49e1a8536f8c8c646fa1cc53666 template"><td class="memItemLeft">std::vector&lt; SgTemplateArgument * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac3a3a49e1a8536f8c8c646fa1cc53666">buildTemplateArgumentList</a> (Args... args)</td></tr>
 <tr class="memdesc:ac3a3a49e1a8536f8c8c646fa1cc53666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a vector of SgTemplateArgument pointers from a variadic list of arguments.  <br /></td></tr>
-<tr class="memitem:a747d4c0417712121129029a26fceae1d" id="r_a747d4c0417712121129029a26fceae1d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a747d4c0417712121129029a26fceae1d template"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a747d4c0417712121129029a26fceae1d">strTemplateArgumentList</a> (Args... args)</td></tr>
+<tr class="memitem:a684a19ce1ca696203f70b777a71eb867" id="r_a684a19ce1ca696203f70b777a71eb867"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a684a19ce1ca696203f70b777a71eb867">strTemplateArgumentList</a> (Args... args)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_builder_1_1_templates.html" title="Auto-generated documentation for the Rose::Builder::Templates namespace.">Rose::Builder::Templates</a> namespace. </p>
@@ -186,7 +186,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs an SgTemplateArgument representing an integer value. </p>
-<p>This function utilizes the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> to create an integer expression from the provided integer value. It then encapsulates this expression within a new SgTemplateArgument object configured as a non-type argument. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also ensures the structural integrity of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> by setting the template argument as the parent of the newly created integer expression.</p>
+<p>This function utilizes the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> to create an integer expression from the provided integer value. It then encapsulates this expression within a new SgTemplateArgument object configured as a non-type argument. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also ensures the structural integrity of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> by setting the template argument as the parent of the newly created integer expression.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> integer value to be encapsulated within the template argument.</td></tr>
@@ -579,19 +579,6 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Converts a variadic list of template arguments into a string representation. </p>
-<p>This function serves as a wrapper to invoke the static string conversion method of the <a class="el" href="struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list.html">TemplateArgumentList</a> helper class. It utilizes template parameter pack expansion to pass all provided arguments to the underlying implementation.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">args</td><td><a class="el" href="class_a.html">A</a> variadic list of arguments to be converted into a string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the formatted string representation of the provided template arguments.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> types provided in the variadic pack must be compatible with the static str method defined in <a class="el" href="struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list.html">TemplateArgumentList</a>. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Returns a non-empty string if arguments are provided, or a string representing an empty list.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a <a class="el" href="struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list.html">TemplateArgumentList</a> template specialization that implements a static str method. </dd></dl>
-
 </div>
 </div>
 <a id="a747d4c0417712121129029a26fceae1d" name="a747d4c0417712121129029a26fceae1d"></a>
@@ -610,6 +597,19 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Converts a variadic list of template arguments into a string representation. </p>
+<p>This function serves as a wrapper to invoke the static string conversion method of the <a class="el" href="struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list.html">TemplateArgumentList</a> helper class. It utilizes template parameter pack expansion to pass all provided arguments to the underlying implementation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td><a class="el" href="class_a.html">A</a> variadic list of arguments to be converted into a string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the formatted string representation of the provided template arguments.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> types provided in the variadic pack must be compatible with the static str method defined in <a class="el" href="struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list.html">TemplateArgumentList</a>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Returns a non-empty string if arguments are provided, or a string representing an empty list.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a <a class="el" href="struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list.html">TemplateArgumentList</a> template specialization that implements a static str method. </dd></dl>
 
 </div>
 </div>

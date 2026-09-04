@@ -156,7 +156,7 @@ class Rose::BitFlags&lt; E, V &gt;</div><p>Stores a vector of enum bit flags.</p
 <div class="line"> </div>
 <div class="line">    TableCharacter(): current(<a class="code hl_enumvalue" href="_i_r_interface_8h.html#afff49d7a9271441d55a306e4b48ed029ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>), previous(<a class="code hl_enumvalue" href="_i_r_interface_8h.html#afff49d7a9271441d55a306e4b48ed029ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>) {}</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="csharp____support__8_c_8dox.html#a9970ce0043013af7b97dfbf31d95659c">process</a>(<span class="keywordtype">unsigned</span> next) { <span class="comment">// next is vector of Corner bit flags</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="csharp__support_8_c.html#a9970ce0043013af7b97dfbf31d95659c">process</a>(<span class="keywordtype">unsigned</span> next) { <span class="comment">// next is vector of Corner bit flags</span></div>
 <div class="line">        <span class="keywordflow">if</span> ((current &amp; <a class="code hl_define" href="tree__demo_8cc.html#a437ef08681e7210d6678427030446a54">LEFT</a>) != 0) {</div>
 <div class="line">            previous |= <a class="code hl_define" href="tree__demo_8cc.html#a437ef08681e7210d6678427030446a54">LEFT</a>;</div>
 <div class="line">            current &amp;= <a class="code hl_define" href="tree__demo_8cc.html#a437ef08681e7210d6678427030446a54">~LEFT</a>;</div>
@@ -168,7 +168,7 @@ class Rose::BitFlags&lt; E, V &gt;</div><p>Stores a vector of enum bit flags.</p
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="ttc" id="a_i_r_interface_8h_html_afff49d7a9271441d55a306e4b48ed029ac157bdf0b85a40d2619cbc8bc1ae5fe2"><div class="ttname"><a href="_i_r_interface_8h.html#afff49d7a9271441d55a306e4b48ed029ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a></div><div class="ttdeci">@ NONE</div><div class="ttdef"><b>Definition</b> IRInterface.h:196</div></div>
-<div class="ttc" id="acsharp____support__8_c_8dox_html_a9970ce0043013af7b97dfbf31d95659c"><div class="ttname"><a href="csharp____support__8_c_8dox.html#a9970ce0043013af7b97dfbf31d95659c">process</a></div><div class="ttdeci">bool process(std::string &amp;lib, std::string &amp;function, std::string sourceFileNameWithPath)</div><div class="ttdoc">Dynamically loads a shared library and executes a specific function within it.</div><div class="ttdef"><b>Definition</b> csharp_support.C:14</div></div>
+<div class="ttc" id="acsharp__support_8_c_html_a9970ce0043013af7b97dfbf31d95659c"><div class="ttname"><a href="csharp__support_8_c.html#a9970ce0043013af7b97dfbf31d95659c">process</a></div><div class="ttdeci">bool process(std::string &amp;lib, std::string &amp;function, std::string sourceFileNameWithPath)</div><div class="ttdoc">Dynamically loads a shared library and executes a specific function within it.</div><div class="ttdef"><b>Definition</b> csharp_support.C:14</div></div>
 <div class="ttc" id="atree__demo_8cc_html_a437ef08681e7210d6678427030446a54"><div class="ttname"><a href="tree__demo_8cc.html#a437ef08681e7210d6678427030446a54">LEFT</a></div><div class="ttdeci">#define LEFT</div><div class="ttdef"><b>Definition</b> tree_demo.cc:24</div></div>
 <div class="ttc" id="atree__demo_8cc_html_a80fb826a684cf3f0d306b22aa100ddac"><div class="ttname"><a href="tree__demo_8cc.html#a80fb826a684cf3f0d306b22aa100ddac">RIGHT</a></div><div class="ttdeci">#define RIGHT</div><div class="ttdef"><b>Definition</b> tree_demo.cc:25</div></div>
 </div><!-- fragment --><p>Now rewritten to use this class:</p>
@@ -180,7 +180,7 @@ class Rose::BitFlags&lt; E, V &gt;</div><p>Stores a vector of enum bit flags.</p
 <div class="line"> </div>
 <div class="line">    TableCharacters(): current(<a class="code hl_enumvalue" href="_i_r_interface_8h.html#afff49d7a9271441d55a306e4b48ed029ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>), previous(<a class="code hl_enumvalue" href="_i_r_interface_8h.html#afff49d7a9271441d55a306e4b48ed029ac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>) {}</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="csharp____support__8_c_8dox.html#a9970ce0043013af7b97dfbf31d95659c">process</a>(BitFlags&lt;Corner&gt; next) {</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="csharp__support_8_c.html#a9970ce0043013af7b97dfbf31d95659c">process</a>(BitFlags&lt;Corner&gt; next) {</div>
 <div class="line">        <span class="keywordflow">if</span> (current.<a class="code hl_function" href="class_sawyer_1_1_bit_flags.html#aa6332ad972cbe48094e8456f4d78163c">testAndClear</a>(<a class="code hl_define" href="tree__demo_8cc.html#a437ef08681e7210d6678427030446a54">LEFT</a>))</div>
 <div class="line">            previous.<a class="code hl_function" href="class_sawyer_1_1_bit_flags.html#a1d1260ba2bbc953339ed83bcb2335c98">set</a>(<a class="code hl_define" href="tree__demo_8cc.html#a437ef08681e7210d6678427030446a54">LEFT</a>);</div>
 <div class="line">        <span class="keywordflow">if</span> (next.isClear(TOP))</div>

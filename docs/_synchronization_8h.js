@@ -12,6 +12,6 @@ var _synchronization_8h =
     [ "Sawyer::SynchronizationTraits&lt; SingleThreadedTag &gt;", "struct_sawyer_1_1_synchronization_traits_3_01_single_threaded_tag_01_4.html", "struct_sawyer_1_1_synchronization_traits_3_01_single_threaded_tag_01_4" ],
     [ "Sawyer::MultiInstanceTls&lt; T &gt;", "class_sawyer_1_1_multi_instance_tls.html", "class_sawyer_1_1_multi_instance_tls" ],
     [ "Sawyer::bigMutex", "namespace_sawyer.html#a0ab1340f7c03562387c95163a185fcb7", null ],
-    [ "Sawyer::fastRandomIndex", "namespace_sawyer.html#ad7084ac1f91463d7a57e60bb7bfa8fe0", null ],
+    [ "Sawyer::fastRandomIndex", "namespace_sawyer.html#ad77dba3e61f4d5a0415ceae831e40b48", null ],
     [ "Sawyer::repo_", "namespace_sawyer.html#a6b18390d3b9860d6de0cc9f6c5b87b61", null ]
 ];

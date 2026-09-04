@@ -20,5 +20,5 @@ var namespace_sawyer_1_1_document_1_1_markup =
       [ "TOK_RIGHT", "namespace_sawyer_1_1_document_1_1_markup.html#a665ddb4b471ec2a0296aad85cf8175afa0a3158fcf4b24f80101b470bd487f088", null ],
       [ "TOK_BLANK_LINE", "namespace_sawyer_1_1_document_1_1_markup.html#a665ddb4b471ec2a0296aad85cf8175afab0ab6962178e7a98ffb2f8f7083b02a1", null ]
     ] ],
-    [ "isValidNameCharacter", "namespace_sawyer_1_1_document_1_1_markup.html#a73bc7a42a24e61c7ca4477fe68c52d21", null ]
+    [ "isValidNameCharacter", "namespace_sawyer_1_1_document_1_1_markup.html#aba5043dbecc4d74f3d483e3973835c4c", null ]
 ];

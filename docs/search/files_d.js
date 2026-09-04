@@ -7,7 +7,7 @@ var searchData=
   ['magicnumber_2eh_4',['MagicNumber.h',['../_magic_number_8h.html',1,'']]],
   ['main_2ec_5',['main.C',['../frontend_2_sage_i_i_i_2ast_token_stream_2main_8_c.html',1,'(Global Namespace)'],['../midend_2program_analysis_2dominator_trees_and_dominance_frontiers_2main_8_c.html',1,'(Global Namespace)'],['../rose_extensions_2data_structure_traversal_2main_8_c.html',1,'(Global Namespace)'],['../rose_independent_support_2dot2gml_2main_8_c.html',1,'(Global Namespace)']]],
   ['main_2ecpp_6',['main.cpp',['../3rd_party_libraries_2_p_o_e_t_2main_8cpp.html',1,'(Global Namespace)'],['../rose_independent_support_2visualization_2main_8cpp.html',1,'(Global Namespace)']]],
-  ['mainpage_2edox_7',['Mainpage.dox',['../_mainpage_8dox.html',1,'']]],
+  ['mainpage_2edox_7',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
   ['make_2einc_8',['Make.inc',['../qt_widgets_2_make_8inc.html',1,'(Global Namespace)'],['../rose_h_p_c_toolkit_2_make_8inc.html',1,'(Global Namespace)']]],
   ['malloc_5f8h_2edox_9',['malloc_8h.dox',['../malloc__8h_8dox.html',1,'']]],
   ['manglingsupport_2ec_10',['manglingSupport.C',['../mangling_support_8_c.html',1,'']]],

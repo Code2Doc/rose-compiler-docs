@@ -238,7 +238,28 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the set of potential function declarations targeted by a function call expression. </p>
-<p>Add the declaration for functionCallExp to functionList. In the case of function pointers and virtual functions, append the set of declarations to functionList. </p>
+<p>Add the declaration for functionCallExp to functionList. In the case of function pointers and virtual functions, append the set of declarations to functionList.</p>
+<p>This function performs a static analysis of a given function call expression to identify all possible function declarations that could be invoked at runtime. It handles various C++ calling constructs, including direct function calls, member function calls (via dot or arrow operators), function pointers, and member function pointers. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation accounts for complex scenarios such as pointer dereferencing, comma operators, and constructor initializers. For polymorphic calls, it utilizes the provided class hierarchy to resolve potential overrides.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sgFunCallExp</td><td><a class="el" href="class_a.html">A</a> pointer to the SgFunctionCallExp representing the function call to be analyzed. </td></tr>
+    <tr><td class="paramname">classHierarchy</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_class_hierarchy_wrapper.html">ClassHierarchyWrapper</a> used to resolve class hierarchies and perform polymorphic lookups. </td></tr>
+    <tr><td class="paramname">functionList</td><td><a class="el" href="class_a.html">A</a> reference to a Rose_STL_Container of SgFunctionDeclaration pointers where the identified potential target declarations will be appended. </td></tr>
+    <tr><td class="paramname">includePureVirtualFunc</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether to include pure virtual functions in the resulting list. Defaults to false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>sgFunCallExp must not be NULL. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> underlying function expression within sgFunCallExp must not be NULL. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> functionList container will be updated to include all discovered SgFunctionDeclaration targets for the given expression.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles comma operators by traversing to the right-hand operand. </dd>
+<dd>
+For member function calls, the function attempts to resolve the receiver type and handles special cases like constructor initializers that might return a class type. </dd>
+<dd>
+For function pointers (V_SgVarRefExp), the function queries the memory pool for declarations matching the function type. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include, define, and other preprocessor logic internally via the ROSE framework's AST traversal. </dd></dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@ var searchData=
   ['which_20never_20match_20different_20pointer_20values_2',['Defining and nondefining declarations are non-null pointers which never match (different pointer values)',['..//Users/billx/git/rose/src/midend/astDiagnostics/AstConsistencyTests.C#subsection3c',1,'']]],
   ['which_20never_20match_20non_20defining_20declaration_20may_20be_20null_3',['Defining and nondefining declarations which never match (non-defining declaration may be NULL)',['..//Users/billx/git/rose/src/midend/astDiagnostics/AstConsistencyTests.C#subsection3d',1,'']]],
   ['widget_20creator_20interface_4',['MDI-Widget-Creator Interface',['../widgets.html#widgets_mdi_mechanism',1,'']]],
-  ['widgets_5',['Widgets',['../impl_guide.html#util_classes_baseclasses',1,'Common base classes for Rose-Widgets'],['../methods_of_usage.html',1,'Different approaches howto use Qt-Widgets'],['../index.html',1,'Rose Qt Widgets']]],
+  ['widgets_5',['Widgets',['../impl_guide.html#util_classes_baseclasses',1,'Common base classes for Rose-Widgets'],['../methods_of_usage.html',1,'Different approaches howto use Qt-Widgets']]],
   ['widgets_6',['widgets',['../widgets.html#widgets_general_list',1,'General widgets'],['../impl_guide.html',1,'Implementation Guide for own ROSE-widgets'],['../widgets.html#widgets_rose_list',1,'ROSE specific widgets']]],
   ['widgets_20and_20usage_7',['List of Widgets and Usage',['../widgets.html',1,'']]],
   ['widgets_20in_20your_20project_8',['Tutorial for using ROSE Qt-Widgets in your project',['../tutorial_usage.html',1,'']]],

@@ -118,7 +118,7 @@ Functions</h2></td></tr>
 
 <p>Identifies macro expansions that must be unparsed from the AST rather than the token stream. </p>
 <p>This function is intended to detect macro expansions and their associated statements that require unparsing from the AST. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic is necessary to ensure that if macro expansions are replaced by other statements, the system can distinguish between transformations involving removal versus transformations involving modification.</p>
-<p>Currently, the responsibility for detecting whether statements were transformed by removal is handled within the <a class="el" href="namespace_sage_interface.html#a6af98c255a2158839bec7fb74f77bafa" title="Resets internal data structures and macro expansion states for a specific statement.">SageInterface::resetInternalMapsForTargetStatement()</a> function.</p>
+<p>Currently, the responsibility for detecting whether statements were transformed by removal is handled within the <a class="el" href="namespace_sage_interface.html#a3dce8721e1c74ed4d0e17ddcaa2a2579" title="Reset internal data structures used for token-based unparsing and macro summaries based on modificati...">SageInterface::resetInternalMapsForTargetStatement()</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sourceFile</td><td><a class="el" href="class_a.html">A</a> pointer to the SgSourceFile object representing the source file to be analyzed.</td></tr>
@@ -129,7 +129,7 @@ Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs no state changes to the sourceFile as the current implementation is a stub.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation contains inactive if blocks that previously contained debugging print statements and error handling logic.</dd></dl>
 <p>This function is intended to detect macro expansions and their associated statements that have undergone transformations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> goal is to ensure that if these statements are replaced by other statements, the system can detect that they were transformed by removal rather than just being modified.</p>
-<p>Currently, the logic for detecting whether statements were transformed by removal is handled within the <a class="el" href="namespace_sage_interface.html#a6af98c255a2158839bec7fb74f77bafa" title="Resets internal data structures and macro expansion states for a specific statement.">SageInterface::resetInternalMapsForTargetStatement()</a> function.</p>
+<p>Currently, the logic for detecting whether statements were transformed by removal is handled within the <a class="el" href="namespace_sage_interface.html#a3dce8721e1c74ed4d0e17ddcaa2a2579" title="Reset internal data structures used for token-based unparsing and macro summaries based on modificati...">SageInterface::resetInternalMapsForTargetStatement()</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sourceFile</td><td><a class="el" href="class_a.html">A</a> pointer to the SgSourceFile object representing the source file to be analyzed.</td></tr>

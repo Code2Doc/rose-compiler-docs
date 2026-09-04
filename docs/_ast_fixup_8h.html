@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>top must not be NULL. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Any if-statements within the subtree of top that had an empty basic block as their false body will now have a NULL false body.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> to locate all instances of V_SgIfStmt within the provided hierarchy.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> to locate all instances of V_SgIfStmt within the provided hierarchy.</dd></dl>
 <p>This function traverses the subtree starting from the provided node to identify all if-statements. For each identified if-statement, it checks if the false branch (the else block) is a basic block that contains no statements. If such an empty else block is found, it is replaced with a NULL pointer to clean up the intermediate representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>top must not be a NULL pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Any if-statements within the subtree of top that had an empty basic block as their false body will now have a NULL false body.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses <a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> to locate all instances of V_SgIfStmt within the provided hierarchy. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses <a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a> to locate all instances of V_SgIfStmt within the provided hierarchy. </dd></dl>
 
 </div>
 </div>

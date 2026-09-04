@@ -7,5 +7,5 @@ var _command_line_boost_8h =
     [ "Sawyer::CommandLine::Boost::variables_map", "struct_sawyer_1_1_command_line_1_1_boost_1_1variables__map.html", "struct_sawyer_1_1_command_line_1_1_boost_1_1variables__map" ],
     [ "Sawyer::CommandLine::Boost::notify", "namespace_sawyer_1_1_command_line_1_1_boost.html#ade21d3da6239786bdb65bcb4022b8ac2", null ],
     [ "Sawyer::CommandLine::Boost::operator<<", "namespace_sawyer_1_1_command_line_1_1_boost.html#aaa31b9a634394e470c8956d33578b76c", null ],
-    [ "Sawyer::CommandLine::Boost::store", "namespace_sawyer_1_1_command_line_1_1_boost.html#a55dcc4397eb98cb19089d6851b60eafd", null ]
+    [ "Sawyer::CommandLine::Boost::store", "namespace_sawyer_1_1_command_line_1_1_boost.html#a5422f52e1c80924928f4e55aa6bbfec4", null ]
 ];

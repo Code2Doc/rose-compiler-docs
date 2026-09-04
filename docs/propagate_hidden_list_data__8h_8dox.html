@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Propagates hidden list data through the SgNode hierarchy. </p>
+<p>Propagate hidden list information for variables, types, and class elaboration.</p>
 <p>This function performs a traversal of the provided SgNode and its descendants to ensure that hidden list data is correctly propagated to lower scopes where it may be required. It utilizes a specialized traversal mechanism, <a class="el" href="class_propagate_hidden_list_data.html">PropagateHiddenListData</a>, along with a <a class="el" href="class_propagate_hidden_list_data_inherited_attribute.html" title="Inherited attribute required for hidden list propagation to child scopes.">PropagateHiddenListDataInheritedAttribute</a> to manage the inheritance of attributes during the traversal process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also includes performance tracking to monitor the execution time of the propagation process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -1,9 +1,5 @@
 var NAVTREEINDEX343 =
 {
-"struct_ada___r_o_s_e___translation_1_1_elem_creator.html#a6a2c32e69e7bf159075a729c386709c5":[16,0,2,12,4],
-"struct_ada___r_o_s_e___translation_1_1_elem_creator.html#ac1e847dd33eb23280067211985a0ebd5":[15,0,4,13,1],
-"struct_ada___r_o_s_e___translation_1_1_elem_creator.html#ac1e847dd33eb23280067211985a0ebd5":[16,0,2,12,1],
-"struct_ada___r_o_s_e___translation_1_1_elem_creator.html#ad28f7d74388bdc8b9a2acd2933916c8b":[15,0,4,13,2],
 "struct_ada___r_o_s_e___translation_1_1_elem_creator.html#ad28f7d74388bdc8b9a2acd2933916c8b":[16,0,2,12,2],
 "struct_ada___r_o_s_e___translation_1_1_elem_id_range.html":[15,0,4,15],
 "struct_ada___r_o_s_e___translation_1_1_elem_id_range.html":[16,0,2,14],
@@ -249,5 +245,9 @@ var NAVTREEINDEX343 =
 "struct_ada___r_o_s_e___translation_1_1_type_data_t.html#ac996f659720a7a4c2a8f6a1628e83380":[16,0,2,23,3],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html":[15,0,4,0,10],
 "struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html":[16,0,2,0,10],
-"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a13a23eb014c09357cf8e78bb24628e32":[15,0,4,0,10,2]
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a13a23eb014c09357cf8e78bb24628e32":[15,0,4,0,10,2],
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a13a23eb014c09357cf8e78bb24628e32":[16,0,2,0,10,2],
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a99ba75c7e5d5c2015a2fb74696e138cc":[15,0,4,0,10,3],
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#a99ba75c7e5d5c2015a2fb74696e138cc":[16,0,2,0,10,3],
+"struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_ambiguous_call_extractor.html#ac9af0dd587abf75d71bc57248bbdd390":[15,0,4,0,10,1]
 };

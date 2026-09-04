@@ -160,10 +160,43 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Call to backend, generates either object file or executable. </p>
+<p>Executes the backend process including AST writing, unparsing, and compilation/linking.</p>
 <p>Executes the backend processes including AST writing, unparsing, and compilation/linking.</p>
 <p>This function operates in two modes: 1) If source files were specified on the command line, then it calls unparser and compiles generated file. 2) If no source files are present then it operates as a linker processing all specified object files. If no source files or object files are specified then we return a error.</p>
 <p>This function represents a simple interface to the use of ROSE as a library.</p>
-<p>At this point in the control flow we have returned from the processing via the EDG frontend (or skipped it if that option was specified). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> following has been done or explicitly skipped if such options were specified on the commandline: 1) <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application program has been parsed 2) All AST's have been build (one for each grammar) 3) <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformations have been edited into the C++ AST 4) <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> C++ AST has been unparsed to form the final output file (all code has been generated into a different filename "rose_&lt;original file name&gt;.C") </p>
+<p>At this point in the control flow we have returned from the processing via the EDG frontend (or skipped it if that option was specified). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> following has been done or explicitly skipped if such options were specified on the commandline: 1) <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application program has been parsed 2) All AST's have been build (one for each grammar) 3) <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformations have been edited into the C++ AST 4) <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> C++ AST has been unparsed to form the final output file (all code has been generated into a different filename "rose_&lt;original file name&gt;.C")</p>
+<p>This function manages the final stages of the ROSE compilation pipeline. It performs several critical tasks: executing Graphviz and checker backend commands, writing the AST to a file if requested, unparsing the AST into C++ source code (if not in binary-only mode), and finally invoking the appropriate vendor compiler or linker (C, <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, or C++) based on the project configuration. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also handles template instantiation considerations and manages signal handlers for debugging purposes if ifdef ROSE_EXPERIMENTAL_ADA_ROPE_CONNECTION is active.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject object representing the current compilation project. This object contains the AST, configuration settings, and handles the execution of unparsing and compilation steps. </td></tr>
+    <tr><td class="paramname">unparseFormatHelp</td><td><a class="el" href="class_a.html">A</a> pointer to an <a class="el" href="class_unparse_format_help.html">UnparseFormatHelp</a> object providing formatting instructions for the unparsing process. </td></tr>
+    <tr><td class="paramname">unparseDelegate</td><td><a class="el" href="class_a.html">A</a> pointer to an <a class="el" href="class_unparse_delegate.html">UnparseDelegate</a> object that defines the mechanism for handling the output generated during unparsing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the final exit status of the backend operations. <a class="el" href="class_a.html">A</a> value of 0 typically indicates success, while non-zero values indicate errors encountered during compilation or linking.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project pointer must be valid and initialized. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project's backend error code is updated to reflect the result of the execution. Source files may be generated and compiled/linked depending on the project configuration.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a <a class="el" href="class_timing_performance.html">TimingPerformance</a> timer to track the duration of the AST object code generation process. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may reset the AST_FILE_IO state if an output AST file is specified. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> choice of linker (C, <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, or C++) is determined by the flags set within the SgProject object.</dd></dl>
+<p>This function manages the final stages of the ROSE compilation pipeline. It performs several critical tasks: executing Graphviz and checker backend commands, writing the AST to a file if configured, unparsing the AST into C++ source code (if not in binary-only mode), and invoking the appropriate system compiler or linker (C, <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, or C++) based on the project configuration. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also handles template instantiation considerations and manages the final exit status of the backend operations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject object representing the current compilation project, containing the AST and configuration settings. </td></tr>
+    <tr><td class="paramname">unparseFormatHelp</td><td><a class="el" href="class_a.html">A</a> pointer to an <a class="el" href="class_unparse_format_help.html">UnparseFormatHelp</a> object providing formatting instructions for the unparsing process. </td></tr>
+    <tr><td class="paramname">unparseDelegate</td><td><a class="el" href="class_a.html">A</a> pointer to an <a class="el" href="class_unparse_delegate.html">UnparseDelegate</a> object that handles the actual output/delegation of the unparsed code.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the final combined exit status of the backend operations. <a class="el" href="class_a.html">A</a> non-zero value typically indicates an error occurred during compilation or linking.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project pointer must be valid and initialized. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project's backend error code is updated with the result of the execution. Source files may be generated and compiled/linked on the filesystem.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ifdef ROSE_EXPERIMENTAL_ADA_ROSE_CONNECTION to reset the SIGABRT signal handler to its default state. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on preprocessor macros such as BACKEND_VERBOSE_LEVEL, BACKEND_C_COMPILER_NAME_WITH_PATH, BACKEND_FORTRAN_COMPILER_NAME_WITH_PATH, and BACKEND_CXX_COMPILER_NAME_WITH_PATH for logging and tool invocation. </dd></dl>
 
 </div>
 </div>
@@ -396,8 +429,35 @@ If the provided argv contains no files, a warning is logged to the mlog.</dd></d
 </div><div class="memdoc">
 
 <p>Call to frontend, processes commandline and generates a SgProject object. </p>
+<p>Initializes and runs the frontend process using command-line arguments.</p>
 <p>Initializes the frontend and processes command-line arguments to produce an SgProject.</p>
-<p>This function represents a simple interface to the use of ROSE as a library. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> commandline is processed and the return parameter is the generate SgProject object. </p>
+<p>This function represents a simple interface to the use of ROSE as a library. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> commandline is processed and the return parameter is the generate SgProject object.</p>
+<p>This function serves as a wrapper around the vector-based frontend implementation. It converts the standard C-style argument array (argc and argv) into a std::vector of strings and subsequently invokes the primary frontend processing logic. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is responsible for orchestrating the initial stages of the compilation pipeline, including argument parsing and the application of constant folding if enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments. </td></tr>
+    <tr><td class="paramname">frontendConstantFolding</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether constant folding should be performed during the frontend processing phase.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the resulting SgProject object representing the processed source.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> argv array must be a valid null-terminated array of strings of size argc. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> pointer to an initialized SgProject is returned, or a null pointer if initialization fails.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of an overloaded frontend function that accepts a std::vector&lt;std::string&gt; and a boolean.</dd></dl>
+<p>This function serves as a wrapper for the vector-based frontend implementation. It converts the standard C-style argument array (argc and argv) into a std::vector of strings and subsequently invokes the primary frontend logic. This is typically used as the entry point for the frontend component of the compiler/toolchain.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments. </td></tr>
+    <tr><td class="paramname">frontendConstantFolding</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether constant folding optimizations should be enabled during the frontend pass.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the resulting SgProject object representing the parsed and processed source code.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> argv array must be a valid null-terminated array of strings of size argc. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> pointer to an initialized SgProject is returned, or a null pointer if initialization fails.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around the vector-based overload of the frontend function. </dd></dl>
 
 </div>
 </div>
@@ -439,7 +499,7 @@ If the provided argv contains no files, a warning is logged to the mlog.</dd></d
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the constructed SgProject object. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned project contains the file nodes parsed from the input arguments, with configuration flags reset to default.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input vector <span class="tt">argv</span> should contain valid command-line arguments compatible with the ROSE frontend. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned SgProject is non-null (subject to the underlying frontend success) and all associated SgFile nodes have been reconfigured to ensure transformations and comments are not skipped.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt"><a class="el" href="#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Call to frontend, processes commandline and generates a SgProject object.">frontend</a></span> function to perform the initial parsing and uses <span class="tt"><a class="el" href="namespace_commandline_processing.html#af5ed1bdc8591243e7ea76c2c8100dcdf" title="Empty function or ill-formed function detected. /.">CommandlineProcessing::removeArgs</a></span> to sanitize the argument list for each file. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt"><a class="el" href="#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Call to frontend, processes commandline and generates a SgProject object.">frontend</a></span> function to perform the initial parsing and uses <span class="tt"><a class="el" href="namespace_commandline_processing.html#a7dd72d6559e03e0c394a0a96a7c297f0" title="Remove all options matching a specified prefix &#39;prefix&#39; from the argument list &#39;argv&#39;.">CommandlineProcessing::removeArgs</a></span> to sanitize the argument list for each file. </dd></dl>
 
 </div>
 </div>
@@ -463,8 +523,33 @@ If the provided argv contains no files, a warning is logged to the mlog.</dd></d
 </div><div class="memdoc">
 
 <p>Call to build SgProject with empty SgFiles. </p>
+<p>Initializes and runs the frontend shell using command-line arguments.</p>
 <p>Entry point for the frontend shell using C-style command line arguments.</p>
-<p>This function represents a simple interface to build a SgProject with all the SgFiles in place any initialized properly but containing a SgGlobal with no declarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> purpose of this function is to build a SgProject with SgFile object for each file on the command line, and allow for the frontend to be called separately for each file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> commandline is completely processed so that all information is in each SgFile of the SgProject. This way specific files can be processed conditionally. This mechanism can be used to build support for exclusion of specific files or for exclusion of files in a specific subdirectory. Or to support specialized handling of files with a specific extension, etc. </p>
+<p>This function represents a simple interface to build a SgProject with all the SgFiles in place any initialized properly but containing a SgGlobal with no declarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> purpose of this function is to build a SgProject with SgFile object for each file on the command line, and allow for the frontend to be called separately for each file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> commandline is completely processed so that all information is in each SgFile of the SgProject. This way specific files can be processed conditionally. This mechanism can be used to build support for exclusion of specific files or for exclusion of files in a specific subdirectory. Or to support specialized handling of files with a specific extension, etc.</p>
+<p>This function serves as a wrapper that facilitates the execution of the frontend shell by converting traditional C-style command line arguments (argc and argv) into a more manageable C++ standard vector of strings. It then delegates the actual execution logic to the overloaded version of frontendShell that accepts a std::vector&lt;std::string&gt;.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command line arguments.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the resulting SgProject object created by the shell execution.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> argv pointer must be a valid null-terminated array of strings, and argc must accurately reflect the number of elements in argv. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new SgProject instance is returned, representing the state of the processed input.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is primarily used for compatibility with C-style main functions and simplifies the interface for callers not using C++ containers.</dd></dl>
+<p>This function serves as a wrapper for the vector-based overload of frontendShell. It converts the standard C-style command-line arguments (argc and argv) into a std::vector of strings to facilitate easier processing within the internal implementation of the shell.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the resulting SgProject object created by the shell execution.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> argv pointer must be a valid null-terminated array of strings of length argc. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new SgProject instance is returned, representing the state of the initialized frontend shell.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper for the version of frontendShell that accepts a std::vector&lt;std::string&gt;. </dd></dl>
 
 </div>
 </div>
@@ -784,6 +869,7 @@ Execution timing is tracked via a <a class="el" href="class_timing_performance.h
 </div><div class="memdoc">
 
 <p>Prints the values of relevant predefined macros to the standard output. </p>
+<p>Output at least some of the predefined macro settings.</p>
 <p>This function iterates through a series of known C++ preprocessor macros used within the ROSE environment and prints their current values to the console using printf. It utilizes ifdef directives to check for the existence of specific macros such as <b>GNUC</b>, <b>GNUC_MINOR</b>, BOOST_COMPILER, <b>VERSION</b>, <b>GNUC_PATCHLEVEL</b>, <b>GXX_EXPERIMENTAL_CXX0X</b>, <b>EDG_VERSION</b>, <b>EDG</b>, and XXX. If a macro is defined, its value is formatted and displayed.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>None.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> values of all detected predefined macros are printed to the standard output.</dd></dl>
@@ -811,6 +897,7 @@ Execution timing is tracked via a <a class="el" href="class_timing_performance.h
 </div><div class="memdoc">
 
 <p>Retrieves the version identifier for the Boost library used by <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a>. </p>
+<p>Boost version identifier (numeric).</p>
 <p>This function returns a numeric identifier representing the version of the Boost library that was present during the build process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> value is retrieved from the define ROSE_BOOST_VERSION macro, which is typically generated by the build system (e.g., automake). If the macro is not defined, the function triggers an assertion and returns a default value of 0.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> macro define ROSE_BOOST_VERSION must be defined during the compilation process for the function to return the correct version ID.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns the value of ROSE_BOOST_VERSION if defined, otherwise returns 0.</dd></dl>
@@ -841,6 +928,7 @@ Execution timing is tracked via a <a class="el" href="class_timing_performance.h
 </div><div class="memdoc">
 
 <p>Retrieves the file path to the Boost version used by <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a>. </p>
+<p>Boost version path.</p>
 <p>Retrieves the file system path to the Boost version used by <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a>.</p>
 <p>This function returns the directory path where the Boost libraries are located. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> value is retrieved from the define ROSE_BOOST_PATH preprocessor macro, which is typically generated during the build process by automake.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the path to the Boost version. Returns an empty string if the define ROSE_BOOST_PATH macro is not defined.</dd></dl>

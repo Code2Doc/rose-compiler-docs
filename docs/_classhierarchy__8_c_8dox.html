@@ -96,7 +96,7 @@ $(function(){initNavTree('_classhierarchy__8_c_8dox.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a31e0bec5b3e54e9614b5eddbbcfbeba8" id="r_a31e0bec5b3e54e9614b5eddbbcfbeba8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a31e0bec5b3e54e9614b5eddbbcfbeba8">compareFunctionDeclarations</a> (SgFunctionDeclaration *f1, SgFunctionDeclaration *f2)</td></tr>
-<tr class="memdesc:a31e0bec5b3e54e9614b5eddbbcfbeba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two function declarations for equality based on name, return type, and arguments.  <br /></td></tr>
+<tr class="memdesc:a31e0bec5b3e54e9614b5eddbbcfbeba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">compare two member function declartions,  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a31e0bec5b3e54e9614b5eddbbcfbeba8" name="a31e0bec5b3e54e9614b5eddbbcfbeba8"></a>
@@ -118,7 +118,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compares two function declarations for equality based on name, return type, and arguments. </p>
+<p>compare two member function declartions, </p>
+<p>Compares two function declarations for equality based on name, return type, and arguments.</p>
 <p>This function performs a structural comparison between two function declarations. It checks if the function names are identical, if the const-qualification of the function types match, if the mangled strings of the return types are equal, and if the list of argument types (via their mangled representations) are identical in both count and type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -132,8 +133,7 @@ Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the input function declarations remains unchanged.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This implementation relies heavily on the string representation of mangled types. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison is currently limited to the function name and does not account for other potential attributes beyond name, return type, and arguments. </dd>
 <dd>
-There is a FIXME note indicating that the implementation currently relies on the function name and may have dependencies on the validity of mangled type strings.</dd></dl>
-<p>Compares two function declarations for equality based on name, return type, and arguments. </p>
+There is a FIXME note indicating that the implementation currently relies on the function name and may have dependencies on the validity of mangled type strings. </dd></dl>
 
 </div>
 </div>

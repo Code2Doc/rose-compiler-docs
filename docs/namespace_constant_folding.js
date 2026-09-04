@@ -16,7 +16,7 @@ var namespace_constant_folding =
     [ "calculate_t", "namespace_constant_folding.html#a8af365f9a6c5b60f7dcb012705a80e5c", null ],
     [ "calculate_u_t", "namespace_constant_folding.html#ab063b68d227cdd43ab354921ec60479f", null ],
     [ "cf_get_value_t", "namespace_constant_folding.html#a241d46c74b9584edd03dd094f5ff4eca", null ],
-    [ "constantFoldingOptimization", "namespace_constant_folding.html#a3174425188cbd997c932c5771475b7b5", null ],
-    [ "constantUnFoldingTest", "namespace_constant_folding.html#ae51a91340099755a171b32df092c6183", null ],
-    [ "returnConstantFoldedValueExpression", "namespace_constant_folding.html#af0b479509c0d0571672fd9c44cbbacaa", null ]
+    [ "constantFoldingOptimization", "namespace_constant_folding.html#a2ff78c6bafd715e6313f33ceea064fd1", null ],
+    [ "constantUnFoldingTest", "namespace_constant_folding.html#a36ff549425c5348324eace7a71d80047", null ],
+    [ "returnConstantFoldedValueExpression", "namespace_constant_folding.html#a2da516c096656e47be67041bdc8a75ef", null ]
 ];

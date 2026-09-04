@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a fixup on class data member initializations during AST traversal. </p>
+<p>Handles not standard in-class initialization used in EDG and GNU g++ (but supported differently).</p>
 <p>This function traverses the provided SgNode to identify and correct issues related to how class data members are initialized. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a specialized <a class="el" href="class_fixup_in_class_data_initialization.html" title="Modified const double variable initialized in-class to be static const double with initializer.">FixupInClassDataInitialization</a> traversal object to perform a preorder traversal of the AST. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function includes language-specific logic to skip the fixup process for Ada and <a class="el" href="namespace_jovial.html" title="Auto-generated documentation for the Jovial namespace.">Jovial</a> languages to avoid incorrect semantic transformations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

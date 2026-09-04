@@ -192,6 +192,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs a traversal of the SgNode tree to check for transformed flags. </p>
+<p>Check for consistancy of isTransformation flags for nodes marked as a transformation.</p>
 <p>This function initializes a <a class="el" href="class_check_transformed_flags_visitor.html">CheckTransformedFlagsVisitor</a> and executes a preorder traversal starting from the provided SgNode. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> purpose of this visitor is to inspect the nodes within the hierarchy for specific transformation flags that may have been applied during previous compilation or transformation passes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -444,6 +445,7 @@ var must not be a null pointer.</dd></dl>
 </div><div class="memdoc">
 
 <p>Identifies all initialized variable names used within a specific SgNode region. </p>
+<p>Find all variables referenced in a region.</p>
 <p>Identifies all variables used within a specific SgNode region.</p>
 <p>This function performs a tree traversal over the provided SgNode subtree to collect all instances of initialized variable names. It utilizes the <a class="el" href="class_find_used_declarations_visitor.html">FindUsedDeclarationsVisitor</a>, which implements a visitor pattern to scan the node hierarchy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy, ensuring that parent nodes are visited before their children.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -759,6 +761,7 @@ var must not be a null pointer.</dd></dl>
 </div><div class="memdoc">
 
 <p>Removes the declaration of a specific variable from its parent statement. </p>
+<p>Remove the declaration of a given variable.</p>
 <p>This function identifies the parent variable declaration statement of the provided SgInitializedName and removes the variable from the list of variables within that declaration. After removing the variable, it proceeds to remove the parent statement itself from the AST. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the assumption that the variable being removed is the sole remaining variable in the declaration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -773,7 +776,7 @@ var must not be a null pointer.</dd></dl>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> variable list in the parent declaration must contain exactly one element (the initname itself) at the time of removal to satisfy the ROSE_ASSERT.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> variable initname is removed from its parent's variable list. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent SgVariableDeclaration statement is removed from the AST via <a class="el" href="namespace_sage_interface.html#a9f26d7972780304ad59b3ef06168e3de" title="A special purpose statement removal function, originally from inlinerSupport.h, Need Jeremiah&#39;s atten...">SageInterface::myRemoveStatement</a>.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent SgVariableDeclaration statement is removed from the AST via <a class="el" href="namespace_sage_interface.html#af2a313ede41c7b731cb61c355d1c55e0" title="A special purpose statement removal function, originally from inlinerSupport.h, Need Jeremiah&#39;s atten...">SageInterface::myRemoveStatement</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function uses an assertion to ensure the parent is a valid SgVariableDeclaration. It also uses ROSE_ASSERT to verify that the variable list size is exactly one before proceeding with the removal of the parent statement.</dd></dl>
 <p>This function identifies the parent variable declaration statement of the provided SgInitializedName and removes the specific variable from the list of variables contained within that declaration. After removing the variable, it proceeds to remove the parent statement itself from the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -787,7 +790,7 @@ var must not be a null pointer.</dd></dl>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initname must exist within the list of variables of its parent declaration. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> variable initname is removed from its parent's variable list. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent SgVariableDeclaration statement is removed from the AST via <a class="el" href="namespace_sage_interface.html#a9f26d7972780304ad59b3ef06168e3de" title="A special purpose statement removal function, originally from inlinerSupport.h, Need Jeremiah&#39;s atten...">SageInterface::myRemoveStatement</a>.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent SgVariableDeclaration statement is removed from the AST via <a class="el" href="namespace_sage_interface.html#af2a313ede41c7b731cb61c355d1c55e0" title="A special purpose statement removal function, originally from inlinerSupport.h, Need Jeremiah&#39;s atten...">SageInterface::myRemoveStatement</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This implementation assumes that after the removal, the variable list is expected to be empty or handled such that the parent statement is no longer valid, as indicated by the ROSE_ASSERT check. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses assert to verify the parent type and the existence of the iterator. </dd></dl>
@@ -814,6 +817,7 @@ var must not be a null pointer.</dd></dl>
 </div><div class="memdoc">
 
 <p>Renames labels within a given SgNode based on its enclosing function definition. </p>
+<p>Rename all labels in a block of code.</p>
 <p>Renames labels within a specific SgNode using a visitor pattern.</p>
 <p>This function utilizes a <a class="el" href="class_rename_labels_visitor.html">RenameLabelsVisitor</a> to traverse the provided SgNode (fd) in a preorder fashion. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> purpose is to update or rename labels within the scope of the node, using the context provided by the enclosing function definition. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the visitor pattern to perform the actual transformation on the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>

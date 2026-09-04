@@ -127,7 +127,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a147556509080ef46ca19c26f49655be7" id="r_a147556509080ef46ca19c26f49655be7"><td class="memItemLeft">virtual <a class="el" href="class_sawyer_1_1_command_line_1_1_parsed_value.html">ParsedValue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a147556509080ef46ca19c26f49655be7">operator()</a> (const char *<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, const char **rest, const <a class="el" href="struct_sawyer_1_1_command_line_1_1_location.html">Location</a> &amp;loc)</td></tr>
+<tr class="memitem:a147556509080ef46ca19c26f49655be7" id="r_a147556509080ef46ca19c26f49655be7"><td class="memItemLeft">virtual <a class="el" href="class_sawyer_1_1_command_line_1_1_parsed_value.html">ParsedValue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a147556509080ef46ca19c26f49655be7">operator()</a> (const char *<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, const char **rest, const <a class="el" href="struct_sawyer_1_1_command_line_1_1_location.html">Location</a> &amp;loc)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -150,7 +150,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt;<br />
 class Sawyer::CommandLine::RealNumberParser&lt; T &gt;</div><p>Parses a real number and converts it to numeric type <code class="param">T</code>.</p>
 <p>Matches a real number in the mathematical sense in C++ floating-point representation, and attempts to convert it to the type <code class="param">T</code>. If the real number cannot be converted to type <code class="param">T</code> then an <code>std::range_error</code> is thrown, which is most likely caught by higher layers of the library and converted to an <code>std::runtime_error</code> with additional information about the failure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> syntax is that which is recognized by the <code>strtod</code> function, plus trailing white space.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html#gaedf9d91585e2a4667abed2960c1b4ca4" title="realNumberParser">realNumberParser</a> factory, and <a class="el" href="group__sawyer__parser__factories.html" title="Command line parser factories">Command line parser factories</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html#ga900371b003e37ba536efa5a3d87c723a" title="realNumberParser">realNumberParser</a> factory, and <a class="el" href="group__sawyer__parser__factories.html" title="Command line parser factories">Command line parser factories</a>. </dd></dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="aede77daa207b3770cad7db545e39ccb6" name="aede77daa207b3770cad7db545e39ccb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aede77daa207b3770cad7db545e39ccb6">&#9670;&#160;</a></span>Ptr</h2>
@@ -251,7 +251,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_real_number_parser.html">RealNumberParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#gaedf9d91585e2a4667abed2960c1b4ca4" title="realNumberParser">realNumberParser</a> factory instead, which requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
+<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_real_number_parser.html">RealNumberParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#ga900371b003e37ba536efa5a3d87c723a" title="realNumberParser">realNumberParser</a> factory instead, which requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_real_number_parser.html">RealNumberParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#gaedf9d91585e2a4667abed2960c1b4ca4" title="realNumberParser">realNumberParser</a> factory instead, which takes the same arguments, but requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
+<p>Allocating constructor. Returns a pointer to a new <a class="el" href="class_sawyer_1_1_command_line_1_1_real_number_parser.html">RealNumberParser</a> object. Uses will most likely want to use the <a class="el" href="group__sawyer__parser__factories.html#ga900371b003e37ba536efa5a3d87c723a" title="realNumberParser">realNumberParser</a> factory instead, which takes the same arguments, but requires less typing. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__sawyer__parser__factories.html">Command line parser factories</a> </dd></dl>
 
 </div>
 </div>

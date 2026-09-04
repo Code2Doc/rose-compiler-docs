@@ -14,7 +14,7 @@ var _e_c_j___r_o_s_e___connection_2jserver_8_c =
     [ "Rose::Frontend::Java::Ecj::jserver_destroy", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#a4b498dc2ccb686216ccbb66327b42979", null ],
     [ "Rose::Frontend::Java::Ecj::jserver_FindClass", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#a4a9f991babb583e2568fac747e690ce8", null ],
     [ "Rose::Frontend::Java::Ecj::jserver_finish", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#a10375d145d3908c29e52b3a3fc733335", null ],
-    [ "Rose::Frontend::Java::Ecj::jserver_getJavaString", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#a1d5ec095c8544cccea89f346a159bfe2", null ],
+    [ "Rose::Frontend::Java::Ecj::jserver_getJavaString", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#a57169c91f31e5184db5067a0d898b25e", null ],
     [ "Rose::Frontend::Java::Ecj::jserver_getJavaStringArray", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#ad67cd85cea82ed0983b35f331ab18635", null ],
     [ "Rose::Frontend::Java::Ecj::jserver_getJavaStringClass", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#acf9c55aba4f75597881cfa2c617c68b9", null ],
     [ "Rose::Frontend::Java::Ecj::jserver_GetMethodID", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html#a092896f5053296a5262a0a340557d7f1", null ],

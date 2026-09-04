@@ -27,16 +27,16 @@ var fail_safe_pragma_8h =
       [ "FailSafe::e_violation_ANY", "namespace_fail_safe.html#a0bb5168a4b92b32bc70e49ae42edcd3da388cd4693f6ce2f27a9646cac4ce4776", null ],
       [ "FailSafe::e_not_failsafe", "namespace_fail_safe.html#a0bb5168a4b92b32bc70e49ae42edcd3daa4dfe4a3864f1ffda04ffd56d3288696", null ]
     ] ],
-    [ "FailSafe::addAttribute", "namespace_fail_safe.html#ad14b6a35a5a33806e14603ff6d622f71", null ],
-    [ "FailSafe::buildAttribute", "namespace_fail_safe.html#ae37265b89562fb501d685b0e4d741bdd", null ],
+    [ "FailSafe::addAttribute", "namespace_fail_safe.html#a9976981217b0c4256f5516bfb9be9e9e", null ],
+    [ "FailSafe::buildAttribute", "namespace_fail_safe.html#a9105ffbf678835e2f96d17ed189ba7a8", null ],
     [ "FailSafe::getAttribute", "namespace_fail_safe.html#aa25226f75c0373fcadd9c60f3dbaff3a", null ],
-    [ "FailSafe::getAttributeList", "namespace_fail_safe.html#a8cd430ed64036e6741ebe93d7605521a", null ],
+    [ "FailSafe::getAttributeList", "namespace_fail_safe.html#a5974ca2b6b3eb156933104c77738c7b1", null ],
     [ "FailSafe::getConstructEnum", "namespace_fail_safe.html#a86017dd390e88640b1bdb6ae382684e7", null ],
-    [ "FailSafe::isClause", "namespace_fail_safe.html#aaa892a39d906f23cde91a964cf39827b", null ],
-    [ "FailSafe::isDirective", "namespace_fail_safe.html#a8b446ea7964c009473b0157159db2bfd", null ],
+    [ "FailSafe::isClause", "namespace_fail_safe.html#abc17db08be6db82e855c1aef78e3f576", null ],
+    [ "FailSafe::isDirective", "namespace_fail_safe.html#a740168fc4c4f73e0444828735e215ae9", null ],
     [ "FailSafe::parse_directives_to_attributes", "namespace_fail_safe.html#a0eaa2b3d1d4563a69459c298c762655c", null ],
-    [ "FailSafe::parse_fail_safe_directive", "namespace_fail_safe.html#a7096021714b165207673acd057785c85", null ],
+    [ "FailSafe::parse_fail_safe_directive", "namespace_fail_safe.html#a95961adcbc25253bc51aa9a77e921928", null ],
     [ "FailSafe::process_fail_safe_directives", "namespace_fail_safe.html#a2d2f06fd84f115aa8c6b349544880688", null ],
-    [ "FailSafe::removeAttribute", "namespace_fail_safe.html#a850d43664e8ae1a3f03042a5930f441d", null ],
-    [ "FailSafe::toString", "namespace_fail_safe.html#ac5c4574e3fcfe8314397a36b603e353a", null ]
+    [ "FailSafe::removeAttribute", "namespace_fail_safe.html#a5ba2b94017c9c44f3aac615244f90cc3", null ],
+    [ "FailSafe::toString", "namespace_fail_safe.html#a376f1d434b37cc0b129badb814a12c6a", null ]
 ];

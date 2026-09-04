@@ -145,7 +145,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function to search the input dir for any ada sources files (files that end in .adb or .ads), and add them to ada_files. </p>
-<p>Searches a directory for Ada source files and populates a vector with their paths. </p>
+<p>Searches a directory for Ada source files and populates a vector with their paths.</p>
+<p>This function iterates through the contents of the specified directory using a directory iterator. It inspects each entry to determine if it is a regular file and checks if the file extension matches the Ada source file patterns, specifically ".adb" (Ada body) or ".ads" (Ada specification). Any matching file paths found are appended to the provided vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td><a class="el" href="class_a.html">A</a> string representing the path to the directory to be searched. </td></tr>
+    <tr><td class="paramname">ada_files</td><td><a class="el" href="class_a.html">A</a> reference to a vector of strings where the paths of discovered Ada files will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> directory path provided in <span class="tt">dir</span> must exist and be accessible by the current process. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">ada_files</span> vector will contain the full paths of all files ending in .adb or .ads found within the specified directory. Note that existing elements in <span class="tt">ada_files</span> are preserved.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function only searches the top-level directory provided and does not perform a recursive search into subdirectories. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt">boostfs</span> library for filesystem operations and directory iteration. </dd></dl>
 
 </div>
 </div>
@@ -174,7 +187,28 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Scans an Ada compilation unit for dependencies and recursively discovers related compilation units. </p>
-<p>Checks for any compilation units required by the given lal_root If found, additional units are added to comp_units, and the function is called recursively on the new units Checks the prelude for ada_with_clause &amp; the body for ada_subunit </p>
+<p>Checks for any compilation units required by the given lal_root If found, additional units are added to comp_units, and the function is called recursively on the new units Checks the prelude for ada_with_clause &amp; the body for ada_subunit</p>
+<p>This function performs a deep traversal of the Ada dependency graph starting from a root compilation unit. It identifies additional compilation units to be analyzed by inspecting three specific areas:</p><ol type="1">
+<li><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> fully qualified name of the current unit (checking for parent units in a hierarchical package structure).</li>
+<li><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> 'with' clauses in the prelude of the current unit (identifying imported packages).</li>
+<li><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> body of the current unit (checking if the unit is a subunit of a parent package).</li>
+</ol>
+<p>For each identified dependency, the function attempts to resolve both the specification (.ads) and the body (.adb) versions, unless the package belongs to a system namespace (e.g., starting with 'ada.', 'gnat.', or 'system.'). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a recursive approach to ensure that all transitive dependencies are discovered and added to the storage vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lal_root</td><td><a class="el" href="class_a.html">A</a> pointer to the root Ada base entity representing the compilation unit currently being inspected. </td></tr>
+    <tr><td class="paramname">ctx</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Ada analysis context used to provide and resolve analysis units. </td></tr>
+    <tr><td class="paramname">comp_units_storage</td><td><a class="el" href="class_a.html">A</a> vector of Ada base entities used to store the discovered compilation units. This vector is updated in-place as new units are found.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">lal_root</span> pointer must be a valid, non-null pointer to an <span class="tt">ada_base_entity</span>. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">ctx</span> reference must be a valid, initialized <span class="tt">ada_analysis_context</span>. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">comp_units_storage</span> vector will contain the <span class="tt">lal_root</span>'s dependencies, including any transitive dependencies found during the recursive traversal.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function logs diagnostics and information messages to the <span class="tt"><a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ae0aea78c78497bc557964dbfab151d93">Libadalang_ROSE_Translation::mlog</a></span> stream. </dd>
+<dd>
+If a unit is found to have diagnostics (errors/warnings) during initialization, the function logs the diagnostic details and skips adding that unit to the storage. </dd></dl>
 
 </div>
 </div>

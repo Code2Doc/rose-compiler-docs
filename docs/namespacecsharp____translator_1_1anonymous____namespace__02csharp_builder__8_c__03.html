@@ -156,14 +156,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a1931a199461859c71247386c41a30a70 template"><td class="memItemLeft">U&#160;</td><td class="memItemRight"><a class="el" href="#a1931a199461859c71247386c41a30a70">as</a> (V val)</td></tr>
 <tr class="memdesc:a1931a199461859c71247386c41a30a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a value of one type to another type using stringstream.  <br /></td></tr>
 <tr class="memitem:a08b91d77276c7a7143222e4a62ac5006" id="r_a08b91d77276c7a7143222e4a62ac5006"><td class="memTemplParams" colspan="2">template&lt;class SageSymbol, class SageDecl&gt; </td></tr>
-<tr class="memitem:a08b91d77276c7a7143222e4a62ac5006 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a08b91d77276c7a7143222e4a62ac5006">link_decls</a> (SageSymbol &amp;funcsy, SageDecl &amp;<a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>)</td></tr>
+<tr class="memitem:a08b91d77276c7a7143222e4a62ac5006 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a08b91d77276c7a7143222e4a62ac5006">link_decls</a> (SageSymbol &amp;funcsy, SageDecl &amp;<a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>)</td></tr>
 <tr class="memdesc:a08b91d77276c7a7143222e4a62ac5006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links a symbol's declaration to its defining declaration.  <br /></td></tr>
 <tr class="memitem:a9aa60926f333b7219d68967db2ffb66b" id="r_a9aa60926f333b7219d68967db2ffb66b"><td class="memItemLeft">SgBasicBlock &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9aa60926f333b7219d68967db2ffb66b">mkBasicBlock</a> ()</td></tr>
 <tr class="memdesc:a9aa60926f333b7219d68967db2ffb66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a new basic block.  <br /></td></tr>
 <tr class="memitem:abf9fdd85ecb667e18ef6f264eb586419" id="r_abf9fdd85ecb667e18ef6f264eb586419"><td class="memItemLeft">SgFunctionDefinition &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abf9fdd85ecb667e18ef6f264eb586419">mkFunctionDefinition</a> (SgFunctionDeclaration &amp;dcl)</td></tr>
 <tr class="memdesc:abf9fdd85ecb667e18ef6f264eb586419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and initializes a new function definition associated with a given declaration.  <br /></td></tr>
 <tr class="memitem:a2b3cbb3ffde12ca2bb1107ac440fb2be" id="r_a2b3cbb3ffde12ca2bb1107ac440fb2be"><td class="memTemplParams" colspan="2">template&lt;class SageSymbol, class SageDecl&gt; </td></tr>
-<tr class="memitem:a2b3cbb3ffde12ca2bb1107ac440fb2be template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b3cbb3ffde12ca2bb1107ac440fb2be">promoteToDefinition</a> (SageDecl &amp;<a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>)</td></tr>
+<tr class="memitem:a2b3cbb3ffde12ca2bb1107ac440fb2be template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b3cbb3ffde12ca2bb1107ac440fb2be">promoteToDefinition</a> (SageDecl &amp;<a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>)</td></tr>
 <tr class="memdesc:a2b3cbb3ffde12ca2bb1107ac440fb2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Promotes a declaration to a full function definition.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
@@ -404,7 +404,7 @@ template&lt;class SageSymbol, class SageDecl&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">funcsy</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageSymbol representing the function or entity whose declaration needs to be linked. </td></tr>
-    <tr><td class="paramname"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageDecl object that serves as the defining declaration.</td></tr>
+    <tr><td class="paramname"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageDecl object that serves as the defining declaration.</td></tr>
   </table>
   </dd>
 </dl>
@@ -543,7 +543,7 @@ template&lt;class R, R *(*)(SgExpression *, SgExpression *) mkexp&gt; </div>
 <p>This function serves as a factory method to instantiate a new basic block within the current semantic graph context. It utilizes the internal builder mechanism to allocate the block and ensures the returned reference is properly initialized.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> underlying semantic graph builder must be properly initialized and capable of allocating new basic blocks.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new, valid SgBasicBlock instance is created and returned.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses <a class="el" href="namespacesg.html#a588cba5cd179ad2bcebc8d2f3184323f" title="dereferences an object (= checked dereference in debug mode)">sg::deref</a> to handle the pointer returned by <a class="el" href="namespace_sage_builder.html#a93b473b2e1775d02e3634e82f907341d" title="Build a SgBasicBlock, setting file info internally.">sb::buildBasicBlock</a>, ensuring a safe reference is provided to the caller. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses <a class="el" href="namespacesg.html#a588cba5cd179ad2bcebc8d2f3184323f" title="dereferences an object (= checked dereference in debug mode)">sg::deref</a> to handle the pointer returned by <a class="el" href="namespace_sage_builder.html#ade62c9001a859ecf8a4884fcf80742b9" title="Build a SgBasicBlock, setting file info internally.">sb::buildBasicBlock</a>, ensuring a safe reference is provided to the caller. </dd></dl>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ template&lt;class R, R *(*)(SgExpression *, SgExpression *) mkexp&gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a function call expression from a callee and a list of arguments. </p>
-<p>This function constructs a new function call expression by taking a callee expression and an expression representing the list of arguments. It performs a type assertion to ensure that the <span class="tt">args</span> parameter is of type <span class="tt">SgExprListExp</span> before delegating the construction to the <span class="tt"><a class="el" href="namespace_sage_builder.html#ab8482531a6fbdf463e218806ce756e4a" title="Build a function call expression.">sb::buildFunctionCallExp</a></span> utility.</p>
+<p>This function constructs a new function call expression by taking a callee expression and an expression representing the list of arguments. It performs a type assertion to ensure that the <span class="tt">args</span> parameter is of type <span class="tt">SgExprListExp</span> before delegating the construction to the <span class="tt"><a class="el" href="namespace_sage_builder.html#a32638a82cbc8feb5c2f06388d013cba9" title="Build a function call expression.">sb::buildFunctionCallExp</a></span> utility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callee</td><td>An expression representing the function or callable being invoked. </td></tr>
@@ -860,18 +860,18 @@ template&lt;class SageSymbol, class SageDecl&gt; </div>
 <p>This function transforms a given declaration into a definition by linking it to its underlying symbol, setting the declaration as its own defining declaration, and removing the forward declaration status. It initializes the structural components of a function definition, specifically creating a new function definition object and an associated basic block to serve as the function body.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration object that is to be promoted to a definition.</td></tr>
+    <tr><td class="paramname"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration object that is to be promoted to a definition.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> must be a valid <span class="tt">SageDecl</span> object that can be associated with a <span class="tt">SageSymbol</span>. </dd>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> must be a valid <span class="tt">SageDecl</span> object that can be associated with a <span class="tt">SageSymbol</span>. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> symbol retrieved from the symbol table via <span class="tt">search_for_symbol_from_symbol_table()</span> must be of type <span class="tt">SageSymbol</span>. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> object is no longer marked as a forward declaration. </dd>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> object is no longer marked as a forward declaration. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> object's defining declaration is set to itself. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span> object's defining declaration is set to itself. </dd>
 <dd>
-<a class="el" href="class_a.html">A</a> new <span class="tt">SgFunctionDefinition</span> is created and linked to <span class="tt"><a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span>. </dd>
+<a class="el" href="class_a.html">A</a> new <span class="tt">SgFunctionDefinition</span> is created and linked to <span class="tt"><a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func</a></span>. </dd>
 <dd>
 <a class="el" href="class_a.html">A</a> new <span class="tt">SgBasicBlock</span> is created and assigned as the body of the function definition.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="sage_generic_8h.html#a9854e1a56a82b9eab39801223186ee3f">SG_ASSERT_TYPE</a></span> to validate the symbol type, which may trigger an assertion failure if the underlying symbol is not a <span class="tt">SageSymbol</span>. </dd></dl>

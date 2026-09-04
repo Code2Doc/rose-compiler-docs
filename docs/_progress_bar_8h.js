@@ -3,8 +3,8 @@ var _progress_bar_8h =
     [ "Sawyer::ProgressBarImpl", "class_sawyer_1_1_progress_bar_impl.html", "class_sawyer_1_1_progress_bar_impl" ],
     [ "Sawyer::ProgressBar&lt; T, S &gt;", "class_sawyer_1_1_progress_bar.html", "class_sawyer_1_1_progress_bar" ],
     [ "Sawyer::ProgressBar&lt; T, S &gt;::Position", "struct_sawyer_1_1_progress_bar_1_1_position.html", "struct_sawyer_1_1_progress_bar_1_1_position" ],
-    [ "Sawyer::ProgressBarSettings::initialDelay", "namespace_sawyer_1_1_progress_bar_settings.html#a513c4505181503d6e760fee7c28e03f5", null ],
-    [ "Sawyer::ProgressBarSettings::initialDelay", "namespace_sawyer_1_1_progress_bar_settings.html#ae70ff572f50a83f3e0321534f93c3e0e", null ],
-    [ "Sawyer::ProgressBarSettings::minimumUpdateInterval", "namespace_sawyer_1_1_progress_bar_settings.html#ad5c249a992c3a0e47aba57363ff265dc", null ],
-    [ "Sawyer::ProgressBarSettings::minimumUpdateInterval", "namespace_sawyer_1_1_progress_bar_settings.html#a9227ffabcc9cdcfa03cffe35bd1a636d", null ]
+    [ "Sawyer::ProgressBarSettings::initialDelay", "namespace_sawyer_1_1_progress_bar_settings.html#aa809435b1244c17eb033d67f5b512f21", null ],
+    [ "Sawyer::ProgressBarSettings::initialDelay", "namespace_sawyer_1_1_progress_bar_settings.html#aeae72338eeb90761416b43fa8a8b518c", null ],
+    [ "Sawyer::ProgressBarSettings::minimumUpdateInterval", "namespace_sawyer_1_1_progress_bar_settings.html#a684c4df199309ee61f8df36556174255", null ],
+    [ "Sawyer::ProgressBarSettings::minimumUpdateInterval", "namespace_sawyer_1_1_progress_bar_settings.html#ad291cfa8d51e18be4fed7ef2c6b33bea", null ]
 ];

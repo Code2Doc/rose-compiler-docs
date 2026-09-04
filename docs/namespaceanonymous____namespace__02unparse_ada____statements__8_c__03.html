@@ -402,7 +402,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dispatches a unit definition operation for a given declaration statement. </p>
-<p>This function serves as a dispatcher for the UnitDefinition operation. It utilizes the <a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> mechanism to apply the UnitDefinition visitor pattern to the provided SgDeclarationStatement node. This is typically used during the transformation or analysis phase of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) to identify or process scope boundaries defined by unit declarations.</p>
+<p>This function serves as a dispatcher for the UnitDefinition operation. It utilizes the <a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> mechanism to apply the UnitDefinition visitor pattern to the provided SgDeclarationStatement node. This is typically used during the transformation or analysis phase of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) to identify or process scope boundaries defined by unit declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration statement node that is to be processed for unit definition.</td></tr>
@@ -511,7 +511,7 @@ template&lt;class UnparserT&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> UseClauseSyntaxResult object containing the results of the syntax analysis.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>n must not be a null pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns a result object representing the parsed syntax of the use clause, without modifying the original statement.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> mechanism, which requires the UseClauseSyntax visitor to be properly implemented and registered. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the <a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> mechanism, which requires the UseClauseSyntax visitor to be properly implemented and registered. </dd></dl>
 
 </div>
 </div>

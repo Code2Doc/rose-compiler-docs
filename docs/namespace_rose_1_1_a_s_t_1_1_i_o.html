@@ -93,7 +93,7 @@ $(function(){initNavTree('namespace_rose_1_1_a_s_t_1_1_i_o.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_a_s_t_1_1_i_o.html" title="Auto-generated documentation for the Rose::AST::IO namespace.">Rose::AST::IO</a> namespace.  
+<p>Function used to load, merge, prune, link, delete.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -109,14 +109,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a84d557728c0e38ed2e3f03d1c789fd71" id="r_a84d557728c0e38ed2e3f03d1c789fd71"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a84d557728c0e38ed2e3f03d1c789fd71">ordered_delete</a> (std::vector&lt; SgNode * &gt; const &amp;deletes)</td></tr>
-<tr class="memdesc:a84d557728c0e38ed2e3f03d1c789fd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a collection of SgNode pointers in a top-down order to prevent double deletion.  <br /></td></tr>
-<tr class="memitem:ad381296b9da841e9c2aaca003c0972ad" id="r_ad381296b9da841e9c2aaca003c0972ad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad381296b9da841e9c2aaca003c0972ad">clear</a> ()</td></tr>
-<tr class="memdesc:ad381296b9da841e9c2aaca003c0972ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the memory pool of all nodes.  <br /></td></tr>
-<tr class="memitem:a370c8fbcf4cb09bd0862f6ce6c42668a" id="r_a370c8fbcf4cb09bd0862f6ce6c42668a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a370c8fbcf4cb09bd0862f6ce6c42668a">free</a> ()</td></tr>
-<tr class="memdesc:a370c8fbcf4cb09bd0862f6ce6c42668a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all memory allocated by ROSE.  <br /></td></tr>
-<tr class="memitem:ab931adab8aee8c9013f651fc8ae061bc" id="r_ab931adab8aee8c9013f651fc8ae061bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab931adab8aee8c9013f651fc8ae061bc">prune</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:ab931adab8aee8c9013f651fc8ae061bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes nodes that are not reachable from the project node.  <br /></td></tr>
+<tr class="memitem:a899494b37b6651cbe241431656a2d1d5" id="r_a899494b37b6651cbe241431656a2d1d5"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a899494b37b6651cbe241431656a2d1d5">load</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>, std::list&lt; std::string &gt; const &amp;filepaths)</td></tr>
+<tr class="memdesc:a899494b37b6651cbe241431656a2d1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load ASTs that have been saved to files.  <br /></td></tr>
+<tr class="memitem:ab54f3e23508a9bfea078232412302b59" id="r_ab54f3e23508a9bfea078232412302b59"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ab54f3e23508a9bfea078232412302b59">merge</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:ab54f3e23508a9bfea078232412302b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs sharing of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes followed by linking accross translation units.  <br /></td></tr>
+<tr class="memitem:a2d9503c85c20d13bff258c69e7af55a9" id="r_a2d9503c85c20d13bff258c69e7af55a9"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a2d9503c85c20d13bff258c69e7af55a9">share</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:a2d9503c85c20d13bff258c69e7af55a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eliminates duplicated nodes from the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.  <br /></td></tr>
+<tr class="memitem:ad7ce3892a6d2a867d9f2368d3dfe8001" id="r_ad7ce3892a6d2a867d9f2368d3dfe8001"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ad7ce3892a6d2a867d9f2368d3dfe8001">prune</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:ad7ce3892a6d2a867d9f2368d3dfe8001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes nodes that are not reachable from the project node.  <br /></td></tr>
+<tr class="memitem:a5956a86e9f22f5be752384d8487c1f91" id="r_a5956a86e9f22f5be752384d8487c1f91"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a5956a86e9f22f5be752384d8487c1f91">link</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:a5956a86e9f22f5be752384d8487c1f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links declarations from multiple translation units.  <br /></td></tr>
+<tr class="memitem:aaedb5808e4a470a8507e061b482e0d15" id="r_aaedb5808e4a470a8507e061b482e0d15"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#aaedb5808e4a470a8507e061b482e0d15">clear</a> ()</td></tr>
+<tr class="memdesc:aaedb5808e4a470a8507e061b482e0d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the memory pool of all nodes.  <br /></td></tr>
+<tr class="memitem:adfcf6670d4822fc6bd5f6579933a9667" id="r_adfcf6670d4822fc6bd5f6579933a9667"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#adfcf6670d4822fc6bd5f6579933a9667">free</a> ()</td></tr>
+<tr class="memdesc:adfcf6670d4822fc6bd5f6579933a9667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all memory allocated by ROSE.  <br /></td></tr>
+<tr class="memitem:aa3bc9617d44107e898656054d0aea0b2" id="r_aa3bc9617d44107e898656054d0aea0b2"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aa3bc9617d44107e898656054d0aea0b2">ordered_delete</a> (std::vector&lt; SgNode * &gt; const &amp;deletes)</td></tr>
+<tr class="memdesc:aa3bc9617d44107e898656054d0aea0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a collection of SgNode pointers in a top-down order to prevent double deletion.  <br /></td></tr>
 <tr class="memitem:a378bffd61d43af5c69792d823eae8346" id="r_a378bffd61d43af5c69792d823eae8346"><td class="memTemplParams" colspan="2">template&lt;typename DeclT&gt; </td></tr>
 <tr class="memitem:a378bffd61d43af5c69792d823eae8346 template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a378bffd61d43af5c69792d823eae8346">has_file_visibility</a> (DeclT *decl)</td></tr>
 <tr class="memdesc:a378bffd61d43af5c69792d823eae8346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a declaration has file-local visibility.  <br /></td></tr>
@@ -128,49 +136,41 @@ Functions</h2></td></tr>
 <tr class="memdesc:a45f3b7b87ee9c5d43682456480fb6204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a declaration object into a formatted string representation.  <br /></td></tr>
 <tr class="memitem:a030c8834320504df30554dc1eaa2bccb" id="r_a030c8834320504df30554dc1eaa2bccb"><td class="memTemplParams" colspan="2">template&lt;typename LinkT&gt; </td></tr>
 <tr class="memitem:a030c8834320504df30554dc1eaa2bccb template"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a030c8834320504df30554dc1eaa2bccb">registerSymbolsForSubstitution</a> (typename LinkT::sym_t *refsym, typename LinkT::desc_t const &amp;refdesc, typename LinkT::descmap_t const &amp;descmap, std::set&lt; typename LinkT::sym_t * &gt; const &amp;oldsyms, std::map&lt; SgNode *, SgNode * &gt; &amp;node_repl_map, std::set&lt; <a class="el" href="class_sg_symbol.html">SgSymbol</a> * &gt; &amp;sym_del_set, std::set&lt; <a class="el" href="class_sg_type.html">SgType</a> * &gt; &amp;)</td></tr>
-<tr class="memdesc:a030c8834320504df30554dc1eaa2bccb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="_p_tracer_8h.html#a6fc1a95e45e228e096e24df159a6ec40">Registers</a> symbols and their associated declarations for substitution during a transformation process.  <br /></td></tr>
 <tr class="memitem:a1b34bf756f8e4a6164a19005cc32302d" id="r_a1b34bf756f8e4a6164a19005cc32302d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1b34bf756f8e4a6164a19005cc32302d">createSymbolAlias</a> (SgGlobal *gsaf, <a class="el" href="class_sg_symbol.html">SgSymbol</a> *refsym, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:a1b34bf756f8e4a6164a19005cc32302d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an alias symbol in a specified scope that points to a reference symbol.  <br /></td></tr>
-<tr class="memitem:a5956a86e9f22f5be752384d8487c1f91" id="r_a5956a86e9f22f5be752384d8487c1f91"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5956a86e9f22f5be752384d8487c1f91">link</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a5956a86e9f22f5be752384d8487c1f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links declarations from multiple translation units.  <br /></td></tr>
-<tr class="memitem:a9212cdfec77db8e724a12e4726ceaa69" id="r_a9212cdfec77db8e724a12e4726ceaa69"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9212cdfec77db8e724a12e4726ceaa69">mergeSymbolTable</a> (SgSymbolTable *gst, SgSymbolTable *st)</td></tr>
-<tr class="memdesc:a9212cdfec77db8e724a12e4726ceaa69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the contents of one symbol table into another.  <br /></td></tr>
-<tr class="memitem:aaf3f131f1449705172f086289e589fd1" id="r_aaf3f131f1449705172f086289e589fd1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaf3f131f1449705172f086289e589fd1">mergeTypeSymbolTable</a> (SgTypeTable *gtt, SgTypeTable *tt)</td></tr>
-<tr class="memdesc:aaf3f131f1449705172f086289e589fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the contents of one type symbol table into another.  <br /></td></tr>
-<tr class="memitem:a999b5530b843df0fc5dce9d237f384ef" id="r_a999b5530b843df0fc5dce9d237f384ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a999b5530b843df0fc5dce9d237f384ef">mergeFunctionTypeSymbolTable</a> (SgFunctionTypeTable *gftt, SgFunctionTypeTable *ftt)</td></tr>
-<tr class="memdesc:a999b5530b843df0fc5dce9d237f384ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the contents of one function type table into another.  <br /></td></tr>
-<tr class="memitem:a96e866ec26a8719b8732ce70a8b6f077" id="r_a96e866ec26a8719b8732ce70a8b6f077"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a96e866ec26a8719b8732ce70a8b6f077">mergeFileIDs</a> (std::map&lt; int, std::string &gt; const &amp;f2n, std::map&lt; std::string, int &gt; const &amp;n2f, std::map&lt; int, std::string &gt; &amp;gf2n, std::map&lt; std::string, int &gt; &amp;gn2f, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> start_node)</td></tr>
-<tr class="memdesc:a96e866ec26a8719b8732ce70a8b6f077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges and reindexes file identifiers within global and local mapping structures and updates Sg_File_Info objects.  <br /></td></tr>
-<tr class="memitem:a899494b37b6651cbe241431656a2d1d5" id="r_a899494b37b6651cbe241431656a2d1d5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a899494b37b6651cbe241431656a2d1d5">load</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>, std::list&lt; std::string &gt; const &amp;filepaths)</td></tr>
-<tr class="memdesc:a899494b37b6651cbe241431656a2d1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load ASTs that have been saved to files.  <br /></td></tr>
-<tr class="memitem:ab54f3e23508a9bfea078232412302b59" id="r_ab54f3e23508a9bfea078232412302b59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab54f3e23508a9bfea078232412302b59">merge</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:ab54f3e23508a9bfea078232412302b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs sharing of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes followed by linking accross translation units.  <br /></td></tr>
-<tr class="memitem:a6b890e2e2fff1188da29820101c99856" id="r_a6b890e2e2fff1188da29820101c99856"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a6b890e2e2fff1188da29820101c99856">declaration_position</a> (SgLocatedNode *const lnode)</td></tr>
-<tr class="memdesc:a6b890e2e2fff1188da29820101c99856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a unique string identifier representing the source code position of a node.  <br /></td></tr>
-<tr class="memitem:ab7875482ac8e01dc315f754b61888af5" id="r_ab7875482ac8e01dc315f754b61888af5"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab7875482ac8e01dc315f754b61888af5">declaration_is_defining</a> (SgDeclarationStatement *const declstmt)</td></tr>
-<tr class="memdesc:ab7875482ac8e01dc315f754b61888af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a given declaration statement includes a definition.  <br /></td></tr>
-<tr class="memitem:ab4e95fea8f262c810a6fd23851c4120a" id="r_ab4e95fea8f262c810a6fd23851c4120a"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab4e95fea8f262c810a6fd23851c4120a">generate_sharing_identifier</a> (SgNode *const <a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ab4e95fea8f262c810a6fd23851c4120a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a unique string identifier for sharing purposes based on an SgNode.  <br /></td></tr>
-<tr class="memitem:a2d9503c85c20d13bff258c69e7af55a9" id="r_a2d9503c85c20d13bff258c69e7af55a9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2d9503c85c20d13bff258c69e7af55a9">share</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a2d9503c85c20d13bff258c69e7af55a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eliminates duplicated nodes from the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.  <br /></td></tr>
+<tr class="memitem:ab1704cd631770ffc6e7e357058ce6856" id="r_ab1704cd631770ffc6e7e357058ce6856"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab1704cd631770ffc6e7e357058ce6856">mergeSymbolTable</a> (SgSymbolTable *gst, SgSymbolTable *st)</td></tr>
+<tr class="memdesc:ab1704cd631770ffc6e7e357058ce6856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the contents of one symbol table into another.  <br /></td></tr>
+<tr class="memitem:aaeaa32635d8d6a1684eae9ca733a89f1" id="r_aaeaa32635d8d6a1684eae9ca733a89f1"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aaeaa32635d8d6a1684eae9ca733a89f1">mergeTypeSymbolTable</a> (SgTypeTable *gtt, SgTypeTable *tt)</td></tr>
+<tr class="memdesc:aaeaa32635d8d6a1684eae9ca733a89f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the contents of one type symbol table into another.  <br /></td></tr>
+<tr class="memitem:a07a305519b1633b538934b70fb84cf5e" id="r_a07a305519b1633b538934b70fb84cf5e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a07a305519b1633b538934b70fb84cf5e">mergeFunctionTypeSymbolTable</a> (SgFunctionTypeTable *gftt, SgFunctionTypeTable *ftt)</td></tr>
+<tr class="memdesc:a07a305519b1633b538934b70fb84cf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the contents of one function type table into another.  <br /></td></tr>
+<tr class="memitem:a457d01ff9ee224807007750f999b14da" id="r_a457d01ff9ee224807007750f999b14da"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a457d01ff9ee224807007750f999b14da">mergeFileIDs</a> (std::map&lt; int, std::string &gt; const &amp;f2n, std::map&lt; std::string, int &gt; const &amp;, std::map&lt; int, std::string &gt; &amp;gf2n, std::map&lt; std::string, int &gt; &amp;gn2f, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> start_node)</td></tr>
+<tr class="memdesc:a457d01ff9ee224807007750f999b14da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges and reindexes file identifiers within global and local mapping structures and updates Sg_File_Info objects.  <br /></td></tr>
+<tr class="memitem:ab90fe54da972005777be6aed51a4b9b8" id="r_ab90fe54da972005777be6aed51a4b9b8"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab90fe54da972005777be6aed51a4b9b8">declaration_position</a> (SgLocatedNode *const lnode)</td></tr>
+<tr class="memdesc:ab90fe54da972005777be6aed51a4b9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a unique string identifier representing the source code position of a node.  <br /></td></tr>
+<tr class="memitem:a2bced605e1804209cbbe96edd387c49d" id="r_a2bced605e1804209cbbe96edd387c49d"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2bced605e1804209cbbe96edd387c49d">declaration_is_defining</a> (SgDeclarationStatement *const declstmt)</td></tr>
+<tr class="memdesc:a2bced605e1804209cbbe96edd387c49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a given declaration statement includes a definition.  <br /></td></tr>
+<tr class="memitem:ab742962b824f6b59a26652346aa7c842" id="r_ab742962b824f6b59a26652346aa7c842"><td class="memItemLeft">static std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab742962b824f6b59a26652346aa7c842">generate_sharing_identifier</a> (SgNode *const <a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:ab742962b824f6b59a26652346aa7c842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a unique string identifier for sharing purposes based on an SgNode.  <br /></td></tr>
 <tr class="memitem:a52e41405ad53ee4923fd8f9f5d335747" id="r_a52e41405ad53ee4923fd8f9f5d335747"><td class="memItemLeft">template&lt;&gt; </td></tr>
 <tr class="memitem:a52e41405ad53ee4923fd8f9f5d335747 template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a52e41405ad53ee4923fd8f9f5d335747">has_file_visibility&lt; SgInitializedName &gt;</a> (SgInitializedName *iname)</td></tr>
 <tr class="memdesc:a52e41405ad53ee4923fd8f9f5d335747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if an initialized name has file-local visibility.  <br /></td></tr>
 <tr class="memitem:a030c8834320504df30554dc1eaa2bccb" id="r_a030c8834320504df30554dc1eaa2bccb"><td class="memTemplParams" colspan="2">template&lt;typename LinkT&gt; </td></tr>
 <tr class="memitem:a030c8834320504df30554dc1eaa2bccb template"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a030c8834320504df30554dc1eaa2bccb">registerSymbolsForSubstitution</a> (typename LinkT::sym_t *refsym, typename LinkT::desc_t const &amp;refdesc, typename LinkT::descmap_t const &amp;descmap, std::set&lt; typename LinkT::sym_t * &gt; const &amp;oldsyms, std::map&lt; SgNode *, SgNode * &gt; &amp;node_repl_map, std::set&lt; <a class="el" href="class_sg_symbol.html">SgSymbol</a> * &gt; &amp;sym_del_set, std::set&lt; <a class="el" href="class_sg_type.html">SgType</a> * &gt; &amp;)</td></tr>
+<tr class="memdesc:a030c8834320504df30554dc1eaa2bccb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="_p_tracer_8h.html#a6fc1a95e45e228e096e24df159a6ec40">Registers</a> symbols and their associated declarations for substitution during a transformation process.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_a_s_t_1_1_i_o.html" title="Auto-generated documentation for the Rose::AST::IO namespace.">Rose::AST::IO</a> namespace. </p>
-<p>Function used to load, merge, prune, link, delete. </p>
+<div class="textblock"><p>Function used to load, merge, prune, link, delete. </p>
+<p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_a_s_t_1_1_i_o.html" title="Function used to load, merge, prune, link, delete.">Rose::AST::IO</a> namespace. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ad381296b9da841e9c2aaca003c0972ad" name="ad381296b9da841e9c2aaca003c0972ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad381296b9da841e9c2aaca003c0972ad">&#9670;&#160;</a></span>clear()</h2>
+<a id="aaedb5808e4a470a8507e061b482e0d15" name="aaedb5808e4a470a8507e061b482e0d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedb5808e4a470a8507e061b482e0d15">&#9670;&#160;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void Rose::AST::IO::clear </td>
+          <td class="memname">void Rose::AST::IO::clear </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 <p>Empties the memory pool of all nodes. </p>
 <p>Clears all allocated nodes and memory pools.</p>
 <p>This function performs a global cleanup of the ROSE environment by invoking the <a class="el" href="struct_rose_1_1_a_s_t_1_1_i_o_1_1_delete_all_node.html">DeleteAllNode</a> mechanism to traverse and delete all existing nodes in the system. Following the node deletion, it explicitly clears all memory pools managed by the AST_FILE_IO component to ensure no memory leaks persist.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system should be in a state where no further operations on existing <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes are required, as all nodes will be destroyed. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system should be in a state where no further operations on existing <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes are required, as all nodes will be destroyed. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>All nodes managed by <a class="el" href="struct_rose_1_1_a_s_t_1_1_i_o_1_1_delete_all_node.html">DeleteAllNode</a> are deleted, and all AST_FILE_IO memory pools are emptied.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Calling this function invalidates all existing pointers to nodes previously managed by the system. Use with extreme caution in multithreaded environments. </dd></dl>
 
@@ -259,11 +259,14 @@ template&lt;typename DeclT&gt; </div>
 
 </div>
 </div>
-<a id="ab7875482ac8e01dc315f754b61888af5" name="ab7875482ac8e01dc315f754b61888af5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7875482ac8e01dc315f754b61888af5">&#9670;&#160;</a></span>declaration_is_defining()</h2>
+<a id="a2bced605e1804209cbbe96edd387c49d" name="a2bced605e1804209cbbe96edd387c49d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bced605e1804209cbbe96edd387c49d">&#9670;&#160;</a></span>declaration_is_defining()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string Rose::AST::IO::declaration_is_defining </td>
@@ -272,6 +275,11 @@ template&lt;typename DeclT&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Determines if a given declaration statement includes a definition. </p>
@@ -289,11 +297,14 @@ template&lt;typename DeclT&gt; </div>
 
 </div>
 </div>
-<a id="a6b890e2e2fff1188da29820101c99856" name="a6b890e2e2fff1188da29820101c99856"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b890e2e2fff1188da29820101c99856">&#9670;&#160;</a></span>declaration_position()</h2>
+<a id="ab90fe54da972005777be6aed51a4b9b8" name="ab90fe54da972005777be6aed51a4b9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90fe54da972005777be6aed51a4b9b8">&#9670;&#160;</a></span>declaration_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string Rose::AST::IO::declaration_position </td>
@@ -302,10 +313,15 @@ template&lt;typename DeclT&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Generates a unique string identifier representing the source code position of a node. </p>
-<p>This function extracts file, line, and column information from a given SgLocatedNode and formats it into a standardized string identifier. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting string follows a specific pattern: _F[file_id]_L[line]_C[column]. This is useful for creating unique, human-readable, and machine-parseable tags for nodes in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<p>This function extracts file, line, and column information from a given SgLocatedNode and formats it into a standardized string identifier. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting string follows a specific pattern: _F[file_id]_L[line]_C[column]. This is useful for creating unique, human-readable, and machine-parseable tags for nodes in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lnode</td><td><a class="el" href="class_a.html">A</a> constant pointer to the SgLocatedNode whose position is to be retrieved.</td></tr>
@@ -321,14 +337,14 @@ template&lt;typename DeclT&gt; </div>
 
 </div>
 </div>
-<a id="a370c8fbcf4cb09bd0862f6ce6c42668a" name="a370c8fbcf4cb09bd0862f6ce6c42668a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a370c8fbcf4cb09bd0862f6ce6c42668a">&#9670;&#160;</a></span>free()</h2>
+<a id="adfcf6670d4822fc6bd5f6579933a9667" name="adfcf6670d4822fc6bd5f6579933a9667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfcf6670d4822fc6bd5f6579933a9667">&#9670;&#160;</a></span>free()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void Rose::AST::IO::free </td>
+          <td class="memname">void Rose::AST::IO::free </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -339,17 +355,20 @@ template&lt;typename DeclT&gt; </div>
 <p>Delete all memory allocated by ROSE. </p>
 <p>Releases all allocated resources and cleans up memory.</p>
 <p>This function performs a global cleanup of the application's memory state. It utilizes the <a class="el" href="struct_rose_1_1_a_s_t_1_1_i_o_1_1_delete_all_node.html">DeleteAllNode</a> mechanism to traverse and destroy all remaining nodes in the system, followed by the explicit deletion of all active memory pools managed by the AST_FILE_IO component.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>All operations involving the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> or node manipulation must be completed before calling this function. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>All operations involving the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> or node manipulation must be completed before calling this function. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>All nodes are destroyed, and all memory pools are deallocated. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system is left in a clean state, and further use of previously allocated nodes or memory pools will result in undefined behavior.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function should typically be called only during the application shutdown sequence. </dd></dl>
 
 </div>
 </div>
-<a id="ab4e95fea8f262c810a6fd23851c4120a" name="ab4e95fea8f262c810a6fd23851c4120a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4e95fea8f262c810a6fd23851c4120a">&#9670;&#160;</a></span>generate_sharing_identifier()</h2>
+<a id="ab742962b824f6b59a26652346aa7c842" name="ab742962b824f6b59a26652346aa7c842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab742962b824f6b59a26652346aa7c842">&#9670;&#160;</a></span>generate_sharing_identifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string Rose::AST::IO::generate_sharing_identifier </td>
@@ -358,10 +377,15 @@ template&lt;typename DeclT&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Generates a unique string identifier for sharing purposes based on an SgNode. </p>
-<p>This function implements a mechanism to create a canonical string representation for various ROSE SgNode types. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> goal is to identify nodes that represent the same underlying entity (e.g., declarations, types, or symbols) across different parts of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>.</p>
+<p>This function implements a mechanism to create a canonical string representation for various ROSE SgNode types. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> goal is to identify nodes that represent the same underlying entity (e.g., declarations, types, or symbols) across different parts of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a recursive approach to traverse through types, declarations, and symbols to find a base identity. For types, it attempts to resolve to the underlying declaration. For declaration statements, it constructs a string using the mangled name combined with the declaration position and whether it is a defining declaration. For symbols, it recursively calls itself on the symbol's basis.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -371,8 +395,8 @@ template&lt;typename DeclT&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the generated identifier. Returns an empty string if the node type is not considered shareable (e.g., certain template types, modifiers, or unhandled variants).</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>node must not be NULL. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string provides a unique key for the semantic entity represented by the node, allowing for identity comparison across different <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on ROSE-specific methods such as get_mangled_name(), get_mangled(), and <a class="el" href="#a6b890e2e2fff1188da29820101c99856" title="Generates a unique string identifier representing the source code position of a node.">declaration_position()</a>. </dd>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string provides a unique key for the semantic entity represented by the node, allowing for identity comparison across different <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on ROSE-specific methods such as get_mangled_name(), get_mangled(), and <a class="el" href="#ab90fe54da972005777be6aed51a4b9b8" title="Generates a unique string identifier representing the source code position of a node.">declaration_position()</a>. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ROSE_ASSERT to validate that the input node is not null. </dd></dl>
 
@@ -538,35 +562,35 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p>Load ASTs that have been saved to files. </p>
-<p>Loads multiple <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> files into a single SgProject.</p>
+<p>Loads multiple <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> files into a single SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td>the project to which the files will be happened </td></tr>
-    <tr><td class="paramname">filepaths</td><td>a std::list of path to <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> files</td></tr>
+    <tr><td class="paramname">filepaths</td><td>a std::list of path to <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> files</td></tr>
   </table>
   </dd>
 </dl>
-<p>This function happens the content of each <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> file to the given project. It is used by the command line option: -rose:ast:read. This function will leave the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> in an inconsistent state and Rose::AST::merge must be run to fix it.</p>
-<p>This function iterates through a list of file paths, reading each <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> from its respective file using the AST_FILE_IO interface. It merges the contents of these individual ASTs into the provided SgProject, ensuring that file lists, type tables, function type tables, and file ID mappings are unified. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles the temporary clearing of global type and function tables to allow the I/O process to load static data, then merges that data back into the project's global state.</p>
+<p>This function happens the content of each <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> file to the given project. It is used by the command line option: -rose:ast:read. This function will leave the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> in an inconsistent state and Rose::AST::merge must be run to fix it.</p>
+<p>This function iterates through a list of file paths, reading each <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> from its respective file using the AST_FILE_IO interface. It merges the contents of these individual ASTs into the provided SgProject, ensuring that file lists, type tables, function type tables, and file ID mappings are unified. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles the temporary clearing of global type and function tables to allow the I/O process to load static data, then merges that data back into the project's global state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject instance where the loaded <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> data will be merged. </td></tr>
-    <tr><td class="paramname">astfiles</td><td><a class="el" href="class_a.html">A</a> constant reference to a list of strings, where each string represents the path to an <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> file to be loaded.</td></tr>
+    <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject instance where the loaded <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> data will be merged. </td></tr>
+    <tr><td class="paramname">astfiles</td><td><a class="el" href="class_a.html">A</a> constant reference to a list of strings, where each string represents the path to an <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> file to be loaded.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project pointer must be valid and initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project will contain the merged file lists and metadata from all successfully loaded <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> files. Global type and function type tables are updated to reflect the merged state.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project will contain the merged file lists and metadata from all successfully loaded <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> files. Global type and function type tables are updated to reflect the merged state.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses if DEBUG__ROSE_AST_LOAD to perform additional logging for debugging purposes. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses if TAKE_MEMPOOL_SNAPSHOT to capture memory pool states before and after the loading process. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on AST_FILE_IO::startUp and AST_FILE_IO::reset to manage the lifecycle of the file I/O subsystem.</dd></dl>
-<p>This function iterates through a list of file paths, reading each <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> from its serialized format and merging it into the provided SgProject. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles the initialization of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> file I/O, manages the global type and function type tables by temporarily detaching them to prevent conflicts during the loading process, and merges the loaded file information (ID to name and name to ID mappings) into the existing project state. It also ensures that the file list of the target project is updated with the files from the loaded ASTs.</p>
+<p>This function iterates through a list of file paths, reading each <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> from its serialized format and merging it into the provided SgProject. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles the initialization of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> file I/O, manages the global type and function type tables by temporarily detaching them to prevent conflicts during the loading process, and merges the loaded file information (ID to name and name to ID mappings) into the existing project state. It also ensures that the file list of the target project is updated with the files from the loaded ASTs.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves:</p><ol type="1">
 <li>Capturing the current state of global symbol tables and file maps.</li>
-<li>Iterating through the provided list of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> file paths.</li>
-<li>Using AST_FILE_IO to read the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> data from disk.</li>
+<li>Iterating through the provided list of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> file paths.</li>
+<li>Using AST_FILE_IO to read the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> data from disk.</li>
 <li>Merging the newly loaded files into the target project's file list.</li>
 <li>Merging global type and function type tables using mergeTypeSymbolTable and mergeFunctionTypeSymbolTable.</li>
 <li>Updating the global file ID mappings.</li>
@@ -574,13 +598,13 @@ template&lt;&gt; </div>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject instance where the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> data will be loaded. </td></tr>
-    <tr><td class="paramname">astfiles</td><td><a class="el" href="class_a.html">A</a> constant reference to a list of strings, where each string represents the path to an <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> file to be loaded.</td></tr>
+    <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject instance where the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> data will be loaded. </td></tr>
+    <tr><td class="paramname">astfiles</td><td><a class="el" href="class_a.html">A</a> constant reference to a list of strings, where each string represents the path to an <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> file to be loaded.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project pointer must be valid and initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project will contain the merged contents of all valid <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> files provided in the astfiles list. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global type and function type tables and file maps will be updated to include information from the loaded files.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project will contain the merged contents of all valid <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> files provided in the astfiles list. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global type and function type tables and file maps will be updated to include information from the loaded files.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ifdef and if logic for debugging and memory snapshotting via define DEBUG__ROSE_AST_LOAD and define TAKE_MEMPOOL_SNAPSHOT. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the AST_FILE_IO utility for the actual disk I/O operations. </dd></dl>
@@ -602,8 +626,8 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Performs sharing of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes followed by linking accross translation units. </p>
-<p>Merges the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes within a given SgProject by sharing, pruning, and linking.</p>
+<p>Performs sharing of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes followed by linking accross translation units. </p>
+<p>Merges the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes within a given SgProject by sharing, pruning, and linking.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td></td></tr>
@@ -611,12 +635,12 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 <p>This function is mainly used after loading ASTs from files. It is used by the command line option: -rose:ast:read and -rose:ast:merge. It simply calls three functions in sequence: Rose::AST::share, Rose::AST::prune, and Rose::AST::link. It also provides statistics if <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> is in verbose &gt; 0.</p>
-<p>This function performs a structural optimization of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>) contained within the provided SgProject. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves three primary stages:</p><ol type="1">
+<p>This function performs a structural optimization of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>) contained within the provided SgProject. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves three primary stages:</p><ol type="1">
 <li>Sharing: Uses <a class="el" href="#a2d9503c85c20d13bff258c69e7af55a9" title="Eliminates duplicated nodes from the AST.">Rose::AST::IO::share</a> to identify and unify redundant nodes.</li>
-<li>Pruning: Uses <a class="el" href="#ab931adab8aee8c9013f651fc8ae061bc" title="Removes nodes that are not reachable from the project node.">Rose::AST::IO::prune</a> to remove unnecessary or unreachable nodes.</li>
+<li>Pruning: Uses <a class="el" href="#ad7ce3892a6d2a867d9f2368d3dfe8001" title="Removes nodes that are not reachable from the project node.">Rose::AST::IO::prune</a> to remove unnecessary or unreachable nodes.</li>
 <li>Linking: Uses <a class="el" href="#a5956a86e9f22f5be752384d8487c1f91" title="Links declarations from multiple translation units.">Rose::AST::IO::link</a> to reconstruct the necessary connections between the remaining nodes.</li>
 </ol>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function tracks the number of nodes before and after the operation to calculate various performance metrics, including compression percentage, space savings, merge factor, and merge efficiency. If ifdef ENABLE_plot_links is active, DOT files are generated to visualize the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> state at each stage. If ifdef TAKE_MEMPOOL_SNAPSHOT is active, memory pool snapshots are recorded.</p>
+<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function tracks the number of nodes before and after the operation to calculate various performance metrics, including compression percentage, space savings, merge factor, and merge efficiency. If ifdef ENABLE_plot_links is active, DOT files are generated to visualize the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> state at each stage. If ifdef TAKE_MEMPOOL_SNAPSHOT is active, memory pool snapshots are recorded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgProject instance to be merged and optimized.</td></tr>
@@ -624,18 +648,21 @@ template&lt;&gt; </div>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> project pointer must be valid and not null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgProject is modified in-place; redundant nodes are removed, and the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> structure is updated to reflect the merged state.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgProject is modified in-place; redundant nodes are removed, and the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> structure is updated to reflect the merged state.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> efficiency calculation uses a multiplier based on the number of files in the project to account for the complexity of merging multiple files. </dd>
 <dd>
 If ifdef DEBUG__ROSE_AST_MERGE is defined, the function prints debugging information regarding the project pointer address. </dd></dl>
 
 </div>
 </div>
-<a id="a96e866ec26a8719b8732ce70a8b6f077" name="a96e866ec26a8719b8732ce70a8b6f077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96e866ec26a8719b8732ce70a8b6f077">&#9670;&#160;</a></span>mergeFileIDs()</h2>
+<a id="a457d01ff9ee224807007750f999b14da" name="a457d01ff9ee224807007750f999b14da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457d01ff9ee224807007750f999b14da">&#9670;&#160;</a></span>mergeFileIDs()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Rose::AST::IO::mergeFileIDs </td>
@@ -663,6 +690,11 @@ If ifdef DEBUG__ROSE_AST_MERGE is defined, the function prints debugging informa
           <td class="paramtype"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a></td>          <td class="paramname"><span class="paramname"><em>start_node</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Merges and reindexes file identifiers within global and local mapping structures and updates Sg_File_Info objects. </p>
@@ -690,11 +722,14 @@ All Sg_File_Info objects in the pool from start_node to the total number of node
 
 </div>
 </div>
-<a id="a999b5530b843df0fc5dce9d237f384ef" name="a999b5530b843df0fc5dce9d237f384ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a999b5530b843df0fc5dce9d237f384ef">&#9670;&#160;</a></span>mergeFunctionTypeSymbolTable()</h2>
+<a id="a07a305519b1633b538934b70fb84cf5e" name="a07a305519b1633b538934b70fb84cf5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a305519b1633b538934b70fb84cf5e">&#9670;&#160;</a></span>mergeFunctionTypeSymbolTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Rose::AST::IO::mergeFunctionTypeSymbolTable </td>
@@ -707,6 +742,11 @@ All Sg_File_Info objects in the pool from start_node to the total number of node
           <td class="paramtype">SgFunctionTypeTable *</td>          <td class="paramname"><span class="paramname"><em>ftt</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Merges the contents of one function type table into another. </p>
@@ -724,11 +764,14 @@ All Sg_File_Info objects in the pool from start_node to the total number of node
 
 </div>
 </div>
-<a id="a9212cdfec77db8e724a12e4726ceaa69" name="a9212cdfec77db8e724a12e4726ceaa69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9212cdfec77db8e724a12e4726ceaa69">&#9670;&#160;</a></span>mergeSymbolTable()</h2>
+<a id="ab1704cd631770ffc6e7e357058ce6856" name="ab1704cd631770ffc6e7e357058ce6856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1704cd631770ffc6e7e357058ce6856">&#9670;&#160;</a></span>mergeSymbolTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Rose::AST::IO::mergeSymbolTable </td>
@@ -741,6 +784,11 @@ All Sg_File_Info objects in the pool from start_node to the total number of node
           <td class="paramtype">SgSymbolTable *</td>          <td class="paramname"><span class="paramname"><em>st</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Merges the contents of one symbol table into another. </p>
@@ -758,15 +806,18 @@ All Sg_File_Info objects in the pool from start_node to the total number of node
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> gst symbol table will contain all unique symbols that were present in st.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ROSE_ASSERT to ensure that the internal hash table of st is not NULL and that the values retrieved from the iterator are valid <a class="el" href="class_sg_symbol.html">SgSymbol</a> pointers. </dd>
 <dd>
-If a symbol key already exists in gst, the function does not overwrite the existing value, which may result in redundant symbols existing in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> pointing to the original entry. </dd></dl>
+If a symbol key already exists in gst, the function does not overwrite the existing value, which may result in redundant symbols existing in the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> pointing to the original entry. </dd></dl>
 
 </div>
 </div>
-<a id="aaf3f131f1449705172f086289e589fd1" name="aaf3f131f1449705172f086289e589fd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf3f131f1449705172f086289e589fd1">&#9670;&#160;</a></span>mergeTypeSymbolTable()</h2>
+<a id="aaeaa32635d8d6a1684eae9ca733a89f1" name="aaeaa32635d8d6a1684eae9ca733a89f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeaa32635d8d6a1684eae9ca733a89f1">&#9670;&#160;</a></span>mergeTypeSymbolTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Rose::AST::IO::mergeTypeSymbolTable </td>
@@ -779,6 +830,11 @@ If a symbol key already exists in gst, the function does not overwrite the exist
           <td class="paramtype">SgTypeTable *</td>          <td class="paramname"><span class="paramname"><em>tt</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Merges the contents of one type symbol table into another. </p>
@@ -796,11 +852,14 @@ If a symbol key already exists in gst, the function does not overwrite the exist
 
 </div>
 </div>
-<a id="a84d557728c0e38ed2e3f03d1c789fd71" name="a84d557728c0e38ed2e3f03d1c789fd71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84d557728c0e38ed2e3f03d1c789fd71">&#9670;&#160;</a></span>ordered_delete()</h2>
+<a id="aa3bc9617d44107e898656054d0aea0b2" name="aa3bc9617d44107e898656054d0aea0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3bc9617d44107e898656054d0aea0b2">&#9670;&#160;</a></span>ordered_delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Rose::AST::IO::ordered_delete </td>
@@ -809,6 +868,11 @@ If a symbol key already exists in gst, the function does not overwrite the exist
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Deletes a collection of SgNode pointers in a top-down order to prevent double deletion. </p>
@@ -827,14 +891,14 @@ If a symbol key already exists in gst, the function does not overwrite the exist
 
 </div>
 </div>
-<a id="ab931adab8aee8c9013f651fc8ae061bc" name="ab931adab8aee8c9013f651fc8ae061bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab931adab8aee8c9013f651fc8ae061bc">&#9670;&#160;</a></span>prune()</h2>
+<a id="ad7ce3892a6d2a867d9f2368d3dfe8001" name="ad7ce3892a6d2a867d9f2368d3dfe8001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ce3892a6d2a867d9f2368d3dfe8001">&#9670;&#160;</a></span>prune()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void Rose::AST::IO::prune </td>
+          <td class="memname">void Rose::AST::IO::prune </td>
           <td>(</td>
           <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>project</em></span></td><td>)</td>
           <td></td>
@@ -1012,7 +1076,7 @@ template&lt;typename LinkT&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Eliminates duplicated nodes from the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>. </p>
+<p>Eliminates duplicated nodes from the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>. </p>
 <p>Performs name-based sharing on the provided SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

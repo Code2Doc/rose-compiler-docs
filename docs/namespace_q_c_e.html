@@ -103,11 +103,11 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a63389c8b4ac28012738b6741793689ca" id="r_a63389c8b4ac28012738b6741793689ca"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a63389c8b4ac28012738b6741793689ca">fetchDataFile</a> (const QString &amp;file)</td></tr>
-<tr class="memdesc:a63389c8b4ac28012738b6741793689ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locates the absolute path of a data file by searching through predefined data paths.  <br /></td></tr>
+<tr class="memdesc:a63389c8b4ac28012738b6741793689ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Centralized access point to data fetching.  <br /></td></tr>
 <tr class="memitem:a68f5954ba370f0f5f7f579cc2187129d" id="r_a68f5954ba370f0f5f7f579cc2187129d"><td class="memItemLeft">QStringList&#160;</td><td class="memItemRight"><a class="el" href="#a68f5954ba370f0f5f7f579cc2187129d">dataPathes</a> ()</td></tr>
 <tr class="memdesc:a68f5954ba370f0f5f7f579cc2187129d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the list of all registered data paths.  <br /></td></tr>
 <tr class="memitem:ab4e0191e6de192d33f1723e1f4bbb275" id="r_ab4e0191e6de192d33f1723e1f4bbb275"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab4e0191e6de192d33f1723e1f4bbb275">addDataPath</a> (const QString &amp;path)</td></tr>
-<tr class="memdesc:ab4e0191e6de192d33f1723e1f4bbb275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new directory path to the internal data path collection.  <br /></td></tr>
+<tr class="memdesc:ab4e0191e6de192d33f1723e1f4bbb275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a path to the list of pathes used to fetch data.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_q_c_e.html" title="Auto-generated documentation for the QCE namespace.">QCE</a> namespace. </p>
@@ -127,8 +127,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a new directory path to the internal data path collection. </p>
-<p>Add a path to the list of pathes used to fetch data.</p>
+<p>Add a path to the list of pathes used to fetch data. </p>
+<p>Adds a new directory path to the internal data path collection.</p>
 <p>This function checks if the provided path is already present in the internal data path container (__qce_data_path). If the path is not already contained within the collection, it is appended to the end of the list. This ensures that the collection maintains a set of unique paths.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -157,12 +157,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the list of all registered data paths. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> list of pathes used by <a class="el" href="namespace_q_c_e.html" title="Auto-generated documentation for the QCE namespace.">QCE</a> to fetch data</dd></dl>
 <p>This function provides access to the internal collection of data paths currently stored within the <a class="el" href="namespace_q_c_e.html" title="Auto-generated documentation for the QCE namespace.">QCE</a> module. It returns a copy of the global or class-level variable __qce_data_path.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> QStringList containing the strings representing the various data paths.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_q_c_e.html" title="Auto-generated documentation for the QCE namespace.">QCE</a> module must be properly initialized for the paths to be meaningful. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned list is a copy of the internal path list; modifying the returned list does not affect the internal state.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> variable __qce_data_path is used internally to track these paths.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> list of pathes used by <a class="el" href="namespace_q_c_e.html" title="Auto-generated documentation for the QCE namespace.">QCE</a> to fetch data </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> variable __qce_data_path is used internally to track these paths. </dd></dl>
 
 </div>
 </div>
@@ -181,8 +181,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Locates the absolute path of a data file by searching through predefined data paths. </p>
-<p>Centralized access point to data fetching.</p>
+<p>Centralized access point to data fetching. </p>
+<p>Locates the absolute path of a data file by searching through predefined data paths.</p>
 <p>This function attempts to resolve a given filename into its absolute path. If the provided file path is already absolute, it is returned immediately. Otherwise, the function iterates through a global or predefined list of directories stored in <span class="tt"><a class="el" href="qcodeedit_8cpp.html#a9bad30d23fdcffe42061bea2d033d5ff">__qce_data_path</a></span>. For each directory in this list, the function checks if the file exists within that directory. If a match is found, the absolute path to the file is returned. If the file cannot be located in any of the searched paths, the original input string is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

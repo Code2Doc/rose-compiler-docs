@@ -144,6 +144,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Updates and corrects the source position information within an AST node and its descendants. </p>
+<p>Fixup source position information in IR nodes.</p>
 <p>This function performs a traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node to ensure that source position information is correctly mapped and consistent throughout the tree structure. It utilizes a specialized traversal class, <a class="el" href="class_fixup_source_position_information.html">FixupSourcePositionInformation</a>, and an inherited attribute mechanism to propagate and fix position data during the process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a preorder traversal strategy to maintain uniformity with other AST interface operations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

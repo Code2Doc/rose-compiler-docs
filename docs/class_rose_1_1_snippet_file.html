@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a072df51d30b729e8bdc6e8e4c04b48d2" id="r_a072df51d30b729e8bdc6e8e4c04b48d2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a072df51d30b729e8bdc6e8e4c04b48d2">globallyInjected</a> (SgGlobal *destination_scope)</td></tr>
 <tr class="memitem:a0da8a58143c5c38eaa7bbb008b4847fd" id="r_a0da8a58143c5c38eaa7bbb008b4847fd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0da8a58143c5c38eaa7bbb008b4847fd">fileIsIncluded</a> (const std::string &amp;filename, SgGlobal *destination_scope)</td></tr>
 <tr class="memitem:a830e27eafb5e38fe9de060af3ff9fbd6" id="r_a830e27eafb5e38fe9de060af3ff9fbd6"><td class="memItemLeft">SgFile *&#160;</td><td class="memItemRight"><a class="el" href="#a830e27eafb5e38fe9de060af3ff9fbd6">getAst</a> () const</td></tr>
-<tr class="memitem:a140e05746c33a13e0908fdfcad15aed6" id="r_a140e05746c33a13e0908fdfcad15aed6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a140e05746c33a13e0908fdfcad15aed6">doNotInsert</a> (const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, <a class="el" href="class_sg_type.html">SgType</a> *<a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a>=NULL)</td></tr>
+<tr class="memitem:a140e05746c33a13e0908fdfcad15aed6" id="r_a140e05746c33a13e0908fdfcad15aed6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a140e05746c33a13e0908fdfcad15aed6">doNotInsert</a> (const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, <a class="el" href="class_sg_type.html">SgType</a> *<a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a>=NULL)</td></tr>
 <tr class="memitem:aeaa23658682c8107dccc8d958dd78e92" id="r_aeaa23658682c8107dccc8d958dd78e92"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aeaa23658682c8107dccc8d958dd78e92">isBlackListed</a> (SgDeclarationStatement *)</td></tr>
 <tr class="memitem:a25c24b14a3b32cd4e2d9edfd85f62de4" id="r_a25c24b14a3b32cd4e2d9edfd85f62de4"><td class="memItemLeft">const std::vector&lt; <a class="el" href="struct_rose_1_1_snippet_insertion.html">SnippetInsertion</a> &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a25c24b14a3b32cd4e2d9edfd85f62de4">getInsertedItems</a> () const</td></tr>
 <tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -330,7 +330,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Insert snippets in marked code. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> specified <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> is traversed and function calls to snippets which are defined in this <a class="el" href="class_rose_1_1_snippet_file.html">SnippetFile</a> are recursively expanded. </p>
+<p>Insert snippets in marked code. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> specified <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> is traversed and function calls to snippets which are defined in this <a class="el" href="class_rose_1_1_snippet_file.html">SnippetFile</a> are recursively expanded. </p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> for the entire snippet file. </p>
+<p>Get the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> for the entire snippet file. </p>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor. Returns an existing <a class="el" href="class_rose_1_1_snippet_file.html">SnippetFile</a> if one has previosly been created for this file name, or creates a new one. No attempt is made to determine whether unequal names resolve to the same file. If a new <a class="el" href="class_rose_1_1_snippet_file.html">SnippetFile</a> needs to be created then we either use the provided <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> or we parse the file. </p>
+<p>Constructor. Returns an existing <a class="el" href="class_rose_1_1_snippet_file.html">SnippetFile</a> if one has previosly been created for this file name, or creates a new one. No attempt is made to determine whether unequal names resolve to the same file. If a new <a class="el" href="class_rose_1_1_snippet_file.html">SnippetFile</a> needs to be created then we either use the provided <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> or we parse the file. </p>
 
 </div>
 </div>

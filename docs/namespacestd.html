@@ -116,8 +116,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a56906046dfc91bdf61d277ed94900eb0" id="r_a56906046dfc91bdf61d277ed94900eb0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a56906046dfc91bdf61d277ed94900eb0">swap&lt; nlohmann::json &gt;</a> (<a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;j1, <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;j2)</td></tr>
-<tr class="memdesc:a56906046dfc91bdf61d277ed94900eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the contents of two <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> objects.  <br /></td></tr>
 <tr class="memitem:a98707c82ac7d5ca28f86b7114d69df79" id="r_a98707c82ac7d5ca28f86b7114d69df79"><td class="memItemLeft">template&lt;&gt; </td></tr>
 <tr class="memitem:a98707c82ac7d5ca28f86b7114d69df79 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a98707c82ac7d5ca28f86b7114d69df79">swap&lt; nlohmann::json &gt;</a> (<a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;j1, <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;j2) <a class="el" href="#a6ba7b56d12f049b5155104d4648be686">noexcept</a>(is_nothrow_move_constructible&lt; <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &gt;::value &amp;&amp;is_nothrow_move_assignable&lt; <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &gt;::value)</td></tr>
 <tr class="memdesc:a98707c82ac7d5ca28f86b7114d69df79"><td class="mdescLeft">&#160;</td><td class="mdescRight">exchanges the values of two JSON objects  <br /></td></tr>
@@ -131,11 +129,13 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the std namespace. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a56906046dfc91bdf61d277ed94900eb0" name="a56906046dfc91bdf61d277ed94900eb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56906046dfc91bdf61d277ed94900eb0">&#9670;&#160;</a></span>swap&lt; nlohmann::json &gt;() <span class="overload">[1/2]</span></h2>
+<a id="a98707c82ac7d5ca28f86b7114d69df79" name="a98707c82ac7d5ca28f86b7114d69df79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98707c82ac7d5ca28f86b7114d69df79">&#9670;&#160;</a></span>swap&lt; nlohmann::json &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -158,7 +158,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Swaps the contents of two <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> objects. </p>
+<p>exchanges the values of two JSON objects </p>
+<p>Swaps the contents of two <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> objects.</p>
+<dl class="section since"><dt>Since</dt><dd>version 1.0.0</dd></dl>
 <p>This is a template specialization of the standard swap algorithm specifically for <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> objects. It provides an efficient way to exchange the internal state of two JSON objects by invoking the member swap function of the <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> class. This typically involves swapping pointers to the underlying data structures rather than performing a deep copy of the JSON tree.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -169,44 +171,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> objects j1 and j2 must be valid, initialized <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> instances. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> contents of j1 and j2 are interchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> noexcept specification of this function is conditionally determined based on whether <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> is nothrow move constructible and nothrow move assignable.</dd></dl>
-<p>Swaps the contents of two <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> objects.</p>
-<dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
-
-</div>
-</div>
-<a id="a98707c82ac7d5ca28f86b7114d69df79" name="a98707c82ac7d5ca28f86b7114d69df79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98707c82ac7d5ca28f86b7114d69df79">&#9670;&#160;</a></span>swap&lt; nlohmann::json &gt;() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void std::swap&lt; <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>j1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57">nlohmann::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>j2</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>exchanges the values of two JSON objects </p>
-<p>Swaps the contents of two <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> objects.</p>
-<dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> noexcept specification of this function is conditionally determined based on whether <a class="el" href="namespacenlohmann.html#a8ba8c5483f73a36e716558571ff97d57" title="default JSON class">nlohmann::json</a> is nothrow move constructible and nothrow move assignable. </dd></dl>
 
 </div>
 </div>

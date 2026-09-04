@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new <a class="el" href="class_symbolic_val.html">SymbolicVal</a> representing the result of the binary operation.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>For the SYMOP_POW operation, the second operand (v2) must be a constant integer.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned <a class="el" href="class_symbolic_val.html">SymbolicVal</a> represents the computed result of the operation.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="_symbolic_operator__8_c_8dox.html#a77d47fdd0df02fae83ce9c3c3a4653b2" title="Checks if the debug validation option is enabled in the command line options.">DebugOp()</a> returns true, the operation and its operands are logged to std::cerr. </dd>
+<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="_symbolic_operator_8_c.html#a77d47fdd0df02fae83ce9c3c3a4653b2" title="Checks if the debug validation option is enabled in the command line options.">DebugOp()</a> returns true, the operation and its operands are logged to std::cerr. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a> to handle unsupported operations or invalid exponentiation inputs, which terminates the program.</dd></dl>
 <p>This function dispatches a binary operation based on the provided operation type. It supports addition, multiplication, minimum, maximum, and exponentiation. For addition and multiplication, it utilizes specific applicator classes (<a class="el" href="class_plus_applicator.html">PlusApplicator</a> and <a class="el" href="class_multiply_applicator.html">MultiplyApplicator</a>) via an overloaded ApplyBinOP call. For exponentiation (SYMOP_POW), the function implements specific optimization logic for constant integer exponents, including handling cases where the exponent is 1 or -1.</p>
@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 If an unsupported operation type is provided, the function calls <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a>. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function contains a logic path that leads to <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a> if the switch statement completes without returning, which is intended to preserve legacy error semantics.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="_symbolic_operator__8_c_8dox.html#a77d47fdd0df02fae83ce9c3c3a4653b2" title="Checks if the debug validation option is enabled in the command line options.">DebugOp()</a> returns true, the operation and its operands are logged to std::cerr.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="_symbolic_operator_8_c.html#a77d47fdd0df02fae83ce9c3c3a4653b2" title="Checks if the debug validation option is enabled in the command line options.">DebugOp()</a> returns true, the operation and its operands are logged to std::cerr.</dd></dl>
 <p>This function implements the logic for applying various symbolic binary operators (such as addition, multiplication, minimum, maximum, and power) to two symbolic operands. It uses a dispatch mechanism based on the provided operator type. For certain operations like addition and multiplication, it utilizes specific applicator classes. For the power operation, it includes optimization logic for constant exponents and specific base cases.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -236,7 +236,7 @@ If an unsupported operation type is provided, the function calls <a class="el" h
 <dl class="section warning"><dt>Warning</dt><dd>If the operator type 't' is not recognized, the function calls <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a>, which terminates the program. </dd>
 <dd>
 For the SYMOP_POW operation, if the second operand is not a constant integer, the function calls <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="_symbolic_operator__8_c_8dox.html#a77d47fdd0df02fae83ce9c3c3a4653b2" title="Checks if the debug validation option is enabled in the command line options.">DebugOp()</a> returns true, the function prints the operation and its result to the standard error stream. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="_symbolic_operator_8_c.html#a77d47fdd0df02fae83ce9c3c3a4653b2" title="Checks if the debug validation option is enabled in the command line options.">DebugOp()</a> returns true, the function prints the operation and its result to the standard error stream. </dd></dl>
 
 </div>
 </div>

@@ -97,9 +97,9 @@ $(function(){initNavTree('propagate__8cc_8dox.html','',''); });
 Functions</h2></td></tr>
 <tr class="memitem:a55282f872af365b207479a94c8841ffb" id="r_a55282f872af365b207479a94c8841ffb"><td class="memItemLeft">MetricAttr&#160;</td><td class="memItemRight"><a class="el" href="#a55282f872af365b207479a94c8841ffb">sumMetricAttributes</a> (const <a class="el" href="classstring.html">string</a> &amp;attr_name, const <a class="el" href="class_ast_bottom_up_processing.html">AstBottomUpProcessing</a>&lt; MetricAttr &gt;<a class="el" href="class_sg_tree_traversal.html">::SynthesizedAttributesList</a> &amp;attr_list)</td></tr>
 <tr class="memdesc:a55282f872af365b207479a94c8841ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregates multiple MetricAttr objects into a single sum.  <br /></td></tr>
-<tr class="memitem:a274956c9a5aa00306a3e0afd0ce79d5f" id="r_a274956c9a5aa00306a3e0afd0ce79d5f"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a274956c9a5aa00306a3e0afd0ce79d5f">getFilename</a> (const Sg_File_Info *<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
+<tr class="memitem:a274956c9a5aa00306a3e0afd0ce79d5f" id="r_a274956c9a5aa00306a3e0afd0ce79d5f"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a274956c9a5aa00306a3e0afd0ce79d5f">getFilename</a> (const Sg_File_Info *<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
 <tr class="memdesc:a274956c9a5aa00306a3e0afd0ce79d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the raw filename from a given file information object.  <br /></td></tr>
-<tr class="memitem:a428a4ba9a0c1a4bd53dc4c55de8ede2d" id="r_a428a4ba9a0c1a4bd53dc4c55de8ede2d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a428a4ba9a0c1a4bd53dc4c55de8ede2d">getLineNumber</a> (const Sg_File_Info *<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
+<tr class="memitem:a428a4ba9a0c1a4bd53dc4c55de8ede2d" id="r_a428a4ba9a0c1a4bd53dc4c55de8ede2d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a428a4ba9a0c1a4bd53dc4c55de8ede2d">getLineNumber</a> (const Sg_File_Info *<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
 <tr class="memdesc:a428a4ba9a0c1a4bd53dc4c55de8ede2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the line number from a given file information object.  <br /></td></tr>
 <tr class="memitem:a6c3981276fc0475a22d9f033408ed7aa" id="r_a6c3981276fc0475a22d9f033408ed7aa"><td class="memItemLeft">MetricAttr *&#160;</td><td class="memItemRight"><a class="el" href="#a6c3981276fc0475a22d9f033408ed7aa">checkMetricAttribute</a> (SgNode *<a class="el" href="structnode.html">node</a>, const <a class="el" href="classstring.html">string</a> &amp;metric_name)</td></tr>
 <tr class="memdesc:a6c3981276fc0475a22d9f033408ed7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a MetricAttr pointer from a given SgNode based on a metric name.  <br /></td></tr>
@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 <p>This function extracts the filename string from an Sg_File_Info pointer. It performs a null check on the provided pointer to prevent segmentation faults. If the pointer is valid, it invokes the get_raw_filename method of the Sg_File_Info object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="class_a.html">A</a> pointer to an Sg_File_Info object containing file metadata. Can be NULL.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="class_a.html">A</a> pointer to an Sg_File_Info object containing file metadata. Can be NULL.</td></tr>
   </table>
   </dd>
 </dl>
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
 <p>This function extracts the line number associated with a specific file information structure. It performs a safety check to ensure the provided pointer is not null before attempting to access the underlying line number data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="class_a.html">A</a> pointer to a constant Sg_File_Info object containing file metadata. If this pointer is NULL, the function returns 0.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="class_a.html">A</a> pointer to a constant Sg_File_Info object containing file metadata. If this pointer is NULL, the function returns 0.</td></tr>
   </table>
   </dd>
 </dl>

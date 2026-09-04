@@ -127,12 +127,13 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9a72f4d9a318862534686be6e457049d" id="r_a9a72f4d9a318862534686be6e457049d"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a9a72f4d9a318862534686be6e457049d">OperatorSideEffectName</a> (<a class="el" href="#a3a2b0604382aa44bc08a050eded8aa26">OperatorSideEffect</a> what)</td></tr>
 <tr class="memdesc:a9a72f4d9a318862534686be6e457049d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an <a class="el" href="#a3a2b0604382aa44bc08a050eded8aa26">OperatorSideEffect</a> enum value into its corresponding string representation.  <br /></td></tr>
+<tr class="memitem:ad2bfd381d22516ab6e56e8332e4c332a" id="r_ad2bfd381d22516ab6e56e8332e4c332a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2bfd381d22516ab6e56e8332e4c332a">ComputeAstSideEffects</a> (SgNode *ast, SgNode *scope, std::function&lt; bool(const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;, const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;, <a class="el" href="#a3a2b0604382aa44bc08a050eded8aa26">OperatorSideEffect</a>)&gt; &amp;collect, <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> *add_to_dep_analysis=0)</td></tr>
 <tr class="memitem:afe216127f5e392073d2d7392a5bbb479" id="r_afe216127f5e392073d2d7392a5bbb479"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afe216127f5e392073d2d7392a5bbb479">RegisterOperatorSideEffectAnnotation</a> ()</td></tr>
 <tr class="memdesc:afe216127f5e392073d2d7392a5bbb479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function or ill-formed function detected. /.  <br /></td></tr>
-<tr class="memitem:ade7c06f74ff41dd4fe2841c969f923bc" id="r_ade7c06f74ff41dd4fe2841c969f923bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ade7c06f74ff41dd4fe2841c969f923bc">ReadAnnotations</a> (std::istream &amp;<a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> *use_dep_analysis)</td></tr>
-<tr class="memdesc:ade7c06f74ff41dd4fe2841c969f923bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads annotation data from an input stream into the specified analysis object or global singleton.  <br /></td></tr>
-<tr class="memitem:accd21910fb6a9bb19fa1f81997e3b484" id="r_accd21910fb6a9bb19fa1f81997e3b484"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#accd21910fb6a9bb19fa1f81997e3b484">OutputOperatorSideEffectAnnotations</a> (std::ostream &amp;<a class="el" href="dynamic_binary_info__8_c_8dox.html#a0c56ec5eb0ac1eec6f0c42a439e9d24d">output</a>, <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> *use_dep_analysis)</td></tr>
-<tr class="memdesc:accd21910fb6a9bb19fa1f81997e3b484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs annotations regarding operator side effects to a provided stream.  <br /></td></tr>
+<tr class="memitem:a26e81af408789b4c2fb325c99ec7c884" id="r_a26e81af408789b4c2fb325c99ec7c884"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a26e81af408789b4c2fb325c99ec7c884">ReadAnnotations</a> (std::istream &amp;<a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> *use_dep_analysis=0)</td></tr>
+<tr class="memdesc:a26e81af408789b4c2fb325c99ec7c884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads annotation data from an input stream into the specified analysis object or global singleton.  <br /></td></tr>
+<tr class="memitem:a1e3f853b3851646eea892c07375c310e" id="r_a1e3f853b3851646eea892c07375c310e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e3f853b3851646eea892c07375c310e">OutputOperatorSideEffectAnnotations</a> (std::ostream &amp;<a class="el" href="dynamic_binary_info__8_c_8dox.html#a0c56ec5eb0ac1eec6f0c42a439e9d24d">output</a>, <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> *use_dep_analysis=0)</td></tr>
+<tr class="memdesc:a1e3f853b3851646eea892c07375c310e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs annotations regarding operator side effects to a provided stream.  <br /></td></tr>
 <tr class="memitem:a8e4bd6fa9283a8d6182b0f5bd88ede6f" id="r_a8e4bd6fa9283a8d6182b0f5bd88ede6f"><td class="memItemLeft">std::pair&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8e4bd6fa9283a8d6182b0f5bd88ede6f">AddOperatorSideEffectAnnotation</a> (SgNode *op_ast, const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;var, <a class="el" href="#a3a2b0604382aa44bc08a050eded8aa26">OperatorSideEffect</a> relation)</td></tr>
 <tr class="memdesc:a8e4bd6fa9283a8d6182b0f5bd88ede6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annotates an operator node with side-effect information regarding a specific variable.  <br /></td></tr>
 <tr class="memitem:a28e847bad1741c90eeb08f23aa91b99b" id="r_a28e847bad1741c90eeb08f23aa91b99b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a28e847bad1741c90eeb08f23aa91b99b">GetVariableSignature</a> (const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;variable)</td></tr>
@@ -141,7 +142,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ada1073d3fe176c838d8d5abebc3312aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given ref reaches only local data within scope.  <br /></td></tr>
 <tr class="memitem:a684f54b65c0cd88bb5575f374d1f17f7" id="r_a684f54b65c0cd88bb5575f374d1f17f7"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a684f54b65c0cd88bb5575f374d1f17f7">operator&lt;&lt;</a> (std::ostream &amp;<a class="el" href="dynamic_binary_info__8_c_8dox.html#a0c56ec5eb0ac1eec6f0c42a439e9d24d">output</a>, const <a class="el" href="class_ast_util_interface_1_1_dependence_entry.html">DependenceEntry</a> &amp;e)</td></tr>
 <tr class="memdesc:a684f54b65c0cd88bb5575f374d1f17f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the stream insertion operator for the <a class="el" href="class_ast_util_interface_1_1_dependence_entry.html">DependenceEntry</a> class.  <br /></td></tr>
-<tr class="memitem:ad2bfd381d22516ab6e56e8332e4c332a" id="r_ad2bfd381d22516ab6e56e8332e4c332a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2bfd381d22516ab6e56e8332e4c332a">ComputeAstSideEffects</a> (SgNode *ast, SgNode *scope, std::function&lt; bool(const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;, const <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> &amp;, <a class="el" href="#a3a2b0604382aa44bc08a050eded8aa26">OperatorSideEffect</a>)&gt; &amp;collect, <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> *add_to_dep_analysis=0)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_ast_util_interface.html" title="Auto-generated documentation for the AstUtilInterface namespace.">AstUtilInterface</a> namespace. </p>
@@ -397,8 +397,8 @@ If the op_ast cannot be identified as a function definition, the function return
 
 </div>
 </div>
-<a id="accd21910fb6a9bb19fa1f81997e3b484" name="accd21910fb6a9bb19fa1f81997e3b484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accd21910fb6a9bb19fa1f81997e3b484">&#9670;&#160;</a></span>OutputOperatorSideEffectAnnotations()</h2>
+<a id="a1e3f853b3851646eea892c07375c310e" name="a1e3f853b3851646eea892c07375c310e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3f853b3851646eea892c07375c310e">&#9670;&#160;</a></span>OutputOperatorSideEffectAnnotations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,8 +431,8 @@ If the op_ast cannot be identified as a function definition, the function return
 
 </div>
 </div>
-<a id="ade7c06f74ff41dd4fe2841c969f923bc" name="ade7c06f74ff41dd4fe2841c969f923bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade7c06f74ff41dd4fe2841c969f923bc">&#9670;&#160;</a></span>ReadAnnotations()</h2>
+<a id="a26e81af408789b4c2fb325c99ec7c884" name="a26e81af408789b4c2fb325c99ec7c884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e81af408789b4c2fb325c99ec7c884">&#9670;&#160;</a></span>ReadAnnotations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +455,7 @@ If the op_ast cannot be identified as a function definition, the function return
 <p>This function handles the ingestion of annotation information from a provided input stream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation branches based on the availability of a dependence analysis object. If a pointer to a <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> object is provided, the function invokes the CollectPastResults method on that object to process the stream. Otherwise, it falls back to using the singleton instance of <a class="el" href="class_read_annotation.html" title="An interface to read into type(class) and operator(function) annotations.">ReadAnnotation</a> to read from the stream.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca" title="Empty function or ill-formed function detected. /.">input</a></td><td><a class="el" href="class_a.html">A</a> reference to a std::istream from which the annotation data is read. </td></tr>
+    <tr><td class="paramname"><a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a></td><td><a class="el" href="class_a.html">A</a> reference to a std::istream from which the annotation data is read. </td></tr>
     <tr><td class="paramname">use_dep_analysis</td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="class_ast_util_interface_1_1_whole_program_dependence_analysis.html">WholeProgramDependenceAnalysis</a> object. If this pointer is non-null, the function uses this object to collect results. If null, the function uses the <a class="el" href="class_read_annotation.html" title="An interface to read into type(class) and operator(function) annotations.">ReadAnnotation</a> singleton.</td></tr>
   </table>
   </dd>

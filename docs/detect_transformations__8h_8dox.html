@@ -117,6 +117,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Detects and reports invalid transformation flags within the AST and memory pool. </p>
+<p>Detect nodes marked as transformations (should not be present coming out of the frontend translation).</p>
 <p>This function performs a dual-layer validation check to ensure that no Sg_File_Info nodes are incorrectly marked with a transformation flag. It utilizes two distinct traversal mechanisms: first, it performs a preorder traversal of the provided AST node using the <a class="el" href="class_detect_transformations.html" title="There sould not be any IR nodes marked as a transformation coming from the EDG/ROSE translation....">DetectTransformations</a> traversal; second, it performs a comprehensive traversal of the entire ROSE memory pool using a custom DetectTransformationsOnMemoryPool visitor. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary goal is to identify any instances where isTransformation() returns true, which indicates an inconsistent state in the IR metadata.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

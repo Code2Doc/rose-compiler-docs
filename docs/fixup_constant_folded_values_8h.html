@@ -119,7 +119,30 @@ Functions</h2></td></tr>
 <p>This traversal can either replace the constant folded values with the original expression tree or leave the constant folded value and remove the original expression tree. </p>
 <p>This traversal uses the Memory Pool traversal to fixup SgValueExp IR nodes that contain valid pointers to original expression trees. This function acts in two different ways</p>
 <p>This traversal can either replace the constant folded values with the original expression tree or leave the constant folded value and remove the original expression tree.</p>
-<p>Removes original expression trees from value expressions where they have been constant folded by EDG. </p>
+<p>Removes original expression trees from value expressions where constant folding has occurred.</p>
+<p>Removes original expression trees from value expressions where they have been constant folded by EDG.</p>
+<p>This function handles the cleanup of expression trees following constant folding operations performed by the EDG frontend. Depending on the configuration of the SgProject, it either performs a manual removal of constant folded values via <span class="tt"><a class="el" href="fixup_constant_folded_values_8_c.html#a5ef7c9bfc377d188c182e69faf1b7b8b" title="Removes nodes from the AST that have been replaced by constant folding.">removeConstantFoldedValue</a></span> or utilizes an <span class="tt">astFixupTraversal</span> to traverse the memory pool and remove the original expression trees, leaving only the constant folded values. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses if directives to control the execution logic and includes timing performance monitoring.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode (expected to be an SgProject) from which the constant folded values should be reset or cleaned up.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="structnode.html">node</a></span> parameter should ideally be a valid pointer to an <span class="tt">SgProject</span> if the project-level constant folding logic is to be applied. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original expression trees associated with constant folded values are removed from the AST, ensuring that only the folded results remain in the value expressions.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a></span> to ensure that the node is castable to an <span class="tt">SgProject</span> when the project-level folding is active. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of the function is subject to preprocessor control via if blocks.</dd></dl>
+<p>This function handles the cleanup of expression trees following constant folding performed by the EDG frontend. Depending on the configuration of the SgProject, it either removes the original expression trees entirely (leaving only the constant folded values) or performs a specific removal of constant folded values via the <span class="tt"><a class="el" href="fixup_constant_folded_values_8_c.html#a5ef7c9bfc377d188c182e69faf1b7b8b" title="Removes nodes from the AST that have been replaced by constant folding.">removeConstantFoldedValue</a></span> mechanism. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses if blocks to toggle between different cleanup strategies and utilizes <span class="tt"><a class="el" href="class_timing_performance.html">TimingPerformance</a></span> to measure the duration of the fixup process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode (expected to be an SgProject) from which the constant folded values should be reset or cleaned up.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="structnode.html">node</a></span> parameter should ideally be a valid pointer to an <span class="tt">SgProject</span> if the project-level constant folding is being evaluated. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the expression trees within the provided node is updated to reflect the removal of original trees or the removal of constant folded values, depending on the <span class="tt">get_frontendConstantFolding</span> setting.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt">isSgProject</span> helper to validate the node type and <span class="tt"><a class="el" href="fixup_constant_folded_values_8_c.html#a5ef7c9bfc377d188c182e69faf1b7b8b" title="Removes nodes from the AST that have been replaced by constant folding.">removeConstantFoldedValue</a></span> to perform the actual cleanup when specific frontend constant folding is not enabled. </dd></dl>
 
 </div>
 </div>

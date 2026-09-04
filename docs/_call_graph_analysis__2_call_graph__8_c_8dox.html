@@ -99,8 +99,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:af5402547ddb37f536d985f65970e3fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes type aliases from a given <a class="el" href="class_sg_type.html">SgType</a>.  <br /></td></tr>
 <tr class="memitem:abf1c85e2553fc2d2fd93f259ffb84e97" id="r_abf1c85e2553fc2d2fd93f259ffb84e97"><td class="memItemLeft">std::vector&lt; <a class="el" href="class_sg_type.html">SgType</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abf1c85e2553fc2d2fd93f259ffb84e97">get_type_vector</a> (<a class="el" href="class_sg_type.html">SgType</a> *currentType)</td></tr>
 <tr class="memdesc:abf1c85e2553fc2d2fd93f259ffb84e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a sequence of types representing the hierarchy of the given type.  <br /></td></tr>
-<tr class="memitem:a718c48583f4f3d1229032ce8cd2e5088" id="r_a718c48583f4f3d1229032ce8cd2e5088"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a718c48583f4f3d1229032ce8cd2e5088">is_functions_types_equal</a> (SgFunctionType *f1, SgFunctionType *f2)</td></tr>
-<tr class="memdesc:a718c48583f4f3d1229032ce8cd2e5088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two function types for equality.  <br /></td></tr>
+<tr class="memitem:a2aa461225ccc6e0b411371af4dd10094" id="r_a2aa461225ccc6e0b411371af4dd10094"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2aa461225ccc6e0b411371af4dd10094">is_functions_types_equal</a> (SgFunctionType *f1, SgFunctionType *f2)</td></tr>
+<tr class="memdesc:a2aa461225ccc6e0b411371af4dd10094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two function types for equality.  <br /></td></tr>
 <tr class="memitem:af96d25a59fb7ad0126e30b0a8c91f01f" id="r_af96d25a59fb7ad0126e30b0a8c91f01f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af96d25a59fb7ad0126e30b0a8c91f01f">typeEquality</a> (<a class="el" href="class_sg_type.html">SgType</a> *, <a class="el" href="class_sg_type.html">SgType</a> *)</td></tr>
 <tr class="memdesc:af96d25a59fb7ad0126e30b0a8c91f01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if two <a class="el" href="class_sg_type.html">SgType</a> objects are considered equal.  <br /></td></tr>
 <tr class="memitem:a04513deb233d59e16162dfdb0ab95c80" id="r_a04513deb233d59e16162dfdb0ab95c80"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a04513deb233d59e16162dfdb0ab95c80">typeEquality</a> (SgNamedType *type1, SgNamedType *type2)</td></tr>
@@ -234,6 +234,7 @@ There is a known todo regarding the handling of templated types and aliases. </d
 </div><div class="memdoc">
 
 <p>Retrieves the set of potential function declarations targeted by a function call expression. </p>
+<p>Add the declaration for functionCallExp to functionList. In the case of function pointers and virtual functions, append the set of declarations to functionList.</p>
 <p>This function performs a static analysis of a given function call expression to identify all possible function declarations that could be invoked at runtime. It handles various C++ calling constructs, including direct function calls, member function calls (via dot or arrow operators), function pointers, and member function pointers. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation accounts for complex scenarios such as pointer dereferencing, comma operators, and constructor initializers. For polymorphic calls, it utilizes the provided class hierarchy to resolve potential overrides.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -254,8 +255,7 @@ For member function calls, the function attempts to resolve the receiver type an
 <dd>
 For function pointers (V_SgVarRefExp), the function queries the memory pool for declarations matching the function type. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include, define, and other preprocessor logic internally via the ROSE framework's <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> traversal.</dd></dl>
-<p>Add the declaration for functionCallExp to functionList. In the case of function pointers and virtual functions, append the set of declarations to functionList. </p>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include, define, and other preprocessor logic internally via the ROSE framework's AST traversal. </dd></dl>
 
 </div>
 </div>
@@ -296,8 +296,8 @@ For function pointers (V_SgVarRefExp), the function queries the memory pool for 
 
 </div>
 </div>
-<a id="a718c48583f4f3d1229032ce8cd2e5088" name="a718c48583f4f3d1229032ce8cd2e5088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a718c48583f4f3d1229032ce8cd2e5088">&#9670;&#160;</a></span>is_functions_types_equal()</h2>
+<a id="a2aa461225ccc6e0b411371af4dd10094" name="a2aa461225ccc6e0b411371af4dd10094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa461225ccc6e0b411371af4dd10094">&#9670;&#160;</a></span>is_functions_types_equal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +403,7 @@ For function pointers (V_SgVarRefExp), the function queries the memory pool for 
 <dl class="section return"><dt>Returns</dt><dd>True if the derived type is covariant with the base type; false otherwise.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers <span class="tt">derived</span>, <span class="tt">base</span>, and <span class="tt">chw</span> should be valid and not null, unless the underlying dispatch mechanisms are designed to handle nullity. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the state of the provided <a class="el" href="class_sg_type.html">SgType</a> or <a class="el" href="class_class_hierarchy_wrapper.html">ClassHierarchyWrapper</a> objects.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt"><a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> mechanism and specific visitor patterns like <span class="tt"><a class="el" href="struct_polymorphic_roots_finder.html">PolymorphicRootsFinder</a></span> and <span class="tt"><a class="el" href="struct_covariance_checker.html">CovarianceChecker</a></span>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt"><a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> mechanism and specific visitor patterns like <span class="tt"><a class="el" href="struct_polymorphic_roots_finder.html">PolymorphicRootsFinder</a></span> and <span class="tt"><a class="el" href="struct_covariance_checker.html">CovarianceChecker</a></span>. </dd></dl>
 
 </div>
 </div>

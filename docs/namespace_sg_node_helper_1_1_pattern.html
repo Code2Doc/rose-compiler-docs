@@ -93,7 +93,7 @@ $(function(){initNavTree('namespace_sg_node_helper_1_1_pattern.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Auto-generated documentation for the <a class="el" href="namespace_sg_node_helper_1_1_pattern.html" title="Auto-generated documentation for the SgNodeHelper::Pattern namespace.">SgNodeHelper::Pattern</a> namespace.  
+<p>Provides functions which match a certain AST pattern and return a pointer to a node of interest inside that pattern.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -108,30 +108,30 @@ Functions</h2></td></tr>
 <tr class="memdesc:a57aa8247c7766aa70b0888055f8c196f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgReturnStmt(FunctionCallExp) and returns pointer to FunctionCallExp, otherwise 0.  <br /></td></tr>
 <tr class="memitem:acae619f4a61322d2b3920abb098efb8f" id="r_acae619f4a61322d2b3920abb098efb8f"><td class="memItemLeft">SgFunctionCallExp *&#160;</td><td class="memItemRight"><a class="el" href="#acae619f4a61322d2b3920abb098efb8f">matchExprStmtFunctionCallExp</a> (SgNode *)</td></tr>
 <tr class="memdesc:acae619f4a61322d2b3920abb098efb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgExprStatement(FunctionCallExp) and returns pointer to FunctionCallExp, otherwise 0.  <br /></td></tr>
+<tr class="memitem:ac87f6491292526b2701688852fc0fa86" id="r_ac87f6491292526b2701688852fc0fa86"><td class="memItemLeft">SgFunctionCallExp *&#160;</td><td class="memItemRight"><a class="el" href="#ac87f6491292526b2701688852fc0fa86">matchExprStmtAssignOpVarRefExpFunctionCallExp</a> (SgNode *)</td></tr>
+<tr class="memdesc:ac87f6491292526b2701688852fc0fa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgExprStatement(SgAssignOp(VarRefExp,FunctionCallExp)) and returns pointer to FunctionCallExp otherwise 0.  <br /></td></tr>
 <tr class="memitem:ae0df51012ae9e25d8183ef1c5b332bef" id="r_ae0df51012ae9e25d8183ef1c5b332bef"><td class="memItemLeft">SgFunctionCallExp *&#160;</td><td class="memItemRight"><a class="el" href="#ae0df51012ae9e25d8183ef1c5b332bef">matchFunctionCallExpInVariableDeclaration</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ae0df51012ae9e25d8183ef1c5b332bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern for function call in variable declaration and returns pointer to FunctionCallExp otherwise 0.  <br /></td></tr>
+<tr class="memitem:ae87e5230b7f40dbde39d1edbae74f037" id="r_ae87e5230b7f40dbde39d1edbae74f037"><td class="memItemLeft">SgVariableDeclaration *&#160;</td><td class="memItemRight"><a class="el" href="#ae87e5230b7f40dbde39d1edbae74f037">matchVariableDeclarationWithFunctionCall</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:ae87e5230b7f40dbde39d1edbae74f037"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks variable declaration with function call, returns variable declaration. Otherwise 0. e.g. int x=<a class="el" href="deep_colored_functions3_8_c.html#ad1351d85ffec3c1176dc31d8e8f8e28a">f()</a>;  <br /></td></tr>
 <tr class="memitem:ab3db24206e9458ecf5b2cad3d9f4d224" id="r_ab3db24206e9458ecf5b2cad3d9f4d224"><td class="memItemLeft">std::pair&lt; SgVariableDeclaration *, SgFunctionCallExp * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab3db24206e9458ecf5b2cad3d9f4d224">matchVariableDeclarationWithFunctionCall2</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ab3db24206e9458ecf5b2cad3d9f4d224"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks variable declaration with function call, returns both in a pair, or a with (0,0).  <br /></td></tr>
 <tr class="memitem:a0f9e4c0d0943a6fc62f600aeaeeb257d" id="r_a0f9e4c0d0943a6fc62f600aeaeeb257d"><td class="memItemLeft">std::pair&lt; SgVarRefExp *, SgFunctionCallExp * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0f9e4c0d0943a6fc62f600aeaeeb257d">matchExprStmtAssignOpVarRefExpFunctionCallExp2</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a0f9e4c0d0943a6fc62f600aeaeeb257d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies assignment statements where a variable is assigned the result of a function call.  <br /></td></tr>
 <tr class="memitem:a67ba3af3a59e4478c99477e1e75e985f" id="r_a67ba3af3a59e4478c99477e1e75e985f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a67ba3af3a59e4478c99477e1e75e985f">matchAssertExpr</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a67ba3af3a59e4478c99477e1e75e985f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern for an assert  <br /></td></tr>
-<tr class="memitem:ae060ba60618b3b66be6b89f76e36cf3a" id="r_ae060ba60618b3b66be6b89f76e36cf3a"><td class="memItemLeft"><a class="el" href="struct_sg_node_helper_1_1_pattern_1_1_output_target.html">Pattern::OutputTarget</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae060ba60618b3b66be6b89f76e36cf3a">matchSingleVarOrValuePrintf</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ae060ba60618b3b66be6b89f76e36cf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies if a given node represents a printf call with a single variable or integer value.  <br /></td></tr>
-<tr class="memitem:ac87f6491292526b2701688852fc0fa86" id="r_ac87f6491292526b2701688852fc0fa86"><td class="memItemLeft">SgFunctionCallExp *&#160;</td><td class="memItemRight"><a class="el" href="#ac87f6491292526b2701688852fc0fa86">matchExprStmtAssignOpVarRefExpFunctionCallExp</a> (SgNode *)</td></tr>
-<tr class="memdesc:ac87f6491292526b2701688852fc0fa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgExprStatement(SgAssignOp(VarRefExp,FunctionCallExp)) and returns pointer to FunctionCallExp otherwise 0.  <br /></td></tr>
-<tr class="memitem:ae87e5230b7f40dbde39d1edbae74f037" id="r_ae87e5230b7f40dbde39d1edbae74f037"><td class="memItemLeft">SgVariableDeclaration *&#160;</td><td class="memItemRight"><a class="el" href="#ae87e5230b7f40dbde39d1edbae74f037">matchVariableDeclarationWithFunctionCall</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ae87e5230b7f40dbde39d1edbae74f037"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks variable declaration with function call, returns variable declaration. Otherwise 0. e.g. int x=<a class="el" href="deep_colored_functions3_8_c.html#ad1351d85ffec3c1176dc31d8e8f8e28a">f()</a>;  <br /></td></tr>
 <tr class="memitem:acc2aca6736058e0210e4e62e23482cfd" id="r_acc2aca6736058e0210e4e62e23482cfd"><td class="memItemLeft">SgVarRefExp *&#160;</td><td class="memItemRight"><a class="el" href="#acc2aca6736058e0210e4e62e23482cfd">matchSingleVarScanf</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:acc2aca6736058e0210e4e62e23482cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgFunctionCall(...) where the name of the function is scanf with 2 params  <br /></td></tr>
 <tr class="memitem:ace39e34cb30f652805806c0b65033e27" id="r_ace39e34cb30f652805806c0b65033e27"><td class="memItemLeft">SgVarRefExp *&#160;</td><td class="memItemRight"><a class="el" href="#ace39e34cb30f652805806c0b65033e27">matchSingleVarPrintf</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ace39e34cb30f652805806c0b65033e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgFunctionCall(...) where the name of the function is printf with 2 params  <br /></td></tr>
 <tr class="memitem:aa04b5696322aa1cfacdd731e56ae9f87" id="r_aa04b5696322aa1cfacdd731e56ae9f87"><td class="memItemLeft">SgVarRefExp *&#160;</td><td class="memItemRight"><a class="el" href="#aa04b5696322aa1cfacdd731e56ae9f87">matchSingleVarFPrintf</a> (SgNode *<a class="el" href="structnode.html">node</a>, bool showWarnings=false)</td></tr>
 <tr class="memdesc:aa04b5696322aa1cfacdd731e56ae9f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">tests pattern SgFunctionCall(...) where the name of the function is fprintf with 3 params  <br /></td></tr>
+<tr class="memitem:a170e7879e6133d44fae651034bfe8a2f" id="r_a170e7879e6133d44fae651034bfe8a2f"><td class="memItemLeft"><a class="el" href="struct_sg_node_helper_1_1_pattern_1_1_output_target.html">OutputTarget</a>&#160;</td><td class="memItemRight"><a class="el" href="#a170e7879e6133d44fae651034bfe8a2f">matchSingleVarOrValuePrintf</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a170e7879e6133d44fae651034bfe8a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies if a given node represents a printf call with a single variable or integer value.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_sg_node_helper_1_1_pattern.html" title="Auto-generated documentation for the SgNodeHelper::Pattern namespace.">SgNodeHelper::Pattern</a> namespace. </p>
-<p>Provides functions which match a certain AST pattern and return a pointer to a node of interest inside that pattern. </p>
+<div class="textblock"><p>Provides functions which match a certain AST pattern and return a pointer to a node of interest inside that pattern. </p>
+<p>Auto-generated documentation for the <a class="el" href="namespace_sg_node_helper_1_1_pattern.html" title="Provides functions which match a certain AST pattern and return a pointer to a node of interest insid...">SgNodeHelper::Pattern</a> namespace. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a67ba3af3a59e4478c99477e1e75e985f" name="a67ba3af3a59e4478c99477e1e75e985f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67ba3af3a59e4478c99477e1e75e985f">&#9670;&#160;</a></span>matchAssertExpr()</h2>
@@ -173,7 +173,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SgFunctionCallExp * SgNodeHelper::Pattern::matchExprStmtAssignOpVarRefExpFunctionCallExp </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -221,7 +221,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pair of pointers. If a match is found, the first element is a pointer to the SgVarRefExp representing the LHS, and the second element is a pointer to the SgFunctionCallExp representing the RHS. If no match is found, the pair contains two null pointers.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node should be a valid SgNode pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned pair will contain valid pointers if the pattern is matched, otherwise both pointers in the pair will be nullptr.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function specifically skips over SgCastExp nodes on the RHS to find the base function call, allowing it to match patterns like <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (<a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a>)<a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func()</a></span>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function specifically skips over SgCastExp nodes on the RHS to find the base function call, allowing it to match patterns like <span class="tt"><a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = (<a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a>)<a class="el" href="deep_colored_functions2_8_c.html#a3870bfdd1545f46a9dba1ccc7d0abde8" title="Multiplies two integers.">func()</a></span>. </dd></dl>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SgFunctionCallExp * SgNodeHelper::Pattern::matchExprStmtFunctionCallExp </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -265,7 +265,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SgFunctionCallExp * SgNodeHelper::Pattern::matchFunctionCall </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -283,7 +283,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to an SgFunctionCallExp if a matching function call pattern is identified; otherwise, returns 0 (nullptr).</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node should be a valid pointer to an SgNode object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>If a match is found, the returned pointer points to a valid SgFunctionCallExp sub-node within the provided node's hierarchy.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on several helper methods within the <a class="el" href="namespace_sg_node_helper_1_1_pattern.html" title="Auto-generated documentation for the SgNodeHelper::Pattern namespace.">SgNodeHelper::Pattern</a> class, such as matchReturnStmtFunctionCallExp and matchExprStmtFunctionCallExp. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on several helper methods within the <a class="el" href="namespace_sg_node_helper_1_1_pattern.html" title="Provides functions which match a certain AST pattern and return a pointer to a node of interest insid...">SgNodeHelper::Pattern</a> class, such as matchReturnStmtFunctionCallExp and matchExprStmtFunctionCallExp. </dd></dl>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">SgFunctionCallExp * SgNodeHelper::Pattern::matchReturnStmtFunctionCallExp </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -386,14 +386,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae060ba60618b3b66be6b89f76e36cf3a" name="ae060ba60618b3b66be6b89f76e36cf3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae060ba60618b3b66be6b89f76e36cf3a">&#9670;&#160;</a></span>matchSingleVarOrValuePrintf()</h2>
+<a id="a170e7879e6133d44fae651034bfe8a2f" name="a170e7879e6133d44fae651034bfe8a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170e7879e6133d44fae651034bfe8a2f">&#9670;&#160;</a></span>matchSingleVarOrValuePrintf()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_sg_node_helper_1_1_pattern_1_1_output_target.html">OutputTarget</a> SgNodeHelper::Pattern::matchSingleVarOrValuePrintf </td>
+          <td class="memname"><a class="el" href="struct_sg_node_helper_1_1_pattern_1_1_output_target.html">Pattern::OutputTarget</a> SgNodeHelper::Pattern::matchSingleVarOrValuePrintf </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -443,7 +443,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the SgVarRefExp representing the variable used in the printf call if the pattern matches; otherwise, returns 0 (nullptr).</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>node should not be a null pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned pointer, if not null, points to a valid SgVarRefExp extracted from the function call arguments.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="#aa699d48fde2b8a42ec5b543239b381b5" title="tests several patterns and returns pointer to FunctionCallExp inside that matched pattern,...">SgNodeHelper::Pattern::matchFunctionCall</a> to identify function call expressions and <a class="el" href="namespace_sg_node_helper.html#ad7199d2374a02736b75012cc3ba120f9" title="returns function name of SgFunctionDefinition, SgFunctionDeclaration, SgFunctionCall.">SgNodeHelper::getFunctionName</a> to verify the function name. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="#aa699d48fde2b8a42ec5b543239b381b5" title="tests several patterns and returns pointer to FunctionCallExp inside that matched pattern,...">SgNodeHelper::Pattern::matchFunctionCall</a> to identify function call expressions and <a class="el" href="namespace_sg_node_helper.html#a5be342235bd64533f3d7add2e34e972d" title="returns function name of SgFunctionDefinition, SgFunctionDeclaration, SgFunctionCall.">SgNodeHelper::getFunctionName</a> to verify the function name. </dd></dl>
 
 </div>
 </div>

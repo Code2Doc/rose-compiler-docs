@@ -160,7 +160,7 @@ var sage_build_8_c =
     [ "Rose::builder::BuildImpl", "namespace_rose_1_1builder.html#acbd797e805f798051629bf861025f172", null ],
     [ "Rose::builder::BuildImpl", "namespace_rose_1_1builder.html#abc67e5f9d79ae065d7674c51c1247e40", null ],
     [ "Rose::builder::BuildImpl", "namespace_rose_1_1builder.html#ab93e8fd14cdb1903474ee4c228ae6cdf", null ],
-    [ "Rose::builder::BuildLoopControl", "namespace_rose_1_1builder.html#a5fe6f57ce6ae679432a65862cce53aad", null ],
+    [ "Rose::builder::BuildLoopControl", "namespace_rose_1_1builder.html#a66ea41f17387c36b956ccef6ebcc5af2", null ],
     [ "Rose::builder::BuildSourcePosition", "namespace_rose_1_1builder.html#a5210afb1760f9af62c4d68dcc6f74be1", null ],
     [ "Rose::builder::BuildSourcePosition", "namespace_rose_1_1builder.html#ad277ef5e015fbb6b1bb0cf7867371a8c", null ],
     [ "Rose::builder::BuildSourcePosition", "namespace_rose_1_1builder.html#a4dff66bb81ee0cf15a426e0a348c08aa", null ],

@@ -20,6 +20,6 @@ var _plato_omega_interface_8h =
       [ "PlatoOmegaInterface::OMEGA", "namespace_plato_omega_interface.html#a719623f389372cce17977456b1c99ecfa09f1769a2dcd8f8a6c84c3d52055d0a6", null ]
     ] ],
     [ "PlatoOmegaInterface::SetDepChoice", "namespace_plato_omega_interface.html#a3fee225963563ebede44e1b26114ec06", null ],
-    [ "PlatoOmegaInterface::StringToChar", "namespace_plato_omega_interface.html#ab143ab459b7ad0bc94d08447cd5aac96", null ],
+    [ "PlatoOmegaInterface::StringToChar", "namespace_plato_omega_interface.html#a3859dfa962bbb77f5a98469044fe40e5", null ],
     [ "PlatoOmegaInterface::UseOmega", "namespace_plato_omega_interface.html#ae36527255998f6c1fe618c3a44910c90", null ]
 ];

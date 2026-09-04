@@ -157,6 +157,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fixes self-referential macros within an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node. </p>
+<p>Fixup known macros that reference themselves and cause recursive macro expansion in the generated (unparsed) code.</p>
 <p>This function performs a traversal of the provided AST node to identify and resolve macros that refer to themselves. It utilizes a specialized traversal class, <a class="el" href="class_fixup_self_referential_macros_in_a_s_t.html" title="Fixup known macros that reference themselves and cause recursive macro expansion in the generated (un...">FixupSelfReferentialMacrosInAST</a>, to navigate the tree structure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy to ensure that parent nodes are processed before their children, maintaining consistency with other ROSE interface traversals. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also includes performance tracking to monitor the execution time of the macro fixup process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

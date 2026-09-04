@@ -46,7 +46,7 @@ var _graph_traversal_8h =
     [ "Sawyer::Container::Algorithm::previousEdges", "namespace_sawyer_1_1_container_1_1_algorithm.html#aa8008f5728af6b522d6967af624fb106", null ],
     [ "Sawyer::Container::Algorithm::previousVertex", "namespace_sawyer_1_1_container_1_1_algorithm.html#abe5f3b49013164c9cf93aa1e569fbe9b", null ],
     [ "Sawyer::Container::Algorithm::previousVertex", "namespace_sawyer_1_1_container_1_1_algorithm.html#a1c02892dc1232c1135dfb0387b69acbe", null ],
-    [ "Sawyer::Container::Algorithm::traversalEventName", "namespace_sawyer_1_1_container_1_1_algorithm.html#a81010386a33431dfc1b87520eec4eebd", null ],
+    [ "Sawyer::Container::Algorithm::traversalEventName", "namespace_sawyer_1_1_container_1_1_algorithm.html#a32ed899e3972abc4eb267c84eae862b4", null ],
     [ "Sawyer::Container::Algorithm::ALL_EVENTS", "namespace_sawyer_1_1_container_1_1_algorithm.html#ad50c429ca284148ade6a7c57c57b4166", null ],
     [ "Sawyer::Container::Algorithm::EDGE_EVENTS", "namespace_sawyer_1_1_container_1_1_algorithm.html#a59f3d6eb9bf9953856badd5948782198", null ],
     [ "Sawyer::Container::Algorithm::ENTER_EVENTS", "namespace_sawyer_1_1_container_1_1_algorithm.html#a46429c949f8350093c5b0ae2857ee27e", null ],

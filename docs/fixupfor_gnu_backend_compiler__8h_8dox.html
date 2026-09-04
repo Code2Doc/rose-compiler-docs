@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs necessary transformations on an SgNode to ensure compatibility with the GNU backend. </p>
+<p>Handles code which GNU g++ will not compile (current bug in GNU g++).</p>
 <p>This function initiates a traversal process designed to modify the provided SgNode and its descendants to meet the requirements of the GNU backend. It utilizes a specialized <a class="el" href="class_fixupfor_gnu_backend_compiler.html" title="Recognize and eliminate redundent calls to the same casting operator (or constructor initializer).">FixupforGnuBackendCompiler</a> traversal object to perform the necessary structural or semantic adjustments. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is executed using a postorder strategy to ensure that child nodes are processed and fixed up before their parent nodes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

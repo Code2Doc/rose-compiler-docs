@@ -1,5 +1,6 @@
 var namespace_sage_interface_1_1_ada =
 [
+    [ "anonymous_namespace{sageInterfaceAda.C}", "namespace_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03.html", "namespace_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03" ],
     [ "anonymous__namespace_02sageInterfaceAda_8C_03", "namespace_sage_interface_1_1_ada_1_1anonymous____namespace__02sage_interface_ada__8_c__03.html", [
       [ "appendAllDiscriminantsFromParents", "namespace_sage_interface_1_1_ada_1_1anonymous____namespace__02sage_interface_ada__8_c__03.html#aa5fe99e7c47a7b0ce1725257dae6a5ab", null ],
       [ "appendAllVariableSymbols", "namespace_sage_interface_1_1_ada_1_1anonymous____namespace__02sage_interface_ada__8_c__03.html#a24f7ec18cef41eb677ae9669ba2b5d3c", null ],
@@ -62,7 +63,6 @@ var namespace_sage_interface_1_1_ada =
       [ "symbolForBaseFunction", "namespace_sage_interface_1_1_ada_1_1anonymous____namespace__02sage_interface_ada__8_c__03.html#ac19810684ca54c7e3e182202d550d0cc", null ],
       [ "unwrapActualArgumentExpression", "namespace_sage_interface_1_1_ada_1_1anonymous____namespace__02sage_interface_ada__8_c__03.html#ad2b7aeed232cd961f5101d21639f2729", null ]
     ] ],
-    [ "anonymous_namespace{sageInterfaceAda.C}", "namespace_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03.html", "namespace_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03" ],
     [ "UnparsedChildren", "struct_sage_interface_1_1_ada_1_1_unparsed_children.html", "struct_sage_interface_1_1_ada_1_1_unparsed_children" ],
     [ "SimpleTraversal", "struct_sage_interface_1_1_ada_1_1_simple_traversal.html", "struct_sage_interface_1_1_ada_1_1_simple_traversal" ],
     [ "CommentCxxifier", "struct_sage_interface_1_1_ada_1_1_comment_cxxifier.html", "struct_sage_interface_1_1_ada_1_1_comment_cxxifier" ],
@@ -113,7 +113,7 @@ var namespace_sage_interface_1_1_ada =
     [ "canonicalScope", "namespace_sage_interface_1_1_ada.html#a7ec43bef5ee4d41fcc89cd4f137b62f3", null ],
     [ "characterBaseType", "namespace_sage_interface_1_1_ada.html#a780d8a5cc148d09a2ce4f6fc6f92ecd5", null ],
     [ "characterBaseType", "namespace_sage_interface_1_1_ada.html#a77ef7fc6a89c4dbd51096d452b4cf002", null ],
-    [ "conversionTraversal", "namespace_sage_interface_1_1_ada.html#ad3ffa6c680fe43b383582ff1fe58b335", null ],
+    [ "conversionTraversal", "namespace_sage_interface_1_1_ada.html#a03c88ea7531b2ea91346e1f61c83cf04", null ],
     [ "conversionTraversal", "namespace_sage_interface_1_1_ada.html#a13bff655aeb960d26c8693f4d9220f2f", null ],
     [ "convertAdaToCxxComments", "namespace_sage_interface_1_1_ada.html#ad36baef106acd662b5bc09aafb07b403", null ],
     [ "convertCharLiteral", "namespace_sage_interface_1_1_ada.html#a9b0ccdda796f856a2cb79ec93d97ef90", null ],

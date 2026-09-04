@@ -734,8 +734,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="matcherparser__8_c_8dox.html#ad1d0993e31cbdb614a1c00ae2e43c80b">yyunput</a>( <a class="code hl_variable" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, <a class="code hl_define" href="poet__lex_8c.html#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a> )</div>
-<div class="ttc" id="amatcherparser__8_c_8dox_html_ad1d0993e31cbdb614a1c00ae2e43c80b"><div class="ttname"><a href="matcherparser__8_c_8dox.html#ad1d0993e31cbdb614a1c00ae2e43c80b">yyunput</a></div><div class="ttdeci">void yyunput(int c, char *yy_bp)</div><div class="ttdoc">Pushes a character back into the input stream of the scanner.</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="poet__lex_8c.html#a25685b4fb49203fb391287f312948be4">yyunput</a>( <a class="code hl_variable" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, <a class="code hl_define" href="poet__lex_8c.html#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a> )</div>
+<div class="ttc" id="apoet__lex_8c_html_a25685b4fb49203fb391287f312948be4"><div class="ttname"><a href="poet__lex_8c.html#a25685b4fb49203fb391287f312948be4">yyunput</a></div><div class="ttdeci">static void yyunput(int c, char *buf_ptr)</div></div>
 <div class="ttc" id="apoet__lex_8c_html_a790a191a93ef4d3b8c0bb43fd7480052"><div class="ttname"><a href="poet__lex_8c.html#a790a191a93ef4d3b8c0bb43fd7480052">yytext_ptr</a></div><div class="ttdeci">#define yytext_ptr</div><div class="ttdef"><b>Definition</b> poet_lex.c:368</div></div>
 <div class="ttc" id="axomp__accelerator__sched__test__v2_8c_html_a48faa9373e4ff5ed39dce18d5deea0cb"><div class="ttname"><a href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></div><div class="ttdeci">int c[SIZE]</div><div class="ttdef"><b>Definition</b> xomp_accelerator_sched_test_v2.c:145</div></div>
 </div><!-- fragment -->
@@ -1024,8 +1024,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="matcherparser__8_c_8dox.html#af731d578b7c08d11ba1684c406906f3a">yy_fatal_error</a>( msg )</div>
-<div class="ttc" id="amatcherparser__8_c_8dox_html_af731d578b7c08d11ba1684c406906f3a"><div class="ttname"><a href="matcherparser__8_c_8dox.html#af731d578b7c08d11ba1684c406906f3a">yy_fatal_error</a></div><div class="ttdeci">void yy_fatal_error(char msg[])</div><div class="ttdoc">Prints a fatal error message to stderr and terminates the program.</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="poet__lex_8c.html#aea4ced6513a1062621f055dd066ca4dd">yy_fatal_error</a>( msg )</div>
+<div class="ttc" id="apoet__lex_8c_html_aea4ced6513a1062621f055dd066ca4dd"><div class="ttname"><a href="poet__lex_8c.html#aea4ced6513a1062621f055dd066ca4dd">yy_fatal_error</a></div><div class="ttdeci">static void yy_fatal_error(yyconst char msg[])</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2345,7 +2345,7 @@ Lexical errors encountered during scanning (case 27) will trigger an immediate p
 <div class="line">    }                                                               \</div>
 <div class="line">while (<a class="code hl_define" href="#a0a6ff515042340dd341cf6ca8dd05f2d">YYID</a> (0))</div>
 <div class="ttc" id="amatcherparser_8_c_html_ab2b4f027a2b092ac14ca4464e7b3db60"><div class="ttname"><a href="#ab2b4f027a2b092ac14ca4464e7b3db60">YYRHSLOC</a></div><div class="ttdeci">#define YYRHSLOC(Rhs, K)</div><div class="ttdef"><b>Definition</b> matcherparser.C:2442</div></div>
-<div class="ttc" id="anamespace_n_html"><div class="ttname"><a href="namespace_n.html">N</a></div><div class="ttdoc">Auto-generated documentation for the N namespace.</div></div>
+<div class="ttc" id="anamespace_n_html"><div class="ttname"><a href="namespace_n.html">N</a></div><div class="ttdoc">Auto-generated documentation for the N namespace.</div><div class="ttdef"><b>Definition</b> class.C:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3303,6 +3303,14 @@ Large input sequences may lead to stack overflow if the yyoverflow mechanism or 
 
 <p>Allocates and initializes a new buffer state for Flex. </p>
 <p>Allocates and initializes a new buffer state for lexical analysis.</p>
+<p>Allocate and initialize an input buffer state. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td><a class="el" href="class_a.html">A</a> readable stream. </td></tr>
+    <tr><td class="paramname">size</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character buffer size in bytes. When in doubt, use <code>YY_BUF_SIZE</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the allocated buffer state.</dd></dl>
 <p>This function allocates memory for a new buffer state structure and its associated character buffer. It uses yy_flex_alloc to perform the dynamic memory allocation. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character buffer is allocated with an additional 2 bytes of capacity to accommodate end-of-buffer characters. After allocation, the function initializes the buffer with the provided file stream using yy_init_buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3328,15 +3336,7 @@ Large input sequences may lead to stack overflow if the yyoverflow mechanism or 
 <dl class="section warning"><dt>Warning</dt><dd>If memory allocation for the buffer state or the character buffer fails, the function calls YY_FATAL_ERROR, which typically terminates the program.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter <span class="tt">size</span> should be a positive integer representing the desired buffer capacity. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> valid, initialized <a class="el" href="poet__lex_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> is returned, and the internal <span class="tt">yy_ch_buf</span> is allocated with a size of <span class="tt">size + 2</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer is marked as being owned by the library (yy_is_our_buffer is set to 1) to ensure proper cleanup procedures.</dd></dl>
-<p>Allocate and initialize an input buffer state. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td><a class="el" href="class_a.html">A</a> readable stream. </td></tr>
-    <tr><td class="paramname">size</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character buffer size in bytes. When in doubt, use <code>YY_BUF_SIZE</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the allocated buffer state. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer is marked as being owned by the library (yy_is_our_buffer is set to 1) to ensure proper cleanup procedures. </dd></dl>
 
 </div>
 </div>
@@ -3357,6 +3357,12 @@ Large input sequences may lead to stack overflow if the yyoverflow mechanism or 
 
 <p>Deallocates and cleans up a Flex buffer state and its associated character buffer. </p>
 <p>Deallocates and cleans up a specified buffer state.</p>
+<p>Destroy the buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></td><td>a buffer created with <a class="el" href="#ac86ea8173dfcfc5c989d3295a77e2f95">yy_create_buffer()</a></td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This function handles the memory deallocation process for a buffer state structure. It checks if the buffer is the currently active buffer and, if so, resets the global current buffer pointer to NULL to prevent dangling references. If the buffer was allocated by the internal Flex mechanism (indicated by the yy_is_our_buffer flag), the underlying character buffer is freed using yy_flex_free. Finally, the buffer state structure itself is freed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3376,13 +3382,7 @@ Large input sequences may lead to stack overflow if the yyoverflow mechanism or 
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer b should be a valid pointer to a <a class="el" href="poet__lex_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> structure allocated via the scanner's internal mechanisms if yy_is_our_buffer is true.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> memory associated with the buffer state b and its internal character buffer (if applicable) is released. If b was the current buffer, YY_CURRENT_BUFFER is set to NULL.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses yyfree for deallocation, which is typically a wrapper around the standard C free function.</dd></dl>
-<p>Destroy the buffer. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></td><td>a buffer created with <a class="el" href="#ac86ea8173dfcfc5c989d3295a77e2f95">yy_create_buffer()</a> </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses yyfree for deallocation, which is typically a wrapper around the standard C free function. </dd></dl>
 
 </div>
 </div>
@@ -3507,6 +3507,12 @@ Large input sequences may lead to stack overflow if the yyoverflow mechanism or 
 
 <p>Resets and flushes the contents of the specified buffer. </p>
 <p>Resets the buffer state to an empty, initial state.</p>
+<p>Discard all buffered characters. On the next scan, YY_INPUT will be called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></td><td>the buffer state to be flushed, usually <code>YY_CURRENT_BUFFER</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This function clears the current contents of the provided buffer state by resetting the character count and repositioning the buffer pointer. It prepares the buffer for new input by inserting end-of-buffer markers to handle state transitions and buffer jams correctly. If the buffer being flushed is the current active buffer, the function triggers a reload of the buffer state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3528,13 +3534,7 @@ Large input sequences may lead to stack overflow if the yyoverflow mechanism or 
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer b (if not null) will have its yy_n_chars set to 0, its yy_buf_pos reset to the start of the buffer, its yy_at_bol set to 1, and its yy_buffer_status set to YY_BUFFER_NEW. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first two characters of the buffer are set to YY_END_OF_BUFFER_CHAR.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If b is NULL, the function returns immediately without performing any operations. </dd>
 <dd>
-If b is equal to YY_CURRENT_BUFFER, <a class="el" href="poet__lex_8c.html#ac6bf96bd2d347c04367b8111abcd0dca">yy_load_buffer_state()</a> is called to refresh the buffer contents.</dd></dl>
-<p>Discard all buffered characters. On the next scan, YY_INPUT will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></td><td>the buffer state to be flushed, usually <code>YY_CURRENT_BUFFER</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
+If b is equal to YY_CURRENT_BUFFER, <a class="el" href="poet____lex__8c_8dox.html#ac8b88c4bcce9926c7c406be4600fbdb7">yy_load_buffer_state()</a> is called to refresh the buffer contents. </dd></dl>
 
 </div>
 </div>
@@ -3575,7 +3575,7 @@ If b is equal to YY_CURRENT_BUFFER, <a class="el" href="poet__lex_8c.html#ac6bf9
         <tr>
           <td class="memname"><a class="el" href="poet__lex_8c.html#a9ba7c416f135b0f0c1f4addded4616b5">yy_state_type</a> yy_get_previous_state </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3914,6 +3914,14 @@ If <span class="tt"><a class="el" href="xomp__accelerator__sched__test_8c.html#a
 
 <p>Creates a new buffer state from a provided memory block. </p>
 <p>Initializes a new buffer state from a provided memory block.</p>
+<p>Setup the input buffer state to scan directly from a user-specified character buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base</td><td>the character buffer </td></tr>
+    <tr><td class="paramname">size</td><td>the size in bytes of the character buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly allocated buffer state object.</dd></dl>
 <p>This function initializes a new buffer state structure by wrapping an existing memory buffer. It validates that the provided buffer contains the necessary end-of-buffer characters at the end of the specified size. If valid, it allocates a new buffer state using yy_flex_alloc, configures the buffer metadata (such as position, size, and status), and switches the scanner to this new buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3943,15 +3951,7 @@ If the function returns a non-null pointer, a new <a class="el" href="poet__lex_
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer pointed to by <span class="tt">base</span> must be at least 2 bytes in size and must contain the YY_END_OF_BUFFER_CHAR at indices <span class="tt">size-2</span> and <span class="tt">size-1</span>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>If successful, a new buffer state is allocated, configured, and set as the current active buffer via yy_switch_to_buffer.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>If memory allocation for the buffer state fails, the function calls YY_FATAL_ERROR, which typically terminates the program.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer size used for the actual buffer content is <span class="tt">size - 2</span> to account for the two mandatory end-of-buffer characters.</dd></dl>
-<p>Setup the input buffer state to scan directly from a user-specified character buffer. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">base</td><td>the character buffer </td></tr>
-    <tr><td class="paramname">size</td><td>the size in bytes of the character buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the newly allocated buffer state object. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer size used for the actual buffer content is <span class="tt">size - 2</span> to account for the two mandatory end-of-buffer characters. </dd></dl>
 
 </div>
 </div>
@@ -3975,6 +3975,14 @@ If the function returns a non-null pointer, a new <a class="el" href="poet__lex_
 </div><div class="memdoc">
 
 <p>Creates a new buffer state from a provided byte array. </p>
+<p>Setup the input buffer state to scan the given bytes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> next call to <a class="el" href="poet____lex__8c_8dox.html#aa40b27ae32d6d1ae7160bd6256e08eb8">yylex()</a> will scan from a <em>copy</em> of <em class="arg">bytes</em>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">yybytes</td><td>the byte buffer to scan </td></tr>
+    <tr><td class="paramname">_yybytes_len</td><td>the number of bytes in the buffer pointed to by <em class="arg">bytes</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly allocated buffer state object.</dd></dl>
 <p>This function allocates a new memory buffer to hold the contents of the input byte array, appending trailing end-of-buffer characters. It then initializes a new buffer state pointing to this allocated memory. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is designed to handle raw byte sequences by ensuring the buffer is null-terminated or appropriately marked with end-of-buffer markers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3988,16 +3996,8 @@ If the function returns a non-null pointer, a new <a class="el" href="poet__lex_
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new buffer state is returned which is marked as an internal buffer (yy_is_our_buffer is set to 1). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> caller or the scanner is responsible for the lifecycle of the allocated buffer.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>If memory allocation via <span class="tt"><a class="el" href="unionyyalloc.html">yyalloc</a></span> fails, the function calls <span class="tt"><a class="el" href="poet__lex_8c.html#ac0586b8b0b092d02f4ba7d45abe328f2">YY_FATAL_ERROR</a></span>, which typically terminates the program. </dd>
 <dd>
-If <span class="tt"><a class="el" href="poet__lex_8c.html#af81595b30c0da73f9034ffb511db6388" title="Creates a new buffer state from a provided memory block.">yy_scan_buffer</a></span> fails to create a buffer state, the function calls <span class="tt"><a class="el" href="poet__lex_8c.html#ac0586b8b0b092d02f4ba7d45abe328f2">YY_FATAL_ERROR</a></span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function allocates <span class="tt">_yybytes_len + 2</span> bytes to accommodate the original data plus two <span class="tt"><a class="el" href="poet__lex_8c.html#ab866a64da164ed2d4d444df1ef1fc9b3">YY_END_OF_BUFFER_CHAR</a></span> markers.</dd></dl>
-<p>Setup the input buffer state to scan the given bytes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> next call to <a class="el" href="poet__lex_8c.html#a9a7bd1b3d14701eb97c03f3ef34deff1">yylex()</a> will scan from a <em>copy</em> of <em class="arg">bytes</em>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">yybytes</td><td>the byte buffer to scan </td></tr>
-    <tr><td class="paramname">_yybytes_len</td><td>the number of bytes in the buffer pointed to by <em class="arg">bytes</em>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the newly allocated buffer state object. </dd></dl>
+If <span class="tt"><a class="el" href="poet____lex__8c_8dox.html#af81595b30c0da73f9034ffb511db6388" title="Creates a new buffer state from a provided memory block.">yy_scan_buffer</a></span> fails to create a buffer state, the function calls <span class="tt"><a class="el" href="poet__lex_8c.html#ac0586b8b0b092d02f4ba7d45abe328f2">YY_FATAL_ERROR</a></span>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function allocates <span class="tt">_yybytes_len + 2</span> bytes to accommodate the original data plus two <span class="tt"><a class="el" href="poet__lex_8c.html#ab866a64da164ed2d4d444df1ef1fc9b3">YY_END_OF_BUFFER_CHAR</a></span> markers. </dd></dl>
 
 </div>
 </div>
@@ -4018,6 +4018,14 @@ If <span class="tt"><a class="el" href="poet__lex_8c.html#af81595b30c0da73f9034f
 
 <p>Scans a string for tokens. </p>
 <p>Scans a null-terminated string as the input source for the lexer.</p>
+<p>Setup the input buffer state to scan a string. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> next call to <a class="el" href="poet____lex__8c_8dox.html#aa40b27ae32d6d1ae7160bd6256e08eb8">yylex()</a> will scan from a <em>copy</em> of <em class="arg">str</em>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">yystr</td><td>a NUL-terminated string to scan</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly allocated buffer state object. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If you want to scan bytes that may contain NUL values, then use <a class="el" href="#a3b70699ea880c5d25a1c75f4ad96c315">yy_scan_bytes()</a> instead.</dd></dl>
 <p>This function initializes the scanner to read from a null-terminated string. It determines the length of the input string by iterating through it until the null terminator is encountered, and then delegates the scanning process to the yy_scan_bytes function using the calculated length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4039,15 +4047,7 @@ If <span class="tt"><a class="el" href="poet__lex_8c.html#af81595b30c0da73f9034f
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="poet__lex_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> structure representing the new buffer state containing the provided string.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>yystr must point to a valid, null-terminated C-style string. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> lexer's input buffer is updated to point to the contents of yystr.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around yy_scan_bytes.</dd></dl>
-<p>Setup the input buffer state to scan a string. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> next call to <a class="el" href="poet__lex_8c.html#a9a7bd1b3d14701eb97c03f3ef34deff1">yylex()</a> will scan from a <em>copy</em> of <em class="arg">str</em>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">yystr</td><td>a NUL-terminated string to scan</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the newly allocated buffer state object. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If you want to scan bytes that may contain NUL values, then use <a class="el" href="#a3b70699ea880c5d25a1c75f4ad96c315">yy_scan_bytes()</a> instead. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around yy_scan_bytes. </dd></dl>
 
 </div>
 </div>
@@ -4097,6 +4097,12 @@ If <span class="tt"><a class="el" href="poet__lex_8c.html#af81595b30c0da73f9034f
 
 <p>Switches the current input buffer to a new buffer state. </p>
 <p>Switches the current scanner buffer to a new buffer state.</p>
+<p>Switch to a different input buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_buffer</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> new input buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This function handles the transition from the current scanner buffer to a newly specified buffer. If a buffer is currently active, the function performs a flush operation to ensure that any remaining characters in the old buffer are properly accounted for by updating the buffer position and character count. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then updates the global current buffer pointer and reloads the buffer state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4118,17 +4124,11 @@ If <span class="tt"><a class="el" href="poet__lex_8c.html#af81595b30c0da73f9034f
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer stack must be in a valid state, verified by <a class="el" href="poet__lex_8c.html#a2e9898ec03e594f5a82387c787776ef6">yyensure_buffer_stack()</a>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer stack must be in a valid state, verified by <a class="el" href="poet____lex__8c_8dox.html#ab7d534f85fed4ec3e97ac6dc68bb467e" title="Ensures that the buffer stack is properly allocated and has sufficient capacity.">yyensure_buffer_stack()</a>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> YY_CURRENT_BUFFER_LVALUE is updated to point to new_buffer, and yy_did_buffer_switch_on_eof is set to 1.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the new_buffer is already the current buffer, the function returns immediately without performing any updates. </dd>
 <dd>
-This implementation currently manually flushes the old buffer state instead of using a push/pop mechanism, though a TODO indicates a planned refactor to use yypop_buffer_state and yypush_buffer_state.</dd></dl>
-<p>Switch to a different input buffer. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">new_buffer</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> new input buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
+This implementation currently manually flushes the old buffer state instead of using a push/pop mechanism, though a TODO indicates a planned refactor to use yypop_buffer_state and yypush_buffer_state. </dd></dl>
 
 </div>
 </div>
@@ -4275,6 +4275,13 @@ This implementation currently manually flushes the old buffer state instead of u
 </div><div class="memdoc">
 
 <p>Restarts the lexical analyzer with a new input file. </p>
+<p>Immediately switch to a different input stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file</td><td><a class="el" href="class_a.html">A</a> readable stream.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This function does not reset the start condition to <code>INITIAL</code> .</dd></dl>
 <p>This function resets the scanner's input stream to a new file pointer. It ensures that the current buffer is properly initialized or re-initialized to point to the provided input file. If no buffer currently exists, a new buffer is allocated using yy_create_buffer. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then updates the buffer state to reflect the new input source and reloads the buffer state to prepare for subsequent scanning operations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4294,14 +4301,7 @@ This implementation currently manually flushes the old buffer state instead of u
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input_file pointer should be a valid, open FILE stream. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scanner's current buffer is updated to point to the contents of input_file, and the buffer state is reloaded.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of global or macro-defined variables such as YY_CURRENT_BUFFER, yyin, and YY_BUF_SIZE.</dd></dl>
-<p>Immediately switch to a different input stream. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input_file</td><td><a class="el" href="class_a.html">A</a> readable stream.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This function does not reset the start condition to <code>INITIAL</code> . </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of global or macro-defined variables such as YY_CURRENT_BUFFER, yyin, and YY_BUF_SIZE. </dd></dl>
 
 </div>
 </div>

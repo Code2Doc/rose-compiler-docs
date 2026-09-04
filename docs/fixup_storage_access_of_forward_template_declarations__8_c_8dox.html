@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fixes storage access issues related to forward template declarations. </p>
+<p>Fixup the storage access of all compiler-generated forward declarations (non-defining declarations) to match that of the defining declaration.</p>
 <p>This function addresses a specific issue (identified as an EDG bug) regarding how storage is accessed when dealing with forward template declarations. It utilizes a specialized traversal mechanism, <a class="el" href="class_fixup_storage_access_of_forward_template_declarations.html" title="Fixup the storage access of all compiler-generated forward declarations (non-defining declarations) t...">FixupStorageAccessOfForwardTemplateDeclarations</a>, to navigate the SgNode hierarchy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy to ensure that the fixup logic is applied consistently across the structure of the provided node and its descendants.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

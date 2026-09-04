@@ -117,7 +117,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if a given expression node contains any lambda expressions within its subtree. </p>
-<p>This function performs a deep traversal of the provided AST subtree starting at the given node. It is specifically utilized to identify the presence of lambda expressions to ensure that complex cleanup operations, such as deleting lambda expressions and their associated generated classes and member functions, are handled correctly. This is necessary because the standard <a class="el" href="namespace_sage_interface.html#ae52046da558540983d978a2863920ef2" title="Function to delete AST subtree&#39;s nodes only, users must take care of any dangling pointers,...">SageInterface::deleteAST</a> mechanism may not be robust enough for these specific complex cases involving lambdas.</p>
+<p>This function performs a deep traversal of the provided AST subtree starting at the given node. It is specifically utilized to identify the presence of lambda expressions to ensure that complex cleanup operations, such as deleting lambda expressions and their associated generated classes and member functions, are handled correctly. This is necessary because the standard <a class="el" href="namespace_sage_interface.html#a57437bbbb806858dda0cea7444fbafef" title="Function to delete AST subtree&#39;s nodes only, users must take care of any dangling pointers,...">SageInterface::deleteAST</a> mechanism may not be robust enough for these specific complex cases involving lambdas.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses an internal class, LambdaTestTraversal, which inherits from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>. This traversal class implements a visitor pattern that flags a boolean value if any node encountered during the preorder traversal is identified as an SgLambdaExp.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -180,7 +180,7 @@ When removing default arguments, the function checks for lambda expressions usin
 <dl class="section post"><dt>Postcondition</dt><dd>Redundant default arguments in secondary function declarations are removed, and the AST is updated such that only the primary declaration retains the default values.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include and define logic via preprocessor checks to manage different processing modes. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <a class="el" href="namespace_sage_interface.html#ae52046da558540983d978a2863920ef2" title="Function to delete AST subtree&#39;s nodes only, users must take care of any dangling pointers,...">SageInterface::deleteAST</a> to clean up removed default argument expressions, provided they do not contain lambda expressions. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <a class="el" href="namespace_sage_interface.html#a57437bbbb806858dda0cea7444fbafef" title="Function to delete AST subtree&#39;s nodes only, users must take care of any dangling pointers,...">SageInterface::deleteAST</a> to clean up removed default argument expressions, provided they do not contain lambda expressions. </dd></dl>
 
 </div>
 </div>

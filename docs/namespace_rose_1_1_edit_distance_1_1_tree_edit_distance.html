@@ -119,12 +119,12 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:af079425ed093fbff60034fb81f6a407c" id="r_af079425ed093fbff60034fb81f6a407c"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af079425ed093fbff60034fb81f6a407c">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_edit.html">Edit</a> &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</td></tr>
 <tr class="memdesc:af079425ed093fbff60034fb81f6a407c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the stream insertion operator for the <a class="el" href="struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_edit.html">Edit</a> class.  <br /></td></tr>
-<tr class="memitem:a7411e8451af8c782e60fa4b4d444ef21" id="r_a7411e8451af8c782e60fa4b4d444ef21"><td class="memItemLeft">std::vector&lt; SgNode * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7411e8451af8c782e60fa4b4d444ef21">generateTraversalList</a> (SgNode *ast, std::vector&lt; <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> &gt; &amp;nodeDepths, SgFile *containingFile=NULL, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> minDepth=0, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxDepth=<a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>(-1))</td></tr>
-<tr class="memdesc:a7411e8451af8c782e60fa4b4d444ef21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a flattened list of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes based on a depth-constrained traversal.  <br /></td></tr>
+<tr class="memitem:a7fb61a44ccaff59a3ad1c85453b0df12" id="r_a7fb61a44ccaff59a3ad1c85453b0df12"><td class="memItemLeft">static std::vector&lt; SgNode * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7fb61a44ccaff59a3ad1c85453b0df12">generateTraversalList</a> (SgNode *ast, std::vector&lt; <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> &gt; &amp;nodeDepths, SgFile *containingFile=NULL, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> minDepth=0, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxDepth=<a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>(-1))</td></tr>
+<tr class="memdesc:a7fb61a44ccaff59a3ad1c85453b0df12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a flattened list of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes based on a depth-constrained traversal.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_edit_distance_1_1_tree_edit_distance.html" title="Auto-generated documentation for the Rose::EditDistance::TreeEditDistance namespace.">Rose::EditDistance::TreeEditDistance</a> namespace. </p>
-<p><a class="el" href="class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html">Analysis</a> to determine how to make one <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> look like another.</p>
+<p><a class="el" href="class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html">Analysis</a> to determine how to make one <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> look like another.</p>
 <p>Actually editing one tree have the same shape as another is, in many cases, nonsensical but the edit distance metric is nonetheless useful to determine the similarity of two trees. See <a class="el" href="class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html#af93a521847810cf6ebe27c35d4cfca21" title="Analysis::compute">Analysis::compute</a> for details about how this analysis is implemented.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> way the analysis is used is like this:</p>
 <div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_rose_1_1_edit_distance.html">Rose::EditDistance</a>;</div>
@@ -138,7 +138,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclass_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis_html_a4895c251d28b48c5aac0397383307cc1"><div class="ttname"><a href="class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html#a4895c251d28b48c5aac0397383307cc1">Rose::EditDistance::TreeEditDistance::Analysis::cost</a></div><div class="ttdeci">double cost() const</div><div class="ttdef"><b>Definition</b> TreeEditDistance.C:223</div></div>
 <div class="ttc" id="aclass_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis_html_abb90558b6dbf3a4ddf3f704c513943bb"><div class="ttname"><a href="class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html#abb90558b6dbf3a4ddf3f704c513943bb">Rose::EditDistance::TreeEditDistance::Analysis::substitutionCost</a></div><div class="ttdeci">double substitutionCost() const</div><div class="ttdef"><b>Definition</b> TreeEditDistance.h:173</div></div>
 <div class="ttc" id="aclass_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis_html_af93a521847810cf6ebe27c35d4cfca21"><div class="ttname"><a href="class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html#af93a521847810cf6ebe27c35d4cfca21">Rose::EditDistance::TreeEditDistance::Analysis::compute</a></div><div class="ttdeci">Analysis &amp; compute(SgNode *source, SgNode *target, SgFile *sourceFile=NULL, SgFile *targetFile=NULL)</div><div class="ttdef"><b>Definition</b> TreeEditDistance.C:102</div></div>
-<div class="ttc" id="anamespace_rose_1_1_edit_distance_html"><div class="ttname"><a href="namespace_rose_1_1_edit_distance.html">Rose::EditDistance</a></div><div class="ttdoc">Auto-generated documentation for the Rose::EditDistance namespace.</div></div>
+<div class="ttc" id="anamespace_rose_1_1_edit_distance_html"><div class="ttname"><a href="namespace_rose_1_1_edit_distance.html">Rose::EditDistance</a></div><div class="ttdoc">Auto-generated documentation for the Rose::EditDistance namespace.</div><div class="ttdef"><b>Definition</b> DamerauLevenshtein.h:7</div></div>
 </div><!-- fragment --><p>Or in one expression:</p>
 <p>double cost = TreeEditDistance::Analysis() .substitutionCost(0.0) .compute(ast1, ast2) .cost(); </p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> analysis object can be reused as many times as one likes by calling its <code>compute</code> method with different trees. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> query methods always return the same results until the next call to <code>compute</code>. </p>
@@ -183,11 +183,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a7411e8451af8c782e60fa4b4d444ef21" name="a7411e8451af8c782e60fa4b4d444ef21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7411e8451af8c782e60fa4b4d444ef21">&#9670;&#160;</a></span>generateTraversalList()</h2>
+<a id="a7fb61a44ccaff59a3ad1c85453b0df12" name="a7fb61a44ccaff59a3ad1c85453b0df12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb61a44ccaff59a3ad1c85453b0df12">&#9670;&#160;</a></span>generateTraversalList()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; SgNode * &gt; Rose::EditDistance::TreeEditDistance::generateTraversalList </td>
@@ -215,13 +218,18 @@ Functions</h2></td></tr>
           <td class="paramtype"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a></td>          <td class="paramname"><span class="paramname"><em>maxDepth</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>(-1)</span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Generates a flattened list of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes based on a depth-constrained traversal. </p>
-<p>This function performs a depth-first traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>) starting from the root node. It utilizes a <a class="el" href="struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_sequence_generation_traversal.html">SequenceGenerationTraversal</a> object to navigate the tree structure, collecting nodes that fall within the specified depth boundaries. During the traversal, the depth of each visited node is recorded.</p>
+<p>Generates a flattened list of <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes based on a depth-constrained traversal. </p>
+<p>This function performs a depth-first traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>) starting from the root node. It utilizes a <a class="el" href="struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_sequence_generation_traversal.html">SequenceGenerationTraversal</a> object to navigate the tree structure, collecting nodes that fall within the specified depth boundaries. During the traversal, the depth of each visited node is recorded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ast</td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> to be traversed. </td></tr>
+    <tr><td class="paramname">ast</td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode of the <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> to be traversed. </td></tr>
     <tr><td class="paramname">nodeDepths</td><td>An output vector that will be cleared and then populated with the depth of each node found during the traversal, corresponding to the order of nodes in the returned vector. </td></tr>
     <tr><td class="paramname">containingFile</td><td><a class="el" href="class_a.html">A</a> pointer to the SgFile containing the nodes, used for contextual information during traversal. Defaults to NULL. </td></tr>
     <tr><td class="paramname">minDepth</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> minimum depth level (inclusive) from which nodes should be collected. Defaults to 0. </td></tr>

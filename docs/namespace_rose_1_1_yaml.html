@@ -113,10 +113,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0c42e21f1b027b69caa6f4d7ec30ae60" id="r_a0c42e21f1b027b69caa6f4d7ec30ae60"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0c42e21f1b027b69caa6f4d7ec30ae60">toYaml</a> (const <a class="el" href="#a3ad9b31fc49f677fa4cdf46f9c0a4a03">json</a> &amp;j)</td></tr>
-<tr class="memdesc:a0c42e21f1b027b69caa6f4d7ec30ae60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a JSON object into its corresponding YAML <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation.  <br /></td></tr>
-<tr class="memitem:a76c3c7e62d45842436ef19796da06909" id="r_a76c3c7e62d45842436ef19796da06909"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#a76c3c7e62d45842436ef19796da06909">parse</a> (const char *data)</td></tr>
-<tr class="memdesc:a76c3c7e62d45842436ef19796da06909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a C-style string into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure.  <br /></td></tr>
+<tr class="memitem:acc80a8cc01a992c3a8df48cc2a2d95d4" id="r_acc80a8cc01a992c3a8df48cc2a2d95d4"><td class="memItemLeft">static <a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#acc80a8cc01a992c3a8df48cc2a2d95d4">toYaml</a> (const <a class="el" href="#a3ad9b31fc49f677fa4cdf46f9c0a4a03">json</a> &amp;j)</td></tr>
+<tr class="memdesc:acc80a8cc01a992c3a8df48cc2a2d95d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a JSON object into its corresponding YAML <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation.  <br /></td></tr>
+<tr class="memitem:a589d9976683a423028bdabf600f3bd05" id="r_a589d9976683a423028bdabf600f3bd05"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#a589d9976683a423028bdabf600f3bd05">parse</a> (const boost::filesystem::path &amp;fileName)</td></tr>
+<tr class="memdesc:a589d9976683a423028bdabf600f3bd05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a file from the given path into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure.  <br /></td></tr>
 <tr class="memitem:a84ef15f02a25df02d922c78458d145ff" id="r_a84ef15f02a25df02d922c78458d145ff"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a84ef15f02a25df02d922c78458d145ff">serialize</a> (const <a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a> &amp;root, const char *filename, const <a class="el" href="struct_sawyer_1_1_yaml_1_1_serialize_config.html">SerializeConfig</a> &amp;config)</td></tr>
 <tr class="memdesc:a84ef15f02a25df02d922c78458d145ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object to a specified file on disk.  <br /></td></tr>
 <tr id="func-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">JSON to YAML conversion.</div></td></tr>
@@ -127,17 +127,17 @@ Functions</h2></td></tr>
 <tr class="memitem:aa76f691cfad0b9620b8b42465f58fa78" id="r_aa76f691cfad0b9620b8b42465f58fa78"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa76f691cfad0b9620b8b42465f58fa78">parseJson</a> (const std::string &amp;content)</td></tr>
 <tr class="memdesc:aa76f691cfad0b9620b8b42465f58fa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a JSON string into a YAML-compatible <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure.  <br /></td></tr>
 <tr id="func-members-1" class="groupHeader"><td colspan="2"><div class="groupHeader">YAML parsing.</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>Parse YAML from various types of inputs. These are basically aliases for <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a>.</p>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>Parse YAML from various types of inputs. These are basically aliases for <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a>.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="#a19ec3638ae7bfa2f9055e3078258d974" title="parseYaml(const boost::filesystem::path &amp;fileName)">parseYaml(const boost::filesystem::path &amp;fileName)</a> overload differs from the other overloads in that it treats the input as a path to the input YAML, while the other overloads all assume the input itself is YAML. </p>
 </div></td></tr>
 <tr class="memitem:a19ec3638ae7bfa2f9055e3078258d974" id="r_a19ec3638ae7bfa2f9055e3078258d974"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#a19ec3638ae7bfa2f9055e3078258d974">parseYaml</a> (const boost::filesystem::path &amp;fileName)</td></tr>
 <tr class="memdesc:a19ec3638ae7bfa2f9055e3078258d974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a YAML file and returns its content as a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a>.  <br /></td></tr>
 <tr class="memitem:ab648046113e611501bb8ee66ff7773df" id="r_ab648046113e611501bb8ee66ff7773df"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab648046113e611501bb8ee66ff7773df">parseYaml</a> (std::istream &amp;inputStream)</td></tr>
 <tr class="memdesc:ab648046113e611501bb8ee66ff7773df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses YAML content from an input stream into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure.  <br /></td></tr>
-<tr class="memitem:af623a850fad08462848ced6e76c0fe35" id="r_af623a850fad08462848ced6e76c0fe35"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#af623a850fad08462848ced6e76c0fe35">parseYaml</a> (const char *content)</td></tr>
-<tr class="memdesc:af623a850fad08462848ced6e76c0fe35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a YAML-formatted string into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure.  <br /></td></tr>
 <tr class="memitem:ab4987dc84be998342921523fcc179288" id="r_ab4987dc84be998342921523fcc179288"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab4987dc84be998342921523fcc179288">parseYaml</a> (const std::string &amp;content)</td></tr>
 <tr class="memdesc:ab4987dc84be998342921523fcc179288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a YAML-formatted string into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object.  <br /></td></tr>
+<tr class="memitem:af623a850fad08462848ced6e76c0fe35" id="r_af623a850fad08462848ced6e76c0fe35"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a>&#160;</td><td class="memItemRight"><a class="el" href="#af623a850fad08462848ced6e76c0fe35">parseYaml</a> (const char *content)</td></tr>
+<tr class="memdesc:af623a850fad08462848ced6e76c0fe35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a YAML-formatted string into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_yaml.html" title="Auto-generated documentation for the Rose::Yaml namespace.">Rose::Yaml</a> namespace. </p>
@@ -158,33 +158,34 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a76c3c7e62d45842436ef19796da06909" name="a76c3c7e62d45842436ef19796da06909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76c3c7e62d45842436ef19796da06909">&#9670;&#160;</a></span>parse()</h2>
+<a id="a589d9976683a423028bdabf600f3bd05" name="a589d9976683a423028bdabf600f3bd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589d9976683a423028bdabf600f3bd05">&#9670;&#160;</a></span>parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Yaml::Node</a> <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909">Sawyer::Yaml::parse</a> </td>
+          <td class="memname"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a> <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05">Sawyer::Yaml::parse</a> </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td class="paramtype">const boost::filesystem::path &amp;</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parses a C-style string into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure. </p>
-<p>This function serves as a high-level wrapper for the internal Parse function. It initializes a new <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> root and initiates the parsing process by calculating the length of the input string and passing it to the underlying parsing logic.</p>
+<p>Parses a file from the given path into a <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> structure. </p>
+<p>Parse YAML from file.</p>
+<p>This function serves as a high-level wrapper for the Parse function. It initializes a new, empty <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object representing the root of the parsed structure and then invokes the internal Parse logic to populate this root with data extracted from the specified file path.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td><a class="el" href="class_a.html">A</a> pointer to a null-terminated C-string containing the data to be parsed.</td></tr>
+    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> filesystem path to the file that needs to be parsed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object representing the root of the parsed structure.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input pointer <span class="tt">data</span> must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> valid <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object is returned, representing the parsed content of <span class="tt">data</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the internal Parse function to perform the actual tree construction. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object containing the parsed data structure.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file specified by fileName must exist and be accessible by the process. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object is returned, which may be empty if the file is empty or contains a populated tree structure if parsing was successful.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the implementation of the Parse function to handle the actual file I/O and syntax analysis. </dd></dl>
 
 </div>
 </div>
@@ -282,7 +283,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This function serves as a wrapper around the <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a> method to facilitate the loading of YAML data from a filesystem path into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object. It utilizes the boost::filesystem library to handle the input file path.</p>
+<p>This function serves as a wrapper around the <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a> method to facilitate the loading of YAML data from a filesystem path into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object. It utilizes the boost::filesystem library to handle the input file path.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> filesystem path to the YAML file that needs to be parsed.</td></tr>
@@ -292,7 +293,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object representing the parsed content of the YAML file.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file specified by fileName must exist and be accessible by the process. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a populated <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object if parsing is successful, or an empty/error <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> if parsing fails.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
 
 </div>
 </div>
@@ -318,7 +319,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This function takes a raw C-style string containing YAML data and utilizes the <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a> utility to transform the text into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing process involves scanning the input content for YAML syntax elements such as key-value pairs, sequences, and mappings.</p>
+<p>This function takes a raw C-style string containing YAML data and utilizes the <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a> utility to transform the text into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing process involves scanning the input content for YAML syntax elements such as key-value pairs, sequences, and mappings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">content</td><td><a class="el" href="class_a.html">A</a> pointer to a null-terminated character array containing the YAML string to be parsed.</td></tr>
@@ -328,7 +329,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object representing the parsed YAML structure.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> content pointer must not be null and must point to a valid, null-terminated string containing syntactically correct YAML. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a populated <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object if parsing is successful, or an empty/error <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> if the input is invalid.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
 
 </div>
 </div>
@@ -354,7 +355,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This function takes a string containing YAML data and utilizes the <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a> utility to transform the raw text into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing process follows standard YAML syntax rules to build a tree-like structure of the input content.</p>
+<p>This function takes a string containing YAML data and utilizes the <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a> utility to transform the raw text into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing process follows standard YAML syntax rules to build a tree-like structure of the input content.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">content</td><td><a class="el" href="class_a.html">A</a> constant reference to a string containing the YAML formatted text to be parsed.</td></tr>
@@ -364,7 +365,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object representing the parsed YAML structure.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">content</span> should contain valid YAML syntax. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a populated <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object if parsing is successful.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
 
 </div>
 </div>
@@ -390,7 +391,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This function serves as a wrapper around the <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a> utility. It reads the content provided by the input stream and performs the parsing logic required to transform YAML-formatted text into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation.</p>
+<p>This function serves as a wrapper around the <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a> utility. It reads the content provided by the input stream and performs the parsing logic required to transform YAML-formatted text into a structured <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inputStream</td><td><a class="el" href="class_a.html">A</a> reference to a std::istream from which the YAML content is read.</td></tr>
@@ -400,7 +401,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> object representing the parsed YAML structure.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> inputStream must be in a valid state and contain valid YAML syntax. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> contains the hierarchical representation of the input stream's content.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909" title="Parses a C-style string into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the underlying implementation of <a class="el" href="namespace_sawyer_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05" title="Parses a file from the given path into a Node structure.">Sawyer::Yaml::parse</a>. </dd></dl>
 
 </div>
 </div>
@@ -454,11 +455,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0c42e21f1b027b69caa6f4d7ec30ae60" name="a0c42e21f1b027b69caa6f4d7ec30ae60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c42e21f1b027b69caa6f4d7ec30ae60">&#9670;&#160;</a></span>toYaml()</h2>
+<a id="acc80a8cc01a992c3a8df48cc2a2d95d4" name="acc80a8cc01a992c3a8df48cc2a2d95d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc80a8cc01a992c3a8df48cc2a2d95d4">&#9670;&#160;</a></span>toYaml()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_sawyer_1_1_yaml_1_1_node.html">Node</a> Rose::Yaml::toYaml </td>
@@ -467,6 +471,11 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Converts a JSON object into its corresponding YAML <a class="el" href="class_rose_1_1_yaml_1_1_node.html">Node</a> representation. </p>

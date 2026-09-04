@@ -9,7 +9,7 @@ var namespace_sg_node_helper_1_1_pattern =
     [ "matchFunctionCallExpInVariableDeclaration", "namespace_sg_node_helper_1_1_pattern.html#ae0df51012ae9e25d8183ef1c5b332bef", null ],
     [ "matchReturnStmtFunctionCallExp", "namespace_sg_node_helper_1_1_pattern.html#a57aa8247c7766aa70b0888055f8c196f", null ],
     [ "matchSingleVarFPrintf", "namespace_sg_node_helper_1_1_pattern.html#aa04b5696322aa1cfacdd731e56ae9f87", null ],
-    [ "matchSingleVarOrValuePrintf", "namespace_sg_node_helper_1_1_pattern.html#ae060ba60618b3b66be6b89f76e36cf3a", null ],
+    [ "matchSingleVarOrValuePrintf", "namespace_sg_node_helper_1_1_pattern.html#a170e7879e6133d44fae651034bfe8a2f", null ],
     [ "matchSingleVarPrintf", "namespace_sg_node_helper_1_1_pattern.html#ace39e34cb30f652805806c0b65033e27", null ],
     [ "matchSingleVarScanf", "namespace_sg_node_helper_1_1_pattern.html#acc2aca6736058e0210e4e62e23482cfd", null ],
     [ "matchVariableDeclarationWithFunctionCall", "namespace_sg_node_helper_1_1_pattern.html#ae87e5230b7f40dbde39d1edbae74f037", null ],

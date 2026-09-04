@@ -96,7 +96,6 @@ $(function(){initNavTree('_callgraph__8_c_8dox.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9a55f5ba8416b6c976cd1c8fe0a4fea7" id="r_a9a55f5ba8416b6c976cd1c8fe0a4fea7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a55f5ba8416b6c976cd1c8fe0a4fea7">addDotLocation</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="classstring.html">string</a> label, GraphVertex &amp;vdesc, GraphType &amp;G)</td></tr>
-<tr class="memdesc:a9a55f5ba8416b6c976cd1c8fe0a4fea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a file location string to a graph vertex attribute based on an SgNode.  <br /></td></tr>
 <tr class="memitem:a09608b75f7b8779b12d3b1c1c2d91ef2" id="r_a09608b75f7b8779b12d3b1c1c2d91ef2"><td class="memItemLeft"><a class="el" href="node_query_8h.html#aabdd2180e8a16e628bb047712b7ff7b0">NodeQuerySynthesizedAttributeType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a09608b75f7b8779b12d3b1c1c2d91ef2">myDeclQueryBROKEN</a> (SgNode *astNode, SgNode *functionDefinition)</td></tr>
 <tr class="memdesc:a09608b75f7b8779b12d3b1c1c2d91ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether a given AST node is a member function definition matching a specific function definition node.  <br /></td></tr>
 <tr class="memitem:aa9f39269d4d0e5ac2f5fcd5cf772da2e" id="r_aa9f39269d4d0e5ac2f5fcd5cf772da2e"><td class="memItemLeft"><a class="el" href="node_query_8h.html#aabdd2180e8a16e628bb047712b7ff7b0">NodeQuerySynthesizedAttributeType</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9f39269d4d0e5ac2f5fcd5cf772da2e">myDeclQuery</a> (SgNode *astNode, SgNode *functionDecl)</td></tr>
@@ -133,23 +132,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Assigns a file location string to a graph vertex attribute based on an SgNode. </p>
-<p>This function extracts source code location information (filename and line numbers) from an SgNode, provided it is an instance of SgLocatedNode. It constructs a URI-style string in the format <span class="tt"><a href="file://filename:startline:0">file://filename:startline:0</a>[:endline:0]</span> and stores this string in the GraphType's vertex attribute map under the specified label for the given vertex.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode being inspected for location information. </td></tr>
-    <tr><td class="paramname">label</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> attribute key (string) used to store the location string in the graph. </td></tr>
-    <tr><td class="paramname">vdesc</td><td><a class="el" href="class_a.html">A</a> reference to the specific vertex in the graph to which the attribute is assigned. </td></tr>
-    <tr><td class="paramname">G</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> GraphType object containing the vertex attribute maps.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>node must not be null if it is to be processed, though the function handles non-located nodes gracefully. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the node is an SgLocatedNode and has valid start information, the graph G is updated with a new attribute value for vertex vdesc at the provided label.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses boost::get to access the vertex attribute map. </dd>
-<dd>
-If the node is not an SgLocatedNode or lacks start file information, no changes are made to the graph. </dd></dl>
 
 </div>
 </div>

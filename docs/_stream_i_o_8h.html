@@ -106,17 +106,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a29140d1345bb0eba0d1086e92874972e" id="r_a29140d1345bb0eba0d1086e92874972e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a29140d1345bb0eba0d1086e92874972e">is_space</a> (char <a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>)</td></tr>
 <tr class="memdesc:a29140d1345bb0eba0d1086e92874972e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given character is a whitespace character.  <br /></td></tr>
 <tr class="memitem:aed197b6eefcf71cffa97502b61a5eff1" id="r_aed197b6eefcf71cffa97502b61a5eff1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aed197b6eefcf71cffa97502b61a5eff1">is_num</a> (char <a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>)</td></tr>
-<tr class="memdesc:aed197b6eefcf71cffa97502b61a5eff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a character is a numerical digit between '0' and '9'.  <br /></td></tr>
+<tr class="memdesc:aed197b6eefcf71cffa97502b61a5eff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a character is a numerical character: 0 to 9.  <br /></td></tr>
 <tr class="memitem:aa5a2cbf722b6c66be6b636d11edc3de8" id="r_aa5a2cbf722b6c66be6b636d11edc3de8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa5a2cbf722b6c66be6b636d11edc3de8">is_id</a> (char <a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>)</td></tr>
-<tr class="memdesc:aa5a2cbf722b6c66be6b636d11edc3de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given character is a valid identifier component.  <br /></td></tr>
+<tr class="memdesc:aa5a2cbf722b6c66be6b636d11edc3de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a character is part of an indentifier: _ or a to z or <a class="el" href="class_a.html">A</a> to <a class="el" href="namespace_z.html" title="Auto-generated documentation for the Z namespace.">Z</a>.  <br /></td></tr>
 <tr class="memitem:aa587cac541239da4ed73bf0c2104e327" id="r_aa587cac541239da4ed73bf0c2104e327"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#aa587cac541239da4ed73bf0c2104e327">getch</a> (istream &amp;in)</td></tr>
-<tr class="memdesc:aa587cac541239da4ed73bf0c2104e327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the next character from either a global annotation buffer or an input stream.  <br /></td></tr>
+<tr class="memdesc:aa587cac541239da4ed73bf0c2104e327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab the next char from an annotation buffer,.  <br /></td></tr>
 <tr class="memitem:a0c0dfff0b7ffbb6e802a0d8c7806d56d" id="r_a0c0dfff0b7ffbb6e802a0d8c7806d56d"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a0c0dfff0b7ffbb6e802a0d8c7806d56d">read_ch</a> (istream &amp;in)</td></tr>
 <tr class="memdesc:a0c0dfff0b7ffbb6e802a0d8c7806d56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the next non-whitespace character from the provided input stream.  <br /></td></tr>
 <tr class="memitem:a37c7763233826b74ae0497bded3080cf" id="r_a37c7763233826b74ae0497bded3080cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a37c7763233826b74ae0497bded3080cf">read_ch</a> (istream &amp;in, char <a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>)</td></tr>
 <tr class="memdesc:a37c7763233826b74ae0497bded3080cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that the next character in the input stream matches a specific character.  <br /></td></tr>
 <tr class="memitem:ae2cec8fa0a9a28c263c950b256c7e941" id="r_ae2cec8fa0a9a28c263c950b256c7e941"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae2cec8fa0a9a28c263c950b256c7e941">read_id</a> (istream &amp;in)</td></tr>
-<tr class="memdesc:ae2cec8fa0a9a28c263c950b256c7e941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the next identifier from the provided input stream.  <br /></td></tr>
+<tr class="memdesc:ae2cec8fa0a9a28c263c950b256c7e941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab the next identifier from an input stream.  <br /></td></tr>
 <tr class="memitem:a5032e9ced53f6a63d6188aa9a05854e7" id="r_a5032e9ced53f6a63d6188aa9a05854e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5032e9ced53f6a63d6188aa9a05854e7">read_id</a> (istream &amp;in, const <a class="el" href="classstring.html">string</a> &amp;id)</td></tr>
 <tr class="memdesc:a5032e9ced53f6a63d6188aa9a05854e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that the next identifier in an input stream matches a specific string.  <br /></td></tr>
 <tr class="memitem:a094ad68d6ac46fff2c10f2b9b773c17b" id="r_a094ad68d6ac46fff2c10f2b9b773c17b"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a094ad68d6ac46fff2c10f2b9b773c17b">read_num</a> (istream &amp;in)</td></tr>
@@ -149,9 +149,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the next character from either a global annotation buffer or an input stream. </p>
-<p>Grab the next char from an annotation buffer,.</p>
+<p>Grab the next char from an annotation buffer,. </p>
 <p>Reads a single character from the provided input stream.</p>
+<p>Retrieves the next character from either a global annotation buffer or an input stream.</p>
 <p>This function implements a buffered reading mechanism. It first checks if the <a class="el" href="namespaceannotation.html#a2edac75660343577df337b36554b7dda">annotation::buffer</a> contains any remaining characters. If the buffer is not empty, it retrieves the character at the current <a class="el" href="namespaceannotation.html#a698a57542ae1ea863c3f23cc13f21950">annotation::index</a> and increments the index. If the index reaches the end of the buffer, the buffer is cleared and the index is reset to zero. If the buffer is empty, the function reads a single character directly from the provided input stream. If <a class="el" href="_annot_i_o_8_c.html#a5d66e92940c7b5e81b765d14e8f36d7b" title="Checks if the debug annotation reading option is enabled in the command line options.">DebugAnnotRead()</a> returns true, the retrieved character is also printed to the standard error stream.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -172,8 +172,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character extracted from the input stream.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">in</span> must be in a valid state and not in an error state. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream's get pointer is advanced by one character.</dd></dl>
-<p>Retrieves the next character from either a global annotation buffer or an input stream. </p>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream's get pointer is advanced by one character. </dd></dl>
 
 </div>
 </div>
@@ -200,9 +199,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if a given character is a valid identifier component. </p>
-<p>Check if a character is part of an indentifier: _ or a to z or <a class="el" href="class_a.html">A</a> to <a class="el" href="namespace_z.html" title="Auto-generated documentation for the Z namespace.">Z</a>.</p>
+<p>Check if a character is part of an indentifier: _ or a to z or <a class="el" href="class_a.html">A</a> to <a class="el" href="namespace_z.html" title="Auto-generated documentation for the Z namespace.">Z</a>. </p>
 <p>Checks if a given character is a valid identifier character.</p>
+<p>Checks if a given character is a valid identifier component.</p>
 <p>This function determines whether the provided character is a valid part of an identifier according to standard naming conventions. An identifier character is defined as an underscore, a lowercase letter (a-z), or an uppercase letter (A-Z).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -235,8 +234,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if the character is an underscore, a lowercase letter ('a'-'z'), or an uppercase letter ('<a class="el" href="class_a.html">A</a>'-'<a class="el" href="namespace_z.html" title="Auto-generated documentation for the Z namespace.">Z</a>'). Returns false otherwise.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the input character remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function does not account for numeric digits, which are typically valid in identifiers but cannot be the starting character.</dd></dl>
-<p>Checks if a given character is a valid identifier component. </p>
+<dl class="section note"><dt>Note</dt><dd>This function does not account for numeric digits, which are typically valid in identifiers but cannot be the starting character. </dd></dl>
 
 </div>
 </div>
@@ -263,10 +261,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if a character is a numerical digit between '0' and '9'. </p>
-<p>Check if a character is a numerical character: 0 to 9.</p>
+<p>Check if a character is a numerical character: 0 to 9. </p>
 <p>Checks if a given character is a numeric digit.</p>
 <p>Checks if a given character is a numerical digit between '0' and '9'.</p>
+<p>Checks if a character is a numerical digit between '0' and '9'.</p>
 <p>This function performs a range check on the provided character to determine if it falls within the ASCII/numerical range of '0' through '9'. It uses a simple comparison-based approach to validate the character.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -296,8 +294,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the character is a digit ('0'-'9'), false otherwise.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input character remains unchanged.</dd></dl>
-<p>Checks if a character is a numerical digit between '0' and '9'. </p>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input character remains unchanged. </dd></dl>
 
 </div>
 </div>
@@ -490,9 +487,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Extracts the next identifier from the provided input stream. </p>
-<p>Grab the next identifier from an input stream.</p>
+<p>Grab the next identifier from an input stream. </p>
 <p>Reads an identifier or numeric string from an input stream.</p>
+<p>Extracts the next identifier from the provided input stream.</p>
 <p>This function reads characters from the input stream as long as the characters qualify as either an identifier character or a numeric character. It uses helper functions to peek at and consume characters from the stream, accumulating them into a string buffer until a non-identifier/non-numeric character is encountered or the stream reaches an end state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -503,8 +500,8 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the sequence of characters identified as a valid identifier or number. Returns an empty string if no valid characters are found at the current stream position.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">in</span> must be in a good state and pointing to the start of a potential identifier. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> characters comprising the identifier are consumed from the stream, leaving the stream positioned at the first character following the extracted identifier.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of <span class="tt"><a class="el" href="_annot_i_o_8_c.html#ac6597231a8696683b520b3f3852fc74f" title="Peeks at the next non-whitespace character in the input stream.">peek_ch</a></span>, <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa5a2cbf722b6c66be6b636d11edc3de8" title="Check if a character is part of an indentifier: _ or a to z or A to Z.">is_id</a></span>, <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aed197b6eefcf71cffa97502b61a5eff1" title="Check if a character is a numerical character: 0 to 9.">is_num</a></span>, and <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa2879776d4e367b35ed0527b52e06b85" title="Peek the next char, don&#39;t increase the positioning index.">peek_next</a></span> functions.</dd></dl>
-<p>This function extracts characters from the provided input stream as long as the characters satisfy the criteria for being part of an identifier or a number. It utilizes helper functions <span class="tt"><a class="el" href="_annot_i_o_8_c.html#a0c0dfff0b7ffbb6e802a0d8c7806d56d" title="Reads the next non-whitespace character from the provided input stream.">read_ch</a></span> and <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa587cac541239da4ed73bf0c2104e327" title="Grab the next char from an annotation buffer,.">getch</a></span> to process characters and <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa5a2cbf722b6c66be6b636d11edc3de8" title="Check if a character is part of an indentifier: _ or a to z or A to Z.">is_id</a></span> and <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aed197b6eefcf71cffa97502b61a5eff1" title="Check if a character is a numerical character: 0 to 9.">is_num</a></span> to validate them. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function maintains the stream state by ungetting the last character if the stream is still good after the loop terminates.</p>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of <span class="tt"><a class="el" href="_annot_i_o_8_c.html#ac6597231a8696683b520b3f3852fc74f" title="Peeks at the next non-whitespace character in the input stream.">peek_ch</a></span>, <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aa5a2cbf722b6c66be6b636d11edc3de8" title="Check if a character is part of an indentifier: _ or a to z or A to Z.">is_id</a></span>, <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aed197b6eefcf71cffa97502b61a5eff1" title="Check if a character is a numerical character: 0 to 9.">is_num</a></span>, and <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa2879776d4e367b35ed0527b52e06b85" title="Peek the next char, don&#39;t increase the positioning index.">peek_next</a></span> functions.</dd></dl>
+<p>This function extracts characters from the provided input stream as long as the characters satisfy the criteria for being part of an identifier or a number. It utilizes helper functions <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#a0c0dfff0b7ffbb6e802a0d8c7806d56d" title="Reads the next non-whitespace character from the provided input stream.">read_ch</a></span> and <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aa587cac541239da4ed73bf0c2104e327" title="Grab the next char from an annotation buffer,.">getch</a></span> to process characters and <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aa5a2cbf722b6c66be6b636d11edc3de8" title="Check if a character is part of an indentifier: _ or a to z or A to Z.">is_id</a></span> and <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aed197b6eefcf71cffa97502b61a5eff1" title="Check if a character is a numerical character: 0 to 9.">is_num</a></span> to validate them. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function maintains the stream state by ungetting the last character if the stream is still good after the loop terminates.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream from which the identifier is to be read.</td></tr>
@@ -514,8 +511,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the sequence of characters that constitute the identified ID or number. Returns an empty string if no valid characters are found at the current stream position.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">in</span> must be in a valid state for reading. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream position is advanced to the first character that is neither an identifier character nor a numeric character, unless the stream reaches EOF, in which case the last character is ungot.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of <span class="tt"><a class="el" href="_annot_i_o_8_c.html#a0c0dfff0b7ffbb6e802a0d8c7806d56d" title="Reads the next non-whitespace character from the provided input stream.">read_ch</a></span>, <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa587cac541239da4ed73bf0c2104e327" title="Grab the next char from an annotation buffer,.">getch</a></span>, <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aa5a2cbf722b6c66be6b636d11edc3de8" title="Check if a character is part of an indentifier: _ or a to z or A to Z.">is_id</a></span>, and <span class="tt"><a class="el" href="_annot_i_o_8_c.html#aed197b6eefcf71cffa97502b61a5eff1" title="Check if a character is a numerical character: 0 to 9.">is_num</a></span> functions.</dd></dl>
-<p>Extracts the next identifier from the provided input stream. </p>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#a0c0dfff0b7ffbb6e802a0d8c7806d56d" title="Reads the next non-whitespace character from the provided input stream.">read_ch</a></span>, <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aa587cac541239da4ed73bf0c2104e327" title="Grab the next char from an annotation buffer,.">getch</a></span>, <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aa5a2cbf722b6c66be6b636d11edc3de8" title="Check if a character is part of an indentifier: _ or a to z or A to Z.">is_id</a></span>, and <span class="tt"><a class="el" href="_stream_i_o__8h_8dox.html#aed197b6eefcf71cffa97502b61a5eff1" title="Check if a character is a numerical character: 0 to 9.">is_num</a></span> functions. </dd></dl>
 
 </div>
 </div>

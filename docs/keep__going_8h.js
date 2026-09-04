@@ -12,7 +12,7 @@ var keep__going_8h =
     [ "Rose::KeepGoing::CreateExpectationsMap", "namespace_rose_1_1_keep_going.html#abc270899052c32152f5f3c9143fc859f", null ],
     [ "Rose::KeepGoing::generate_reports", "namespace_rose_1_1_keep_going.html#a080e3155fe209c589d004ac6015b0279", null ],
     [ "Rose::KeepGoing::GetSourceFilenamesFromCommandline", "namespace_rose_1_1_keep_going.html#ae7daf3f22a4677bbd9e64a269aa4d085", null ],
-    [ "Rose::KeepGoing::GetTimestamp", "namespace_rose_1_1_keep_going.html#aaef25bcef238b60c5e5d8f450584648d", null ],
+    [ "Rose::KeepGoing::GetTimestamp", "namespace_rose_1_1_keep_going.html#a18276cb287037d39899a5044f1743348", null ],
     [ "Rose::KeepGoing::set_signal_handler", "namespace_rose_1_1_keep_going.html#ac29e43df83d37b2e9427fc1e4171c364", null ],
     [ "Rose::KeepGoing::setMidendErrorCode", "namespace_rose_1_1_keep_going.html#a5d8e9cef5825e5c46899f0015ba771ba", null ],
     [ "Rose::KeepGoing::ShowUsage", "namespace_rose_1_1_keep_going.html#af4f5da475b93b19515cef923c824ac15", null ],
@@ -24,5 +24,5 @@ var keep__going_8h =
     [ "Rose::KeepGoing::Midend::SignalHandler", "namespace_rose_1_1_keep_going_1_1_midend.html#a4d7075f5b349b9fe3835540321ff3564", null ],
     [ "Rose::KeepGoing::StripPrefix", "namespace_rose_1_1_keep_going.html#a02b3eeb75cb4d7dfb76971e5738cab71", null ],
     [ "Rose::KeepGoing::touch", "namespace_rose_1_1_keep_going.html#ac193875ee90656fb8f77935ba5913d05", null ],
-    [ "Rose::KeepGoing::Backend::UseOriginalInputFile", "namespace_rose_1_1_keep_going_1_1_backend.html#accb0d2c1562632b3669515e0551d0a9a", null ]
+    [ "Rose::KeepGoing::Backend::UseOriginalInputFile", "namespace_rose_1_1_keep_going_1_1_backend.html#aa3dd83b23756386b3da86f69ff4d7cc4", null ]
 ];

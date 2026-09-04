@@ -99,7 +99,7 @@ $(function(){initNavTree('namespace_sg_node_helper.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:Pattern" id="r_Pattern"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_sg_node_helper_1_1_pattern.html">Pattern</a></td></tr>
-<tr class="memdesc:namespace_sg_node_helper_1_1_pattern"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated documentation for the <a class="el" href="namespace_sg_node_helper_1_1_pattern.html" title="Auto-generated documentation for the SgNodeHelper::Pattern namespace.">SgNodeHelper::Pattern</a> namespace. <br /></td></tr>
+<tr class="memdesc:namespace_sg_node_helper_1_1_pattern"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides functions which match a certain AST pattern and return a pointer to a node of interest inside that pattern. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -127,42 +127,42 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3a75c80fc2d2ead67d7337df6aea942e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the function declaration statement found for a given function symbol.  <br /></td></tr>
 <tr class="memitem:a314e9a9aefb0fbc89bd7fcbd057aa7ac" id="r_a314e9a9aefb0fbc89bd7fcbd057aa7ac"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a314e9a9aefb0fbc89bd7fcbd057aa7ac">sourceFilenameLineColumnToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a314e9a9aefb0fbc89bd7fcbd057aa7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns filename+line+column information of AST fragment in format "filename:line:column". Used for generating readable output  <br /></td></tr>
-<tr class="memitem:aa19968ad762bff8c3a45388cb4db98da" id="r_aa19968ad762bff8c3a45388cb4db98da"><td class="memItemLeft"><a class="el" href="#add5e5287ad4a9e05913f71be18964b24">LineColPair</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa19968ad762bff8c3a45388cb4db98da">lineColumnPair</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:aa19968ad762bff8c3a45388cb4db98da"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a std::pair of line and column number. If no file info exists at this node it returns (-1,-1).  <br /></td></tr>
+<tr class="memitem:aeb2a62ee8cbb86a47b023f80efaf5e7f" id="r_aeb2a62ee8cbb86a47b023f80efaf5e7f"><td class="memItemLeft"><a class="el" href="#add5e5287ad4a9e05913f71be18964b24">SgNodeHelper::LineColPair</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeb2a62ee8cbb86a47b023f80efaf5e7f">lineColumnPair</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:aeb2a62ee8cbb86a47b023f80efaf5e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a std::pair of line and column number. If no file info exists at this node it returns (-1,-1).  <br /></td></tr>
 <tr class="memitem:ad719fcefb38175e46713ae6160dee481" id="r_ad719fcefb38175e46713ae6160dee481"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad719fcefb38175e46713ae6160dee481">sourceFilenameToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ad719fcefb38175e46713ae6160dee481"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns filename as stored in AST node. Used for generating readable output.  <br /></td></tr>
 <tr class="memitem:a77ee39e1e06fd0660ff4c468bcb616fe" id="r_a77ee39e1e06fd0660ff4c468bcb616fe"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a77ee39e1e06fd0660ff4c468bcb616fe">sourceLineColumnToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a77ee39e1e06fd0660ff4c468bcb616fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns filename followed by line:column in one string. Used for generating readable output.  <br /></td></tr>
-<tr class="memitem:a2fb855a69f272e6ca53b469cff5616b8" id="r_a2fb855a69f272e6ca53b469cff5616b8"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2fb855a69f272e6ca53b469cff5616b8">sourceLineColumnToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="classstring.html">string</a> <a class="el" href="structseparator.html">separator</a>)</td></tr>
-<tr class="memdesc:a2fb855a69f272e6ca53b469cff5616b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the line and column information of an SgNode into a formatted string.  <br /></td></tr>
+<tr class="memitem:a77cbc617b06253173f187adfc84a77cf" id="r_a77cbc617b06253173f187adfc84a77cf"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a77cbc617b06253173f187adfc84a77cf">sourceLineColumnToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, std::string <a class="el" href="structseparator.html">separator</a>)</td></tr>
+<tr class="memdesc:a77cbc617b06253173f187adfc84a77cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns filename followed by line, separator, and column in one string. Used for generating readable output.  <br /></td></tr>
 <tr class="memitem:a4f6eb3119188db95514528daf953e4c2" id="r_a4f6eb3119188db95514528daf953e4c2"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a4f6eb3119188db95514528daf953e4c2">lineColumnAndSourceCodeToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a4f6eb3119188db95514528daf953e4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns line, column, and unparsed node in one string.  <br /></td></tr>
 <tr class="memitem:aa1cca2975717c0b8558ba8e738b417e5" id="r_aa1cca2975717c0b8558ba8e738b417e5"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa1cca2975717c0b8558ba8e738b417e5">locationToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:aa1cca2975717c0b8558ba8e738b417e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns location (consisting of filename, line, column)  <br /></td></tr>
-<tr class="memitem:a73933ff40b23aebf29103a8c7f1b198b" id="r_a73933ff40b23aebf29103a8c7f1b198b"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a73933ff40b23aebf29103a8c7f1b198b">abbreviatedLocationToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxFileNameLength)</td></tr>
-<tr class="memdesc:a73933ff40b23aebf29103a8c7f1b198b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a node's location to a string with a truncated file name.  <br /></td></tr>
-<tr class="memitem:a2a16f12354b4c388a5d2e98050155adf" id="r_a2a16f12354b4c388a5d2e98050155adf"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2a16f12354b4c388a5d2e98050155adf">locationAndSourceCodeToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxFileNameLength, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxSourceLength)</td></tr>
-<tr class="memdesc:a2a16f12354b4c388a5d2e98050155adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a node's location and unparsed source code into a single formatted string.  <br /></td></tr>
-<tr class="memitem:af2b4b3ac98ed515765bd3ef4fcd4dd65" id="r_af2b4b3ac98ed515765bd3ef4fcd4dd65"><td class="memItemLeft"><a class="el" href="classvector.html">vector</a>&lt; SgVarRefExp * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af2b4b3ac98ed515765bd3ef4fcd4dd65">determineVariablesInSubtree</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:af2b4b3ac98ed515765bd3ef4fcd4dd65"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines all VarRefExp in the subtree of 'node'. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> order in the vector corresponds to the traversal order on the AST.  <br /></td></tr>
-<tr class="memitem:a0ce5545f1a033f9f397c60824334972b" id="r_a0ce5545f1a033f9f397c60824334972b"><td class="memItemLeft">list&lt; SgClassDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0ce5545f1a033f9f397c60824334972b">classDeclarationNestingSequence</a> (SgDeclarationStatement *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a0ce5545f1a033f9f397c60824334972b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a sequence of nested class declarations from a given declaration statement up to the root.  <br /></td></tr>
+<tr class="memitem:ad681f34a510dea80a4389b43b3fdc3df" id="r_ad681f34a510dea80a4389b43b3fdc3df"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad681f34a510dea80a4389b43b3fdc3df">abbreviatedLocationToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxFileNameLength=30)</td></tr>
+<tr class="memdesc:ad681f34a510dea80a4389b43b3fdc3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a node's location to a string with a truncated file name.  <br /></td></tr>
+<tr class="memitem:a52a2aded364c9bcf30ac98d26449858e" id="r_a52a2aded364c9bcf30ac98d26449858e"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a52a2aded364c9bcf30ac98d26449858e">locationAndSourceCodeToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxFileNameLength=30, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxSourceLength=20)</td></tr>
+<tr class="memdesc:a52a2aded364c9bcf30ac98d26449858e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a node's location and unparsed source code into a single formatted string.  <br /></td></tr>
+<tr class="memitem:a1e584489c70ac0b9a99ff212ab04bf99" id="r_a1e584489c70ac0b9a99ff212ab04bf99"><td class="memItemLeft">std::vector&lt; SgVarRefExp * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1e584489c70ac0b9a99ff212ab04bf99">determineVariablesInSubtree</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a1e584489c70ac0b9a99ff212ab04bf99"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines all VarRefExp in the subtree of 'node'. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> order in the vector corresponds to the traversal order on the AST.  <br /></td></tr>
+<tr class="memitem:a6a7187c416e60a88dd2e4ae057027f7e" id="r_a6a7187c416e60a88dd2e4ae057027f7e"><td class="memItemLeft">std::list&lt; SgClassDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6a7187c416e60a88dd2e4ae057027f7e">classDeclarationNestingSequence</a> (SgDeclarationStatement *)</td></tr>
+<tr class="memdesc:a6a7187c416e60a88dd2e4ae057027f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a sequence of nested class declarations from a given declaration statement up to the root.  <br /></td></tr>
 <tr class="memitem:ab041db2a23c9fabb407829f7ff4b42a5" id="r_ab041db2a23c9fabb407829f7ff4b42a5"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab041db2a23c9fabb407829f7ff4b42a5">scopeNestingLevel</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ab041db2a23c9fabb407829f7ff4b42a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the nesting level of a scope relative to the nearest basic block.  <br /></td></tr>
 <tr class="memitem:a79ad53fd65baf8650a0d0068e537f31b" id="r_a79ad53fd65baf8650a0d0068e537f31b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a79ad53fd65baf8650a0d0068e537f31b">scopeSequenceNumber</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a79ad53fd65baf8650a0d0068e537f31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the human-readable sequence number of a node's scope within its parent scope.  <br /></td></tr>
-<tr class="memitem:aa18ee245d0448b963887558f5d940ca3" id="r_aa18ee245d0448b963887558f5d940ca3"><td class="memItemLeft"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa18ee245d0448b963887558f5d940ca3">determineChildIndex</a> (SgNode *child)</td></tr>
-<tr class="memdesc:aa18ee245d0448b963887558f5d940ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the index of a child node within its parent's child list.  <br /></td></tr>
-<tr class="memitem:af4f9985fd64e1eaba088e8ce68bc55b1" id="r_af4f9985fd64e1eaba088e8ce68bc55b1"><td class="memItemLeft"><a class="el" href="sage_container_8h.html#a78eea195b86c4ee06b21c673d31756c8">SgStatementPtrList</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af4f9985fd64e1eaba088e8ce68bc55b1">getForInitList</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:af4f9985fd64e1eaba088e8ce68bc55b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the initializer-list of For.  <br /></td></tr>
+<tr class="memitem:ab6211a9c048359bb373f49ba8ba52c72" id="r_ab6211a9c048359bb373f49ba8ba52c72"><td class="memItemLeft"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab6211a9c048359bb373f49ba8ba52c72">determineChildIndex</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:ab6211a9c048359bb373f49ba8ba52c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the index of a child node within its parent's child list.  <br /></td></tr>
+<tr class="memitem:ae9795c3d3d06f9a2333322d453bf3f56" id="r_ae9795c3d3d06f9a2333322d453bf3f56"><td class="memItemLeft">std::vector&lt; SgStatement * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae9795c3d3d06f9a2333322d453bf3f56">getForInitList</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:ae9795c3d3d06f9a2333322d453bf3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the initializer-list of For.  <br /></td></tr>
 <tr class="memitem:a9fcda55f9d162b92f0a57c22c32c8a7d" id="r_a9fcda55f9d162b92f0a57c22c32c8a7d"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#a9fcda55f9d162b92f0a57c22c32c8a7d">getForIncExpr</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a9fcda55f9d162b92f0a57c22c32c8a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the incr/derc-expr of For.  <br /></td></tr>
 <tr class="memitem:a13983d155d72932ae13eca8ddeae826c" id="r_a13983d155d72932ae13eca8ddeae826c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a13983d155d72932ae13eca8ddeae826c">isForIncExpr</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a13983d155d72932ae13eca8ddeae826c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given node is the increment expression of a for-loop statement.  <br /></td></tr>
 <tr class="memitem:a0de21e45ee1a83e45c0a82f95618ec5b" id="r_a0de21e45ee1a83e45c0a82f95618ec5b"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a0de21e45ee1a83e45c0a82f95618ec5b">getCond</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a0de21e45ee1a83e45c0a82f95618ec5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the root node representing the AST of the condition of If, While, DoWhile, For, CondOperator, switch.  <br /></td></tr>
-<tr class="memitem:a751aec9950c33b5ba3e9aa45990fe6e8" id="r_a751aec9950c33b5ba3e9aa45990fe6e8"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a751aec9950c33b5ba3e9aa45990fe6e8">unparseCond</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a751aec9950c33b5ba3e9aa45990fe6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the string representing the condition (removes trailing ';')  <br /></td></tr>
+<tr class="memitem:a52091ac4b878c4a8793d172fcd15c7e6" id="r_a52091ac4b878c4a8793d172fcd15c7e6"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a52091ac4b878c4a8793d172fcd15c7e6">unparseCond</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a52091ac4b878c4a8793d172fcd15c7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the string representing the condition (removes trailing ';')  <br /></td></tr>
 <tr class="memitem:a1f7a987a45ccf00deb962132ab1f48cb" id="r_a1f7a987a45ccf00deb962132ab1f48cb"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a1f7a987a45ccf00deb962132ab1f48cb">getTrueBranch</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a1f7a987a45ccf00deb962132ab1f48cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the root node representing the AST of the true branch of If, CondOperator.  <br /></td></tr>
 <tr class="memitem:afe971688c71c16b3a916033e6cd56a2c" id="r_afe971688c71c16b3a916033e6cd56a2c"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#afe971688c71c16b3a916033e6cd56a2c">getFalseBranch</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
@@ -173,12 +173,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5e04526bcf9e3cf49a644c5f79921f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the first <a class="el" href="a__nodes_8h.html#a82c09635158e5c30c9b5820ba8c59309">Statement</a> of SgBasicBlock (throws exception if numChildren==0)  <br /></td></tr>
 <tr class="memitem:afc52708c9377fed9b346eace291a964e" id="r_afc52708c9377fed9b346eace291a964e"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#afc52708c9377fed9b346eace291a964e">getLastOfBlock</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:afc52708c9377fed9b346eace291a964e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the last <a class="el" href="a__nodes_8h.html#a82c09635158e5c30c9b5820ba8c59309">Statement</a> of SgBasicBlock (throws exception if numChildren==0)  <br /></td></tr>
-<tr class="memitem:ad0c14da37317b73e7d26f9172b65fcdc" id="r_ad0c14da37317b73e7d26f9172b65fcdc"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad0c14da37317b73e7d26f9172b65fcdc">getLabelName</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ad0c14da37317b73e7d26f9172b65fcdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the label name of a SgLabelStatement without trailing ":"  <br /></td></tr>
-<tr class="memitem:ad7199d2374a02736b75012cc3ba120f9" id="r_ad7199d2374a02736b75012cc3ba120f9"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad7199d2374a02736b75012cc3ba120f9">getFunctionName</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ad7199d2374a02736b75012cc3ba120f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns function name of SgFunctionDefinition, SgFunctionDeclaration, SgFunctionCall.  <br /></td></tr>
-<tr class="memitem:a524a643367bde278fefeafdca52e792b" id="r_a524a643367bde278fefeafdca52e792b"><td class="memItemLeft">SgFunctionDefinition *&#160;</td><td class="memItemRight"><a class="el" href="#a524a643367bde278fefeafdca52e792b">determineFunctionDefinition</a> (SgFunctionCallExp *funCall)</td></tr>
-<tr class="memdesc:a524a643367bde278fefeafdca52e792b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the function definition associated with a given function call expression.  <br /></td></tr>
+<tr class="memitem:ab9a575dca2887f378dbf641fcee19e75" id="r_ab9a575dca2887f378dbf641fcee19e75"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ab9a575dca2887f378dbf641fcee19e75">getLabelName</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:ab9a575dca2887f378dbf641fcee19e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the label name of a SgLabelStatement without trailing ":"  <br /></td></tr>
+<tr class="memitem:a5be342235bd64533f3d7add2e34e972d" id="r_a5be342235bd64533f3d7add2e34e972d"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a5be342235bd64533f3d7add2e34e972d">getFunctionName</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a5be342235bd64533f3d7add2e34e972d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns function name of SgFunctionDefinition, SgFunctionDeclaration, SgFunctionCall.  <br /></td></tr>
+<tr class="memitem:ac4d8ca00484e704facfdbff1c9489831" id="r_ac4d8ca00484e704facfdbff1c9489831"><td class="memItemLeft">SgFunctionDefinition *&#160;</td><td class="memItemRight"><a class="el" href="#ac4d8ca00484e704facfdbff1c9489831">determineFunctionDefinition</a> (SgFunctionCallExp *fCall)</td></tr>
+<tr class="memdesc:ac4d8ca00484e704facfdbff1c9489831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the function definition associated with a given function call expression.  <br /></td></tr>
 <tr class="memitem:a8121b51dceec24a1f02ccbd00029cbcf" id="r_a8121b51dceec24a1f02ccbd00029cbcf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8121b51dceec24a1f02ccbd00029cbcf">isForwardFunctionDeclaration</a> (SgNode *<a class="el" href="rosebud__8_c_8dox.html#a25375455172128cffe0d2f89867de728">declaration</a>)</td></tr>
 <tr class="memdesc:a8121b51dceec24a1f02ccbd00029cbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a provided function declaration is a forward declaration.  <br /></td></tr>
 <tr class="memitem:a1dfcc942992955981eaafe4a230217de" id="r_a1dfcc942992955981eaafe4a230217de"><td class="memItemLeft">SgFunctionDefinition *&#160;</td><td class="memItemRight"><a class="el" href="#a1dfcc942992955981eaafe4a230217de">correspondingSgFunctionDefinition</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
@@ -213,32 +213,32 @@ Functions</h2></td></tr>
 <tr class="memdesc:acefd9cc87e171d0071d301e03ec0f05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the SgSymbol* of the function in a SgFunctionRefExp  <br /></td></tr>
 <tr class="memitem:ad6b467cc95e8004a2d616a6e7813c091" id="r_ad6b467cc95e8004a2d616a6e7813c091"><td class="memItemLeft"><a class="el" href="class_sg_symbol.html">SgSymbol</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad6b467cc95e8004a2d616a6e7813c091">getSymbolOfInitializedName</a> (SgInitializedName *initName)</td></tr>
 <tr class="memdesc:ad6b467cc95e8004a2d616a6e7813c091"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the SgSymbol* of a SgInitializedName  <br /></td></tr>
-<tr class="memitem:a656037082d62f1740228aa4be7577ae1" id="r_a656037082d62f1740228aa4be7577ae1"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a656037082d62f1740228aa4be7577ae1">symbolToString</a> (<a class="el" href="class_sg_symbol.html">SgSymbol</a> *symbol)</td></tr>
-<tr class="memdesc:a656037082d62f1740228aa4be7577ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns name of symbol as string  <br /></td></tr>
-<tr class="memitem:aebb41c38d6e45b17fb2a29577660485a" id="r_aebb41c38d6e45b17fb2a29577660485a"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#aebb41c38d6e45b17fb2a29577660485a">uniqueLongVariableName</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:aebb41c38d6e45b17fb2a29577660485a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a long unique variable name for a given node of type SgVariableDeclaration or SgVarRefExp.  <br /></td></tr>
-<tr class="memitem:a42680515565030e4203e05aa1d8ab019" id="r_a42680515565030e4203e05aa1d8ab019"><td class="memItemLeft">set&lt; SgNode * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a42680515565030e4203e05aa1d8ab019">loopRelevantBreakStmtNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a42680515565030e4203e05aa1d8ab019"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a set of SgNode where each node is a break node, but properly excludes all nested loops.  <br /></td></tr>
-<tr class="memitem:a1ed89b19d79ba6e45ef5454596d5bbb7" id="r_a1ed89b19d79ba6e45ef5454596d5bbb7"><td class="memItemLeft">set&lt; SgContinueStmt * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1ed89b19d79ba6e45ef5454596d5bbb7">loopRelevantContinueStmtNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a1ed89b19d79ba6e45ef5454596d5bbb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies all continue statements within the scope of a given node that are relevant to a loop.  <br /></td></tr>
-<tr class="memitem:ab661f93c92be9115cd7f28ed2e041788" id="r_ab661f93c92be9115cd7f28ed2e041788"><td class="memItemLeft">set&lt; SgCaseOptionStmt * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab661f93c92be9115cd7f28ed2e041788">switchRelevantCaseStmtNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ab661f93c92be9115cd7f28ed2e041788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts all top-level case option statements from a switch statement node.  <br /></td></tr>
+<tr class="memitem:a663ee9b4bdd523c47eb46da30f9aa5eb" id="r_a663ee9b4bdd523c47eb46da30f9aa5eb"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a663ee9b4bdd523c47eb46da30f9aa5eb">symbolToString</a> (<a class="el" href="class_sg_symbol.html">SgSymbol</a> *symbol)</td></tr>
+<tr class="memdesc:a663ee9b4bdd523c47eb46da30f9aa5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns name of symbol as string  <br /></td></tr>
+<tr class="memitem:a527e0f628d90de66b73de28f1cb5dbe4" id="r_a527e0f628d90de66b73de28f1cb5dbe4"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a527e0f628d90de66b73de28f1cb5dbe4">uniqueLongVariableName</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a527e0f628d90de66b73de28f1cb5dbe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a long unique variable name for a given node of type SgVariableDeclaration or SgVarRefExp.  <br /></td></tr>
+<tr class="memitem:a03a71e614ff50810e8b8bfbf5584b414" id="r_a03a71e614ff50810e8b8bfbf5584b414"><td class="memItemLeft">std::set&lt; SgNode * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a03a71e614ff50810e8b8bfbf5584b414">loopRelevantBreakStmtNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a03a71e614ff50810e8b8bfbf5584b414"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a set of SgNode where each node is a break node, but properly excludes all nested loops.  <br /></td></tr>
+<tr class="memitem:a5f84cd9a8ed7dc8efa134cd5b8152aa6" id="r_a5f84cd9a8ed7dc8efa134cd5b8152aa6"><td class="memItemLeft">std::set&lt; SgContinueStmt * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5f84cd9a8ed7dc8efa134cd5b8152aa6">loopRelevantContinueStmtNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a5f84cd9a8ed7dc8efa134cd5b8152aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies all continue statements within the scope of a given node that are relevant to a loop.  <br /></td></tr>
+<tr class="memitem:a6b33910324e688c75790874d145af73f" id="r_a6b33910324e688c75790874d145af73f"><td class="memItemLeft">std::set&lt; SgCaseOptionStmt * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6b33910324e688c75790874d145af73f">switchRelevantCaseStmtNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a6b33910324e688c75790874d145af73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts all top-level case option statements from a switch statement node.  <br /></td></tr>
 <tr class="memitem:ae89dd96d9fe489c2a861908371065c39" id="r_ae89dd96d9fe489c2a861908371065c39"><td class="memItemLeft">SgDefaultOptionStmt *&#160;</td><td class="memItemRight"><a class="el" href="#ae89dd96d9fe489c2a861908371065c39">switchRelevantDefaultStmtNode</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ae89dd96d9fe489c2a861908371065c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for the first relevant SgDefaultOptionStmt within a switch statement or its immediate scope.  <br /></td></tr>
 <tr class="memitem:a6681537190de7233c204fed5b327d168" id="r_a6681537190de7233c204fed5b327d168"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a6681537190de7233c204fed5b327d168">getFirstChild</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a6681537190de7233c204fed5b327d168"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the first child of an arbitrary AST node (throws exception if numChildren==0)  <br /></td></tr>
-<tr class="memitem:a2c270309d4936442f413faf9d635cadd" id="r_a2c270309d4936442f413faf9d635cadd"><td class="memItemLeft"><a class="el" href="_sage_tree_builder_8h.html#a3e7ca563887e794ecb5b17cc99a1c0d1">SgExpressionPtrList</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2c270309d4936442f413faf9d635cadd">getFunctionCallActualParameterList</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a2c270309d4936442f413faf9d635cadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a function-call's argument list  <br /></td></tr>
+<tr class="memitem:a514702347e415e641069288cebc42375" id="r_a514702347e415e641069288cebc42375"><td class="memItemLeft">std::vector&lt; SgExpression * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a514702347e415e641069288cebc42375">getFunctionCallActualParameterList</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a514702347e415e641069288cebc42375"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a function-call's argument list  <br /></td></tr>
 <tr class="memitem:a1ea81775053f9a9226405c2260b659d5" id="r_a1ea81775053f9a9226405c2260b659d5"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#a1ea81775053f9a9226405c2260b659d5">getCalleeOfCall</a> (SgFunctionCallExp *call)</td></tr>
 <tr class="memdesc:a1ea81775053f9a9226405c2260b659d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the callee of the given call expression.  <br /></td></tr>
 <tr class="memitem:ac9e890cc3a91e90277c89c4d4655ff93" id="r_ac9e890cc3a91e90277c89c4d4655ff93"><td class="memItemLeft">SgFunctionType *&#160;</td><td class="memItemRight"><a class="el" href="#ac9e890cc3a91e90277c89c4d4655ff93">getCalleeFunctionType</a> (SgFunctionCallExp *call)</td></tr>
 <tr class="memdesc:ac9e890cc3a91e90277c89c4d4655ff93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the function type of the callee of the given call expression.  <br /></td></tr>
-<tr class="memitem:ad1e3c4c12d3f666272c82c8f429e2c85" id="r_ad1e3c4c12d3f666272c82c8f429e2c85"><td class="memItemLeft"><a class="el" href="sage_container_8h.html#af5484e8d253ed1622192c3c08221ff2e">SgInitializedNamePtrList</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad1e3c4c12d3f666272c82c8f429e2c85">getFunctionDefinitionFormalParameterList</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ad1e3c4c12d3f666272c82c8f429e2c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a function-definition's list of formal paramters  <br /></td></tr>
+<tr class="memitem:aaaaac1877a11d91bf0033b775f1f85f2" id="r_aaaaac1877a11d91bf0033b775f1f85f2"><td class="memItemLeft">std::vector&lt; SgInitializedName * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aaaaac1877a11d91bf0033b775f1f85f2">getFunctionDefinitionFormalParameterList</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:aaaaac1877a11d91bf0033b775f1f85f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a function-definition's list of formal paramters  <br /></td></tr>
 <tr class="memitem:aa33133a405936a3aef4be1a3557cb7a5" id="r_aa33133a405936a3aef4be1a3557cb7a5"><td class="memItemLeft"><a class="el" href="class_sg_type.html">SgType</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aa33133a405936a3aef4be1a3557cb7a5">getFunctionReturnType</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:aa33133a405936a3aef4be1a3557cb7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a function-definition's return type  <br /></td></tr>
-<tr class="memitem:a0e49cd7ad41cb74c318cef26408e025d" id="r_a0e49cd7ad41cb74c318cef26408e025d"><td class="memItemLeft">set&lt; SgVariableDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0e49cd7ad41cb74c318cef26408e025d">localVariableDeclarationsOfFunction</a> (SgFunctionDefinition *funDef)</td></tr>
-<tr class="memdesc:a0e49cd7ad41cb74c318cef26408e025d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the set of all local variable-declarations of a function  <br /></td></tr>
+<tr class="memitem:a1a513681a6493b96b03013b9f3697e6b" id="r_a1a513681a6493b96b03013b9f3697e6b"><td class="memItemLeft">std::set&lt; SgVariableDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1a513681a6493b96b03013b9f3697e6b">localVariableDeclarationsOfFunction</a> (SgFunctionDefinition *funDef)</td></tr>
+<tr class="memdesc:a1a513681a6493b96b03013b9f3697e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the set of all local variable-declarations of a function  <br /></td></tr>
 <tr class="memitem:a976b117cc2397cd00a99b6e1fb3d0300" id="r_a976b117cc2397cd00a99b6e1fb3d0300"><td class="memItemLeft">SgFunctionDefinition *&#160;</td><td class="memItemRight"><a class="el" href="#a976b117cc2397cd00a99b6e1fb3d0300">getClosestParentFunctionDefinitionOfLocatedNode</a> (SgLocatedNode *locatedNode)</td></tr>
 <tr class="memdesc:a976b117cc2397cd00a99b6e1fb3d0300"><td class="mdescLeft">&#160;</td><td class="mdescRight">schroder3 (2016-07-22): Returns the closest function definition that contains the given node  <br /></td></tr>
 <tr class="memitem:a3b0a7d7c820a8a9aaa5b5c79d44702eb" id="r_a3b0a7d7c820a8a9aaa5b5c79d44702eb"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a3b0a7d7c820a8a9aaa5b5c79d44702eb">getExprStmtChild</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
@@ -249,38 +249,38 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4c0a2b9f97236013ce6e7bcff1759a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the child of a SgUnaryExp (which is guaranteed to be unique and to exist)  <br /></td></tr>
 <tr class="memitem:aef16ffdd913343b240e2e2f0f5ad6583" id="r_aef16ffdd913343b240e2e2f0f5ad6583"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aef16ffdd913343b240e2e2f0f5ad6583">numChildren</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:aef16ffdd913343b240e2e2f0f5ad6583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of children for a given SgNode.  <br /></td></tr>
-<tr class="memitem:ae58f1624b6a06f381afcfc24919fc004" id="r_ae58f1624b6a06f381afcfc24919fc004"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae58f1624b6a06f381afcfc24919fc004">doubleQuotedEscapedString</a> (<a class="el" href="classstring.html">string</a> s1)</td></tr>
-<tr class="memdesc:ae58f1624b6a06f381afcfc24919fc004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a string in double quotes and handles escaped quote characters.  <br /></td></tr>
-<tr class="memitem:ad7b39bb6c7f2b4f3066722e6f9a58d07" id="r_ad7b39bb6c7f2b4f3066722e6f9a58d07"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad7b39bb6c7f2b4f3066722e6f9a58d07">doubleQuotedEscapedHTMLString</a> (<a class="el" href="classstring.html">string</a> s1)</td></tr>
-<tr class="memdesc:ad7b39bb6c7f2b4f3066722e6f9a58d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string into a double-quoted, HTML-escaped format with specific character replacements.  <br /></td></tr>
+<tr class="memitem:a76ccbfcc4e7c8fb7e0fb512901eac0d3" id="r_a76ccbfcc4e7c8fb7e0fb512901eac0d3"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a76ccbfcc4e7c8fb7e0fb512901eac0d3">doubleQuotedEscapedString</a> (std::string s1)</td></tr>
+<tr class="memitem:a1d7654d26019ccc78231aa71861711fa" id="r_a1d7654d26019ccc78231aa71861711fa"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a1d7654d26019ccc78231aa71861711fa">doubleQuotedEscapedHTMLString</a> (std::string s1)</td></tr>
 <tr class="memitem:adb18a3e9a4038f06ceece60d1c0f02f8" id="r_adb18a3e9a4038f06ceece60d1c0f02f8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#adb18a3e9a4038f06ceece60d1c0f02f8">isVariableSymbolInFunctionForwardDeclaration</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:adb18a3e9a4038f06ceece60d1c0f02f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks whether a SgVariableSymbol is representing a variable in  <br /></td></tr>
 <tr class="memitem:a1e7faf04a6facf13ba206527ed849da7" id="r_a1e7faf04a6facf13ba206527ed849da7"><td class="memItemLeft">SgVariableSymbol *&#160;</td><td class="memItemRight"><a class="el" href="#a1e7faf04a6facf13ba206527ed849da7">isFunctionParameterVariableSymbol</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a1e7faf04a6facf13ba206527ed849da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks whether a SgVariableSymbol is representing a function parameter (this does not apply for forward declarations)  <br /></td></tr>
-<tr class="memitem:a04fcb2533c1c935adc7cf0e126b45962" id="r_a04fcb2533c1c935adc7cf0e126b45962"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a04fcb2533c1c935adc7cf0e126b45962">nodeToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a04fcb2533c1c935adc7cf0e126b45962"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a string representing the node (excluding the subtree)  <br /></td></tr>
+<tr class="memitem:a32744f1fec04bd156d9b17ff3b710f4e" id="r_a32744f1fec04bd156d9b17ff3b710f4e"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a32744f1fec04bd156d9b17ff3b710f4e">nodeToString</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a32744f1fec04bd156d9b17ff3b710f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a string representing the node (excluding the subtree)  <br /></td></tr>
 <tr class="memitem:addf048a512213a0968088ead5d7631b6" id="r_addf048a512213a0968088ead5d7631b6"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#addf048a512213a0968088ead5d7631b6">getLhs</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:addf048a512213a0968088ead5d7631b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return lhs of a binary node (if it is not a binary node it throws an exception)  <br /></td></tr>
-<tr class="memitem:a655751466351aa04a918c096e10b7ec6" id="r_a655751466351aa04a918c096e10b7ec6"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a655751466351aa04a918c096e10b7ec6">getRrs</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a655751466351aa04a918c096e10b7ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the right-hand side operand of a binary operation node.  <br /></td></tr>
+<tr class="memitem:aa522f9ee2bae127c113214b9c73cf41b" id="r_aa522f9ee2bae127c113214b9c73cf41b"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#aa522f9ee2bae127c113214b9c73cf41b">getRhs</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:aa522f9ee2bae127c113214b9c73cf41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return rhs of a binary node (if it is not a binary node it throws an exception)  <br /></td></tr>
 <tr class="memitem:a381d30305893e7adec5b45c82109c534" id="r_a381d30305893e7adec5b45c82109c534"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a381d30305893e7adec5b45c82109c534">getParent</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a381d30305893e7adec5b45c82109c534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the parent node of a given SgNode.  <br /></td></tr>
-<tr class="memitem:a7e93561bbf8075f988cee1de2ee19e2d" id="r_a7e93561bbf8075f988cee1de2ee19e2d"><td class="memItemLeft">list&lt; SgGlobal * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7e93561bbf8075f988cee1de2ee19e2d">listOfSgGlobal</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a7e93561bbf8075f988cee1de2ee19e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all global scopes from the files within a given project.  <br /></td></tr>
-<tr class="memitem:a3d663f25b707b6d90e3a627092c44edc" id="r_a3d663f25b707b6d90e3a627092c44edc"><td class="memItemLeft">list&lt; SgVariableDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3d663f25b707b6d90e3a627092c44edc">listOfGlobalVars</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a3d663f25b707b6d90e3a627092c44edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a flattened list of all global variable declarations within a project.  <br /></td></tr>
-<tr class="memitem:a8665c7f0391c84dcc5951e9ef8258067" id="r_a8665c7f0391c84dcc5951e9ef8258067"><td class="memItemLeft">list&lt; SgVariableDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8665c7f0391c84dcc5951e9ef8258067">listOfGlobalVars</a> (SgGlobal *global)</td></tr>
-<tr class="memdesc:a8665c7f0391c84dcc5951e9ef8258067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all non-forward variable declarations within a global scope.  <br /></td></tr>
-<tr class="memitem:aa3d69a70763a542d14de1549311ca283" id="r_aa3d69a70763a542d14de1549311ca283"><td class="memItemLeft">list&lt; SgFunctionDefinition * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa3d69a70763a542d14de1549311ca283">listOfFunctionDefinitions</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:aa3d69a70763a542d14de1549311ca283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a list of function definitions from a given SgNode.  <br /></td></tr>
-<tr class="memitem:a08bd38a74c70d1e110ecf3c1f0beac88" id="r_a08bd38a74c70d1e110ecf3c1f0beac88"><td class="memItemLeft">list&lt; SgVarRefExp * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a08bd38a74c70d1e110ecf3c1f0beac88">listOfUsedVarsInFunctions</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
-<tr class="memdesc:a08bd38a74c70d1e110ecf3c1f0beac88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all variable reference expressions used within function definitions in a project.  <br /></td></tr>
+<tr class="memitem:a5c3e78780287c1554b85327a509e2bea" id="r_a5c3e78780287c1554b85327a509e2bea"><td class="memItemLeft">std::list&lt; SgGlobal * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5c3e78780287c1554b85327a509e2bea">listOfSgGlobal</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:a5c3e78780287c1554b85327a509e2bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all global scopes from the files within a given project.  <br /></td></tr>
+<tr class="memitem:aa4a0787ae9f043e9d5867ba72e117369" id="r_aa4a0787ae9f043e9d5867ba72e117369"><td class="memItemLeft">std::list&lt; SgVariableDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa4a0787ae9f043e9d5867ba72e117369">listOfGlobalVars</a> (SgProject *<a class="el" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a>)</td></tr>
+<tr class="memdesc:aa4a0787ae9f043e9d5867ba72e117369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a flattened list of all global variable declarations within a project.  <br /></td></tr>
+<tr class="memitem:a5ab434b816b7f3fc77a4f272b55b5698" id="r_a5ab434b816b7f3fc77a4f272b55b5698"><td class="memItemLeft">std::list&lt; SgVariableDeclaration * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5ab434b816b7f3fc77a4f272b55b5698">listOfGlobalVars</a> (SgGlobal *global)</td></tr>
+<tr class="memdesc:a5ab434b816b7f3fc77a4f272b55b5698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all non-forward variable declarations within a global scope.  <br /></td></tr>
+<tr class="memitem:a3880607394b701d7efc5ebfd0532e245" id="r_a3880607394b701d7efc5ebfd0532e245"><td class="memItemLeft">std::list&lt; SgFunctionDefinition * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3880607394b701d7efc5ebfd0532e245">listOfFunctionDefinitions</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a3880607394b701d7efc5ebfd0532e245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a list of function definitions from a given SgNode.  <br /></td></tr>
+<tr class="memitem:a6afb1d8d22cb3fe1c14efb5baaa80968" id="r_a6afb1d8d22cb3fe1c14efb5baaa80968"><td class="memItemLeft">std::list&lt; SgVarRefExp * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6afb1d8d22cb3fe1c14efb5baaa80968">listOfUsedVarsInFunctions</a> (SgProject *SgProject)</td></tr>
+<tr class="memdesc:a6afb1d8d22cb3fe1c14efb5baaa80968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all variable reference expressions used within function definitions in a project.  <br /></td></tr>
+<tr class="memitem:a404e768fe13db0a7ddefced075a01af5" id="r_a404e768fe13db0a7ddefced075a01af5"><td class="memItemLeft">std::list&lt; SgFunctionDefinition * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a404e768fe13db0a7ddefced075a01af5">listOfGlobalFunctionDefinitions</a> (SgGlobal *global)</td></tr>
+<tr class="memitem:ab288764c9aea5fb3f0c82b9982a9b094" id="r_ab288764c9aea5fb3f0c82b9982a9b094"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab288764c9aea5fb3f0c82b9982a9b094">isGlobalVariableDeclarationSymbol</a> (<a class="el" href="class_sg_symbol.html">SgSymbol</a> *varDecl)</td></tr>
 <tr class="memitem:a3f1136c27c4387156d6539cb8d21bb93" id="r_a3f1136c27c4387156d6539cb8d21bb93"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3f1136c27c4387156d6539cb8d21bb93">isGlobalVariableDeclaration</a> (SgVariableDeclaration *varDecl)</td></tr>
 <tr class="memdesc:a3f1136c27c4387156d6539cb8d21bb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function or ill-formed function detected. /.  <br /></td></tr>
 <tr class="memitem:a3903268d1fb23b0fb254bfffae9f81ba" id="r_a3903268d1fb23b0fb254bfffae9f81ba"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3903268d1fb23b0fb254bfffae9f81ba">isArrayElementAssignment</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a3903268d1fb23b0fb254bfffae9f81ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a given node represents an assignment to an array element.  <br /></td></tr>
-<tr class="memitem:a39439a031dba572e064b67977b63171d" id="r_a39439a031dba572e064b67977b63171d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a39439a031dba572e064b67977b63171d">isFloatingPointAssignment</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a39439a031dba572e064b67977b63171d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given SgNode represents an assignment operation to a floating-point type.  <br /></td></tr>
+<tr class="memitem:a5606c10ba470ae38c9637462146ae310" id="r_a5606c10ba470ae38c9637462146ae310"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5606c10ba470ae38c9637462146ae310">isFloatingPointAssignment</a> (SgNode *exp)</td></tr>
+<tr class="memdesc:a5606c10ba470ae38c9637462146ae310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given SgNode represents an assignment operation to a floating-point type.  <br /></td></tr>
 <tr class="memitem:a9c21718696904edcf79297c01315aa64" id="r_a9c21718696904edcf79297c01315aa64"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9c21718696904edcf79297c01315aa64">isArrayAccess</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a9c21718696904edcf79297c01315aa64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given SgNode represents an array access operation.  <br /></td></tr>
 <tr class="memitem:a77fd30b8da81e1eec2c9f7f9a492c637" id="r_a77fd30b8da81e1eec2c9f7f9a492c637"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a77fd30b8da81e1eec2c9f7f9a492c637">isPointerVariable</a> (SgVarRefExp *var)</td></tr>
@@ -309,14 +309,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4260377b4a53703ec0fa76be79735700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given variable declaration represents an array.  <br /></td></tr>
 <tr class="memitem:a3ac406abafbdeedce58bf5e42438af9a" id="r_a3ac406abafbdeedce58bf5e42438af9a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3ac406abafbdeedce58bf5e42438af9a">isAggregateDeclaration</a> (SgVariableDeclaration *decl)</td></tr>
 <tr class="memdesc:a3ac406abafbdeedce58bf5e42438af9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a variable declaration contains an aggregate initializer.  <br /></td></tr>
-<tr class="memitem:a073d9bb4a28efaeab184cd3e38514f3b" id="r_a073d9bb4a28efaeab184cd3e38514f3b"><td class="memItemLeft"><a class="el" href="_sage_tree_builder_8h.html#a3e7ca563887e794ecb5b17cc99a1c0d1">SgExpressionPtrList</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a073d9bb4a28efaeab184cd3e38514f3b">getInitializerListOfAggregateDeclaration</a> (SgVariableDeclaration *decl)</td></tr>
-<tr class="memdesc:a073d9bb4a28efaeab184cd3e38514f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the list of expressions within an initializer list for an aggregate declaration.  <br /></td></tr>
-<tr class="memitem:a248afd367ff767cd63d8572be48389bd" id="r_a248afd367ff767cd63d8572be48389bd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a248afd367ff767cd63d8572be48389bd">replaceExpression</a> (SgExpression *e1, SgExpression *e2, bool mode)</td></tr>
-<tr class="memdesc:a248afd367ff767cd63d8572be48389bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces one expression node with another within a parent node.  <br /></td></tr>
-<tr class="memitem:aaf35ecc32810b4e72c79d49dba720c5e" id="r_aaf35ecc32810b4e72c79d49dba720c5e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaf35ecc32810b4e72c79d49dba720c5e">replaceAstWithString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="classstring.html">string</a> s)</td></tr>
-<tr class="memdesc:aaf35ecc32810b4e72c79d49dba720c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the content of an AST node with a specified string representation.  <br /></td></tr>
-<tr class="memitem:aad3c8ad7bc303745e8b20405d9a1fe7b" id="r_aad3c8ad7bc303745e8b20405d9a1fe7b"><td class="memItemLeft"><a class="el" href="#a17a73cbf90683d9f479fde75c96d25b3">PragmaList</a>&#160;</td><td class="memItemRight"><a class="el" href="#aad3c8ad7bc303745e8b20405d9a1fe7b">collectPragmaLines</a> (<a class="el" href="classstring.html">string</a> pragmaName, SgNode *root)</td></tr>
-<tr class="memdesc:aad3c8ad7bc303745e8b20405d9a1fe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects all pragma declarations matching a specific name and their associated statements.  <br /></td></tr>
+<tr class="memitem:a334bdb2219a58e447b00df79b89f838d" id="r_a334bdb2219a58e447b00df79b89f838d"><td class="memItemLeft">std::vector&lt; SgExpression * &gt; &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a334bdb2219a58e447b00df79b89f838d">getInitializerListOfAggregateDeclaration</a> (SgVariableDeclaration *decl)</td></tr>
+<tr class="memdesc:a334bdb2219a58e447b00df79b89f838d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the list of expressions within an initializer list for an aggregate declaration.  <br /></td></tr>
+<tr class="memitem:ad83238912a939b24dfd08fc437f2a805" id="r_ad83238912a939b24dfd08fc437f2a805"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad83238912a939b24dfd08fc437f2a805">replaceExpression</a> (SgExpression *e1, SgExpression *e2, bool mode=false)</td></tr>
+<tr class="memdesc:ad83238912a939b24dfd08fc437f2a805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces one expression node with another within a parent node.  <br /></td></tr>
+<tr class="memitem:a40b15f70b6377bdce7968daf1f7c44e9" id="r_a40b15f70b6377bdce7968daf1f7c44e9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40b15f70b6377bdce7968daf1f7c44e9">replaceAstWithString</a> (SgNode *<a class="el" href="structnode.html">node</a>, std::string s)</td></tr>
+<tr class="memitem:ab3dee0d7a8459e45282751009a8b0f60" id="r_ab3dee0d7a8459e45282751009a8b0f60"><td class="memItemLeft"><a class="el" href="#a17a73cbf90683d9f479fde75c96d25b3">PragmaList</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab3dee0d7a8459e45282751009a8b0f60">collectPragmaLines</a> (std::string pragmaName, SgNode *root)</td></tr>
 <tr class="memitem:a6b11e48fea25a9e73a2cd8481e40ef85" id="r_a6b11e48fea25a9e73a2cd8481e40ef85"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a6b11e48fea25a9e73a2cd8481e40ef85">getPragmaDeclarationString</a> (SgPragmaDeclaration *pragmaDecl)</td></tr>
 <tr class="memdesc:a6b11e48fea25a9e73a2cd8481e40ef85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the string representation of a pragma declaration.  <br /></td></tr>
 <tr class="memitem:a8bb55f9cca3858cbfd8b1ffb9baa0c12" id="r_a8bb55f9cca3858cbfd8b1ffb9baa0c12"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8bb55f9cca3858cbfd8b1ffb9baa0c12">replaceString</a> (std::string &amp;str, const std::string &amp;from, const std::string &amp;to)</td></tr>
@@ -333,16 +331,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:a82dab8bc881b4192a79b9f57c140c0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an SgNode to a string representation containing its source location and node information.  <br /></td></tr>
 <tr class="memitem:a10714a8faf55f7a1b75f390d6617dc99" id="r_a10714a8faf55f7a1b75f390d6617dc99"><td class="memItemLeft"><a class="el" href="struct_sg_node_helper_1_1_extended_call_info.html">ExtendedCallInfo</a>&#160;</td><td class="memItemRight"><a class="el" href="#a10714a8faf55f7a1b75f390d6617dc99">matchExtendedNormalizedCall</a> (SgNode *)</td></tr>
 <tr class="memdesc:a10714a8faf55f7a1b75f390d6617dc99"><td class="mdescLeft">&#160;</td><td class="mdescRight">matches C and C++ function calls (also ctor and dtor)  <br /></td></tr>
-<tr class="memitem:a77cbc617b06253173f187adfc84a77cf" id="r_a77cbc617b06253173f187adfc84a77cf"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a77cbc617b06253173f187adfc84a77cf">sourceLineColumnToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, std::string <a class="el" href="structseparator.html">separator</a>)</td></tr>
-<tr class="memdesc:a77cbc617b06253173f187adfc84a77cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns filename followed by line, separator, and column in one string. Used for generating readable output.  <br /></td></tr>
-<tr class="memitem:a76ccbfcc4e7c8fb7e0fb512901eac0d3" id="r_a76ccbfcc4e7c8fb7e0fb512901eac0d3"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a76ccbfcc4e7c8fb7e0fb512901eac0d3">doubleQuotedEscapedString</a> (std::string s1)</td></tr>
-<tr class="memitem:a1d7654d26019ccc78231aa71861711fa" id="r_a1d7654d26019ccc78231aa71861711fa"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a1d7654d26019ccc78231aa71861711fa">doubleQuotedEscapedHTMLString</a> (std::string s1)</td></tr>
-<tr class="memitem:aa522f9ee2bae127c113214b9c73cf41b" id="r_aa522f9ee2bae127c113214b9c73cf41b"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#aa522f9ee2bae127c113214b9c73cf41b">getRhs</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:aa522f9ee2bae127c113214b9c73cf41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return rhs of a binary node (if it is not a binary node it throws an exception)  <br /></td></tr>
-<tr class="memitem:a404e768fe13db0a7ddefced075a01af5" id="r_a404e768fe13db0a7ddefced075a01af5"><td class="memItemLeft">std::list&lt; SgFunctionDefinition * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a404e768fe13db0a7ddefced075a01af5">listOfGlobalFunctionDefinitions</a> (SgGlobal *global)</td></tr>
-<tr class="memitem:ab288764c9aea5fb3f0c82b9982a9b094" id="r_ab288764c9aea5fb3f0c82b9982a9b094"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab288764c9aea5fb3f0c82b9982a9b094">isGlobalVariableDeclarationSymbol</a> (<a class="el" href="class_sg_symbol.html">SgSymbol</a> *varDecl)</td></tr>
-<tr class="memitem:a40b15f70b6377bdce7968daf1f7c44e9" id="r_a40b15f70b6377bdce7968daf1f7c44e9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40b15f70b6377bdce7968daf1f7c44e9">replaceAstWithString</a> (SgNode *<a class="el" href="structnode.html">node</a>, std::string s)</td></tr>
-<tr class="memitem:ab3dee0d7a8459e45282751009a8b0f60" id="r_ab3dee0d7a8459e45282751009a8b0f60"><td class="memItemLeft"><a class="el" href="#a17a73cbf90683d9f479fde75c96d25b3">PragmaList</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab3dee0d7a8459e45282751009a8b0f60">collectPragmaLines</a> (std::string pragmaName, SgNode *root)</td></tr>
+<tr class="memitem:a2fb855a69f272e6ca53b469cff5616b8" id="r_a2fb855a69f272e6ca53b469cff5616b8"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2fb855a69f272e6ca53b469cff5616b8">sourceLineColumnToString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="classstring.html">string</a> <a class="el" href="structseparator.html">separator</a>)</td></tr>
+<tr class="memdesc:a2fb855a69f272e6ca53b469cff5616b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the line and column information of an SgNode into a formatted string.  <br /></td></tr>
+<tr class="memitem:ae58f1624b6a06f381afcfc24919fc004" id="r_ae58f1624b6a06f381afcfc24919fc004"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae58f1624b6a06f381afcfc24919fc004">doubleQuotedEscapedString</a> (<a class="el" href="classstring.html">string</a> s1)</td></tr>
+<tr class="memdesc:ae58f1624b6a06f381afcfc24919fc004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a string in double quotes and handles escaped quote characters.  <br /></td></tr>
+<tr class="memitem:ad7b39bb6c7f2b4f3066722e6f9a58d07" id="r_ad7b39bb6c7f2b4f3066722e6f9a58d07"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad7b39bb6c7f2b4f3066722e6f9a58d07">doubleQuotedEscapedHTMLString</a> (<a class="el" href="classstring.html">string</a> s1)</td></tr>
+<tr class="memdesc:ad7b39bb6c7f2b4f3066722e6f9a58d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string into a double-quoted, HTML-escaped format with specific character replacements.  <br /></td></tr>
+<tr class="memitem:a655751466351aa04a918c096e10b7ec6" id="r_a655751466351aa04a918c096e10b7ec6"><td class="memItemLeft">SgNode *&#160;</td><td class="memItemRight"><a class="el" href="#a655751466351aa04a918c096e10b7ec6">getRrs</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
+<tr class="memdesc:a655751466351aa04a918c096e10b7ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the right-hand side operand of a binary operation node.  <br /></td></tr>
+<tr class="memitem:aaf35ecc32810b4e72c79d49dba720c5e" id="r_aaf35ecc32810b4e72c79d49dba720c5e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaf35ecc32810b4e72c79d49dba720c5e">replaceAstWithString</a> (SgNode *<a class="el" href="structnode.html">node</a>, <a class="el" href="classstring.html">string</a> s)</td></tr>
+<tr class="memdesc:aaf35ecc32810b4e72c79d49dba720c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the content of an AST node with a specified string representation.  <br /></td></tr>
+<tr class="memitem:aad3c8ad7bc303745e8b20405d9a1fe7b" id="r_aad3c8ad7bc303745e8b20405d9a1fe7b"><td class="memItemLeft"><a class="el" href="#a17a73cbf90683d9f479fde75c96d25b3">PragmaList</a>&#160;</td><td class="memItemRight"><a class="el" href="#aad3c8ad7bc303745e8b20405d9a1fe7b">collectPragmaLines</a> (<a class="el" href="classstring.html">string</a> pragmaName, SgNode *root)</td></tr>
+<tr class="memdesc:aad3c8ad7bc303745e8b20405d9a1fe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects all pragma declarations matching a specific name and their associated statements.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_sg_node_helper.html" title="Auto-generated documentation for the SgNodeHelper namespace.">SgNodeHelper</a> namespace. </p>
@@ -382,8 +382,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a73933ff40b23aebf29103a8c7f1b198b" name="a73933ff40b23aebf29103a8c7f1b198b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73933ff40b23aebf29103a8c7f1b198b">&#9670;&#160;</a></span>abbreviatedLocationToString()</h2>
+<a id="ad681f34a510dea80a4389b43b3fdc3df" name="ad681f34a510dea80a4389b43b3fdc3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad681f34a510dea80a4389b43b3fdc3df">&#9670;&#160;</a></span>abbreviatedLocationToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,14 +418,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ce5545f1a033f9f397c60824334972b" name="a0ce5545f1a033f9f397c60824334972b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ce5545f1a033f9f397c60824334972b">&#9670;&#160;</a></span>classDeclarationNestingSequence()</h2>
+<a id="a6a7187c416e60a88dd2e4ae057027f7e" name="a6a7187c416e60a88dd2e4ae057027f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7187c416e60a88dd2e4ae057027f7e">&#9670;&#160;</a></span>classDeclarationNestingSequence()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; SgClassDeclaration * &gt; SgNodeHelper::classDeclarationNestingSequence </td>
+          <td class="memname">list&lt; SgClassDeclaration * &gt; SgNodeHelper::classDeclarationNestingSequence </td>
           <td>(</td>
           <td class="paramtype">SgDeclarationStatement *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -537,8 +537,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa18ee245d0448b963887558f5d940ca3" name="aa18ee245d0448b963887558f5d940ca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa18ee245d0448b963887558f5d940ca3">&#9670;&#160;</a></span>determineChildIndex()</h2>
+<a id="ab6211a9c048359bb373f49ba8ba52c72" name="ab6211a9c048359bb373f49ba8ba52c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6211a9c048359bb373f49ba8ba52c72">&#9670;&#160;</a></span>determineChildIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,8 +568,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a524a643367bde278fefeafdca52e792b" name="a524a643367bde278fefeafdca52e792b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a524a643367bde278fefeafdca52e792b">&#9670;&#160;</a></span>determineFunctionDefinition()</h2>
+<a id="ac4d8ca00484e704facfdbff1c9489831" name="ac4d8ca00484e704facfdbff1c9489831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d8ca00484e704facfdbff1c9489831">&#9670;&#160;</a></span>determineFunctionDefinition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -602,14 +602,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af2b4b3ac98ed515765bd3ef4fcd4dd65" name="af2b4b3ac98ed515765bd3ef4fcd4dd65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b4b3ac98ed515765bd3ef4fcd4dd65">&#9670;&#160;</a></span>determineVariablesInSubtree()</h2>
+<a id="a1e584489c70ac0b9a99ff212ab04bf99" name="a1e584489c70ac0b9a99ff212ab04bf99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e584489c70ac0b9a99ff212ab04bf99">&#9670;&#160;</a></span>determineVariablesInSubtree()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; SgVarRefExp * &gt; SgNodeHelper::determineVariablesInSubtree </td>
+          <td class="memname"><a class="el" href="classvector.html">vector</a>&lt; SgVarRefExp * &gt; SgNodeHelper::determineVariablesInSubtree </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -667,7 +667,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Converts a string into a double-quoted, HTML-escaped format with specific character replacements. </p>
-<p>This function first performs a standard double-quoted escaping process on the input string using the <span class="tt"><a class="el" href="#ae58f1624b6a06f381afcfc24919fc004" title="Wraps a string in double quotes and handles escaped quote characters.">doubleQuotedEscapedString</a></span> method. Subsequently, it performs manual replacements of specific comparison operators and symbols to ensure they are rendered correctly within Graphviz DOT labels, particularly when those labels are placed inside table nodes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> replacements include converting comparison operators like &lt;=, &gt;=, &lt;, and &gt; into text-based representations (LE, GE, LT, GT) and replacing the ampersand symbol with a specific placeholder.</p>
+<p>This function first performs a standard double-quoted escaping process on the input string using the <span class="tt"><a class="el" href="#a76ccbfcc4e7c8fb7e0fb512901eac0d3">doubleQuotedEscapedString</a></span> method. Subsequently, it performs manual replacements of specific comparison operators and symbols to ensure they are rendered correctly within Graphviz DOT labels, particularly when those labels are placed inside table nodes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> replacements include converting comparison operators like &lt;=, &gt;=, &lt;, and &gt; into text-based representations (LE, GE, LT, GT) and replacing the ampersand symbol with a specific placeholder.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s1</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original input string to be escaped and transformed.</td></tr>
@@ -1113,14 +1113,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af4f9985fd64e1eaba088e8ce68bc55b1" name="af4f9985fd64e1eaba088e8ce68bc55b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4f9985fd64e1eaba088e8ce68bc55b1">&#9670;&#160;</a></span>getForInitList()</h2>
+<a id="ae9795c3d3d06f9a2333322d453bf3f56" name="ae9795c3d3d06f9a2333322d453bf3f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9795c3d3d06f9a2333322d453bf3f56">&#9670;&#160;</a></span>getForInitList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; SgStatement * &gt; &amp; SgNodeHelper::getForInitList </td>
+          <td class="memname"><a class="el" href="sage_container_8h.html#a78eea195b86c4ee06b21c673d31756c8">SgStatementPtrList</a> &amp; SgNodeHelper::getForInitList </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -1145,14 +1145,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c270309d4936442f413faf9d635cadd" name="a2c270309d4936442f413faf9d635cadd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c270309d4936442f413faf9d635cadd">&#9670;&#160;</a></span>getFunctionCallActualParameterList()</h2>
+<a id="a514702347e415e641069288cebc42375" name="a514702347e415e641069288cebc42375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514702347e415e641069288cebc42375">&#9670;&#160;</a></span>getFunctionCallActualParameterList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; SgExpression * &gt; &amp; SgNodeHelper::getFunctionCallActualParameterList </td>
+          <td class="memname"><a class="el" href="_sage_tree_builder_8h.html#a3e7ca563887e794ecb5b17cc99a1c0d1">SgExpressionPtrList</a> &amp; SgNodeHelper::getFunctionCallActualParameterList </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -1177,14 +1177,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1e3c4c12d3f666272c82c8f429e2c85" name="ad1e3c4c12d3f666272c82c8f429e2c85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e3c4c12d3f666272c82c8f429e2c85">&#9670;&#160;</a></span>getFunctionDefinitionFormalParameterList()</h2>
+<a id="aaaaac1877a11d91bf0033b775f1f85f2" name="aaaaac1877a11d91bf0033b775f1f85f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaaac1877a11d91bf0033b775f1f85f2">&#9670;&#160;</a></span>getFunctionDefinitionFormalParameterList()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; SgInitializedName * &gt; &amp; SgNodeHelper::getFunctionDefinitionFormalParameterList </td>
+          <td class="memname"><a class="el" href="sage_container_8h.html#af5484e8d253ed1622192c3c08221ff2e">SgInitializedNamePtrList</a> &amp; SgNodeHelper::getFunctionDefinitionFormalParameterList </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -1209,14 +1209,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad7199d2374a02736b75012cc3ba120f9" name="ad7199d2374a02736b75012cc3ba120f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7199d2374a02736b75012cc3ba120f9">&#9670;&#160;</a></span>getFunctionName()</h2>
+<a id="a5be342235bd64533f3d7add2e34e972d" name="a5be342235bd64533f3d7add2e34e972d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be342235bd64533f3d7add2e34e972d">&#9670;&#160;</a></span>getFunctionName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SgNodeHelper::getFunctionName </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> SgNodeHelper::getFunctionName </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -1336,14 +1336,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a073d9bb4a28efaeab184cd3e38514f3b" name="a073d9bb4a28efaeab184cd3e38514f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a073d9bb4a28efaeab184cd3e38514f3b">&#9670;&#160;</a></span>getInitializerListOfAggregateDeclaration()</h2>
+<a id="a334bdb2219a58e447b00df79b89f838d" name="a334bdb2219a58e447b00df79b89f838d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334bdb2219a58e447b00df79b89f838d">&#9670;&#160;</a></span>getInitializerListOfAggregateDeclaration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; SgExpression * &gt; &amp; SgNodeHelper::getInitializerListOfAggregateDeclaration </td>
+          <td class="memname"><a class="el" href="_sage_tree_builder_8h.html#a3e7ca563887e794ecb5b17cc99a1c0d1">SgExpressionPtrList</a> &amp; SgNodeHelper::getInitializerListOfAggregateDeclaration </td>
           <td>(</td>
           <td class="paramtype">SgVariableDeclaration *</td>          <td class="paramname"><span class="paramname"><em>decl</em></span></td><td>)</td>
           <td></td>
@@ -1371,14 +1371,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="ad0c14da37317b73e7d26f9172b65fcdc" name="ad0c14da37317b73e7d26f9172b65fcdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0c14da37317b73e7d26f9172b65fcdc">&#9670;&#160;</a></span>getLabelName()</h2>
+<a id="ab9a575dca2887f378dbf641fcee19e75" name="ab9a575dca2887f378dbf641fcee19e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a575dca2887f378dbf641fcee19e75">&#9670;&#160;</a></span>getLabelName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SgNodeHelper::getLabelName </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> SgNodeHelper::getLabelName </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -1753,8 +1753,8 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 </div><div class="memdoc">
 
 <p>returns the SgSymbol* of the variable in a SgVarRefExp </p>
-<p>Returns a unique UniqueVariableSymbol (SgSymbol*) for a variale in a variable declaration (can be used as ID).</p>
 <p>Retrieves the underlying symbol associated with a variable reference expression.</p>
+<p>Returns a unique UniqueVariableSymbol (SgSymbol*) for a variale in a variable declaration (can be used as ID).</p>
 <p>This function extracts the symbol from a given variable reference expression. It includes specialized logic to handle edge cases involving incorrect AST structures, specifically those occurring within catch blocks. In such cases, where a node might not be a valid child of its parent due to the way caught variables are represented, the function traverses the AST upwards to find the correct SgVariableSymbol via the catch statement's condition.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2263,8 +2263,8 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a39439a031dba572e064b67977b63171d" name="a39439a031dba572e064b67977b63171d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39439a031dba572e064b67977b63171d">&#9670;&#160;</a></span>isFloatingPointAssignment()</h2>
+<a id="a5606c10ba470ae38c9637462146ae310" name="a5606c10ba470ae38c9637462146ae310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5606c10ba470ae38c9637462146ae310">&#9670;&#160;</a></span>isFloatingPointAssignment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2272,7 +2272,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
         <tr>
           <td class="memname">bool SgNodeHelper::isFloatingPointAssignment </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>exp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2363,7 +2363,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
         <tr>
           <td class="memname">bool SgNodeHelper::isForwardFunctionDeclaration </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>declaration</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2881,7 +2881,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
         <tr>
           <td class="memname">bool SgNodeHelper::isVariableSymbolInFunctionForwardDeclaration </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>varsym</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2964,14 +2964,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="aa19968ad762bff8c3a45388cb4db98da" name="aa19968ad762bff8c3a45388cb4db98da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa19968ad762bff8c3a45388cb4db98da">&#9670;&#160;</a></span>lineColumnPair()</h2>
+<a id="aeb2a62ee8cbb86a47b023f80efaf5e7f" name="aeb2a62ee8cbb86a47b023f80efaf5e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2a62ee8cbb86a47b023f80efaf5e7f">&#9670;&#160;</a></span>lineColumnPair()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#add5e5287ad4a9e05913f71be18964b24">SgNodeHelper::LineColPair</a> SgNodeHelper::lineColumnPair </td>
+          <td class="memname"><a class="el" href="#add5e5287ad4a9e05913f71be18964b24">LineColPair</a> SgNodeHelper::lineColumnPair </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -2995,14 +2995,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="aa3d69a70763a542d14de1549311ca283" name="aa3d69a70763a542d14de1549311ca283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3d69a70763a542d14de1549311ca283">&#9670;&#160;</a></span>listOfFunctionDefinitions()</h2>
+<a id="a3880607394b701d7efc5ebfd0532e245" name="a3880607394b701d7efc5ebfd0532e245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3880607394b701d7efc5ebfd0532e245">&#9670;&#160;</a></span>listOfFunctionDefinitions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; SgFunctionDefinition * &gt; SgNodeHelper::listOfFunctionDefinitions </td>
+          <td class="memname">list&lt; SgFunctionDefinition * &gt; SgNodeHelper::listOfFunctionDefinitions </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -3043,14 +3043,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a8665c7f0391c84dcc5951e9ef8258067" name="a8665c7f0391c84dcc5951e9ef8258067"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8665c7f0391c84dcc5951e9ef8258067">&#9670;&#160;</a></span>listOfGlobalVars() <span class="overload">[1/2]</span></h2>
+<a id="a5ab434b816b7f3fc77a4f272b55b5698" name="a5ab434b816b7f3fc77a4f272b55b5698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab434b816b7f3fc77a4f272b55b5698">&#9670;&#160;</a></span>listOfGlobalVars() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; SgVariableDeclaration * &gt; SgNodeHelper::listOfGlobalVars </td>
+          <td class="memname">list&lt; SgVariableDeclaration * &gt; SgNodeHelper::listOfGlobalVars </td>
           <td>(</td>
           <td class="paramtype">SgGlobal *</td>          <td class="paramname"><span class="paramname"><em>global</em></span></td><td>)</td>
           <td></td>
@@ -3074,14 +3074,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a3d663f25b707b6d90e3a627092c44edc" name="a3d663f25b707b6d90e3a627092c44edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d663f25b707b6d90e3a627092c44edc">&#9670;&#160;</a></span>listOfGlobalVars() <span class="overload">[2/2]</span></h2>
+<a id="aa4a0787ae9f043e9d5867ba72e117369" name="aa4a0787ae9f043e9d5867ba72e117369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a0787ae9f043e9d5867ba72e117369">&#9670;&#160;</a></span>listOfGlobalVars() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; SgVariableDeclaration * &gt; SgNodeHelper::listOfGlobalVars </td>
+          <td class="memname">list&lt; SgVariableDeclaration * &gt; SgNodeHelper::listOfGlobalVars </td>
           <td>(</td>
           <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>project</em></span></td><td>)</td>
           <td></td>
@@ -3101,18 +3101,18 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> list of pointers to SgVariableDeclaration objects found across all global scopes in the project.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>project must not be a null pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a list containing all discovered SgVariableDeclaration pointers. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original lists within the SgGlobal objects are modified via splicing if the underlying implementation of listOfGlobalVars follows the same moving logic.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="#a7e93561bbf8075f988cee1de2ee19e2d" title="Retrieves a list of all global scopes from the files within a given project.">SgNodeHelper::listOfSgGlobal</a> and <a class="el" href="#a3d663f25b707b6d90e3a627092c44edc" title="Retrieves a flattened list of all global variable declarations within a project.">SgNodeHelper::listOfGlobalVars</a> to perform the underlying traversal. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="#a5c3e78780287c1554b85327a509e2bea" title="Retrieves a list of all global scopes from the files within a given project.">SgNodeHelper::listOfSgGlobal</a> and <a class="el" href="#aa4a0787ae9f043e9d5867ba72e117369" title="Retrieves a flattened list of all global variable declarations within a project.">SgNodeHelper::listOfGlobalVars</a> to perform the underlying traversal. </dd></dl>
 
 </div>
 </div>
-<a id="a7e93561bbf8075f988cee1de2ee19e2d" name="a7e93561bbf8075f988cee1de2ee19e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e93561bbf8075f988cee1de2ee19e2d">&#9670;&#160;</a></span>listOfSgGlobal()</h2>
+<a id="a5c3e78780287c1554b85327a509e2bea" name="a5c3e78780287c1554b85327a509e2bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3e78780287c1554b85327a509e2bea">&#9670;&#160;</a></span>listOfSgGlobal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; SgGlobal * &gt; SgNodeHelper::listOfSgGlobal </td>
+          <td class="memname">list&lt; SgGlobal * &gt; SgNodeHelper::listOfSgGlobal </td>
           <td>(</td>
           <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>project</em></span></td><td>)</td>
           <td></td>
@@ -3137,22 +3137,24 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a08bd38a74c70d1e110ecf3c1f0beac88" name="a08bd38a74c70d1e110ecf3c1f0beac88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08bd38a74c70d1e110ecf3c1f0beac88">&#9670;&#160;</a></span>listOfUsedVarsInFunctions()</h2>
+<a id="a6afb1d8d22cb3fe1c14efb5baaa80968" name="a6afb1d8d22cb3fe1c14efb5baaa80968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afb1d8d22cb3fe1c14efb5baaa80968">&#9670;&#160;</a></span>listOfUsedVarsInFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; SgVarRefExp * &gt; SgNodeHelper::listOfUsedVarsInFunctions </td>
+          <td class="memname">list&lt; SgVarRefExp * &gt; SgNodeHelper::listOfUsedVarsInFunctions </td>
           <td>(</td>
-          <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>project</em></span></td><td>)</td>
+          <td class="paramtype">SgProject *</td>          <td class="paramname"><span class="paramname"><em>SgProject</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Retrieves a list of all variable reference expressions used within function definitions in a project. </p>
+<dl class="section author"><dt>Author</dt><dd>Tristan Vanderbruggen </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019.</dd></dl>
 <p>This function iterates through all function definitions found within the provided SgProject. For each function definition, it traverses the associated Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) using a <a class="el" href="class_rose_ast.html">RoseAst</a> iterator. During the traversal, the function identifies every node that is an instance of SgVarRefExp. All such identified variable reference expressions are collected into a single list.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3163,20 +3165,18 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> list of pointers to SgVarRef and SgVarRefExp nodes representing all variable references found within the project's function definitions.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>project must not be a null pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned list contains all SgVarRefExp nodes found during the AST traversal of all function definitions in the project.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="#aa3d69a70763a542d14de1549311ca283" title="Extracts a list of function definitions from a given SgNode.">SgNodeHelper::listOfFunctionDefinitions</a> to identify the scope of the search.</dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Tristan Vanderbruggen </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="#a3880607394b701d7efc5ebfd0532e245" title="Extracts a list of function definitions from a given SgNode.">SgNodeHelper::listOfFunctionDefinitions</a> to identify the scope of the search. </dd></dl>
 
 </div>
 </div>
-<a id="a0e49cd7ad41cb74c318cef26408e025d" name="a0e49cd7ad41cb74c318cef26408e025d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e49cd7ad41cb74c318cef26408e025d">&#9670;&#160;</a></span>localVariableDeclarationsOfFunction()</h2>
+<a id="a1a513681a6493b96b03013b9f3697e6b" name="a1a513681a6493b96b03013b9f3697e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a513681a6493b96b03013b9f3697e6b">&#9670;&#160;</a></span>localVariableDeclarationsOfFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; SgVariableDeclaration * &gt; SgNodeHelper::localVariableDeclarationsOfFunction </td>
+          <td class="memname">set&lt; SgVariableDeclaration * &gt; SgNodeHelper::localVariableDeclarationsOfFunction </td>
           <td>(</td>
           <td class="paramtype">SgFunctionDefinition *</td>          <td class="paramname"><span class="paramname"><em>funDef</em></span></td><td>)</td>
           <td></td>
@@ -3200,8 +3200,8 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a2a16f12354b4c388a5d2e98050155adf" name="a2a16f12354b4c388a5d2e98050155adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a16f12354b4c388a5d2e98050155adf">&#9670;&#160;</a></span>locationAndSourceCodeToString()</h2>
+<a id="a52a2aded364c9bcf30ac98d26449858e" name="a52a2aded364c9bcf30ac98d26449858e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a2aded364c9bcf30ac98d26449858e">&#9670;&#160;</a></span>locationAndSourceCodeToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3238,7 +3238,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the formatted location and source code, separated by a colon and space.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>node must not be a null pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a string that follows the format "location: sourceCode", where sourceCode may be truncated.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <a class="el" href="#a73933ff40b23aebf29103a8c7f1b198b" title="Converts a node&#39;s location to a string with a truncated file name.">SgNodeHelper::abbreviatedLocationToString</a> for the location component. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <a class="el" href="#ad681f34a510dea80a4389b43b3fdc3df" title="Converts a node&#39;s location to a string with a truncated file name.">SgNodeHelper::abbreviatedLocationToString</a> for the location component. </dd></dl>
 
 </div>
 </div>
@@ -3273,14 +3273,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a42680515565030e4203e05aa1d8ab019" name="a42680515565030e4203e05aa1d8ab019"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42680515565030e4203e05aa1d8ab019">&#9670;&#160;</a></span>loopRelevantBreakStmtNodes()</h2>
+<a id="a03a71e614ff50810e8b8bfbf5584b414" name="a03a71e614ff50810e8b8bfbf5584b414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a71e614ff50810e8b8bfbf5584b414">&#9670;&#160;</a></span>loopRelevantBreakStmtNodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; SgNode * &gt; SgNodeHelper::loopRelevantBreakStmtNodes </td>
+          <td class="memname">set&lt; SgNode * &gt; SgNodeHelper::loopRelevantBreakStmtNodes </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -3311,14 +3311,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a1ed89b19d79ba6e45ef5454596d5bbb7" name="a1ed89b19d79ba6e45ef5454596d5bbb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ed89b19d79ba6e45ef5454596d5bbb7">&#9670;&#160;</a></span>loopRelevantContinueStmtNodes()</h2>
+<a id="a5f84cd9a8ed7dc8efa134cd5b8152aa6" name="a5f84cd9a8ed7dc8efa134cd5b8152aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f84cd9a8ed7dc8efa134cd5b8152aa6">&#9670;&#160;</a></span>loopRelevantContinueStmtNodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; SgContinueStmt * &gt; SgNodeHelper::loopRelevantContinueStmtNodes </td>
+          <td class="memname">set&lt; SgContinueStmt * &gt; SgNodeHelper::loopRelevantContinueStmtNodes </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -3350,7 +3350,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
         <tr>
           <td class="memname"><a class="el" href="struct_sg_node_helper_1_1_extended_call_info.html">ExtendedCallInfo</a> SgNodeHelper::matchExtendedNormalizedCall </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3358,7 +3358,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 <p>matches C and C++ function calls (also ctor and dtor) </p>
 <p>Identifies if a given SgNode represents an extended normalized function call.</p>
-<p>This function utilizes a dispatch mechanism with the ExtendedCallMatcherOuter pattern to determine if the provided SgNode matches the criteria for an extended normalized call. It serves as a specialized matcher that extends the capabilities of standard function call matching. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> utility to traverse and evaluate the node against the specified matcher.</p>
+<p>This function utilizes a dispatch mechanism with the ExtendedCallMatcherOuter pattern to determine if the provided SgNode matches the criteria for an extended normalized call. It serves as a specialized matcher that extends the capabilities of standard function call matching. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> utility to traverse and evaluate the node against the specified matcher.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode to be inspected for an extended normalized call pattern.</td></tr>
@@ -3403,14 +3403,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a04fcb2533c1c935adc7cf0e126b45962" name="a04fcb2533c1c935adc7cf0e126b45962"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04fcb2533c1c935adc7cf0e126b45962">&#9670;&#160;</a></span>nodeToString()</h2>
+<a id="a32744f1fec04bd156d9b17ff3b710f4e" name="a32744f1fec04bd156d9b17ff3b710f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32744f1fec04bd156d9b17ff3b710f4e">&#9670;&#160;</a></span>nodeToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SgNodeHelper::nodeToString </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> SgNodeHelper::nodeToString </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -3522,8 +3522,8 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a248afd367ff767cd63d8572be48389bd" name="a248afd367ff767cd63d8572be48389bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a248afd367ff767cd63d8572be48389bd">&#9670;&#160;</a></span>replaceExpression()</h2>
+<a id="ad83238912a939b24dfd08fc437f2a805" name="ad83238912a939b24dfd08fc437f2a805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83238912a939b24dfd08fc437f2a805">&#9670;&#160;</a></span>replaceExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3548,7 +3548,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 <p>Replaces one expression node with another within a parent node. </p>
 <p>replaces expression e1 by expression e2. Currently it uses the SageInterface::rewriteExpression function but wraps around some addtional checks that significantly improve performance of the replace operation.</p>
-<p>This function attempts to perform an optimized replacement of an existing expression node (e1) with a new expression node (e2). It first checks if the parent of e1 is an SgExpression or an SgExprStatement. If the parent is one of these types and the mode is false, it performs a direct replacement using the parent's replace_expression method and updates the parent pointer of e2. If the parent type does not match or if mode is true, it falls back to the more general but computationally expensive <a class="el" href="namespace_sage_interface.html#a9def0060e8b2c242eb78d0dc4b755945" title="Replace an expression with another, used for variable reference substitution and others....">SageInterface::replaceExpression</a> implementation.</p>
+<p>This function attempts to perform an optimized replacement of an existing expression node (e1) with a new expression node (e2). It first checks if the parent of e1 is an SgExpression or an SgExprStatement. If the parent is one of these types and the mode is false, it performs a direct replacement using the parent's replace_expression method and updates the parent pointer of e2. If the parent type does not match or if mode is true, it falls back to the more general but computationally expensive <a class="el" href="namespace_sage_interface.html#aba697ba095a90c110e020e411fd8158f" title="Replace an expression with another, used for variable reference substitution and others....">SageInterface::replaceExpression</a> implementation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">e1</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original expression node that is to be replaced. </td></tr>
@@ -3559,7 +3559,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>e1 and e2 should be valid, non-null SgExpression pointers. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>If the optimized path is taken, e2's parent will be set to the same parent as e1, and the parent node will no longer contain e1 but will instead contain e2.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> fallback mechanism using <a class="el" href="namespace_sage_interface.html#a9def0060e8b2c242eb78d0dc4b755945" title="Replace an expression with another, used for variable reference substitution and others....">SageInterface::replaceExpression</a> is noted to be significantly slower than the optimized path. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> fallback mechanism using <a class="el" href="namespace_sage_interface.html#aba697ba095a90c110e020e411fd8158f" title="Replace an expression with another, used for variable reference substitution and others....">SageInterface::replaceExpression</a> is noted to be significantly slower than the optimized path. </dd></dl>
 
 </div>
 </div>
@@ -3853,7 +3853,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the line number, followed by the separator, and then the column number.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>node must not be a null pointer. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a non-empty string if the node contains valid line and column information.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <a class="el" href="#aa19968ad762bff8c3a45388cb4db98da" title="returns a std::pair of line and column number. If no file info exists at this node it returns (-1,...">SgNodeHelper::lineColumnPair</a> to extract the position data. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <a class="el" href="#aeb2a62ee8cbb86a47b023f80efaf5e7f" title="returns a std::pair of line and column number. If no file info exists at this node it returns (-1,...">SgNodeHelper::lineColumnPair</a> to extract the position data. </dd></dl>
 
 </div>
 </div>
@@ -3874,7 +3874,7 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 <p>Converts an SgNode to a string representation containing its source location and node information. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>use locationAndSourceCodeToString instead </dd></dl>
-<p>This function serves as a wrapper around <a class="el" href="#a2a16f12354b4c388a5d2e98050155adf" title="Converts a node&#39;s location and unparsed source code into a single formatted string.">SgNodeHelper::locationAndSourceCodeToString</a>. It retrieves the string representation of the provided node, including its source location and node details, using the default internal limits for maximum file and source code length.</p>
+<p>This function serves as a wrapper around <a class="el" href="#a52a2aded364c9bcf30ac98d26449858e" title="Converts a node&#39;s location and unparsed source code into a single formatted string.">SgNodeHelper::locationAndSourceCodeToString</a>. It retrieves the string representation of the provided node, including its source location and node details, using the default internal limits for maximum file and source code length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode to be converted to a string.</td></tr>
@@ -3889,14 +3889,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="ab661f93c92be9115cd7f28ed2e041788" name="ab661f93c92be9115cd7f28ed2e041788"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab661f93c92be9115cd7f28ed2e041788">&#9670;&#160;</a></span>switchRelevantCaseStmtNodes()</h2>
+<a id="a6b33910324e688c75790874d145af73f" name="a6b33910324e688c75790874d145af73f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b33910324e688c75790874d145af73f">&#9670;&#160;</a></span>switchRelevantCaseStmtNodes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; SgCaseOptionStmt * &gt; SgNodeHelper::switchRelevantCaseStmtNodes </td>
+          <td class="memname">set&lt; SgCaseOptionStmt * &gt; SgNodeHelper::switchRelevantCaseStmtNodes </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -3951,14 +3951,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a656037082d62f1740228aa4be7577ae1" name="a656037082d62f1740228aa4be7577ae1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a656037082d62f1740228aa4be7577ae1">&#9670;&#160;</a></span>symbolToString()</h2>
+<a id="a663ee9b4bdd523c47eb46da30f9aa5eb" name="a663ee9b4bdd523c47eb46da30f9aa5eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663ee9b4bdd523c47eb46da30f9aa5eb">&#9670;&#160;</a></span>symbolToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SgNodeHelper::symbolToString </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> SgNodeHelper::symbolToString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_sg_symbol.html">SgSymbol</a> *</td>          <td class="paramname"><span class="paramname"><em>symbol</em></span></td><td>)</td>
           <td></td>
@@ -3982,14 +3982,14 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="aebb41c38d6e45b17fb2a29577660485a" name="aebb41c38d6e45b17fb2a29577660485a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebb41c38d6e45b17fb2a29577660485a">&#9670;&#160;</a></span>uniqueLongVariableName()</h2>
+<a id="a527e0f628d90de66b73de28f1cb5dbe4" name="a527e0f628d90de66b73de28f1cb5dbe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527e0f628d90de66b73de28f1cb5dbe4">&#9670;&#160;</a></span>uniqueLongVariableName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SgNodeHelper::uniqueLongVariableName </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> SgNodeHelper::uniqueLongVariableName </td>
           <td>(</td>
           <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
@@ -4026,16 +4026,16 @@ Uses <span class="tt"><a class="el" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc
 
 </div>
 </div>
-<a id="a751aec9950c33b5ba3e9aa45990fe6e8" name="a751aec9950c33b5ba3e9aa45990fe6e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a751aec9950c33b5ba3e9aa45990fe6e8">&#9670;&#160;</a></span>unparseCond()</h2>
+<a id="a52091ac4b878c4a8793d172fcd15c7e6" name="a52091ac4b878c4a8793d172fcd15c7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52091ac4b878c4a8793d172fcd15c7e6">&#9670;&#160;</a></span>unparseCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string SgNodeHelper::unparseCond </td>
+          <td class="memname"><a class="el" href="classstring.html">string</a> SgNodeHelper::unparseCond </td>
           <td>(</td>
-          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>cond</em></span></td><td>)</td>
+          <td class="paramtype">SgNode *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

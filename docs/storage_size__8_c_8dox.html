@@ -95,7 +95,7 @@ $(function(){initNavTree('storage_size__8_c_8dox.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a177ae4f035588dd12b1c1c3b08ef3576" id="r_a177ae4f035588dd12b1c1c3b08ef3576"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a177ae4f035588dd12b1c1c3b08ef3576">localOutputSupport</a> (<a class="el" href="classstring.html">string</a> <a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
+<tr class="memitem:a177ae4f035588dd12b1c1c3b08ef3576" id="r_a177ae4f035588dd12b1c1c3b08ef3576"><td class="memItemLeft"><a class="el" href="classstring.html">string</a>&#160;</td><td class="memItemRight"><a class="el" href="#a177ae4f035588dd12b1c1c3b08ef3576">localOutputSupport</a> (<a class="el" href="classstring.html">string</a> <a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>)</td></tr>
 <tr class="memdesc:a177ae4f035588dd12b1c1c3b08ef3576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a C-style printf statement string to display the size of a given identifier.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
@@ -118,12 +118,12 @@ Functions</h2></td></tr>
 <p>This function constructs a string containing a formatted printf command. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated string is designed to print the size of the provided identifier (name) using the sizeof operator, cast to an unsigned long. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function applies a specific indentation offset to ensure the output string is visually aligned, padding the output with spaces based on the length of the input name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the variable, type, or identifier whose size is to be printed in the generated C code.</td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the variable, type, or identifier whose size is to be printed in the generated C code.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the formatted printf statement, including necessary padding and newline characters.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></span> should represent a valid C/C++ identifier or expression that can be used within a <span class="tt">sizeof</span> operator. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></span> should represent a valid C/C++ identifier or expression that can be used within a <span class="tt">sizeof</span> operator. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string contains a complete, single-line C statement ending with a newline character.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a hardcoded indentation offset of 41 spaces to calculate the required padding. </dd></dl>
 

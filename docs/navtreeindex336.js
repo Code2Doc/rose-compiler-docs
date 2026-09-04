@@ -1,9 +1,5 @@
 var NAVTREEINDEX336 =
 {
-"qlanguagedefinition_8h_source.html":[17,0,1,0,9,2,16,0,17],
-"qlanguagefactory_8cpp.html":[17,0,1,0,9,2,16,0,18],
-"qlanguagefactory_8cpp.html#adcdc7d295586fd0b9b464802db595906":[17,0,1,0,9,2,16,0,18,0],
-"qlanguagefactory_8h.html":[17,0,1,0,9,2,16,0,19],
 "qlanguagefactory_8h_source.html":[17,0,1,0,9,2,16,0,19],
 "qlinechangepanel_8cpp.html":[17,0,1,0,9,2,16,0,2,10],
 "qlinechangepanel_8h.html":[17,0,1,0,9,2,16,0,2,11],
@@ -249,5 +245,9 @@ var NAVTREEINDEX336 =
 "reset_parent_pointers_8h.html#a1a59abc23be224485362f99372f9433a":[17,0,1,0,3,14,4,83,9],
 "reset_parent_pointers_8h.html#a9ccf6596011029e715235ff1c7666c0b":[17,0,1,0,3,14,4,83,5],
 "reset_parent_pointers_8h.html#ac09446847cf823518016e647689daf28":[17,0,1,0,3,14,4,83,6],
-"reset_parent_pointers_8h.html#ac7971958507df39355049eb1dc7234fd":[17,0,1,0,3,14,4,83,7]
+"reset_parent_pointers_8h.html#ac7971958507df39355049eb1dc7234fd":[17,0,1,0,3,14,4,83,7],
+"reset_parent_pointers_8h.html#af37b68dc3b1b63992dcc42c631d13c38":[17,0,1,0,3,14,4,83,8],
+"reset_parent_pointers_8h_source.html":[17,0,1,0,3,14,4,83],
+"reset_template_names_8_c.html":[17,0,1,0,3,14,4,84],
+"reset_template_names_8_c.html#a3eb698da80e9627427bfe707e7d48e3d":[17,0,1,0,3,14,4,84,0]
 };

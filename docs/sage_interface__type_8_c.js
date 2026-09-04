@@ -5,7 +5,7 @@ var sage_interface__type_8_c =
     [ "ENSURE_CLASS_TYPE", "sage_interface__type_8_c.html#a2b4f8df179d2eb3f262acb3bd7b65f63", null ],
     [ "foreach", "sage_interface__type_8_c.html#a85d9ac269eba33293361f4ed7c2a697b", null ],
     [ "SageInterface::acceptsArguments", "namespace_sage_interface.html#a74f99fc77b42ce74056cdeba250c810b", null ],
-    [ "SageInterface::CheckIfFunctionAcceptsArgumentIgnoreConstRefAndTypedef", "namespace_sage_interface.html#a37d386b6a8865fa292b565920bb5b6d8", null ],
+    [ "SageInterface::CheckIfFunctionAcceptsArgumentIgnoreConstRefAndTypedef", "namespace_sage_interface.html#ab8637d6c6b161e58caad88454e8208db", null ],
     [ "SageInterface::GetAllMemberFunctionsInClassHierarchy", "namespace_sage_interface.html#a535cd35fdc97af8dc1139850a1052458", null ],
     [ "SageInterface::GetAllVariableDeclarationsInAncestors", "namespace_sage_interface.html#a495b76e82b17b12bfad8ac4a620b3b24", null ],
     [ "SageInterface::getArrayElementCount", "namespace_sage_interface.html#ad41b5baa74591e80698884761377ab6b", null ],

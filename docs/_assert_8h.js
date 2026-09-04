@@ -21,5 +21,5 @@ var _assert_8h =
     [ "FIXME", "_assert_8h.html#ab350b97d943697ea1fefa84f4104c6d7", null ],
     [ "TODO", "_assert_8h.html#a048ea7f8ddbf34340a12b4dbb990a13e", null ],
     [ "Sawyer::Assert::AssertFailureHandler", "namespace_sawyer_1_1_assert.html#a746ca0de12acbb5d2bea8e5733641560", null ],
-    [ "Sawyer::Assert::fail", "namespace_sawyer_1_1_assert.html#aac7d17c902a56f1bc5d4b5680abf2311", null ]
+    [ "Sawyer::Assert::fail", "namespace_sawyer_1_1_assert.html#a185766b790e1a467b609b9009e0c8984", null ]
 ];

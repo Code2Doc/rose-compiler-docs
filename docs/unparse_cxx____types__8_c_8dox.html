@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Converts an <a class="el" href="class_sg_type.html">SgType</a> object into its string representation. </p>
+<p>returns the name of type t</p>
 <p>This function performs a recursive traversal of an <a class="el" href="class_sg_type.html">SgType</a> object to generate a human-readable string that represents the type's name. It handles a wide variety of type variants including primitive types (int, char, float, etc.), complex types (pointers, references, arrays, tuples, matrices), and language-specific constructs (C99 _Bool, C++ templates, and OpenCL modifiers). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a switch statement based on the type variant and recursively calls itself for nested or derived types such as pointers, function signatures, and member pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

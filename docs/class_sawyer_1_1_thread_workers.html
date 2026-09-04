@@ -141,7 +141,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class DependencyGraph, class Functor&gt;<br />
 class Sawyer::ThreadWorkers&lt; DependencyGraph, Functor &gt;</div><p>Work list with dependencies.</p>
 <p>This class takes a graph of tasks. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> vertices are the tasks that need to be worked on, and an edge from vertex <em>a</em> to vertex <em>b</em> means work on <em>a</em> depends on <em>b</em> having been completed. Vertices that participate in a cycle cannot be worked on since there is no way to resolve their dependencies; in this case, as much work as possible is performed.</p>
-<p>See also, the <a class="el" href="namespace_sawyer.html#a5e82fb9af8dae8fc58d334944f50667b" title="workInParallel">workInParallel</a> function which is less typing since template parameters are inferred. </p>
+<p>See also, the <a class="el" href="namespace_sawyer.html#a295cdbe5f0e218d50cbdae84b156809d" title="workInParallel">workInParallel</a> function which is less typing since template parameters are inferred. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a95d3fc2ea00d408bb0eab2d9d73a357c" name="a95d3fc2ea00d408bb0eab2d9d73a357c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95d3fc2ea00d408bb0eab2d9d73a357c">&#9670;&#160;</a></span>ThreadWorkers() <span class="overload">[1/2]</span></h2>

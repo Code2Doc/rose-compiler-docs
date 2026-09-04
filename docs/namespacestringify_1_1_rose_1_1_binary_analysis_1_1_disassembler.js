@@ -1,14 +1,14 @@
 var namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler =
 [
-    [ "Aarch32", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html", [
-      [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html#a8a365e973778077b4139cf313f3c8ee9", null ],
-      [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html#a2d8959116bbf27626e5e43921779b11e", null ],
-      [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html#a7afd4d13c217169caacb0299a163697b", null ]
-    ] ],
     [ "Aarch64", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch64.html", [
       [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch64.html#a2cae14b058a152ac63b60697a3653411", null ],
       [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch64.html#a1a5c38b7cb43bdc2a63c68f6e47944b6", null ],
       [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch64.html#ae42c198587c06f638424d0f252a50ff9", null ]
+    ] ],
+    [ "Aarch32", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html", [
+      [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html#a8a365e973778077b4139cf313f3c8ee9", null ],
+      [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html#a2d8959116bbf27626e5e43921779b11e", null ],
+      [ "Mode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_aarch32.html#a7afd4d13c217169caacb0299a163697b", null ]
     ] ],
     [ "Mips", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_mips.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_mips" ],
     [ "X86", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler_1_1_x86.html", [

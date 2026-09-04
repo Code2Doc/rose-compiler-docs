@@ -1,76 +1,6 @@
 var namespacestringify =
 [
-    [ "____cxxabiv1", "namespacestringify_1_1________cxxabiv1.html", "namespacestringify_1_1________cxxabiv1" ],
-    [ "a__class__type__wrapper", "namespacestringify_1_1a____class____type____wrapper.html", [
-      [ "a_class_kind", "namespacestringify_1_1a____class____type____wrapper.html#ac302a2028a2503c410f03f1ef308f190", null ],
-      [ "a_class_kind", "namespacestringify_1_1a____class____type____wrapper.html#a9f382fdd277155acc47a12a7309f3ef6", null ],
-      [ "a_class_kind", "namespacestringify_1_1a____class____type____wrapper.html#aae8dd65d5e92cda7320f19ed33c13aaa", null ]
-    ] ],
-    [ "a__type__definition", "namespacestringify_1_1a____type____definition.html", [
-      [ "a_type_definition_kind", "namespacestringify_1_1a____type____definition.html#a80b1bcf32e72d43a37aa4e95f2994ad0", null ],
-      [ "a_type_definition_kind", "namespacestringify_1_1a____type____definition.html#adc1f1ac69d32b53e8c065e1e61f164c7", null ],
-      [ "a_type_definition_kind", "namespacestringify_1_1a____type____definition.html#afdd25ae2e71478823b160275bf4ec086", null ]
-    ] ],
-    [ "a__type__indirection", "namespacestringify_1_1a____type____indirection.html", [
-      [ "an_indirection_kind", "namespacestringify_1_1a____type____indirection.html#a4193ff541893c81c4f548b70f4ba7013", null ],
-      [ "an_indirection_kind", "namespacestringify_1_1a____type____indirection.html#a1bce346dd3a3c6bda0d4aa8ff7302944", null ],
-      [ "an_indirection_kind", "namespacestringify_1_1a____type____indirection.html#a42168ad9d33eb014290c84a34dad31f4", null ]
-    ] ],
-    [ "a__type__wrapper", "namespacestringify_1_1a____type____wrapper.html", [
-      [ "a_kind", "namespacestringify_1_1a____type____wrapper.html#a98b14b2741feb6426d36270821e59323", null ],
-      [ "a_kind", "namespacestringify_1_1a____type____wrapper.html#af32e8da7835bf51164d07af3d6dd94ff", null ],
-      [ "a_kind", "namespacestringify_1_1a____type____wrapper.html#a58942ae9a52d487632986b63bee30846", null ]
-    ] ],
-    [ "AbstractMemoryObject", "namespacestringify_1_1_abstract_memory_object.html", "namespacestringify_1_1_abstract_memory_object" ],
-    [ "an__accessibility", "namespacestringify_1_1an____accessibility.html", [
-      [ "access_kind", "namespacestringify_1_1an____accessibility.html#a1a2f8b4c476383bbe528eb4531613e4b", null ],
-      [ "access_kind", "namespacestringify_1_1an____accessibility.html#ab3224dc97c52f9f3c99ee6674ed3ca00", null ],
-      [ "access_kind", "namespacestringify_1_1an____accessibility.html#a9c0f50c436d4f0584411417a4c6ea9d7", null ]
-    ] ],
-    [ "an__array__type__wrapper", "namespacestringify_1_1an____array____type____wrapper.html", [
-      [ "an_array_kind", "namespacestringify_1_1an____array____type____wrapper.html#a4f8496d1f3f73ad3dd3c3d31b0daac31", null ],
-      [ "an_array_kind", "namespacestringify_1_1an____array____type____wrapper.html#afb5f1459ca0ad97ad0a4e56f9680c37a", null ],
-      [ "an_array_kind", "namespacestringify_1_1an____array____type____wrapper.html#a62e93653f07a4d9508cc5654c57c94d0", null ]
-    ] ],
-    [ "an__ifc__module", "namespacestringify_1_1an____ifc____module.html", [
-      [ "a_cache_expr_option", "namespacestringify_1_1an____ifc____module.html#aa237a75cd484ce1e2fe929f3016ef63f", null ],
-      [ "a_cache_expr_option", "namespacestringify_1_1an____ifc____module.html#a21ce154a78557f0efd818a461c54ff75", null ],
-      [ "a_cache_expr_option", "namespacestringify_1_1an____ifc____module.html#aeab927d3ff6fb27e7b0eb84074d89e00", null ],
-      [ "a_cache_statement_option", "namespacestringify_1_1an____ifc____module.html#abfb7cfeb963925eed8d48f179e8ff92b", null ],
-      [ "a_cache_statement_option", "namespacestringify_1_1an____ifc____module.html#a5b864af270a71c913ae1615fbc1f4e83", null ],
-      [ "a_cache_statement_option", "namespacestringify_1_1an____ifc____module.html#a0f9bca3d8aba6a0ce4cbe35d54fd5894", null ]
-    ] ],
-    [ "ArithmeticIntensityMeasurement", "namespacestringify_1_1_arithmetic_intensity_measurement.html", [
-      [ "fp_operation_kind_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a202a9c234cbc52a7b1f4264410d44c74", null ],
-      [ "fp_operation_kind_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#aac852f003c3eba335188ffe484c0c074", null ],
-      [ "fp_operation_kind_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#aad0db5f68003e2f498c7b5dbe4eb8d3a", null ],
-      [ "running_mode_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a0909e9f9983410a35de1ea68f004117c", null ],
-      [ "running_mode_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a5f3024ad9452ca417ac497f0b32cb4cb", null ],
-      [ "running_mode_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a9a34892e67700bbe86bf483d8133f93f", null ]
-    ] ],
-    [ "AST__Graph", "namespacestringify_1_1_a_s_t_____graph.html", [
-      [ "pointerHandling", "namespacestringify_1_1_a_s_t_____graph.html#a4017ae5d8caec2dfddb73ec43904bc43", null ],
-      [ "pointerHandling", "namespacestringify_1_1_a_s_t_____graph.html#ac2a4975bce79b3e71bfd0c39ae7ce2ff", null ],
-      [ "pointerHandling", "namespacestringify_1_1_a_s_t_____graph.html#a13becbb2ecbb1ca7a04606cc70ccc931", null ],
-      [ "traversalType", "namespacestringify_1_1_a_s_t_____graph.html#aff32c344ef0a612f352a6c28860ea9b4", null ],
-      [ "traversalType", "namespacestringify_1_1_a_s_t_____graph.html#a76917c75c7ebf97dbbc47b5f46e47b12", null ],
-      [ "traversalType", "namespacestringify_1_1_a_s_t_____graph.html#addf8284542163ed55ff1a7f30c8b5b31", null ]
-    ] ],
-    [ "AstAttribute", "namespacestringify_1_1_ast_attribute.html", [
-      [ "OwnershipPolicy", "namespacestringify_1_1_ast_attribute.html#a4c8ea6f2a669de7ca75a04ddf77e9dfc", null ],
-      [ "OwnershipPolicy", "namespacestringify_1_1_ast_attribute.html#a1f329d52577f6c57bb1c526cf0f96c5b", null ],
-      [ "OwnershipPolicy", "namespacestringify_1_1_ast_attribute.html#a2e2487b0a9de274c9d48f11a50b0e559", null ]
-    ] ],
-    [ "AstAttributeDOT", "namespacestringify_1_1_ast_attribute_d_o_t.html", [
-      [ "DOTStyles", "namespacestringify_1_1_ast_attribute_d_o_t.html#a650b5811d51098ab0d39722d9c62e28d", null ],
-      [ "DOTStyles", "namespacestringify_1_1_ast_attribute_d_o_t.html#ae848f435a7ff0dfbbbfc6e849d98d0ce", null ],
-      [ "DOTStyles", "namespacestringify_1_1_ast_attribute_d_o_t.html#a1d8f07b41414d0dd65263f0645e6591b", null ]
-    ] ],
-    [ "AstDisplayInfo", "namespacestringify_1_1_ast_display_info.html", [
-      [ "NodeType", "namespacestringify_1_1_ast_display_info.html#a3f39bcbd3b26ef73634092c90cbeeebe", null ],
-      [ "NodeType", "namespacestringify_1_1_ast_display_info.html#a1f34510ff5fb7dc749848dcdb46a35a6", null ],
-      [ "NodeType", "namespacestringify_1_1_ast_display_info.html#ad9ae414e77ef8767786acecffd808843", null ]
-    ] ],
+    [ "Rose", "namespacestringify_1_1_rose.html", "namespacestringify_1_1_rose" ],
     [ "AstNodeClass", "namespacestringify_1_1_ast_node_class.html", [
       [ "includeExcludeMechanism", "namespacestringify_1_1_ast_node_class.html#a290b06dfee96b53d567b81209a3c9519", null ],
       [ "includeExcludeMechanism", "namespacestringify_1_1_ast_node_class.html#a46de5a97e8993561d21d98789aae5d4c", null ],
@@ -82,160 +12,199 @@ var namespacestringify =
       [ "TypeEvaluation", "namespacestringify_1_1_ast_node_class.html#a65dc6f15a862b179a33f6b608de9019c", null ],
       [ "TypeEvaluation", "namespacestringify_1_1_ast_node_class.html#aa6024078cf936681c3e8b7a628cb3e5b", null ]
     ] ],
-    [ "AstNodePtr", "namespacestringify_1_1_ast_node_ptr.html", [
-      [ "SpecialAstType", "namespacestringify_1_1_ast_node_ptr.html#ae480d84e51a5e3b2c9e97408592cc3ff", null ],
-      [ "SpecialAstType", "namespacestringify_1_1_ast_node_ptr.html#a82feb39da6a1f9a20ff3dd638fd88e49", null ],
-      [ "SpecialAstType", "namespacestringify_1_1_ast_node_ptr.html#a5bdffa269f6f67dc6a0fff97b80552d9", null ]
+    [ "SgAsmRiscOperation", "namespacestringify_1_1_sg_asm_risc_operation.html", [
+      [ "RiscOperator", "namespacestringify_1_1_sg_asm_risc_operation.html#a1af07a9513768ac9642755927da92ecb", null ],
+      [ "RiscOperator", "namespacestringify_1_1_sg_asm_risc_operation.html#a31df84d0fb34ebb7f4a8d03791089d69", null ],
+      [ "RiscOperator", "namespacestringify_1_1_sg_asm_risc_operation.html#a1c641701f43c21cd96e2e3a64f75d255", null ]
     ] ],
-    [ "AstNodeType", "namespacestringify_1_1_ast_node_type.html", [
-      [ "SpecialAstType", "namespacestringify_1_1_ast_node_type.html#ae9408ca2f6ccb7242194d19132e256cd", null ],
-      [ "SpecialAstType", "namespacestringify_1_1_ast_node_type.html#a15286cfce97b9f02debc5655e90d711c", null ],
-      [ "SpecialAstType", "namespacestringify_1_1_ast_node_type.html#a4afc95faaa9cb85f35efbf8f371c82b5", null ]
+    [ "SgAsmPESectionTableEntry", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html", [
+      [ "PESectionFlags", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html#a653aaf326ff93c1f6fad43d6cd686af3", null ],
+      [ "PESectionFlags", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html#aac097bdc12af6a51104de046d129be81", null ],
+      [ "PESectionFlags", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html#a720e6cb2277999f155745ee61cdb1351", null ]
     ] ],
-    [ "AstQueryNamespace", "namespacestringify_1_1_ast_query_namespace.html", [
-      [ "QueryDepth", "namespacestringify_1_1_ast_query_namespace.html#a6f94044d379424c59a7d631f3bca4fe4", null ],
-      [ "QueryDepth", "namespacestringify_1_1_ast_query_namespace.html#a6ecd0fb8f56afd7b69755735b6aec5ae", null ],
-      [ "QueryDepth", "namespacestringify_1_1_ast_query_namespace.html#aaecd002c8c8ac274faf19d9a91b05b40", null ]
+    [ "SgAsmPEFileHeader", "namespacestringify_1_1_sg_asm_p_e_file_header.html", [
+      [ "DLLFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a461db3c10d5762da0fa8e366ac8de053", null ],
+      [ "DLLFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#accd9505dd9f5c280c4cf0edf2ad7bfff", null ],
+      [ "DLLFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#ae9f6919902189921928b069fbedd6294", null ],
+      [ "HeaderFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a49d79e59b6982aa74c219da517300ae9", null ],
+      [ "HeaderFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a1a6033333e4c9810caed64d161a0713e", null ],
+      [ "HeaderFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a8d378c1e0a8eaf765ca1ffcd78f6bf9d", null ],
+      [ "PairPurpose", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a005f04a1abef40425113ff84005d5602", null ],
+      [ "PairPurpose", "namespacestringify_1_1_sg_asm_p_e_file_header.html#ae56025441236ff284bf36fa987084826", null ],
+      [ "PairPurpose", "namespacestringify_1_1_sg_asm_p_e_file_header.html#abd3b9cbc262bdb5935733b7b3e0913e3", null ],
+      [ "Subsystem", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a4dd7a120f2b0741be0819fe1b88a0288", null ],
+      [ "Subsystem", "namespacestringify_1_1_sg_asm_p_e_file_header.html#ad690ad0670c5d2395cf64252507be2bb", null ],
+      [ "Subsystem", "namespacestringify_1_1_sg_asm_p_e_file_header.html#aed3ee09e699ca2c89f85e6e2b5a37c83", null ]
+    ] ],
+    [ "SgAsmNullInstruction", "namespacestringify_1_1_sg_asm_null_instruction.html", [
+      [ "Kind", "namespacestringify_1_1_sg_asm_null_instruction.html#a7f0c71558b8cd7a11f5ffc281f8c5e3a", null ],
+      [ "Kind", "namespacestringify_1_1_sg_asm_null_instruction.html#a65408512788898062af3c3cdba441d69", null ],
+      [ "Kind", "namespacestringify_1_1_sg_asm_null_instruction.html#acd9337af650f500d0fc21ce9570b1ced", null ]
+    ] ],
+    [ "SgAsmNESectionTableEntry", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html", [
+      [ "NESectionFlags", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html#ae85f3f304753b5f267b5837ee04c1803", null ],
+      [ "NESectionFlags", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html#adb2d8e50716b8a86477f40ff765bf480", null ],
+      [ "NESectionFlags", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html#a946905ab78d3f3e70ef3186ffb31e348", null ]
+    ] ],
+    [ "SgAsmNERelocEntry", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html", [
+      [ "NERelocFlags", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a629e94f046b9af669a90d3f613be2ee6", null ],
+      [ "NERelocFlags", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a01ca9083f18a420b214088d507cd6786", null ],
+      [ "NERelocFlags", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#afee4292487416930d3aa2d3ad4217e3a", null ],
+      [ "NERelocModifiers", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#ac629beec7142d1c55138eda7855b88f7", null ],
+      [ "NERelocModifiers", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a315ea8526c00f30f06553700d7e4e6e2", null ],
+      [ "NERelocModifiers", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a2d0df06b20307855ab7c0508770753ab", null ],
+      [ "NERelocSrcType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#ad6d154c2c317feda84ace9e697d9eb97", null ],
+      [ "NERelocSrcType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a9ced9adc443be1d216148ef99cf6f3f0", null ],
+      [ "NERelocSrcType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#ac0a559d918140986186566ca00ff0181", null ],
+      [ "NERelocTgtType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a24cce12f02173e427558f34b5b19bea3", null ],
+      [ "NERelocTgtType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#afdeadced53a4ae7df4aa52c3ec74ea39", null ],
+      [ "NERelocTgtType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a6984c474f1fba302910a0a156e518f3d", null ]
+    ] ],
+    [ "SgAsmNEFileHeader", "namespacestringify_1_1_sg_asm_n_e_file_header.html", [
+      [ "HeaderFlags1", "namespacestringify_1_1_sg_asm_n_e_file_header.html#acf15bd0f2b6fb53edea1547a4be3f0e1", null ],
+      [ "HeaderFlags1", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a9ce7190630b059d81020e511ded4240e", null ],
+      [ "HeaderFlags1", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a89ac9c772f54e60376c9a1e4c05249ad", null ],
+      [ "HeaderFlags2", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a13b94e19f6f08362c2183dca76e18530", null ],
+      [ "HeaderFlags2", "namespacestringify_1_1_sg_asm_n_e_file_header.html#ae818f338866e530eb3e54a668ca2c1a6", null ],
+      [ "HeaderFlags2", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a6a920dadb224402475a46a603304a634", null ]
+    ] ],
+    [ "SgAsmNEEntryPoint", "namespacestringify_1_1_sg_asm_n_e_entry_point.html", [
+      [ "NEEntryFlags", "namespacestringify_1_1_sg_asm_n_e_entry_point.html#aa66d85ebd4572742de40507775f8d6c3", null ],
+      [ "NEEntryFlags", "namespacestringify_1_1_sg_asm_n_e_entry_point.html#a359f4cb5c5614c2d65ccb3edd8f706f6", null ],
+      [ "NEEntryFlags", "namespacestringify_1_1_sg_asm_n_e_entry_point.html#a0ac86b96c18d7c1cf343b736eb525c3b", null ]
+    ] ],
+    [ "SgAsmLESectionTableEntry", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html", [
+      [ "LESectionFlags", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html#a7c6937b36fc195901c303c7bb0d25e5b", null ],
+      [ "LESectionFlags", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html#a8e8358f56295a6163aaa6bd4cff873c4", null ],
+      [ "LESectionFlags", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html#ab72db92a245691fb00fb1d1909e371ed", null ]
+    ] ],
+    [ "SgAsmLEFileHeader", "namespacestringify_1_1_sg_asm_l_e_file_header.html", [
+      [ "LEFileHeaderFlags", "namespacestringify_1_1_sg_asm_l_e_file_header.html#ad25f1a8c7876b32a2306f453358a8dc1", null ],
+      [ "LEFileHeaderFlags", "namespacestringify_1_1_sg_asm_l_e_file_header.html#aefe0b6df1ca556d126bf27da53903e3e", null ],
+      [ "LEFileHeaderFlags", "namespacestringify_1_1_sg_asm_l_e_file_header.html#a49669a1e8d5a5bef62f808ef08ee5024", null ]
+    ] ],
+    [ "SgAsmJvmStackMapVerificationType", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html", [
+      [ "verification_type_tag", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html#a69e6d5693fc3e59741413af96ba79325", null ],
+      [ "verification_type_tag", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html#a1c535ec17b852ca14aff5096eb8cfc03", null ],
+      [ "verification_type_tag", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html#a981203b8670278171ecfe8cbe62f9f38", null ]
+    ] ],
+    [ "SgAsmJvmConstantPoolEntry", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html", [
+      [ "Kind", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html#a43f1ad384bad07199d5c770cb20aa9e8", null ],
+      [ "Kind", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html#a78c2c2408c3acb3085eb444b2a924cdd", null ],
+      [ "Kind", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html#a9404be6931a1672aa31fdf410cd4ef86", null ]
+    ] ],
+    [ "SgAsmGenericFile", "namespacestringify_1_1_sg_asm_generic_file.html", [
+      [ "AddressSpace", "namespacestringify_1_1_sg_asm_generic_file.html#a09237c4699b6c567acabdf060f3d09d9", null ],
+      [ "AddressSpace", "namespacestringify_1_1_sg_asm_generic_file.html#aa5481e4ae15a4a476638861815fc5364", null ],
+      [ "AddressSpace", "namespacestringify_1_1_sg_asm_generic_file.html#a78bdd4e69721d0341ae8629df67cf56c", null ],
+      [ "Elasticity", "namespacestringify_1_1_sg_asm_generic_file.html#a8b1a39ec95d427fbe4fdd134e11caa3a", null ],
+      [ "Elasticity", "namespacestringify_1_1_sg_asm_generic_file.html#a42717b79bc95759f9adb71080e31e00a", null ],
+      [ "Elasticity", "namespacestringify_1_1_sg_asm_generic_file.html#ae6cea59da2c8620c6fd97597d32c7581", null ]
+    ] ],
+    [ "SgAsmFunction", "namespacestringify_1_1_sg_asm_function.html", [
+      [ "function_kind_enum", "namespacestringify_1_1_sg_asm_function.html#a8712ed5783d1e831b4e111e875d0de40", null ],
+      [ "function_kind_enum", "namespacestringify_1_1_sg_asm_function.html#a7f13e608f6ad5e865f155a82622def12", null ],
+      [ "function_kind_enum", "namespacestringify_1_1_sg_asm_function.html#ac8b3a081deb71038b085c9e5e5255bdf", null ],
+      [ "FunctionReason", "namespacestringify_1_1_sg_asm_function.html#afd7dd0b3351b0ade012bae382beca6e8", null ],
+      [ "FunctionReason", "namespacestringify_1_1_sg_asm_function.html#a3de5760ac16b38d35676d1c75fcdbccd", null ],
+      [ "FunctionReason", "namespacestringify_1_1_sg_asm_function.html#aaaa3641f7407c8cdbef9aa1dfc2a2baa", null ],
+      [ "MayReturn", "namespacestringify_1_1_sg_asm_function.html#afe5f1bb910cef31fb267588f11d1c674", null ],
+      [ "MayReturn", "namespacestringify_1_1_sg_asm_function.html#a6d83fd454c6c24dc4613d94a7fc96085", null ],
+      [ "MayReturn", "namespacestringify_1_1_sg_asm_function.html#a8e4c3f090e7e3dd3ebecc36a167b2ede", null ]
+    ] ],
+    [ "SgAsmFloatType", "namespacestringify_1_1_sg_asm_float_type.html", [
+      [ "Flag", "namespacestringify_1_1_sg_asm_float_type.html#a8c68818d15643eab0b7285515557791a", null ],
+      [ "Flag", "namespacestringify_1_1_sg_asm_float_type.html#ae38aa765aebb94ee7b0f919422e68368", null ],
+      [ "Flag", "namespacestringify_1_1_sg_asm_float_type.html#a5740be4acb736092d5c5f164b0b98300", null ]
+    ] ],
+    [ "SgAsmElfSymbol", "namespacestringify_1_1_sg_asm_elf_symbol.html", [
+      [ "ElfSymBinding", "namespacestringify_1_1_sg_asm_elf_symbol.html#a8f732828e838d8d7d88db52d7e096564", null ],
+      [ "ElfSymBinding", "namespacestringify_1_1_sg_asm_elf_symbol.html#a57ff65ea359d73b64354cc982a0a2690", null ],
+      [ "ElfSymBinding", "namespacestringify_1_1_sg_asm_elf_symbol.html#afe5e4f284a96c51a83fbfda9e010b3f8", null ],
+      [ "ElfSymType", "namespacestringify_1_1_sg_asm_elf_symbol.html#a3c77d6f139c727f780efc3b8c5b347bb", null ],
+      [ "ElfSymType", "namespacestringify_1_1_sg_asm_elf_symbol.html#a3ba6577b91456b69f44a34d8dbfa7018", null ],
+      [ "ElfSymType", "namespacestringify_1_1_sg_asm_elf_symbol.html#a3173ddba637e4a0041c9e2836f8e1b57", null ]
+    ] ],
+    [ "SgAsmElfSegmentTableEntry", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html", [
+      [ "SegmentFlags", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a359713740c45466a441653b814698dea", null ],
+      [ "SegmentFlags", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a414252cc9f4eddb5353852c9c3670e34", null ],
+      [ "SegmentFlags", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a2e91cadc1405f5264c8ffe0d584c1a4b", null ],
+      [ "SegmentType", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a96f7db281c8cb94009e4f32402c6a053", null ],
+      [ "SegmentType", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a5ef53e2bdc59204de7095bdf30000dc5", null ],
+      [ "SegmentType", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a2965389658587f1e2327e5d783082f7f", null ]
+    ] ],
+    [ "SgAsmElfSectionTableEntry", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html", [
+      [ "SectionFlags", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#ae22d1ebf45c33189399c320f0d37d4aa", null ],
+      [ "SectionFlags", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a96e33896ff9adaf6eecb7c47424a0d50", null ],
+      [ "SectionFlags", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a30a1bf8d657b53a3226fa003716b4553", null ],
+      [ "SectionType", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#aeab0b89243e8efdd946cff9954037abf", null ],
+      [ "SectionType", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a7ab85832932877b07f5ba454fc67f819", null ],
+      [ "SectionType", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a24c108d7e085ca4989d920e130d49caf", null ]
+    ] ],
+    [ "SgAsmElfRelocEntry", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html", [
+      [ "RelocType", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html#a687a4f095c8f0ba601a5997458700103", null ],
+      [ "RelocType", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html#a2776fd7d1ba427fe031e822784afae51", null ],
+      [ "RelocType", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html#ae545b848c6020e6f63dded55cf831586", null ]
+    ] ],
+    [ "SgAsmElfFileHeader", "namespacestringify_1_1_sg_asm_elf_file_header.html", [
+      [ "ObjectType", "namespacestringify_1_1_sg_asm_elf_file_header.html#a381962068909fec4679e3de5ec1b58b0", null ],
+      [ "ObjectType", "namespacestringify_1_1_sg_asm_elf_file_header.html#a8131a9703b721469ac9ef15536835440", null ],
+      [ "ObjectType", "namespacestringify_1_1_sg_asm_elf_file_header.html#a6a6ca73e0ffa9b27d23543f0b2ec2003", null ]
+    ] ],
+    [ "SgAsmElfDynamicEntry", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html", [
+      [ "EntryType", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html#a3d7a27945297309b452732d9dca62198", null ],
+      [ "EntryType", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html#a5a5df790327f94f96cd66c7dbec3b0dc", null ],
+      [ "EntryType", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html#aa1954344c2581c26781ff64f8eed5d53", null ]
+    ] ],
+    [ "SgAsmGenericSymbol", "namespacestringify_1_1_sg_asm_generic_symbol.html", [
+      [ "SymbolBinding", "namespacestringify_1_1_sg_asm_generic_symbol.html#a763ef266448eec3406b198ee3c8d2a4f", null ],
+      [ "SymbolBinding", "namespacestringify_1_1_sg_asm_generic_symbol.html#aa32d82e7a724f17146946ec327216cf4", null ],
+      [ "SymbolBinding", "namespacestringify_1_1_sg_asm_generic_symbol.html#ac4e18a78668fea21cc5e1da538b20b01", null ],
+      [ "SymbolDefState", "namespacestringify_1_1_sg_asm_generic_symbol.html#af79d73ea39d9686b552b1fc18dec5494", null ],
+      [ "SymbolDefState", "namespacestringify_1_1_sg_asm_generic_symbol.html#aa380e8671b800c3852884b35d226a8fd", null ],
+      [ "SymbolDefState", "namespacestringify_1_1_sg_asm_generic_symbol.html#a5899b0c4b3a2fcaed0995b7b629c9938", null ],
+      [ "SymbolType", "namespacestringify_1_1_sg_asm_generic_symbol.html#a17b1b58baa5f9c9c191f8f9e72bcfc78", null ],
+      [ "SymbolType", "namespacestringify_1_1_sg_asm_generic_symbol.html#a19f3b28c6f397075c66230cc9fad77c4", null ],
+      [ "SymbolType", "namespacestringify_1_1_sg_asm_generic_symbol.html#a58c58e202f06462a69d72d974045c785", null ]
+    ] ],
+    [ "SgAsmGenericSection", "namespacestringify_1_1_sg_asm_generic_section.html", [
+      [ "SectionPurpose", "namespacestringify_1_1_sg_asm_generic_section.html#ada9a164662c0130e5b43e3904bf67877", null ],
+      [ "SectionPurpose", "namespacestringify_1_1_sg_asm_generic_section.html#a884c271a932e2f1c2be1b2c92e6aa18f", null ],
+      [ "SectionPurpose", "namespacestringify_1_1_sg_asm_generic_section.html#a51d68b80f5dd55b554c2f75ecda1b74f", null ]
+    ] ],
+    [ "SgAsmCilMetadataHeap", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html", [
+      [ "ReferenceKind", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html#a3f084e43538cfe9971655712c61c81c4", null ],
+      [ "ReferenceKind", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html#a557952544b52332716311d377295cb81", null ],
+      [ "ReferenceKind", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html#a607238aa262b832b52aecbef6e5ceeb7", null ]
+    ] ],
+    [ "SgAsmBlock", "namespacestringify_1_1_sg_asm_block.html", [
+      [ "Reason", "namespacestringify_1_1_sg_asm_block.html#a2e2c73f2e53fd2f0d3eb1198facc59ce", null ],
+      [ "Reason", "namespacestringify_1_1_sg_asm_block.html#ae98833af0e1c99d63f904025b8fd06cb", null ],
+      [ "Reason", "namespacestringify_1_1_sg_asm_block.html#adbdd6481ba6384fe70ae47b1b488afa6", null ]
+    ] ],
+    [ "SgAsmExecutableFileFormat", "namespacestringify_1_1_sg_asm_executable_file_format.html", [
+      [ "ExecABI", "namespacestringify_1_1_sg_asm_executable_file_format.html#aeb85063df2bdc99a462f998cc6594446", null ],
+      [ "ExecABI", "namespacestringify_1_1_sg_asm_executable_file_format.html#a44bb5d2e03344b77ef74a7e2419a0d4b", null ],
+      [ "ExecABI", "namespacestringify_1_1_sg_asm_executable_file_format.html#a0d60f98601421994983fba81672fc1ee", null ],
+      [ "ExecFamily", "namespacestringify_1_1_sg_asm_executable_file_format.html#ac2948c60814079833acf275d6784e372", null ],
+      [ "ExecFamily", "namespacestringify_1_1_sg_asm_executable_file_format.html#a860003215c9f949b3eeb4556dd316ea4", null ],
+      [ "ExecFamily", "namespacestringify_1_1_sg_asm_executable_file_format.html#a8e92daf09c79b5ff4e255388b3f6a044", null ],
+      [ "ExecPurpose", "namespacestringify_1_1_sg_asm_executable_file_format.html#a54e3fde3a6458933306a9b83e2e00b4a", null ],
+      [ "ExecPurpose", "namespacestringify_1_1_sg_asm_executable_file_format.html#ae559c984efd42a5033ba3b5fb3bb65c5", null ],
+      [ "ExecPurpose", "namespacestringify_1_1_sg_asm_executable_file_format.html#ae699ea00907f970990c7bbbbe5507c78", null ],
+      [ "InsSetArchitecture", "namespacestringify_1_1_sg_asm_executable_file_format.html#af9efe7e79989508c4c702fbb9dbabe12", null ],
+      [ "InsSetArchitecture", "namespacestringify_1_1_sg_asm_executable_file_format.html#a1fc6b7a1d2e321ed5b50f49fb03e6fa6", null ],
+      [ "InsSetArchitecture", "namespacestringify_1_1_sg_asm_executable_file_format.html#a925c62e08d0e91caf6c2fe834f1895e3", null ]
+    ] ],
+    [ "AstAttribute", "namespacestringify_1_1_ast_attribute.html", [
+      [ "OwnershipPolicy", "namespacestringify_1_1_ast_attribute.html#a4c8ea6f2a669de7ca75a04ddf77e9dfc", null ],
+      [ "OwnershipPolicy", "namespacestringify_1_1_ast_attribute.html#a1f329d52577f6c57bb1c526cf0f96c5b", null ],
+      [ "OwnershipPolicy", "namespacestringify_1_1_ast_attribute.html#a2e2487b0a9de274c9d48f11a50b0e559", null ]
     ] ],
     [ "AstUnparseAttribute", "namespacestringify_1_1_ast_unparse_attribute.html", [
       [ "RelativePositionType", "namespacestringify_1_1_ast_unparse_attribute.html#a14c9dfe652115351eca0dc60593bc49d", null ],
       [ "RelativePositionType", "namespacestringify_1_1_ast_unparse_attribute.html#abb6a60ed0fdf0ab5ae47418ee622682d", null ],
       [ "RelativePositionType", "namespacestringify_1_1_ast_unparse_attribute.html#a47afda0b74fbebeffca344ef4424b838", null ]
-    ] ],
-    [ "AstUtilInterface", "namespacestringify_1_1_ast_util_interface.html", [
-      [ "OperatorSideEffect", "namespacestringify_1_1_ast_util_interface.html#a2cbeebff4abcb0b5d5eafd02bc6abfa6", null ],
-      [ "OperatorSideEffect", "namespacestringify_1_1_ast_util_interface.html#a80340e08bc2f74e5a6c58a35568f1827", null ],
-      [ "OperatorSideEffect", "namespacestringify_1_1_ast_util_interface.html#a94ae8febde02359cf7efc1dc6925ba2a", null ]
-    ] ],
-    [ "BaseGraph", "namespacestringify_1_1_base_graph.html", "namespacestringify_1_1_base_graph" ],
-    [ "BooleanQuery", "namespacestringify_1_1_boolean_query.html", [
-      [ "TypeOfQueryType", "namespacestringify_1_1_boolean_query.html#a6a224584858db35b13e54df714cb2d16", null ],
-      [ "TypeOfQueryType", "namespacestringify_1_1_boolean_query.html#ac4a14895ce6453961b76611831ec5144", null ],
-      [ "TypeOfQueryType", "namespacestringify_1_1_boolean_query.html#a11dd626866864f4d95c12cb7a86a517b", null ]
-    ] ],
-    [ "CallGraph", "namespacestringify_1_1_call_graph.html", [
-      [ "EdgeType", "namespacestringify_1_1_call_graph.html#a030f235bf702dd3559c94f625667f888", null ],
-      [ "EdgeType", "namespacestringify_1_1_call_graph.html#a5884ec16b65d66a3f886dae0aa70f19f", null ],
-      [ "EdgeType", "namespacestringify_1_1_call_graph.html#a0e177ea94872db4de1373d186a4afa38", null ]
-    ] ],
-    [ "CFG", "namespacestringify_1_1_c_f_g.html", [
-      [ "EdgeType", "namespacestringify_1_1_c_f_g.html#a53a7c54f634ee3cc83e60709830c370a", null ],
-      [ "EdgeType", "namespacestringify_1_1_c_f_g.html#a925c1d0ca3e54ffe940a1f6462717f82", null ],
-      [ "EdgeType", "namespacestringify_1_1_c_f_g.html#a68283abd0061e3fed805c7bea15c8a86", null ]
-    ] ],
-    [ "CGFunction", "namespacestringify_1_1_c_g_function.html", "namespacestringify_1_1_c_g_function" ],
-    [ "ClangToDotTranslator", "namespacestringify_1_1_clang_to_dot_translator.html", "namespacestringify_1_1_clang_to_dot_translator" ],
-    [ "ClangToSageTranslator", "namespacestringify_1_1_clang_to_sage_translator.html", [
-      [ "Language", "namespacestringify_1_1_clang_to_sage_translator.html#a3f5037fd1e66537a2605d38d1197523f", null ],
-      [ "Language", "namespacestringify_1_1_clang_to_sage_translator.html#adb862171e7aa289cf7b97b95321d7bbb", null ],
-      [ "Language", "namespacestringify_1_1_clang_to_sage_translator.html#ac864e3aea3058cde11155cdacdfe01d1", null ]
-    ] ],
-    [ "CodeThorn", "namespacestringify_1_1_code_thorn.html", "namespacestringify_1_1_code_thorn" ],
-    [ "CollectAliasRelations", "namespacestringify_1_1_collect_alias_relations.html", [
-      [ "COLOR", "namespacestringify_1_1_collect_alias_relations.html#ac8f14f57a0bb5e715c98cbf14fdfd25c", null ],
-      [ "COLOR", "namespacestringify_1_1_collect_alias_relations.html#aeb1194f4fbe9c395061cee88d786b07b", null ],
-      [ "COLOR", "namespacestringify_1_1_collect_alias_relations.html#ab0177304f97e325edfa6e6242db934da", null ],
-      [ "TRAVERSAL_TYPE", "namespacestringify_1_1_collect_alias_relations.html#a5b682baebda73cd7cb7d1ba068debbe9", null ],
-      [ "TRAVERSAL_TYPE", "namespacestringify_1_1_collect_alias_relations.html#abde334a6e95013ca73468bc58ab14fcc", null ],
-      [ "TRAVERSAL_TYPE", "namespacestringify_1_1_collect_alias_relations.html#a94d25e667eb608b90e15cce2913dba85", null ]
-    ] ],
-    [ "CompilerOutputWidget", "namespacestringify_1_1_compiler_output_widget.html", [
-      [ "PatternType", "namespacestringify_1_1_compiler_output_widget.html#ada79c7f934fdcacb6a8c4dd848d95e56", null ],
-      [ "PatternType", "namespacestringify_1_1_compiler_output_widget.html#aa703bc74110ee6c5523d53940af66987", null ],
-      [ "PatternType", "namespacestringify_1_1_compiler_output_widget.html#aa4be348aebc558f824369de643da5460", null ]
-    ] ],
-    [ "ConstrGraph", "namespacestringify_1_1_constr_graph.html", [
-      [ "levels", "namespacestringify_1_1_constr_graph.html#a28f7a8635db8d54e227e7f4c5f521dc4", null ],
-      [ "levels", "namespacestringify_1_1_constr_graph.html#ada81e5e666c83aaf09a86a2e1189d9a7", null ],
-      [ "levels", "namespacestringify_1_1_constr_graph.html#a1b45a7c567996d54f0a0615237b46d81", null ]
-    ] ],
-    [ "csharp__translator", "namespacestringify_1_1csharp____translator.html", [
-      [ "SeqKind", "namespacestringify_1_1csharp____translator.html#ab6a61946ea10e7a0f4613ed036b30bdd", null ],
-      [ "SeqKind", "namespacestringify_1_1csharp____translator.html#a23a6fa3816fdb12d0c0f795675522190", null ],
-      [ "SeqKind", "namespacestringify_1_1csharp____translator.html#ad6472ee2f9adf3530d2263d7ef4a3a29", null ]
-    ] ],
-    [ "DependencyInfo", "namespacestringify_1_1_dependency_info.html", [
-      [ "State", "namespacestringify_1_1_dependency_info.html#a9321d1e84bea72f8ac3ae798cf892749", null ],
-      [ "State", "namespacestringify_1_1_dependency_info.html#a4dcc2911de98f12324ae9c6b1086a211", null ],
-      [ "State", "namespacestringify_1_1_dependency_info.html#a25933cc505585ed34c096b3fd1f89697", null ]
-    ] ],
-    [ "DisplayEdge", "namespacestringify_1_1_display_edge.html", [
-      [ "PaintMode", "namespacestringify_1_1_display_edge.html#a7d053a0add9557abac92bbbd9a68aa23", null ],
-      [ "PaintMode", "namespacestringify_1_1_display_edge.html#a56b18a2ce2e5bbafa2e1fbe41ec5fead", null ],
-      [ "PaintMode", "namespacestringify_1_1_display_edge.html#a0abbfc513825e19d35b7c4de6acb58d9", null ]
-    ] ],
-    [ "DominatorTreesAndDominanceFrontiers", "namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html", "namespacestringify_1_1_dominator_trees_and_dominance_frontiers" ],
-    [ "dot", "namespacestringify_1_1dot.html", [
-      [ "attr_set", "namespacestringify_1_1dot.html#a95bca33b9ffd982a3f63b34da2f772c9", null ],
-      [ "attr_set", "namespacestringify_1_1dot.html#ad99cf154438b1c935047e6a08d907f04", null ],
-      [ "attr_set", "namespacestringify_1_1dot.html#a47c898738b48ea16a1873fd1337795b0", null ]
-    ] ],
-    [ "DOTGeneration", "namespacestringify_1_1_d_o_t_generation.html", [
-      [ "traversalType", "namespacestringify_1_1_d_o_t_generation.html#a33f4af7c1f588f1ca13cb2be34906beb", null ],
-      [ "traversalType", "namespacestringify_1_1_d_o_t_generation.html#ace780d043b1aecfcbdf849d61dda6fbc", null ],
-      [ "traversalType", "namespacestringify_1_1_d_o_t_generation.html#ab3321e06d370e0101d3abe78cc0241de", null ]
-    ] ],
-    [ "DOTGraphEdge", "namespacestringify_1_1_d_o_t_graph_edge.html", [
-      [ "DOTArrowTypes", "namespacestringify_1_1_d_o_t_graph_edge.html#acc925b25a607f331bdc6e39eb8c1550b", null ],
-      [ "DOTArrowTypes", "namespacestringify_1_1_d_o_t_graph_edge.html#ad61d03e0043d942996770332f4da6aa7", null ],
-      [ "DOTArrowTypes", "namespacestringify_1_1_d_o_t_graph_edge.html#a41fa99ee4239d923bfa0056cf3ee5415", null ]
-    ] ],
-    [ "DOTGraphNode", "namespacestringify_1_1_d_o_t_graph_node.html", [
-      [ "DOTShapeTypes", "namespacestringify_1_1_d_o_t_graph_node.html#a80285aa3e4311e834264a97da18877f4", null ],
-      [ "DOTShapeTypes", "namespacestringify_1_1_d_o_t_graph_node.html#aa8a6923062217617b355d2826d7bb6c1", null ],
-      [ "DOTShapeTypes", "namespacestringify_1_1_d_o_t_graph_node.html#a3813428957e087e63749022ffb579c6a", null ]
-    ] ],
-    [ "FailSafe", "namespacestringify_1_1_fail_safe.html", [
-      [ "fail_safe_enum", "namespacestringify_1_1_fail_safe.html#a5688b125ae026b2173bf1ee453309481", null ],
-      [ "fail_safe_enum", "namespacestringify_1_1_fail_safe.html#a4121fe0fe0e53bf8ae8bcfe6503363ca", null ],
-      [ "fail_safe_enum", "namespacestringify_1_1_fail_safe.html#a83db224dc51711405a8b33c485aac2a6", null ]
-    ] ],
-    [ "FunctionCallInfo", "namespacestringify_1_1_function_call_info.html", [
-      [ "InsertionMode", "namespacestringify_1_1_function_call_info.html#a59fdd474814f3dd3a0621ec4de53015f", null ],
-      [ "InsertionMode", "namespacestringify_1_1_function_call_info.html#acea6ac08f7c9d4c979e63eaba993d9a1", null ],
-      [ "InsertionMode", "namespacestringify_1_1_function_call_info.html#aef591ac91181c952c3c00c51916af310", null ]
-    ] ],
-    [ "GenRepresentation", "namespacestringify_1_1_gen_representation.html", [
-      [ "TypeOfPrint", "namespacestringify_1_1_gen_representation.html#a9123d11ebbbd9490d903e7527df24fbf", null ],
-      [ "TypeOfPrint", "namespacestringify_1_1_gen_representation.html#a27a99374d5522d1d07735c4972531e94", null ],
-      [ "TypeOfPrint", "namespacestringify_1_1_gen_representation.html#a7b158e781c4881ea56d0d5a8f0ba49d1", null ]
-    ] ],
-    [ "HighLevelCollectionTypedefs", "namespacestringify_1_1_high_level_collection_typedefs.html", [
-      [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a90db0af6e4f13eecca818b9afea49916", null ],
-      [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a59d0aff033d14ab4742d36e0e846d3ab", null ],
-      [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a2dd98dbf43ed57f27ee99efd7b0b9727", null ],
-      [ "PlacementPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a6e028187e53311a1de141f1b0944b4e5", null ],
-      [ "PlacementPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a417dcee8d22c56f5a1e001aba7bf49a4", null ],
-      [ "PlacementPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a057e8ad0a42ac8aff96d397034d1c244", null ],
-      [ "ScopeIdentifier_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a1e6474d81bb69451826ac38d9a82bf3a", null ],
-      [ "ScopeIdentifier_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a65e92dc87547f4996d9fd6ebb139a3da", null ],
-      [ "ScopeIdentifier_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a5fb9f284846f65f50f4a98e1f40ae146", null ]
-    ] ],
-    [ "Jovial", "namespacestringify_1_1_jovial.html", [
-      [ "State", "namespacestringify_1_1_jovial.html#abe2250aa140603bb30e5c0f0ddee51d0", null ],
-      [ "State", "namespacestringify_1_1_jovial.html#a762ba652be2c2182cfbdbf0bcb44e7f2", null ],
-      [ "State", "namespacestringify_1_1_jovial.html#a40c6dc8a3321d7c303c84fcedaf1f05a", null ]
-    ] ],
-    [ "Jovial__ROSE__Translation", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html", [
-      [ "ExpressionKind", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html#a32f66f2385fa2dcfcaab0c9f1febd77a", null ],
-      [ "ExpressionKind", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html#a5ddfd62e45f4accfa9e5250979d552e5", null ],
-      [ "ExpressionKind", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html#a82a72b5ebc7dc9933282ee1bf61f1680", null ]
-    ] ],
-    [ "LanguageTranslation", "namespacestringify_1_1_language_translation.html", [
-      [ "ExpressionKind", "namespacestringify_1_1_language_translation.html#a8287570c1eb36e7960ebc4cca57e07ae", null ],
-      [ "ExpressionKind", "namespacestringify_1_1_language_translation.html#a5ced5efa73987c31876868dcbfe8c563", null ],
-      [ "ExpressionKind", "namespacestringify_1_1_language_translation.html#a831133f4ca0154acb5fcecb0c9022401", null ],
-      [ "FunctionModifier", "namespacestringify_1_1_language_translation.html#a1416c12fa13fc5b91ee356caab3fa74c", null ],
-      [ "FunctionModifier", "namespacestringify_1_1_language_translation.html#a899da6612c64f376f891859090cc910a", null ],
-      [ "FunctionModifier", "namespacestringify_1_1_language_translation.html#ac96cec04b778491bdc2a2280668e6449", null ],
-      [ "PackingSpecifier", "namespacestringify_1_1_language_translation.html#a1a00e07ef2cfae15f108911766867757", null ],
-      [ "PackingSpecifier", "namespacestringify_1_1_language_translation.html#ab0de7323950d4716789c60c97c3ba7d4", null ],
-      [ "PackingSpecifier", "namespacestringify_1_1_language_translation.html#af2163c9d805655619d2ddc12498bd0cc", null ]
-    ] ],
-    [ "LibraryIdentification", "namespacestringify_1_1_library_identification.html", [
-      [ "DUPLICATE_OPTION", "namespacestringify_1_1_library_identification.html#a79c428791b1f5d7a09330f66fb9bc745", null ],
-      [ "DUPLICATE_OPTION", "namespacestringify_1_1_library_identification.html#af3447f74776f64df1eae48555f64897d", null ],
-      [ "DUPLICATE_OPTION", "namespacestringify_1_1_library_identification.html#aaadaafb0a83f16156ab2d64d4718c169", null ]
     ] ],
     [ "MatchStatus", "namespacestringify_1_1_match_status.html", [
       [ "CheckNodeMode", "namespacestringify_1_1_match_status.html#ab3a35161d654f7d8de955db1a27f8017", null ],
@@ -244,6 +213,11 @@ var namespacestringify =
       [ "PatternMatchMode", "namespacestringify_1_1_match_status.html#a630927b2aacaa68c3b4377fd2b99b22e", null ],
       [ "PatternMatchMode", "namespacestringify_1_1_match_status.html#a1702ad7ff3bf62cdd0349d88770f200e", null ],
       [ "PatternMatchMode", "namespacestringify_1_1_match_status.html#a4a2467dc67d1ee7a3db8f11ab63324f2", null ]
+    ] ],
+    [ "LibraryIdentification", "namespacestringify_1_1_library_identification.html", [
+      [ "DUPLICATE_OPTION", "namespacestringify_1_1_library_identification.html#a79c428791b1f5d7a09330f66fb9bc745", null ],
+      [ "DUPLICATE_OPTION", "namespacestringify_1_1_library_identification.html#af3447f74776f64df1eae48555f64897d", null ],
+      [ "DUPLICATE_OPTION", "namespacestringify_1_1_library_identification.html#aaadaafb0a83f16156ab2d64d4718c169", null ]
     ] ],
     [ "MidLevelCollectionTypedefs", "namespacestringify_1_1_mid_level_collection_typedefs.html", [
       [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_mid_level_collection_typedefs.html#a569da4d59303ba2e29eb4f3fe5193522", null ],
@@ -256,6 +230,52 @@ var namespacestringify =
       [ "ScopeIdentifier_Enum", "namespacestringify_1_1_mid_level_collection_typedefs.html#ada2d2884dafd17e13a5c1824abaa824e", null ],
       [ "ScopeIdentifier_Enum", "namespacestringify_1_1_mid_level_collection_typedefs.html#acc13c712f5887dab9b2afc2f36b75be2", null ]
     ] ],
+    [ "HighLevelCollectionTypedefs", "namespacestringify_1_1_high_level_collection_typedefs.html", [
+      [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a90db0af6e4f13eecca818b9afea49916", null ],
+      [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a59d0aff033d14ab4742d36e0e846d3ab", null ],
+      [ "IntermediateFileStringPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a2dd98dbf43ed57f27ee99efd7b0b9727", null ],
+      [ "PlacementPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a6e028187e53311a1de141f1b0944b4e5", null ],
+      [ "PlacementPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a417dcee8d22c56f5a1e001aba7bf49a4", null ],
+      [ "PlacementPosition_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a057e8ad0a42ac8aff96d397034d1c244", null ],
+      [ "ScopeIdentifier_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a1e6474d81bb69451826ac38d9a82bf3a", null ],
+      [ "ScopeIdentifier_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a65e92dc87547f4996d9fd6ebb139a3da", null ],
+      [ "ScopeIdentifier_Enum", "namespacestringify_1_1_high_level_collection_typedefs.html#a5fb9f284846f65f50f4a98e1f40ae146", null ]
+    ] ],
+    [ "AstUtilInterface", "namespacestringify_1_1_ast_util_interface.html", [
+      [ "OperatorSideEffect", "namespacestringify_1_1_ast_util_interface.html#a2cbeebff4abcb0b5d5eafd02bc6abfa6", null ],
+      [ "OperatorSideEffect", "namespacestringify_1_1_ast_util_interface.html#a80340e08bc2f74e5a6c58a35568f1827", null ],
+      [ "OperatorSideEffect", "namespacestringify_1_1_ast_util_interface.html#a94ae8febde02359cf7efc1dc6925ba2a", null ]
+    ] ],
+    [ "AstNodePtr", "namespacestringify_1_1_ast_node_ptr.html", [
+      [ "SpecialAstType", "namespacestringify_1_1_ast_node_ptr.html#ae480d84e51a5e3b2c9e97408592cc3ff", null ],
+      [ "SpecialAstType", "namespacestringify_1_1_ast_node_ptr.html#a82feb39da6a1f9a20ff3dd638fd88e49", null ],
+      [ "SpecialAstType", "namespacestringify_1_1_ast_node_ptr.html#a5bdffa269f6f67dc6a0fff97b80552d9", null ]
+    ] ],
+    [ "AstNodeType", "namespacestringify_1_1_ast_node_type.html", [
+      [ "SpecialAstType", "namespacestringify_1_1_ast_node_type.html#ae9408ca2f6ccb7242194d19132e256cd", null ],
+      [ "SpecialAstType", "namespacestringify_1_1_ast_node_type.html#a15286cfce97b9f02debc5655e90d711c", null ],
+      [ "SpecialAstType", "namespacestringify_1_1_ast_node_type.html#a4afc95faaa9cb85f35efbf8f371c82b5", null ]
+    ] ],
+    [ "CodeThorn", "namespacestringify_1_1_code_thorn.html", "namespacestringify_1_1_code_thorn" ],
+    [ "SgNodeHelper", "namespacestringify_1_1_sg_node_helper.html", "namespacestringify_1_1_sg_node_helper" ],
+    [ "OmpSupport", "namespacestringify_1_1_omp_support.html", [
+      [ "omp_construct_enum", "namespacestringify_1_1_omp_support.html#a68e4aa543a2cec0e6d2c5f17dc360646", null ],
+      [ "omp_construct_enum", "namespacestringify_1_1_omp_support.html#a91e800deb13f0655cf5505f4c4936189", null ],
+      [ "omp_construct_enum", "namespacestringify_1_1_omp_support.html#a2f03440b6d8ae0ef70fa971e80e3009c", null ],
+      [ "omp_rtl_enum", "namespacestringify_1_1_omp_support.html#a7b0b5dfa1f843b5b83db1d1f85e756f3", null ],
+      [ "omp_rtl_enum", "namespacestringify_1_1_omp_support.html#a51262806cb347c07c6364c9fc80467a1", null ],
+      [ "omp_rtl_enum", "namespacestringify_1_1_omp_support.html#afb508152d8fc4310ea2d711f31f76098", null ]
+    ] ],
+    [ "FunctionCallInfo", "namespacestringify_1_1_function_call_info.html", [
+      [ "InsertionMode", "namespacestringify_1_1_function_call_info.html#a59fdd474814f3dd3a0621ec4de53015f", null ],
+      [ "InsertionMode", "namespacestringify_1_1_function_call_info.html#acea6ac08f7c9d4c979e63eaba993d9a1", null ],
+      [ "InsertionMode", "namespacestringify_1_1_function_call_info.html#aef591ac91181c952c3c00c51916af310", null ]
+    ] ],
+    [ "BooleanQuery", "namespacestringify_1_1_boolean_query.html", [
+      [ "TypeOfQueryType", "namespacestringify_1_1_boolean_query.html#a6a224584858db35b13e54df714cb2d16", null ],
+      [ "TypeOfQueryType", "namespacestringify_1_1_boolean_query.html#ac4a14895ce6453961b76611831ec5144", null ],
+      [ "TypeOfQueryType", "namespacestringify_1_1_boolean_query.html#a11dd626866864f4d95c12cb7a86a517b", null ]
+    ] ],
     [ "NameQuery", "namespacestringify_1_1_name_query.html", [
       [ "TypeOfQueryTypeOneParameter", "namespacestringify_1_1_name_query.html#a6e89de3ecc016da66d6bf378056d749e", null ],
       [ "TypeOfQueryTypeOneParameter", "namespacestringify_1_1_name_query.html#aca91f99d4b5e3497fc860efbbac95623", null ],
@@ -264,7 +284,11 @@ var namespacestringify =
       [ "TypeOfQueryTypeTwoParameters", "namespacestringify_1_1_name_query.html#a565b82a5851875e9ea21df108bd4e3fa", null ],
       [ "TypeOfQueryTypeTwoParameters", "namespacestringify_1_1_name_query.html#ae43c41a7902ec92958104a1e3d367673", null ]
     ] ],
-    [ "nlohmann", "namespacestringify_1_1nlohmann.html", "namespacestringify_1_1nlohmann" ],
+    [ "AstQueryNamespace", "namespacestringify_1_1_ast_query_namespace.html", [
+      [ "QueryDepth", "namespacestringify_1_1_ast_query_namespace.html#a6f94044d379424c59a7d631f3bca4fe4", null ],
+      [ "QueryDepth", "namespacestringify_1_1_ast_query_namespace.html#a6ecd0fb8f56afd7b69755735b6aec5ae", null ],
+      [ "QueryDepth", "namespacestringify_1_1_ast_query_namespace.html#aaecd002c8c8ac274faf19d9a91b05b40", null ]
+    ] ],
     [ "NodeQuery", "namespacestringify_1_1_node_query.html", [
       [ "TypeOfQueryTypeOneParameter", "namespacestringify_1_1_node_query.html#a71f6047faaa5a919189c46925766f66f", null ],
       [ "TypeOfQueryTypeOneParameter", "namespacestringify_1_1_node_query.html#a9cc15e6ad7cfae30cc82e270eb1c9c2e", null ],
@@ -281,21 +305,63 @@ var namespacestringify =
       [ "TypeOfQueryTypeTwoParameters", "namespacestringify_1_1_number_query.html#ac3862a42598274e5fb9e7670788bdd82", null ],
       [ "TypeOfQueryTypeTwoParameters", "namespacestringify_1_1_number_query.html#a5c271ae44a0214ebd7695852abf59a31", null ]
     ] ],
-    [ "OmpSupport", "namespacestringify_1_1_omp_support.html", [
-      [ "omp_construct_enum", "namespacestringify_1_1_omp_support.html#a68e4aa543a2cec0e6d2c5f17dc360646", null ],
-      [ "omp_construct_enum", "namespacestringify_1_1_omp_support.html#a91e800deb13f0655cf5505f4c4936189", null ],
-      [ "omp_construct_enum", "namespacestringify_1_1_omp_support.html#a2f03440b6d8ae0ef70fa971e80e3009c", null ],
-      [ "omp_rtl_enum", "namespacestringify_1_1_omp_support.html#a7b0b5dfa1f843b5b83db1d1f85e756f3", null ],
-      [ "omp_rtl_enum", "namespacestringify_1_1_omp_support.html#a51262806cb347c07c6364c9fc80467a1", null ],
-      [ "omp_rtl_enum", "namespacestringify_1_1_omp_support.html#afb508152d8fc4310ea2d711f31f76098", null ]
+    [ "AbstractMemoryObject", "namespacestringify_1_1_abstract_memory_object.html", "namespacestringify_1_1_abstract_memory_object" ],
+    [ "ReachingDef", "namespacestringify_1_1_reaching_def.html", [
+      [ "Type", "namespacestringify_1_1_reaching_def.html#a46b3d2fde91df8676f023c713ed64476", null ],
+      [ "Type", "namespacestringify_1_1_reaching_def.html#aed1efe2e64e4745dda671028bd9cfa61", null ],
+      [ "Type", "namespacestringify_1_1_reaching_def.html#a6f0e2e02bedb9c2076b3ebcd4d92a746", null ]
     ] ],
-    [ "PreprocessingInfo", "namespacestringify_1_1_preprocessing_info.html", [
-      [ "DirectiveType", "namespacestringify_1_1_preprocessing_info.html#a33d6a29589ba52826b440c577882913e", null ],
-      [ "DirectiveType", "namespacestringify_1_1_preprocessing_info.html#a9a24b00b4a3c8c3219f2631cf865ff5a", null ],
-      [ "DirectiveType", "namespacestringify_1_1_preprocessing_info.html#a05ee5b0cfd81693679e986e16fdd686b", null ],
-      [ "RelativePositionType", "namespacestringify_1_1_preprocessing_info.html#a3d7cfccdaff820a27f87ca1ad2359914", null ],
-      [ "RelativePositionType", "namespacestringify_1_1_preprocessing_info.html#a0d2dec2ab19d208d84984466418825bb", null ],
-      [ "RelativePositionType", "namespacestringify_1_1_preprocessing_info.html#a3b626be98df6250b42d1c8bda795ac5c", null ]
+    [ "CallGraph", "namespacestringify_1_1_call_graph.html", [
+      [ "EdgeType", "namespacestringify_1_1_call_graph.html#a030f235bf702dd3559c94f625667f888", null ],
+      [ "EdgeType", "namespacestringify_1_1_call_graph.html#a5884ec16b65d66a3f886dae0aa70f19f", null ],
+      [ "EdgeType", "namespacestringify_1_1_call_graph.html#a0e177ea94872db4de1373d186a4afa38", null ]
+    ] ],
+    [ "BaseGraph", "namespacestringify_1_1_base_graph.html", "namespacestringify_1_1_base_graph" ],
+    [ "CFG", "namespacestringify_1_1_c_f_g.html", [
+      [ "EdgeType", "namespacestringify_1_1_c_f_g.html#a53a7c54f634ee3cc83e60709830c370a", null ],
+      [ "EdgeType", "namespacestringify_1_1_c_f_g.html#a925c1d0ca3e54ffe940a1f6462717f82", null ],
+      [ "EdgeType", "namespacestringify_1_1_c_f_g.html#a68283abd0061e3fed805c7bea15c8a86", null ]
+    ] ],
+    [ "RIFG", "namespacestringify_1_1_r_i_f_g.html", [
+      [ "EdgeDirection", "namespacestringify_1_1_r_i_f_g.html#ae754c734e278c2756b5a805ad5ca4f20", null ],
+      [ "EdgeDirection", "namespacestringify_1_1_r_i_f_g.html#abf9645a7cba07ec204b1f120355b50ce", null ],
+      [ "EdgeDirection", "namespacestringify_1_1_r_i_f_g.html#af02bc27e75c01bb3df1d9df342361bb6", null ],
+      [ "ForwardBackward", "namespacestringify_1_1_r_i_f_g.html#a1252e701e887db1307ba4deaaaae115f", null ],
+      [ "ForwardBackward", "namespacestringify_1_1_r_i_f_g.html#a44631ec4f2786142668ed1f11dfca6ec", null ],
+      [ "ForwardBackward", "namespacestringify_1_1_r_i_f_g.html#aaf481f82754de15dae94c955eca9271c", null ]
+    ] ],
+    [ "SDG", "namespacestringify_1_1_s_d_g.html", "namespacestringify_1_1_s_d_g" ],
+    [ "CGFunction", "namespacestringify_1_1_c_g_function.html", "namespacestringify_1_1_c_g_function" ],
+    [ "ConstrGraph", "namespacestringify_1_1_constr_graph.html", [
+      [ "levels", "namespacestringify_1_1_constr_graph.html#a28f7a8635db8d54e227e7f4c5f521dc4", null ],
+      [ "levels", "namespacestringify_1_1_constr_graph.html#ada81e5e666c83aaf09a86a2e1189d9a7", null ],
+      [ "levels", "namespacestringify_1_1_constr_graph.html#a1b45a7c567996d54f0a0615237b46d81", null ]
+    ] ],
+    [ "TaintLattice", "namespacestringify_1_1_taint_lattice.html", [
+      [ "Vertex", "namespacestringify_1_1_taint_lattice.html#a12c71b765f6fb445ea6e4e6792ca274a", null ],
+      [ "Vertex", "namespacestringify_1_1_taint_lattice.html#a244e81fccf4d494a91dfb723c8b1faa2", null ],
+      [ "Vertex", "namespacestringify_1_1_taint_lattice.html#a2b708a39f89f44876ad4ea675ebfc9f6", null ]
+    ] ],
+    [ "ssa_unfiltered_cfg", "namespacestringify_1_1ssa__unfiltered__cfg.html", "namespacestringify_1_1ssa__unfiltered__cfg" ],
+    [ "DominatorTreesAndDominanceFrontiers", "namespacestringify_1_1_dominator_trees_and_dominance_frontiers.html", "namespacestringify_1_1_dominator_trees_and_dominance_frontiers" ],
+    [ "ReadWriteSets", "namespacestringify_1_1_read_write_sets.html", [
+      [ "AccessType", "namespacestringify_1_1_read_write_sets.html#aff20994fd434d55c31a59f8f1952c9bf", null ],
+      [ "AccessType", "namespacestringify_1_1_read_write_sets.html#aa01892896eae3a68433a36c0d261089d", null ],
+      [ "AccessType", "namespacestringify_1_1_read_write_sets.html#a800ba65bd8b936a99755b03fe73b1033", null ],
+      [ "Globality", "namespacestringify_1_1_read_write_sets.html#a4310b3def901e3f9fc5e164e2692bafc", null ],
+      [ "Globality", "namespacestringify_1_1_read_write_sets.html#a232942242a42348b0b0eb7c3f8767758", null ],
+      [ "Globality", "namespacestringify_1_1_read_write_sets.html#a59e665ce0995f6828dffb20e3fa02c06", null ],
+      [ "VarType", "namespacestringify_1_1_read_write_sets.html#a0a1c9480432d2ca5cfa3845a0d5a60f5", null ],
+      [ "VarType", "namespacestringify_1_1_read_write_sets.html#a71efed1cc99f7c3b180ced19374fd92e", null ],
+      [ "VarType", "namespacestringify_1_1_read_write_sets.html#a484bf0675ba7f9c61785bcbc591aee26", null ]
+    ] ],
+    [ "ArithmeticIntensityMeasurement", "namespacestringify_1_1_arithmetic_intensity_measurement.html", [
+      [ "fp_operation_kind_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a202a9c234cbc52a7b1f4264410d44c74", null ],
+      [ "fp_operation_kind_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#aac852f003c3eba335188ffe484c0c074", null ],
+      [ "fp_operation_kind_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#aad0db5f68003e2f498c7b5dbe4eb8d3a", null ],
+      [ "running_mode_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a0909e9f9983410a35de1ea68f004117c", null ],
+      [ "running_mode_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a5f3024ad9452ca417ac497f0b32cb4cb", null ],
+      [ "running_mode_enum", "namespacestringify_1_1_arithmetic_intensity_measurement.html#a9a34892e67700bbe86bf483d8133f93f", null ]
     ] ],
     [ "PtrAliasAnalysis", "namespacestringify_1_1_ptr_alias_analysis.html", [
       [ "COLOR", "namespacestringify_1_1_ptr_alias_analysis.html#a0f9951cdba15ebad118d385f10e4192c", null ],
@@ -305,26 +371,72 @@ var namespacestringify =
       [ "TRAVERSAL_TYPE", "namespacestringify_1_1_ptr_alias_analysis.html#a410d8732272d1bbb258cecf6f31b85a0", null ],
       [ "TRAVERSAL_TYPE", "namespacestringify_1_1_ptr_alias_analysis.html#a7298261166a2d29ce9eecd42129a2ffb", null ]
     ] ],
-    [ "QCodeEdit", "namespacestringify_1_1_q_code_edit.html", [
-      [ "Position", "namespacestringify_1_1_q_code_edit.html#a0eb0392343997c0079d3ab23f9128005", null ],
-      [ "Position", "namespacestringify_1_1_q_code_edit.html#ab6e490b02458192e3542c35e587c8f38", null ],
-      [ "Position", "namespacestringify_1_1_q_code_edit.html#a3c67a91a3431f6241acbdd7c3352c797", null ]
+    [ "CollectAliasRelations", "namespacestringify_1_1_collect_alias_relations.html", [
+      [ "COLOR", "namespacestringify_1_1_collect_alias_relations.html#ac8f14f57a0bb5e715c98cbf14fdfd25c", null ],
+      [ "COLOR", "namespacestringify_1_1_collect_alias_relations.html#aeb1194f4fbe9c395061cee88d786b07b", null ],
+      [ "COLOR", "namespacestringify_1_1_collect_alias_relations.html#ab0177304f97e325edfa6e6242db934da", null ],
+      [ "TRAVERSAL_TYPE", "namespacestringify_1_1_collect_alias_relations.html#a5b682baebda73cd7cb7d1ba068debbe9", null ],
+      [ "TRAVERSAL_TYPE", "namespacestringify_1_1_collect_alias_relations.html#abde334a6e95013ca73468bc58ab14fcc", null ],
+      [ "TRAVERSAL_TYPE", "namespacestringify_1_1_collect_alias_relations.html#a94d25e667eb608b90e15cce2913dba85", null ]
     ] ],
-    [ "QDocument", "namespacestringify_1_1_q_document.html", [
-      [ "LineEnding", "namespacestringify_1_1_q_document.html#ac888da8934bd1b9146d43716b2b0ad0a", null ],
-      [ "LineEnding", "namespacestringify_1_1_q_document.html#a9257c18c97c27543e27de07a0ff04f20", null ],
-      [ "LineEnding", "namespacestringify_1_1_q_document.html#ae5a7dd4a35a696f1710fbf9d20001d7b", null ],
-      [ "TextProcessing", "namespacestringify_1_1_q_document.html#ab2137955f72a11578fac2fa47148c124", null ],
-      [ "TextProcessing", "namespacestringify_1_1_q_document.html#a9522f6be3fddc37438dd694e0f23f7bd", null ],
-      [ "TextProcessing", "namespacestringify_1_1_q_document.html#a2da67a590dd10858cff71427463acca5", null ],
-      [ "WhiteSpaceFlag", "namespacestringify_1_1_q_document.html#a5a5b882d959fb7211fe6f35e606cdde3", null ],
-      [ "WhiteSpaceFlag", "namespacestringify_1_1_q_document.html#aa4e12a79157b616732d6afe0ce7fb03f", null ],
-      [ "WhiteSpaceFlag", "namespacestringify_1_1_q_document.html#a88253d84927ecc563925b4200e1f6880", null ]
+    [ "TransformationSupport", "namespacestringify_1_1_transformation_support.html", [
+      [ "operatorCodeType", "namespacestringify_1_1_transformation_support.html#ac2021da7b75573d4fab4ef53fd99a3b1", null ],
+      [ "operatorCodeType", "namespacestringify_1_1_transformation_support.html#ac19c550fa142625cdb7a247c7eb6805b", null ],
+      [ "operatorCodeType", "namespacestringify_1_1_transformation_support.html#a477b392fe316290dc38f183e8db595cd", null ]
     ] ],
-    [ "QDocumentCommand", "namespacestringify_1_1_q_document_command.html", [
-      [ "Command", "namespacestringify_1_1_q_document_command.html#aefa118e593161506d23b415075145d3a", null ],
-      [ "Command", "namespacestringify_1_1_q_document_command.html#a5e1f9c69016e45d0191775ecad17ef1d", null ],
-      [ "Command", "namespacestringify_1_1_q_document_command.html#a625ce56079da234db22d0941a7dc5651", null ]
+    [ "DisplayEdge", "namespacestringify_1_1_display_edge.html", [
+      [ "PaintMode", "namespacestringify_1_1_display_edge.html#a7d053a0add9557abac92bbbd9a68aa23", null ],
+      [ "PaintMode", "namespacestringify_1_1_display_edge.html#a56b18a2ce2e5bbafa2e1fbe41ec5fead", null ],
+      [ "PaintMode", "namespacestringify_1_1_display_edge.html#a0abbfc513825e19d35b7c4de6acb58d9", null ]
+    ] ],
+    [ "AstDisplayInfo", "namespacestringify_1_1_ast_display_info.html", [
+      [ "NodeType", "namespacestringify_1_1_ast_display_info.html#a3f39bcbd3b26ef73634092c90cbeeebe", null ],
+      [ "NodeType", "namespacestringify_1_1_ast_display_info.html#a1f34510ff5fb7dc749848dcdb46a35a6", null ],
+      [ "NodeType", "namespacestringify_1_1_ast_display_info.html#ad9ae414e77ef8767786acecffd808843", null ]
+    ] ],
+    [ "DependencyInfo", "namespacestringify_1_1_dependency_info.html", [
+      [ "State", "namespacestringify_1_1_dependency_info.html#a9321d1e84bea72f8ac3ae798cf892749", null ],
+      [ "State", "namespacestringify_1_1_dependency_info.html#a4dcc2911de98f12324ae9c6b1086a211", null ],
+      [ "State", "namespacestringify_1_1_dependency_info.html#a25933cc505585ed34c096b3fd1f89697", null ]
+    ] ],
+    [ "CompilerOutputWidget", "namespacestringify_1_1_compiler_output_widget.html", [
+      [ "PatternType", "namespacestringify_1_1_compiler_output_widget.html#ada79c7f934fdcacb6a8c4dd848d95e56", null ],
+      [ "PatternType", "namespacestringify_1_1_compiler_output_widget.html#aa703bc74110ee6c5523d53940af66987", null ],
+      [ "PatternType", "namespacestringify_1_1_compiler_output_widget.html#aa4be348aebc558f824369de643da5460", null ]
+    ] ],
+    [ "Task", "namespacestringify_1_1_task.html", [
+      [ "State", "namespacestringify_1_1_task.html#a852a2b52e7729cf5def7fe309f34cd4d", null ],
+      [ "State", "namespacestringify_1_1_task.html#a66eafe30b7314b6e96da60040e246fa4", null ],
+      [ "State", "namespacestringify_1_1_task.html#a4fa226005fee52b1a1fae21d799055cd", null ]
+    ] ],
+    [ "QtGradientWidgetPrivate", "namespacestringify_1_1_qt_gradient_widget_private.html", [
+      [ "Handle", "namespacestringify_1_1_qt_gradient_widget_private.html#aa54d55f6ab4592e5413634e10c84d13c", null ],
+      [ "Handle", "namespacestringify_1_1_qt_gradient_widget_private.html#acb7ce8f6e4203c6101ac60e2da179ac2", null ],
+      [ "Handle", "namespacestringify_1_1_qt_gradient_widget_private.html#a88c8d1074e1397772e2b7a071b9dc901", null ]
+    ] ],
+    [ "QtColorLine", "namespacestringify_1_1_qt_color_line.html", [
+      [ "ColorComponent", "namespacestringify_1_1_qt_color_line.html#a8c09950763e2fc89f77b4b4fd92f0a89", null ],
+      [ "ColorComponent", "namespacestringify_1_1_qt_color_line.html#a3f2bd1c124c0fec7cf5ee52a4caf5c0b", null ],
+      [ "ColorComponent", "namespacestringify_1_1_qt_color_line.html#a0df503b23be1e0f1e4106b20f18e9661", null ]
+    ] ],
+    [ "QPanelLayout", "namespacestringify_1_1_q_panel_layout.html", [
+      [ "Position", "namespacestringify_1_1_q_panel_layout.html#af1bc79a2811de210efd6c17672851eb7", null ],
+      [ "Position", "namespacestringify_1_1_q_panel_layout.html#adfb51b36ae9d7adbd52939c306d7eb23", null ],
+      [ "Position", "namespacestringify_1_1_q_panel_layout.html#ab679c8bdf66d5f1debf85e44bcc79eda", null ],
+      [ "SizeType", "namespacestringify_1_1_q_panel_layout.html#a40f6ba3296631c8f9d0f0e74dd700807", null ],
+      [ "SizeType", "namespacestringify_1_1_q_panel_layout.html#a4aedc2b054f08bfcd9d39e377c79183d", null ],
+      [ "SizeType", "namespacestringify_1_1_q_panel_layout.html#a1e5e90be888affe013202d48df0eff2b", null ]
+    ] ],
+    [ "QNFAAction", "namespacestringify_1_1_q_n_f_a_action.html", [
+      [ "QNFAAction_", "namespacestringify_1_1_q_n_f_a_action.html#a71efa1abb61d16035233ec2524576bda", null ],
+      [ "QNFAAction_", "namespacestringify_1_1_q_n_f_a_action.html#aef039de77a75aa5604edbee5a9019e08", null ],
+      [ "QNFAAction_", "namespacestringify_1_1_q_n_f_a_action.html#a1b7891bd00fc81abb3d7085e92c69710", null ]
+    ] ],
+    [ "QNFADefinition", "namespacestringify_1_1_q_n_f_a_definition.html", "namespacestringify_1_1_q_n_f_a_definition" ],
+    [ "QReliableFileWatch", "namespacestringify_1_1_q_reliable_file_watch.html", [
+      [ "State", "namespacestringify_1_1_q_reliable_file_watch.html#aef416e83be4e4c86068694a5d3c76574", null ],
+      [ "State", "namespacestringify_1_1_q_reliable_file_watch.html#a06feb874eed2aba571902326915a82bd", null ],
+      [ "State", "namespacestringify_1_1_q_reliable_file_watch.html#af946bb627ae54f3f18e764df68c988ae", null ]
     ] ],
     [ "QDocumentCursor", "namespacestringify_1_1_q_document_cursor.html", [
       [ "MoveFlag", "namespacestringify_1_1_q_document_cursor.html#a212de507aad86ed8d67c52b1eea7e2b9", null ],
@@ -337,20 +449,46 @@ var namespacestringify =
       [ "SelectionType", "namespacestringify_1_1_q_document_cursor.html#a2087d59e0bb44c1d4f0b504103a160fc", null ],
       [ "SelectionType", "namespacestringify_1_1_q_document_cursor.html#a2cbe71180c733cfd202ccd7f802b53de", null ]
     ] ],
-    [ "QDocumentCursorHandle", "namespacestringify_1_1_q_document_cursor_handle.html", [
-      [ "Flags", "namespacestringify_1_1_q_document_cursor_handle.html#a2884280dca25c0029a33e1209cdf4396", null ],
-      [ "Flags", "namespacestringify_1_1_q_document_cursor_handle.html#aa8a6dc576724b1eb805e0a63d29b9df5", null ],
-      [ "Flags", "namespacestringify_1_1_q_document_cursor_handle.html#aadabdf6fd4a87e8baf4820577842f8cb", null ]
+    [ "QParenthesis", "namespacestringify_1_1_q_parenthesis.html", [
+      [ "Role", "namespacestringify_1_1_q_parenthesis.html#acaed9c27e75ac5801984274a9df61a49", null ],
+      [ "Role", "namespacestringify_1_1_q_parenthesis.html#a8914edd0a6e09430b1d2a0c6738204c5", null ],
+      [ "Role", "namespacestringify_1_1_q_parenthesis.html#afb886bb0b3e3233ff62789b077851dff", null ]
     ] ],
     [ "QDocumentLine", "namespacestringify_1_1_q_document_line.html", [
       [ "State", "namespacestringify_1_1_q_document_line.html#a442c3705f88279f631287adfcea5c617", null ],
       [ "State", "namespacestringify_1_1_q_document_line.html#addef29b65f2ea18f9d17f7d92a9606b3", null ],
       [ "State", "namespacestringify_1_1_q_document_line.html#a2e811178175896abbb0b701c81858383", null ]
     ] ],
+    [ "QDocument", "namespacestringify_1_1_q_document.html", [
+      [ "LineEnding", "namespacestringify_1_1_q_document.html#ac888da8934bd1b9146d43716b2b0ad0a", null ],
+      [ "LineEnding", "namespacestringify_1_1_q_document.html#a9257c18c97c27543e27de07a0ff04f20", null ],
+      [ "LineEnding", "namespacestringify_1_1_q_document.html#ae5a7dd4a35a696f1710fbf9d20001d7b", null ],
+      [ "TextProcessing", "namespacestringify_1_1_q_document.html#ab2137955f72a11578fac2fa47148c124", null ],
+      [ "TextProcessing", "namespacestringify_1_1_q_document.html#a9522f6be3fddc37438dd694e0f23f7bd", null ],
+      [ "TextProcessing", "namespacestringify_1_1_q_document.html#a2da67a590dd10858cff71427463acca5", null ],
+      [ "WhiteSpaceFlag", "namespacestringify_1_1_q_document.html#a5a5b882d959fb7211fe6f35e606cdde3", null ],
+      [ "WhiteSpaceFlag", "namespacestringify_1_1_q_document.html#aa4e12a79157b616732d6afe0ce7fb03f", null ],
+      [ "WhiteSpaceFlag", "namespacestringify_1_1_q_document.html#a88253d84927ecc563925b4200e1f6880", null ]
+    ] ],
     [ "QDocumentSearch", "namespacestringify_1_1_q_document_search.html", [
       [ "Option", "namespacestringify_1_1_q_document_search.html#ae99e9e550a359823ab2cf32cdddf9591", null ],
       [ "Option", "namespacestringify_1_1_q_document_search.html#a7a15879fd45ac5aca53d98fcfdc270b4", null ],
       [ "Option", "namespacestringify_1_1_q_document_search.html#a46fb7b9d3f014201cc1401963dfdd44f", null ]
+    ] ],
+    [ "QDocumentCommand", "namespacestringify_1_1_q_document_command.html", [
+      [ "Command", "namespacestringify_1_1_q_document_command.html#aefa118e593161506d23b415075145d3a", null ],
+      [ "Command", "namespacestringify_1_1_q_document_command.html#a5e1f9c69016e45d0191775ecad17ef1d", null ],
+      [ "Command", "namespacestringify_1_1_q_document_command.html#a625ce56079da234db22d0941a7dc5651", null ]
+    ] ],
+    [ "QDocumentCursorHandle", "namespacestringify_1_1_q_document_cursor_handle.html", [
+      [ "Flags", "namespacestringify_1_1_q_document_cursor_handle.html#a2884280dca25c0029a33e1209cdf4396", null ],
+      [ "Flags", "namespacestringify_1_1_q_document_cursor_handle.html#aa8a6dc576724b1eb805e0a63d29b9df5", null ],
+      [ "Flags", "namespacestringify_1_1_q_document_cursor_handle.html#aadabdf6fd4a87e8baf4820577842f8cb", null ]
+    ] ],
+    [ "QLanguageDefinition", "namespacestringify_1_1_q_language_definition.html", [
+      [ "CollapseFlag", "namespacestringify_1_1_q_language_definition.html#a426626d2f549ef8053d26d3cdf0d773b", null ],
+      [ "CollapseFlag", "namespacestringify_1_1_q_language_definition.html#a7b8fb70f0e45c86a1cd539d566e3eba9", null ],
+      [ "CollapseFlag", "namespacestringify_1_1_q_language_definition.html#a2905d2c1e57c8127904fcadc4f8ddae5", null ]
     ] ],
     [ "QEditor", "namespacestringify_1_1_q_editor.html", [
       [ "CodecUpdatePolicy", "namespacestringify_1_1_q_editor.html#ae3c5c3d5a30bf9441048b59800cec1d4", null ],
@@ -363,641 +501,23 @@ var namespacestringify =
       [ "SaveState", "namespacestringify_1_1_q_editor.html#a4ebeffa8e5f8df0fe285768e1b6cfecb", null ],
       [ "SaveState", "namespacestringify_1_1_q_editor.html#a17066ce6446cdfe13404c9ed937be306", null ]
     ] ],
-    [ "QLanguageDefinition", "namespacestringify_1_1_q_language_definition.html", [
-      [ "CollapseFlag", "namespacestringify_1_1_q_language_definition.html#a426626d2f549ef8053d26d3cdf0d773b", null ],
-      [ "CollapseFlag", "namespacestringify_1_1_q_language_definition.html#a7b8fb70f0e45c86a1cd539d566e3eba9", null ],
-      [ "CollapseFlag", "namespacestringify_1_1_q_language_definition.html#a2905d2c1e57c8127904fcadc4f8ddae5", null ]
+    [ "QCodeEdit", "namespacestringify_1_1_q_code_edit.html", [
+      [ "Position", "namespacestringify_1_1_q_code_edit.html#a0eb0392343997c0079d3ab23f9128005", null ],
+      [ "Position", "namespacestringify_1_1_q_code_edit.html#ab6e490b02458192e3542c35e587c8f38", null ],
+      [ "Position", "namespacestringify_1_1_q_code_edit.html#a3c67a91a3431f6241acbdd7c3352c797", null ]
     ] ],
-    [ "QNFAAction", "namespacestringify_1_1_q_n_f_a_action.html", [
-      [ "QNFAAction_", "namespacestringify_1_1_q_n_f_a_action.html#a71efa1abb61d16035233ec2524576bda", null ],
-      [ "QNFAAction_", "namespacestringify_1_1_q_n_f_a_action.html#aef039de77a75aa5604edbee5a9019e08", null ],
-      [ "QNFAAction_", "namespacestringify_1_1_q_n_f_a_action.html#a1b7891bd00fc81abb3d7085e92c69710", null ]
+    [ "FailSafe", "namespacestringify_1_1_fail_safe.html", [
+      [ "fail_safe_enum", "namespacestringify_1_1_fail_safe.html#a5688b125ae026b2173bf1ee453309481", null ],
+      [ "fail_safe_enum", "namespacestringify_1_1_fail_safe.html#a4121fe0fe0e53bf8ae8bcfe6503363ca", null ],
+      [ "fail_safe_enum", "namespacestringify_1_1_fail_safe.html#a83db224dc51711405a8b33c485aac2a6", null ]
     ] ],
-    [ "QNFADefinition", "namespacestringify_1_1_q_n_f_a_definition.html", "namespacestringify_1_1_q_n_f_a_definition" ],
-    [ "QPanelLayout", "namespacestringify_1_1_q_panel_layout.html", [
-      [ "Position", "namespacestringify_1_1_q_panel_layout.html#af1bc79a2811de210efd6c17672851eb7", null ],
-      [ "Position", "namespacestringify_1_1_q_panel_layout.html#adfb51b36ae9d7adbd52939c306d7eb23", null ],
-      [ "Position", "namespacestringify_1_1_q_panel_layout.html#ab679c8bdf66d5f1debf85e44bcc79eda", null ],
-      [ "SizeType", "namespacestringify_1_1_q_panel_layout.html#a40f6ba3296631c8f9d0f0e74dd700807", null ],
-      [ "SizeType", "namespacestringify_1_1_q_panel_layout.html#a4aedc2b054f08bfcd9d39e377c79183d", null ],
-      [ "SizeType", "namespacestringify_1_1_q_panel_layout.html#a1e5e90be888affe013202d48df0eff2b", null ]
-    ] ],
-    [ "QParenthesis", "namespacestringify_1_1_q_parenthesis.html", [
-      [ "Role", "namespacestringify_1_1_q_parenthesis.html#acaed9c27e75ac5801984274a9df61a49", null ],
-      [ "Role", "namespacestringify_1_1_q_parenthesis.html#a8914edd0a6e09430b1d2a0c6738204c5", null ],
-      [ "Role", "namespacestringify_1_1_q_parenthesis.html#afb886bb0b3e3233ff62789b077851dff", null ]
-    ] ],
-    [ "QReliableFileWatch", "namespacestringify_1_1_q_reliable_file_watch.html", [
-      [ "State", "namespacestringify_1_1_q_reliable_file_watch.html#aef416e83be4e4c86068694a5d3c76574", null ],
-      [ "State", "namespacestringify_1_1_q_reliable_file_watch.html#a06feb874eed2aba571902326915a82bd", null ],
-      [ "State", "namespacestringify_1_1_q_reliable_file_watch.html#af946bb627ae54f3f18e764df68c988ae", null ]
-    ] ],
-    [ "qrs", "namespacestringify_1_1qrs.html", "namespacestringify_1_1qrs" ],
-    [ "QtColorLine", "namespacestringify_1_1_qt_color_line.html", [
-      [ "ColorComponent", "namespacestringify_1_1_qt_color_line.html#a8c09950763e2fc89f77b4b4fd92f0a89", null ],
-      [ "ColorComponent", "namespacestringify_1_1_qt_color_line.html#a3f2bd1c124c0fec7cf5ee52a4caf5c0b", null ],
-      [ "ColorComponent", "namespacestringify_1_1_qt_color_line.html#a0df503b23be1e0f1e4106b20f18e9661", null ]
-    ] ],
-    [ "QtGradientWidgetPrivate", "namespacestringify_1_1_qt_gradient_widget_private.html", [
-      [ "Handle", "namespacestringify_1_1_qt_gradient_widget_private.html#aa54d55f6ab4592e5413634e10c84d13c", null ],
-      [ "Handle", "namespacestringify_1_1_qt_gradient_widget_private.html#acb7ce8f6e4203c6101ac60e2da179ac2", null ],
-      [ "Handle", "namespacestringify_1_1_qt_gradient_widget_private.html#a88c8d1074e1397772e2b7a071b9dc901", null ]
-    ] ],
-    [ "ReachingDef", "namespacestringify_1_1_reaching_def.html", [
-      [ "Type", "namespacestringify_1_1_reaching_def.html#a46b3d2fde91df8676f023c713ed64476", null ],
-      [ "Type", "namespacestringify_1_1_reaching_def.html#aed1efe2e64e4745dda671028bd9cfa61", null ],
-      [ "Type", "namespacestringify_1_1_reaching_def.html#a6f0e2e02bedb9c2076b3ebcd4d92a746", null ]
-    ] ],
-    [ "ReadWriteSets", "namespacestringify_1_1_read_write_sets.html", [
-      [ "AccessType", "namespacestringify_1_1_read_write_sets.html#aff20994fd434d55c31a59f8f1952c9bf", null ],
-      [ "AccessType", "namespacestringify_1_1_read_write_sets.html#aa01892896eae3a68433a36c0d261089d", null ],
-      [ "AccessType", "namespacestringify_1_1_read_write_sets.html#a800ba65bd8b936a99755b03fe73b1033", null ],
-      [ "Globality", "namespacestringify_1_1_read_write_sets.html#a4310b3def901e3f9fc5e164e2692bafc", null ],
-      [ "Globality", "namespacestringify_1_1_read_write_sets.html#a232942242a42348b0b0eb7c3f8767758", null ],
-      [ "Globality", "namespacestringify_1_1_read_write_sets.html#a59e665ce0995f6828dffb20e3fa02c06", null ],
-      [ "VarType", "namespacestringify_1_1_read_write_sets.html#a0a1c9480432d2ca5cfa3845a0d5a60f5", null ],
-      [ "VarType", "namespacestringify_1_1_read_write_sets.html#a71efed1cc99f7c3b180ced19374fd92e", null ],
-      [ "VarType", "namespacestringify_1_1_read_write_sets.html#a484bf0675ba7f9c61785bcbc591aee26", null ]
-    ] ],
-    [ "RIFG", "namespacestringify_1_1_r_i_f_g.html", [
-      [ "EdgeDirection", "namespacestringify_1_1_r_i_f_g.html#ae754c734e278c2756b5a805ad5ca4f20", null ],
-      [ "EdgeDirection", "namespacestringify_1_1_r_i_f_g.html#abf9645a7cba07ec204b1f120355b50ce", null ],
-      [ "EdgeDirection", "namespacestringify_1_1_r_i_f_g.html#af02bc27e75c01bb3df1d9df342361bb6", null ],
-      [ "ForwardBackward", "namespacestringify_1_1_r_i_f_g.html#a1252e701e887db1307ba4deaaaae115f", null ],
-      [ "ForwardBackward", "namespacestringify_1_1_r_i_f_g.html#a44631ec4f2786142668ed1f11dfca6ec", null ],
-      [ "ForwardBackward", "namespacestringify_1_1_r_i_f_g.html#aaf481f82754de15dae94c955eca9271c", null ]
-    ] ],
-    [ "Rose", "namespacestringify_1_1_rose.html", "namespacestringify_1_1_rose" ],
-    [ "ROSE__Fortran__defs", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html", [
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a8d1484dbd3f66bb8dc233f0a6abd5a95", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a8efa2b4d33480806dff3827985e2a1ec", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a379f84b309e8859b191de57d0e693c40", null ],
-      [ "ROSE_C_CXX_operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a951f943632d42b81c82a1314f7efb286", null ],
-      [ "ROSE_C_CXX_operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a86aa18934d29200e4bab25e3f7fa52fb", null ],
-      [ "ROSE_C_CXX_operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a458ea692acccd4a9026730a20266f215", null ],
-      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#ab81dfbb4fb79a686c26743d1859ab774", null ],
-      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a2e0a5a6245675df56b499ef81302ba4d", null ],
-      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a23c931e80ef7bf4a178a6222fcda24f0", null ],
-      [ "ROSE_Fortran_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#acb72c40c6c253bbdac723edcff325b7a", null ],
-      [ "ROSE_Fortran_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#af0842b3f99d9cba1fbaea776d38d50e4", null ],
-      [ "ROSE_Fortran_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#aa9df9f689f45e66854c9af8595af2640", null ],
-      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#ab032a9584a081cd20774ecb2aa3e4633", null ],
-      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a55c028cb1502c48bb4864ab966192502", null ],
-      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#ad69e50110829752bc269acd6f28949bb", null ]
-    ] ],
-    [ "ROSE__token__ids", "namespacestringify_1_1_r_o_s_e____token____ids.html", [
-      [ "ROSE_C_CXX_Additional_Info", "namespacestringify_1_1_r_o_s_e____token____ids.html#a93e150f40b62f68eca37df173303b8cb", null ],
-      [ "ROSE_C_CXX_Additional_Info", "namespacestringify_1_1_r_o_s_e____token____ids.html#ae1e4949d9db8d72031b321f888df1989", null ],
-      [ "ROSE_C_CXX_Additional_Info", "namespacestringify_1_1_r_o_s_e____token____ids.html#a82904296e9c9c8d1a3beb3a4f2953782", null ],
-      [ "ROSE_C_CXX_alternate_tok", "namespacestringify_1_1_r_o_s_e____token____ids.html#a81c90cce63c656331f40b6ccbc571711", null ],
-      [ "ROSE_C_CXX_alternate_tok", "namespacestringify_1_1_r_o_s_e____token____ids.html#acffff4f1f80e405543319c38099dcee8", null ],
-      [ "ROSE_C_CXX_alternate_tok", "namespacestringify_1_1_r_o_s_e____token____ids.html#aaf23fb61a7db1c7ed49b8514aa8b8ec7", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e____token____ids.html#aac3aba4c4a04ad9dfae6015ec0d4bd73", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e____token____ids.html#a0942a930c8ad6d95bd9f123f2429354e", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e____token____ids.html#a1faf8d517a91d5a4b81bb017311db61e", null ],
-      [ "whitespace", "namespacestringify_1_1_r_o_s_e____token____ids.html#a9b88d966217bc76479b39162b891756f", null ],
-      [ "whitespace", "namespacestringify_1_1_r_o_s_e____token____ids.html#a320ef4b07723d0f69adf8c310ad780a9", null ],
-      [ "whitespace", "namespacestringify_1_1_r_o_s_e____token____ids.html#afa1722551f441ca1501d8dcae079a50f", null ]
-    ] ],
-    [ "ROSEAttributesList", "namespacestringify_1_1_r_o_s_e_attributes_list.html", [
-      [ "languageTypeEnum", "namespacestringify_1_1_r_o_s_e_attributes_list.html#adfa14194442f28ada2057a8a175f84e3", null ],
-      [ "languageTypeEnum", "namespacestringify_1_1_r_o_s_e_attributes_list.html#a0dd31d23d0b1b9c35c0c38ae1a07b750", null ],
-      [ "languageTypeEnum", "namespacestringify_1_1_r_o_s_e_attributes_list.html#aa9c76cd1a4cfbd5ad20cab7633c62358", null ]
+    [ "GenRepresentation", "namespacestringify_1_1_gen_representation.html", [
+      [ "TypeOfPrint", "namespacestringify_1_1_gen_representation.html#a9123d11ebbbd9490d903e7527df24fbf", null ],
+      [ "TypeOfPrint", "namespacestringify_1_1_gen_representation.html#a27a99374d5522d1d07735c4972531e94", null ],
+      [ "TypeOfPrint", "namespacestringify_1_1_gen_representation.html#a7b158e781c4881ea56d0d5a8f0ba49d1", null ]
     ] ],
     [ "Rosebud", "namespacestringify_1_1_rosebud.html", "namespacestringify_1_1_rosebud" ],
-    [ "SageBuilder", "namespacestringify_1_1_sage_builder.html", [
-      [ "SourcePositionClassification", "namespacestringify_1_1_sage_builder.html#a1cb5e4a6f9f1afa49b7e11b50eb82d17", null ],
-      [ "SourcePositionClassification", "namespacestringify_1_1_sage_builder.html#a76eae837a84525d87b0a69a1be607722", null ],
-      [ "SourcePositionClassification", "namespacestringify_1_1_sage_builder.html#a4c89a09f569c34ab4f02d0b3351aee23", null ]
-    ] ],
-    [ "SageInterface", "namespacestringify_1_1_sage_interface.html", "namespacestringify_1_1_sage_interface" ],
     [ "Sawyer", "namespacestringify_1_1_sawyer.html", "namespacestringify_1_1_sawyer" ],
-    [ "SDG", "namespacestringify_1_1_s_d_g.html", "namespacestringify_1_1_s_d_g" ],
-    [ "Sg__File__Info", "namespacestringify_1_1_sg_____file_____info.html", [
-      [ "classifier", "namespacestringify_1_1_sg_____file_____info.html#a2bd49cc62054fc9cc7eb907c1351fe03", null ],
-      [ "classifier", "namespacestringify_1_1_sg_____file_____info.html#a1afadd8df31b49da582a9724b8e8bb0e", null ],
-      [ "classifier", "namespacestringify_1_1_sg_____file_____info.html#abc82915ab941862b9b6cd29284a0fa6a", null ],
-      [ "p_fileflags", "namespacestringify_1_1_sg_____file_____info.html#adcd0727fc98ec51b56a05a304a76e87e", null ],
-      [ "p_fileflags", "namespacestringify_1_1_sg_____file_____info.html#aa31dfdc20b9e972c102dd0f9959aec6f", null ],
-      [ "p_fileflags", "namespacestringify_1_1_sg_____file_____info.html#a03e4af07ca800c984dcd27c42c89856f", null ]
-    ] ],
-    [ "SgAccessModifier", "namespacestringify_1_1_sg_access_modifier.html", [
-      [ "access_modifier_enum", "namespacestringify_1_1_sg_access_modifier.html#a5342c78357ada10550e40a7727b13f5c", null ],
-      [ "access_modifier_enum", "namespacestringify_1_1_sg_access_modifier.html#a8314967986d4d2b0d47d6b1b6cc606a5", null ],
-      [ "access_modifier_enum", "namespacestringify_1_1_sg_access_modifier.html#ae140eef0963d98585802f74a113eb5da", null ]
-    ] ],
-    [ "SgAdaSelectStmt", "namespacestringify_1_1_sg_ada_select_stmt.html", [
-      [ "select_type_enum", "namespacestringify_1_1_sg_ada_select_stmt.html#ab5d754adc896056885f8de431d38cc2a", null ],
-      [ "select_type_enum", "namespacestringify_1_1_sg_ada_select_stmt.html#a88816e9c27860ecd59db402e98311534", null ],
-      [ "select_type_enum", "namespacestringify_1_1_sg_ada_select_stmt.html#a86760495a8b010e4a9f50a0272c1d49d", null ]
-    ] ],
-    [ "SgAsmBlock", "namespacestringify_1_1_sg_asm_block.html", [
-      [ "Reason", "namespacestringify_1_1_sg_asm_block.html#a2e2c73f2e53fd2f0d3eb1198facc59ce", null ],
-      [ "Reason", "namespacestringify_1_1_sg_asm_block.html#ae98833af0e1c99d63f904025b8fd06cb", null ],
-      [ "Reason", "namespacestringify_1_1_sg_asm_block.html#adbdd6481ba6384fe70ae47b1b488afa6", null ]
-    ] ],
-    [ "SgAsmCilMetadataHeap", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html", [
-      [ "ReferenceKind", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html#a3f084e43538cfe9971655712c61c81c4", null ],
-      [ "ReferenceKind", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html#a557952544b52332716311d377295cb81", null ],
-      [ "ReferenceKind", "namespacestringify_1_1_sg_asm_cil_metadata_heap.html#a607238aa262b832b52aecbef6e5ceeb7", null ]
-    ] ],
-    [ "SgAsmElfDynamicEntry", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html", [
-      [ "EntryType", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html#a3d7a27945297309b452732d9dca62198", null ],
-      [ "EntryType", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html#a5a5df790327f94f96cd66c7dbec3b0dc", null ],
-      [ "EntryType", "namespacestringify_1_1_sg_asm_elf_dynamic_entry.html#aa1954344c2581c26781ff64f8eed5d53", null ]
-    ] ],
-    [ "SgAsmElfFileHeader", "namespacestringify_1_1_sg_asm_elf_file_header.html", [
-      [ "ObjectType", "namespacestringify_1_1_sg_asm_elf_file_header.html#a381962068909fec4679e3de5ec1b58b0", null ],
-      [ "ObjectType", "namespacestringify_1_1_sg_asm_elf_file_header.html#a8131a9703b721469ac9ef15536835440", null ],
-      [ "ObjectType", "namespacestringify_1_1_sg_asm_elf_file_header.html#a6a6ca73e0ffa9b27d23543f0b2ec2003", null ]
-    ] ],
-    [ "SgAsmElfRelocEntry", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html", [
-      [ "RelocType", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html#a687a4f095c8f0ba601a5997458700103", null ],
-      [ "RelocType", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html#a2776fd7d1ba427fe031e822784afae51", null ],
-      [ "RelocType", "namespacestringify_1_1_sg_asm_elf_reloc_entry.html#ae545b848c6020e6f63dded55cf831586", null ]
-    ] ],
-    [ "SgAsmElfSectionTableEntry", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html", [
-      [ "SectionFlags", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#ae22d1ebf45c33189399c320f0d37d4aa", null ],
-      [ "SectionFlags", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a96e33896ff9adaf6eecb7c47424a0d50", null ],
-      [ "SectionFlags", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a30a1bf8d657b53a3226fa003716b4553", null ],
-      [ "SectionType", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#aeab0b89243e8efdd946cff9954037abf", null ],
-      [ "SectionType", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a7ab85832932877b07f5ba454fc67f819", null ],
-      [ "SectionType", "namespacestringify_1_1_sg_asm_elf_section_table_entry.html#a24c108d7e085ca4989d920e130d49caf", null ]
-    ] ],
-    [ "SgAsmElfSegmentTableEntry", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html", [
-      [ "SegmentFlags", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a359713740c45466a441653b814698dea", null ],
-      [ "SegmentFlags", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a414252cc9f4eddb5353852c9c3670e34", null ],
-      [ "SegmentFlags", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a2e91cadc1405f5264c8ffe0d584c1a4b", null ],
-      [ "SegmentType", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a96f7db281c8cb94009e4f32402c6a053", null ],
-      [ "SegmentType", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a5ef53e2bdc59204de7095bdf30000dc5", null ],
-      [ "SegmentType", "namespacestringify_1_1_sg_asm_elf_segment_table_entry.html#a2965389658587f1e2327e5d783082f7f", null ]
-    ] ],
-    [ "SgAsmElfSymbol", "namespacestringify_1_1_sg_asm_elf_symbol.html", [
-      [ "ElfSymBinding", "namespacestringify_1_1_sg_asm_elf_symbol.html#a8f732828e838d8d7d88db52d7e096564", null ],
-      [ "ElfSymBinding", "namespacestringify_1_1_sg_asm_elf_symbol.html#a57ff65ea359d73b64354cc982a0a2690", null ],
-      [ "ElfSymBinding", "namespacestringify_1_1_sg_asm_elf_symbol.html#afe5e4f284a96c51a83fbfda9e010b3f8", null ],
-      [ "ElfSymType", "namespacestringify_1_1_sg_asm_elf_symbol.html#a3c77d6f139c727f780efc3b8c5b347bb", null ],
-      [ "ElfSymType", "namespacestringify_1_1_sg_asm_elf_symbol.html#a3ba6577b91456b69f44a34d8dbfa7018", null ],
-      [ "ElfSymType", "namespacestringify_1_1_sg_asm_elf_symbol.html#a3173ddba637e4a0041c9e2836f8e1b57", null ]
-    ] ],
-    [ "SgAsmExecutableFileFormat", "namespacestringify_1_1_sg_asm_executable_file_format.html", [
-      [ "ExecABI", "namespacestringify_1_1_sg_asm_executable_file_format.html#aeb85063df2bdc99a462f998cc6594446", null ],
-      [ "ExecABI", "namespacestringify_1_1_sg_asm_executable_file_format.html#a44bb5d2e03344b77ef74a7e2419a0d4b", null ],
-      [ "ExecABI", "namespacestringify_1_1_sg_asm_executable_file_format.html#a0d60f98601421994983fba81672fc1ee", null ],
-      [ "ExecFamily", "namespacestringify_1_1_sg_asm_executable_file_format.html#ac2948c60814079833acf275d6784e372", null ],
-      [ "ExecFamily", "namespacestringify_1_1_sg_asm_executable_file_format.html#a860003215c9f949b3eeb4556dd316ea4", null ],
-      [ "ExecFamily", "namespacestringify_1_1_sg_asm_executable_file_format.html#a8e92daf09c79b5ff4e255388b3f6a044", null ],
-      [ "ExecPurpose", "namespacestringify_1_1_sg_asm_executable_file_format.html#a54e3fde3a6458933306a9b83e2e00b4a", null ],
-      [ "ExecPurpose", "namespacestringify_1_1_sg_asm_executable_file_format.html#ae559c984efd42a5033ba3b5fb3bb65c5", null ],
-      [ "ExecPurpose", "namespacestringify_1_1_sg_asm_executable_file_format.html#ae699ea00907f970990c7bbbbe5507c78", null ],
-      [ "InsSetArchitecture", "namespacestringify_1_1_sg_asm_executable_file_format.html#af9efe7e79989508c4c702fbb9dbabe12", null ],
-      [ "InsSetArchitecture", "namespacestringify_1_1_sg_asm_executable_file_format.html#a1fc6b7a1d2e321ed5b50f49fb03e6fa6", null ],
-      [ "InsSetArchitecture", "namespacestringify_1_1_sg_asm_executable_file_format.html#a925c62e08d0e91caf6c2fe834f1895e3", null ]
-    ] ],
-    [ "SgAsmFloatType", "namespacestringify_1_1_sg_asm_float_type.html", [
-      [ "Flag", "namespacestringify_1_1_sg_asm_float_type.html#a8c68818d15643eab0b7285515557791a", null ],
-      [ "Flag", "namespacestringify_1_1_sg_asm_float_type.html#ae38aa765aebb94ee7b0f919422e68368", null ],
-      [ "Flag", "namespacestringify_1_1_sg_asm_float_type.html#a5740be4acb736092d5c5f164b0b98300", null ]
-    ] ],
-    [ "SgAsmFunction", "namespacestringify_1_1_sg_asm_function.html", [
-      [ "function_kind_enum", "namespacestringify_1_1_sg_asm_function.html#a8712ed5783d1e831b4e111e875d0de40", null ],
-      [ "function_kind_enum", "namespacestringify_1_1_sg_asm_function.html#a7f13e608f6ad5e865f155a82622def12", null ],
-      [ "function_kind_enum", "namespacestringify_1_1_sg_asm_function.html#ac8b3a081deb71038b085c9e5e5255bdf", null ],
-      [ "FunctionReason", "namespacestringify_1_1_sg_asm_function.html#afd7dd0b3351b0ade012bae382beca6e8", null ],
-      [ "FunctionReason", "namespacestringify_1_1_sg_asm_function.html#a3de5760ac16b38d35676d1c75fcdbccd", null ],
-      [ "FunctionReason", "namespacestringify_1_1_sg_asm_function.html#aaaa3641f7407c8cdbef9aa1dfc2a2baa", null ],
-      [ "MayReturn", "namespacestringify_1_1_sg_asm_function.html#afe5f1bb910cef31fb267588f11d1c674", null ],
-      [ "MayReturn", "namespacestringify_1_1_sg_asm_function.html#a6d83fd454c6c24dc4613d94a7fc96085", null ],
-      [ "MayReturn", "namespacestringify_1_1_sg_asm_function.html#a8e4c3f090e7e3dd3ebecc36a167b2ede", null ]
-    ] ],
-    [ "SgAsmGenericFile", "namespacestringify_1_1_sg_asm_generic_file.html", [
-      [ "AddressSpace", "namespacestringify_1_1_sg_asm_generic_file.html#a09237c4699b6c567acabdf060f3d09d9", null ],
-      [ "AddressSpace", "namespacestringify_1_1_sg_asm_generic_file.html#aa5481e4ae15a4a476638861815fc5364", null ],
-      [ "AddressSpace", "namespacestringify_1_1_sg_asm_generic_file.html#a78bdd4e69721d0341ae8629df67cf56c", null ],
-      [ "Elasticity", "namespacestringify_1_1_sg_asm_generic_file.html#a8b1a39ec95d427fbe4fdd134e11caa3a", null ],
-      [ "Elasticity", "namespacestringify_1_1_sg_asm_generic_file.html#a42717b79bc95759f9adb71080e31e00a", null ],
-      [ "Elasticity", "namespacestringify_1_1_sg_asm_generic_file.html#ae6cea59da2c8620c6fd97597d32c7581", null ]
-    ] ],
-    [ "SgAsmGenericSection", "namespacestringify_1_1_sg_asm_generic_section.html", [
-      [ "SectionPurpose", "namespacestringify_1_1_sg_asm_generic_section.html#ada9a164662c0130e5b43e3904bf67877", null ],
-      [ "SectionPurpose", "namespacestringify_1_1_sg_asm_generic_section.html#a884c271a932e2f1c2be1b2c92e6aa18f", null ],
-      [ "SectionPurpose", "namespacestringify_1_1_sg_asm_generic_section.html#a51d68b80f5dd55b554c2f75ecda1b74f", null ]
-    ] ],
-    [ "SgAsmGenericSymbol", "namespacestringify_1_1_sg_asm_generic_symbol.html", [
-      [ "SymbolBinding", "namespacestringify_1_1_sg_asm_generic_symbol.html#a763ef266448eec3406b198ee3c8d2a4f", null ],
-      [ "SymbolBinding", "namespacestringify_1_1_sg_asm_generic_symbol.html#aa32d82e7a724f17146946ec327216cf4", null ],
-      [ "SymbolBinding", "namespacestringify_1_1_sg_asm_generic_symbol.html#ac4e18a78668fea21cc5e1da538b20b01", null ],
-      [ "SymbolDefState", "namespacestringify_1_1_sg_asm_generic_symbol.html#af79d73ea39d9686b552b1fc18dec5494", null ],
-      [ "SymbolDefState", "namespacestringify_1_1_sg_asm_generic_symbol.html#aa380e8671b800c3852884b35d226a8fd", null ],
-      [ "SymbolDefState", "namespacestringify_1_1_sg_asm_generic_symbol.html#a5899b0c4b3a2fcaed0995b7b629c9938", null ],
-      [ "SymbolType", "namespacestringify_1_1_sg_asm_generic_symbol.html#a17b1b58baa5f9c9c191f8f9e72bcfc78", null ],
-      [ "SymbolType", "namespacestringify_1_1_sg_asm_generic_symbol.html#a19f3b28c6f397075c66230cc9fad77c4", null ],
-      [ "SymbolType", "namespacestringify_1_1_sg_asm_generic_symbol.html#a58c58e202f06462a69d72d974045c785", null ]
-    ] ],
-    [ "SgAsmJvmConstantPoolEntry", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html", [
-      [ "Kind", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html#a43f1ad384bad07199d5c770cb20aa9e8", null ],
-      [ "Kind", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html#a78c2c2408c3acb3085eb444b2a924cdd", null ],
-      [ "Kind", "namespacestringify_1_1_sg_asm_jvm_constant_pool_entry.html#a9404be6931a1672aa31fdf410cd4ef86", null ]
-    ] ],
-    [ "SgAsmJvmStackMapVerificationType", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html", [
-      [ "verification_type_tag", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html#a69e6d5693fc3e59741413af96ba79325", null ],
-      [ "verification_type_tag", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html#a1c535ec17b852ca14aff5096eb8cfc03", null ],
-      [ "verification_type_tag", "namespacestringify_1_1_sg_asm_jvm_stack_map_verification_type.html#a981203b8670278171ecfe8cbe62f9f38", null ]
-    ] ],
-    [ "SgAsmLEFileHeader", "namespacestringify_1_1_sg_asm_l_e_file_header.html", [
-      [ "LEFileHeaderFlags", "namespacestringify_1_1_sg_asm_l_e_file_header.html#ad25f1a8c7876b32a2306f453358a8dc1", null ],
-      [ "LEFileHeaderFlags", "namespacestringify_1_1_sg_asm_l_e_file_header.html#aefe0b6df1ca556d126bf27da53903e3e", null ],
-      [ "LEFileHeaderFlags", "namespacestringify_1_1_sg_asm_l_e_file_header.html#a49669a1e8d5a5bef62f808ef08ee5024", null ]
-    ] ],
-    [ "SgAsmLESectionTableEntry", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html", [
-      [ "LESectionFlags", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html#a7c6937b36fc195901c303c7bb0d25e5b", null ],
-      [ "LESectionFlags", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html#a8e8358f56295a6163aaa6bd4cff873c4", null ],
-      [ "LESectionFlags", "namespacestringify_1_1_sg_asm_l_e_section_table_entry.html#ab72db92a245691fb00fb1d1909e371ed", null ]
-    ] ],
-    [ "SgAsmNEEntryPoint", "namespacestringify_1_1_sg_asm_n_e_entry_point.html", [
-      [ "NEEntryFlags", "namespacestringify_1_1_sg_asm_n_e_entry_point.html#aa66d85ebd4572742de40507775f8d6c3", null ],
-      [ "NEEntryFlags", "namespacestringify_1_1_sg_asm_n_e_entry_point.html#a359f4cb5c5614c2d65ccb3edd8f706f6", null ],
-      [ "NEEntryFlags", "namespacestringify_1_1_sg_asm_n_e_entry_point.html#a0ac86b96c18d7c1cf343b736eb525c3b", null ]
-    ] ],
-    [ "SgAsmNEFileHeader", "namespacestringify_1_1_sg_asm_n_e_file_header.html", [
-      [ "HeaderFlags1", "namespacestringify_1_1_sg_asm_n_e_file_header.html#acf15bd0f2b6fb53edea1547a4be3f0e1", null ],
-      [ "HeaderFlags1", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a9ce7190630b059d81020e511ded4240e", null ],
-      [ "HeaderFlags1", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a89ac9c772f54e60376c9a1e4c05249ad", null ],
-      [ "HeaderFlags2", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a13b94e19f6f08362c2183dca76e18530", null ],
-      [ "HeaderFlags2", "namespacestringify_1_1_sg_asm_n_e_file_header.html#ae818f338866e530eb3e54a668ca2c1a6", null ],
-      [ "HeaderFlags2", "namespacestringify_1_1_sg_asm_n_e_file_header.html#a6a920dadb224402475a46a603304a634", null ]
-    ] ],
-    [ "SgAsmNERelocEntry", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html", [
-      [ "NERelocFlags", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a629e94f046b9af669a90d3f613be2ee6", null ],
-      [ "NERelocFlags", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a01ca9083f18a420b214088d507cd6786", null ],
-      [ "NERelocFlags", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#afee4292487416930d3aa2d3ad4217e3a", null ],
-      [ "NERelocModifiers", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#ac629beec7142d1c55138eda7855b88f7", null ],
-      [ "NERelocModifiers", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a315ea8526c00f30f06553700d7e4e6e2", null ],
-      [ "NERelocModifiers", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a2d0df06b20307855ab7c0508770753ab", null ],
-      [ "NERelocSrcType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#ad6d154c2c317feda84ace9e697d9eb97", null ],
-      [ "NERelocSrcType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a9ced9adc443be1d216148ef99cf6f3f0", null ],
-      [ "NERelocSrcType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#ac0a559d918140986186566ca00ff0181", null ],
-      [ "NERelocTgtType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a24cce12f02173e427558f34b5b19bea3", null ],
-      [ "NERelocTgtType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#afdeadced53a4ae7df4aa52c3ec74ea39", null ],
-      [ "NERelocTgtType", "namespacestringify_1_1_sg_asm_n_e_reloc_entry.html#a6984c474f1fba302910a0a156e518f3d", null ]
-    ] ],
-    [ "SgAsmNESectionTableEntry", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html", [
-      [ "NESectionFlags", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html#ae85f3f304753b5f267b5837ee04c1803", null ],
-      [ "NESectionFlags", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html#adb2d8e50716b8a86477f40ff765bf480", null ],
-      [ "NESectionFlags", "namespacestringify_1_1_sg_asm_n_e_section_table_entry.html#a946905ab78d3f3e70ef3186ffb31e348", null ]
-    ] ],
-    [ "SgAsmNullInstruction", "namespacestringify_1_1_sg_asm_null_instruction.html", [
-      [ "Kind", "namespacestringify_1_1_sg_asm_null_instruction.html#a7f0c71558b8cd7a11f5ffc281f8c5e3a", null ],
-      [ "Kind", "namespacestringify_1_1_sg_asm_null_instruction.html#a65408512788898062af3c3cdba441d69", null ],
-      [ "Kind", "namespacestringify_1_1_sg_asm_null_instruction.html#acd9337af650f500d0fc21ce9570b1ced", null ]
-    ] ],
-    [ "SgAsmOp", "namespacestringify_1_1_sg_asm_op.html", [
-      [ "asm_operand_constraint_enum", "namespacestringify_1_1_sg_asm_op.html#abb9c0398f576dd085fec8aae9e5d1451", null ],
-      [ "asm_operand_constraint_enum", "namespacestringify_1_1_sg_asm_op.html#a80bd2445aac89fb261b721a3f3db0fd0", null ],
-      [ "asm_operand_constraint_enum", "namespacestringify_1_1_sg_asm_op.html#a66cb2ec0b450145aefb7c1d1c33d94b6", null ],
-      [ "asm_operand_modifier_enum", "namespacestringify_1_1_sg_asm_op.html#ab58c2ef45988778d6d75e3d8b6b8b3fe", null ],
-      [ "asm_operand_modifier_enum", "namespacestringify_1_1_sg_asm_op.html#aaf953273c09b5985878b5c664acb3ccc", null ],
-      [ "asm_operand_modifier_enum", "namespacestringify_1_1_sg_asm_op.html#ab47e78ab4b75a9a500423c810797dfee", null ]
-    ] ],
-    [ "SgAsmPEFileHeader", "namespacestringify_1_1_sg_asm_p_e_file_header.html", [
-      [ "DLLFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a461db3c10d5762da0fa8e366ac8de053", null ],
-      [ "DLLFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#accd9505dd9f5c280c4cf0edf2ad7bfff", null ],
-      [ "DLLFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#ae9f6919902189921928b069fbedd6294", null ],
-      [ "HeaderFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a49d79e59b6982aa74c219da517300ae9", null ],
-      [ "HeaderFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a1a6033333e4c9810caed64d161a0713e", null ],
-      [ "HeaderFlags", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a8d378c1e0a8eaf765ca1ffcd78f6bf9d", null ],
-      [ "PairPurpose", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a005f04a1abef40425113ff84005d5602", null ],
-      [ "PairPurpose", "namespacestringify_1_1_sg_asm_p_e_file_header.html#ae56025441236ff284bf36fa987084826", null ],
-      [ "PairPurpose", "namespacestringify_1_1_sg_asm_p_e_file_header.html#abd3b9cbc262bdb5935733b7b3e0913e3", null ],
-      [ "Subsystem", "namespacestringify_1_1_sg_asm_p_e_file_header.html#a4dd7a120f2b0741be0819fe1b88a0288", null ],
-      [ "Subsystem", "namespacestringify_1_1_sg_asm_p_e_file_header.html#ad690ad0670c5d2395cf64252507be2bb", null ],
-      [ "Subsystem", "namespacestringify_1_1_sg_asm_p_e_file_header.html#aed3ee09e699ca2c89f85e6e2b5a37c83", null ]
-    ] ],
-    [ "SgAsmPESectionTableEntry", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html", [
-      [ "PESectionFlags", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html#a653aaf326ff93c1f6fad43d6cd686af3", null ],
-      [ "PESectionFlags", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html#aac097bdc12af6a51104de046d129be81", null ],
-      [ "PESectionFlags", "namespacestringify_1_1_sg_asm_p_e_section_table_entry.html#a720e6cb2277999f155745ee61cdb1351", null ]
-    ] ],
-    [ "SgAsmRiscOperation", "namespacestringify_1_1_sg_asm_risc_operation.html", [
-      [ "RiscOperator", "namespacestringify_1_1_sg_asm_risc_operation.html#a1af07a9513768ac9642755927da92ecb", null ],
-      [ "RiscOperator", "namespacestringify_1_1_sg_asm_risc_operation.html#a31df84d0fb34ebb7f4a8d03791089d69", null ],
-      [ "RiscOperator", "namespacestringify_1_1_sg_asm_risc_operation.html#a1c641701f43c21cd96e2e3a64f75d255", null ]
-    ] ],
-    [ "SgAttributeSpecificationStatement", "namespacestringify_1_1_sg_attribute_specification_statement.html", [
-      [ "attribute_spec_enum", "namespacestringify_1_1_sg_attribute_specification_statement.html#a3dd4ba92f50e6b10650484fdc0e12d21", null ],
-      [ "attribute_spec_enum", "namespacestringify_1_1_sg_attribute_specification_statement.html#aac764972d362392ac0df8309d38a0bae", null ],
-      [ "attribute_spec_enum", "namespacestringify_1_1_sg_attribute_specification_statement.html#ab090c96c095dea30fbd9c5b416126b13", null ]
-    ] ],
-    [ "SgBaseClassModifier", "namespacestringify_1_1_sg_base_class_modifier.html", [
-      [ "baseclass_modifier_enum", "namespacestringify_1_1_sg_base_class_modifier.html#a4a64bb40ad20556e6f77e2221458ca34", null ],
-      [ "baseclass_modifier_enum", "namespacestringify_1_1_sg_base_class_modifier.html#a695541710425a0854eb674422665c831", null ],
-      [ "baseclass_modifier_enum", "namespacestringify_1_1_sg_base_class_modifier.html#aa054918340ddbd6e960eca6a6ae14396", null ]
-    ] ],
-    [ "SgCastExp", "namespacestringify_1_1_sg_cast_exp.html", [
-      [ "cast_type_enum", "namespacestringify_1_1_sg_cast_exp.html#ad96b816231a74d615d5438cf8f553fe5", null ],
-      [ "cast_type_enum", "namespacestringify_1_1_sg_cast_exp.html#a924f93a90d7b25bab21e90fa82ff24aa", null ],
-      [ "cast_type_enum", "namespacestringify_1_1_sg_cast_exp.html#a9f2bb1a595bed4fa62a56fb97d52834e", null ]
-    ] ],
-    [ "SgClassDeclaration", "namespacestringify_1_1_sg_class_declaration.html", [
-      [ "class_types", "namespacestringify_1_1_sg_class_declaration.html#a3ee5cbdfeb839de4cdda64bfbe2edf91", null ],
-      [ "class_types", "namespacestringify_1_1_sg_class_declaration.html#a84e5fd7a70fc5aac6ce979f8cda9574a", null ],
-      [ "class_types", "namespacestringify_1_1_sg_class_declaration.html#ae9123ac42a4ec88c352d5f2a72cdc769", null ]
-    ] ],
-    [ "SgConstVolatileModifier", "namespacestringify_1_1_sg_const_volatile_modifier.html", [
-      [ "cv_modifier_enum", "namespacestringify_1_1_sg_const_volatile_modifier.html#a6f90ce87b0b3c08bbe7eda206ae39f35", null ],
-      [ "cv_modifier_enum", "namespacestringify_1_1_sg_const_volatile_modifier.html#a12df03f97daa5304b7d97f899d7df0d6", null ],
-      [ "cv_modifier_enum", "namespacestringify_1_1_sg_const_volatile_modifier.html#abee36dec6fab36375e384f3b3d0ab85c", null ]
-    ] ],
-    [ "SgDataStatementValue", "namespacestringify_1_1_sg_data_statement_value.html", [
-      [ "data_statement_value_enum", "namespacestringify_1_1_sg_data_statement_value.html#adc5ebb402d12765ec63bf88852f1c52b", null ],
-      [ "data_statement_value_enum", "namespacestringify_1_1_sg_data_statement_value.html#aea608d20c142698a68f3c979d89b45aa", null ],
-      [ "data_statement_value_enum", "namespacestringify_1_1_sg_data_statement_value.html#aa4ccb75da1a6928177a6461c2ac89a35", null ]
-    ] ],
-    [ "SgDeclarationModifier", "namespacestringify_1_1_sg_declaration_modifier.html", [
-      [ "declaration_modifier_enum", "namespacestringify_1_1_sg_declaration_modifier.html#a847c40da7e91e1f531db3c74b4abf147", null ],
-      [ "declaration_modifier_enum", "namespacestringify_1_1_sg_declaration_modifier.html#ae616194b1db2050dbb0706502639cc62", null ],
-      [ "declaration_modifier_enum", "namespacestringify_1_1_sg_declaration_modifier.html#ad1007ac24962e9f7028e4b38fe911d71", null ],
-      [ "gnu_declaration_visability_enum", "namespacestringify_1_1_sg_declaration_modifier.html#afaff02c8371463a06460f7bedfa98b00", null ],
-      [ "gnu_declaration_visability_enum", "namespacestringify_1_1_sg_declaration_modifier.html#af39a72042268f6780e22f39a09608eda", null ],
-      [ "gnu_declaration_visability_enum", "namespacestringify_1_1_sg_declaration_modifier.html#aaffdaabd85fc13850e00b34112b624cf", null ]
-    ] ],
-    [ "SgDeclarationStatement", "namespacestringify_1_1_sg_declaration_statement.html", [
-      [ "gnu_extension_visability_attribute_enum", "namespacestringify_1_1_sg_declaration_statement.html#a2aee7e33bdbed978b06e728a4d045c9d", null ],
-      [ "gnu_extension_visability_attribute_enum", "namespacestringify_1_1_sg_declaration_statement.html#a81eea601177cc5c2eeffca222288d4d2", null ],
-      [ "gnu_extension_visability_attribute_enum", "namespacestringify_1_1_sg_declaration_statement.html#ab5e2ac59a0a5cb762c668103429ccfd5", null ],
-      [ "template_specialization_enum", "namespacestringify_1_1_sg_declaration_statement.html#a9ff89c7ba197dedc6413a066436666f3", null ],
-      [ "template_specialization_enum", "namespacestringify_1_1_sg_declaration_statement.html#a17903391f1f11016763bcf5746df9f92", null ],
-      [ "template_specialization_enum", "namespacestringify_1_1_sg_declaration_statement.html#a2becb2aa77291af300ee1e76a715dc27", null ]
-    ] ],
-    [ "SgElaboratedTypeModifier", "namespacestringify_1_1_sg_elaborated_type_modifier.html", [
-      [ "elaborated_type_modifier_enum", "namespacestringify_1_1_sg_elaborated_type_modifier.html#a8547d28d72dc8a5ae16955083843032a", null ],
-      [ "elaborated_type_modifier_enum", "namespacestringify_1_1_sg_elaborated_type_modifier.html#ac37e481c3a26019e6582ea4d4a363264", null ],
-      [ "elaborated_type_modifier_enum", "namespacestringify_1_1_sg_elaborated_type_modifier.html#affea4fca9d28d8b047424b5b3e59b398", null ]
-    ] ],
-    [ "SgFile", "namespacestringify_1_1_sg_file.html", [
-      [ "languageOption_enum", "namespacestringify_1_1_sg_file.html#a08e8fa58909410b57a622ce9094e002f", null ],
-      [ "languageOption_enum", "namespacestringify_1_1_sg_file.html#ae2af5b95cc7e57dc3f045377ee0f2260", null ],
-      [ "languageOption_enum", "namespacestringify_1_1_sg_file.html#a4330e11f0199d383ae3f924bf8257f6c", null ],
-      [ "outputFormatOption_enum", "namespacestringify_1_1_sg_file.html#ac323b8b5f8a90f5ca7cb7bf4afa332f8", null ],
-      [ "outputFormatOption_enum", "namespacestringify_1_1_sg_file.html#ae9460a24440f0d1a4285e21052822e64", null ],
-      [ "outputFormatOption_enum", "namespacestringify_1_1_sg_file.html#ad052a8079419be19778a801ab9b44014", null ],
-      [ "standard_enum", "namespacestringify_1_1_sg_file.html#af45087e704a9b8bb485355d0222ba15e", null ],
-      [ "standard_enum", "namespacestringify_1_1_sg_file.html#a9a47b9d0446571e7b833c4cc47fa9580", null ],
-      [ "standard_enum", "namespacestringify_1_1_sg_file.html#a351cdb1cc4565a4e74039d8945287f06", null ]
-    ] ],
-    [ "SgForAllStatement", "namespacestringify_1_1_sg_for_all_statement.html", [
-      [ "forall_statement_kind_enum", "namespacestringify_1_1_sg_for_all_statement.html#a77c6f90d382ecd65f6e0efe67229e38a", null ],
-      [ "forall_statement_kind_enum", "namespacestringify_1_1_sg_for_all_statement.html#aeb65daaaa265aa757800ea27abafd141", null ],
-      [ "forall_statement_kind_enum", "namespacestringify_1_1_sg_for_all_statement.html#ab4b01121f2c4f4f3b6a05a35ddbed5a5", null ]
-    ] ],
-    [ "SgFunctionModifier", "namespacestringify_1_1_sg_function_modifier.html", [
-      [ "function_modifier_enum", "namespacestringify_1_1_sg_function_modifier.html#a4c83c1d641e24d29bfbb98f21ccb4556", null ],
-      [ "function_modifier_enum", "namespacestringify_1_1_sg_function_modifier.html#a8d330046ef5efe9a7616ded3d349c107", null ],
-      [ "function_modifier_enum", "namespacestringify_1_1_sg_function_modifier.html#ac2a0d6b66ca9b41f35650f5af7894dfb", null ]
-    ] ],
-    [ "SgGraph", "namespacestringify_1_1_sg_graph.html", [
-      [ "GraphEdgeType", "namespacestringify_1_1_sg_graph.html#a85772b7fd218cb33c2a8ec682d912a06", null ],
-      [ "GraphEdgeType", "namespacestringify_1_1_sg_graph.html#ad0e9dff0268e70534acb599611b1456d", null ],
-      [ "GraphEdgeType", "namespacestringify_1_1_sg_graph.html#ae813960ca1023ab28b9f6e749d27a718", null ],
-      [ "GraphProperties", "namespacestringify_1_1_sg_graph.html#ab4ec20ccf289f80de6ac5fc75228fd06", null ],
-      [ "GraphProperties", "namespacestringify_1_1_sg_graph.html#a31fedf2883937ad70aca260b19ebc464", null ],
-      [ "GraphProperties", "namespacestringify_1_1_sg_graph.html#ac1cfb201caa9d1055c23ed2d40601820", null ]
-    ] ],
-    [ "SgImageControlStatement", "namespacestringify_1_1_sg_image_control_statement.html", [
-      [ "image_control_statement_enum", "namespacestringify_1_1_sg_image_control_statement.html#ad227451dae377f547bd3c433c156dc38", null ],
-      [ "image_control_statement_enum", "namespacestringify_1_1_sg_image_control_statement.html#a9fda7d4949168b0e45d29f96c22e476e", null ],
-      [ "image_control_statement_enum", "namespacestringify_1_1_sg_image_control_statement.html#a4721fb323f16fe276af5516b3792f58e", null ]
-    ] ],
-    [ "SgImplicitStatement", "namespacestringify_1_1_sg_implicit_statement.html", [
-      [ "implicit_spec_enum", "namespacestringify_1_1_sg_implicit_statement.html#a3c557b7ddf19cd1f9c50c6c10fdb31d5", null ],
-      [ "implicit_spec_enum", "namespacestringify_1_1_sg_implicit_statement.html#aaa5ba8d9f39313a93b3bc2059e3a9ec5", null ],
-      [ "implicit_spec_enum", "namespacestringify_1_1_sg_implicit_statement.html#a75061842641d1def9b6ddef6fb715ef0", null ]
-    ] ],
-    [ "SgInitializedName", "namespacestringify_1_1_sg_initialized_name.html", [
-      [ "asm_register_name_enum", "namespacestringify_1_1_sg_initialized_name.html#a5b1322998c1b62331ea0e9ba61c0a6fa", null ],
-      [ "asm_register_name_enum", "namespacestringify_1_1_sg_initialized_name.html#a1bd679bd8b407375e287bb5545e07525", null ],
-      [ "asm_register_name_enum", "namespacestringify_1_1_sg_initialized_name.html#a063dfd2d64a1212b887e7e077f948bf7", null ],
-      [ "excess_specifier_enum", "namespacestringify_1_1_sg_initialized_name.html#a89d858b1fb91ca5726b93b94bbcb7563", null ],
-      [ "excess_specifier_enum", "namespacestringify_1_1_sg_initialized_name.html#a25789429cb522f0d03fbc02293ff4718", null ],
-      [ "excess_specifier_enum", "namespacestringify_1_1_sg_initialized_name.html#ac91ce806b4d2794c48b65e825c882171", null ],
-      [ "gnu_variable_attribute_enum", "namespacestringify_1_1_sg_initialized_name.html#a4cee4f8f41e1cb913b6214d5c04d7d9f", null ],
-      [ "gnu_variable_attribute_enum", "namespacestringify_1_1_sg_initialized_name.html#a3ea028e94ebf66e13c720d9fa944222a", null ],
-      [ "gnu_variable_attribute_enum", "namespacestringify_1_1_sg_initialized_name.html#a15b77b401c842ff3bba282c4f0528249", null ],
-      [ "preinitialization_enum", "namespacestringify_1_1_sg_initialized_name.html#a1155445882b30f79a6766d211c239aa2", null ],
-      [ "preinitialization_enum", "namespacestringify_1_1_sg_initialized_name.html#a8a384a5e7c2467147960a3668cb0219c", null ],
-      [ "preinitialization_enum", "namespacestringify_1_1_sg_initialized_name.html#a7bb989752e7c2464206267d2388cf9c1", null ]
-    ] ],
-    [ "SgInterfaceStatement", "namespacestringify_1_1_sg_interface_statement.html", [
-      [ "generic_spec_enum", "namespacestringify_1_1_sg_interface_statement.html#a0750d4260c968f114a80882a8511cc53", null ],
-      [ "generic_spec_enum", "namespacestringify_1_1_sg_interface_statement.html#a85bbe1b5acf34c5f460d2fe3b395ba1a", null ],
-      [ "generic_spec_enum", "namespacestringify_1_1_sg_interface_statement.html#a3d5a1b6db7b3c316d59a8bc79038def0", null ]
-    ] ],
-    [ "SgIOStatement", "namespacestringify_1_1_sg_i_o_statement.html", [
-      [ "io_statement_enum", "namespacestringify_1_1_sg_i_o_statement.html#a49717bf753ac8101e214c0e49dbdda26", null ],
-      [ "io_statement_enum", "namespacestringify_1_1_sg_i_o_statement.html#a14c7d4219e255313425997c1dcc77c9b", null ],
-      [ "io_statement_enum", "namespacestringify_1_1_sg_i_o_statement.html#a090230ac976afef44d8e87c9178f61b2", null ]
-    ] ],
-    [ "SgJovialDirectiveStatement", "namespacestringify_1_1_sg_jovial_directive_statement.html", [
-      [ "directive_types", "namespacestringify_1_1_sg_jovial_directive_statement.html#af9f2a39839097aaeed046046e07680ed", null ],
-      [ "directive_types", "namespacestringify_1_1_sg_jovial_directive_statement.html#a9258acc16f28214fceb5c171bb8594ff", null ],
-      [ "directive_types", "namespacestringify_1_1_sg_jovial_directive_statement.html#af8c7ff61feb56f724240704a00f7d78a", null ]
-    ] ],
-    [ "SgJovialForThenStatement", "namespacestringify_1_1_sg_jovial_for_then_statement.html", [
-      [ "loop_statement_type_enum", "namespacestringify_1_1_sg_jovial_for_then_statement.html#a3f5f629293d28c8c1857f35d527e1f23", null ],
-      [ "loop_statement_type_enum", "namespacestringify_1_1_sg_jovial_for_then_statement.html#a2fb4e3babbf4783e9cac6cfcadbee7b0", null ],
-      [ "loop_statement_type_enum", "namespacestringify_1_1_sg_jovial_for_then_statement.html#a4c2707410110c5760732c5de246d6261", null ]
-    ] ],
-    [ "SgJovialLabelDeclaration", "namespacestringify_1_1_sg_jovial_label_declaration.html", [
-      [ "label_type_enum", "namespacestringify_1_1_sg_jovial_label_declaration.html#a43cbe521f8d6c72e1c0a5a850750c6f7", null ],
-      [ "label_type_enum", "namespacestringify_1_1_sg_jovial_label_declaration.html#a331c12c1aa41669633f75769289d1b51", null ],
-      [ "label_type_enum", "namespacestringify_1_1_sg_jovial_label_declaration.html#a8a0649d5bbcf4e876efe623a6018cd58", null ]
-    ] ],
-    [ "SgJovialTableStatement", "namespacestringify_1_1_sg_jovial_table_statement.html", [
-      [ "WordsPerEntry", "namespacestringify_1_1_sg_jovial_table_statement.html#ad9f3bef67fb3b0d9b630e89e2b5b4eda", null ],
-      [ "WordsPerEntry", "namespacestringify_1_1_sg_jovial_table_statement.html#a371665575d1b87499586fed4232ed305", null ],
-      [ "WordsPerEntry", "namespacestringify_1_1_sg_jovial_table_statement.html#ad8624cbcd64d05f211b73ac513c103c5", null ]
-    ] ],
-    [ "SgJovialTableType", "namespacestringify_1_1_sg_jovial_table_type.html", [
-      [ "StructureSpecifier", "namespacestringify_1_1_sg_jovial_table_type.html#a05c356069a7a4c8808e42cbf21f6580a", null ],
-      [ "StructureSpecifier", "namespacestringify_1_1_sg_jovial_table_type.html#a1cc50b87d3d67671ba43a6b70c50c9db", null ],
-      [ "StructureSpecifier", "namespacestringify_1_1_sg_jovial_table_type.html#a4031786c7d67a5d1d9f5f89187705f4e", null ]
-    ] ],
-    [ "SgLabelStatement", "namespacestringify_1_1_sg_label_statement.html", [
-      [ "label_type_enum", "namespacestringify_1_1_sg_label_statement.html#a94212c1f4c215b83ccbeb1c4d5b9225b", null ],
-      [ "label_type_enum", "namespacestringify_1_1_sg_label_statement.html#abca8dc47a9bb45306a387cc18d5e10a6", null ],
-      [ "label_type_enum", "namespacestringify_1_1_sg_label_statement.html#af9b63284fac5b9d9fe5d1c4188366339", null ]
-    ] ],
-    [ "SgLabelSymbol", "namespacestringify_1_1_sg_label_symbol.html", [
-      [ "label_type_enum", "namespacestringify_1_1_sg_label_symbol.html#aa86cb800a2b8d29213e9c92256909057", null ],
-      [ "label_type_enum", "namespacestringify_1_1_sg_label_symbol.html#ab122d70943d22d1a02a35d2761763cc5", null ],
-      [ "label_type_enum", "namespacestringify_1_1_sg_label_symbol.html#acbab50ef0500a0713bbcfe8f5356a1a6", null ]
-    ] ],
-    [ "SgLinkageModifier", "namespacestringify_1_1_sg_linkage_modifier.html", [
-      [ "linkage_modifier_enum", "namespacestringify_1_1_sg_linkage_modifier.html#a5822c9d289951a989387b3a4be6912ed", null ],
-      [ "linkage_modifier_enum", "namespacestringify_1_1_sg_linkage_modifier.html#a042ec81addd9e63eaf3bc247f820f591", null ],
-      [ "linkage_modifier_enum", "namespacestringify_1_1_sg_linkage_modifier.html#a680faf6470dda9beca8d620bc17030b8", null ]
-    ] ],
-    [ "SgMemberFunctionType", "namespacestringify_1_1_sg_member_function_type.html", [
-      [ "mfunc_specifier_enum", "namespacestringify_1_1_sg_member_function_type.html#ac607f1555b851f5baa3f3e0c70d2a1cb", null ],
-      [ "mfunc_specifier_enum", "namespacestringify_1_1_sg_member_function_type.html#a74498a06965ba55d93b2384ca79a8b41", null ],
-      [ "mfunc_specifier_enum", "namespacestringify_1_1_sg_member_function_type.html#a932aa26632e699f32d4aaad57e24d136", null ]
-    ] ],
-    [ "SgNodeHelper", "namespacestringify_1_1_sg_node_helper.html", "namespacestringify_1_1_sg_node_helper" ],
-    [ "SgOmpClause", "namespacestringify_1_1_sg_omp_clause.html", [
-      [ "omp_atomic_clause_enum", "namespacestringify_1_1_sg_omp_clause.html#a74c0a4c44227364b42b9190c336c9d5f", null ],
-      [ "omp_atomic_clause_enum", "namespacestringify_1_1_sg_omp_clause.html#a050e87b6f056179f015c43ecb1ecfdfe", null ],
-      [ "omp_atomic_clause_enum", "namespacestringify_1_1_sg_omp_clause.html#a95422e1059d3ef0983b745159a06df42", null ],
-      [ "omp_default_option_enum", "namespacestringify_1_1_sg_omp_clause.html#ac30d81b35e55b302adefbb29ff2beeba", null ],
-      [ "omp_default_option_enum", "namespacestringify_1_1_sg_omp_clause.html#a2ccf4b8d65945eb47301f68894ce642a", null ],
-      [ "omp_default_option_enum", "namespacestringify_1_1_sg_omp_clause.html#a909701dabc42db5eecb59008925a2548", null ],
-      [ "omp_dependence_type_enum", "namespacestringify_1_1_sg_omp_clause.html#a6cf595733a9bc1688e3bd22027a6d390", null ],
-      [ "omp_dependence_type_enum", "namespacestringify_1_1_sg_omp_clause.html#aeebc63e29d573683e1b868ba1dfbdaba", null ],
-      [ "omp_dependence_type_enum", "namespacestringify_1_1_sg_omp_clause.html#a833974930459e4a4084e0cfd1ea765a1", null ],
-      [ "omp_map_dist_data_enum", "namespacestringify_1_1_sg_omp_clause.html#aead5de61049edeb53b0a50d45910c499", null ],
-      [ "omp_map_dist_data_enum", "namespacestringify_1_1_sg_omp_clause.html#a2d86ea007fbd8ee63766ea8da02e4293", null ],
-      [ "omp_map_dist_data_enum", "namespacestringify_1_1_sg_omp_clause.html#a84bf71b8efd90cb1c2cd084f236195a1", null ],
-      [ "omp_map_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#abd17454dca820ddbd6d33f4b843c4693", null ],
-      [ "omp_map_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a8221a3e167bbee9dd9d7a371a9bac632", null ],
-      [ "omp_map_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a78b83cc47d0caeadac78897cf075214a", null ],
-      [ "omp_proc_bind_policy_enum", "namespacestringify_1_1_sg_omp_clause.html#acbf0712785ef3d465479cc1da6eaf8ff", null ],
-      [ "omp_proc_bind_policy_enum", "namespacestringify_1_1_sg_omp_clause.html#a27031fed3dc45639306e59a45b8a493a", null ],
-      [ "omp_proc_bind_policy_enum", "namespacestringify_1_1_sg_omp_clause.html#afa8130fc267e9143ccc24f758b0225cb", null ],
-      [ "omp_reduction_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a0d511edec07581f1eaefc7e01434435e", null ],
-      [ "omp_reduction_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a977d97ddf88b79b6e52b1d9e7a97cd3a", null ],
-      [ "omp_reduction_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#abb389f25126b44b9843896b1fd4a136d", null ],
-      [ "omp_schedule_kind_enum", "namespacestringify_1_1_sg_omp_clause.html#a15ca6b1e10dbf80b867b2fa2bf62edef", null ],
-      [ "omp_schedule_kind_enum", "namespacestringify_1_1_sg_omp_clause.html#a8d648deac2064636f8e675a2edb28e69", null ],
-      [ "omp_schedule_kind_enum", "namespacestringify_1_1_sg_omp_clause.html#a1e09e2b5c74df194f686f745b363f9ea", null ]
-    ] ],
-    [ "SgOpenclAccessModeModifier", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html", [
-      [ "access_mode_modifier_enum", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html#ad2798610d1088ed883d399f5c9501b87", null ],
-      [ "access_mode_modifier_enum", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html#a896acd514391e2e57ff7b2878d5c3fc9", null ],
-      [ "access_mode_modifier_enum", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html#a42ac10bb55ab325985790f2769b65924", null ]
-    ] ],
-    [ "SgProcedureHeaderStatement", "namespacestringify_1_1_sg_procedure_header_statement.html", [
-      [ "subprogram_kind_enum", "namespacestringify_1_1_sg_procedure_header_statement.html#acd895983a50bb81e41a2d8e5b9a95337", null ],
-      [ "subprogram_kind_enum", "namespacestringify_1_1_sg_procedure_header_statement.html#ab7a9cde7f0a4679f0f1d3985fa752040", null ],
-      [ "subprogram_kind_enum", "namespacestringify_1_1_sg_procedure_header_statement.html#a11c24e133a0b1e7a5a43c16894ddfb92", null ]
-    ] ],
-    [ "SgProcessControlStatement", "namespacestringify_1_1_sg_process_control_statement.html", [
-      [ "control_enum", "namespacestringify_1_1_sg_process_control_statement.html#ac55d947f054905b2b4edf2d98920a92c", null ],
-      [ "control_enum", "namespacestringify_1_1_sg_process_control_statement.html#a1dd6fbfd04c76d15338c040ff54d86ea", null ],
-      [ "control_enum", "namespacestringify_1_1_sg_process_control_statement.html#a2a2c15b4c6149cf35f9e8bd73a298ace", null ]
-    ] ],
-    [ "SgProject", "namespacestringify_1_1_sg_project.html", [
-      [ "template_instantiation_enum", "namespacestringify_1_1_sg_project.html#a8054eca73451b7738bd9db8e221ef4e6", null ],
-      [ "template_instantiation_enum", "namespacestringify_1_1_sg_project.html#a5a69b9f2857a1b47b2699f6fe94a9297", null ],
-      [ "template_instantiation_enum", "namespacestringify_1_1_sg_project.html#a77d0efee93aafe0a80752d4d602970cd", null ]
-    ] ],
-    [ "SgSpecialFunctionModifier", "namespacestringify_1_1_sg_special_function_modifier.html", [
-      [ "special_function_modifier_enum", "namespacestringify_1_1_sg_special_function_modifier.html#ad4274c3f4a6b122501cb06f01c0a9e03", null ],
-      [ "special_function_modifier_enum", "namespacestringify_1_1_sg_special_function_modifier.html#ad2b0cc91b4c2ff5ba53b19360f349dc8", null ],
-      [ "special_function_modifier_enum", "namespacestringify_1_1_sg_special_function_modifier.html#ad13710ffa93238f260a559fbaa6ed7f4", null ]
-    ] ],
-    [ "SgStorageModifier", "namespacestringify_1_1_sg_storage_modifier.html", [
-      [ "storage_modifier_enum", "namespacestringify_1_1_sg_storage_modifier.html#a42ce8971b3dc4ead0da7e1a9907faa63", null ],
-      [ "storage_modifier_enum", "namespacestringify_1_1_sg_storage_modifier.html#afd255f361b97d0e4d08fa95856bbc9b7", null ],
-      [ "storage_modifier_enum", "namespacestringify_1_1_sg_storage_modifier.html#af3c29b927019270c9db9c9e355d0f9c6", null ]
-    ] ],
-    [ "SgStructureModifier", "namespacestringify_1_1_sg_structure_modifier.html", [
-      [ "jovial_structure_modifier_enum", "namespacestringify_1_1_sg_structure_modifier.html#a17cb0ff98e79263070a4abdfa8f45785", null ],
-      [ "jovial_structure_modifier_enum", "namespacestringify_1_1_sg_structure_modifier.html#a75fd96cb949edc29b61eb39a3cf3d6c9", null ],
-      [ "jovial_structure_modifier_enum", "namespacestringify_1_1_sg_structure_modifier.html#ae1dc0e11dbe2253a209c16bbc6d4034d", null ]
-    ] ],
-    [ "SgTemplateArgument", "namespacestringify_1_1_sg_template_argument.html", [
-      [ "template_argument_enum", "namespacestringify_1_1_sg_template_argument.html#a642aac5a04b04e7c849dc38b9498d3e0", null ],
-      [ "template_argument_enum", "namespacestringify_1_1_sg_template_argument.html#a1571b07a5ff4600be87dc63bbe159205", null ],
-      [ "template_argument_enum", "namespacestringify_1_1_sg_template_argument.html#a6ca3555c184452b8059778b23dc7cf2f", null ]
-    ] ],
-    [ "SgTemplateClassDeclaration", "namespacestringify_1_1_sg_template_class_declaration.html", [
-      [ "class_types", "namespacestringify_1_1_sg_template_class_declaration.html#a5cbc75ada5b19ffc733ecaaf1ff1804e", null ],
-      [ "class_types", "namespacestringify_1_1_sg_template_class_declaration.html#ae89ccea2cf89807103fbb41503cfc956", null ],
-      [ "class_types", "namespacestringify_1_1_sg_template_class_declaration.html#a4de4a212c354bc710ec81527e72bb58d", null ]
-    ] ],
-    [ "SgTemplateDeclaration", "namespacestringify_1_1_sg_template_declaration.html", [
-      [ "template_type_enum", "namespacestringify_1_1_sg_template_declaration.html#a2b1c8a0da4e0ce31eb83f3da73d64ed9", null ],
-      [ "template_type_enum", "namespacestringify_1_1_sg_template_declaration.html#a08415c566e7e6e42cc9da4c1fc3533e9", null ],
-      [ "template_type_enum", "namespacestringify_1_1_sg_template_declaration.html#a97c87e02e56a6240b82a57e99bd099bd", null ]
-    ] ],
-    [ "SgTemplateParameter", "namespacestringify_1_1_sg_template_parameter.html", [
-      [ "template_parameter_enum", "namespacestringify_1_1_sg_template_parameter.html#a5d83dcb458e5716587d9b446c500ca62", null ],
-      [ "template_parameter_enum", "namespacestringify_1_1_sg_template_parameter.html#af77e5733da6892a541feca5e1403f3fd", null ],
-      [ "template_parameter_enum", "namespacestringify_1_1_sg_template_parameter.html#ad05c7f0d6c186ea46701bc8af2ce2d3e", null ]
-    ] ],
-    [ "SgThrowOp", "namespacestringify_1_1_sg_throw_op.html", [
-      [ "e_throw_kind", "namespacestringify_1_1_sg_throw_op.html#a52bac529f28b6eac40799df2804c3730", null ],
-      [ "e_throw_kind", "namespacestringify_1_1_sg_throw_op.html#a1b1b8b417e70e08dba827fb5ded2dc1a", null ],
-      [ "e_throw_kind", "namespacestringify_1_1_sg_throw_op.html#a4c4239c80ac62d2f57438f9966dacff6", null ]
-    ] ],
-    [ "SgToken", "namespacestringify_1_1_sg_token.html", [
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_sg_token.html#a4323b8d18d8bc77d72556329ad752b9c", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_sg_token.html#ad3e15202324a016b6c0b51ebc0846164", null ],
-      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_sg_token.html#ac5dc240e00a64de07182fa2873536e10", null ],
-      [ "ROSE_C_CXX_Operators", "namespacestringify_1_1_sg_token.html#a0e6486e2633844f6a56da7241992d329", null ],
-      [ "ROSE_C_CXX_Operators", "namespacestringify_1_1_sg_token.html#ad650e46682fb9db8161df27744238585", null ],
-      [ "ROSE_C_CXX_Operators", "namespacestringify_1_1_sg_token.html#a90fdd0d64396e97fb070d39eaef15135", null ],
-      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_sg_token.html#a7c7c395cbe36ff813ecccfd74a390ae9", null ],
-      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_sg_token.html#a26c0cf7ffaeb0f884911fa13694dbabf", null ],
-      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_sg_token.html#ac41cf3cd0f5f9eab76442fb99ffbde07", null ],
-      [ "ROSE_Fortran_Keywords", "namespacestringify_1_1_sg_token.html#afa10c744b5cfcd66c6ed9e696296486a", null ],
-      [ "ROSE_Fortran_Keywords", "namespacestringify_1_1_sg_token.html#a231a5d358ded9f6cf58997d0f6dd5cb8", null ],
-      [ "ROSE_Fortran_Keywords", "namespacestringify_1_1_sg_token.html#a0b2d2e0d305c14ed6aa954207a4179b5", null ],
-      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_sg_token.html#afb1dbbe00c98378afab5b1945bfc8688", null ],
-      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_sg_token.html#aa08d2e723cfd8c52af6939c6f2f8d570", null ],
-      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_sg_token.html#a8a63d178446ffdc201b1bd27f7e9cd19", null ]
-    ] ],
-    [ "SgType", "namespacestringify_1_1_sg_type.html", [
-      [ "fortran_attribute_specifiers_enum", "namespacestringify_1_1_sg_type.html#a9e4f5b09b5ec3d6271dd820b1c8cb9a7", null ],
-      [ "fortran_attribute_specifiers_enum", "namespacestringify_1_1_sg_type.html#ae7a2494113e335a436a0ad4c206d784c", null ],
-      [ "fortran_attribute_specifiers_enum", "namespacestringify_1_1_sg_type.html#a1adbbe1da24b2f17243afc201c7f2a17", null ]
-    ] ],
-    [ "SgTypeModifier", "namespacestringify_1_1_sg_type_modifier.html", [
-      [ "gnu_extension_machine_mode_enum", "namespacestringify_1_1_sg_type_modifier.html#a3ab80af48fe9ff2d1d714a1d5b541507", null ],
-      [ "gnu_extension_machine_mode_enum", "namespacestringify_1_1_sg_type_modifier.html#a0790f7b748a7f24479a27342286036ad", null ],
-      [ "gnu_extension_machine_mode_enum", "namespacestringify_1_1_sg_type_modifier.html#acfcb49ace70d7a7337741df35c793477", null ],
-      [ "type_modifier_enum", "namespacestringify_1_1_sg_type_modifier.html#a26429e4184116d2ff7226cdcb94e3771", null ],
-      [ "type_modifier_enum", "namespacestringify_1_1_sg_type_modifier.html#a8d4cfa3ab85e5f64c1bcf8d621848a3a", null ],
-      [ "type_modifier_enum", "namespacestringify_1_1_sg_type_modifier.html#a7fd5811203eb15a347019bc95dd70b65", null ]
-    ] ],
-    [ "SgUnaryOp", "namespacestringify_1_1_sg_unary_op.html", [
-      [ "Sgop_mode", "namespacestringify_1_1_sg_unary_op.html#a0e3b4bc67dc76473d89726cb80b0677d", null ],
-      [ "Sgop_mode", "namespacestringify_1_1_sg_unary_op.html#acfdc05c4912f6984e05a2a757ad0682e", null ],
-      [ "Sgop_mode", "namespacestringify_1_1_sg_unary_op.html#ac40feae7a7be3c227bbe242fe135b9ce", null ]
-    ] ],
-    [ "SgUnparse__Info", "namespacestringify_1_1_sg_unparse_____info.html", [
-      [ "access_attr_enum", "namespacestringify_1_1_sg_unparse_____info.html#afa36b60539dd4b86e8aceb976281893c", null ],
-      [ "access_attr_enum", "namespacestringify_1_1_sg_unparse_____info.html#a9a8b241e230530eb6e2eb864ea7f805d", null ],
-      [ "access_attr_enum", "namespacestringify_1_1_sg_unparse_____info.html#acbd4e17b6e3047a66364a0daf762482d", null ],
-      [ "unparse_type_num", "namespacestringify_1_1_sg_unparse_____info.html#a830c5cd5cd044966112668dcdcc9414b", null ],
-      [ "unparse_type_num", "namespacestringify_1_1_sg_unparse_____info.html#a018063a8488aee9568834be747a40780", null ],
-      [ "unparse_type_num", "namespacestringify_1_1_sg_unparse_____info.html#ad5409626d920c0bdf9b6b6b8d8addc9a", null ]
-    ] ],
-    [ "SgUPC__AccessModifier", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html", [
-      [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html#ae12c54409634bd0026b86f103ed2be94", null ],
-      [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html#a81ca5f77cb39be90d99a543780f0c8d3", null ],
-      [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html#af255d00fa37dc79a4096b372de641a58", null ]
-    ] ],
-    [ "SgVariableDeclaration", "namespacestringify_1_1_sg_variable_declaration.html", [
-      [ "gnu_extension_declaration_attributes_enum", "namespacestringify_1_1_sg_variable_declaration.html#a807ab309aa37b5b154d25ca8975b6d6b", null ],
-      [ "gnu_extension_declaration_attributes_enum", "namespacestringify_1_1_sg_variable_declaration.html#a3eb1bc36cd1aab211cecaea400ad9392", null ],
-      [ "gnu_extension_declaration_attributes_enum", "namespacestringify_1_1_sg_variable_declaration.html#ae2c70193ee3fbd3cd0b6f74a2dcb4a24", null ]
-    ] ],
-    [ "ssa__unfiltered__cfg", "namespacestringify_1_1ssa____unfiltered____cfg.html", "namespacestringify_1_1ssa____unfiltered____cfg" ],
-    [ "TaintLattice", "namespacestringify_1_1_taint_lattice.html", [
-      [ "Vertex", "namespacestringify_1_1_taint_lattice.html#a12c71b765f6fb445ea6e4e6792ca274a", null ],
-      [ "Vertex", "namespacestringify_1_1_taint_lattice.html#a244e81fccf4d494a91dfb723c8b1faa2", null ],
-      [ "Vertex", "namespacestringify_1_1_taint_lattice.html#a2b708a39f89f44876ad4ea675ebfc9f6", null ]
-    ] ],
-    [ "Task", "namespacestringify_1_1_task.html", [
-      [ "State", "namespacestringify_1_1_task.html#a852a2b52e7729cf5def7fe309f34cd4d", null ],
-      [ "State", "namespacestringify_1_1_task.html#a66eafe30b7314b6e96da60040e246fa4", null ],
-      [ "State", "namespacestringify_1_1_task.html#a4fa226005fee52b1a1fae21d799055cd", null ]
-    ] ],
-    [ "TransformationSupport", "namespacestringify_1_1_transformation_support.html", [
-      [ "operatorCodeType", "namespacestringify_1_1_transformation_support.html#ac2021da7b75573d4fab4ef53fd99a3b1", null ],
-      [ "operatorCodeType", "namespacestringify_1_1_transformation_support.html#ac19c550fa142625cdb7a247c7eb6805b", null ],
-      [ "operatorCodeType", "namespacestringify_1_1_transformation_support.html#a477b392fe316290dc38f183e8db595cd", null ]
-    ] ],
     [ "UnparseLanguageIndependentConstructs", "namespacestringify_1_1_unparse_language_independent_constructs.html", [
       [ "token_sequence_position_enum_type", "namespacestringify_1_1_unparse_language_independent_constructs.html#a56fecd088ee04bb71cac75f8a70d7e65", null ],
       [ "token_sequence_position_enum_type", "namespacestringify_1_1_unparse_language_independent_constructs.html#ad5b4f6089542a60d0286bb29dbebfd47", null ],
@@ -1006,17 +526,11 @@ var namespacestringify =
       [ "unparsed_as_enum_type", "namespacestringify_1_1_unparse_language_independent_constructs.html#aa5efafbd9c067858bd49500b6fab370f", null ],
       [ "unparsed_as_enum_type", "namespacestringify_1_1_unparse_language_independent_constructs.html#a46db483ab172a48abe8807a23c5648c5", null ]
     ] ],
-    [ "VirtualBinCFG", "namespacestringify_1_1_virtual_bin_c_f_g.html", [
-      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_bin_c_f_g.html#a67022325fe452c0357d680b0b1083b02", null ],
-      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_bin_c_f_g.html#aa9318d95f4b7ad529d0f10bf8a3b0303", null ],
-      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_bin_c_f_g.html#af0330057434c8e87dfd8d745b305ff3b", null ]
+    [ "Jovial", "namespacestringify_1_1_jovial.html", [
+      [ "State", "namespacestringify_1_1_jovial.html#abe2250aa140603bb30e5c0f0ddee51d0", null ],
+      [ "State", "namespacestringify_1_1_jovial.html#a762ba652be2c2182cfbdbf0bcb44e7f2", null ],
+      [ "State", "namespacestringify_1_1_jovial.html#a40c6dc8a3321d7c303c84fcedaf1f05a", null ]
     ] ],
-    [ "VirtualCFG", "namespacestringify_1_1_virtual_c_f_g.html", [
-      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_c_f_g.html#a7178050a34348455f2fb9d973c48d7cb", null ],
-      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_c_f_g.html#a061a382569f260d018492b7a66cbfc36", null ],
-      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_c_f_g.html#a4512675712e0e463753da8bd28d86d69", null ]
-    ] ],
-    [ "ssa_unfiltered_cfg", "namespacestringify_1_1ssa__unfiltered__cfg.html", "namespacestringify_1_1ssa__unfiltered__cfg" ],
     [ "Jovial_ROSE_Translation", "namespacestringify_1_1_jovial___r_o_s_e___translation.html", [
       [ "ExpressionKind", "namespacestringify_1_1_jovial___r_o_s_e___translation.html#a16c7623bb39ef2616f04ceb8ba8d5dec", null ],
       [ "ExpressionKind", "namespacestringify_1_1_jovial___r_o_s_e___translation.html#ade138d6abca471d32ed55634399c8bc1", null ],
@@ -1036,6 +550,50 @@ var namespacestringify =
       [ "whitespace", "namespacestringify_1_1_r_o_s_e__token__ids.html#a9a0468542e5b20995074ba3b604c7b1c", null ],
       [ "whitespace", "namespacestringify_1_1_r_o_s_e__token__ids.html#a316e2e997d890493e92d7a3dc1f3b425", null ]
     ] ],
+    [ "VirtualBinCFG", "namespacestringify_1_1_virtual_bin_c_f_g.html", [
+      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_bin_c_f_g.html#a67022325fe452c0357d680b0b1083b02", null ],
+      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_bin_c_f_g.html#aa9318d95f4b7ad529d0f10bf8a3b0303", null ],
+      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_bin_c_f_g.html#af0330057434c8e87dfd8d745b305ff3b", null ]
+    ] ],
+    [ "VirtualCFG", "namespacestringify_1_1_virtual_c_f_g.html", [
+      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_c_f_g.html#a7178050a34348455f2fb9d973c48d7cb", null ],
+      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_c_f_g.html#a061a382569f260d018492b7a66cbfc36", null ],
+      [ "EdgeConditionKind", "namespacestringify_1_1_virtual_c_f_g.html#a4512675712e0e463753da8bd28d86d69", null ]
+    ] ],
+    [ "SageInterface", "namespacestringify_1_1_sage_interface.html", "namespacestringify_1_1_sage_interface" ],
+    [ "SageBuilder", "namespacestringify_1_1_sage_builder.html", [
+      [ "SourcePositionClassification", "namespacestringify_1_1_sage_builder.html#a1cb5e4a6f9f1afa49b7e11b50eb82d17", null ],
+      [ "SourcePositionClassification", "namespacestringify_1_1_sage_builder.html#a76eae837a84525d87b0a69a1be607722", null ],
+      [ "SourcePositionClassification", "namespacestringify_1_1_sage_builder.html#a4c89a09f569c34ab4f02d0b3351aee23", null ]
+    ] ],
+    [ "PreprocessingInfo", "namespacestringify_1_1_preprocessing_info.html", [
+      [ "DirectiveType", "namespacestringify_1_1_preprocessing_info.html#a33d6a29589ba52826b440c577882913e", null ],
+      [ "DirectiveType", "namespacestringify_1_1_preprocessing_info.html#a9a24b00b4a3c8c3219f2631cf865ff5a", null ],
+      [ "DirectiveType", "namespacestringify_1_1_preprocessing_info.html#a05ee5b0cfd81693679e986e16fdd686b", null ],
+      [ "RelativePositionType", "namespacestringify_1_1_preprocessing_info.html#a3d7cfccdaff820a27f87ca1ad2359914", null ],
+      [ "RelativePositionType", "namespacestringify_1_1_preprocessing_info.html#a0d2dec2ab19d208d84984466418825bb", null ],
+      [ "RelativePositionType", "namespacestringify_1_1_preprocessing_info.html#a3b626be98df6250b42d1c8bda795ac5c", null ]
+    ] ],
+    [ "ROSEAttributesList", "namespacestringify_1_1_r_o_s_e_attributes_list.html", [
+      [ "languageTypeEnum", "namespacestringify_1_1_r_o_s_e_attributes_list.html#adfa14194442f28ada2057a8a175f84e3", null ],
+      [ "languageTypeEnum", "namespacestringify_1_1_r_o_s_e_attributes_list.html#a0dd31d23d0b1b9c35c0c38ae1a07b750", null ],
+      [ "languageTypeEnum", "namespacestringify_1_1_r_o_s_e_attributes_list.html#aa9c76cd1a4cfbd5ad20cab7633c62358", null ]
+    ] ],
+    [ "AstAttributeDOT", "namespacestringify_1_1_ast_attribute_d_o_t.html", [
+      [ "DOTStyles", "namespacestringify_1_1_ast_attribute_d_o_t.html#a650b5811d51098ab0d39722d9c62e28d", null ],
+      [ "DOTStyles", "namespacestringify_1_1_ast_attribute_d_o_t.html#ae848f435a7ff0dfbbbfc6e849d98d0ce", null ],
+      [ "DOTStyles", "namespacestringify_1_1_ast_attribute_d_o_t.html#a1d8f07b41414d0dd65263f0645e6591b", null ]
+    ] ],
+    [ "DOTGraphNode", "namespacestringify_1_1_d_o_t_graph_node.html", [
+      [ "DOTShapeTypes", "namespacestringify_1_1_d_o_t_graph_node.html#a80285aa3e4311e834264a97da18877f4", null ],
+      [ "DOTShapeTypes", "namespacestringify_1_1_d_o_t_graph_node.html#aa8a6923062217617b355d2826d7bb6c1", null ],
+      [ "DOTShapeTypes", "namespacestringify_1_1_d_o_t_graph_node.html#a3813428957e087e63749022ffb579c6a", null ]
+    ] ],
+    [ "DOTGraphEdge", "namespacestringify_1_1_d_o_t_graph_edge.html", [
+      [ "DOTArrowTypes", "namespacestringify_1_1_d_o_t_graph_edge.html#acc925b25a607f331bdc6e39eb8c1550b", null ],
+      [ "DOTArrowTypes", "namespacestringify_1_1_d_o_t_graph_edge.html#ad61d03e0043d942996770332f4da6aa7", null ],
+      [ "DOTArrowTypes", "namespacestringify_1_1_d_o_t_graph_edge.html#a41fa99ee4239d923bfa0056cf3ee5415", null ]
+    ] ],
     [ "AST_Graph", "namespacestringify_1_1_a_s_t___graph.html", [
       [ "pointerHandling", "namespacestringify_1_1_a_s_t___graph.html#ad33443eed83dfeea26461a00abe7eadf", null ],
       [ "pointerHandling", "namespacestringify_1_1_a_s_t___graph.html#af5b5c950f0ef22b8d4b4d643b7850b9b", null ],
@@ -1044,10 +602,26 @@ var namespacestringify =
       [ "traversalType", "namespacestringify_1_1_a_s_t___graph.html#ac1f6c9fe2551492b600d3311a4eeaf3f", null ],
       [ "traversalType", "namespacestringify_1_1_a_s_t___graph.html#a0be966ad8c21ff760f666873e1b1be0a", null ]
     ] ],
+    [ "LanguageTranslation", "namespacestringify_1_1_language_translation.html", [
+      [ "ExpressionKind", "namespacestringify_1_1_language_translation.html#a8287570c1eb36e7960ebc4cca57e07ae", null ],
+      [ "ExpressionKind", "namespacestringify_1_1_language_translation.html#a5ced5efa73987c31876868dcbfe8c563", null ],
+      [ "ExpressionKind", "namespacestringify_1_1_language_translation.html#a831133f4ca0154acb5fcecb0c9022401", null ],
+      [ "FunctionModifier", "namespacestringify_1_1_language_translation.html#a1416c12fa13fc5b91ee356caab3fa74c", null ],
+      [ "FunctionModifier", "namespacestringify_1_1_language_translation.html#a899da6612c64f376f891859090cc910a", null ],
+      [ "FunctionModifier", "namespacestringify_1_1_language_translation.html#ac96cec04b778491bdc2a2280668e6449", null ],
+      [ "PackingSpecifier", "namespacestringify_1_1_language_translation.html#a1a00e07ef2cfae15f108911766867757", null ],
+      [ "PackingSpecifier", "namespacestringify_1_1_language_translation.html#ab0de7323950d4716789c60c97c3ba7d4", null ],
+      [ "PackingSpecifier", "namespacestringify_1_1_language_translation.html#af2163c9d805655619d2ddc12498bd0cc", null ]
+    ] ],
     [ "csharp_translator", "namespacestringify_1_1csharp__translator.html", [
       [ "SeqKind", "namespacestringify_1_1csharp__translator.html#abfcdbce88ed27bebe9ce2dcbbba94bd5", null ],
       [ "SeqKind", "namespacestringify_1_1csharp__translator.html#acf13d11b8fd70e54efb45f8b9ac3ed8f", null ],
       [ "SeqKind", "namespacestringify_1_1csharp__translator.html#ad4ae880550b38225f1b4ba74140b3b09", null ]
+    ] ],
+    [ "dot", "namespacestringify_1_1dot.html", [
+      [ "attr_set", "namespacestringify_1_1dot.html#a95bca33b9ffd982a3f63b34da2f772c9", null ],
+      [ "attr_set", "namespacestringify_1_1dot.html#ad99cf154438b1c935047e6a08d907f04", null ],
+      [ "attr_set", "namespacestringify_1_1dot.html#a47c898738b48ea16a1873fd1337795b0", null ]
     ] ],
     [ "__cxxabiv1", "namespacestringify_1_1____cxxabiv1.html", "namespacestringify_1_1____cxxabiv1" ],
     [ "a_type_wrapper", "namespacestringify_1_1a__type__wrapper.html", [
@@ -1088,6 +662,12 @@ var namespacestringify =
       [ "a_cache_statement_option", "namespacestringify_1_1an__ifc__module.html#a141b7eacecd9b0c0df0f0ccab5d86ce1", null ],
       [ "a_cache_statement_option", "namespacestringify_1_1an__ifc__module.html#a2f6a67ce26b3e98392bab1e0312528a8", null ]
     ] ],
+    [ "ClangToSageTranslator", "namespacestringify_1_1_clang_to_sage_translator.html", [
+      [ "Language", "namespacestringify_1_1_clang_to_sage_translator.html#a3f5037fd1e66537a2605d38d1197523f", null ],
+      [ "Language", "namespacestringify_1_1_clang_to_sage_translator.html#adb862171e7aa289cf7b97b95321d7bbb", null ],
+      [ "Language", "namespacestringify_1_1_clang_to_sage_translator.html#ac864e3aea3058cde11155cdacdfe01d1", null ]
+    ] ],
+    [ "ClangToDotTranslator", "namespacestringify_1_1_clang_to_dot_translator.html", "namespacestringify_1_1_clang_to_dot_translator" ],
     [ "ROSE_Fortran_defs", "namespacestringify_1_1_r_o_s_e___fortran__defs.html", [
       [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e___fortran__defs.html#add2f1e4ba5958e0d2b1d1ccf157478c0", null ],
       [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e___fortran__defs.html#a04eeee227a5f5479c6205438e2a8733c", null ],
@@ -1105,10 +685,83 @@ var namespacestringify =
       [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e___fortran__defs.html#a5f7609e5ccce6f15ac58a530b9637ce8", null ],
       [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e___fortran__defs.html#a3e003c7014d6c3dd8a127dcbda6fe150", null ]
     ] ],
+    [ "nlohmann", "namespacestringify_1_1nlohmann.html", "namespacestringify_1_1nlohmann" ],
+    [ "qrs", "namespacestringify_1_1qrs.html", "namespacestringify_1_1qrs" ],
+    [ "DOTGeneration", "namespacestringify_1_1_d_o_t_generation.html", [
+      [ "traversalType", "namespacestringify_1_1_d_o_t_generation.html#a33f4af7c1f588f1ca13cb2be34906beb", null ],
+      [ "traversalType", "namespacestringify_1_1_d_o_t_generation.html#ace780d043b1aecfcbdf849d61dda6fbc", null ],
+      [ "traversalType", "namespacestringify_1_1_d_o_t_generation.html#ab3321e06d370e0101d3abe78cc0241de", null ]
+    ] ],
+    [ "SgConstVolatileModifier", "namespacestringify_1_1_sg_const_volatile_modifier.html", [
+      [ "cv_modifier_enum", "namespacestringify_1_1_sg_const_volatile_modifier.html#a6f90ce87b0b3c08bbe7eda206ae39f35", null ],
+      [ "cv_modifier_enum", "namespacestringify_1_1_sg_const_volatile_modifier.html#a12df03f97daa5304b7d97f899d7df0d6", null ],
+      [ "cv_modifier_enum", "namespacestringify_1_1_sg_const_volatile_modifier.html#abee36dec6fab36375e384f3b3d0ab85c", null ]
+    ] ],
+    [ "SgStorageModifier", "namespacestringify_1_1_sg_storage_modifier.html", [
+      [ "storage_modifier_enum", "namespacestringify_1_1_sg_storage_modifier.html#a42ce8971b3dc4ead0da7e1a9907faa63", null ],
+      [ "storage_modifier_enum", "namespacestringify_1_1_sg_storage_modifier.html#afd255f361b97d0e4d08fa95856bbc9b7", null ],
+      [ "storage_modifier_enum", "namespacestringify_1_1_sg_storage_modifier.html#af3c29b927019270c9db9c9e355d0f9c6", null ]
+    ] ],
+    [ "SgAccessModifier", "namespacestringify_1_1_sg_access_modifier.html", [
+      [ "access_modifier_enum", "namespacestringify_1_1_sg_access_modifier.html#a5342c78357ada10550e40a7727b13f5c", null ],
+      [ "access_modifier_enum", "namespacestringify_1_1_sg_access_modifier.html#a8314967986d4d2b0d47d6b1b6cc606a5", null ],
+      [ "access_modifier_enum", "namespacestringify_1_1_sg_access_modifier.html#ae140eef0963d98585802f74a113eb5da", null ]
+    ] ],
+    [ "SgFunctionModifier", "namespacestringify_1_1_sg_function_modifier.html", [
+      [ "function_modifier_enum", "namespacestringify_1_1_sg_function_modifier.html#a4c83c1d641e24d29bfbb98f21ccb4556", null ],
+      [ "function_modifier_enum", "namespacestringify_1_1_sg_function_modifier.html#a8d330046ef5efe9a7616ded3d349c107", null ],
+      [ "function_modifier_enum", "namespacestringify_1_1_sg_function_modifier.html#ac2a0d6b66ca9b41f35650f5af7894dfb", null ]
+    ] ],
     [ "SgUPC_AccessModifier", "namespacestringify_1_1_sg_u_p_c___access_modifier.html", [
       [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c___access_modifier.html#afb757f695451faead88ce1fbfdcb3caf", null ],
       [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c___access_modifier.html#aff5c7204452bed91686c8bdeb063c292", null ],
       [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c___access_modifier.html#a1f99251531688c19cc783222f8d3ac7e", null ]
+    ] ],
+    [ "SgSpecialFunctionModifier", "namespacestringify_1_1_sg_special_function_modifier.html", [
+      [ "special_function_modifier_enum", "namespacestringify_1_1_sg_special_function_modifier.html#ad4274c3f4a6b122501cb06f01c0a9e03", null ],
+      [ "special_function_modifier_enum", "namespacestringify_1_1_sg_special_function_modifier.html#ad2b0cc91b4c2ff5ba53b19360f349dc8", null ],
+      [ "special_function_modifier_enum", "namespacestringify_1_1_sg_special_function_modifier.html#ad13710ffa93238f260a559fbaa6ed7f4", null ]
+    ] ],
+    [ "SgElaboratedTypeModifier", "namespacestringify_1_1_sg_elaborated_type_modifier.html", [
+      [ "elaborated_type_modifier_enum", "namespacestringify_1_1_sg_elaborated_type_modifier.html#a8547d28d72dc8a5ae16955083843032a", null ],
+      [ "elaborated_type_modifier_enum", "namespacestringify_1_1_sg_elaborated_type_modifier.html#ac37e481c3a26019e6582ea4d4a363264", null ],
+      [ "elaborated_type_modifier_enum", "namespacestringify_1_1_sg_elaborated_type_modifier.html#affea4fca9d28d8b047424b5b3e59b398", null ]
+    ] ],
+    [ "SgLinkageModifier", "namespacestringify_1_1_sg_linkage_modifier.html", [
+      [ "linkage_modifier_enum", "namespacestringify_1_1_sg_linkage_modifier.html#a5822c9d289951a989387b3a4be6912ed", null ],
+      [ "linkage_modifier_enum", "namespacestringify_1_1_sg_linkage_modifier.html#a042ec81addd9e63eaf3bc247f820f591", null ],
+      [ "linkage_modifier_enum", "namespacestringify_1_1_sg_linkage_modifier.html#a680faf6470dda9beca8d620bc17030b8", null ]
+    ] ],
+    [ "SgBaseClassModifier", "namespacestringify_1_1_sg_base_class_modifier.html", [
+      [ "baseclass_modifier_enum", "namespacestringify_1_1_sg_base_class_modifier.html#a4a64bb40ad20556e6f77e2221458ca34", null ],
+      [ "baseclass_modifier_enum", "namespacestringify_1_1_sg_base_class_modifier.html#a695541710425a0854eb674422665c831", null ],
+      [ "baseclass_modifier_enum", "namespacestringify_1_1_sg_base_class_modifier.html#aa054918340ddbd6e960eca6a6ae14396", null ]
+    ] ],
+    [ "SgStructureModifier", "namespacestringify_1_1_sg_structure_modifier.html", [
+      [ "jovial_structure_modifier_enum", "namespacestringify_1_1_sg_structure_modifier.html#a17cb0ff98e79263070a4abdfa8f45785", null ],
+      [ "jovial_structure_modifier_enum", "namespacestringify_1_1_sg_structure_modifier.html#a75fd96cb949edc29b61eb39a3cf3d6c9", null ],
+      [ "jovial_structure_modifier_enum", "namespacestringify_1_1_sg_structure_modifier.html#ae1dc0e11dbe2253a209c16bbc6d4034d", null ]
+    ] ],
+    [ "SgTypeModifier", "namespacestringify_1_1_sg_type_modifier.html", [
+      [ "gnu_extension_machine_mode_enum", "namespacestringify_1_1_sg_type_modifier.html#a3ab80af48fe9ff2d1d714a1d5b541507", null ],
+      [ "gnu_extension_machine_mode_enum", "namespacestringify_1_1_sg_type_modifier.html#a0790f7b748a7f24479a27342286036ad", null ],
+      [ "gnu_extension_machine_mode_enum", "namespacestringify_1_1_sg_type_modifier.html#acfcb49ace70d7a7337741df35c793477", null ],
+      [ "type_modifier_enum", "namespacestringify_1_1_sg_type_modifier.html#a26429e4184116d2ff7226cdcb94e3771", null ],
+      [ "type_modifier_enum", "namespacestringify_1_1_sg_type_modifier.html#a8d4cfa3ab85e5f64c1bcf8d621848a3a", null ],
+      [ "type_modifier_enum", "namespacestringify_1_1_sg_type_modifier.html#a7fd5811203eb15a347019bc95dd70b65", null ]
+    ] ],
+    [ "SgDeclarationModifier", "namespacestringify_1_1_sg_declaration_modifier.html", [
+      [ "declaration_modifier_enum", "namespacestringify_1_1_sg_declaration_modifier.html#a847c40da7e91e1f531db3c74b4abf147", null ],
+      [ "declaration_modifier_enum", "namespacestringify_1_1_sg_declaration_modifier.html#ae616194b1db2050dbb0706502639cc62", null ],
+      [ "declaration_modifier_enum", "namespacestringify_1_1_sg_declaration_modifier.html#ad1007ac24962e9f7028e4b38fe911d71", null ],
+      [ "gnu_declaration_visability_enum", "namespacestringify_1_1_sg_declaration_modifier.html#afaff02c8371463a06460f7bedfa98b00", null ],
+      [ "gnu_declaration_visability_enum", "namespacestringify_1_1_sg_declaration_modifier.html#af39a72042268f6780e22f39a09608eda", null ],
+      [ "gnu_declaration_visability_enum", "namespacestringify_1_1_sg_declaration_modifier.html#aaffdaabd85fc13850e00b34112b624cf", null ]
+    ] ],
+    [ "SgOpenclAccessModeModifier", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html", [
+      [ "access_mode_modifier_enum", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html#ad2798610d1088ed883d399f5c9501b87", null ],
+      [ "access_mode_modifier_enum", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html#a896acd514391e2e57ff7b2878d5c3fc9", null ],
+      [ "access_mode_modifier_enum", "namespacestringify_1_1_sg_opencl_access_mode_modifier.html#a42ac10bb55ab325985790f2769b65924", null ]
     ] ],
     [ "Sg_File_Info", "namespacestringify_1_1_sg___file___info.html", [
       [ "classifier", "namespacestringify_1_1_sg___file___info.html#a964aa011792d30858edf78c3c8d5944f", null ],
@@ -1118,6 +771,22 @@ var namespacestringify =
       [ "p_fileflags", "namespacestringify_1_1_sg___file___info.html#ae018386083f7938041a324965ac3bc4a", null ],
       [ "p_fileflags", "namespacestringify_1_1_sg___file___info.html#ae84e3bae093c3e3215c8d535c56a8017", null ]
     ] ],
+    [ "SgFile", "namespacestringify_1_1_sg_file.html", [
+      [ "languageOption_enum", "namespacestringify_1_1_sg_file.html#a08e8fa58909410b57a622ce9094e002f", null ],
+      [ "languageOption_enum", "namespacestringify_1_1_sg_file.html#ae2af5b95cc7e57dc3f045377ee0f2260", null ],
+      [ "languageOption_enum", "namespacestringify_1_1_sg_file.html#a4330e11f0199d383ae3f924bf8257f6c", null ],
+      [ "outputFormatOption_enum", "namespacestringify_1_1_sg_file.html#ac323b8b5f8a90f5ca7cb7bf4afa332f8", null ],
+      [ "outputFormatOption_enum", "namespacestringify_1_1_sg_file.html#ae9460a24440f0d1a4285e21052822e64", null ],
+      [ "outputFormatOption_enum", "namespacestringify_1_1_sg_file.html#ad052a8079419be19778a801ab9b44014", null ],
+      [ "standard_enum", "namespacestringify_1_1_sg_file.html#af45087e704a9b8bb485355d0222ba15e", null ],
+      [ "standard_enum", "namespacestringify_1_1_sg_file.html#a9a47b9d0446571e7b833c4cc47fa9580", null ],
+      [ "standard_enum", "namespacestringify_1_1_sg_file.html#a351cdb1cc4565a4e74039d8945287f06", null ]
+    ] ],
+    [ "SgProject", "namespacestringify_1_1_sg_project.html", [
+      [ "template_instantiation_enum", "namespacestringify_1_1_sg_project.html#a8054eca73451b7738bd9db8e221ef4e6", null ],
+      [ "template_instantiation_enum", "namespacestringify_1_1_sg_project.html#a5a69b9f2857a1b47b2699f6fe94a9297", null ],
+      [ "template_instantiation_enum", "namespacestringify_1_1_sg_project.html#a77d0efee93aafe0a80752d4d602970cd", null ]
+    ] ],
     [ "SgUnparse_Info", "namespacestringify_1_1_sg_unparse___info.html", [
       [ "access_attr_enum", "namespacestringify_1_1_sg_unparse___info.html#a2233a11fe9e6219e862873ab3c7323f1", null ],
       [ "access_attr_enum", "namespacestringify_1_1_sg_unparse___info.html#a5f6c52a92620277c318a9a1bcc910df8", null ],
@@ -1126,6 +795,337 @@ var namespacestringify =
       [ "unparse_type_num", "namespacestringify_1_1_sg_unparse___info.html#a1d6775dd64e89c5f56a2b614e917932e", null ],
       [ "unparse_type_num", "namespacestringify_1_1_sg_unparse___info.html#a69f1281151bfb514083c483564c49be2", null ]
     ] ],
+    [ "SgTemplateParameter", "namespacestringify_1_1_sg_template_parameter.html", [
+      [ "template_parameter_enum", "namespacestringify_1_1_sg_template_parameter.html#a5d83dcb458e5716587d9b446c500ca62", null ],
+      [ "template_parameter_enum", "namespacestringify_1_1_sg_template_parameter.html#af77e5733da6892a541feca5e1403f3fd", null ],
+      [ "template_parameter_enum", "namespacestringify_1_1_sg_template_parameter.html#ad05c7f0d6c186ea46701bc8af2ce2d3e", null ]
+    ] ],
+    [ "SgTemplateArgument", "namespacestringify_1_1_sg_template_argument.html", [
+      [ "template_argument_enum", "namespacestringify_1_1_sg_template_argument.html#a642aac5a04b04e7c849dc38b9498d3e0", null ],
+      [ "template_argument_enum", "namespacestringify_1_1_sg_template_argument.html#a1571b07a5ff4600be87dc63bbe159205", null ],
+      [ "template_argument_enum", "namespacestringify_1_1_sg_template_argument.html#a6ca3555c184452b8059778b23dc7cf2f", null ]
+    ] ],
+    [ "SgGraph", "namespacestringify_1_1_sg_graph.html", [
+      [ "GraphEdgeType", "namespacestringify_1_1_sg_graph.html#a85772b7fd218cb33c2a8ec682d912a06", null ],
+      [ "GraphEdgeType", "namespacestringify_1_1_sg_graph.html#ad0e9dff0268e70534acb599611b1456d", null ],
+      [ "GraphEdgeType", "namespacestringify_1_1_sg_graph.html#ae813960ca1023ab28b9f6e749d27a718", null ],
+      [ "GraphProperties", "namespacestringify_1_1_sg_graph.html#ab4ec20ccf289f80de6ac5fc75228fd06", null ],
+      [ "GraphProperties", "namespacestringify_1_1_sg_graph.html#a31fedf2883937ad70aca260b19ebc464", null ],
+      [ "GraphProperties", "namespacestringify_1_1_sg_graph.html#ac1cfb201caa9d1055c23ed2d40601820", null ]
+    ] ],
+    [ "SgDataStatementValue", "namespacestringify_1_1_sg_data_statement_value.html", [
+      [ "data_statement_value_enum", "namespacestringify_1_1_sg_data_statement_value.html#adc5ebb402d12765ec63bf88852f1c52b", null ],
+      [ "data_statement_value_enum", "namespacestringify_1_1_sg_data_statement_value.html#aea608d20c142698a68f3c979d89b45aa", null ],
+      [ "data_statement_value_enum", "namespacestringify_1_1_sg_data_statement_value.html#aa4ccb75da1a6928177a6461c2ac89a35", null ]
+    ] ],
+    [ "SgType", "namespacestringify_1_1_sg_type.html", [
+      [ "fortran_attribute_specifiers_enum", "namespacestringify_1_1_sg_type.html#a9e4f5b09b5ec3d6271dd820b1c8cb9a7", null ],
+      [ "fortran_attribute_specifiers_enum", "namespacestringify_1_1_sg_type.html#ae7a2494113e335a436a0ad4c206d784c", null ],
+      [ "fortran_attribute_specifiers_enum", "namespacestringify_1_1_sg_type.html#a1adbbe1da24b2f17243afc201c7f2a17", null ]
+    ] ],
+    [ "SgJovialTableType", "namespacestringify_1_1_sg_jovial_table_type.html", [
+      [ "StructureSpecifier", "namespacestringify_1_1_sg_jovial_table_type.html#a05c356069a7a4c8808e42cbf21f6580a", null ],
+      [ "StructureSpecifier", "namespacestringify_1_1_sg_jovial_table_type.html#a1cc50b87d3d67671ba43a6b70c50c9db", null ],
+      [ "StructureSpecifier", "namespacestringify_1_1_sg_jovial_table_type.html#a4031786c7d67a5d1d9f5f89187705f4e", null ]
+    ] ],
+    [ "SgMemberFunctionType", "namespacestringify_1_1_sg_member_function_type.html", [
+      [ "mfunc_specifier_enum", "namespacestringify_1_1_sg_member_function_type.html#ac607f1555b851f5baa3f3e0c70d2a1cb", null ],
+      [ "mfunc_specifier_enum", "namespacestringify_1_1_sg_member_function_type.html#a74498a06965ba55d93b2384ca79a8b41", null ],
+      [ "mfunc_specifier_enum", "namespacestringify_1_1_sg_member_function_type.html#a932aa26632e699f32d4aaad57e24d136", null ]
+    ] ],
+    [ "SgToken", "namespacestringify_1_1_sg_token.html", [
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_sg_token.html#a4323b8d18d8bc77d72556329ad752b9c", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_sg_token.html#ad3e15202324a016b6c0b51ebc0846164", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_sg_token.html#ac5dc240e00a64de07182fa2873536e10", null ],
+      [ "ROSE_C_CXX_Operators", "namespacestringify_1_1_sg_token.html#a0e6486e2633844f6a56da7241992d329", null ],
+      [ "ROSE_C_CXX_Operators", "namespacestringify_1_1_sg_token.html#ad650e46682fb9db8161df27744238585", null ],
+      [ "ROSE_C_CXX_Operators", "namespacestringify_1_1_sg_token.html#a90fdd0d64396e97fb070d39eaef15135", null ],
+      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_sg_token.html#a7c7c395cbe36ff813ecccfd74a390ae9", null ],
+      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_sg_token.html#a26c0cf7ffaeb0f884911fa13694dbabf", null ],
+      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_sg_token.html#ac41cf3cd0f5f9eab76442fb99ffbde07", null ],
+      [ "ROSE_Fortran_Keywords", "namespacestringify_1_1_sg_token.html#afa10c744b5cfcd66c6ed9e696296486a", null ],
+      [ "ROSE_Fortran_Keywords", "namespacestringify_1_1_sg_token.html#a231a5d358ded9f6cf58997d0f6dd5cb8", null ],
+      [ "ROSE_Fortran_Keywords", "namespacestringify_1_1_sg_token.html#a0b2d2e0d305c14ed6aa954207a4179b5", null ],
+      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_sg_token.html#afb1dbbe00c98378afab5b1945bfc8688", null ],
+      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_sg_token.html#aa08d2e723cfd8c52af6939c6f2f8d570", null ],
+      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_sg_token.html#a8a63d178446ffdc201b1bd27f7e9cd19", null ]
+    ] ],
+    [ "SgInitializedName", "namespacestringify_1_1_sg_initialized_name.html", [
+      [ "asm_register_name_enum", "namespacestringify_1_1_sg_initialized_name.html#a5b1322998c1b62331ea0e9ba61c0a6fa", null ],
+      [ "asm_register_name_enum", "namespacestringify_1_1_sg_initialized_name.html#a1bd679bd8b407375e287bb5545e07525", null ],
+      [ "asm_register_name_enum", "namespacestringify_1_1_sg_initialized_name.html#a063dfd2d64a1212b887e7e077f948bf7", null ],
+      [ "excess_specifier_enum", "namespacestringify_1_1_sg_initialized_name.html#a89d858b1fb91ca5726b93b94bbcb7563", null ],
+      [ "excess_specifier_enum", "namespacestringify_1_1_sg_initialized_name.html#a25789429cb522f0d03fbc02293ff4718", null ],
+      [ "excess_specifier_enum", "namespacestringify_1_1_sg_initialized_name.html#ac91ce806b4d2794c48b65e825c882171", null ],
+      [ "gnu_variable_attribute_enum", "namespacestringify_1_1_sg_initialized_name.html#a4cee4f8f41e1cb913b6214d5c04d7d9f", null ],
+      [ "gnu_variable_attribute_enum", "namespacestringify_1_1_sg_initialized_name.html#a3ea028e94ebf66e13c720d9fa944222a", null ],
+      [ "gnu_variable_attribute_enum", "namespacestringify_1_1_sg_initialized_name.html#a15b77b401c842ff3bba282c4f0528249", null ],
+      [ "preinitialization_enum", "namespacestringify_1_1_sg_initialized_name.html#a1155445882b30f79a6766d211c239aa2", null ],
+      [ "preinitialization_enum", "namespacestringify_1_1_sg_initialized_name.html#a8a384a5e7c2467147960a3668cb0219c", null ],
+      [ "preinitialization_enum", "namespacestringify_1_1_sg_initialized_name.html#a7bb989752e7c2464206267d2388cf9c1", null ]
+    ] ],
+    [ "SgOmpClause", "namespacestringify_1_1_sg_omp_clause.html", [
+      [ "omp_atomic_clause_enum", "namespacestringify_1_1_sg_omp_clause.html#a74c0a4c44227364b42b9190c336c9d5f", null ],
+      [ "omp_atomic_clause_enum", "namespacestringify_1_1_sg_omp_clause.html#a050e87b6f056179f015c43ecb1ecfdfe", null ],
+      [ "omp_atomic_clause_enum", "namespacestringify_1_1_sg_omp_clause.html#a95422e1059d3ef0983b745159a06df42", null ],
+      [ "omp_default_option_enum", "namespacestringify_1_1_sg_omp_clause.html#ac30d81b35e55b302adefbb29ff2beeba", null ],
+      [ "omp_default_option_enum", "namespacestringify_1_1_sg_omp_clause.html#a2ccf4b8d65945eb47301f68894ce642a", null ],
+      [ "omp_default_option_enum", "namespacestringify_1_1_sg_omp_clause.html#a909701dabc42db5eecb59008925a2548", null ],
+      [ "omp_dependence_type_enum", "namespacestringify_1_1_sg_omp_clause.html#a6cf595733a9bc1688e3bd22027a6d390", null ],
+      [ "omp_dependence_type_enum", "namespacestringify_1_1_sg_omp_clause.html#aeebc63e29d573683e1b868ba1dfbdaba", null ],
+      [ "omp_dependence_type_enum", "namespacestringify_1_1_sg_omp_clause.html#a833974930459e4a4084e0cfd1ea765a1", null ],
+      [ "omp_map_dist_data_enum", "namespacestringify_1_1_sg_omp_clause.html#aead5de61049edeb53b0a50d45910c499", null ],
+      [ "omp_map_dist_data_enum", "namespacestringify_1_1_sg_omp_clause.html#a2d86ea007fbd8ee63766ea8da02e4293", null ],
+      [ "omp_map_dist_data_enum", "namespacestringify_1_1_sg_omp_clause.html#a84bf71b8efd90cb1c2cd084f236195a1", null ],
+      [ "omp_map_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#abd17454dca820ddbd6d33f4b843c4693", null ],
+      [ "omp_map_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a8221a3e167bbee9dd9d7a371a9bac632", null ],
+      [ "omp_map_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a78b83cc47d0caeadac78897cf075214a", null ],
+      [ "omp_proc_bind_policy_enum", "namespacestringify_1_1_sg_omp_clause.html#acbf0712785ef3d465479cc1da6eaf8ff", null ],
+      [ "omp_proc_bind_policy_enum", "namespacestringify_1_1_sg_omp_clause.html#a27031fed3dc45639306e59a45b8a493a", null ],
+      [ "omp_proc_bind_policy_enum", "namespacestringify_1_1_sg_omp_clause.html#afa8130fc267e9143ccc24f758b0225cb", null ],
+      [ "omp_reduction_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a0d511edec07581f1eaefc7e01434435e", null ],
+      [ "omp_reduction_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#a977d97ddf88b79b6e52b1d9e7a97cd3a", null ],
+      [ "omp_reduction_operator_enum", "namespacestringify_1_1_sg_omp_clause.html#abb389f25126b44b9843896b1fd4a136d", null ],
+      [ "omp_schedule_kind_enum", "namespacestringify_1_1_sg_omp_clause.html#a15ca6b1e10dbf80b867b2fa2bf62edef", null ],
+      [ "omp_schedule_kind_enum", "namespacestringify_1_1_sg_omp_clause.html#a8d648deac2064636f8e675a2edb28e69", null ],
+      [ "omp_schedule_kind_enum", "namespacestringify_1_1_sg_omp_clause.html#a1e09e2b5c74df194f686f745b363f9ea", null ]
+    ] ],
+    [ "SgForAllStatement", "namespacestringify_1_1_sg_for_all_statement.html", [
+      [ "forall_statement_kind_enum", "namespacestringify_1_1_sg_for_all_statement.html#a77c6f90d382ecd65f6e0efe67229e38a", null ],
+      [ "forall_statement_kind_enum", "namespacestringify_1_1_sg_for_all_statement.html#aeb65daaaa265aa757800ea27abafd141", null ],
+      [ "forall_statement_kind_enum", "namespacestringify_1_1_sg_for_all_statement.html#ab4b01121f2c4f4f3b6a05a35ddbed5a5", null ]
+    ] ],
+    [ "SgJovialForThenStatement", "namespacestringify_1_1_sg_jovial_for_then_statement.html", [
+      [ "loop_statement_type_enum", "namespacestringify_1_1_sg_jovial_for_then_statement.html#a3f5f629293d28c8c1857f35d527e1f23", null ],
+      [ "loop_statement_type_enum", "namespacestringify_1_1_sg_jovial_for_then_statement.html#a2fb4e3babbf4783e9cac6cfcadbee7b0", null ],
+      [ "loop_statement_type_enum", "namespacestringify_1_1_sg_jovial_for_then_statement.html#a4c2707410110c5760732c5de246d6261", null ]
+    ] ],
+    [ "SgDeclarationStatement", "namespacestringify_1_1_sg_declaration_statement.html", [
+      [ "gnu_extension_visability_attribute_enum", "namespacestringify_1_1_sg_declaration_statement.html#a2aee7e33bdbed978b06e728a4d045c9d", null ],
+      [ "gnu_extension_visability_attribute_enum", "namespacestringify_1_1_sg_declaration_statement.html#a81eea601177cc5c2eeffca222288d4d2", null ],
+      [ "gnu_extension_visability_attribute_enum", "namespacestringify_1_1_sg_declaration_statement.html#ab5e2ac59a0a5cb762c668103429ccfd5", null ],
+      [ "template_specialization_enum", "namespacestringify_1_1_sg_declaration_statement.html#a9ff89c7ba197dedc6413a066436666f3", null ],
+      [ "template_specialization_enum", "namespacestringify_1_1_sg_declaration_statement.html#a17903391f1f11016763bcf5746df9f92", null ],
+      [ "template_specialization_enum", "namespacestringify_1_1_sg_declaration_statement.html#a2becb2aa77291af300ee1e76a715dc27", null ]
+    ] ],
+    [ "SgVariableDeclaration", "namespacestringify_1_1_sg_variable_declaration.html", [
+      [ "gnu_extension_declaration_attributes_enum", "namespacestringify_1_1_sg_variable_declaration.html#a807ab309aa37b5b154d25ca8975b6d6b", null ],
+      [ "gnu_extension_declaration_attributes_enum", "namespacestringify_1_1_sg_variable_declaration.html#a3eb1bc36cd1aab211cecaea400ad9392", null ],
+      [ "gnu_extension_declaration_attributes_enum", "namespacestringify_1_1_sg_variable_declaration.html#ae2c70193ee3fbd3cd0b6f74a2dcb4a24", null ]
+    ] ],
+    [ "SgAttributeSpecificationStatement", "namespacestringify_1_1_sg_attribute_specification_statement.html", [
+      [ "attribute_spec_enum", "namespacestringify_1_1_sg_attribute_specification_statement.html#a3dd4ba92f50e6b10650484fdc0e12d21", null ],
+      [ "attribute_spec_enum", "namespacestringify_1_1_sg_attribute_specification_statement.html#aac764972d362392ac0df8309d38a0bae", null ],
+      [ "attribute_spec_enum", "namespacestringify_1_1_sg_attribute_specification_statement.html#ab090c96c095dea30fbd9c5b416126b13", null ]
+    ] ],
+    [ "SgTemplateDeclaration", "namespacestringify_1_1_sg_template_declaration.html", [
+      [ "template_type_enum", "namespacestringify_1_1_sg_template_declaration.html#a2b1c8a0da4e0ce31eb83f3da73d64ed9", null ],
+      [ "template_type_enum", "namespacestringify_1_1_sg_template_declaration.html#a08415c566e7e6e42cc9da4c1fc3533e9", null ],
+      [ "template_type_enum", "namespacestringify_1_1_sg_template_declaration.html#a97c87e02e56a6240b82a57e99bd099bd", null ]
+    ] ],
+    [ "SgInterfaceStatement", "namespacestringify_1_1_sg_interface_statement.html", [
+      [ "generic_spec_enum", "namespacestringify_1_1_sg_interface_statement.html#a0750d4260c968f114a80882a8511cc53", null ],
+      [ "generic_spec_enum", "namespacestringify_1_1_sg_interface_statement.html#a85bbe1b5acf34c5f460d2fe3b395ba1a", null ],
+      [ "generic_spec_enum", "namespacestringify_1_1_sg_interface_statement.html#a3d5a1b6db7b3c316d59a8bc79038def0", null ]
+    ] ],
+    [ "SgClassDeclaration", "namespacestringify_1_1_sg_class_declaration.html", [
+      [ "class_types", "namespacestringify_1_1_sg_class_declaration.html#a3ee5cbdfeb839de4cdda64bfbe2edf91", null ],
+      [ "class_types", "namespacestringify_1_1_sg_class_declaration.html#a84e5fd7a70fc5aac6ce979f8cda9574a", null ],
+      [ "class_types", "namespacestringify_1_1_sg_class_declaration.html#ae9123ac42a4ec88c352d5f2a72cdc769", null ]
+    ] ],
+    [ "SgTemplateClassDeclaration", "namespacestringify_1_1_sg_template_class_declaration.html", [
+      [ "class_types", "namespacestringify_1_1_sg_template_class_declaration.html#a5cbc75ada5b19ffc733ecaaf1ff1804e", null ],
+      [ "class_types", "namespacestringify_1_1_sg_template_class_declaration.html#ae89ccea2cf89807103fbb41503cfc956", null ],
+      [ "class_types", "namespacestringify_1_1_sg_template_class_declaration.html#a4de4a212c354bc710ec81527e72bb58d", null ]
+    ] ],
+    [ "SgJovialTableStatement", "namespacestringify_1_1_sg_jovial_table_statement.html", [
+      [ "WordsPerEntry", "namespacestringify_1_1_sg_jovial_table_statement.html#ad9f3bef67fb3b0d9b630e89e2b5b4eda", null ],
+      [ "WordsPerEntry", "namespacestringify_1_1_sg_jovial_table_statement.html#a371665575d1b87499586fed4232ed305", null ],
+      [ "WordsPerEntry", "namespacestringify_1_1_sg_jovial_table_statement.html#ad8624cbcd64d05f211b73ac513c103c5", null ]
+    ] ],
+    [ "SgImplicitStatement", "namespacestringify_1_1_sg_implicit_statement.html", [
+      [ "implicit_spec_enum", "namespacestringify_1_1_sg_implicit_statement.html#a3c557b7ddf19cd1f9c50c6c10fdb31d5", null ],
+      [ "implicit_spec_enum", "namespacestringify_1_1_sg_implicit_statement.html#aaa5ba8d9f39313a93b3bc2059e3a9ec5", null ],
+      [ "implicit_spec_enum", "namespacestringify_1_1_sg_implicit_statement.html#a75061842641d1def9b6ddef6fb715ef0", null ]
+    ] ],
+    [ "SgProcedureHeaderStatement", "namespacestringify_1_1_sg_procedure_header_statement.html", [
+      [ "subprogram_kind_enum", "namespacestringify_1_1_sg_procedure_header_statement.html#acd895983a50bb81e41a2d8e5b9a95337", null ],
+      [ "subprogram_kind_enum", "namespacestringify_1_1_sg_procedure_header_statement.html#ab7a9cde7f0a4679f0f1d3985fa752040", null ],
+      [ "subprogram_kind_enum", "namespacestringify_1_1_sg_procedure_header_statement.html#a11c24e133a0b1e7a5a43c16894ddfb92", null ]
+    ] ],
+    [ "SgJovialDirectiveStatement", "namespacestringify_1_1_sg_jovial_directive_statement.html", [
+      [ "directive_types", "namespacestringify_1_1_sg_jovial_directive_statement.html#af9f2a39839097aaeed046046e07680ed", null ],
+      [ "directive_types", "namespacestringify_1_1_sg_jovial_directive_statement.html#a9258acc16f28214fceb5c171bb8594ff", null ],
+      [ "directive_types", "namespacestringify_1_1_sg_jovial_directive_statement.html#af8c7ff61feb56f724240704a00f7d78a", null ]
+    ] ],
+    [ "SgJovialLabelDeclaration", "namespacestringify_1_1_sg_jovial_label_declaration.html", [
+      [ "label_type_enum", "namespacestringify_1_1_sg_jovial_label_declaration.html#a43cbe521f8d6c72e1c0a5a850750c6f7", null ],
+      [ "label_type_enum", "namespacestringify_1_1_sg_jovial_label_declaration.html#a331c12c1aa41669633f75769289d1b51", null ],
+      [ "label_type_enum", "namespacestringify_1_1_sg_jovial_label_declaration.html#a8a0649d5bbcf4e876efe623a6018cd58", null ]
+    ] ],
+    [ "SgLabelStatement", "namespacestringify_1_1_sg_label_statement.html", [
+      [ "label_type_enum", "namespacestringify_1_1_sg_label_statement.html#a94212c1f4c215b83ccbeb1c4d5b9225b", null ],
+      [ "label_type_enum", "namespacestringify_1_1_sg_label_statement.html#abca8dc47a9bb45306a387cc18d5e10a6", null ],
+      [ "label_type_enum", "namespacestringify_1_1_sg_label_statement.html#af9b63284fac5b9d9fe5d1c4188366339", null ]
+    ] ],
+    [ "SgProcessControlStatement", "namespacestringify_1_1_sg_process_control_statement.html", [
+      [ "control_enum", "namespacestringify_1_1_sg_process_control_statement.html#ac55d947f054905b2b4edf2d98920a92c", null ],
+      [ "control_enum", "namespacestringify_1_1_sg_process_control_statement.html#a1dd6fbfd04c76d15338c040ff54d86ea", null ],
+      [ "control_enum", "namespacestringify_1_1_sg_process_control_statement.html#a2a2c15b4c6149cf35f9e8bd73a298ace", null ]
+    ] ],
+    [ "SgIOStatement", "namespacestringify_1_1_sg_i_o_statement.html", [
+      [ "io_statement_enum", "namespacestringify_1_1_sg_i_o_statement.html#a49717bf753ac8101e214c0e49dbdda26", null ],
+      [ "io_statement_enum", "namespacestringify_1_1_sg_i_o_statement.html#a14c7d4219e255313425997c1dcc77c9b", null ],
+      [ "io_statement_enum", "namespacestringify_1_1_sg_i_o_statement.html#a090230ac976afef44d8e87c9178f61b2", null ]
+    ] ],
+    [ "SgImageControlStatement", "namespacestringify_1_1_sg_image_control_statement.html", [
+      [ "image_control_statement_enum", "namespacestringify_1_1_sg_image_control_statement.html#ad227451dae377f547bd3c433c156dc38", null ],
+      [ "image_control_statement_enum", "namespacestringify_1_1_sg_image_control_statement.html#a9fda7d4949168b0e45d29f96c22e476e", null ],
+      [ "image_control_statement_enum", "namespacestringify_1_1_sg_image_control_statement.html#a4721fb323f16fe276af5516b3792f58e", null ]
+    ] ],
+    [ "SgAdaSelectStmt", "namespacestringify_1_1_sg_ada_select_stmt.html", [
+      [ "select_type_enum", "namespacestringify_1_1_sg_ada_select_stmt.html#ab5d754adc896056885f8de431d38cc2a", null ],
+      [ "select_type_enum", "namespacestringify_1_1_sg_ada_select_stmt.html#a88816e9c27860ecd59db402e98311534", null ],
+      [ "select_type_enum", "namespacestringify_1_1_sg_ada_select_stmt.html#a86760495a8b010e4a9f50a0272c1d49d", null ]
+    ] ],
+    [ "SgUnaryOp", "namespacestringify_1_1_sg_unary_op.html", [
+      [ "Sgop_mode", "namespacestringify_1_1_sg_unary_op.html#a0e3b4bc67dc76473d89726cb80b0677d", null ],
+      [ "Sgop_mode", "namespacestringify_1_1_sg_unary_op.html#acfdc05c4912f6984e05a2a757ad0682e", null ],
+      [ "Sgop_mode", "namespacestringify_1_1_sg_unary_op.html#ac40feae7a7be3c227bbe242fe135b9ce", null ]
+    ] ],
+    [ "SgCastExp", "namespacestringify_1_1_sg_cast_exp.html", [
+      [ "cast_type_enum", "namespacestringify_1_1_sg_cast_exp.html#ad96b816231a74d615d5438cf8f553fe5", null ],
+      [ "cast_type_enum", "namespacestringify_1_1_sg_cast_exp.html#a924f93a90d7b25bab21e90fa82ff24aa", null ],
+      [ "cast_type_enum", "namespacestringify_1_1_sg_cast_exp.html#a9f2bb1a595bed4fa62a56fb97d52834e", null ]
+    ] ],
+    [ "SgThrowOp", "namespacestringify_1_1_sg_throw_op.html", [
+      [ "e_throw_kind", "namespacestringify_1_1_sg_throw_op.html#a52bac529f28b6eac40799df2804c3730", null ],
+      [ "e_throw_kind", "namespacestringify_1_1_sg_throw_op.html#a1b1b8b417e70e08dba827fb5ded2dc1a", null ],
+      [ "e_throw_kind", "namespacestringify_1_1_sg_throw_op.html#a4c4239c80ac62d2f57438f9966dacff6", null ]
+    ] ],
+    [ "SgAsmOp", "namespacestringify_1_1_sg_asm_op.html", [
+      [ "asm_operand_constraint_enum", "namespacestringify_1_1_sg_asm_op.html#abb9c0398f576dd085fec8aae9e5d1451", null ],
+      [ "asm_operand_constraint_enum", "namespacestringify_1_1_sg_asm_op.html#a80bd2445aac89fb261b721a3f3db0fd0", null ],
+      [ "asm_operand_constraint_enum", "namespacestringify_1_1_sg_asm_op.html#a66cb2ec0b450145aefb7c1d1c33d94b6", null ],
+      [ "asm_operand_modifier_enum", "namespacestringify_1_1_sg_asm_op.html#ab58c2ef45988778d6d75e3d8b6b8b3fe", null ],
+      [ "asm_operand_modifier_enum", "namespacestringify_1_1_sg_asm_op.html#aaf953273c09b5985878b5c664acb3ccc", null ],
+      [ "asm_operand_modifier_enum", "namespacestringify_1_1_sg_asm_op.html#ab47e78ab4b75a9a500423c810797dfee", null ]
+    ] ],
+    [ "SgLabelSymbol", "namespacestringify_1_1_sg_label_symbol.html", [
+      [ "label_type_enum", "namespacestringify_1_1_sg_label_symbol.html#aa86cb800a2b8d29213e9c92256909057", null ],
+      [ "label_type_enum", "namespacestringify_1_1_sg_label_symbol.html#ab122d70943d22d1a02a35d2761763cc5", null ],
+      [ "label_type_enum", "namespacestringify_1_1_sg_label_symbol.html#acbab50ef0500a0713bbcfe8f5356a1a6", null ]
+    ] ],
+    [ "____cxxabiv1", "namespacestringify_1_1________cxxabiv1.html", "namespacestringify_1_1________cxxabiv1" ],
+    [ "a__class__type__wrapper", "namespacestringify_1_1a____class____type____wrapper.html", [
+      [ "a_class_kind", "namespacestringify_1_1a____class____type____wrapper.html#ac302a2028a2503c410f03f1ef308f190", null ],
+      [ "a_class_kind", "namespacestringify_1_1a____class____type____wrapper.html#a9f382fdd277155acc47a12a7309f3ef6", null ],
+      [ "a_class_kind", "namespacestringify_1_1a____class____type____wrapper.html#aae8dd65d5e92cda7320f19ed33c13aaa", null ]
+    ] ],
+    [ "a__type__definition", "namespacestringify_1_1a____type____definition.html", [
+      [ "a_type_definition_kind", "namespacestringify_1_1a____type____definition.html#a80b1bcf32e72d43a37aa4e95f2994ad0", null ],
+      [ "a_type_definition_kind", "namespacestringify_1_1a____type____definition.html#adc1f1ac69d32b53e8c065e1e61f164c7", null ],
+      [ "a_type_definition_kind", "namespacestringify_1_1a____type____definition.html#afdd25ae2e71478823b160275bf4ec086", null ]
+    ] ],
+    [ "a__type__indirection", "namespacestringify_1_1a____type____indirection.html", [
+      [ "an_indirection_kind", "namespacestringify_1_1a____type____indirection.html#a4193ff541893c81c4f548b70f4ba7013", null ],
+      [ "an_indirection_kind", "namespacestringify_1_1a____type____indirection.html#a1bce346dd3a3c6bda0d4aa8ff7302944", null ],
+      [ "an_indirection_kind", "namespacestringify_1_1a____type____indirection.html#a42168ad9d33eb014290c84a34dad31f4", null ]
+    ] ],
+    [ "a__type__wrapper", "namespacestringify_1_1a____type____wrapper.html", [
+      [ "a_kind", "namespacestringify_1_1a____type____wrapper.html#a98b14b2741feb6426d36270821e59323", null ],
+      [ "a_kind", "namespacestringify_1_1a____type____wrapper.html#af32e8da7835bf51164d07af3d6dd94ff", null ],
+      [ "a_kind", "namespacestringify_1_1a____type____wrapper.html#a58942ae9a52d487632986b63bee30846", null ]
+    ] ],
+    [ "an__accessibility", "namespacestringify_1_1an____accessibility.html", [
+      [ "access_kind", "namespacestringify_1_1an____accessibility.html#a1a2f8b4c476383bbe528eb4531613e4b", null ],
+      [ "access_kind", "namespacestringify_1_1an____accessibility.html#ab3224dc97c52f9f3c99ee6674ed3ca00", null ],
+      [ "access_kind", "namespacestringify_1_1an____accessibility.html#a9c0f50c436d4f0584411417a4c6ea9d7", null ]
+    ] ],
+    [ "an__array__type__wrapper", "namespacestringify_1_1an____array____type____wrapper.html", [
+      [ "an_array_kind", "namespacestringify_1_1an____array____type____wrapper.html#a4f8496d1f3f73ad3dd3c3d31b0daac31", null ],
+      [ "an_array_kind", "namespacestringify_1_1an____array____type____wrapper.html#afb5f1459ca0ad97ad0a4e56f9680c37a", null ],
+      [ "an_array_kind", "namespacestringify_1_1an____array____type____wrapper.html#a62e93653f07a4d9508cc5654c57c94d0", null ]
+    ] ],
+    [ "an__ifc__module", "namespacestringify_1_1an____ifc____module.html", [
+      [ "a_cache_expr_option", "namespacestringify_1_1an____ifc____module.html#aa237a75cd484ce1e2fe929f3016ef63f", null ],
+      [ "a_cache_expr_option", "namespacestringify_1_1an____ifc____module.html#a21ce154a78557f0efd818a461c54ff75", null ],
+      [ "a_cache_expr_option", "namespacestringify_1_1an____ifc____module.html#aeab927d3ff6fb27e7b0eb84074d89e00", null ],
+      [ "a_cache_statement_option", "namespacestringify_1_1an____ifc____module.html#abfb7cfeb963925eed8d48f179e8ff92b", null ],
+      [ "a_cache_statement_option", "namespacestringify_1_1an____ifc____module.html#a5b864af270a71c913ae1615fbc1f4e83", null ],
+      [ "a_cache_statement_option", "namespacestringify_1_1an____ifc____module.html#a0f9bca3d8aba6a0ce4cbe35d54fd5894", null ]
+    ] ],
+    [ "AST__Graph", "namespacestringify_1_1_a_s_t_____graph.html", [
+      [ "pointerHandling", "namespacestringify_1_1_a_s_t_____graph.html#a4017ae5d8caec2dfddb73ec43904bc43", null ],
+      [ "pointerHandling", "namespacestringify_1_1_a_s_t_____graph.html#ac2a4975bce79b3e71bfd0c39ae7ce2ff", null ],
+      [ "pointerHandling", "namespacestringify_1_1_a_s_t_____graph.html#a13becbb2ecbb1ca7a04606cc70ccc931", null ],
+      [ "traversalType", "namespacestringify_1_1_a_s_t_____graph.html#aff32c344ef0a612f352a6c28860ea9b4", null ],
+      [ "traversalType", "namespacestringify_1_1_a_s_t_____graph.html#a76917c75c7ebf97dbbc47b5f46e47b12", null ],
+      [ "traversalType", "namespacestringify_1_1_a_s_t_____graph.html#addf8284542163ed55ff1a7f30c8b5b31", null ]
+    ] ],
+    [ "csharp__translator", "namespacestringify_1_1csharp____translator.html", [
+      [ "SeqKind", "namespacestringify_1_1csharp____translator.html#ab6a61946ea10e7a0f4613ed036b30bdd", null ],
+      [ "SeqKind", "namespacestringify_1_1csharp____translator.html#a23a6fa3816fdb12d0c0f795675522190", null ],
+      [ "SeqKind", "namespacestringify_1_1csharp____translator.html#ad6472ee2f9adf3530d2263d7ef4a3a29", null ]
+    ] ],
+    [ "Jovial__ROSE__Translation", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html", [
+      [ "ExpressionKind", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html#a32f66f2385fa2dcfcaab0c9f1febd77a", null ],
+      [ "ExpressionKind", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html#a5ddfd62e45f4accfa9e5250979d552e5", null ],
+      [ "ExpressionKind", "namespacestringify_1_1_jovial_____r_o_s_e_____translation.html#a82a72b5ebc7dc9933282ee1bf61f1680", null ]
+    ] ],
+    [ "ROSE__Fortran__defs", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html", [
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a8d1484dbd3f66bb8dc233f0a6abd5a95", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a8efa2b4d33480806dff3827985e2a1ec", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a379f84b309e8859b191de57d0e693c40", null ],
+      [ "ROSE_C_CXX_operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a951f943632d42b81c82a1314f7efb286", null ],
+      [ "ROSE_C_CXX_operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a86aa18934d29200e4bab25e3f7fa52fb", null ],
+      [ "ROSE_C_CXX_operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a458ea692acccd4a9026730a20266f215", null ],
+      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#ab81dfbb4fb79a686c26743d1859ab774", null ],
+      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a2e0a5a6245675df56b499ef81302ba4d", null ],
+      [ "ROSE_Fortran_Additional_Info", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a23c931e80ef7bf4a178a6222fcda24f0", null ],
+      [ "ROSE_Fortran_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#acb72c40c6c253bbdac723edcff325b7a", null ],
+      [ "ROSE_Fortran_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#af0842b3f99d9cba1fbaea776d38d50e4", null ],
+      [ "ROSE_Fortran_keywords", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#aa9df9f689f45e66854c9af8595af2640", null ],
+      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#ab032a9584a081cd20774ecb2aa3e4633", null ],
+      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#a55c028cb1502c48bb4864ab966192502", null ],
+      [ "ROSE_Fortran_Operators", "namespacestringify_1_1_r_o_s_e_____fortran____defs.html#ad69e50110829752bc269acd6f28949bb", null ]
+    ] ],
+    [ "ROSE__token__ids", "namespacestringify_1_1_r_o_s_e____token____ids.html", [
+      [ "ROSE_C_CXX_Additional_Info", "namespacestringify_1_1_r_o_s_e____token____ids.html#a93e150f40b62f68eca37df173303b8cb", null ],
+      [ "ROSE_C_CXX_Additional_Info", "namespacestringify_1_1_r_o_s_e____token____ids.html#ae1e4949d9db8d72031b321f888df1989", null ],
+      [ "ROSE_C_CXX_Additional_Info", "namespacestringify_1_1_r_o_s_e____token____ids.html#a82904296e9c9c8d1a3beb3a4f2953782", null ],
+      [ "ROSE_C_CXX_alternate_tok", "namespacestringify_1_1_r_o_s_e____token____ids.html#a81c90cce63c656331f40b6ccbc571711", null ],
+      [ "ROSE_C_CXX_alternate_tok", "namespacestringify_1_1_r_o_s_e____token____ids.html#acffff4f1f80e405543319c38099dcee8", null ],
+      [ "ROSE_C_CXX_alternate_tok", "namespacestringify_1_1_r_o_s_e____token____ids.html#aaf23fb61a7db1c7ed49b8514aa8b8ec7", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e____token____ids.html#aac3aba4c4a04ad9dfae6015ec0d4bd73", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e____token____ids.html#a0942a930c8ad6d95bd9f123f2429354e", null ],
+      [ "ROSE_C_CXX_keywords", "namespacestringify_1_1_r_o_s_e____token____ids.html#a1faf8d517a91d5a4b81bb017311db61e", null ],
+      [ "whitespace", "namespacestringify_1_1_r_o_s_e____token____ids.html#a9b88d966217bc76479b39162b891756f", null ],
+      [ "whitespace", "namespacestringify_1_1_r_o_s_e____token____ids.html#a320ef4b07723d0f69adf8c310ad780a9", null ],
+      [ "whitespace", "namespacestringify_1_1_r_o_s_e____token____ids.html#afa1722551f441ca1501d8dcae079a50f", null ]
+    ] ],
+    [ "Sg__File__Info", "namespacestringify_1_1_sg_____file_____info.html", [
+      [ "classifier", "namespacestringify_1_1_sg_____file_____info.html#a2bd49cc62054fc9cc7eb907c1351fe03", null ],
+      [ "classifier", "namespacestringify_1_1_sg_____file_____info.html#a1afadd8df31b49da582a9724b8e8bb0e", null ],
+      [ "classifier", "namespacestringify_1_1_sg_____file_____info.html#abc82915ab941862b9b6cd29284a0fa6a", null ],
+      [ "p_fileflags", "namespacestringify_1_1_sg_____file_____info.html#adcd0727fc98ec51b56a05a304a76e87e", null ],
+      [ "p_fileflags", "namespacestringify_1_1_sg_____file_____info.html#aa31dfdc20b9e972c102dd0f9959aec6f", null ],
+      [ "p_fileflags", "namespacestringify_1_1_sg_____file_____info.html#a03e4af07ca800c984dcd27c42c89856f", null ]
+    ] ],
+    [ "SgUnparse__Info", "namespacestringify_1_1_sg_unparse_____info.html", [
+      [ "access_attr_enum", "namespacestringify_1_1_sg_unparse_____info.html#afa36b60539dd4b86e8aceb976281893c", null ],
+      [ "access_attr_enum", "namespacestringify_1_1_sg_unparse_____info.html#a9a8b241e230530eb6e2eb864ea7f805d", null ],
+      [ "access_attr_enum", "namespacestringify_1_1_sg_unparse_____info.html#acbd4e17b6e3047a66364a0daf762482d", null ],
+      [ "unparse_type_num", "namespacestringify_1_1_sg_unparse_____info.html#a830c5cd5cd044966112668dcdcc9414b", null ],
+      [ "unparse_type_num", "namespacestringify_1_1_sg_unparse_____info.html#a018063a8488aee9568834be747a40780", null ],
+      [ "unparse_type_num", "namespacestringify_1_1_sg_unparse_____info.html#ad5409626d920c0bdf9b6b6b8d8addc9a", null ]
+    ] ],
+    [ "SgUPC__AccessModifier", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html", [
+      [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html#ae12c54409634bd0026b86f103ed2be94", null ],
+      [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html#a81ca5f77cb39be90d99a543780f0c8d3", null ],
+      [ "upc_access_modifier_enum", "namespacestringify_1_1_sg_u_p_c_____access_modifier.html#af255d00fa37dc79a4096b372de641a58", null ]
+    ] ],
+    [ "ssa__unfiltered__cfg", "namespacestringify_1_1ssa____unfiltered____cfg.html", "namespacestringify_1_1ssa____unfiltered____cfg" ],
     [ "_Access_Definition_Kinds", "namespacestringify.html#ad9935a18d0d84db6fdfa704eaed8b064", null ],
     [ "_Access_Definition_Kinds", "namespacestringify.html#a932ff4875bb292cf5fab43e511109d2a", null ],
     [ "_Access_Definition_Kinds", "namespacestringify.html#ae797018540bbcd0402c0e85694fd16ae", null ],

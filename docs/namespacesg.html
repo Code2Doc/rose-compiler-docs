@@ -93,14 +93,14 @@ $(function(){initNavTree('namespacesg.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Auto-generated documentation for the sg namespace.  
+<p>This namespace contains template functions that operate on the ROSE AST.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:anonymous_5Fnamespace_7BsageGeneric_2Eh_7D" id="r_anonymous_5Fnamespace_7BsageGeneric_2Eh_7D"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacesg_1_1anonymous__namespace_02sage_generic_8h_03.html">anonymous_namespace{sageGeneric.h}</a></td></tr>
 <tr class="memitem:anonymous_5F_5Fnamespace_5F02sageGeneric_5F8h_5F03" id="r_anonymous_5F_5Fnamespace_5F02sageGeneric_5F8h_5F03"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacesg_1_1anonymous____namespace__02sage_generic__8h__03.html">anonymous__namespace_02sageGeneric_8h_03</a></td></tr>
 <tr class="memdesc:namespacesg_1_1anonymous____namespace__02sage_generic__8h__03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated documentation for the <a class="el" href="namespacesg_1_1anonymous____namespace__02sage_generic__8h__03.html" title="Auto-generated documentation for the sg::anonymous__namespace_02sageGeneric_8h_03 namespace.">sg::anonymous__namespace_02sageGeneric_8h_03</a> namespace. <br /></td></tr>
-<tr class="memitem:anonymous_5Fnamespace_7BsageGeneric_2Eh_7D" id="r_anonymous_5Fnamespace_7BsageGeneric_2Eh_7D"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacesg_1_1anonymous__namespace_02sage_generic_8h_03.html">anonymous_namespace{sageGeneric.h}</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -113,7 +113,7 @@ Classes</h2></td></tr>
 <tr class="memitem:NotNull" id="r_NotNull"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structsg_1_1_not_null.html">NotNull</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">experimental class for returning non-null pointers  <a href="structsg_1_1_not_null.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DispatchHandler" id="r_DispatchHandler"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structsg_1_1_dispatch_handler.html">DispatchHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structsg_1_1_dispatch_handler.html#ae15ee41ce3650d3a321512253374571f">Base</a> class for any handlers passed to <a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="dispatch">dispatch</a>.  <a href="structsg_1_1_dispatch_handler.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structsg_1_1_dispatch_handler.html#ae15ee41ce3650d3a321512253374571f">Base</a> class for any handlers passed to <a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="dispatch">dispatch</a>.  <a href="structsg_1_1_dispatch_handler.html#details">More...</a><br /></td></tr>
 <tr class="memitem:VisitDispatcher" id="r_VisitDispatcher"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structsg_1_1_visit_dispatcher.html">VisitDispatcher</a></td></tr>
 <tr class="memitem:DefaultHandler" id="r_DefaultHandler"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structsg_1_1_default_handler.html">DefaultHandler</a></td></tr>
 <tr class="memitem:AncestorTypeFinder" id="r_AncestorTypeFinder"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structsg_1_1_ancestor_type_finder.html">AncestorTypeFinder</a></td></tr>
@@ -124,50 +124,38 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aded1d495f10b7d4538b0f183f58feef5" id="r_aded1d495f10b7d4538b0f183f58feef5"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
-<tr class="memitem:aded1d495f10b7d4538b0f183f58feef5 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#aded1d495f10b7d4538b0f183f58feef5">ancestorPath</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>) -&gt; SageNode *</td></tr>
-<tr class="memdesc:aded1d495f10b7d4538b0f183f58feef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the ancestor of a given node cast to a specific SageNode type.  <br /></td></tr>
-<tr class="memitem:a09af331b1f83dc4d94f2a389cbca9944" id="r_a09af331b1f83dc4d94f2a389cbca9944"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a09af331b1f83dc4d94f2a389cbca9944">ancestorPath</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memitem:aff97214d1ad590c4082d3ffe2b0c1dd8" id="r_aff97214d1ad590c4082d3ffe2b0c1dd8"><td class="memItemLeft"><a class="el" href="structsg_1_1_dispatch_helper.html">DispatchHelper</a>&lt; GVisitor &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aff97214d1ad590c4082d3ffe2b0c1dd8">dispatchHelper</a> (GVisitor gv)</td></tr>
-<tr class="memdesc:aff97214d1ad590c4082d3ffe2b0c1dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="structsg_1_1_dispatch_helper.html">DispatchHelper</a> instance using the provided GVisitor.  <br /></td></tr>
-<tr class="memitem:a936de63f4e02a2cacb8d0b9973f00651" id="r_a936de63f4e02a2cacb8d0b9973f00651"><td class="memItemLeft">GVisitor&#160;</td><td class="memItemRight"><a class="el" href="#a936de63f4e02a2cacb8d0b9973f00651">traverseChildren</a> (GVisitor gv, SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, SuccessorGenerator <a class="el" href="profiled__8c_8dox.html#aa41de0d2bf25026b702577778c2d6dd6">gen</a>={})</td></tr>
-<tr class="memdesc:a936de63f4e02a2cacb8d0b9973f00651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the children of an SgNode using a provided successor generator and visitor.  <br /></td></tr>
-<tr class="memitem:a95cfe51a3276b26596c867501bc31c77" id="r_a95cfe51a3276b26596c867501bc31c77"><td class="memItemLeft">GVisitor&#160;</td><td class="memItemRight"><a class="el" href="#a95cfe51a3276b26596c867501bc31c77">traverseChildren</a> (GVisitor gv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a95cfe51a3276b26596c867501bc31c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively traverses the children of a given SgNode using a GVisitor.  <br /></td></tr>
-<tr class="memitem:a1e62c5ca39511a4c0560055c7fcdc1de" id="r_a1e62c5ca39511a4c0560055c7fcdc1de"><td class="memItemLeft">SageNode::base_node_type &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a1e62c5ca39511a4c0560055c7fcdc1de">asBaseType</a> (SageNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a1e62c5ca39511a4c0560055c7fcdc1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode reference to its underlying base node type.  <br /></td></tr>
-<tr class="memitem:a276e9e26ef2a989463f27ed4bb240592" id="r_a276e9e26ef2a989463f27ed4bb240592"><td class="memItemLeft">const SageNode::base_node_type &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a276e9e26ef2a989463f27ed4bb240592">asBaseType</a> (const SageNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a276e9e26ef2a989463f27ed4bb240592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode reference to its underlying base_node_type.  <br /></td></tr>
-<tr class="memitem:ad578b0c2a1d16ba5ff5c3ab4b97009a2" id="r_ad578b0c2a1d16ba5ff5c3ab4b97009a2"><td class="memItemLeft">SageNode::base_node_type *&#160;</td><td class="memItemRight"><a class="el" href="#ad578b0c2a1d16ba5ff5c3ab4b97009a2">asBaseType</a> (SageNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:ad578b0c2a1d16ba5ff5c3ab4b97009a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode pointer to its underlying base_node_type pointer.  <br /></td></tr>
-<tr class="memitem:a8ed9a4dde06f75dca2155ca37f0b89e6" id="r_a8ed9a4dde06f75dca2155ca37f0b89e6"><td class="memItemLeft">const SageNode::base_node_type *&#160;</td><td class="memItemRight"><a class="el" href="#a8ed9a4dde06f75dca2155ca37f0b89e6">asBaseType</a> (const SageNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a8ed9a4dde06f75dca2155ca37f0b89e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode pointer to its underlying base_node_type pointer.  <br /></td></tr>
-<tr class="memitem:ad20d21ee84fc409a7014cd8990e211c4" id="r_ad20d21ee84fc409a7014cd8990e211c4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad20d21ee84fc409a7014cd8990e211c4">unused</a> (const <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;)</td></tr>
-<tr class="memdesc:ad20d21ee84fc409a7014cd8990e211c4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html">A</a> no-op function used to suppress compiler warnings for unused variables.  <br /></td></tr>
-<tr class="memitem:a523fb23c9b50919f540ee8f9bf7d42ac" id="r_a523fb23c9b50919f540ee8f9bf7d42ac"><td class="memItemLeft"><a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&#160;</td><td class="memItemRight"><a class="el" href="#a523fb23c9b50919f540ee8f9bf7d42ac">conv</a> (const E &amp;el)</td></tr>
-<tr class="memdesc:a523fb23c9b50919f540ee8f9bf7d42ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an element of type E to type T using stringstream.  <br /></td></tr>
-<tr class="memitem:a612279d3c0a664df440ca8ed3242a945" id="r_a612279d3c0a664df440ca8ed3242a945"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a612279d3c0a664df440ca8ed3242a945">report_error</a> (std::string desc, const char *file, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln)</td></tr>
-<tr class="memdesc:a612279d3c0a664df440ca8ed3242a945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a fatal error by appending location information to a description and throwing an exception.  <br /></td></tr>
-<tr class="memitem:a3a2d334536ee8dc56ca41ef1312f3d8b" id="r_a3a2d334536ee8dc56ca41ef1312f3d8b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3a2d334536ee8dc56ca41ef1312f3d8b">unexpected_node</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, const char *file, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln)</td></tr>
-<tr class="memdesc:a3a2d334536ee8dc56ca41ef1312f3d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error when an unexpected node type is encountered.  <br /></td></tr>
-<tr class="memitem:ad38278fd55baf4a12afd6e8c15a78b2b" id="r_ad38278fd55baf4a12afd6e8c15a78b2b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad38278fd55baf4a12afd6e8c15a78b2b">report_error_if</a> (bool iserror, const std::string &amp;desc, const char *file=<a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
-<tr class="memdesc:ad38278fd55baf4a12afd6e8c15a78b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error if a specific condition evaluates to true.  <br /></td></tr>
+<tr class="memitem:a7f54fac5ec5b46e9d96b6633fb1cdd95" id="r_a7f54fac5ec5b46e9d96b6633fb1cdd95"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt; </td></tr>
+<tr class="memitem:a7f54fac5ec5b46e9d96b6633fb1cdd95 template"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a7f54fac5ec5b46e9d96b6633fb1cdd95">unused</a> (const <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;)</td></tr>
+<tr class="memdesc:a7f54fac5ec5b46e9d96b6633fb1cdd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">portable implementation to avoid compiler warnings for unused parameter.  <br /></td></tr>
+<tr class="memitem:a3a11f3ee38265947e5dbb19060cedf3f" id="r_a3a11f3ee38265947e5dbb19060cedf3f"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>, class E&gt; </td></tr>
+<tr class="memitem:a3a11f3ee38265947e5dbb19060cedf3f template"><td class="memItemLeft">static <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3a11f3ee38265947e5dbb19060cedf3f">conv</a> (const E &amp;el)</td></tr>
+<tr class="memdesc:a3a11f3ee38265947e5dbb19060cedf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts object of type E to T via string conversion  <br /></td></tr>
+<tr class="memitem:aed26b4878990f9aca957f38bff7f3d73" id="r_aed26b4878990f9aca957f38bff7f3d73"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed26b4878990f9aca957f38bff7f3d73">report_error</a> (std::string desc, const char *file=<a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
+<tr class="memdesc:aed26b4878990f9aca957f38bff7f3d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a fatal error by appending location information to a description and throwing an exception.  <br /></td></tr>
+<tr class="memitem:a94c40d5a37467288eafb7cae437b676a" id="r_a94c40d5a37467288eafb7cae437b676a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a94c40d5a37467288eafb7cae437b676a">unexpected_node</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, const char *file=<a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
+<tr class="memdesc:a94c40d5a37467288eafb7cae437b676a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error when an unexpected node type is encountered.  <br /></td></tr>
+<tr class="memitem:a934fc2730ce910cdc1574d1a5fb68aaf" id="r_a934fc2730ce910cdc1574d1a5fb68aaf"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a934fc2730ce910cdc1574d1a5fb68aaf">report_error_if</a> (bool iserror, const std::string &amp;desc, const char *file=<a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a>, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
+<tr class="memdesc:a934fc2730ce910cdc1574d1a5fb68aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error if a specific condition evaluates to true.  <br /></td></tr>
 <tr class="memitem:a588cba5cd179ad2bcebc8d2f3184323f" id="r_a588cba5cd179ad2bcebc8d2f3184323f"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt; </td></tr>
 <tr class="memitem:a588cba5cd179ad2bcebc8d2f3184323f template"><td class="memItemLeft"><a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a588cba5cd179ad2bcebc8d2f3184323f">deref</a> (<a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> *ptr, const char *file=0, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
 <tr class="memdesc:a588cba5cd179ad2bcebc8d2f3184323f"><td class="mdescLeft">&#160;</td><td class="mdescRight">dereferences an object (= checked dereference in debug mode)  <br /></td></tr>
 <tr class="memitem:aee9afa84d3eb7bd9cb5424d99bd34c92" id="r_aee9afa84d3eb7bd9cb5424d99bd34c92"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>, class U, bool = EnableConversion&lt;U*,T*&gt;::value || EnableConversion&lt;T*,U*&gt;::value&gt; </td></tr>
 <tr class="memitem:aee9afa84d3eb7bd9cb5424d99bd34c92 template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aee9afa84d3eb7bd9cb5424d99bd34c92">operator&lt;</a> (<a class="el" href="structsg_1_1_not_null.html">NotNull</a>&lt; <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &gt; lhs, <a class="el" href="structsg_1_1_not_null.html">NotNull</a>&lt; U &gt; rhs)</td></tr>
 <tr class="memdesc:aee9afa84d3eb7bd9cb5424d99bd34c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a less-than comparison between two <a class="el" href="structsg_1_1_not_null.html" title="experimental class for returning non-null pointers">NotNull</a> wrappers based on their underlying pointers.  <br /></td></tr>
-<tr class="memitem:a0dbf48ceb8151d2ded86794767b3104d" id="r_a0dbf48ceb8151d2ded86794767b3104d"><td class="memItemLeft">SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0dbf48ceb8151d2ded86794767b3104d">assume_sage_type</a> (SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a0dbf48ceb8151d2ded86794767b3104d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a type-unsafe cast of an SgNode to a SageNode.  <br /></td></tr>
-<tr class="memitem:ac628f28010d7172b18c49514b35ba2cb" id="r_ac628f28010d7172b18c49514b35ba2cb"><td class="memItemLeft">const SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac628f28010d7172b18c49514b35ba2cb">assume_sage_type</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:ac628f28010d7172b18c49514b35ba2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a static cast of an SgNode to a SageNode.  <br /></td></tr>
-<tr class="memitem:a1392add7f8d8eece5a5377df1dbbf6fc" id="r_a1392add7f8d8eece5a5377df1dbbf6fc"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1392add7f8d8eece5a5377df1dbbf6fc">_dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a1392add7f8d8eece5a5377df1dbbf6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches a visitor to a specific SgNode to perform a traversal or operation.  <br /></td></tr>
-<tr class="memitem:a5304a1d6d7df35d096395852ba0c4b05" id="r_a5304a1d6d7df35d096395852ba0c4b05"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05">dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a5304a1d6d7df35d096395852ba0c4b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches a visitor to a specific SgNode.  <br /></td></tr>
-<tr class="memitem:ad4d90ee87f2c7469cf5125ebc64c1cc0" id="r_ad4d90ee87f2c7469cf5125ebc64c1cc0"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad4d90ee87f2c7469cf5125ebc64c1cc0">dispatch</a> (RoseVisitor &amp;&amp;rv, const SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:ad4d90ee87f2c7469cf5125ebc64c1cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches a visitor to a specific SgNode.  <br /></td></tr>
+<tr class="memitem:a7257d6d04f3bfb03b9db898e65cc5c29" id="r_a7257d6d04f3bfb03b9db898e65cc5c29"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
+<tr class="memitem:a7257d6d04f3bfb03b9db898e65cc5c29 template"><td class="memItemLeft">static SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7257d6d04f3bfb03b9db898e65cc5c29">assume_sage_type</a> (SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a7257d6d04f3bfb03b9db898e65cc5c29"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em>unchecked</em> down cast from SgNode to SageNode  <br /></td></tr>
+<tr class="memitem:a7f34e15c3d7f51981378ffe837bd5bbf" id="r_a7f34e15c3d7f51981378ffe837bd5bbf"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
+<tr class="memitem:a7f34e15c3d7f51981378ffe837bd5bbf template"><td class="memItemLeft">static const SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7f34e15c3d7f51981378ffe837bd5bbf">assume_sage_type</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:a42e5805faccf5b60599a00759dccb6be" id="r_a42e5805faccf5b60599a00759dccb6be"><td class="memTemplParams" colspan="2">template&lt;class RoseVisitor&gt; </td></tr>
+<tr class="memitem:a42e5805faccf5b60599a00759dccb6be template"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a42e5805faccf5b60599a00759dccb6be">_dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a42e5805faccf5b60599a00759dccb6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches a visitor to a specific SgNode to perform a traversal or operation.  <br /></td></tr>
+<tr class="memitem:a4cb21835a6f67a379ae869a622fbe99a" id="r_a4cb21835a6f67a379ae869a622fbe99a"><td class="memTemplParams" colspan="2">template&lt;class RoseVisitor&gt; </td></tr>
+<tr class="memitem:a4cb21835a6f67a379ae869a622fbe99a template"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a">dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a4cb21835a6f67a379ae869a622fbe99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">uncovers the type of SgNode and passes it to an function "handle" in RoseVisitor. which should be overloaded with every possible target node. After the traversal, RoseVisitor should contain the intended return data.  <br /></td></tr>
+<tr class="memitem:a31788b2e0dca13b9adc9b40fc7299505" id="r_a31788b2e0dca13b9adc9b40fc7299505"><td class="memTemplParams" colspan="2">template&lt;class RoseVisitor&gt; </td></tr>
+<tr class="memitem:a31788b2e0dca13b9adc9b40fc7299505 template"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a31788b2e0dca13b9adc9b40fc7299505">dispatch</a> (RoseVisitor &amp;&amp;rv, const SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a31788b2e0dca13b9adc9b40fc7299505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches a visitor to a specific SgNode.  <br /></td></tr>
 <tr class="memitem:a38fc408dc5bfd9eada89a247d56948b9" id="r_a38fc408dc5bfd9eada89a247d56948b9"><td class="memTemplParams" colspan="2">template&lt;class AncestorNode, class QualSgNode&gt; </td></tr>
 <tr class="memitem:a38fc408dc5bfd9eada89a247d56948b9 template"><td class="memItemLeft">AncestorNode *&#160;</td><td class="memItemRight"><a class="el" href="#a38fc408dc5bfd9eada89a247d56948b9">_ancestor</a> (QualSgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
 <tr class="memdesc:a38fc408dc5bfd9eada89a247d56948b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">implements the ancestor search  <br /></td></tr>
@@ -186,37 +174,39 @@ Functions</h2></td></tr>
 <tr class="memitem:a4bfb46384e55452d0eaaef92f4321ab7" id="r_a4bfb46384e55452d0eaaef92f4321ab7"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
 <tr class="memitem:a4bfb46384e55452d0eaaef92f4321ab7 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a4bfb46384e55452d0eaaef92f4321ab7">ancestor_path</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>) -&gt; SageNode *</td></tr>
 <tr class="memdesc:a4bfb46384e55452d0eaaef92f4321ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the ancestor of a given node cast to a specific SageNode type.  <br /></td></tr>
-<tr class="memitem:abc427b1adf94d34a50638074ed51e25d" id="r_abc427b1adf94d34a50638074ed51e25d"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#abc427b1adf94d34a50638074ed51e25d">ancestor_path</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memitem:ab5889fc5d7bbd374a16c14fab999ec64" id="r_ab5889fc5d7bbd374a16c14fab999ec64"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab5889fc5d7bbd374a16c14fab999ec64">swap_parent</a> (SgNode *lhs, SgNode *rhs)</td></tr>
-<tr class="memdesc:ab5889fc5d7bbd374a16c14fab999ec64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the parent pointers of two SgNode objects.  <br /></td></tr>
-<tr class="memitem:ab66ea170ec507e2094f8e47cd5de4c21" id="r_ab66ea170ec507e2094f8e47cd5de4c21"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab66ea170ec507e2094f8e47cd5de4c21">swap_parent</a> (void *, void *)</td></tr>
-<tr class="memdesc:ab66ea170ec507e2094f8e47cd5de4c21"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html">A</a> placeholder function for swapping parent pointers.  <br /></td></tr>
+<tr class="memitem:aa301eca5b341895fabb77c6f9907d7e0" id="r_aa301eca5b341895fabb77c6f9907d7e0"><td class="memTemplParams" colspan="2">template&lt;class SageNode, class... SageNodes&gt; </td></tr>
+<tr class="memitem:aa301eca5b341895fabb77c6f9907d7e0 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#aa301eca5b341895fabb77c6f9907d7e0">ancestor_path</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>) -&gt; decltype(ancestor_path&lt; SageNodes... &gt;(<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>))</td></tr>
+<tr class="memitem:ab5889fc5d7bbd374a16c14fab999ec64" id="r_ab5889fc5d7bbd374a16c14fab999ec64"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab5889fc5d7bbd374a16c14fab999ec64">swap_parent</a> (SgNode *lhs, SgNode *rhs)</td></tr>
+<tr class="memitem:ab66ea170ec507e2094f8e47cd5de4c21" id="r_ab66ea170ec507e2094f8e47cd5de4c21"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab66ea170ec507e2094f8e47cd5de4c21">swap_parent</a> (void *, void *)</td></tr>
 <tr class="memitem:a4ac8306fe9358b57d635c626a89bf473" id="r_a4ac8306fe9358b57d635c626a89bf473"><td class="memTemplParams" colspan="2">template&lt;class SageNode, class SageChild&gt; </td></tr>
 <tr class="memitem:a4ac8306fe9358b57d635c626a89bf473 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ac8306fe9358b57d635c626a89bf473">swap_child</a> (SageNode &amp;lhs, SageNode &amp;rhs, SageChild *(SageNode::*getter)() const, void(SageNode::*setter)(SageChild *))</td></tr>
 <tr class="memdesc:a4ac8306fe9358b57d635c626a89bf473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the child nodes of two SageNode instances.  <br /></td></tr>
 <tr class="memitem:a91351a81d99e4846a19091fb87330205" id="r_a91351a81d99e4846a19091fb87330205"><td class="memTemplParams" colspan="2">template&lt;class SageParent, class SageChild&gt; </td></tr>
 <tr class="memitem:a91351a81d99e4846a19091fb87330205 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a91351a81d99e4846a19091fb87330205">linkParentChild</a> (SageParent &amp;parent, SageChild &amp;child, void(SageParent::*setter)(SageChild *))</td></tr>
 <tr class="memdesc:a91351a81d99e4846a19091fb87330205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a bidirectional link between a parent object and a child object.  <br /></td></tr>
-<tr class="memitem:a7f54fac5ec5b46e9d96b6633fb1cdd95" id="r_a7f54fac5ec5b46e9d96b6633fb1cdd95"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&gt; </td></tr>
-<tr class="memitem:a7f54fac5ec5b46e9d96b6633fb1cdd95 template"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a7f54fac5ec5b46e9d96b6633fb1cdd95">unused</a> (const <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;)</td></tr>
-<tr class="memdesc:a7f54fac5ec5b46e9d96b6633fb1cdd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">portable implementation to avoid compiler warnings for unused parameter.  <br /></td></tr>
-<tr class="memitem:a3a11f3ee38265947e5dbb19060cedf3f" id="r_a3a11f3ee38265947e5dbb19060cedf3f"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>, class E&gt; </td></tr>
-<tr class="memitem:a3a11f3ee38265947e5dbb19060cedf3f template"><td class="memItemLeft">static <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3a11f3ee38265947e5dbb19060cedf3f">conv</a> (const E &amp;el)</td></tr>
-<tr class="memdesc:a3a11f3ee38265947e5dbb19060cedf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts object of type E to T via string conversion  <br /></td></tr>
-<tr class="memitem:a7257d6d04f3bfb03b9db898e65cc5c29" id="r_a7257d6d04f3bfb03b9db898e65cc5c29"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
-<tr class="memitem:a7257d6d04f3bfb03b9db898e65cc5c29 template"><td class="memItemLeft">static SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7257d6d04f3bfb03b9db898e65cc5c29">assume_sage_type</a> (SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a7257d6d04f3bfb03b9db898e65cc5c29"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em>unchecked</em> down cast from SgNode to SageNode  <br /></td></tr>
-<tr class="memitem:a7f34e15c3d7f51981378ffe837bd5bbf" id="r_a7f34e15c3d7f51981378ffe837bd5bbf"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
-<tr class="memitem:a7f34e15c3d7f51981378ffe837bd5bbf template"><td class="memItemLeft">static const SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7f34e15c3d7f51981378ffe837bd5bbf">assume_sage_type</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memitem:a42e5805faccf5b60599a00759dccb6be" id="r_a42e5805faccf5b60599a00759dccb6be"><td class="memTemplParams" colspan="2">template&lt;class RoseVisitor&gt; </td></tr>
-<tr class="memitem:a42e5805faccf5b60599a00759dccb6be template"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a42e5805faccf5b60599a00759dccb6be">_dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memitem:a4cb21835a6f67a379ae869a622fbe99a" id="r_a4cb21835a6f67a379ae869a622fbe99a"><td class="memTemplParams" colspan="2">template&lt;class RoseVisitor&gt; </td></tr>
-<tr class="memitem:a4cb21835a6f67a379ae869a622fbe99a template"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a">dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a4cb21835a6f67a379ae869a622fbe99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">uncovers the type of SgNode and passes it to an function "handle" in RoseVisitor. which should be overloaded with every possible target node. After the traversal, RoseVisitor should contain the intended return data.  <br /></td></tr>
-<tr class="memitem:a31788b2e0dca13b9adc9b40fc7299505" id="r_a31788b2e0dca13b9adc9b40fc7299505"><td class="memTemplParams" colspan="2">template&lt;class RoseVisitor&gt; </td></tr>
-<tr class="memitem:a31788b2e0dca13b9adc9b40fc7299505 template"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a31788b2e0dca13b9adc9b40fc7299505">dispatch</a> (RoseVisitor &amp;&amp;rv, const SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memitem:aa301eca5b341895fabb77c6f9907d7e0" id="r_aa301eca5b341895fabb77c6f9907d7e0"><td class="memTemplParams" colspan="2">template&lt;class SageNode, class... SageNodes&gt; </td></tr>
-<tr class="memitem:aa301eca5b341895fabb77c6f9907d7e0 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#aa301eca5b341895fabb77c6f9907d7e0">ancestor_path</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>) -&gt; decltype(ancestor_path&lt; SageNodes... &gt;(<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>))</td></tr>
+<tr class="memitem:a09af331b1f83dc4d94f2a389cbca9944" id="r_a09af331b1f83dc4d94f2a389cbca9944"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a09af331b1f83dc4d94f2a389cbca9944">ancestorPath</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:aff97214d1ad590c4082d3ffe2b0c1dd8" id="r_aff97214d1ad590c4082d3ffe2b0c1dd8"><td class="memItemLeft"><a class="el" href="structsg_1_1_dispatch_helper.html">DispatchHelper</a>&lt; GVisitor &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aff97214d1ad590c4082d3ffe2b0c1dd8">dispatchHelper</a> (GVisitor gv)</td></tr>
+<tr class="memdesc:aff97214d1ad590c4082d3ffe2b0c1dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="structsg_1_1_dispatch_helper.html">DispatchHelper</a> instance using the provided GVisitor.  <br /></td></tr>
+<tr class="memitem:a936de63f4e02a2cacb8d0b9973f00651" id="r_a936de63f4e02a2cacb8d0b9973f00651"><td class="memItemLeft">GVisitor&#160;</td><td class="memItemRight"><a class="el" href="#a936de63f4e02a2cacb8d0b9973f00651">traverseChildren</a> (GVisitor gv, SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, SuccessorGenerator <a class="el" href="profiled__8c_8dox.html#aa41de0d2bf25026b702577778c2d6dd6">gen</a>={})</td></tr>
+<tr class="memdesc:a936de63f4e02a2cacb8d0b9973f00651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the children of an SgNode using a provided successor generator and visitor.  <br /></td></tr>
+<tr class="memitem:a95cfe51a3276b26596c867501bc31c77" id="r_a95cfe51a3276b26596c867501bc31c77"><td class="memItemLeft">GVisitor&#160;</td><td class="memItemRight"><a class="el" href="#a95cfe51a3276b26596c867501bc31c77">traverseChildren</a> (GVisitor gv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a95cfe51a3276b26596c867501bc31c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively traverses the children of a given SgNode using a GVisitor.  <br /></td></tr>
+<tr class="memitem:a1e62c5ca39511a4c0560055c7fcdc1de" id="r_a1e62c5ca39511a4c0560055c7fcdc1de"><td class="memItemLeft">SageNode::base_node_type &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a1e62c5ca39511a4c0560055c7fcdc1de">asBaseType</a> (SageNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:a276e9e26ef2a989463f27ed4bb240592" id="r_a276e9e26ef2a989463f27ed4bb240592"><td class="memItemLeft">const SageNode::base_node_type &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a276e9e26ef2a989463f27ed4bb240592">asBaseType</a> (const SageNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:ad578b0c2a1d16ba5ff5c3ab4b97009a2" id="r_ad578b0c2a1d16ba5ff5c3ab4b97009a2"><td class="memItemLeft">SageNode::base_node_type *&#160;</td><td class="memItemRight"><a class="el" href="#ad578b0c2a1d16ba5ff5c3ab4b97009a2">asBaseType</a> (SageNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:a8ed9a4dde06f75dca2155ca37f0b89e6" id="r_a8ed9a4dde06f75dca2155ca37f0b89e6"><td class="memItemLeft">const SageNode::base_node_type *&#160;</td><td class="memItemRight"><a class="el" href="#a8ed9a4dde06f75dca2155ca37f0b89e6">asBaseType</a> (const SageNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:ad20d21ee84fc409a7014cd8990e211c4" id="r_ad20d21ee84fc409a7014cd8990e211c4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad20d21ee84fc409a7014cd8990e211c4">unused</a> (const <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &amp;)</td></tr>
+<tr class="memdesc:ad20d21ee84fc409a7014cd8990e211c4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a.html">A</a> no-op function used to suppress compiler warnings for unused variables.  <br /></td></tr>
+<tr class="memitem:a523fb23c9b50919f540ee8f9bf7d42ac" id="r_a523fb23c9b50919f540ee8f9bf7d42ac"><td class="memItemLeft"><a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a>&#160;</td><td class="memItemRight"><a class="el" href="#a523fb23c9b50919f540ee8f9bf7d42ac">conv</a> (const E &amp;el)</td></tr>
+<tr class="memdesc:a523fb23c9b50919f540ee8f9bf7d42ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an element of type E to type T using stringstream.  <br /></td></tr>
+<tr class="memitem:a0dbf48ceb8151d2ded86794767b3104d" id="r_a0dbf48ceb8151d2ded86794767b3104d"><td class="memItemLeft">SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0dbf48ceb8151d2ded86794767b3104d">assume_sage_type</a> (SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a0dbf48ceb8151d2ded86794767b3104d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a type-unsafe cast of an SgNode to a SageNode.  <br /></td></tr>
+<tr class="memitem:ac628f28010d7172b18c49514b35ba2cb" id="r_ac628f28010d7172b18c49514b35ba2cb"><td class="memItemLeft">const SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac628f28010d7172b18c49514b35ba2cb">assume_sage_type</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:ac628f28010d7172b18c49514b35ba2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a static cast of an SgNode to a SageNode.  <br /></td></tr>
+<tr class="memitem:a1392add7f8d8eece5a5377df1dbbf6fc" id="r_a1392add7f8d8eece5a5377df1dbbf6fc"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1392add7f8d8eece5a5377df1dbbf6fc">_dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:a5304a1d6d7df35d096395852ba0c4b05" id="r_a5304a1d6d7df35d096395852ba0c4b05"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05">dispatch</a> (RoseVisitor &amp;&amp;rv, SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:ad4d90ee87f2c7469cf5125ebc64c1cc0" id="r_ad4d90ee87f2c7469cf5125ebc64c1cc0"><td class="memItemLeft">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a> &gt;<a class="el" href="structsg_1_1_const_like.html">::type</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad4d90ee87f2c7469cf5125ebc64c1cc0">dispatch</a> (RoseVisitor &amp;&amp;rv, const SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memitem:abc427b1adf94d34a50638074ed51e25d" id="r_abc427b1adf94d34a50638074ed51e25d"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#abc427b1adf94d34a50638074ed51e25d">ancestor_path</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
 <tr id="func-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a50d54340f38d45df775ebfd4cdc7d8a3" id="r_a50d54340f38d45df775ebfd4cdc7d8a3"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
 <tr class="memitem:a50d54340f38d45df775ebfd4cdc7d8a3 template"><td class="memItemLeft">SageNode *&#160;</td><td class="memItemRight"><a class="el" href="#a50d54340f38d45df775ebfd4cdc7d8a3">assert_sage_type</a> (SgNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, const char *<a class="el" href="deep_colored_functions3_8_c.html#ad1351d85ffec3c1176dc31d8e8f8e28a">f</a>=0, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
@@ -231,6 +221,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad881aabf7d93aa3605c282df874da65c template"><td class="memItemLeft">const SageNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad881aabf7d93aa3605c282df874da65c">assert_sage_type</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, const char *<a class="el" href="deep_colored_functions3_8_c.html#ad1351d85ffec3c1176dc31d8e8f8e28a">f</a>=0, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> ln=0)</td></tr>
 <tr class="memdesc:ad881aabf7d93aa3605c282df874da65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies and casts a SgNode to a specific SageNode type.  <br /></td></tr>
 <tr id="func-members-1" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aded1d495f10b7d4538b0f183f58feef5" id="r_aded1d495f10b7d4538b0f183f58feef5"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
+<tr class="memitem:aded1d495f10b7d4538b0f183f58feef5 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#aded1d495f10b7d4538b0f183f58feef5">ancestorPath</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>) -&gt; SageNode *</td></tr>
+<tr class="memdesc:aded1d495f10b7d4538b0f183f58feef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the ancestor of a given node cast to a specific SageNode type.  <br /></td></tr>
 <tr class="memitem:a096d38f2d235e82a9021709c5978ef80" id="r_a096d38f2d235e82a9021709c5978ef80"><td class="memTemplParams" colspan="2">template&lt;class SageNode, class... SageNodes&gt; </td></tr>
 <tr class="memitem:a096d38f2d235e82a9021709c5978ef80 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a096d38f2d235e82a9021709c5978ef80">ancestorPath</a> (const SgNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>) -&gt; decltype(ancestorPath&lt; SageNodes... &gt;(<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>))</td></tr>
 <tr id="func-members-2" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -244,16 +237,20 @@ Functions</h2></td></tr>
 <tr id="func-members-4" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:af4a41d4357df0e5a11bac82bfe1d0f04" id="r_af4a41d4357df0e5a11bac82bfe1d0f04"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
 <tr class="memitem:af4a41d4357df0e5a11bac82bfe1d0f04 template"><td class="memItemLeft">SageNode::base_node_type &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af4a41d4357df0e5a11bac82bfe1d0f04">asBaseType</a> (SageNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:af4a41d4357df0e5a11bac82bfe1d0f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode reference to its underlying base node type.  <br /></td></tr>
 <tr class="memitem:acaf16b2a76ebca30aadb8d52af40ca09" id="r_acaf16b2a76ebca30aadb8d52af40ca09"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
 <tr class="memitem:acaf16b2a76ebca30aadb8d52af40ca09 template"><td class="memItemLeft">const SageNode::base_node_type &amp;&#160;</td><td class="memItemRight"><a class="el" href="#acaf16b2a76ebca30aadb8d52af40ca09">asBaseType</a> (const SageNode &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:acaf16b2a76ebca30aadb8d52af40ca09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode reference to its underlying base_node_type.  <br /></td></tr>
 <tr class="memitem:a270210d586edc97f0665cbdc76e820f1" id="r_a270210d586edc97f0665cbdc76e820f1"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
 <tr class="memitem:a270210d586edc97f0665cbdc76e820f1 template"><td class="memItemLeft">SageNode::base_node_type *&#160;</td><td class="memItemRight"><a class="el" href="#a270210d586edc97f0665cbdc76e820f1">asBaseType</a> (SageNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:a270210d586edc97f0665cbdc76e820f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode pointer to its underlying base_node_type pointer.  <br /></td></tr>
 <tr class="memitem:aac0a6159da37f2471b3d87c018773109" id="r_aac0a6159da37f2471b3d87c018773109"><td class="memTemplParams" colspan="2">template&lt;class SageNode&gt; </td></tr>
 <tr class="memitem:aac0a6159da37f2471b3d87c018773109 template"><td class="memItemLeft">const SageNode::base_node_type *&#160;</td><td class="memItemRight"><a class="el" href="#aac0a6159da37f2471b3d87c018773109">asBaseType</a> (const SageNode *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
+<tr class="memdesc:aac0a6159da37f2471b3d87c018773109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Casts a SageNode pointer to its underlying base_node_type pointer.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Auto-generated documentation for the sg namespace. </p>
-<p>This namespace contains template functions that operate on the ROSE AST. </p>
+<div class="textblock"><p>This namespace contains template functions that operate on the ROSE AST. </p>
+<p>Auto-generated documentation for the sg namespace. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a38fc408dc5bfd9eada89a247d56948b9" name="a38fc408dc5bfd9eada89a247d56948b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38fc408dc5bfd9eada89a247d56948b9">&#9670;&#160;</a></span>_ancestor()</h2>
@@ -275,7 +272,7 @@ template&lt;class AncestorNode, class QualSgNode&gt; </div>
 <p>implements the ancestor search </p>
 <p>Traverses up the syntax graph hierarchy to find the first ancestor of a specific type.</p>
 <p>see comments for <a class="el" href="structsg_1_1_ancestor_type_finder.html" title="helper class for _ancestor">AncestorTypeFinder</a></p>
-<p>This function performs an upward traversal of the syntax graph starting from the parent of the provided node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span>. It utilizes a dispatch mechanism via <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> and a specialized <span class="tt"><a class="el" href="structsg_1_1_ancestor_type_finder.html" title="helper class for _ancestor">AncestorTypeFinder</a></span> to iteratively check each ancestor in the hierarchy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal continues until either an ancestor of type <span class="tt">AncestorNode</span> is found or the root of the graph (a null parent) is reached.</p>
+<p>This function performs an upward traversal of the syntax graph starting from the parent of the provided node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span>. It utilizes a dispatch mechanism via <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> and a specialized <span class="tt"><a class="el" href="structsg_1_1_ancestor_type_finder.html" title="helper class for _ancestor">AncestorTypeFinder</a></span> to iteratively check each ancestor in the hierarchy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal continues until either an ancestor of type <span class="tt">AncestorNode</span> is found or the root of the graph (a null parent) is reached.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current syntax graph node from which the upward traversal begins.</td></tr>
@@ -285,7 +282,7 @@ template&lt;class AncestorNode, class QualSgNode&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the first ancestor of type <span class="tt">AncestorNode</span> found in the hierarchy. Returns <span class="tt"><a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a></span> if no ancestor of the specified type is encountered before reaching the end of the graph.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid, non-null reference to a <span class="tt">QualSgNode</span>. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns a pointer to an existing node in the graph or <span class="tt"><a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a></span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> mechanism and the <span class="tt"><a class="el" href="structsg_1_1_ancestor_type_finder.html" title="helper class for _ancestor">AncestorTypeFinder</a></span> template class to handle type-specific logic during the traversal. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> mechanism and the <span class="tt"><a class="el" href="structsg_1_1_ancestor_type_finder.html" title="helper class for _ancestor">AncestorTypeFinder</a></span> template class to handle type-specific logic during the traversal. </dd></dl>
 
 </div>
 </div>
@@ -307,20 +304,6 @@ template&lt;class AncestorNode, class QualSgNode&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Dispatches a visitor to a specific SgNode to perform a traversal or operation. </p>
-<p>This function serves as a dispatcher mechanism that takes a visitor object and an SgNode, wraps the visitor into a <a class="el" href="structsg_1_1_visit_dispatcher.html">VisitDispatcher</a>, and triggers the node's acceptance of that dispatcher. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses template metaprogramming to strip const and reference qualifiers from the provided RoseVisitor type to ensure the internal handler is correctly typed. It utilizes std::forward to maintain the value category of the visitor during the dispatch process.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rv</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object (potentially an rvalue reference) used to process the node. </td></tr>
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode that will accept the visitor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> processed visitor object, moved out of the dispatcher, with const and reference qualifiers removed.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer n must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node n will have been visited by the dispatcher containing rv.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a <a class="el" href="structsg_1_1_visit_dispatcher.html">VisitDispatcher</a> class and an accept method on the SgNode class. It uses ASSERT_not_null to validate the input node. </dd></dl>
 
 </div>
 </div>
@@ -352,6 +335,20 @@ template&lt;class RoseVisitor&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Dispatches a visitor to a specific SgNode to perform a traversal or operation. </p>
+<p>This function serves as a dispatcher mechanism that takes a visitor object and an SgNode, wraps the visitor into a <a class="el" href="structsg_1_1_visit_dispatcher.html">VisitDispatcher</a>, and triggers the node's acceptance of that dispatcher. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses template metaprogramming to strip const and reference qualifiers from the provided RoseVisitor type to ensure the internal handler is correctly typed. It utilizes std::forward to maintain the value category of the visitor during the dispatch process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rv</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object (potentially an rvalue reference) used to process the node. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode that will accept the visitor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> processed visitor object, moved out of the dispatcher, with const and reference qualifiers removed.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer n must not be null. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node n will have been visited by the dispatcher containing rv.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a <a class="el" href="structsg_1_1_visit_dispatcher.html">VisitDispatcher</a> class and an accept method on the SgNode class. It uses ASSERT_not_null to validate the input node. </dd></dl>
 
 </div>
 </div>
@@ -545,7 +542,7 @@ template&lt;class SageNode&gt; </div>
           <td class="memname">auto sg::ancestor_path </td>
           <td>(</td>
           <td class="paramtype">const SgNode &amp;</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
-          <td> -&gt;  SageNode *</td>
+          <td> -&gt; SageNode *</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -563,7 +560,7 @@ template&lt;class SageNode&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the parent node cast as SageNode*. Returns nullptr if the parent does not exist or if the type recovery fails.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid, non-null SgNode instance. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned pointer points to the parent of <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> if the type matches, otherwise it may be null.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> mechanism and the <span class="tt"><a class="el" href="structsg_1_1_type_recovery.html">TypeRecovery</a></span> template class to perform the type-safe downcast.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> mechanism and the <span class="tt"><a class="el" href="structsg_1_1_type_recovery.html">TypeRecovery</a></span> template class to perform the type-safe downcast.</dd></dl>
 <p>This function performs a recursive upward traversal of the SgNode tree structure. It attempts to find the first ancestor in the hierarchy that matches the type specified by the first template parameter <span class="tt">SageNode</span>. If a match is found, it continues the search up the tree using the remaining template parameters <span class="tt">SageNodes...</span> to find the next ancestor in the sequence. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> starting node from which the upward traversal begins.</td></tr>
@@ -625,7 +622,7 @@ template&lt;class SageNode&gt; </div>
           <td class="memname">auto sg::ancestorPath </td>
           <td>(</td>
           <td class="paramtype">const SgNode &amp;</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
-          <td> -&gt;  SageNode *</td>
+          <td> -&gt; SageNode *</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -633,7 +630,7 @@ template&lt;class SageNode&gt; </div>
 <p>Retrieves the ancestor of a given node cast to a specific SageNode type. </p>
 <p>Recursively traverses the ancestor hierarchy to find a sequence of nodes matching a template pack.</p>
 <p>returns the last parent in an ancestor path</p>
-<p>This function traverses the structural graph upwards from the provided node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> to its immediate parent. It utilizes the <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> mechanism combined with a <span class="tt"><a class="el" href="structsg_1_1_type_recovery.html">TypeRecovery</a></span> visitor to perform a type-safe downcast of the parent node into the requested <span class="tt">SageNode</span> type.</p>
+<p>This function traverses the structural graph upwards from the provided node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> to its immediate parent. It utilizes the <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> mechanism combined with a <span class="tt"><a class="el" href="structsg_1_1_type_recovery.html">TypeRecovery</a></span> visitor to perform a type-safe downcast of the parent node into the requested <span class="tt">SageNode</span> type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source SgNode from which the ancestor path is being traced.</td></tr>
@@ -643,7 +640,7 @@ template&lt;class SageNode&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the parent node cast to the type <span class="tt">SageNode</span>. Returns a null pointer if the parent does not exist or if the type recovery fails.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid, non-null SgNode instance. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned pointer points to the parent of <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> if the type matches <span class="tt">SageNode</span>, otherwise it may return nullptr.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> infrastructure and the <span class="tt"><a class="el" href="structsg_1_1_type_recovery.html">TypeRecovery</a></span> template specialization to handle the dynamic type conversion.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> infrastructure and the <span class="tt"><a class="el" href="structsg_1_1_type_recovery.html">TypeRecovery</a></span> template specialization to handle the dynamic type conversion.</dd></dl>
 <p>This function performs a recursive search up the tree hierarchy starting from the provided node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span>. It attempts to find a chain of ancestors where each ancestor in the chain matches the types specified in the template parameter pack <span class="tt">SageNode, SageNodes...</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function checks if the current node can be cast to <span class="tt">SageNode</span>; if successful, it continues the search from that parent node using the remaining types in the pack.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -673,18 +670,6 @@ template&lt;class SageNode&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Casts a SageNode reference to its underlying base_node_type. </p>
-<p>This function provides a mechanism to obtain a reference to the base node type from a SageNode object. It performs a static cast-like operation by returning the input node as its base type, which is useful when polymorphic behavior or base class interfaces are required during tree traversal or node processing.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageNode reference to be cast to its base type.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>n must be a valid, initialized reference to a SageNode object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference refers to the same object as the input parameter n, but with the type SageNode::base_node_type.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is a simple identity wrapper that relies on the implicit conversion or inheritance relationship between SageNode and its base type. </dd></dl>
-
 </div>
 </div>
 <a id="acaf16b2a76ebca30aadb8d52af40ca09" name="acaf16b2a76ebca30aadb8d52af40ca09"></a>
@@ -704,6 +689,18 @@ template&lt;class SageNode&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Casts a SageNode reference to its underlying base_node_type. </p>
+<p>This function provides a mechanism to obtain a reference to the base node type from a SageNode object. It performs a static cast-like operation by returning the input node as its base type, which is useful when polymorphic behavior or base class interfaces are required during tree traversal or node processing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageNode reference to be cast to its base type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>n must be a valid, initialized reference to a SageNode object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference refers to the same object as the input parameter n, but with the type SageNode::base_node_type.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a simple identity wrapper that relies on the implicit conversion or inheritance relationship between SageNode and its base type. </dd></dl>
+
 </div>
 </div>
 <a id="a8ed9a4dde06f75dca2155ca37f0b89e6" name="a8ed9a4dde06f75dca2155ca37f0b89e6"></a>
@@ -711,6 +708,25 @@ template&lt;class SageNode&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SageNode::base_node_type * sg::asBaseType </td>
+          <td>(</td>
+          <td class="paramtype">const SageNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac0a6159da37f2471b3d87c018773109" name="aac0a6159da37f2471b3d87c018773109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0a6159da37f2471b3d87c018773109">&#9670;&#160;</a></span>asBaseType() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class SageNode&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const SageNode::base_node_type * sg::asBaseType </td>
@@ -735,25 +751,6 @@ template&lt;class SageNode&gt; </div>
 
 </div>
 </div>
-<a id="aac0a6159da37f2471b3d87c018773109" name="aac0a6159da37f2471b3d87c018773109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac0a6159da37f2471b3d87c018773109">&#9670;&#160;</a></span>asBaseType() <span class="overload">[4/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SageNode&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const SageNode::base_node_type * sg::asBaseType </td>
-          <td>(</td>
-          <td class="paramtype">const SageNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1e62c5ca39511a4c0560055c7fcdc1de" name="a1e62c5ca39511a4c0560055c7fcdc1de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e62c5ca39511a4c0560055c7fcdc1de">&#9670;&#160;</a></span>asBaseType() <span class="overload">[5/8]</span></h2>
 
@@ -768,19 +765,6 @@ template&lt;class SageNode&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Casts a SageNode reference to its underlying base node type. </p>
-<p>This function provides a way to obtain a reference to the base node type from a SageNode object. In this specific implementation, the function performs a simple identity transformation, returning the input node as its base type without any complex logic or-downcasting.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageNode reference to be cast to its base type.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the base node type of the provided SageNode.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>n must be a valid, initialized reference to a SageNode object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference refers to the same object as the input parameter n.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is essentially a pass-through and does not perform dynamic type checking. </dd></dl>
 
 </div>
 </div>
@@ -800,7 +784,20 @@ template&lt;class SageNode&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>returns the same node <code class="param">n</code> upcasted to its base type </p><dl class="section note"><dt>Note</dt><dd>useful for calling an overloaded function </dd></dl>
+
+<p>Casts a SageNode reference to its underlying base node type. </p>
+<p>returns the same node <code class="param">n</code> upcasted to its base type </p><dl class="section note"><dt>Note</dt><dd>useful for calling an overloaded function</dd></dl>
+<p>This function provides a way to obtain a reference to the base node type from a SageNode object. In this specific implementation, the function performs a simple identity transformation, returning the input node as its base type without any complex logic or-downcasting.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SageNode reference to be cast to its base type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the base node type of the provided SageNode.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>n must be a valid, initialized reference to a SageNode object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference refers to the same object as the input parameter n.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is essentially a pass-through and does not perform dynamic type checking. </dd></dl>
 
 </div>
 </div>
@@ -809,6 +806,25 @@ template&lt;class SageNode&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SageNode::base_node_type * sg::asBaseType </td>
+          <td>(</td>
+          <td class="paramtype">SageNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a270210d586edc97f0665cbdc76e820f1" name="a270210d586edc97f0665cbdc76e820f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270210d586edc97f0665cbdc76e820f1">&#9670;&#160;</a></span>asBaseType() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class SageNode&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">SageNode::base_node_type * sg::asBaseType </td>
@@ -830,25 +846,6 @@ template&lt;class SageNode&gt; </div>
 <dl class="section pre"><dt>Precondition</dt><dd>n should be a valid pointer to a SageNode instance. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned pointer points to the same memory address as the input n, but with the type cast to SageNode::base_node_type*.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is a simple identity wrapper that does not perform any runtime type checking or dynamic casting. </dd></dl>
-
-</div>
-</div>
-<a id="a270210d586edc97f0665cbdc76e820f1" name="a270210d586edc97f0665cbdc76e820f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a270210d586edc97f0665cbdc76e820f1">&#9670;&#160;</a></span>asBaseType() <span class="overload">[8/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SageNode&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">SageNode::base_node_type * sg::asBaseType </td>
-          <td>(</td>
-          <td class="paramtype">SageNode *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -891,7 +888,7 @@ template&lt;class SageNode&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> constant reference to the node cast to the requested SageNode type.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid instance of a class derived from SgNode and must be compatible with the requested <span class="tt">SageNode</span> type. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to the same object as <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span>, but viewed through the interface of <span class="tt">SageNode</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses a visitor-style pattern via <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> and <span class="tt">TypeRecoveryHandler</span> to perform the type-safe conversion. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses a visitor-style pattern via <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> and <span class="tt">TypeRecoveryHandler</span> to perform the type-safe conversion. </dd></dl>
 
 </div>
 </div>
@@ -922,7 +919,7 @@ template&lt;class SageNode&gt; </div>
 </div><div class="memdoc">
 
 <p>Verifies that a given SgNode is of a specific SageNode type and returns it. </p>
-<p>This function performs a type-safe downcast of a generic SgNode to a specific SageNode type. It utilizes the dispatch mechanism via <a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> and a TypeRecoveryHandler to attempt the type recovery. If the node matches the expected type, the pointer is cast and returned; otherwise, the behavior depends on the implementation of the TypeRecoveryHandler.</p>
+<p>This function performs a type-safe downcast of a generic SgNode to a specific SageNode type. It utilizes the dispatch mechanism via <a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> and a TypeRecoveryHandler to attempt the type recovery. If the node matches the expected type, the pointer is cast and returned; otherwise, the behavior depends on the implementation of the TypeRecoveryHandler.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer to the SgNode to be checked and cast. </td></tr>
@@ -977,7 +974,7 @@ template&lt;class SageNode&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the recovered node cast to the SageNode type.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid, non-null SgNode. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to the same object as <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span>, but treated as a <span class="tt">SageNode</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a></span> mechanism and the <span class="tt">TypeRecoveryHandler</span> template class to handle the underlying type conversion logic. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a></span> mechanism and the <span class="tt">TypeRecoveryHandler</span> template class to handle the underlying type conversion logic. </dd></dl>
 
 </div>
 </div>
@@ -1013,7 +1010,7 @@ template&lt;class SageNode&gt; </div>
 <div class="line"><a class="code hl_define" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a>(stmt);</div>
 <div class="ttc" id="a_r_o_s_e___a_s_s_e_r_t_8h_html_ac9f4fc9bf4f2fabed3195887675711cf"><div class="ttname"><a href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a></div><div class="ttdeci">#define ROSE_ASSERT</div><div class="ttdef"><b>Definition</b> ROSE_ASSERT.h:55</div></div>
 <div class="ttc" id="anamespacesg_html_a50d54340f38d45df775ebfd4cdc7d8a3"><div class="ttname"><a href="#a50d54340f38d45df775ebfd4cdc7d8a3">sg::assert_sage_type</a></div><div class="ttdeci">SageNode * assert_sage_type(SgNode *n, const char *f=0, size_t ln=0)</div><div class="ttdoc">asserts that n has type SageNode</div><div class="ttdef"><b>Definition</b> sageGeneric.h:1532</div></div>
-</div><!-- fragment --><p>This function attempts to cast or recover a specific SageNode type from a generic SgNode. It utilizes the <a class="el" href="#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> mechanism combined with a TypeRecoveryHandler to perform the type-specific logic. This is typically used during the transformation or analysis phases of the Sage compiler to ensure that nodes are treated as their specialized subclasses when certain properties are expected.</p>
+</div><!-- fragment --><p>This function attempts to cast or recover a specific SageNode type from a generic SgNode. It utilizes the <a class="el" href="#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> mechanism combined with a TypeRecoveryHandler to perform the type-specific logic. This is typically used during the transformation or analysis phases of the Sage compiler to ensure that nodes are treated as their specialized subclasses when certain properties are expected.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgNode pointer to be checked and recovered. </td></tr>
@@ -1269,20 +1266,6 @@ template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713
       </table>
 </div><div class="memdoc">
 
-<p>Dispatches a visitor to a specific SgNode. </p>
-<p>This function acts as a wrapper for the internal _dispatch mechanism. It facilitates the application of a visitor pattern to a given node in the Sg tree. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles the forwarding of the visitor object and manages the const-correctness by casting the const SgNode pointer to a non-const pointer to allow for potential modifications during the dispatch process.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rv</td><td><a class="el" href="class_a.html">A</a> forwarding reference to the RoseVisitor object that will perform the dispatch. </td></tr>
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode upon which the visitor will be dispatched.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object after the dispatch operation has been completed, with const and reference qualifiers removed.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided RoseVisitor must be a valid, initialized visitor object capable of handling the type of the provided SgNode. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object is returned in a state reflecting the changes made during the dispatch process.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses std::forward to maintain the value category of the passed visitor. It also uses const_cast to strip the const qualifier from the SgNode pointer. </dd></dl>
-
 </div>
 </div>
 <a id="a31788b2e0dca13b9adc9b40fc7299505" name="a31788b2e0dca13b9adc9b40fc7299505"></a>
@@ -1314,6 +1297,20 @@ template&lt;class RoseVisitor&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Dispatches a visitor to a specific SgNode. </p>
+<p>This function acts as a wrapper for the internal _dispatch mechanism. It facilitates the application of a visitor pattern to a given node in the Sg tree. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles the forwarding of the visitor object and manages the const-correctness by casting the const SgNode pointer to a non-const pointer to allow for potential modifications during the dispatch process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rv</td><td><a class="el" href="class_a.html">A</a> forwarding reference to the RoseVisitor object that will perform the dispatch. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode upon which the visitor will be dispatched.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object after the dispatch operation has been completed, with const and reference qualifiers removed.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided RoseVisitor must be a valid, initialized visitor object capable of handling the type of the provided SgNode. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object is returned in a state reflecting the changes made during the dispatch process.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses std::forward to maintain the value category of the passed visitor. It also uses const_cast to strip the const qualifier from the SgNode pointer. </dd></dl>
+
 </div>
 </div>
 <a id="a5304a1d6d7df35d096395852ba0c4b05" name="a5304a1d6d7df35d096395852ba0c4b05"></a>
@@ -1334,20 +1331,6 @@ template&lt;class RoseVisitor&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Dispatches a visitor to a specific SgNode. </p>
-<p>This function acts as a wrapper for the internal _dispatch mechanism. It facilitates the application of a visitor pattern to a given node in the Sg tree. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses perfect forwarding to ensure that the properties of the provided visitor (such as lvalue/rvalue nature) are preserved during the dispatch process.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rv</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object to be applied to the node. This is an rvalue reference to a RoseVisitor type. </td></tr>
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgNode to which the visitor will be dispatched.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object after the dispatch operation has been performed, with const and reference qualifiers removed.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter n must be a valid, non-null pointer to an SgNode. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor rv is processed against the node n, and the resulting visitor is returned.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on template metaprogramming to strip const and reference qualifiers from the RoseVisitor type to return a clean type. </dd></dl>
 
 </div>
 </div>
@@ -1381,6 +1364,7 @@ template&lt;class RoseVisitor&gt; </div>
 </div><div class="memdoc">
 
 <p>uncovers the type of SgNode and passes it to an function "handle" in RoseVisitor. which should be overloaded with every possible target node. After the traversal, RoseVisitor should contain the intended return data. </p>
+<p>Dispatches a visitor to a specific SgNode.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RoseVisitor.</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor that will be called back with the recovered type information. It must implement "handle." <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> handle function with the most suitable SgNode type will get invoked. </td></tr>
@@ -1415,7 +1399,7 @@ template&lt;class RoseVisitor&gt; </div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">void</span> visit(SgNode* <a class="code hl_variable" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</div>
 <div class="line">  {</div>
-<div class="line">    ctr = <a class="code hl_function" href="#a5304a1d6d7df35d096395852ba0c4b05">sg::dispatch</a>(ctr, <a class="code hl_variable" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>);</div>
+<div class="line">    ctr = <a class="code hl_function" href="#a4cb21835a6f67a379ae869a622fbe99a">sg::dispatch</a>(ctr, <a class="code hl_variable" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">void</span> run(SgNode&amp; root)</div>
@@ -1432,11 +1416,23 @@ template&lt;class RoseVisitor&gt; </div>
 <div class="ttc" id="a_tarjan_intervals_8_c_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></div><div class="ttdeci">static int n</div><div class="ttdef"><b>Definition</b> TarjanIntervals.C:175</div></div>
 <div class="ttc" id="anamespace_fortran_1_1parser_html_a3af18db366f87e7588e79bc736d7cadd"><div class="ttname"><a href="namespace_fortran_1_1parser.html#a3af18db366f87e7588e79bc736d7cadd">Fortran::parser::expr</a></div><div class="ttdeci">constexpr Parser&lt; Expr &gt; expr</div><div class="ttdef"><b>Definition</b> type-parsers.h:92</div></div>
 <div class="ttc" id="anamespace_rose_1_1_traits_html_a276c5c124cfce790ae78e27405896fdd"><div class="ttname"><a href="namespace_rose_1_1_traits.html#a276c5c124cfce790ae78e27405896fdd">Rose::Traits::traverse</a></div><div class="ttdeci">void traverse(NodeT *node_, PreFuncT &amp;pre=traversal_details::nop_noargs_f, PostFuncT &amp;post=traversal_details::nop_noargs_f)</div><div class="ttdoc">Performs a tree traversal on a given node using provided pre- and post-order functions.</div><div class="ttdef"><b>Definition</b> Traversal.h:131</div></div>
-<div class="ttc" id="anamespacesg_html_a5304a1d6d7df35d096395852ba0c4b05"><div class="ttname"><a href="#a5304a1d6d7df35d096395852ba0c4b05">sg::dispatch</a></div><div class="ttdeci">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;::type &gt;::type dispatch(RoseVisitor &amp;&amp;rv, SgNode *n)</div><div class="ttdoc">Dispatches a visitor to a specific SgNode.</div></div>
+<div class="ttc" id="anamespacesg_html_a4cb21835a6f67a379ae869a622fbe99a"><div class="ttname"><a href="#a4cb21835a6f67a379ae869a622fbe99a">sg::dispatch</a></div><div class="ttdeci">std::remove_const&lt; typenamestd::remove_reference&lt; RoseVisitor &gt;::type &gt;::type dispatch(RoseVisitor &amp;&amp;rv, SgNode *n)</div><div class="ttdoc">uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...</div><div class="ttdef"><b>Definition</b> sageGeneric.h:1366</div></div>
 <div class="ttc" id="axomp__accelerator__sched__test_8c_html_a3ae7250ea1c766616dca7aaf4f657c14"><div class="ttname"><a href="xomp__accelerator__sched__test_8c.html#a3ae7250ea1c766616dca7aaf4f657c14">a</a></div><div class="ttdeci">int a[SIZE]</div><div class="ttdef"><b>Definition</b> xomp_accelerator_sched_test.c:120</div></div>
 <div class="ttc" id="axomp__accelerator__sched__test_8c_html_aa242a9d8afb254d7ca68236fc725e0d6"><div class="ttname"><a href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></div><div class="ttdeci">int b[SIZE]</div><div class="ttdef"><b>Definition</b> xomp_accelerator_sched_test.c:120</div></div>
-</div><!-- fragment --> </li>
+</div><!-- fragment --></li>
 </ul>
+<p>This function acts as a wrapper for the internal _dispatch mechanism. It facilitates the application of a visitor pattern to a given node in the Sg tree. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses perfect forwarding to ensure that the properties of the provided visitor (such as lvalue/rvalue nature) are preserved during the dispatch process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rv</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object to be applied to the node. This is an rvalue reference to a RoseVisitor type. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgNode to which the visitor will be dispatched.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor object after the dispatch operation has been performed, with const and reference qualifiers removed.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter n must be a valid, non-null pointer to an SgNode. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> visitor rv is processed against the node n, and the resulting visitor is returned.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on template metaprogramming to strip const and reference qualifiers from the RoseVisitor type to return a clean type. </dd></dl>
 
 </div>
 </div>
@@ -1576,8 +1572,8 @@ template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713
 
 </div>
 </div>
-<a id="a612279d3c0a664df440ca8ed3242a945" name="a612279d3c0a664df440ca8ed3242a945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a612279d3c0a664df440ca8ed3242a945">&#9670;&#160;</a></span>report_error()</h2>
+<a id="aed26b4878990f9aca957f38bff7f3d73" name="aed26b4878990f9aca957f38bff7f3d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed26b4878990f9aca957f38bff7f3d73">&#9670;&#160;</a></span>report_error()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1617,8 +1613,8 @@ template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713
 
 </div>
 </div>
-<a id="ad38278fd55baf4a12afd6e8c15a78b2b" name="ad38278fd55baf4a12afd6e8c15a78b2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38278fd55baf4a12afd6e8c15a78b2b">&#9670;&#160;</a></span>report_error_if()</h2>
+<a id="a934fc2730ce910cdc1574d1a5fb68aaf" name="a934fc2730ce910cdc1574d1a5fb68aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934fc2730ce910cdc1574d1a5fb68aaf">&#9670;&#160;</a></span>report_error_if()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1649,13 +1645,13 @@ template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reports an error if a specific condition evaluates to true. </p>
-<p>This function acts as a conditional wrapper around the error reporting mechanism. It checks the boolean flag <span class="tt">iserror</span>; if the flag is true, it invokes the <span class="tt"><a class="el" href="#a612279d3c0a664df440ca8ed3242a945" title="Reports a fatal error by appending location information to a description and throwing an exception.">report_error</a></span> function with the provided description and location metadata. If <span class="tt">iserror</span> is false, the function returns immediately without performing any action.</p>
+<p>This function acts as a conditional wrapper around the error reporting mechanism. It checks the boolean flag <span class="tt">iserror</span>; if the flag is true, it invokes the <span class="tt"><a class="el" href="#aed26b4878990f9aca957f38bff7f3d73" title="Reports a fatal error by appending location information to a description and throwing an exception.">report_error</a></span> function with the provided description and location metadata. If <span class="tt">iserror</span> is false, the function returns immediately without performing any action.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">iserror</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether an error condition has been met. </td></tr>
@@ -1666,7 +1662,7 @@ template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">desc</span> string must be a valid, non-null string object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If <span class="tt">iserror</span> is true, <span class="tt"><a class="el" href="#a612279d3c0a664df440ca8ed3242a945" title="Reports a fatal error by appending location information to a description and throwing an exception.">report_error</a></span> is called. If <span class="tt">iserror</span> is false, the state of the system remains unchanged.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If <span class="tt">iserror</span> is true, <span class="tt"><a class="el" href="#aed26b4878990f9aca957f38bff7f3d73" title="Reports a fatal error by appending location information to a description and throwing an exception.">report_error</a></span> is called. If <span class="tt">iserror</span> is false, the state of the system remains unchanged.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is marked as <span class="tt">static inline</span> to encourage the compiler to embed the logic directly at the call site, reducing function call overhead in performance-critical error checking. </dd></dl>
 
 </div>
@@ -1758,24 +1754,11 @@ template&lt;class SageNode, class SageChild&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Swaps the parent pointers of two SgNode objects. </p>
-<p>swaps the parent pointer of two nodes </p><dl class="section note"><dt>Note</dt><dd>internal use</dd></dl>
-<p>This function exchanges the parent references of the provided SgNode instances. It retrieves the parent of the lhs node, updates the lhs node to point to the parent of the rhs node, and subsequently updates the rhs node to point to the original parent of the lhs node.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lhs</td><td><a class="el" href="class_a.html">A</a> pointer to the first SgNode whose parent will be swapped. </td></tr>
-    <tr><td class="paramname">rhs</td><td><a class="el" href="class_a.html">A</a> pointer to the second SgNode whose parent will be swapped.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers lhs and rhs must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent of lhs will be the original parent of rhs, and the parent of rhs will be the original parent of lhs.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function only modifies the parent pointers of the nodes and does not update any other structural relationships or child lists in the SgNode hierarchy. </dd></dl>
+<p>swaps the parent pointer of two nodes </p><dl class="section note"><dt>Note</dt><dd>internal use </dd></dl>
 
 </div>
 </div>
@@ -1801,17 +1784,11 @@ template&lt;class SageNode, class SageChild&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="class_a.html">A</a> placeholder function for swapping parent pointers. </p>
-<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="section note"><dt>Note</dt><dd>for non sage nodes (nodes without a parent) e.g., Rose_Containers</dd></dl>
-<p>This function is defined as an empty inline function. It serves as a no-op stub, likely intended for interface compatibility or to prevent linker errors when a swap operation is not required or implemented.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>None. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the provided pointers remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function does not perform any actual swapping of data or pointers. </dd></dl>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p><dl class="section note"><dt>Note</dt><dd>for non sage nodes (nodes without a parent) e.g., Rose_Containers </dd></dl>
 
 </div>
 </div>
@@ -1852,7 +1829,7 @@ template&lt;class SageNode, class SageChild&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> updated GVisitor object after the traversal of the successors has been completed.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid, non-null SgNode. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned GVisitor reflects the state after visiting all nodes returned by <span class="tt">gen(n)</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt">std::for_each</span> and <span class="tt"><a class="el" href="#aff97214d1ad590c4082d3ffe2b0c1dd8" title="Creates a DispatchHelper instance using the provided GVisitor.">dispatchHelper</a></span> to apply the visitor pattern to the collection of successors. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt">std::for_each</span> and <span class="tt"><a class="el" href="#abd3937b587b3d2207aee50a92c184a40">dispatchHelper</a></span> to apply the visitor pattern to the collection of successors. </dd></dl>
 
 </div>
 </div>
@@ -1957,8 +1934,8 @@ template&lt;class GVisitor&gt; </div>
 
 </div>
 </div>
-<a id="a3a2d334536ee8dc56ca41ef1312f3d8b" name="a3a2d334536ee8dc56ca41ef1312f3d8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a2d334536ee8dc56ca41ef1312f3d8b">&#9670;&#160;</a></span>unexpected_node()</h2>
+<a id="a94c40d5a37467288eafb7cae437b676a" name="a94c40d5a37467288eafb7cae437b676a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c40d5a37467288eafb7cae437b676a">&#9670;&#160;</a></span>unexpected_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1993,8 +1970,8 @@ template&lt;class GVisitor&gt; </div>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function is marked with [[noreturn]], meaning that once it is called, the program flow will not continue to the next instruction in the caller. It typically results in program termination or an exception.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid, initialized SgNode instance. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> error is reported via <span class="tt"><a class="el" href="#a612279d3c0a664df440ca8ed3242a945" title="Reports a fatal error by appending location information to a description and throwing an exception.">report_error</a></span>, and the function does not return.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> error message includes the result of <span class="tt">typeid(n).<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name()</a></span>, which may contain implementation-defined type names depending on the compiler. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> error is reported via <span class="tt"><a class="el" href="#aed26b4878990f9aca957f38bff7f3d73" title="Reports a fatal error by appending location information to a description and throwing an exception.">report_error</a></span>, and the function does not return.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> error message includes the result of <span class="tt">typeid(n).<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name()</a></span>, which may contain implementation-defined type names depending on the compiler. </dd></dl>
 
 </div>
 </div>

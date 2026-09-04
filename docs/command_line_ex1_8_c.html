@@ -109,7 +109,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a68852e440ff8225b6e1c3d12d4cfaba8" id="r_a68852e440ff8225b6e1c3d12d4cfaba8"><td class="memItemLeft">static <a class="el" href="struct_disassembler.html">Disassembler</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a68852e440ff8225b6e1c3d12d4cfaba8">getDisassembler</a> (const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
+<tr class="memitem:a68852e440ff8225b6e1c3d12d4cfaba8" id="r_a68852e440ff8225b6e1c3d12d4cfaba8"><td class="memItemLeft">static <a class="el" href="struct_disassembler.html">Disassembler</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a68852e440ff8225b6e1c3d12d4cfaba8">getDisassembler</a> (const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>)</td></tr>
 <tr class="memitem:a247d87d55697375d4a019b766c619808" id="r_a247d87d55697375d4a019b766c619808"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_parser_result.html">Sawyer::CommandLine::ParserResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#a247d87d55697375d4a019b766c619808">parseCommandLine</a> (int argc, char *argv[], <a class="el" href="struct_settings.html">Settings</a> &amp;settings)</td></tr>
 <tr class="memdesc:a247d87d55697375d4a019b766c619808"><td class="mdescLeft">&#160;</td><td class="mdescRight">[parseCommandLine decl]  <br /></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
@@ -190,7 +190,43 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>[parseCommandLine decl] </p>
-<p>Parses command-line arguments to configure the disassembler settings. </p>
+<p>Parses command-line arguments to configure application settings and extract the primary input argument.</p>
+<p>Parses command-line arguments to configure the disassembler settings.</p>
+<p>This function initializes and executes a command-line parser using the <a class="el" href="namespace_sawyer_1_1_command_line.html" title="Auto-generated documentation for the Sawyer::CommandLine namespace.">Sawyer::CommandLine</a> framework. It defines two distinct switch groups: a "standard" group containing universal switches like help and version, and a "tool" group containing command-specific switches such as ISA specification, virtual address mapping, and instruction alignment. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function populates the provided <a class="el" href="struct_settings.html">Settings</a> object based on the arguments passed via argc and argv.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments passed to the program. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments. </td></tr>
+    <tr><td class="paramname">settings</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="struct_settings.html">Settings</a> object that will be updated with the parsed values (e.g., ISA name, start virtual address, and alignment).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> ParserResult object containing the result of the parsing operation, which can be used to determine if the parsing was successful or if an action (like exiting for help) was triggered.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> settings object must be properly initialized before being passed to this function. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> settings object is modified in-place with values parsed from the command line.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parser uses specific sub-parsers such as anyParser and nonNegativeIntegerParser to validate the types of arguments provided for the ISA and virtual address.</dd></dl>
+<p>This function utilizes the <a class="el" href="class_sawyer_1_1_command_line_1_1_parser.html">Sawyer::CommandLine::Parser</a> to process command-line arguments. It sets up a parser with a specific synopsis, includes generic switches, and defines a tool-specific switch group. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> switch group includes a 'config' option to specify an alternative configuration file and a 'check-version' option to validate the ROSE library version. After parsing, the function validates the version requirement against the current build version (determined via define ROSE_PACKAGE_VERSION, define VERSION, or a fallback) and ensures that exactly one unreached argument (the primary input) is provided.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments passed to the program. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments. </td></tr>
+    <tr><td class="paramname">settings</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="struct_settings.html">Settings</a> object that will be updated with the parsed configuration file path.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the single unreached argument (the primary input) if parsing and validation succeed.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the version check fails, the function prints a fatal error message and terminates the program using exit(1). </dd>
+<dd>
+If the number of unreached arguments is not exactly one, the function prints a fatal error message and terminates the program using exit(1). </dd>
+<dd>
+If the 'check-version' switch is used and the version is valid but no other arguments are provided, the function terminates the program using exit(0).</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> settings object must be valid and capable of storing the configuration file path. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> settings.configFile member is updated if the 'config' switch is provided. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program may terminate the process if validation fails or if the version check is satisfied without further arguments.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <a class="el" href="namespace_sawyer_1_1_command_line.html" title="Auto-generated documentation for the Sawyer::CommandLine namespace.">Sawyer::CommandLine</a> namespace and <a class="el" href="namespace_rose_1_1_command_line.html" title="Auto-generated documentation for the Rose::CommandLine namespace.">Rose::CommandLine</a> utilities. </dd>
+<dd>
+Version detection logic uses preprocessor directives ifdef ROSE_PACKAGE_VERSION and ifdef VERSION. </dd></dl>
 <p>[parseCommandLine decl]</p>
 <p>[parseCommandLine standard]</p>
 <p>[parseCommandLine standard]</p>

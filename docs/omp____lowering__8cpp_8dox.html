@@ -95,7 +95,7 @@ $(function(){initNavTree('omp____lowering__8cpp_8dox.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a67d1e42c5786e48e6d11b7c26b017944" id="r_a67d1e42c5786e48e6d11b7c26b017944"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a67d1e42c5786e48e6d11b7c26b017944">convertAndFilter</a> (const <a class="el" href="sage_container_8h.html#af5484e8d253ed1622192c3c08221ff2e">SgInitializedNamePtrList</a> <a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca">input</a>, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;<a class="el" href="dynamic_binary_info__8_c_8dox.html#a0c56ec5eb0ac1eec6f0c42a439e9d24d">output</a>)</td></tr>
+<tr class="memitem:a67d1e42c5786e48e6d11b7c26b017944" id="r_a67d1e42c5786e48e6d11b7c26b017944"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a67d1e42c5786e48e6d11b7c26b017944">convertAndFilter</a> (const <a class="el" href="sage_container_8h.html#af5484e8d253ed1622192c3c08221ff2e">SgInitializedNamePtrList</a> <a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a>, <a class="el" href="namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a">ASTtools::VarSymSet_t</a> &amp;<a class="el" href="dynamic_binary_info__8_c_8dox.html#a0c56ec5eb0ac1eec6f0c42a439e9d24d">output</a>)</td></tr>
 <tr class="memdesc:a67d1e42c5786e48e6d11b7c26b017944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters out names that represent struct or class types from a list of initialized names.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
@@ -122,7 +122,7 @@ Functions</h2></td></tr>
 <p>This function iterates through a list of initialized names and checks the underlying symbol type. It specifically identifies symbols that are variable symbols and verifies if their associated type is not a class type. If the symbol is a variable and does not represent a class or struct type, it is inserted into the provided output set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="matcherparser__8_c_8dox.html#ab77a69608c1c09f3f14d24fce44e09ca" title="Empty function or ill-formed function detected. /.">input</a></td><td><a class="el" href="class_a.html">A</a> list of pointers to SgInitializedName objects to be processed. </td></tr>
+    <tr><td class="paramname"><a class="el" href="poet__lex_8c.html#a171692544b8e065853e387755849a433">input</a></td><td><a class="el" href="class_a.html">A</a> list of pointers to SgInitializedName objects to be processed. </td></tr>
     <tr><td class="paramname"><a class="el" href="dynamic_binary_info__8_c_8dox.html#a0c56ec5eb0ac1eec6f0c42a439e9d24d" title="Converts an IMG_TYPE enumeration value into its corresponding string representation.">output</a></td><td><a class="el" href="class_a.html">A</a> reference to a VarSymSet_t where the filtered variable symbols will be stored.</td></tr>
   </table>
   </dd>

@@ -105,7 +105,7 @@ Classes</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_edit_distance_1_1_linear_edit_distance.html" title="Auto-generated documentation for the Rose::EditDistance::LinearEditDistance namespace.">Rose::EditDistance::LinearEditDistance</a> namespace. </p>
 <p>Edit distance for ASTs.</p>
-<p>Computes the edit distance of two abstract syntax trees, a souce and target, by converting each tree to a list of nodes, then computing Levenshtein edit distance on the two lists. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> list nodes are constructed from <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a> nodes using a user-defined type (template parameter) so that the user has full control over when two list nodes are considered equal.</p>
+<p>Computes the edit distance of two abstract syntax trees, a souce and target, by converting each tree to a list of nodes, then computing Levenshtein edit distance on the two lists. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> list nodes are constructed from <a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a> nodes using a user-defined type (template parameter) so that the user has full control over when two list nodes are considered equal.</p>
 <p>Example usage:</p>
 <div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_rose_1_1_edit_distance.html">Rose::EditDistance</a>;</div>
 <div class="line">SgNode *ast1=..., *ast2=...;</div>
@@ -116,7 +116,7 @@ Classes</h2></td></tr>
 <div class="line">    <span class="keyword">explicit</span> <a class="code hl_class" href="class_list_node.html">ListNode</a>(SgNode *treeNode) {</div>
 <div class="line">        variant = treeNode-&gt;variantT();</div>
 <div class="line">    }</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="bstring__8h_8dox.html#a59dae29fc5f2f18d560166683cc9a8ca">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_list_node.html">ListNode</a> &amp;other)<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="_symbolic_operator_8_c.html#a313a8b931b2afd037c26989a553c9226">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_list_node.html">ListNode</a> &amp;other)<span class="keyword"> const </span>{</div>
 <div class="line">        <span class="keywordflow">return</span> variant == other.variant;</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -126,12 +126,12 @@ Classes</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Compute the distance between two trees</span></div>
 <div class="line"><span class="keywordtype">size_t</span> editDistance = led.<a class="code hl_function" href="class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis.html#ab9d824365c3c1a68eb77d36dd59f7998">compute</a>(ast1, ast2);</div>
-<div class="ttc" id="abstring__8h_8dox_html_a59dae29fc5f2f18d560166683cc9a8ca"><div class="ttname"><a href="bstring__8h_8dox.html#a59dae29fc5f2f18d560166683cc9a8ca">operator==</a></div><div class="ttdeci">bool operator==(const basic_string&lt; charT &gt; &amp;lhs, const basic_string&lt; charT &gt; &amp;rhs)</div><div class="ttdoc">Compares two basic_string objects for equality.</div></div>
+<div class="ttc" id="a_symbolic_operator_8_c_html_a313a8b931b2afd037c26989a553c9226"><div class="ttname"><a href="_symbolic_operator_8_c.html#a313a8b931b2afd037c26989a553c9226">operator==</a></div><div class="ttdeci">bool operator==(const SymbolicBound &amp;b1, const SymbolicBound &amp;b2)</div><div class="ttdoc">Compares two SymbolicBound objects for equality.</div><div class="ttdef"><b>Definition</b> SymbolicOperator.C:590</div></div>
 <div class="ttc" id="aclass_list_node_html"><div class="ttname"><a href="class_list_node.html">ListNode</a></div><div class="ttdef"><b>Definition</b> class.C:3</div></div>
 <div class="ttc" id="aclass_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis_html"><div class="ttname"><a href="class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis.html">Rose::EditDistance::LinearEditDistance::Analysis</a></div><div class="ttdef"><b>Definition</b> LinearEditDistance.h:104</div></div>
 <div class="ttc" id="aclass_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis_html_ab9d824365c3c1a68eb77d36dd59f7998"><div class="ttname"><a href="class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis.html#ab9d824365c3c1a68eb77d36dd59f7998">Rose::EditDistance::LinearEditDistance::Analysis::compute</a></div><div class="ttdeci">Analysis &amp; compute(SgNode *source, SgNode *target, SgFile *sourceFile=NULL, SgFile *targetFile=NULL)</div><div class="ttdef"><b>Definition</b> LinearEditDistance.h:142</div></div>
 <div class="ttc" id="aclass_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node_html"><div class="ttname"><a href="class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node.html">Rose::EditDistance::LinearEditDistance::Node</a></div><div class="ttdef"><b>Definition</b> LinearEditDistance.h:44</div></div>
-<div class="ttc" id="anamespace_rose_1_1_edit_distance_html"><div class="ttname"><a href="namespace_rose_1_1_edit_distance.html">Rose::EditDistance</a></div><div class="ttdoc">Auto-generated documentation for the Rose::EditDistance namespace.</div></div>
+<div class="ttc" id="anamespace_rose_1_1_edit_distance_html"><div class="ttname"><a href="namespace_rose_1_1_edit_distance.html">Rose::EditDistance</a></div><div class="ttdoc">Auto-generated documentation for the Rose::EditDistance namespace.</div><div class="ttdef"><b>Definition</b> DamerauLevenshtein.h:7</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

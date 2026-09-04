@@ -2,14 +2,14 @@ var _a_s_ttools_8hh =
 [
     [ "INC_ASTTOOLS_HH", "_a_s_ttools_8hh.html#ae21c08a3648db6d1f176b5a73ab90a6c", null ],
     [ "ASTtools::VarSymSet_t", "namespace_a_s_ttools.html#a0703e429657123ad81d035eca8cf280a", null ],
-    [ "ASTtools::collectPointerDereferencingVarSyms", "namespace_a_s_ttools.html#a88a0a1fbfa11bcaea08b45d39f4b31cb", null ],
+    [ "ASTtools::collectPointerDereferencingVarSyms", "namespace_a_s_ttools.html#abf5a3a22ffaa953072f20be872ada47b", null ],
     [ "ASTtools::dumpSymTab", "namespace_a_s_ttools.html#a02991d2260a922dc41bd381f1e689ac4", null ],
-    [ "ASTtools::findFirstFuncDef", "namespace_a_s_ttools.html#a53d7975795524b33670dfcdb2fd0eaeb", null ],
-    [ "ASTtools::findFirstFuncDefScope", "namespace_a_s_ttools.html#af126bc457e293e164cfb0d94a21557c2", null ],
-    [ "ASTtools::getClassName", "namespace_a_s_ttools.html#a6557d066dfe96555a7acc534f32ccfc7", null ],
-    [ "ASTtools::getMemFuncName", "namespace_a_s_ttools.html#a3a3515a672318f465196701174fea660", null ],
+    [ "ASTtools::findFirstFuncDef", "namespace_a_s_ttools.html#a9d5c1ab554a8da56e5fda8124556c56b", null ],
+    [ "ASTtools::findFirstFuncDefScope", "namespace_a_s_ttools.html#afa1682b1e8a9c1bdcfe19f92f1ef1ad6", null ],
+    [ "ASTtools::getClassName", "namespace_a_s_ttools.html#a59d73456a72ea976ac18532caaffb60d", null ],
+    [ "ASTtools::getMemFuncName", "namespace_a_s_ttools.html#ab1ebf6808641b56fdcd388c46935ef75", null ],
     [ "ASTtools::getNumArgs", "namespace_a_s_ttools.html#a1aabdeef907ad95235a86a68157278b0", null ],
-    [ "ASTtools::getUnqualUntmplName", "namespace_a_s_ttools.html#a80326d28fd89ad50fa73af41af8a9615", null ],
+    [ "ASTtools::getUnqualUntmplName", "namespace_a_s_ttools.html#a80666ff241313741400a188a6864a025", null ],
     [ "ASTtools::isC99", "namespace_a_s_ttools.html#a83483a7a4f16cc516a3fef3bbe1a33d2", null ],
     [ "ASTtools::isConstMemFunc", "namespace_a_s_ttools.html#af75b777f193428676cda735dfb8c1213", null ],
     [ "ASTtools::isConstMemFunc", "namespace_a_s_ttools.html#aa3d9e169eb2b532c71558f5734a18280", null ],
@@ -27,8 +27,8 @@ var _a_s_ttools_8hh =
     [ "ASTtools::isTemplateInst", "namespace_a_s_ttools.html#a870699472c7c5a6a28cda3b62ca5c18e", null ],
     [ "ASTtools::isTemplateInst", "namespace_a_s_ttools.html#a7966c4ab97299703f18efd8749938a21", null ],
     [ "ASTtools::isWhileCond", "namespace_a_s_ttools.html#ab15293778d9a9cd36d61d799f963509d", null ],
-    [ "ASTtools::newFileInfo", "namespace_a_s_ttools.html#a620c49af9c38454f7d3af44aed6f0426", null ],
-    [ "ASTtools::setSourcePositionAsTransformation", "namespace_a_s_ttools.html#a0ffd1c8e8e9c5772ebb56452e8c7ceee", null ],
-    [ "ASTtools::setSourcePositionAtRootAndAllChildrenAsTransformation", "namespace_a_s_ttools.html#af06413b9b41ab7a430724ad64f14090e", null ],
-    [ "ASTtools::toStringFileLoc", "namespace_a_s_ttools.html#a2b5578631b4c69f7005c058a761ab5c3", null ]
+    [ "ASTtools::newFileInfo", "namespace_a_s_ttools.html#a47947e27fbce19b790b4f6485dfb03d8", null ],
+    [ "ASTtools::setSourcePositionAsTransformation", "namespace_a_s_ttools.html#a91085f41f26a2b524dd8eaa6fef53d33", null ],
+    [ "ASTtools::setSourcePositionAtRootAndAllChildrenAsTransformation", "namespace_a_s_ttools.html#a6733da1915eb8ca098b8c416df3f998a", null ],
+    [ "ASTtools::toStringFileLoc", "namespace_a_s_ttools.html#a37238268e4b70b7d5f729219dcf16cad", null ]
 ];

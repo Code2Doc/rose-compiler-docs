@@ -1,67 +1,28 @@
 var namespacestringify_1_1_rose_1_1_binary_analysis =
 [
-    [ "Architecture", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_architecture.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_architecture" ],
-    [ "Assembler", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html", [
-      [ "EncodingType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html#a99cf5ca5ef6110ab284ffd9eda27b87c", null ],
-      [ "EncodingType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html#a53c17c6af4ff539b38f07f9a7a07f585", null ],
-      [ "EncodingType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html#a6bc5806dd0162aae42c28cde6033c33c", null ]
+    [ "FeasiblePath", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_feasible_path.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_feasible_path" ],
+    [ "HotPatch", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_hot_patch.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_hot_patch" ],
+    [ "SRecord", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html", [
+      [ "Syntax", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a8b42e1abbb477c2933e6235cc7e5a163", null ],
+      [ "Syntax", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#abb58caab7289a4176ae0a799288a43bf", null ],
+      [ "Syntax", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a4b9eb857a2621de23f9957c1dc39e2c3", null ],
+      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a6ee8526a26dddb6fff00a8d8a03ce6a3", null ],
+      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#aa9b557b4e4683be56707d93f09291d59", null ],
+      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a2c46b032453cddc813cccc0f5d8ff9e4", null ]
     ] ],
-    [ "AssemblerX86", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html", [
-      [ "MemoryReferencePattern", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a97030dd2cde728827138119974f076bb", null ],
-      [ "MemoryReferencePattern", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#abb811785358c4ad2f167d2b7ce94f693", null ],
-      [ "MemoryReferencePattern", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a4e423b90ffec9a02a68314918b864b60", null ],
-      [ "OperandDefn", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a88fe2b36d9dcb102b3037c2ffe515339", null ],
-      [ "OperandDefn", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a1b7ae1be8c36fad59d6d8eca7c158c84", null ],
-      [ "OperandDefn", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a39192e4cfd0a854e7bf9d969f4ec1952", null ]
-    ] ],
-    [ "BinaryLoader", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html", [
-      [ "ConflictResolution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a9d190432a132ff8b5908973610207151", null ],
-      [ "ConflictResolution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a4c830d4c3715821c3d3f424d5049d342", null ],
-      [ "ConflictResolution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a8af2c8b1c785f6497331bac3938fe31d", null ],
-      [ "MappingContribution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#aa113373ebaf04546ea28831acda9e9d9", null ],
-      [ "MappingContribution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#ab05d8566b153b85f7876e436057b7b31", null ],
-      [ "MappingContribution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a3b95ba85b9d25315bc968fff1783ea2f", null ]
-    ] ],
+    [ "SymbolicExpression", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression" ],
+    [ "SymbolicExpressionParser", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression_parser.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression_parser" ],
+    [ "PointerDetection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_pointer_detection.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_pointer_detection" ],
+    [ "ModelChecker", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_model_checker.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_model_checker" ],
     [ "ByteOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_byte_order.html", [
       [ "Endianness", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_byte_order.html#a6a9783a409f769707070bcbb82121649", null ],
       [ "Endianness", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_byte_order.html#a3c41b1d5f71de0ce0725f80320c9c1e6", null ],
       [ "Endianness", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_byte_order.html#a34fc5bb955e7fad8a2bc58d9f18f2517", null ]
     ] ],
-    [ "CallingConvention", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html", [
-      [ "StackCleanup", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a5bce40467e3a6925222563512e7d76be", null ],
-      [ "StackCleanup", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a50361ff3af5f0232bccf5e36340852ae", null ],
-      [ "StackCleanup", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#ad81c3e868f4039a5f094d80ed716132e", null ],
-      [ "StackDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a0ac25537e42cff74a0da60cdb6b18e38", null ],
-      [ "StackDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a131c90e19efa5666f6b8721e389d007b", null ],
-      [ "StackDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a66641cf3fb1d05065dcf37a3411c2d5e", null ],
-      [ "StackParameterOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a4152801c313831196eb9eb8b36245835", null ],
-      [ "StackParameterOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#ab8099a54aac7495f5ffb586792c21c49", null ],
-      [ "StackParameterOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#ae42fba017eb7a5b98fc2ca3deb2a30f3", null ]
-    ] ],
-    [ "CodeInserter", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html", [
-      [ "AggregationDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a548f927648ee099ed47a26b38cb6e030", null ],
-      [ "AggregationDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a61611d5b6a5d57a27645b819714e0f2f", null ],
-      [ "AggregationDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#af5cdd5d144ee183cda63334c262d9b94", null ],
-      [ "NopPadding", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a3b983f70a3ac7ff2dc4698039b18127e", null ],
-      [ "NopPadding", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#ab314556fa846d24fe3374c660aceee21", null ],
-      [ "NopPadding", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a90c8e2cbda463876781d95b69a6be475", null ],
-      [ "RelocType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a369993ce99f3e744c56479cfd3be51d4", null ],
-      [ "RelocType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a839193006596f3b6a81e8f9819a95290", null ],
-      [ "RelocType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a79400ca811e8c27660bbfcf3061611f7", null ]
-    ] ],
-    [ "Commit", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html", [
-      [ "Boolean", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html#a05749342901e36c92157ac8b7607eda0", null ],
-      [ "Boolean", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html#a328338a341018009559e6fbc6d0b4187", null ],
-      [ "Boolean", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html#aa4168031b674f19611dca342460fa207", null ]
-    ] ],
-    [ "Concolic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concolic.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concolic" ],
-    [ "ConcreteLocation", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html", [
-      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html#a6e88a7d38e60186ab2da9affde6d36be", null ],
-      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html#ae0f2d160d1d346105ef6676c48a81641", null ],
-      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html#a951e1e41eaf10662ca1f04d460562b36", null ]
-    ] ],
-    [ "Debugger", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_debugger.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_debugger" ],
-    [ "Disassembler", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler" ],
+    [ "MemoryMap", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_memory_map.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_memory_map" ],
+    [ "InstructionSemantics", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_instruction_semantics.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_instruction_semantics" ],
+    [ "Unparser", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_unparser.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_unparser" ],
+    [ "Partitioner2", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2" ],
     [ "Dwarf", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_dwarf.html", [
       [ "DWARF_AT", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_dwarf.html#acb79971e6b08ff0c50cd4cde36144317", null ],
       [ "DWARF_AT", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_dwarf.html#a5fc123b2d3ba8fde4374da8cf2ec1dfc", null ],
@@ -76,40 +37,6 @@ var namespacestringify_1_1_rose_1_1_binary_analysis =
       [ "DWARF_TAG", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_dwarf.html#ab11ad4820f35814e9f66e7aae97cfe72", null ],
       [ "DWARF_TAG", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_dwarf.html#a0f11dcdbb33247470aa728beef2e3925", null ]
     ] ],
-    [ "FeasiblePath", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_feasible_path.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_feasible_path" ],
-    [ "FunctionSimilarity", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html", [
-      [ "CValKind", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#a7f2d7d007f5feae2e68ded94f0898a03", null ],
-      [ "CValKind", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#a6bcbc205a8ebe47739eb0d8c84ce32f2", null ],
-      [ "CValKind", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#afafc0b8389483a2a439da4ba601ba015", null ],
-      [ "Statistic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#ac258f638118f857bc76a3285f4dbe4bc", null ],
-      [ "Statistic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#ae39668fb6f9ddec338b035ed05672961", null ],
-      [ "Statistic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#ae0f3d9bab6cf97da4fae30c68cc9bbbc", null ]
-    ] ],
-    [ "HotPatch", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_hot_patch.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_hot_patch" ],
-    [ "InstructionSemantics", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_instruction_semantics.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_instruction_semantics" ],
-    [ "MagicNumber", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html", [
-      [ "Mechanism", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html#ae39cc17c0588d0c3570d287691497cf5", null ],
-      [ "Mechanism", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html#a23492745279e16d195b21ab5b2c6d17b", null ],
-      [ "Mechanism", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html#aa0cd54bc26fd0cb895c5e54534f21e40", null ]
-    ] ],
-    [ "MemoryMap", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_memory_map.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_memory_map" ],
-    [ "ModelChecker", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_model_checker.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_model_checker" ],
-    [ "Partitioner2", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_partitioner2" ],
-    [ "PointerDetection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_pointer_detection.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_pointer_detection" ],
-    [ "Reachability", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html", [
-      [ "Reason", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html#ac82793f614a016362f7058daa34d0bc2", null ],
-      [ "Reason", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html#a49333c231b34436eb168313ba04f3a77", null ],
-      [ "Reason", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html#a22bce8c70f73bd6398ae64daebf6bbe7", null ]
-    ] ],
-    [ "RegisterDictionary", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_register_dictionary.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_register_dictionary" ],
-    [ "SerialIo", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html", [
-      [ "Format", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#a1010b6e0ccd469f967cafb9dcae487fd", null ],
-      [ "Format", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#a96e0c8859dbb922d0a52e9bbc054a904", null ],
-      [ "Format", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#a7bebbea5fe7fdca588e39e088999f15c", null ],
-      [ "Savable", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#aaf51c5a239349a78fe2500e9e5608b70", null ],
-      [ "Savable", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#aff6f1857bdfad02af13e75b5c40d2456", null ],
-      [ "Savable", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#aab6cc87209e390d6ecd06ef6c7777d24", null ]
-    ] ],
     [ "SmtSolver", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_smt_solver.html", [
       [ "LinkMode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_smt_solver.html#a2d0f09e90ec4396b12a9c6481d6bff25", null ],
       [ "LinkMode", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_smt_solver.html#abdfaa766c528700b2748c7d78e43e877", null ],
@@ -121,21 +48,67 @@ var namespacestringify_1_1_rose_1_1_binary_analysis =
       [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_smt_solver.html#a17232663eaf36a88561105e73f4b56ee", null ],
       [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_smt_solver.html#a1bd2ca719050f63488256ebbbb15fd57", null ]
     ] ],
-    [ "SRecord", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html", [
-      [ "Syntax", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a8b42e1abbb477c2933e6235cc7e5a163", null ],
-      [ "Syntax", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#abb58caab7289a4176ae0a799288a43bf", null ],
-      [ "Syntax", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a4b9eb857a2621de23f9957c1dc39e2c3", null ],
-      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a6ee8526a26dddb6fff00a8d8a03ce6a3", null ],
-      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#aa9b557b4e4683be56707d93f09291d59", null ],
-      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_s_record.html#a2c46b032453cddc813cccc0f5d8ff9e4", null ]
-    ] ],
+    [ "Concolic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concolic.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concolic" ],
+    [ "RegisterDictionary", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_register_dictionary.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_register_dictionary" ],
+    [ "Debugger", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_debugger.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_debugger" ],
     [ "Strings", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_strings.html", [
       [ "State", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_strings.html#a83cfc944b65a0d72d9a58c8dbe55d5d4", null ],
       [ "State", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_strings.html#ae13521876848dce675e25e3492ac6260", null ],
       [ "State", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_strings.html#a6997215833a20c57adf9792a3f4937de", null ]
     ] ],
-    [ "SymbolicExpression", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression" ],
-    [ "SymbolicExpressionParser", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression_parser.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_symbolic_expression_parser" ],
+    [ "MagicNumber", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html", [
+      [ "Mechanism", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html#ae39cc17c0588d0c3570d287691497cf5", null ],
+      [ "Mechanism", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html#a23492745279e16d195b21ab5b2c6d17b", null ],
+      [ "Mechanism", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_magic_number.html#aa0cd54bc26fd0cb895c5e54534f21e40", null ]
+    ] ],
+    [ "Variables", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_variables.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_variables" ],
+    [ "ConcreteLocation", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html", [
+      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html#a6e88a7d38e60186ab2da9affde6d36be", null ],
+      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html#ae0f2d160d1d346105ef6676c48a81641", null ],
+      [ "Type", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_concrete_location.html#a951e1e41eaf10662ca1f04d460562b36", null ]
+    ] ],
+    [ "FunctionSimilarity", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html", [
+      [ "CValKind", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#a7f2d7d007f5feae2e68ded94f0898a03", null ],
+      [ "CValKind", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#a6bcbc205a8ebe47739eb0d8c84ce32f2", null ],
+      [ "CValKind", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#afafc0b8389483a2a439da4ba601ba015", null ],
+      [ "Statistic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#ac258f638118f857bc76a3285f4dbe4bc", null ],
+      [ "Statistic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#ae39668fb6f9ddec338b035ed05672961", null ],
+      [ "Statistic", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_function_similarity.html#ae0f3d9bab6cf97da4fae30c68cc9bbbc", null ]
+    ] ],
+    [ "Architecture", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_architecture.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_architecture" ],
+    [ "SerialIo", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html", [
+      [ "Format", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#a1010b6e0ccd469f967cafb9dcae487fd", null ],
+      [ "Format", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#a96e0c8859dbb922d0a52e9bbc054a904", null ],
+      [ "Format", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#a7bebbea5fe7fdca588e39e088999f15c", null ],
+      [ "Savable", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#aaf51c5a239349a78fe2500e9e5608b70", null ],
+      [ "Savable", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#aff6f1857bdfad02af13e75b5c40d2456", null ],
+      [ "Savable", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_serial_io.html#aab6cc87209e390d6ecd06ef6c7777d24", null ]
+    ] ],
+    [ "Commit", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html", [
+      [ "Boolean", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html#a05749342901e36c92157ac8b7607eda0", null ],
+      [ "Boolean", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html#a328338a341018009559e6fbc6d0b4187", null ],
+      [ "Boolean", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_commit.html#aa4168031b674f19611dca342460fa207", null ]
+    ] ],
+    [ "CodeInserter", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html", [
+      [ "AggregationDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a548f927648ee099ed47a26b38cb6e030", null ],
+      [ "AggregationDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a61611d5b6a5d57a27645b819714e0f2f", null ],
+      [ "AggregationDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#af5cdd5d144ee183cda63334c262d9b94", null ],
+      [ "NopPadding", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a3b983f70a3ac7ff2dc4698039b18127e", null ],
+      [ "NopPadding", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#ab314556fa846d24fe3374c660aceee21", null ],
+      [ "NopPadding", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a90c8e2cbda463876781d95b69a6be475", null ],
+      [ "RelocType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a369993ce99f3e744c56479cfd3be51d4", null ],
+      [ "RelocType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a839193006596f3b6a81e8f9819a95290", null ],
+      [ "RelocType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_code_inserter.html#a79400ca811e8c27660bbfcf3061611f7", null ]
+    ] ],
+    [ "BinaryLoader", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html", [
+      [ "ConflictResolution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a9d190432a132ff8b5908973610207151", null ],
+      [ "ConflictResolution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a4c830d4c3715821c3d3f424d5049d342", null ],
+      [ "ConflictResolution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a8af2c8b1c785f6497331bac3938fe31d", null ],
+      [ "MappingContribution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#aa113373ebaf04546ea28831acda9e9d9", null ],
+      [ "MappingContribution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#ab05d8566b153b85f7876e436057b7b31", null ],
+      [ "MappingContribution", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_binary_loader.html#a3b95ba85b9d25315bc968fff1783ea2f", null ]
+    ] ],
+    [ "Disassembler", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_disassembler" ],
     [ "TaintedFlow", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_tainted_flow.html", [
       [ "Approximation", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_tainted_flow.html#a8b6dae4bfd9fbf0508cf00efd33c5855", null ],
       [ "Approximation", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_tainted_flow.html#a55e7c9798faffd1f47176531cc13e460", null ],
@@ -144,8 +117,35 @@ var namespacestringify_1_1_rose_1_1_binary_analysis =
       [ "Taintedness", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_tainted_flow.html#a5872918b2d1b182807315c9d82d8ca53", null ],
       [ "Taintedness", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_tainted_flow.html#a4b41e2f63f87fb1f9310d35b6e7e2a29", null ]
     ] ],
-    [ "Unparser", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_unparser.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_unparser" ],
-    [ "Variables", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_variables.html", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_variables" ],
+    [ "CallingConvention", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html", [
+      [ "StackCleanup", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a5bce40467e3a6925222563512e7d76be", null ],
+      [ "StackCleanup", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a50361ff3af5f0232bccf5e36340852ae", null ],
+      [ "StackCleanup", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#ad81c3e868f4039a5f094d80ed716132e", null ],
+      [ "StackDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a0ac25537e42cff74a0da60cdb6b18e38", null ],
+      [ "StackDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a131c90e19efa5666f6b8721e389d007b", null ],
+      [ "StackDirection", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a66641cf3fb1d05065dcf37a3411c2d5e", null ],
+      [ "StackParameterOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#a4152801c313831196eb9eb8b36245835", null ],
+      [ "StackParameterOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#ab8099a54aac7495f5ffb586792c21c49", null ],
+      [ "StackParameterOrder", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_calling_convention.html#ae42fba017eb7a5b98fc2ca3deb2a30f3", null ]
+    ] ],
+    [ "Reachability", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html", [
+      [ "Reason", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html#ac82793f614a016362f7058daa34d0bc2", null ],
+      [ "Reason", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html#a49333c231b34436eb168313ba04f3a77", null ],
+      [ "Reason", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_reachability.html#a22bce8c70f73bd6398ae64daebf6bbe7", null ]
+    ] ],
+    [ "Assembler", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html", [
+      [ "EncodingType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html#a99cf5ca5ef6110ab284ffd9eda27b87c", null ],
+      [ "EncodingType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html#a53c17c6af4ff539b38f07f9a7a07f585", null ],
+      [ "EncodingType", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler.html#a6bc5806dd0162aae42c28cde6033c33c", null ]
+    ] ],
+    [ "AssemblerX86", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html", [
+      [ "MemoryReferencePattern", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a97030dd2cde728827138119974f076bb", null ],
+      [ "MemoryReferencePattern", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#abb811785358c4ad2f167d2b7ce94f693", null ],
+      [ "MemoryReferencePattern", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a4e423b90ffec9a02a68314918b864b60", null ],
+      [ "OperandDefn", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a88fe2b36d9dcb102b3037c2ffe515339", null ],
+      [ "OperandDefn", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a1b7ae1be8c36fad59d6d8eca7c158c84", null ],
+      [ "OperandDefn", "namespacestringify_1_1_rose_1_1_binary_analysis_1_1_assembler_x86.html#a39192e4cfd0a854e7bf9d969f4ec1952", null ]
+    ] ],
     [ "Aarch32DebugRegister", "namespacestringify_1_1_rose_1_1_binary_analysis.html#a78b8895f4916279f757fe84a9a3b6578", null ],
     [ "Aarch32DebugRegister", "namespacestringify_1_1_rose_1_1_binary_analysis.html#a8f78cec410085938834c2cf57f3f3dbc", null ],
     [ "Aarch32DebugRegister", "namespacestringify_1_1_rose_1_1_binary_analysis.html#a6329e63eadc232d2a2c0d2dc0e100bc2", null ],

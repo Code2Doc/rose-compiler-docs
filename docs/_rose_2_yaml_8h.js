@@ -8,7 +8,7 @@ var _rose_2_yaml_8h =
     [ "Rose::Yaml::OperationException", "class_rose_1_1_yaml_1_1_operation_exception.html", "class_rose_1_1_yaml_1_1_operation_exception" ],
     [ "Rose::Yaml::ParsingException", "class_rose_1_1_yaml_1_1_parsing_exception.html", "class_rose_1_1_yaml_1_1_parsing_exception" ],
     [ "Rose::Yaml::SerializeConfig", "struct_rose_1_1_yaml_1_1_serialize_config.html", "struct_rose_1_1_yaml_1_1_serialize_config" ],
-    [ "Rose::Yaml::parse", "namespace_rose_1_1_yaml.html#a76c3c7e62d45842436ef19796da06909", null ],
+    [ "Rose::Yaml::parse", "namespace_rose_1_1_yaml.html#a589d9976683a423028bdabf600f3bd05", null ],
     [ "Rose::Yaml::parseJson", "namespace_rose_1_1_yaml.html#afc343d40bea114d36eae4c15aeb7d526", null ],
     [ "Rose::Yaml::parseJson", "namespace_rose_1_1_yaml.html#aa76f691cfad0b9620b8b42465f58fa78", null ],
     [ "Rose::Yaml::parseYaml", "namespace_rose_1_1_yaml.html#a19ec3638ae7bfa2f9055e3078258d974", null ],

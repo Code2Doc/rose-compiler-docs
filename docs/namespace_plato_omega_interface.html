@@ -126,10 +126,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3fee225963563ebede44e1b26114ec06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current dependency test choice to a specified value.  <br /></td></tr>
 <tr class="memitem:ae36527255998f6c1fe618c3a44910c90" id="r_ae36527255998f6c1fe618c3a44910c90"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae36527255998f6c1fe618c3a44910c90">UseOmega</a> (void)</td></tr>
 <tr class="memdesc:ae36527255998f6c1fe618c3a44910c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current dependency test choice is set to OMEGA.  <br /></td></tr>
-<tr class="memitem:ab143ab459b7ad0bc94d08447cd5aac96" id="r_ab143ab459b7ad0bc94d08447cd5aac96"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#ab143ab459b7ad0bc94d08447cd5aac96">StringToChar</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:ab143ab459b7ad0bc94d08447cd5aac96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a std::string object into a null-terminated C-style character array.  <br /></td></tr>
-<tr class="memitem:abe93d0d27df7fedcbddb2b33b7d67aa8" id="r_abe93d0d27df7fedcbddb2b33b7d67aa8"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#abe93d0d27df7fedcbddb2b33b7d67aa8">str_dir_vec</a> (plato::dddir dv, int dvLevel)</td></tr>
-<tr class="memdesc:abe93d0d27df7fedcbddb2b33b7d67aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a directory vector representation into a formatted string.  <br /></td></tr>
+<tr class="memitem:a3859dfa962bbb77f5a98469044fe40e5" id="r_a3859dfa962bbb77f5a98469044fe40e5"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#a3859dfa962bbb77f5a98469044fe40e5">StringToChar</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a3859dfa962bbb77f5a98469044fe40e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a std::string object into a null-terminated C-style character array.  <br /></td></tr>
+<tr class="memitem:a41bd7c816ffc5cb4abbe9cc50720b8c4" id="r_a41bd7c816ffc5cb4abbe9cc50720b8c4"><td class="memItemLeft">static char *&#160;</td><td class="memItemRight"><a class="el" href="#a41bd7c816ffc5cb4abbe9cc50720b8c4">str_dir_vec</a> (plato::dddir dv, int dvLevel)</td></tr>
+<tr class="memdesc:a41bd7c816ffc5cb4abbe9cc50720b8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a directory vector representation into a formatted string.  <br /></td></tr>
 <tr class="memitem:a101d6b77da663e9685e18e4f53c371fa" id="r_a101d6b77da663e9685e18e4f53c371fa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a101d6b77da663e9685e18e4f53c371fa">print_debug</a> (std::string s1, std::string s2, int <a class="el" href="deep_colored_functions3_8_c.html#ad1351d85ffec3c1176dc31d8e8f8e28a">f</a>)</td></tr>
 <tr class="memdesc:a101d6b77da663e9685e18e4f53c371fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints two strings to the error stream if a flag is enabled.  <br /></td></tr>
 <tr class="memitem:aa6e9313ed40325b5e7a36038dc3a77ea" id="r_aa6e9313ed40325b5e7a36038dc3a77ea"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa6e9313ed40325b5e7a36038dc3a77ea">my_time</a> ()</td></tr>
@@ -365,11 +365,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abe93d0d27df7fedcbddb2b33b7d67aa8" name="abe93d0d27df7fedcbddb2b33b7d67aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe93d0d27df7fedcbddb2b33b7d67aa8">&#9670;&#160;</a></span>str_dir_vec()</h2>
+<a id="a41bd7c816ffc5cb4abbe9cc50720b8c4" name="a41bd7c816ffc5cb4abbe9cc50720b8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41bd7c816ffc5cb4abbe9cc50720b8c4">&#9670;&#160;</a></span>str_dir_vec()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char * PlatoOmegaInterface::str_dir_vec </td>
@@ -382,6 +385,11 @@ Variables</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dvLevel</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Converts a directory vector representation into a formatted string. </p>
@@ -401,8 +409,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab143ab459b7ad0bc94d08447cd5aac96" name="ab143ab459b7ad0bc94d08447cd5aac96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab143ab459b7ad0bc94d08447cd5aac96">&#9670;&#160;</a></span>StringToChar()</h2>
+<a id="a3859dfa962bbb77f5a98469044fe40e5" name="a3859dfa962bbb77f5a98469044fe40e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3859dfa962bbb77f5a98469044fe40e5">&#9670;&#160;</a></span>StringToChar()</h2>
 
 <div class="memitem">
 <div class="memproto">

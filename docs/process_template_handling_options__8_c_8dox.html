@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Processes template handling options for a given AST node or project. </p>
+<p>Fixup template instantiations to unmark them for output following semantics of gnu template options.</p>
 <p>This function manages the configuration and traversal required to handle template instantiations within the ROSE AST. It identifies whether the provided node represents a specific file or an entire project. If the node is an SgProject, the function iterates through all associated files and marks template instantiations for output. If the node is associated with an SgFile, it determines the flags for implicit and implicit-inline templates based on the file's settings and performs a preorder traversal of the node using a specialized <a class="el" href="class_process_template_handling_options.html">ProcessTemplateHandlingOptions</a> traversal object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

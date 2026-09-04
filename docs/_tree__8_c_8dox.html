@@ -96,7 +96,6 @@ $(function(){initNavTree('_tree__8_c_8dox.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a07399aebbe30e91c75efb009de228539" id="r_a07399aebbe30e91c75efb009de228539"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a07399aebbe30e91c75efb009de228539">deque_erase</a> (std::deque&lt; <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> &gt; d, <a class="el" href="_control_dependence_graph_8_c.html#af40713911bb5d86f82a7057cc45a65ff">T</a> elt)</td></tr>
-<tr class="memdesc:a07399aebbe30e91c75efb009de228539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first occurrence of a specific element from a deque.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a07399aebbe30e91c75efb009de228539" name="a07399aebbe30e91c75efb009de228539"></a>
@@ -117,19 +116,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Removes the first occurrence of a specific element from a deque. </p>
-<p>This function iterates through the provided deque from the beginning to find an element that matches the value of the provided parameter <span class="tt">elt</span>. Once a match is found, the element is removed using the deque's erase method. Note that because the deque is passed by value, the changes made within this function do not affect the original deque passed by the caller.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> deque to be searched and modified. Note that this is a copy. </td></tr>
-    <tr><td class="paramname">elt</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> value to search for and erase from the deque.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function takes the deque by value, meaning the erasure only affects the local copy of the deque and not the original object in the calling scope. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> type T must support the equality comparison operator (==). </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> local copy of the deque will have the first instance of <span class="tt">elt</span> removed if it was present. </dd></dl>
 
 </div>
 </div>

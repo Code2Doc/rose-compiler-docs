@@ -1,8 +1,8 @@
-\_form#0=45x13:$ keyDecl $
-\_form#1=98x15:$[-2^{53}+1, 2^{53}-1]$
-\_form#2=43x14:$O(V_s V_t)$
-\_form#3=119x14:$O(V_s V_t log(V_s V_t) + E)$
-\_form#4=11x13:$V_s$
-\_form#5=11x13:$V_t$
-\_form#6=10x10:$E$
-\_form#7=119x14:$\|cell_i\| = \|cell_0\| + i \Delta$
+\_form#0=98x15:$[-2^{53}+1, 2^{53}-1]$
+\_form#1=43x14:$O(V_s V_t)$
+\_form#2=119x14:$O(V_s V_t log(V_s V_t) + E)$
+\_form#3=11x13:$V_s$
+\_form#4=11x13:$V_t$
+\_form#5=10x10:$E$
+\_form#6=119x14:$\|cell_i\| = \|cell_0\| + i \Delta$
+\_form#7=45x13:$ keyDecl $

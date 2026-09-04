@@ -1,5 +1,6 @@
 var namespace_sage_util =
 [
+    [ "anonymous_namespace{sageUtility.h}", "namespace_sage_util_1_1anonymous__namespace_02sage_utility_8h_03.html", "namespace_sage_util_1_1anonymous__namespace_02sage_utility_8h_03" ],
     [ "anonymous__namespace_02sageUtility_8h_03", "namespace_sage_util_1_1anonymous____namespace__02sage_utility__8h__03.html", [
       [ "arglist", "namespace_sage_util_1_1anonymous____namespace__02sage_utility__8h__03.html#a8ed585e04e6d076dbb3e4e40d6870be5", null ],
       [ "arglist", "namespace_sage_util_1_1anonymous____namespace__02sage_utility__8h__03.html#a14ed8ad8eadfedd977665452b3da9a36", null ],
@@ -24,6 +25,5 @@ var namespace_sage_util =
       [ "str", "namespace_sage_util_1_1anonymous____namespace__02sage_utility__8h__03.html#a1a048b2855e7c799a5bd9b04aead9af3", null ],
       [ "str", "namespace_sage_util_1_1anonymous____namespace__02sage_utility__8h__03.html#adbcb9f53b30988176314563eb037a11d", null ],
       [ "type", "namespace_sage_util_1_1anonymous____namespace__02sage_utility__8h__03.html#a5a5323540204d9c18ba82ea106bb9cb4", null ]
-    ] ],
-    [ "anonymous_namespace{sageUtility.h}", "namespace_sage_util_1_1anonymous__namespace_02sage_utility_8h_03.html", "namespace_sage_util_1_1anonymous__namespace_02sage_utility_8h_03" ]
+    ] ]
 ];

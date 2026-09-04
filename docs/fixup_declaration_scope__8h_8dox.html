@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Ensures consistency in the scope assignment of declaration statements. </p>
+<p>Fixup all SgDeclarationStatement to have a consistant scope (between the defining and all non-defining declarations).</p>
 <p>Enforces consistency in the scope assignments of AST declarations.</p>
 <p>This function is designed to enforce consistency in how defining and non-defining declarations (such as friend declarations) have their scopes set within the AST. It traverses the memory pool to identify groups of related declarations and verifies that all associated declarations in a set share the same correct scope. It also serves as a mechanism to detect and warn about discrepancies in scope assignment that might arise from re-entrant namespace definitions or global scope issues across different files.</p>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -38,7 +38,7 @@ var ud_2_utility_8h =
     [ "Rosebud::locationDirective", "namespace_rosebud.html#ada49939668709cd571d58d4243bdab5d", null ],
     [ "Rosebud::locationDirective", "namespace_rosebud.html#aa3cb04a308d8637b15c6a6584034ac23", null ],
     [ "Rosebud::makeBlockComment", "namespace_rosebud.html#a3959ce8d64daabbbf07da071dcf4f4c9", null ],
-    [ "Rosebud::makeBlockComment", "namespace_rosebud.html#a3e5a122b4bafada7a2e4f6cdbd4ade17", null ],
+    [ "Rosebud::makeBlockComment", "namespace_rosebud.html#ac103120a21a8d69ff86cd845351d1b85", null ],
     [ "Rosebud::makeTitleComment", "namespace_rosebud.html#a4eb10493033822b7cb2cf51efba1352d", null ],
     [ "Rosebud::makeTitleComment", "namespace_rosebud.html#ab9cdb2f4e61b6314b8e65b2876d8e0ad", null ],
     [ "Rosebud::matching", "namespace_rosebud.html#a8496fe289486593886ff1577d5b08854", null ],

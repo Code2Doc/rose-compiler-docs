@@ -132,15 +132,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a12f768dbe786298ce7517dc5e55b38db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new expression list expression with no function interface.  <br /></td></tr>
 <tr class="memitem:a25b5494069eb666cd9da71576fa5d7ea" id="r_a25b5494069eb666cd9da71576fa5d7ea"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#a25b5494069eb666cd9da71576fa5d7ea">buildBoolValExp_nfi</a> (bool value)</td></tr>
 <tr class="memdesc:a25b5494069eb666cd9da71576fa5d7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an SgExpression representing a boolean value.  <br /></td></tr>
-<tr class="memitem:aeff2fd3d104cdfd7016d155e31ce93fe" id="r_aeff2fd3d104cdfd7016d155e31ce93fe"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#aeff2fd3d104cdfd7016d155e31ce93fe">buildIntVal_nfi</a> (int value)</td></tr>
-<tr class="memdesc:aeff2fd3d104cdfd7016d155e31ce93fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an integer value expression node.  <br /></td></tr>
+<tr class="memitem:a5b7732ad884298c0bb2280330db3aa3d" id="r_a5b7732ad884298c0bb2280330db3aa3d"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#a5b7732ad884298c0bb2280330db3aa3d">buildIntVal_nfi</a> (int value=0)</td></tr>
+<tr class="memdesc:a5b7732ad884298c0bb2280330db3aa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an integer value expression node.  <br /></td></tr>
 <tr class="memitem:ad8ad51f5fcb1e0aaa9332624930fa14d" id="r_ad8ad51f5fcb1e0aaa9332624930fa14d"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#ad8ad51f5fcb1e0aaa9332624930fa14d">buildStringVal_nfi</a> (std::string value)</td></tr>
 <tr class="memdesc:ad8ad51f5fcb1e0aaa9332624930fa14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an SgExpression representing a string value.  <br /></td></tr>
 <tr class="memitem:a757398ac04c3e023bfad482f9fda08c2" id="r_a757398ac04c3e023bfad482f9fda08c2"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#a757398ac04c3e023bfad482f9fda08c2">buildFloatVal_nfi</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a757398ac04c3e023bfad482f9fda08c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a floating-point value expression from a string representation.  <br /></td></tr>
 <tr class="memitem:ad221d61ec92dc7d777968aff2f24713c" id="r_ad221d61ec92dc7d777968aff2f24713c"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#ad221d61ec92dc7d777968aff2f24713c">buildComplexVal_nfi</a> (SgExpression *real_value, SgExpression *imaginary_value, const std::string &amp;str)</td></tr>
 <tr class="memdesc:ad221d61ec92dc7d777968aff2f24713c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a complex value expression from real and imaginary components.  <br /></td></tr>
-<tr class="memitem:afde592386e5bda0c55cad935914b8123" id="r_afde592386e5bda0c55cad935914b8123"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#afde592386e5bda0c55cad935914b8123">buildVarRefExp_nfi</a> (std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, SgScopeStatement *scope)</td></tr>
+<tr class="memitem:afde592386e5bda0c55cad935914b8123" id="r_afde592386e5bda0c55cad935914b8123"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#afde592386e5bda0c55cad935914b8123">buildVarRefExp_nfi</a> (std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:afde592386e5bda0c55cad935914b8123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a variable reference expression with updated source position.  <br /></td></tr>
 <tr class="memitem:a67304c8bcecd1c394ec088d9eb700e22" id="r_a67304c8bcecd1c394ec088d9eb700e22"><td class="memItemLeft">SgExpression *&#160;</td><td class="memItemRight"><a class="el" href="#a67304c8bcecd1c394ec088d9eb700e22">buildSubscriptExpression_nfi</a> (SgExpression *lower_bound, SgExpression *upper_bound, SgExpression *stride)</td></tr>
 <tr class="memdesc:a67304c8bcecd1c394ec088d9eb700e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a subscript expression for non-fixed index loops.  <br /></td></tr>
@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:abf01af6de6640b422d6b63e179fd8e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the provided function call expression as a generic expression pointer.  <br /></td></tr>
 <tr class="memitem:a580f541577d184ff82f9e14b4b9a7f5b" id="r_a580f541577d184ff82f9e14b4b9a7f5b"><td class="memItemLeft">SgExprListExp *&#160;</td><td class="memItemRight"><a class="el" href="#a580f541577d184ff82f9e14b4b9a7f5b">buildExprListExp_nfi</a> (const std::list&lt; SgExpression * &gt; &amp;list)</td></tr>
 <tr class="memdesc:a580f541577d184ff82f9e14b4b9a7f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an expression list expansion from a list of expressions.  <br /></td></tr>
-<tr class="memitem:a584dc9b3dee341882797026975c3f692" id="r_a584dc9b3dee341882797026975c3f692"><td class="memItemLeft">SgCommonBlockObject *&#160;</td><td class="memItemRight"><a class="el" href="#a584dc9b3dee341882797026975c3f692">buildCommonBlockObject</a> (std::string <a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, SgExprListExp *expr_list)</td></tr>
+<tr class="memitem:a584dc9b3dee341882797026975c3f692" id="r_a584dc9b3dee341882797026975c3f692"><td class="memItemLeft">SgCommonBlockObject *&#160;</td><td class="memItemRight"><a class="el" href="#a584dc9b3dee341882797026975c3f692">buildCommonBlockObject</a> (std::string <a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, SgExprListExp *expr_list)</td></tr>
 <tr class="memdesc:a584dc9b3dee341882797026975c3f692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a common block object with a specified name and expression list.  <br /></td></tr>
 <tr class="memitem:a5181ddfe6c1b05be5f0c09c1491e2968" id="r_a5181ddfe6c1b05be5f0c09c1491e2968"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5181ddfe6c1b05be5f0c09c1491e2968">set_false_body</a> (SgIfStmt *&amp;if_stmt, SgBasicBlock *false_body)</td></tr>
 <tr class="memdesc:a5181ddfe6c1b05be5f0c09c1491e2968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the false branch body for a given if-statement.  <br /></td></tr>
@@ -164,9 +164,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:a333fa288abc9346a43966f97a6fdcf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks an expression as requiring parentheses.  <br /></td></tr>
 <tr class="memitem:a8f73bf0964dc8a10e00cccea16681d7a" id="r_a8f73bf0964dc8a10e00cccea16681d7a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8f73bf0964dc8a10e00cccea16681d7a">fixUndeclaredResultName</a> (const std::string &amp;result_name, SgScopeStatement *scope, <a class="el" href="class_sg_type.html">SgType</a> *result_type)</td></tr>
 <tr class="memdesc:a8f73bf0964dc8a10e00cccea16681d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares and inserts a missing result name into the specified scope.  <br /></td></tr>
-<tr class="memitem:a46db1fbf54ef75ebb8303b3f992c55f6" id="r_a46db1fbf54ef75ebb8303b3f992c55f6"><td class="memItemLeft">SgFunctionRefExp *&#160;</td><td class="memItemRight"><a class="el" href="#a46db1fbf54ef75ebb8303b3f992c55f6">buildIntrinsicFunctionRefExp_nfi</a> (const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, SgScopeStatement *scope)</td></tr>
+<tr class="memitem:a46db1fbf54ef75ebb8303b3f992c55f6" id="r_a46db1fbf54ef75ebb8303b3f992c55f6"><td class="memItemLeft">SgFunctionRefExp *&#160;</td><td class="memItemRight"><a class="el" href="#a46db1fbf54ef75ebb8303b3f992c55f6">buildIntrinsicFunctionRefExp_nfi</a> (const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:a46db1fbf54ef75ebb8303b3f992c55f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a function reference expression for intrinsic functions.  <br /></td></tr>
-<tr class="memitem:abc86804c5c454890bd53de163a740735" id="r_abc86804c5c454890bd53de163a740735"><td class="memItemLeft">SgFunctionCallExp *&#160;</td><td class="memItemRight"><a class="el" href="#abc86804c5c454890bd53de163a740735">buildIntrinsicFunctionCallExp_nfi</a> (const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>, SgExprListExp *params, SgScopeStatement *scope)</td></tr>
+<tr class="memitem:abc86804c5c454890bd53de163a740735" id="r_abc86804c5c454890bd53de163a740735"><td class="memItemLeft">SgFunctionCallExp *&#160;</td><td class="memItemRight"><a class="el" href="#abc86804c5c454890bd53de163a740735">buildIntrinsicFunctionCallExp_nfi</a> (const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>, SgExprListExp *params, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:abc86804c5c454890bd53de163a740735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an expression representing an intrinsic function call.  <br /></td></tr>
 <tr class="memitem:a7926f669876a621368a99ae3e2e6f721" id="r_a7926f669876a621368a99ae3e2e6f721"><td class="memItemLeft"><a class="el" href="class_sg_type.html">SgType</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a7926f669876a621368a99ae3e2e6f721">buildComplexType</a> (<a class="el" href="class_sg_type.html">SgType</a> *base_type=<a class="el" href="_module_builder_8h.html#ab979d9d4b4923f7c54d6caa6e1a61936">nullptr</a>)</td></tr>
 <tr class="memitem:a16e7820557b421bbad83640f4edb7980" id="r_a16e7820557b421bbad83640f4edb7980"><td class="memItemLeft"><a class="el" href="class_sg_type.html">SgType</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a16e7820557b421bbad83640f4edb7980">buildBoolType</a> (SgExpression *kind_expr)</td></tr>
@@ -246,7 +246,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the newly created SgExpression representing the aggregate initializer.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initializers list and the type must be valid, non-null pointers. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a valid SgExpression pointer that is managed by the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> context.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is a direct delegation to <a class="el" href="namespace_sage_builder.html#ade48fa0139082b53faaa37263372c220" title="Builds an aggregate initializer object.">SageBuilder::buildAggregateInitializer_nfi</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a direct delegation to <a class="el" href="namespace_sage_builder.html#a785fb25ea96f4bfcd28042304b4d20e0" title="Build an aggregate initializer.">SageBuilder::buildAggregateInitializer_nfi</a>. </dd></dl>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the newly constructed <a class="el" href="class_sg_type.html">SgType</a> representing the array.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>baseType must not be null. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a valid <a class="el" href="class_sg_type.html">SgType</a> pointer representing an array with the specified dimensions.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="namespace_sage_builder.html#ae6087a78471767c6d9ac28a4fcad24dc" title="Creates and initializes a new, empty SgExprListExp object.">SageBuilder::buildExprListExp_nfi()</a> and <a class="el" href="namespace_sage_builder.html#abc538f6224536a4e663d8836ed143d2e" title="Build ArrayType.">SageBuilder::buildArrayType()</a> for the underlying implementation. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <a class="el" href="namespace_sage_builder.html#ae6087a78471767c6d9ac28a4fcad24dc" title="Creates and initializes a new, empty SgExprListExp object.">SageBuilder::buildExprListExp_nfi()</a> and <a class="el" href="namespace_sage_builder.html#a60f7b453e0c19b9ad37606acc5b341cc" title="Build ArrayType.">SageBuilder::buildArrayType()</a> for the underlying implementation. </dd></dl>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an SgExpression representing a boolean value. </p>
-<p>This function acts as a wrapper to interface with the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> utility, specifically for constructing expression nodes that represent constant boolean values within the Sg framework. It delegates the actual construction logic to the static method <a class="el" href="namespace_sage_builder.html#a1964ec1cdccb670f2b7a537044816950" title="Creates a new boolean value expression from an integer.">SageBuilder::buildBoolValExp_nfi</a>.</p>
+<p>This function acts as a wrapper to interface with the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> utility, specifically for constructing expression nodes that represent constant boolean values within the Sg framework. It delegates the actual construction logic to the static method <a class="el" href="namespace_sage_builder.html#a8457f8663e24b5dbe2e2fe34a7d12462" title="Creates a new boolean value expression from an integer.">SageBuilder::buildBoolValExp_nfi</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> boolean value to be encapsulated in the resulting SgExpression.</td></tr>
@@ -430,14 +430,14 @@ Functions</h2></td></tr>
 <p>This function serves as a wrapper around the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> utility to instantiate a SgCommonBlockObject. It handles both the creation of the object via the builder and the subsequent assignment of the source position metadata to the newly created object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier to be assigned to the common block object. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier to be assigned to the common block object. </td></tr>
     <tr><td class="paramname">expr_list</td><td><a class="el" href="class_a.html">A</a> pointer to an SgExprListExp containing the list of expressions associated with this common block.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the newly created SgCommonBlockObject.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> expr_list parameter should be a valid pointer to an SgExprListExp object, or nullptr if no expressions are associated with the block. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned SgCommonBlockObject will have its source position metadata initialized via <a class="el" href="namespace_sage_interface.html#a4b77d52bd66dc9f133d8e899cd8c5d4f" title="Set the source code positon for the current (input) node.">SageInterface::setSourcePosition</a>.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned SgCommonBlockObject will have its source position metadata initialized via <a class="el" href="namespace_sage_interface.html#a5f850caf33a789c71d6aeda65952019a" title="Set the source code positon for the current (input) node.">SageInterface::setSourcePosition</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the <a class="el" href="namespace_sage_builder.html#a4de5eaafc8df428057d703cbf91486ce" title="Build a Fortran common block, possibly with a name.">SageBuilder::buildCommonBlockObject</a> implementation to perform the actual allocation and initialization. </dd></dl>
 
 </div>
@@ -484,7 +484,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a complex value expression from real and imaginary components. </p>
-<p>This function serves as a wrapper to create a complex value expression using provided real and imaginary SgExpression pointers. It performs type validation by ensuring that both the real and imaginary components are instances of SgValueExp. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then delegates the actual construction to the <a class="el" href="namespace_sage_builder.html#a17c957defa4a5ba69e09b1d5b268f6c2" title="Constructs a new SgComplexVal object from real and imaginary components.">SageBuilder::buildComplexVal_nfi</a> method.</p>
+<p>This function serves as a wrapper to create a complex value expression using provided real and imaginary SgExpression pointers. It performs type validation by ensuring that both the real and imaginary components are instances of SgValueExp. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then delegates the actual construction to the <a class="el" href="namespace_sage_builder.html#a6a84e1abcee2c20e7b54d0fe2ea8224d" title="Constructs a new SgComplexVal object from real and imaginary components.">SageBuilder::buildComplexVal_nfi</a> method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">real_value</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgExpression representing the real part of the complex number. Must be castable to SgValueExp. </td></tr>
@@ -698,7 +698,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the newly created SgExpression representing the float value.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">str</span> must be a valid representation of a floating-point number that can be parsed by the underlying <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> implementation. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a non-null SgExpression pointer if the string is valid, otherwise the behavior depends on the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> implementation.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the static method <a class="el" href="namespace_sage_builder.html#a1fa0b615a7dc6186d7463206c7ef739a" title="Creates a new SgFloatVal object representing a floating-point value.">SageBuilder::buildFloatVal_nfi</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the static method <a class="el" href="namespace_sage_builder.html#a523f6239ac9f1f1645f092b9271391ad" title="Creates a new SgFloatVal object representing a floating-point value.">SageBuilder::buildFloatVal_nfi</a>. </dd></dl>
 
 </div>
 </div>
@@ -828,7 +828,7 @@ Functions</h2></td></tr>
 <p>This function creates a new SgFunctionCallExp node within the Sage intermediate representation. It determines the return type of the function call based on the provided intrinsic name: if the name is "num_images", it assigns an integer return type; otherwise, it defaults to a void return type. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles the initialization of parameters and scope if they are provided as null pointers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier of the intrinsic function to be called. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier of the intrinsic function to be called. </td></tr>
     <tr><td class="paramname">params</td><td><a class="el" href="class_a.html">A</a> pointer to an SgExprListExp containing the arguments for the function call. If null, a new empty expression list is created. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="class_a.html">A</a> pointer to the SgScopeStatement in which the function call should be placed. If null, the top of the current scope stack is used.</td></tr>
   </table>
@@ -864,7 +864,7 @@ Functions</h2></td></tr>
 <p>This function attempts to locate a function symbol within the parent scopes of the provided scope using the given name. If the symbol is not found, it specifically checks if the name corresponds to known intrinsic functions (e.g., "num_images") to prepare for building a function reference expression. Currently, the implementation primarily handles lookups and contains placeholders for specific intrinsic logic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier of the function to be referenced. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier of the function to be referenced. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current scope statement in which the lookup should be performed.</td></tr>
   </table>
   </dd>
@@ -895,8 +895,8 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
 
 </div>
 </div>
-<a id="aeff2fd3d104cdfd7016d155e31ce93fe" name="aeff2fd3d104cdfd7016d155e31ce93fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeff2fd3d104cdfd7016d155e31ce93fe">&#9670;&#160;</a></span>buildIntVal_nfi()</h2>
+<a id="a5b7732ad884298c0bb2280330db3aa3d" name="a5b7732ad884298c0bb2280330db3aa3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7732ad884298c0bb2280330db3aa3d">&#9670;&#160;</a></span>buildIntVal_nfi()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,14 +904,14 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
         <tr>
           <td class="memname">SgExpression * Rose::builder::SageBuilderCpp17::buildIntVal_nfi </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Creates an integer value expression node. </p>
-<p>This function acts as a wrapper to invoke the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> utility for creating an SgExpression representing a constant integer value. It facilitates the construction of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Auto-generated documentation for the Rose::AST namespace.">AST</a>) by encapsulating the creation logic within the builder pattern.</p>
+<p>This function acts as a wrapper to invoke the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> utility for creating an SgExpression representing a constant integer value. It facilitates the construction of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (<a class="el" href="namespace_rose_1_1_a_s_t.html" title="Collection of functionalities performing global operations on the AST.">AST</a>) by encapsulating the creation logic within the builder pattern.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> integer value to be encapsulated within the SgExpression node. Defaults to 0 if no argument is provided.</td></tr>
@@ -921,7 +921,7 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the newly created SgExpression node containing the integer value.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> must be properly initialized and capable of allocating memory for new nodes. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> valid SgExpression object is returned, representing the provided integer value.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around <a class="el" href="namespace_sage_builder.html#a7120b79102c861cb156de61e0512f959" title="Creates a new integer value node without source position information.">SageBuilder::buildIntVal_nfi</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around <a class="el" href="namespace_sage_builder.html#a28e585af36bed5019b5f1d41665b7d0e" title="Creates a new integer value node without source position information.">SageBuilder::buildIntVal_nfi</a>. </dd></dl>
 
 </div>
 </div>
@@ -1117,7 +1117,7 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer to the newly created SgExpression representing a null expression.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> must be properly initialized and capable of creating expressions. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> valid SgExpression pointer is returned, which may be null if the underlying builder fails, though typically it represents a valid null-type expression object.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is a direct proxy for <a class="el" href="namespace_sage_builder.html#a547c17d201f84951d3b3ff9acebdf1d8" title="No file info version of buildNullExpression(). File info is to be set later on.">SageBuilder::buildNullExpression_nfi()</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a direct proxy for <a class="el" href="namespace_sage_builder.html#ac05c9ce742f9e0967de26ce3c1e7f384" title="No file info version of buildNullExpression(). File info is to be set later on.">SageBuilder::buildNullExpression_nfi()</a>. </dd></dl>
 
 </div>
 </div>
@@ -1223,7 +1223,7 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
 </div><div class="memdoc">
 
 <p>Creates an SgExpression representing a string value. </p>
-<p>This function acts as a wrapper around the <a class="el" href="namespace_sage_builder.html#adefbc66412d5fd6c512367c54b587d7b" title="Creates a new SgStringVal object from a given string value without source position.">SageBuilder::buildStringVal_nfi</a> method. It is used to construct a node in the Sg tree that encapsulates a constant string value, facilitating the creation of string-based expressions during the construction of the intermediate representation.</p>
+<p>This function acts as a wrapper around the <a class="el" href="namespace_sage_builder.html#a96d1259a6f8fafeeaf5b573a18b60830" title="Creates a new SgStringVal object from a given string value without source position.">SageBuilder::buildStringVal_nfi</a> method. It is used to construct a node in the Sg tree that encapsulates a constant string value, facilitating the creation of string-based expressions during the construction of the intermediate representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string content that will be stored within the resulting SgExpression.</td></tr>
@@ -1335,7 +1335,7 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
 <p>This function utilizes the <a class="el" href="namespace_sage_builder.html" title="Auto-generated documentation for the SageBuilder namespace.">SageBuilder</a> to create a new variable reference expression based on the provided identifier name and scope. After the expression is created, the function automatically updates the source position metadata of the resulting expression to match the current context.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="class_a.html">A</a> reference to a string containing the identifier name of the variable. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="class_a.html">A</a> reference to a string containing the identifier name of the variable. </td></tr>
     <tr><td class="paramname">scope</td><td><a class="el" href="class_a.html">A</a> pointer to the SgScopeStatement defining the scope in which the variable reference exists.</td></tr>
   </table>
   </dd>
@@ -1388,7 +1388,7 @@ There is an existing TODO for handling the "num_images" intrinsic. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <span class="tt">SgVariableSymbol</span> associated with <span class="tt">result_name</span> and <span class="tt">result_type</span> is inserted into the <span class="tt">scope</span>. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scope</span> now contains a mapping from <span class="tt">result_name</span> to the newly created <span class="tt">SgVariableSymbol</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt"><a class="el" href="namespace_sage_builder.html#ada18f01756ab5f354630ce61856e4639" title="Creates a new SgInitializedName object with the provided name, type, and initializer.">SageBuilder::buildInitializedName_nfi</a></span> to create the initialized name without an initializer. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt"><a class="el" href="namespace_sage_builder.html#a21a11c5ef73e88bfcd9147e2160b3164" title="Creates a new SgInitializedName object with the provided name, type, and initializer.">SageBuilder::buildInitializedName_nfi</a></span> to create the initialized name without an initializer. </dd></dl>
 
 </div>
 </div>

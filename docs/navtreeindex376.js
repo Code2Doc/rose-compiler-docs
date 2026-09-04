@@ -1,9 +1,5 @@
 var NAVTREEINDEX376 =
 {
-"structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#a96bbc54f316c78f2c37fa8097504e028":[16,0,21,5,7],
-"structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#ac031e8d555891db86c9390170350d469":[15,0,61,7,2],
-"structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#ac031e8d555891db86c9390170350d469":[16,0,21,5,2],
-"structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#ac19493a0abd94916cba355cbea5ac188":[15,0,61,7,3],
 "structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#ac19493a0abd94916cba355cbea5ac188":[16,0,21,5,3],
 "structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#ac35dd0addef480695e64598ec7116b9d":[15,0,61,7,11],
 "structboost_1_1graph__traits_3_01const_01_sawyer_1_1_container_1_1_graph_3_01_v_00_01_e_00_01_v_f7678cbc22888453429ee93c87cbe8e6.html#ac35dd0addef480695e64598ec7116b9d":[16,0,21,5,11],
@@ -249,5 +245,9 @@ var NAVTREEINDEX376 =
 "structiso__c__binding_1_1c__ptr.html":[15,0,92,0],
 "structiso__c__binding_1_1c__ptr.html":[16,0,36,0],
 "structiso__c__binding_1_1c__ptr.html#aa4616ba2866fc629491a55516d9ef050":[15,0,92,0,0],
-"structiso__c__binding_1_1c__ptr.html#aa4616ba2866fc629491a55516d9ef050":[16,0,36,0,0]
+"structiso__c__binding_1_1c__ptr.html#aa4616ba2866fc629491a55516d9ef050":[16,0,36,0,0],
+"structlegacy_1_1_init_name_cloner.html":[15,0,98,3],
+"structlegacy_1_1_init_name_cloner.html":[16,0,40,3],
+"structlegacy_1_1_init_name_cloner.html#a0beee14ae82818f818ca1e1aad2348aa":[15,0,98,3,0],
+"structlegacy_1_1_init_name_cloner.html#a0beee14ae82818f818ca1e1aad2348aa":[16,0,40,3,0]
 };

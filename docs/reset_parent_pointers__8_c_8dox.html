@@ -123,6 +123,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the parent pointers of all file info objects within the memory pool. </p>
+<p>This traversal calls <a class="el" href="class_reset_file_info_parent_pointers_in_memory_pool.html" title="This traversal uses the Memory Pool traversal to fixup remaining parent pointers in Sg_File_Info obje...">ResetFileInfoParentPointersInMemoryPool</a> Memory Pool traversal.</p>
 <p>This function utilizes the <a class="el" href="class_reset_file_info_parent_pointers_in_memory_pool.html" title="This traversal uses the Memory Pool traversal to fixup remaining parent pointers in Sg_File_Info obje...">ResetFileInfoParentPointersInMemoryPool</a> helper class to perform a traversal of the memory pool. During the traversal, it identifies file information nodes and resets their parent pointers to a null or default state. This is typically used to clean up object relationships during memory pool reclamation or reconfiguration.</p>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> memory pool must be initialized and accessible for traversal. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>All parent pointers within the file info objects in the memory pool are reset to their default/null state.</dd></dl>
@@ -154,6 +155,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the parent pointers for a given node and its descendants. </p>
+<p>Interface function to reset parent pointers.</p>
 <p>Resets the parent pointers of a given node and its descendants.</p>
 <p>This function performs a traversal of the SgNode hierarchy starting from the provided node. It utilizes the <a class="el" href="class_reset_parent_pointers.html" title="This traversal implements the mechanism to reset all parent pointers (back edges in the AST graph).">ResetParentPointers</a> traversal mechanism and the <a class="el" href="class_reset_parent_pointers_inherited_attribute.html" title="Inherited attribute required for ResetParentPointers class.">ResetParentPointersInheritedAttribute</a> to propagate the specified parent pointer down through the subtree. This is useful for re-parenting nodes or updating the structural hierarchy within the ROSE intermediate representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -196,6 +198,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets parent pointers for nodes within the memory pool associated with a given node. </p>
+<p>This traversal calles <a class="el" href="class_reset_parent_pointers_in_memory_pool.html" title="This traversal uses the Memory Pool traversal to fixup remaining parent pointers.">ResetParentPointersInMemoryPool</a> Memory Pool traversal.</p>
 <p>Resets the parent pointers of nodes within the memory pool.</p>
 <p>This function traverses the memory pool associated with the global scope of the provided node to reset parent pointers. It first attempts to identify the global scope by checking if the input node is an SgProject (and subsequently finding its associated SgSourceFile) or by searching upwards through the AST using <a class="el" href="namespace_sage_interface.html#a427595f35bbec1f766412b91b6dd378e" title="Finds the nearest ancestor of a given AST node that matches a specified type.">SageInterface::getEnclosingNode</a>. Once a valid SgGlobal is identified, a <a class="el" href="class_reset_parent_pointers_in_memory_pool.html" title="This traversal uses the Memory Pool traversal to fixup remaining parent pointers.">ResetParentPointersInMemoryPool</a> object is used to traverse the memory pool and reset the pointers. Finally, it calls resetFileInfoParentPointersInMemoryPool to ensure any remaining unset S_File_Info parent pointers are addressed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -226,7 +229,7 @@ If the node is an SgProject, the function attempts to find the global scope via 
 <dd>
 If the node is not an SgProject, the function searches upwards through the AST to find an enclosing SgGlobal. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also calls <a class="el" href="reset_parent_pointers__8h_8dox.html#a9ccf6596011029e715235ff1c7666c0b" title="Resets the parent pointers of all file info objects within the memory pool.">resetFileInfoParentPointersInMemoryPool()</a> to handle any remaining unset Sg_File_Info objects. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also calls <a class="el" href="reset_parent_pointers_8h.html#a9ccf6596011029e715235ff1c7666c0b" title="This traversal calls ResetFileInfoParentPointersInMemoryPool Memory Pool traversal.">resetFileInfoParentPointersInMemoryPool()</a> to handle any remaining unset Sg_File_Info objects. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior regarding global scope discovery may vary depending on whether ifdef ROSE_ENABLE_BINARY_ANALYSIS is defined. </dd></dl>
 
@@ -248,6 +251,7 @@ If the node is not an SgProject, the function searches upwards through the AST t
 </div><div class="memdoc">
 
 <p>Resets the parent pointers for class or namespace declarations within a given node. </p>
+<p>This is a top level function not called recursively.</p>
 <p>This function performs a traversal of the provided SgNode hierarchy to ensure that any data members belonging to a class or namespace have their parent pointers correctly updated to point to the respective class or namespace definition. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes the <a class="el" href="class_reset_parent_pointers_of_class_and_namespace_declarations.html" title="This traversal implements the mechanism to reset all parent pointers (back edges in the AST graph).">ResetParentPointersOfClassAndNamespaceDeclarations</a> visitor class to perform a preorder traversal of the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -287,6 +291,7 @@ If the node is not an SgProject, the function searches upwards through the AST t
 </div><div class="memdoc">
 
 <p>Resets the parent pointers for a given node and its associated declarations. </p>
+<p>This is a top level function not called recursively.</p>
 <p>This function performs a top-level reset of parent pointers within the AST. It initiates a recursive process by calling resetParentPointers starting from the provided node, using the node's existing parent as the initial context. Additionally, it ensures that parent pointers within class definitions, namespace definitions, or global scope declarations are also reset by invoking resetParentPointersOfClassOrNamespaceDeclarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes a <a class="el" href="class_timing_performance.html">TimingPerformance</a> object to track the execution time of the operation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a89cd079b6b219005d6ddc4b692a49631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match a variable list like "x,y,z)".  <br /></td></tr>
 <tr class="memitem:aa79ec00576d3f3d5c5250ac0b979fbf0" id="r_aa79ec00576d3f3d5c5250ac0b979fbf0"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa79ec00576d3f3d5c5250ac0b979fbf0">ofs_match_clause_varlist</a> (<a class="el" href="namespace_omp_support.html#a9407f163895e6aef1aaac5155fb25ac9">omp_construct_enum</a> clausetype)</td></tr>
 <tr class="memdesc:aa79ec00576d3f3d5c5250ac0b979fbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match a clause with a form like clause (varlist).  <br /></td></tr>
-<tr class="memitem:a24e2869ccf88e0860a1e7b53b08390ad" id="r_a24e2869ccf88e0860a1e7b53b08390ad"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a24e2869ccf88e0860a1e7b53b08390ad">ofs_match_name_in_parenthesis</a> (char <a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>[])</td></tr>
+<tr class="memitem:a24e2869ccf88e0860a1e7b53b08390ad" id="r_a24e2869ccf88e0860a1e7b53b08390ad"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a24e2869ccf88e0860a1e7b53b08390ad">ofs_match_name_in_parenthesis</a> (char <a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>[])</td></tr>
 <tr class="memdesc:a24e2869ccf88e0860a1e7b53b08390ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match anyname within parenthesis, used for named "critical" and "end critical".  <br /></td></tr>
 <tr class="memitem:a2da070b42dc10d7f46f9a4ec40190aed" id="r_a2da070b42dc10d7f46f9a4ec40190aed"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2da070b42dc10d7f46f9a4ec40190aed">ofs_match_clause_expression</a> (<a class="el" href="namespace_omp_support.html#a9407f163895e6aef1aaac5155fb25ac9">omp_construct_enum</a> clausetype)</td></tr>
 <tr class="memdesc:a2da070b42dc10d7f46f9a4ec40190aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match clauses with expression, like.  <br /></td></tr>
@@ -766,7 +766,19 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if a line is an OpenMP directive,. </p>
-<p>Checks if the provided string and node represent OpenMP sentinels. </p>
+<p>Checks if the provided string and node represent OpenMP sentinels.</p>
+<p>This function determines whether a specific string and associated SgNode correspond to OpenMP sentinel patterns. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation works by temporarily overriding the global state variables <span class="tt"><a class="el" href="#a3a024a819e8b75d6d58f58f807f00d3e">c_char</a></span> and <span class="tt"><a class="el" href="#a9de06e4f64249e9cbd2b0e9352235fdd">c_sgnode</a></span> with the provided arguments, calling the underlying <span class="tt"><a class="el" href="omp_fortran_parser__8_c_8dox.html#a8847e295df75ca3635c5c4da6810a364" title="Checks if the current source form contains OpenMP sentinel patterns.">ofs_is_omp_sentinels()</a></span> logic, and then restoring the original global state to ensure the function remains side-effect free.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td><a class="el" href="class_a.html">A</a> pointer to a null-terminated character string to be checked. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode associated with the string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the string and node are identified as OpenMP sentinels, false otherwise.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameters <span class="tt">str</span> and <span class="tt"><a class="el" href="structnode.html">node</a></span> must not be null. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global state variables <span class="tt"><a class="el" href="#a3a024a819e8b75d6d58f58f807f00d3e">c_char</a></span> and <span class="tt"><a class="el" href="#a9de06e4f64249e9cbd2b0e9352235fdd">c_sgnode</a></span> are restored to their original values, regardless of the function's return value.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of global variables <span class="tt"><a class="el" href="#a3a024a819e8b75d6d58f58f807f00d3e">c_char</a></span> and <span class="tt"><a class="el" href="#a9de06e4f64249e9cbd2b0e9352235fdd">c_sgnode</a></span>. It uses an assertion to validate input pointers. </dd></dl>
 
 </div>
 </div>
@@ -1423,7 +1435,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>sageFilePtr must be a valid, non-null pointer to an SgSourceFile object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function populates the global <span class="tt">omp_comment_list</span> with parsed OmpAttribute objects and updates the preprocessing information within the SgNodes where applicable.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of <span class="tt"><a class="el" href="namespace_ast_query_namespace.html#ac77d03c3e5f4c854def8de7a6b3c122a" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a></span> to locate nodes and <span class="tt"><a class="el" href="omp_fortran_parser__8_c_8dox.html#af0bb72b1b85f77a50ac268004c8c4599" title="Parses OpenMP directive strings associated with a specific node.">omp_fortran_parse</a></span> to perform the actual directive parsing. </dd>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of <span class="tt"><a class="el" href="namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2" title="Queries a subtree of the AST based on a functional predicate and specified depth.">NodeQuery::querySubTree</a></span> to locate nodes and <span class="tt"><a class="el" href="omp_fortran_parser__8_c_8dox.html#af0bb72b1b85f77a50ac268004c8c4599" title="Parses OpenMP directive strings associated with a specific node.">omp_fortran_parse</a></span> to perform the actual directive parsing. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> handling of line continuations is designed to manage cases where the '&amp;' character is used both for standard line continuation and as a marker for the start of a second line. </dd></dl>
 

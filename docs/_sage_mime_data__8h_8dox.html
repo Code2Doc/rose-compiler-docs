@@ -207,6 +207,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the first available SgNode associated with a specific MIME type from the provided QMimeData. </p>
+<p>extract the MIME data, returns NULL if not set</p>
 <p>This function attempts to extract nodes from the provided QMimeData object by searching for the SG_NODE_MIMETYPE identifier. It first retrieves a vector of all nodes matching this type. If the resulting vector is empty, the function returns a null pointer. Otherwise, it returns the first element found in the node collection.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

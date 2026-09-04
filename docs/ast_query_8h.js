@@ -13,10 +13,10 @@ var ast_query_8h =
       [ "AstQueryNamespace::ExtractTypes", "namespace_ast_query_namespace.html#a71a1833dee52be380cc06eaae0984fe9af6372c2ec2535b7a1e257679e543e0d3", null ],
       [ "AstQueryNamespace::END_OF_NODE_TYPE_LIST_QUERY_DEPTH", "namespace_ast_query_namespace.html#a71a1833dee52be380cc06eaae0984fe9ae588580f5eb2cfd6f82557de70fcb665", null ]
     ] ],
-    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a2a86097bd5c8381be80550bb6e7769d4", null ],
-    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a559e02c1747211e0ea632fe58c2b8412", null ],
-    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a324777cb3a0af65143b735af25d4288a", null ],
-    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#adaa40093f3ac48a864bda9458adb58ae", null ],
+    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a08cd4fefac456970076af2d3895274af", null ],
+    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#acb9789c26f543cdb86461b4805acfed0", null ],
+    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a1149b1fa9701f8bd54ed69398c1f3820", null ],
+    [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a2d6c24a5dad2e6a24ca84cfb7173b18b", null ],
     [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a85ebe321a90225aa238f6cb34b2684bb", null ],
     [ "AstQueryNamespace::Merge", "namespace_ast_query_namespace.html#a56ae58ba61a0fc692984e64cac0a23e8", null ],
     [ "operator+", "ast_query_8h.html#a9a8de5bc46fd9dea16091932503e9a89", null ],
@@ -31,6 +31,6 @@ var ast_query_8h =
     [ "AstQueryNamespace::queryRange", "namespace_ast_query_namespace.html#a53101608fd553f745c9c433a09265600", null ],
     [ "AstQueryNamespace::queryRange", "namespace_ast_query_namespace.html#acab714001dfd4a72c186aaef9551ffa9", null ],
     [ "AstQueryNamespace::querySubTree", "namespace_ast_query_namespace.html#a1a02f77ebfb49e4c6bdfbb66bbd399e2", null ],
-    [ "AstQueryNamespace::querySubTree", "namespace_ast_query_namespace.html#a1881cfdd185c8c63a81216988e78422f", null ],
-    [ "AstQueryNamespace::querySubTree", "namespace_ast_query_namespace.html#aa1fd218c07212fdf2f23567634b07f7a", null ]
+    [ "AstQueryNamespace::querySubTree", "namespace_ast_query_namespace.html#a62dce2cd8553c58c06768074d4ff1683", null ],
+    [ "AstQueryNamespace::querySubTree", "namespace_ast_query_namespace.html#a97d180c37504226c37b63e263422bf8c", null ]
 ];

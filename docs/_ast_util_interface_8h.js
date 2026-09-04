@@ -16,7 +16,7 @@ var _ast_util_interface_8h =
     [ "AstUtilInterface::GetVariableSignature", "namespace_ast_util_interface.html#a28e847bad1741c90eeb08f23aa91b99b", null ],
     [ "AstUtilInterface::IsLocalRef", "namespace_ast_util_interface.html#ada1073d3fe176c838d8d5abebc3312aa", null ],
     [ "AstUtilInterface::OperatorSideEffectName", "namespace_ast_util_interface.html#a9a72f4d9a318862534686be6e457049d", null ],
-    [ "AstUtilInterface::OutputOperatorSideEffectAnnotations", "namespace_ast_util_interface.html#accd21910fb6a9bb19fa1f81997e3b484", null ],
-    [ "AstUtilInterface::ReadAnnotations", "namespace_ast_util_interface.html#ade7c06f74ff41dd4fe2841c969f923bc", null ],
+    [ "AstUtilInterface::OutputOperatorSideEffectAnnotations", "namespace_ast_util_interface.html#a1e3f853b3851646eea892c07375c310e", null ],
+    [ "AstUtilInterface::ReadAnnotations", "namespace_ast_util_interface.html#a26e81af408789b4c2fb325c99ec7c884", null ],
     [ "AstUtilInterface::RegisterOperatorSideEffectAnnotation", "namespace_ast_util_interface.html#afe216127f5e392073d2d7392a5bbb479", null ]
 ];

@@ -117,6 +117,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Performs post-processing operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node or hierarchy. </p>
+<p>This does all post-processing fixup and translation of the Sage III AST.</p>
 <p>This function executes various post-processing tasks on the provided SgNode. It handles different node types such as SgProject, SgFile, and SgSourceFile. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is designed to perform fixups and updates to the AST after parsing is complete. It also manages the clearing of the global mangled name map to ensure consistency during the post-processing phase.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a switch statement based on the node's variant type. For SgProject and SgFile/SgSourceFile, it invokes postProcessingSupport if the parser is not set to exit immediately after parsing. It also includes logic to warn if the function is called on a node other than an SgProject, as calling it on smaller scopes can lead to performance degradation due to repeated memory pool traversals.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -168,6 +169,7 @@ If the node is an SgBinaryComposite and ROSE_ENABLE_BINARY_ANALYSIS is defined, 
 </div><div class="memdoc">
 
 <p>Performs AST post-processing tasks to ensure consistency and correctness of the IR. </p>
+<p>Postprocessing that is not likely to be handled in the EDG/Sage III translation.</p>
 <p>This function executes a series of complex fixup operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary purpose is to resolve inconsistencies introduced during the initial translation phase (e.g., from EDG or other frontends). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles tasks such as resetting parent pointers, fixing up symbol tables, managing template instantiations, resolving defining and non-defining declarations, and ensuring source position consistency. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic varies depending on whether the node represents a C/C++ translation or other supported languages like <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, Ada, or Python.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

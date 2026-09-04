@@ -97,13 +97,14 @@ $(function(){initNavTree('include_graph_8h_source.html','',''); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Support for building include graphs (graphs of include files)</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_include_file_graph.html">IncludeFileGraph</a></div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="namespace_include_file_graph.html">    6</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_include_file_graph.html">IncludeFileGraph</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>   {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="comment">// File for output for generated graph.</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>     <span class="keyword">extern</span> std::ofstream <a class="code hl_variable" href="namespace_include_file_graph.html#a163428dd91e91df589314def1d8d0a78">file</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>     <span class="keyword">extern</span> std::set&lt;void*&gt; <a class="code hl_variable" href="namespace_include_file_graph.html#a0275ef275598cc03e422415a0cc5a10f">graphNodeSet</a>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_include_file_graph.html#afb96fb982f5af2d6c7250b55b7f6e641">insertGraphNode</a> (<span class="keywordtype">void</span>* <a class="code hl_typedef" href="extension-functions_8c.html#af4aeda155dbe167f1c1cf38cb65bf324">node</a>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_include_file_graph.html#afb96fb982f5af2d6c7250b55b7f6e641">insertGraphNode</a> (<span class="keywordtype">void</span>* <a class="code hl_struct" href="structnode.html">node</a>);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>     <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_include_file_graph.html#aedee2f7baa6d2fd2eab56c1e3c65ad93">graph_include_files</a>( SgProject* <a class="code hl_variable" href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a> );</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
@@ -115,16 +116,17 @@ $(function(){initNavTree('include_graph_8h_source.html','',''); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>   }</div>
+</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// INCLUDE_FILE_GRAPH_H</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aextension-functions_8c_html_af4aeda155dbe167f1c1cf38cb65bf324"><div class="ttname"><a href="extension-functions_8c.html#af4aeda155dbe167f1c1cf38cb65bf324">node</a></div><div class="ttdeci">struct node node</div><div class="ttdef"><b>Definition</b> plugin.h:183</div></div>
 <div class="ttc" id="ajava__support_8_c_html_a453b843c3024736580c8e7a96a553cbe"><div class="ttname"><a href="java__support_8_c.html#a453b843c3024736580c8e7a96a553cbe">project</a></div><div class="ttdeci">SgProject * project</div><div class="ttdef"><b>Definition</b> java_support.C:23</div></div>
-<div class="ttc" id="anamespace_include_file_graph_html"><div class="ttname"><a href="namespace_include_file_graph.html">IncludeFileGraph</a></div><div class="ttdoc">Auto-generated documentation for the IncludeFileGraph namespace.</div></div>
+<div class="ttc" id="anamespace_include_file_graph_html"><div class="ttname"><a href="namespace_include_file_graph.html">IncludeFileGraph</a></div><div class="ttdoc">Auto-generated documentation for the IncludeFileGraph namespace.</div><div class="ttdef"><b>Definition</b> includeGraph.h:7</div></div>
 <div class="ttc" id="anamespace_include_file_graph_html_a0275ef275598cc03e422415a0cc5a10f"><div class="ttname"><a href="namespace_include_file_graph.html#a0275ef275598cc03e422415a0cc5a10f">IncludeFileGraph::graphNodeSet</a></div><div class="ttdeci">std::set&lt; void * &gt; graphNodeSet</div><div class="ttdef"><b>Definition</b> includeGraph.C:16</div></div>
 <div class="ttc" id="anamespace_include_file_graph_html_a163428dd91e91df589314def1d8d0a78"><div class="ttname"><a href="namespace_include_file_graph.html#a163428dd91e91df589314def1d8d0a78">IncludeFileGraph::file</a></div><div class="ttdeci">std::ofstream file</div><div class="ttdef"><b>Definition</b> includeGraph.C:12</div></div>
 <div class="ttc" id="anamespace_include_file_graph_html_aedee2f7baa6d2fd2eab56c1e3c65ad93"><div class="ttname"><a href="namespace_include_file_graph.html#aedee2f7baa6d2fd2eab56c1e3c65ad93">IncludeFileGraph::graph_include_files</a></div><div class="ttdeci">void graph_include_files(SgProject *project)</div><div class="ttdoc">Recursively traverses a project and its associated files to generate a DOT graph of include relations...</div><div class="ttdef"><b>Definition</b> includeGraph.C:325</div></div>
 <div class="ttc" id="anamespace_include_file_graph_html_afb96fb982f5af2d6c7250b55b7f6e641"><div class="ttname"><a href="namespace_include_file_graph.html#afb96fb982f5af2d6c7250b55b7f6e641">IncludeFileGraph::insertGraphNode</a></div><div class="ttdeci">void insertGraphNode(void *node)</div><div class="ttdoc">Inserts a new node into the include file graph.</div><div class="ttdef"><b>Definition</b> includeGraph.C:24</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definition</b> extension-functions.c:156</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

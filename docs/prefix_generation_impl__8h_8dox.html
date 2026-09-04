@@ -123,6 +123,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates a string representation of a declaration statement. </p>
+<p>Unparse the declaration as a string for use in prototypes within the AST rewrite mechanism prefix mechanism.</p>
 <p>Converts a declaration statement into its string representation.</p>
 <p>This function converts an AST declaration statement into a string format suitable for intermediate files. This ensures that transformation code remains compilable by including necessary declarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles various types of declarations including enums, variables, templates, typedefs, classes, and functions. It specifically manages formatting options such as skipping comments, skipping CPP directives (using include, define, etc.), and handling function definitions versus declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -251,6 +252,7 @@ If an unknown variant type is encountered, the function will trigger a ROSE_ABOR
 </div><div class="memdoc">
 
 <p>Converts a statement to a string representation without its basic block or semicolon. </p>
+<p>Unparse header of statements that have bodies (but are not scopes) (e.g. SgDefaultOptionStmt).</p>
 <p>Converts a specific statement to a string representation without its basic block or semicolon.</p>
 <p>This function performs a specialized unparsing of an SgStatement object. It utilizes an SgUnparse_Info configuration designed to strip specific elements from the output, specifically excluding comments, the basic block (body), the trailing semicolon, and all cpp directives (as they are assumed to have been pre-processed). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation specifically handles SgCaseOptionStmt and SgDefaultOptionStmt variants by delegating to globalUnparseToString.</p>
 <dl class="params"><dt>Parameters</dt><dd>

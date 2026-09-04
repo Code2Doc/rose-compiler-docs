@@ -113,6 +113,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab519d4e2169437620d452b85baf79019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the debug reference graph option is enabled.  <br /></td></tr>
 <tr class="memitem:a1e9c106918724cb1953518489b711310" id="r_a1e9c106918724cb1953518489b711310"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class <a class="el" href="class_c_f_g_impl_template.html">EdgeIterator</a>&gt; </td></tr>
 <tr class="memitem:a1e9c106918724cb1953518489b711310 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e9c106918724cb1953518489b711310">CreateEdgeWrap</a> (<a class="el" href="class_dep_comp_ast_ref_graph_create.html">DepCompAstRefGraphCreate</a> *res, <a class="el" href="class_loop_tree_dep_comp.html">LoopTreeDepComp</a> &amp;comp, <a class="el" href="class_graph.html">Graph</a> *<a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca">g</a>, <a class="el" href="class_c_f_g_impl_template.html">EdgeIterator</a> deps)</td></tr>
+<tr class="memdesc:a1e9c106918724cb1953518489b711310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps dependency edges into a new dependency graph structure.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a1e9c106918724cb1953518489b711310" name="a1e9c106918724cb1953518489b711310"></a>
@@ -145,6 +146,27 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class <a clas
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Wraps dependency edges into a new dependency graph structure. </p>
+<p>This function iterates through a set of dependency edges provided by an iterator and constructs a new graph of AST references. For each dependency edge, the function identifies the source and sink nodes in the existing graph. If either the source or the sink AST node represents an array access, the function creates corresponding nodes in the result graph (mapping the AST nodes to their respective loop tree dependency nodes) and establishes a new edge between them using the dependency information.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_dep_comp_ast_ref_graph_create.html">DepCompAstRefGraphCreate</a> object used to create the new nodes and edges in the resulting graph. </td></tr>
+    <tr><td class="paramname">comp</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_loop_tree_dep_comp.html">LoopTreeDepComp</a> object, used to retrieve the associated tree nodes for the graph nodes. </td></tr>
+    <tr><td class="paramname"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_graph.html">Graph</a> object representing the existing dependency structure, used to look up the endpoints of the edges. </td></tr>
+    <tr><td class="paramname">deps</td><td>An <a class="el" href="class_c_f_g_impl_template.html">EdgeIterator</a> used to traverse the collection of dependency edges.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer <span class="tt">res</span> must be valid and initialized. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer <span class="tt"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></span> must be valid and contain the endpoints for the edges traversed by <span class="tt">deps</span>. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">deps</span> iterator must be properly initialized and capable of traversing the dependency edges.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">res</span> graph object will contain new nodes and edges representing the array access dependencies found in the <span class="tt">deps</span> iterator.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips edges where both the source and sink AST references are null. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function specifically filters for edges where at least one endpoint is an array access, as determined by <a class="el" href="class_loop_transform_interface.html#adad51af1d0bcb32dfde9847a491880e8">LoopTransformInterface::IsArrayAccess</a>. </dd></dl>
 
 </div>
 </div>

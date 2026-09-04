@@ -148,9 +148,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7bcf54aa22e45d07a21430e5fbd06590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="#a16cebb91b29a8b243b2070565d76d6d3">DepType</a> enumeration value into its corresponding string representation.  <br /></td></tr>
 <tr class="memitem:a5a58f439b38c2e994440fbdd301ad7dc" id="r_a5a58f439b38c2e994440fbdd301ad7dc"><td class="memItemLeft"><a class="el" href="class_dep_info_impl.html">DepInfoImpl</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5a58f439b38c2e994440fbdd301ad7dc">Clone</a> (const <a class="el" href="class_dep_info_impl.html">DepInfoImpl</a> &amp;that)</td></tr>
 <tr class="memdesc:a5a58f439b38c2e994440fbdd301ad7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a deep copy of a <a class="el" href="class_dep_info_impl.html">DepInfoImpl</a> object.  <br /></td></tr>
-<tr class="memitem:a34b9e6bd984f870a4b9b96cbaa565f03" id="r_a34b9e6bd984f870a4b9b96cbaa565f03"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a34b9e6bd984f870a4b9b96cbaa565f03">IsNIL</a> (const <a class="el" href="class_dep_info.html">DepInfo</a> &amp;<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
+<tr class="memitem:a34b9e6bd984f870a4b9b96cbaa565f03" id="r_a34b9e6bd984f870a4b9b96cbaa565f03"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a34b9e6bd984f870a4b9b96cbaa565f03">IsNIL</a> (const <a class="el" href="class_dep_info.html">DepInfo</a> &amp;<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>)</td></tr>
 <tr class="memdesc:a34b9e6bd984f870a4b9b96cbaa565f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the provided dependency information represents a NIL state.  <br /></td></tr>
-<tr class="memitem:ac23351ea92c833faa8b4e3270195545f" id="r_ac23351ea92c833faa8b4e3270195545f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac23351ea92c833faa8b4e3270195545f">IsValidDep</a> (const <a class="el" href="class_dep_info.html">DepInfo</a> &amp;<a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f">info</a>, int commLevel)</td></tr>
+<tr class="memitem:ac23351ea92c833faa8b4e3270195545f" id="r_ac23351ea92c833faa8b4e3270195545f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac23351ea92c833faa8b4e3270195545f">IsValidDep</a> (const <a class="el" href="class_dep_info.html">DepInfo</a> &amp;<a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a>, int commLevel)</td></tr>
 <tr class="memdesc:ac23351ea92c833faa8b4e3270195545f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the dependency information based on direction types and alignment.  <br /></td></tr>
 <tr class="memitem:a4695c62644878fdbc674e005d656f37c" id="r_a4695c62644878fdbc674e005d656f37c"><td class="memItemLeft"><a class="el" href="class_dep_info.html">DepInfo</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4695c62644878fdbc674e005d656f37c">operator*</a> (const <a class="el" href="class_dep_info.html">DepInfo</a> &amp;d1, const <a class="el" href="class_dep_info.html">DepInfo</a> &amp;d2)</td></tr>
 <tr class="memdesc:a4695c62644878fdbc674e005d656f37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the product of two <a class="el" href="class_dep_info.html">DepInfo</a> objects.  <br /></td></tr>
@@ -343,7 +343,7 @@ Functions</h2></td></tr>
 <p>This function takes an existing <a class="el" href="class_dep_info.html">DepInfo</a> object and generates a new <a class="el" href="class_dep_info.html">DepInfo</a> object that represents the transitive closure of the dependencies. It achieves this by performing a deep copy of the input information and then invoking the ClosureEntries method on the copy to expand all indirect dependencies into direct entries.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input dependency information object whose closure is to be computed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input dependency information object whose closure is to be computed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -353,7 +353,7 @@ Functions</h2></td></tr>
 <p>This function takes an existing <a class="el" href="class_dep_info.html">DepInfo</a> object and computes its closure, effectively expanding the dependency set to include all reachable dependencies. It creates a copy of the input information and then invokes the ClosureEntries method on the copy to perform the expansion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original dependency information object to be expanded.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original dependency information object to be expanded.</td></tr>
   </table>
   </dd>
 </dl>
@@ -433,7 +433,7 @@ Functions</h2></td></tr>
 <p>This function determines whether a given <a class="el" href="class_dep_info.html">DepInfo</a> object corresponds to a top-level or null-like dependency by querying its internal state via the IsTop() method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a <a class="el" href="class_dep_info.html">DepInfo</a> object to be checked.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a <a class="el" href="class_dep_info.html">DepInfo</a> object to be checked.</td></tr>
   </table>
   </dd>
 </dl>
@@ -633,7 +633,7 @@ Functions</h2></td></tr>
 <p>This function performs a deep reversal of a <a class="el" href="class_dep_info.html">DepInfo</a> object. If the dependency represents an identity (ID) type, it is returned unchanged. Otherwise, the function reverses the dependency type using ReverseDepType and transposes the underlying matrix structure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> reversal process is applied recursively to every entry within the matrix, effectively flipping the source and sink references and swapping row and column indices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original <a class="el" href="class_dep_info.html">DepInfo</a> object to be reversed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original <a class="el" href="class_dep_info.html">DepInfo</a> object to be reversed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -644,7 +644,7 @@ Functions</h2></td></tr>
 <p>This function performs a deep reversal of a <a class="el" href="class_dep_info.html">DepInfo</a> object. If the input info represents an identity dependency, it is returned unchanged. Otherwise, the function reverses the dependency type using ReverseDepType and creates a new <a class="el" href="class_dep_info.html">DepInfo</a> object with swapped rows and columns (transposition). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function then recursively traverses every entry in the original matrix, applying the Reverse function to each individual dependency entry to ensure the entire dependency structure is inverted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="sage-build__8_c_8dox.html#aa74ce202c67dce565213143e3e4f596f" title="Prints debug information regarding the type of the provided object to standard error.">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original <a class="el" href="class_dep_info.html">DepInfo</a> object to be reversed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="sage-build_8_c.html#aa74ce202c67dce565213143e3e4f596f">info</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original <a class="el" href="class_dep_info.html">DepInfo</a> object to be reversed.</td></tr>
   </table>
   </dd>
 </dl>

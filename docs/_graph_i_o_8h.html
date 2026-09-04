@@ -103,8 +103,10 @@ $(function(){initNavTree('_graph_i_o_8h.html','',''); });
 Functions</h2></td></tr>
 <tr class="memitem:add012a4981308ff02871f5bd0df218ae" id="r_add012a4981308ff02871f5bd0df218ae"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>&gt; </td></tr>
 <tr class="memitem:add012a4981308ff02871f5bd0df218ae template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add012a4981308ff02871f5bd0df218ae">read_graph</a> (<a class="el" href="class_graph.html">Graph</a> &amp;<a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca">g</a>, std::istream &amp;in, const std::string &amp;hint)</td></tr>
+<tr class="memdesc:add012a4981308ff02871f5bd0df218ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads graph structure and edge attributes from an input stream.  <br /></td></tr>
 <tr class="memitem:ae97db32476516205f164ec1b5ccc509c" id="r_ae97db32476516205f164ec1b5ccc509c"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class <a class="el" href="poet__yacc_8c.html#a61a3c9a18380aafb6e430e79bf596557">OUTPUT</a>&gt; </td></tr>
 <tr class="memitem:ae97db32476516205f164ec1b5ccc509c template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae97db32476516205f164ec1b5ccc509c">write_graph</a> (const <a class="el" href="class_graph.html">Graph</a> &amp;<a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca">g</a>, <a class="el" href="poet__yacc_8c.html#a61a3c9a18380aafb6e430e79bf596557">OUTPUT</a> &amp;out, const std::string &amp;hint)</td></tr>
+<tr class="memdesc:ae97db32476516205f164ec1b5ccc509c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the structure and contents of a graph to an output stream.  <br /></td></tr>
 <tr class="memitem:a7122185e2dc79efbc9a83d1be5d99f53" id="r_a7122185e2dc79efbc9a83d1be5d99f53"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
 <tr class="memitem:a7122185e2dc79efbc9a83d1be5d99f53 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7122185e2dc79efbc9a83d1be5d99f53">write_graph_node_edge</a> (<a class="el" href="class_graph.html">Graph</a> &amp;<a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca">g</a>, const Node *curnode, std::ostream &amp;out, const std::string &amp;hint, <a class="el" href="class_graph_access.html#a3dd8ac9946fe431a0dabb682b79e025a">GraphAccess::EdgeDirection</a> dir)</td></tr>
 <tr class="memdesc:a7122185e2dc79efbc9a83d1be5d99f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the edges connected to a specific node to an output stream.  <br /></td></tr>
@@ -192,7 +194,7 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the node's identifier followed by its incoming and outgoing edges.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer n must not be null. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node n must implement a <a class="el" href="_comp_slice_locality__8_c_8dox.html#a6f3f1bdbfc609bb39963d6f2edf8e1f0" title="Converts a SliceSelfInfo object into its string representation.">toString()</a> method that returns a string-compatible type. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node n must implement a <a class="el" href="_dep_info_anal_8_c.html#a2ef173a4a0f73c4a63b4716151061be2" title="Converts a vector of SymbolicVal objects into a single concatenated string.">toString()</a> method that returns a string-compatible type. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string contains the node's label and edge information formatted with newlines.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of write_graph_node_edge and <a class="el" href="class_graph_access.html">GraphAccess</a> within the scope of the template instantiation. </dd></dl>
 
@@ -256,6 +258,24 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Reads graph structure and edge attributes from an input stream. </p>
+<p>This function parses a stream to reconstruct a graph object. It uses a specific string called a 'hint' to identify the boundaries of edge definitions. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the stream, identifying source nodes, sink nodes, and edge labels. It relies on the <a class="el" href="class_graph.html">Graph</a> class interface to add nodes and edges.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph object that will be populated with nodes and edges. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_graph.html">Graph</a> type must implement add_node and add_edge methods. </td></tr>
+    <tr><td class="paramname">in</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream from which the graph data is read. </td></tr>
+    <tr><td class="paramname">hint</td><td><a class="el" href="class_a.html">A</a> string used as a delimiter or marker to identify the start of a new edge or a specific segment in the input stream.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_graph.html">Graph</a> template parameter must provide a Node type and implement the following methods:<ul>
+<li>Node* add_node(const std::string&amp; name)</li>
+<li>void add_edge(Node* src, Node* snk, const std::string&amp; label) </li>
+</ul>
+</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph object <span class="tt"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></span> will contain all nodes and edges parsed from the stream that match the provided hint criteria.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes the input stream follows a specific sequence: a marker/identifier, a source node name, a sink node name, and an optional edge label. If the stream ends prematurely or the hint does not match, the parsing for that specific edge segment is aborted. </dd></dl>
+
 </div>
 </div>
 <a id="ae97db32476516205f164ec1b5ccc509c" name="ae97db32476516205f164ec1b5ccc509c"></a>
@@ -283,6 +303,20 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class <a clas
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Serializes the structure and contents of a graph to an output stream. </p>
+<p>This function iterates through all nodes in the provided graph and traverses their outgoing edges. For each node, it writes a formatted string to the output stream. If a node has no outgoing edges, only the node's identity is recorded. If edges exist, the function records the source node, the destination node, and the edge itself. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output format follows a pattern of <span class="tt">hint:source-&gt;destination : edge</span>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph object to be traversed and written. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph must support <a class="el" href="class_c_f_g_impl_template.html">NodeIterator</a>, <a class="el" href="class_c_f_g_impl_template.html">EdgeIterator</a>, and GetNodeEdgeIterator. </td></tr>
+    <tr><td class="paramname">out</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream or object where the graph data will be written. This object must support the insertion operator (&lt;&lt;). </td></tr>
+    <tr><td class="paramname">hint</td><td><a class="el" href="class_a.html">A</a> string prefix used to label the output entries, useful for distinguishing between different graph writes in a single stream.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph <span class="tt"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></span> must be a valid, traversable graph object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream <span class="tt">out</span> will contain a serialized representation of all nodes and edges present in the graph <span class="tt"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></span>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt"><a class="el" href="class_graph_access.html#a3dd8ac9946fe431a0dabb682b79e025aa784a5bd992a34b11a1cd312db0d0f071">GraphAccess::EdgeOut</a></span> and <span class="tt"><a class="el" href="class_graph_access.html#a3dd8ac9946fe431a0dabb682b79e025aa5febe7de64d9d65005fc1de3da70b5ee">GraphAccess::EdgeIn</a></span> constants to determine traversal direction. </dd></dl>
 
 </div>
 </div>
@@ -313,10 +347,10 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class <a clas
 </div><div class="memdoc">
 
 <p>Serializes the nodes and edges of a graph to an output stream. </p>
-<p>This function iterates through all nodes in the provided graph to print their identifiers and then iterates through the nodes again to print their outgoing edges. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node representation depends on the string returned by the node's <a class="el" href="_comp_slice_locality__8_c_8dox.html#a6f3f1bdbfc609bb39963d6f2edf8e1f0" title="Converts a SliceSelfInfo object into its string representation.">toString()</a> method. If the string is empty, a specific node prefix is used.</p>
+<p>This function iterates through all nodes in the provided graph to print their identifiers and then iterates through the nodes again to print their outgoing edges. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node representation depends on the string returned by the node's <a class="el" href="_dep_info_anal_8_c.html#a2ef173a4a0f73c4a63b4716151061be2" title="Converts a vector of SymbolicVal objects into a single concatenated string.">toString()</a> method. If the string is empty, a specific node prefix is used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph object to be serialized. Must support <a class="el" href="class_c_f_g_impl_template.html">NodeIterator</a> and the nodes must provide a <a class="el" href="_comp_slice_locality__8_c_8dox.html#a6f3f1bdbfc609bb39963d6f2edf8e1f0" title="Converts a SliceSelfInfo object into its string representation.">toString()</a> method. </td></tr>
+    <tr><td class="paramname"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph object to be serialized. Must support <a class="el" href="class_c_f_g_impl_template.html">NodeIterator</a> and the nodes must provide a <a class="el" href="_dep_info_anal_8_c.html#a2ef173a4a0f73c4a63b4716151061be2" title="Converts a vector of SymbolicVal objects into a single concatenated string.">toString()</a> method. </td></tr>
     <tr><td class="paramname">out</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream or object where the graph data will be written. </td></tr>
     <tr><td class="paramname">hint</td><td><a class="el" href="class_a.html">A</a> string hint used during the edge writing process to provide context or formatting instructions.</td></tr>
   </table>
@@ -378,7 +412,7 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph <span class="tt"><a class="el" href="glcodegen_8cpp.html#a3fd4b97a8d8999d11ccc1015ad96f3ca" title="Empty function or ill-formed function detected. /.">g</a></span> must be valid and the <span class="tt">curnode</span> must exist within the graph. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream <span class="tt">out</span> will contain new lines for each edge found, formatted according to the edge's string representation and the provided hint.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt"><a class="el" href="class_graph.html">Graph</a></span> class implementing <span class="tt">GetNodeEdgeIterator</span> and <span class="tt">GetEdgeEndPoint</span>, and the <span class="tt"><a class="el" href="struct_edge.html">Edge</a></span> class implementing <span class="tt"><a class="el" href="_comp_slice_locality__8_c_8dox.html#a6f3f1bdbfc609bb39963d6f2edf8e1f0" title="Converts a SliceSelfInfo object into its string representation.">toString</a></span>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt"><a class="el" href="class_graph.html">Graph</a></span> class implementing <span class="tt">GetNodeEdgeIterator</span> and <span class="tt">GetEdgeEndPoint</span>, and the <span class="tt"><a class="el" href="struct_edge.html">Edge</a></span> class implementing <span class="tt"><a class="el" href="_dep_info_anal_8_c.html#a2ef173a4a0f73c4a63b4716151061be2" title="Converts a vector of SymbolicVal objects into a single concatenated string.">toString</a></span>. </dd></dl>
 
 </div>
 </div>

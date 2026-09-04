@@ -18,7 +18,6 @@ var searchData=
   ['llvm_20plugins_15',['Clang-LLVM-Plugins',['../dir_3e31dc916c9a4a1e643a980a3bccd9b3.html#autotoc_md57',1,'']]],
   ['llvm_20rose_20pass_20plugin_16',['LLVM ROSE Pass Plugin',['../dir_0ee8534d101a9d70295d83388bb615c1.html#autotoc_md66',1,'Building Clang-ROSE plugin &amp;amp; LLVM-ROSE Pass Plugin'],['../dir_0ee8534d101a9d70295d83388bb615c1.html#autotoc_md68',1,'Running with LLVM-ROSE Pass Plugin']]],
   ['load_20ui_20at_20runtime_17',['Load .ui at runtime',['../methods_of_usage.html#runtime',1,'']]],
-  ['location_20in_20rose_20distribution_18',['Location in ROSE distribution',['../index.html#location_in_rose',1,'']]],
-  ['locations_19',['Sending output to other locations',['../namespace_rose_1_1_diagnostics.html#diagnostics_destinations',1,'']]],
-  ['locations_20of_20files_20',['Locations of files',['../dir_50f2691c8d37a29891328ba575bcc25f.html#autotoc_md54',1,'']]]
+  ['locations_18',['Sending output to other locations',['../namespace_rose_1_1_diagnostics.html#diagnostics_destinations',1,'']]],
+  ['locations_20of_20files_19',['Locations of files',['../dir_50f2691c8d37a29891328ba575bcc25f.html#autotoc_md54',1,'']]]
 ];

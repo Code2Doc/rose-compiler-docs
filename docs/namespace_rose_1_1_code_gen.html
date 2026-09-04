@@ -93,7 +93,7 @@ $(function(){initNavTree('namespace_rose_1_1_code_gen.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_code_gen.html" title="Auto-generated documentation for the Rose::CodeGen namespace.">Rose::CodeGen</a> namespace.  
+<p>Collection of classes/functions to facilitate generation of source-code (esp. C/C++).  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -140,7 +140,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aec83614403e13372f97af5a0afcd6233" id="r_aec83614403e13372f97af5a0afcd6233"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aec83614403e13372f97af5a0afcd6233">ignore</a> (const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
+<tr class="memitem:aec83614403e13372f97af5a0afcd6233" id="r_aec83614403e13372f97af5a0afcd6233"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aec83614403e13372f97af5a0afcd6233">ignore</a> (const std::string &amp;<a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a>)</td></tr>
 <tr class="memdesc:aec83614403e13372f97af5a0afcd6233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a given string name should be ignored based on specific prefix criteria.  <br /></td></tr>
 <tr class="memitem:a74163e7862fb1e1f25cfad45a0d45810" id="r_a74163e7862fb1e1f25cfad45a0d45810"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a74163e7862fb1e1f25cfad45a0d45810">ignore</a> (SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:a74163e7862fb1e1f25cfad45a0d45810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a given scope statement should be ignored based on its type.  <br /></td></tr>
@@ -151,8 +151,8 @@ Variables</h2></td></tr>
 <tr class="memitem:a5b83cc623bf99b50052cb2590f476824 template"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="#a5b83cc623bf99b50052cb2590f476824">is_template_symbol_variant</a> = <a class="el" href="struct_rose_1_1_code_gen_1_1object__helper.html">object_helper</a>&lt;otag&gt;::is_template_symbol_variant</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_code_gen.html" title="Auto-generated documentation for the Rose::CodeGen namespace.">Rose::CodeGen</a> namespace. </p>
-<p>Collection of classes/functions to facilitate generation of source-code (esp. C/C++). </p>
+<div class="textblock"><p>Collection of classes/functions to facilitate generation of source-code (esp. C/C++). </p>
+<p>Auto-generated documentation for the <a class="el" href="namespace_rose_1_1_code_gen.html" title="Collection of classes/functions to facilitate generation of source-code (esp. C/C++).">Rose::CodeGen</a> namespace. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="ab02d095cd3e28971c58600c5e89f33d3" name="ab02d095cd3e28971c58600c5e89f33d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab02d095cd3e28971c58600c5e89f33d3">&#9670;&#160;</a></span>declaration_t</h2>
@@ -288,12 +288,12 @@ template&lt;<a class="el" href="#a7796c24b54ab1308aff3e70972c198c5">Object</a> o
 <p>This function evaluates a string to decide if it meets the criteria for being ignored. <a class="el" href="class_a.html">A</a> name is considered ignorable if it is an empty string, or if it starts with the prefix "__builtin", or if it starts with the prefix "__frontend_specific_variable_to_provide_header_file_path". This is typically used during symbol processing or name resolution to skip internal or compiler-specific identifiers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier to be checked against the ignore criteria.</td></tr>
+    <tr><td class="paramname"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string identifier to be checked against the ignore criteria.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the name is empty or matches one of the specified ignore prefixes; false otherwise.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input parameter <span class="tt"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input parameter <span class="tt"><a class="el" href="_sg_asm_p_e_section_table_entry_8h.html#aaf1bd07e95aeff0f585394fccaf479ab">name</a></span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the input string.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function uses <span class="tt">std::string::find</span> to check for prefixes, which effectively checks if the substring starts at index 0. </dd></dl>
 

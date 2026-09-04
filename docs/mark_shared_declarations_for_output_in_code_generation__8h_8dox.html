@@ -115,6 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks shared declarations within the AST to be treated as compiler-generated code during output. </p>
+<p>Mark an AST subtree to be unparsed using an alternative file (for multi-file unparsing).</p>
 <p>This function performs a traversal of the provided AST node to identify and mark shared declarations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> purpose is to ensure that these specific nodes are flagged appropriately so that they are handled correctly during the code generation and unparsing phases. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes a specialized traversal class, <a class="el" href="class_mark_shared_declarations_for_output_in_code_generation.html" title="Mark an AST subtree to be unparsed using an alternative file (for multi-file unparsing).">MarkSharedDeclarationsForOutputInCodeGeneration</a>, combined with an inherited attribute, <a class="el" href="class_mark_shared_declarations_inherited_attribute.html">MarkSharedDeclarationsInheritedAttribute</a>, to propagate the marking logic down the AST hierarchy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

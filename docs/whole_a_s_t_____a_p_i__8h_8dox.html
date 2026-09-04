@@ -318,6 +318,7 @@ If define DEBUG_HEADER_GRAPH_SUPPORT is active, the function prints debugging in
 </div><div class="memdoc">
 
 <p>Generates a complete Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) graph from a specified file. </p>
+<p><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> a whole AST graph with a specified filename, and the default filter sets, excluding frontend-specific nodes by default, char* for gdb.</p>
 <p>This function serves as a convenience wrapper for the string-based overload of generateWholeGraphOfAST. It takes a C-style string representing a file path, converts it into a std::string, and initiates the process of parsing the specified file to construct and generate the entire AST graph structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -356,6 +357,7 @@ If define DEBUG_HEADER_GRAPH_SUPPORT is active, the function prints debugging in
 </div><div class="memdoc">
 
 <p>Generates a complete DOT graph representation of the entire Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST). </p>
+<p><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> a whole AST graph with a specified filename, using filter_flags to turn on/off builtin node filters and using skippedNodeSet to exclude customized node set.</p>
 <p>This function serves as a high-level wrapper to trigger the graph generation process for the full AST. It delegates the actual traversal and graph construction logic to the <a class="el" href="class_simple_color_memory_pool_traversal.html#aef404026bd1cd00697e3a875571cd621">SimpleColorMemoryPoolTraversal::generateGraph</a> implementation. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting graph is written to a file specified by the filename, applying filters and skipping nodes as defined by the provided parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -1,16 +1,5 @@
 var namespace_s_d_g =
 [
-    [ "anonymous__namespace_02newDDG_8C_03", "namespace_s_d_g_1_1anonymous____namespace__02new_d_d_g__8_c__03.html", [
-      [ "isContainerNode", "namespace_s_d_g_1_1anonymous____namespace__02new_d_d_g__8_c__03.html#a88cd4725781b0af6af73d00230ae86b6", null ],
-      [ "operator<", "namespace_s_d_g_1_1anonymous____namespace__02new_d_d_g__8_c__03.html#af79921b6395f3ca66960a411028cc759", null ]
-    ] ],
-    [ "anonymous__namespace_02SDG_8C_03", "namespace_s_d_g_1_1anonymous____namespace__02_s_d_g__8_c__03.html", [
-      [ "isBasicStatement", "namespace_s_d_g_1_1anonymous____namespace__02_s_d_g__8_c__03.html#af5e6a9b783145b9006f930613bff375d", null ]
-    ] ],
-    [ "anonymous__namespace_02util_8C_03", "namespace_s_d_g_1_1anonymous____namespace__02util__8_c__03.html", [
-      [ "appendSuccessors", "namespace_s_d_g_1_1anonymous____namespace__02util__8_c__03.html#a76b48412c849bf49ba700361bee054af", null ],
-      [ "checkCycle", "namespace_s_d_g_1_1anonymous____namespace__02util__8_c__03.html#a00d8486be25649f78334112d0323ff0e", null ]
-    ] ],
     [ "anonymous_namespace{newDDG.C}", "namespace_s_d_g_1_1anonymous__namespace_02new_d_d_g_8_c_03.html", [
       [ "isContainerNode", "namespace_s_d_g_1_1anonymous__namespace_02new_d_d_g_8_c_03.html#a5846025e614c42d61f939742c0254cb2", null ],
       [ "operator<", "namespace_s_d_g_1_1anonymous__namespace_02new_d_d_g_8_c_03.html#aafca783d48501cc0e05f488b0f734fe3", null ]
@@ -21,6 +10,17 @@ var namespace_s_d_g =
     [ "anonymous_namespace{util.C}", "namespace_s_d_g_1_1anonymous__namespace_02util_8_c_03.html", [
       [ "appendSuccessors", "namespace_s_d_g_1_1anonymous__namespace_02util_8_c_03.html#aab3485a3c72098c18aba8d6d92119071", null ],
       [ "checkCycle", "namespace_s_d_g_1_1anonymous__namespace_02util_8_c_03.html#a05f0e9b7045e89b2cd28d19c5a9b98a9", null ]
+    ] ],
+    [ "anonymous__namespace_02newDDG_8C_03", "namespace_s_d_g_1_1anonymous____namespace__02new_d_d_g__8_c__03.html", [
+      [ "isContainerNode", "namespace_s_d_g_1_1anonymous____namespace__02new_d_d_g__8_c__03.html#a88cd4725781b0af6af73d00230ae86b6", null ],
+      [ "operator<", "namespace_s_d_g_1_1anonymous____namespace__02new_d_d_g__8_c__03.html#af79921b6395f3ca66960a411028cc759", null ]
+    ] ],
+    [ "anonymous__namespace_02SDG_8C_03", "namespace_s_d_g_1_1anonymous____namespace__02_s_d_g__8_c__03.html", [
+      [ "isBasicStatement", "namespace_s_d_g_1_1anonymous____namespace__02_s_d_g__8_c__03.html#af5e6a9b783145b9006f930613bff375d", null ]
+    ] ],
+    [ "anonymous__namespace_02util_8C_03", "namespace_s_d_g_1_1anonymous____namespace__02util__8_c__03.html", [
+      [ "appendSuccessors", "namespace_s_d_g_1_1anonymous____namespace__02util__8_c__03.html#a76b48412c849bf49ba700361bee054af", null ],
+      [ "checkCycle", "namespace_s_d_g_1_1anonymous____namespace__02util__8_c__03.html#a00d8486be25649f78334112d0323ff0e", null ]
     ] ],
     [ "CDGEdge", "struct_s_d_g_1_1_c_d_g_edge.html", "struct_s_d_g_1_1_c_d_g_edge" ],
     [ "ControlDependenceGraph", "class_s_d_g_1_1_control_dependence_graph.html", "class_s_d_g_1_1_control_dependence_graph" ],

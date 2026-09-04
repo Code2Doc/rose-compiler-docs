@@ -96,9 +96,7 @@ $(function(){initNavTree('ntl____vector3dim__8h_8dox.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa0d393fae187785d30e5cfbedbc98812" id="r_aa0d393fae187785d30e5cfbedbc98812"><td class="memItemLeft"><a class="el" href="classostream.html">ostream</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa0d393fae187785d30e5cfbedbc98812">operator&lt;&lt;</a> (<a class="el" href="classostream.html">ostream</a> &amp;os, const <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a>&lt; Scalar &gt; &amp;i)</td></tr>
-<tr class="memdesc:aa0d393fae187785d30e5cfbedbc98812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the stream insertion operator for the <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a> template class.  <br /></td></tr>
 <tr class="memitem:a291bde2de03003cef0fb77692188e9b4" id="r_a291bde2de03003cef0fb77692188e9b4"><td class="memItemLeft">istream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a291bde2de03003cef0fb77692188e9b4">operator&gt;&gt;</a> (istream &amp;is, <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a>&lt; Scalar &gt; &amp;i)</td></tr>
-<tr class="memdesc:a291bde2de03003cef0fb77692188e9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the extraction operator to read a 3D vector from an input stream.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="aa0d393fae187785d30e5cfbedbc98812" name="aa0d393fae187785d30e5cfbedbc98812"></a>
@@ -120,19 +118,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Overloads the stream insertion operator for the <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a> template class. </p>
-<p>This function provides a way to output the contents of an <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a> object to an output stream in a formatted string representation. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output follows the format [x, y, z], where x, y, and z are the individual components of the vector.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">os</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream where the vector data will be written. </td></tr>
-    <tr><td class="paramname">i</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a> object containing the three-dimensional vector components to be printed.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the modified output stream (os) to allow for chained stream operations.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">os</span> must be in a valid state and writable. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output stream <span class="tt">os</span> will contain the string representation of the vector <span class="tt">i</span> in the format '[value[0], value[1], value[2]]'. </dd></dl>
-
 </div>
 </div>
 <a id="a291bde2de03003cef0fb77692188e9b4" name="a291bde2de03003cef0fb77692188e9b4"></a>
@@ -153,20 +138,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Overloads the extraction operator to read a 3D vector from an input stream. </p>
-<p>This function parses a formatted string from the provided input stream to populate the components of an <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a> object. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> expected input format consists of a starting character, followed by three scalar values separated by two-character delimiters, and ending with a closing character. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a temporary buffer to skip the delimiter characters between the vector components.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">is</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream from which the data is being read. </td></tr>
-    <tr><td class="paramname">i</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="classntl_vector3_dim.html">ntlVector3Dim</a> object to be populated with the extracted scalar values.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the input stream <span class="tt">is</span>, allowing for chained extraction operations.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">is</span> must be in a good state and contain data formatted as a single character, followed by three scalars separated by two-character delimiters, and a final character. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the extraction is successful, the <span class="tt">value</span> array of the <span class="tt">i</span> object will contain the three extracted scalar values, and the stream position will be advanced past the final character.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function assumes a specific fixed-format input structure. If the stream encounters unexpected characters or formatting errors, the stream failbit will be set. </dd></dl>
 
 </div>
 </div>

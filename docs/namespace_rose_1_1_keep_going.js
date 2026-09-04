@@ -1,18 +1,18 @@
 var namespace_rose_1_1_keep_going =
 [
-    [ "Backend", "namespace_rose_1_1_keep_going_1_1_backend.html", "namespace_rose_1_1_keep_going_1_1_backend" ],
     [ "Frontend", "namespace_rose_1_1_keep_going_1_1_frontend.html", "namespace_rose_1_1_keep_going_1_1_frontend" ],
     [ "Midend", "namespace_rose_1_1_keep_going_1_1_midend.html", [
       [ "SignalHandler", "namespace_rose_1_1_keep_going_1_1_midend.html#a4d7075f5b349b9fe3835540321ff3564", null ],
       [ "jmp_target", "namespace_rose_1_1_keep_going_1_1_midend.html#a1821a31c94dc2f4a61ea7c52968fcbd0", null ]
     ] ],
+    [ "Backend", "namespace_rose_1_1_keep_going_1_1_backend.html", "namespace_rose_1_1_keep_going_1_1_backend" ],
     [ "SignalHandlerFunction", "namespace_rose_1_1_keep_going.html#af4a00202aed64c12a1a3105fdbcc9998", null ],
     [ "AppendToFile", "namespace_rose_1_1_keep_going.html#a9aa62b2153c89736c33d212eccab7cf5", null ],
     [ "commandLineProcessing", "namespace_rose_1_1_keep_going.html#ad73aee2bdceb6accabfd927cfdb9aa6c", null ],
     [ "CreateExpectationsMap", "namespace_rose_1_1_keep_going.html#abc270899052c32152f5f3c9143fc859f", null ],
     [ "generate_reports", "namespace_rose_1_1_keep_going.html#a080e3155fe209c589d004ac6015b0279", null ],
     [ "GetSourceFilenamesFromCommandline", "namespace_rose_1_1_keep_going.html#ae7daf3f22a4677bbd9e64a269aa4d085", null ],
-    [ "GetTimestamp", "namespace_rose_1_1_keep_going.html#aaef25bcef238b60c5e5d8f450584648d", null ],
+    [ "GetTimestamp", "namespace_rose_1_1_keep_going.html#a18276cb287037d39899a5044f1743348", null ],
     [ "set_signal_handler", "namespace_rose_1_1_keep_going.html#ac29e43df83d37b2e9427fc1e4171c364", null ],
     [ "setMidendErrorCode", "namespace_rose_1_1_keep_going.html#a5d8e9cef5825e5c46899f0015ba771ba", null ],
     [ "ShowUsage", "namespace_rose_1_1_keep_going.html#af4f5da475b93b19515cef923c824ac15", null ],

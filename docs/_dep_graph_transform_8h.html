@@ -109,14 +109,16 @@ Functions</h2></td></tr>
 <tr class="memitem:afa7473fecd9f54dbcc5cf18c03c6aea1" id="r_afa7473fecd9f54dbcc5cf18c03c6aea1"><td class="memItemLeft"><a class="el" href="_dep_info_8h.html#a12c35111736937c215e2646ce95aca59">DepDirection</a>&#160;</td><td class="memItemRight"><a class="el" href="#afa7473fecd9f54dbcc5cf18c03c6aea1">EdgeDir2DepDir</a> (<a class="el" href="class_graph_access.html#a3dd8ac9946fe431a0dabb682b79e025a">GraphAccess::EdgeDirection</a> dir)</td></tr>
 <tr class="memdesc:afa7473fecd9f54dbcc5cf18c03c6aea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a graph edge direction into its corresponding dependency direction.  <br /></td></tr>
 <tr class="memitem:a22a90921d0979bca081413c82449cf40" id="r_a22a90921d0979bca081413c82449cf40"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
-<tr class="memitem:a22a90921d0979bca081413c82449cf40 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a22a90921d0979bca081413c82449cf40">CopySplitNodeEdge</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *orig, Node *<a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03">split</a>, const <a class="el" href="class_domain_cond.html">DomainCond</a> &amp;splitCond)</td></tr>
+<tr class="memitem:a22a90921d0979bca081413c82449cf40 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a22a90921d0979bca081413c82449cf40">CopySplitNodeEdge</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *orig, Node *<a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03">split</a>, const <a class="el" href="class_domain_cond.html">DomainCond</a> &amp;splitCond)</td></tr>
+<tr class="memdesc:a22a90921d0979bca081413c82449cf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies an edge from an original node to a split node and updates dependency information.  <br /></td></tr>
 <tr class="memitem:a75f82d371cb735918f2acdf2b0657aa9" id="r_a75f82d371cb735918f2acdf2b0657aa9"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
-<tr class="memitem:a75f82d371cb735918f2acdf2b0657aa9 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75f82d371cb735918f2acdf2b0657aa9">UpdateSplitNodeEdge</a> (<a class="el" href="class_graph.html">Graph</a> *<a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, Node *<a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03">split</a>, const <a class="el" href="class_domain_cond.html">DomainCond</a> &amp;splitCond)</td></tr>
+<tr class="memitem:a75f82d371cb735918f2acdf2b0657aa9 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75f82d371cb735918f2acdf2b0657aa9">UpdateSplitNodeEdge</a> (<a class="el" href="class_graph.html">Graph</a> *<a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, Node *<a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03">split</a>, const <a class="el" href="class_domain_cond.html">DomainCond</a> &amp;splitCond)</td></tr>
 <tr class="memdesc:a75f82d371cb735918f2acdf2b0657aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the edges of a split node with restricted domain information.  <br /></td></tr>
 <tr class="memitem:a9bd4377ff9bc9c52cb3340727cafbd7c" id="r_a9bd4377ff9bc9c52cb3340727cafbd7c"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
 <tr class="memitem:a9bd4377ff9bc9c52cb3340727cafbd7c template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9bd4377ff9bc9c52cb3340727cafbd7c">DepGraphNodeRestrictDomain</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *<a class="el" href="structnode.html">node</a>, const <a class="el" href="class_domain_cond.html">DomainCond</a> &amp;cond)</td></tr>
+<tr class="memdesc:a9bd4377ff9bc9c52cb3340727cafbd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts the domain of a specific node within the dependency graph.  <br /></td></tr>
 <tr class="memitem:a34e55ee174d391a24536745aebdde81b" id="r_a34e55ee174d391a24536745aebdde81b"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
-<tr class="memitem:a34e55ee174d391a24536745aebdde81b template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34e55ee174d391a24536745aebdde81b">FuseDepGraphNode</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *orig, Node *<a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03">split</a>)</td></tr>
+<tr class="memitem:a34e55ee174d391a24536745aebdde81b template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34e55ee174d391a24536745aebdde81b">FuseDepGraphNode</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *orig, Node *<a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03">split</a>)</td></tr>
 <tr class="memdesc:a34e55ee174d391a24536745aebdde81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fuses a split node into an original node within a dependency graph.  <br /></td></tr>
 <tr class="memitem:a1ac2da85a559f4bb8891e85bdc4ce507" id="r_a1ac2da85a559f4bb8891e85bdc4ce507"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class SelectNode&gt; </td></tr>
 <tr class="memitem:a1ac2da85a559f4bb8891e85bdc4ce507 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1ac2da85a559f4bb8891e85bdc4ce507">DepGraphInsertLoop</a> (<a class="el" href="class_graph.html">Graph</a> *graph, SelectNode nodes, int level)</td></tr>
@@ -126,11 +128,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae57413e52edc391a87be65a36853c67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a node into the dependency graph with loop-specific dependency information.  <br /></td></tr>
 <tr class="memitem:a247210b542484cbc22b0131f1b278ab7" id="r_a247210b542484cbc22b0131f1b278ab7"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
 <tr class="memitem:a247210b542484cbc22b0131f1b278ab7 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a247210b542484cbc22b0131f1b278ab7">DepGraphNodeSwapLoop</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *<a class="el" href="structnode.html">node</a>, int level1, int level2)</td></tr>
+<tr class="memdesc:a247210b542484cbc22b0131f1b278ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps dependency loop levels for a specific node within a dependency graph.  <br /></td></tr>
 <tr class="memitem:a49283266d1e1c41e0f1c2417f8278c7f" id="r_a49283266d1e1c41e0f1c2417f8278c7f"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
 <tr class="memitem:a49283266d1e1c41e0f1c2417f8278c7f template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a49283266d1e1c41e0f1c2417f8278c7f">DepGraphNodeRemoveLoop</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *<a class="el" href="structnode.html">node</a>, int level)</td></tr>
 <tr class="memdesc:a49283266d1e1c41e0f1c2417f8278c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes loop dependencies associated with a specific node at a given level.  <br /></td></tr>
 <tr class="memitem:a3c2a4daca49cebe2926b4e980d54ac70" id="r_a3c2a4daca49cebe2926b4e980d54ac70"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
 <tr class="memitem:a3c2a4daca49cebe2926b4e980d54ac70 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3c2a4daca49cebe2926b4e980d54ac70">DepGraphNodeMergeLoop</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *<a class="el" href="structnode.html">node</a>, int desc, int src)</td></tr>
+<tr class="memdesc:a3c2a4daca49cebe2926b4e980d54ac70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges dependency loop information for a specific node within a dependency graph.  <br /></td></tr>
 <tr class="memitem:a52259acd9fcf1741d61c6d945528b494" id="r_a52259acd9fcf1741d61c6d945528b494"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt; </td></tr>
 <tr class="memitem:a52259acd9fcf1741d61c6d945528b494 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a52259acd9fcf1741d61c6d945528b494">DepGraphNodeAlignLoop</a> (<a class="el" href="class_graph.html">Graph</a> *graph, Node *<a class="el" href="structnode.html">node</a>, int level, int align)</td></tr>
 <tr class="memdesc:a52259acd9fcf1741d61c6d945528b494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns dependency graph nodes by updating edge information based on a specified alignment value.  <br /></td></tr>
@@ -166,6 +170,21 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copies an edge from an original node to a split node and updates dependency information. </p>
+<p>This function performs a structural copy of an edge from a source node to a target split node within a graph. After copying the edge using CopyNodeEdge, it updates the dependency information on the split node. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> update process utilizes an <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> operation with a <a class="el" href="class_dep_info_restrict_domain.html">DepInfoRestrictDomain</a> specialization, applying the provided domain condition to the edge's dependency metadata.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_graph.html">Graph</a> instance where the edge operation is being performed. </td></tr>
+    <tr><td class="paramname">orig</td><td><a class="el" href="class_a.html">A</a> pointer to the original Node from which the edge is being copied. </td></tr>
+    <tr><td class="paramname"><a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></td><td><a class="el" href="class_a.html">A</a> pointer to the split Node that will receive the copied edge. </td></tr>
+    <tr><td class="paramname">splitCond</td><td><a class="el" href="class_a.html">A</a> constant reference to a <a class="el" href="class_domain_cond.html">DomainCond</a> object representing the restricted domain to be applied during the dependency update.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>graph, orig, and split must be valid, non-null pointers to their respective types. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edge from orig to split exists in the graph, and the dependency information on the split node is updated to reflect the splitCond.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the implementation of CopyNodeEdge and the UpdateNodeEdge mechanism using the InfoOp template specialization. </dd></dl>
 
 </div>
 </div>
@@ -336,6 +355,23 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
       </table>
 </div><div class="memdoc">
 
+<p>Merges dependency loop information for a specific node within a dependency graph. </p>
+<p>This function updates the edges of a given node in the dependency graph by applying a specific dependency merge operation. It utilizes the UpdateNodeEdge utility with a specialized <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> operation, specifically using the <a class="el" href="class_dep_info_merge_loop.html">DepInfoMergeLoop</a> logic to integrate dependency information between the descendant and source identifiers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_graph.html">Graph</a> structure containing the dependency network. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the specific Node within the graph to be updated. </td></tr>
+    <tr><td class="paramname">desc</td><td>An integer representing the descendant identifier or index involved in the merge. </td></tr>
+    <tr><td class="paramname">src</td><td>An integer representing the source identifier or index involved in the merge.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>graph must not be a null pointer. </dd>
+<dd>
+node must not be a null pointer and must belong to the provided graph.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edges connected to the specified node are updated with the merged dependency information defined by <a class="el" href="class_dep_info_merge_loop.html">DepInfoMergeLoop</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the template types <a class="el" href="class_graph.html">Graph</a> and Node being compatible with the UpdateNodeEdge and <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> abstractions. </dd></dl>
+
 </div>
 </div>
 <a id="a49283266d1e1c41e0f1c2417f8278c7f" name="a49283266d1e1c41e0f1c2417f8278c7f"></a>
@@ -408,6 +444,20 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
       </table>
 </div><div class="memdoc">
 
+<p>Restricts the domain of a specific node within the dependency graph. </p>
+<p>This function applies a domain restriction condition to a given node in the dependency graph. It utilizes an update operation mechanism to traverse and update the edges associated with the node, applying the logic defined by the <a class="el" href="class_dep_info_restrict_domain.html">DepInfoRestrictDomain</a> policy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation leverages the UpdateNodeEdge utility with a specialized <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> type to ensure that the dependency information is updated according to the provided domain condition.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_graph.html">Graph</a> object representing the dependency graph structure. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the Node within the graph that is subject to the domain restriction. </td></tr>
+    <tr><td class="paramname">cond</td><td><a class="el" href="class_a.html">A</a> constant reference to a <a class="el" href="class_domain_cond.html">DomainCond</a> object containing the criteria for the domain restriction.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> graph pointer and node pointer must be valid and not null. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edges connected to the specified node in the graph are updated to reflect the new domain constraints.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the internal UpdateNodeEdge and <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> templates to perform the underlying graph traversal and edge modification. </dd></dl>
+
 </div>
 </div>
 <a id="a247210b542484cbc22b0131f1b278ab7" name="a247210b542484cbc22b0131f1b278ab7"></a>
@@ -440,6 +490,23 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Swaps dependency loop levels for a specific node within a dependency graph. </p>
+<p>This function performs an update on the edges of a specified node within the provided dependency graph. It utilizes the UpdateNodeEdge mechanism with a specialized <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> operation, specifically using the <a class="el" href="class_dep_info_swap_loop.html">DepInfoSwapLoop</a> strategy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> operation modifies the dependency information associated with the node's edges based on the provided level1 and level2 parameters, effectively reconfiguring how loop dependencies are represented or processed for that node.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_graph.html">Graph</a> object containing the dependency structure. </td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the specific Node within the graph to be updated. </td></tr>
+    <tr><td class="paramname">level1</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first level index used for the dependency swap operation. </td></tr>
+    <tr><td class="paramname">level2</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> second level index used for the dependency swap operation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>graph must not be a null pointer. </dd>
+<dd>
+node must be a valid node belonging to the provided graph.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edges of the specified node in the graph are updated with the new dependency loop information defined by level1 and level2.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the internal implementation of UpdateNodeEdge and the <a class="el" href="class_dep_info_swap_loop.html">DepInfoSwapLoop</a> structure to execute the edge updates. </dd></dl>
 
 </div>
 </div>
@@ -513,7 +580,7 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
   <table class="params">
     <tr><td class="paramname">graph</td><td><a class="el" href="class_a.html">A</a> pointer to the dependency graph structure where the nodes reside. </td></tr>
     <tr><td class="paramname">orig</td><td><a class="el" href="class_a.html">A</a> pointer to the target node that will receive the edges from the split node. </td></tr>
-    <tr><td class="paramname"><a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></td><td><a class="el" href="class_a.html">A</a> pointer to the redundant node that is to be removed from the graph.</td></tr>
+    <tr><td class="paramname"><a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></td><td><a class="el" href="class_a.html">A</a> pointer to the redundant node that is to be removed from the graph.</td></tr>
   </table>
   </dd>
 </dl>
@@ -560,15 +627,15 @@ template&lt;class <a class="el" href="class_graph.html">Graph</a>, class Node&gt
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_graph.html">Graph</a> object representing the graph structure being updated. </td></tr>
-    <tr><td class="paramname"><a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></td><td><a class="el" href="class_a.html">A</a> pointer to the Node representing the split node whose edges are to be updated. </td></tr>
+    <tr><td class="paramname"><a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></td><td><a class="el" href="class_a.html">A</a> pointer to the Node representing the split node whose edges are to be updated. </td></tr>
     <tr><td class="paramname">splitCond</td><td><a class="el" href="class_a.html">A</a> constant reference to a <a class="el" href="class_domain_cond.html">DomainCond</a> object containing the domain constraints to be applied during the edge update process.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer <span class="tt"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></span> must be a valid, non-null pointer to a <a class="el" href="class_graph.html">Graph</a> instance. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer <span class="tt"><a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></span> must be a valid, non-null pointer to a Node instance within the graph. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edges associated with the <span class="tt"><a class="el" href="split__8_c_8dox.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></span> node in graph <span class="tt"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></span> are updated to reflect the restrictions imposed by <span class="tt">splitCond</span>.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer <span class="tt"><a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></span> must be a valid, non-null pointer to a Node instance within the graph. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edges associated with the <span class="tt"><a class="el" href="split_8_c.html#a38c7ac2234aa48e74fd9390202a80e03" title="Splits a string into a vector of substrings based on whitespace delimiters.">split</a></span> node in graph <span class="tt"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></span> are updated to reflect the restrictions imposed by <span class="tt">splitCond</span>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the internal implementation of UpdateNodeEdge and the <a class="el" href="class_update_dep_edge_info.html">UpdateDepEdgeInfo</a> template specialization. </dd></dl>
 
 </div>

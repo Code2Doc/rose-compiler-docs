@@ -23,7 +23,7 @@ var ai__measurement_8cpp =
     [ "ArithmeticIntensityMeasurement::parse_fp_counter_clause", "namespace_arithmetic_intensity_measurement.html#a177a6a20916cd29c52103f5cc7a6cbc6", null ],
     [ "ArithmeticIntensityMeasurement::pointerUsedAsArray", "namespace_arithmetic_intensity_measurement.html#ad5b09b453e2a8705a0240201ac0bd2b8", null ],
     [ "ArithmeticIntensityMeasurement::printFPCount", "namespace_arithmetic_intensity_measurement.html#aab38ac8f4d88e69a108441c5e321d5eb", null ],
-    [ "ArithmeticIntensityMeasurement::scalar_or_array", "namespace_arithmetic_intensity_measurement.html#a2969711b0e864fd087da81fee87f255e", null ],
+    [ "ArithmeticIntensityMeasurement::scalar_or_array", "namespace_arithmetic_intensity_measurement.html#ad922d7d91f1b7effa6b7d426f689253c", null ],
     [ "ArithmeticIntensityMeasurement::toString", "namespace_arithmetic_intensity_measurement.html#a8631bc54d1169c619518239290d5ab7e", null ],
     [ "ArithmeticIntensityMeasurement::algorithm_version", "namespace_arithmetic_intensity_measurement.html#abb9f7b01bb3d8f088eca21505c59c56b", null ],
     [ "ArithmeticIntensityMeasurement::debug", "namespace_arithmetic_intensity_measurement.html#a54611151225b67d5846dc30982495203", null ],

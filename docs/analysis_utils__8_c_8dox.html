@@ -374,7 +374,7 @@ For SgForStatement, the function specifically checks if the statement is the loo
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="analysis_utils_8h.html#aeb14758a9bf41a319e735d02f8e6fbc7">stmt_pos_list</a> containing the identified positions that precede the input statement.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>stmt must not be null and must be a valid SgStatement node within a valid SgNode hierarchy. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned <a class="el" href="analysis_utils_8h.html#aeb14758a9bf41a319e735d02f8e6fbc7">stmt_pos_list</a> contains at least one position if the statement is valid.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the parent-child relationship established in the SgNode tree. It uses <a class="el" href="namespace_sage_interface.html#a260cdbe3b377e4b7cb3333ed927ae05b" title="Check if the body of a &#39;while&#39; statement is a SgBasicBlock, create one if not.">SageInterface::ensureBasicBlockAsBodyOfWhile</a> to access the body of while loops. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the parent-child relationship established in the SgNode tree. It uses <a class="el" href="namespace_sage_interface.html#a8657671a1f08a02d82ec45be7dc8d8fa" title="Check if the body of a &#39;while&#39; statement is a SgBasicBlock, create one if not.">SageInterface::ensureBasicBlockAsBodyOfWhile</a> to access the body of while loops. </dd></dl>
 
 </div>
 </div>

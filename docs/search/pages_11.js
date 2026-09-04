@@ -29,11 +29,10 @@ var searchData=
   ['programmer_20perspective_26',['Programmer perspective',['../namespace_rose_1_1_command_line.html#rose_commandline_programmer_perspective',1,'']]],
   ['project_27',['project',['../installation.html#install',1,'Building / Integration in your project'],['../tutorial_usage.html',1,'Tutorial for using ROSE Qt-Widgets in your project']]],
   ['projectmanager_28',['ProjectManager',['../additional_functionaliy.html#additional_functionality_ProjectManager',1,'']]],
-  ['projects_20that_20already_20use_20roseqtwidgets_29',['Projects that already use RoseQtWidgets',['../index.html#using_projects',1,'']]],
-  ['properties_30',['Properties',['../_ast_properties.html#section6',1,'General AST Properties'],['../_ast_properties.html#section4',1,'Mangle Name Properties'],['../_ast_properties.html#subsection6b',1,'SgFunctionCallExp Properties'],['../_ast_properties.html#section5',1,'Template Properties']]],
-  ['properties_20consistency_20tests_31',['AST Properties (Consistency Tests)',['../_ast_properties.html',1,'']]],
-  ['property_20members_32',['Property members',['../namespace_rosebud.html#rosebud_language_properties',1,'']]],
-  ['proposed_33',['Proposed?',['../md__2_users_2billx_2git_2rose_2src_2frontend_2_sage_i_i_i_2_s_t_a_n_d_a_r_d.html#autotoc_md53',1,'']]],
-  ['providing_20attribute_20storage_20capability_34',['Providing attribute storage capability',['../namespace_sawyer_1_1_attribute.html#attribute_providing',1,'']]],
-  ['proxy_35',['QRose Proxy',['../additional_functionaliy.html#additional_functionality_QRoseProxy',1,'']]]
+  ['properties_29',['Properties',['../_ast_properties.html#section6',1,'General AST Properties'],['../_ast_properties.html#section4',1,'Mangle Name Properties'],['../_ast_properties.html#subsection6b',1,'SgFunctionCallExp Properties'],['../_ast_properties.html#section5',1,'Template Properties']]],
+  ['properties_20consistency_20tests_30',['AST Properties (Consistency Tests)',['../_ast_properties.html',1,'']]],
+  ['property_20members_31',['Property members',['../namespace_rosebud.html#rosebud_language_properties',1,'']]],
+  ['proposed_32',['Proposed?',['../md__2_users_2billx_2git_2rose_2src_2frontend_2_sage_i_i_i_2_s_t_a_n_d_a_r_d.html#autotoc_md53',1,'']]],
+  ['providing_20attribute_20storage_20capability_33',['Providing attribute storage capability',['../namespace_sawyer_1_1_attribute.html#attribute_providing',1,'']]],
+  ['proxy_34',['QRose Proxy',['../additional_functionaliy.html#additional_functionality_QRoseProxy',1,'']]]
 ];

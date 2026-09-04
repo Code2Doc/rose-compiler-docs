@@ -1,13 +1,13 @@
 var namespace_rose_1_1_traits =
 [
-    [ "details", "namespace_rose_1_1_traits_1_1details.html", "namespace_rose_1_1_traits_1_1details" ],
     [ "generated", "namespace_rose_1_1_traits_1_1generated.html", "namespace_rose_1_1_traits_1_1generated" ],
-    [ "grammar__traversal__details", "namespace_rose_1_1_traits_1_1grammar____traversal____details.html", null ],
-    [ "list__base__classes__details", "namespace_rose_1_1_traits_1_1list____base____classes____details.html", null ],
-    [ "traversal__details", "namespace_rose_1_1_traits_1_1traversal____details.html", null ],
+    [ "details", "namespace_rose_1_1_traits_1_1details.html", "namespace_rose_1_1_traits_1_1details" ],
     [ "list_base_classes_details", "namespace_rose_1_1_traits_1_1list__base__classes__details.html", "namespace_rose_1_1_traits_1_1list__base__classes__details" ],
     [ "grammar_traversal_details", "namespace_rose_1_1_traits_1_1grammar__traversal__details.html", "namespace_rose_1_1_traits_1_1grammar__traversal__details" ],
     [ "traversal_details", "namespace_rose_1_1_traits_1_1traversal__details.html", "namespace_rose_1_1_traits_1_1traversal__details" ],
+    [ "grammar__traversal__details", "namespace_rose_1_1_traits_1_1grammar____traversal____details.html", null ],
+    [ "list__base__classes__details", "namespace_rose_1_1_traits_1_1list____base____classes____details.html", null ],
+    [ "traversal__details", "namespace_rose_1_1_traits_1_1traversal____details.html", null ],
     [ "DescribeField", "struct_rose_1_1_traits_1_1_describe_field.html", null ],
     [ "DescribeField&lt; NodeT, FieldTypeT NodeT::*, fld_ptr &gt;", "struct_rose_1_1_traits_1_1_describe_field_3_01_node_t_00_01_field_type_t_01_node_t_1_1_5_00_01fld__ptr_01_4.html", null ],
     [ "DescribeField&lt; void, decltype(nullptr), nullptr &gt;", "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4.html", "struct_rose_1_1_traits_1_1_describe_field_3_01void_00_01decltype_07nullptr_08_00_01nullptr_01_4" ],

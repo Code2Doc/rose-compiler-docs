@@ -94,194 +94,194 @@ $(function(){initNavTree('todo.html','',''); });
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>{<a class="el" href="_ada__to___r_o_s_e_8_c.html">Ada_to_ROSE.C</a>} Member <a class="el" href="namespace_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03.html#a829c00ca7bacf444e51ea2e25509c12a">Ada_ROSE_Translation::anonymous_namespace{Ada_to_ROSE.C}::handleElement</a>  (<a class="el" href="a__nodes_8h.html#a144499b19e16cf88680b9d28385c0fd6">Element_Struct</a> &amp;elem, <a class="el" href="struct_ada___r_o_s_e___translation_1_1_ast_context.html">AstContext</a> ctx, bool isPrivate=false)</dt>
-<dd><a class="anchor" id="_todo000004"></a>since most element-kinds are handled in specialized conversion functions, consider renaming this function to handleDecl and moving it into <a class="el" href="_ada_statement_8_c.html">AdaStatement.C</a>  </dd>
+<dd><a class="anchor" id="_todo000003"></a>since most element-kinds are handled in specialized conversion functions, consider renaming this function to handleDecl and moving it into <a class="el" href="_ada_statement_8_c.html">AdaStatement.C</a>  </dd>
 <dt>Member <a class="el" href="struct_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03_1_1_overload_info.html#ab4898279291af8e1b153342a46249e2f">Ada_ROSE_Translation::anonymous_namespace{Ada_to_ROSE.C}::OverloadInfo::literalEquivalent</a>  ()</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000006"></a>reconsider whether foldable is needed .. true, iff all arguments are literals or calls to literal-equivalent functions</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000005"></a>reconsider whether foldable is needed .. true, iff all arguments are literals or calls to literal-equivalent functions</p>
 <p class="enddd"></p>
 </dd>
 <dt>{<a class="el" href="_ada__to___r_o_s_e_8_c.html">Ada_to_ROSE.C</a>} Member <a class="el" href="namespace_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada__to___r_o_s_e_8_c_03.html#a5bb0ecfcb9e4581809e7148ff461624b">Ada_ROSE_Translation::anonymous_namespace{Ada_to_ROSE.C}::scopeCheckCallContext</a>  (SgFunctionCallExp &amp;exp, const <a class="el" href="class_sg_type.html">SgType</a> &amp;ty)</dt>
-<dd><a class="anchor" id="_todo000005"></a>implement full type check and rename to typeCheckCallContext ..  </dd>
+<dd><a class="anchor" id="_todo000004"></a>implement full type check and rename to typeCheckCallContext ..  </dd>
 <dt>{<a class="el" href="_ada_expression_8_c.html">AdaExpression.C</a>} Member <a class="el" href="namespace_ada___r_o_s_e___translation_1_1anonymous__namespace_02_ada_expression_8_c_03.html#a9fa56e2fe7c37fc71c2d8be711e12721">Ada_ROSE_Translation::anonymous_namespace{AdaExpression.C}::getOperator_fallback</a>  (<a class="el" href="struct_expression___struct.html">Expression_Struct</a> &amp;expr, <a class="el" href="struct_ada___r_o_s_e___translation_1_1_ast_context.html">AstContext</a> ctx)</dt>
-<dd><a class="anchor" id="_todo000008"></a>remove from code base  </dd>
+<dd><a class="anchor" id="_todo000007"></a>remove from code base  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#abd59a46a55d53a35b1a7e0d6e9e7aef3">Ada_ROSE_Translation::asisExcps</a>  ()</dt>
-<dd><a class="anchor" id="_todo000007"></a>revise with representation of Exceptions  </dd>
+<dd><a class="anchor" id="_todo000006"></a>revise with representation of Exceptions  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a4f02af84cd6babae0d9f82ac5b1947c6">Ada_ROSE_Translation::handleClause</a>  (<a class="el" href="a__nodes_8h.html#a144499b19e16cf88680b9d28385c0fd6">Element_Struct</a> &amp;elem, <a class="el" href="struct_ada___r_o_s_e___translation_1_1_ast_context.html">AstContext</a> ctx)</dt>
-<dd><a class="anchor" id="_todo000025"></a>currently only with clauses are handled  </dd>
+<dd><a class="anchor" id="_todo000024"></a>currently only with clauses are handled  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a7d2ea6018b41d5d7499b1f2935f44682">Ada_ROSE_Translation::initializePkgStandard</a>  (SgGlobal &amp;global)</dt>
-<dd><a class="anchor" id="_todo000026"></a>this should disappear as soon as the Standard package is included in Asis  </dd>
+<dd><a class="anchor" id="_todo000025"></a>this should disappear as soon as the Standard package is included in Asis  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a02b4a16022a8f3d66c619616f1b46479">Ada_ROSE_Translation::mkAdaDiscreteType</a>  ()</dt>
-<dd><a class="anchor" id="_todo000010"></a>consider renaming to SgAdaDiscreteFormalType  </dd>
+<dd><a class="anchor" id="_todo000009"></a>consider renaming to SgAdaDiscreteFormalType  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#ab255bb14826b362af56bd13a93e9b811">Ada_ROSE_Translation::mkAdaInheritedFunctionSymbol</a>  (SgFunctionSymbol &amp;baseSym, SgNamedType &amp;assocType, SgScopeStatement &amp;scope)</dt>
-<dd><a class="anchor" id="_todo000024"></a> support derived enum types  </dd>
+<dd><a class="anchor" id="_todo000023"></a> support derived enum types  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a85b149647e4f361d03659d15f5cef2e4">Ada_ROSE_Translation::mkAdaPackageBodyDecl</a>  (SgAdaPackageSpecDecl &amp;specdcl, SgAdaPackageBodyDecl *nondef_opt, SgScopeStatement &amp;scope)</dt>
-<dd><a class="anchor" id="_todo000016"></a>THIS IS NOT YET IMPLEMENTED.  </dd>
+<dd><a class="anchor" id="_todo000015"></a>THIS IS NOT YET IMPLEMENTED.  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#adb407f7f74130b022a322c0d6f586696">Ada_ROSE_Translation::mkAdaProtectedBodyDecl</a>  (SgDeclarationStatement &amp;podecl, SgAdaProtectedBodyDecl *nondef_opt, SgAdaProtectedBody &amp;pobody, SgScopeStatement &amp;scope)</dt>
-<dd><a class="anchor" id="_todo000017"></a>CREATE <a class="el" href="class_a.html">A</a> NONDEFINING DECLARATION if nondef == nullptr  </dd>
+<dd><a class="anchor" id="_todo000016"></a>CREATE <a class="el" href="class_a.html">A</a> NONDEFINING DECLARATION if nondef == nullptr  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a458c36cf45980e978d5ff782ce8bc980">Ada_ROSE_Translation::mkDeclarationScope</a>  (SgScopeStatement &amp;)</dt>
-<dd><a class="anchor" id="_todo000019"></a>revisit) AND from the translator when a pragma or aspect requires a scope for unresolved identifiers.  </dd>
+<dd><a class="anchor" id="_todo000018"></a>revisit) AND from the translator when a pragma or aspect requires a scope for unresolved identifiers.  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a91662e42ff55436c506550cea5f7e85d">Ada_ROSE_Translation::mkFunctionCallExp</a>  (SgExpression &amp;target, SgExprListExp &amp;arglst, bool usesOperatorSyntax, bool usesObjectCallSyntax)</dt>
-<dd><a class="anchor" id="_todo000022"></a>check for access to subroutine).  </dd>
+<dd><a class="anchor" id="_todo000021"></a>check for access to subroutine).  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a4b3ef8654c666e48be412d3e4dd1bc9b">Ada_ROSE_Translation::mkFunctionType</a>  (<a class="el" href="class_sg_type.html">SgType</a> &amp;returnType)</dt>
-<dd><a class="anchor" id="_todo000013"></a>add parameter list and ada parameter profiles (types + name)  </dd>
+<dd><a class="anchor" id="_todo000012"></a>add parameter list and ada parameter profiles (types + name)  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#af864def4ab97fff9567e97275e898a98">Ada_ROSE_Translation::mkQualifiedExp</a>  (SgExpression &amp;expr, <a class="el" href="class_sg_type.html">SgType</a> &amp;ty)</dt>
-<dd><a class="anchor" id="_todo000023"></a>consider whether the explicit representation in code is necessary or whether it can be reproduced by the backend.  </dd>
+<dd><a class="anchor" id="_todo000022"></a>consider whether the explicit representation in code is necessary or whether it can be reproduced by the backend.  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a363fbff34bc9579b32b8fb1db294c100">Ada_ROSE_Translation::mkQualifiedType</a>  (SgExpression &amp;qual, <a class="el" href="class_sg_type.html">SgType</a> &amp;base)</dt>
-<dd><a class="anchor" id="_todo000009"></a>this is a stop gap function and should not be in the final code  </dd>
+<dd><a class="anchor" id="_todo000008"></a>this is a stop gap function and should not be in the final code  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a9ad4c69f429c4cca829d8e67a2b2c8fc">Ada_ROSE_Translation::mkRangeExp</a>  ()</dt>
-<dd><a class="anchor" id="_todo000021"></a>remove this function, once translation is complete  </dd>
-<dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#aba29382ad590284f73832f292db81ffe">Ada_ROSE_Translation::mkRecordParent</a>  (<a class="el" href="class_sg_type.html">SgType</a> &amp;n)</dt>
-<dd><a class="anchor" id="_todo000018"></a>should we represent base classes and other base types uniformly e.g., BaseClassExp(TypeExpression(class_type)) ??  </dd>
-<dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a6052eba9e0bc862d20c65f439f4f0c31">Ada_ROSE_Translation::mkTypeUnknown</a>  ()</dt>
-<dd><a class="anchor" id="_todo000011"></a>should not be in the final AST implementation  </dd>
-<dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#aa0654c469aa723a2858787268cc5e3c5">Ada_ROSE_Translation::mkUnresolvedName</a>  (const std::string &amp;n, SgScopeStatement &amp;scope)</dt>
 <dd><a class="anchor" id="_todo000020"></a>remove this function, once translation is complete  </dd>
+<dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#aba29382ad590284f73832f292db81ffe">Ada_ROSE_Translation::mkRecordParent</a>  (<a class="el" href="class_sg_type.html">SgType</a> &amp;n)</dt>
+<dd><a class="anchor" id="_todo000017"></a>should we represent base classes and other base types uniformly e.g., BaseClassExp(TypeExpression(class_type)) ??  </dd>
+<dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#a6052eba9e0bc862d20c65f439f4f0c31">Ada_ROSE_Translation::mkTypeUnknown</a>  ()</dt>
+<dd><a class="anchor" id="_todo000010"></a>should not be in the final AST implementation  </dd>
+<dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#aa0654c469aa723a2858787268cc5e3c5">Ada_ROSE_Translation::mkUnresolvedName</a>  (const std::string &amp;n, SgScopeStatement &amp;scope)</dt>
+<dd><a class="anchor" id="_todo000019"></a>remove this function, once translation is complete  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#ada656dc8c81e669e7fe9a6120c5e824a">Ada_ROSE_Translation::mkUnresolvedType</a>  (const std::string &amp;n)</dt>
-<dd><a class="anchor" id="_todo000012"></a>should not be in the final version of the translator  </dd>
+<dd><a class="anchor" id="_todo000011"></a>should not be in the final version of the translator  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#ac01f8466ae68326dff8f03329d9b64b8">Ada_ROSE_Translation::mkUseClause</a>  (SgDeclarationStatement &amp;used)</dt>
-<dd><a class="anchor" id="_todo000014"></a>revisit representation in ROSE (use package seems more similar to using dircetive)  </dd>
+<dd><a class="anchor" id="_todo000013"></a>revisit representation in ROSE (use package seems more similar to using dircetive)  </dd>
 <dt>Member <a class="el" href="namespace_ada___r_o_s_e___translation.html#ae4fefc13a4f7a510fd4546e18c1528c3">Ada_ROSE_Translation::mkWhenPath</a>  (SgExpression &amp;cond, SgBasicBlock &amp;blk)</dt>
-<dd><a class="anchor" id="_todo000015"></a>should we just use an SgExprListExp for multiple conditions?  </dd>
+<dd><a class="anchor" id="_todo000014"></a>should we just use an SgExprListExp for multiple conditions?  </dd>
 <dt>Member <a class="el" href="namespaceanonymous____namespace__02name_qualification_support__8_c__03.html#a11090c5b8cd428249c02ef143934e460">anonymous__namespace_02nameQualificationSupport_8C_03::nodeName</a>  (const SgNode &amp;n)</dt>
-<dd><a class="anchor" id="_todo000001"></a>fix the underlying cause of false positive reporting.  </dd>
+<dd><a class="anchor" id="_todo000093"></a>fix the underlying cause of false positive reporting.  </dd>
 <dt>Member <a class="el" href="structanonymous__namespace_02name_qualification_support_8_c_03_1_1_ada_pre_name_qualifier.html#a8f82df62ded84cd55ee0444c9ebfb86a">anonymous_namespace{nameQualificationSupport.C}::AdaPreNameQualifier::computeNameQualForDeclLink</a>  (const SgNode &amp;ref, const SgDeclarationStatement &amp;n, const SgScopeStatement *scope)</dt>
-<dd><a class="anchor" id="_todo000003"></a> not sure if the special handling is really needed, or if the unparsing of SgAdaGenericInstanceDecl could just use the name from the instantiated declaration...  </dd>
+<dd><a class="anchor" id="_todo000002"></a> not sure if the special handling is really needed, or if the unparsing of SgAdaGenericInstanceDecl could just use the name from the instantiated declaration...  </dd>
 <dt>Member <a class="el" href="structanonymous__namespace_02unparse_ada__statements_8_c_03_1_1_ada_statement_unparser.html#a76a36d478805f9c7117fde3bb0b1d423">anonymous_namespace{unparseAda_statements.C}::AdaStatementUnparser::getQualification</a>  (const std::map&lt; SgNode *, std::string &gt; &amp;qualMap, const SgNode &amp;n)</dt>
-<dd><a class="anchor" id="_todo000002"></a>use const std::string&amp; as return type as soon as the old name qualification has been phased out.  </dd>
+<dd><a class="anchor" id="_todo000001"></a>use const std::string&amp; as return type as soon as the old name qualification has been phased out.  </dd>
 <dt>Member <a class="el" href="_block_8cc.html#af8b426859fb21091c11b688d0a82cf88">appendAssignment</a>  (const SgInitializedName *name, const SgScopeStatement *scope, SgBasicBlock *target)</dt>
-<dd><a class="anchor" id="_todo000076"></a>See TODO for <a class="el" href="_block__8cc_8dox.html#a951a44093c821831c1a6e490128caf4e" title="createAssignment()">createAssignment()</a>.  </dd>
+<dd><a class="anchor" id="_todo000075"></a>See TODO for <a class="el" href="_block_8cc.html#a3d6f7a3f7d092869c76f70fd2da7a7af" title="createAssignment()">createAssignment()</a>.  </dd>
 <dt>Member <a class="el" href="_block_8cc.html#a3d6f7a3f7d092869c76f70fd2da7a7af">createAssignment</a>  (const SgInitializedName *name, const SgScopeStatement *scope)</dt>
-<dd><a class="anchor" id="_todo000075"></a>Currently works only for SgAssignInitializers on non-reference primitive types. SgAggregateInitializers will return 0.  </dd>
+<dd><a class="anchor" id="_todo000074"></a>Currently works only for SgAssignInitializers on non-reference primitive types. SgAggregateInitializers will return 0.  </dd>
 <dt>Member <a class="el" href="_generate_func_8cc.html#a7a2b2ab2f60159f70d2448a95df70f9c">createParam</a>  (const SgInitializedName *i_name, bool classic_original_type=false)</dt>
-<dd><a class="anchor" id="_todo000077"></a>Is shallow copy here OK?  </dd>
+<dd><a class="anchor" id="_todo000076"></a>Is shallow copy here OK?  </dd>
 <dt>File <a class="el" href="graph_processing_8h.html">graphProcessing.h</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000070"></a>utilize BOOST visitors to take advantage of the BOOST graph structures abilities</p>
-<p class="interdd"><a class="anchor" id="_todo000071"></a>*One improvement that should be implemented ASAP is changing the algorithm from a recursive algorithm to an iterative algorithm. Keeping the memory requirements down is much easier in this form and would probably increase the size of graph that the algorithm can handle.</p>
-<p class="interdd"><a class="anchor" id="_todo000072"></a>*Another improvement that should be implemented when possible is to allow for loop analysis. This could be implemented by simply running the algorithm on the loop, but there would need to be a provision that kept the algorithm from stopping as soon as it starts. This could be done by separating the node into two nodes, one with all the inedges and one with all the outedges. OR one could collect the loops when they are deleted (the whole loop is calculated necessarily), though nested loops would have to be considered further in order to find a way to deal with them.</p>
-<p class="interdd"><a class="anchor" id="_todo000073"></a>*It is possible that graph matching algorithms might prove useful to distinguish different types of graphs contained within the <a class="el" href="class_c_f_g.html">CFG</a> and optimize traversal over them. Look up graph matching algorithms or pattern matching (potentially) for more information on such algorithms, though I do not believe there is an existant literature on matching subgraphs for this purpose.</p>
-<p class="enddd"><a class="anchor" id="_todo000074"></a>*The parallelism in this program should be optimized by someone experienced in parallelization optimization </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000069"></a>utilize BOOST visitors to take advantage of the BOOST graph structures abilities</p>
+<p class="interdd"><a class="anchor" id="_todo000070"></a>*One improvement that should be implemented ASAP is changing the algorithm from a recursive algorithm to an iterative algorithm. Keeping the memory requirements down is much easier in this form and would probably increase the size of graph that the algorithm can handle.</p>
+<p class="interdd"><a class="anchor" id="_todo000071"></a>*Another improvement that should be implemented when possible is to allow for loop analysis. This could be implemented by simply running the algorithm on the loop, but there would need to be a provision that kept the algorithm from stopping as soon as it starts. This could be done by separating the node into two nodes, one with all the inedges and one with all the outedges. OR one could collect the loops when they are deleted (the whole loop is calculated necessarily), though nested loops would have to be considered further in order to find a way to deal with them.</p>
+<p class="interdd"><a class="anchor" id="_todo000072"></a>*It is possible that graph matching algorithms might prove useful to distinguish different types of graphs contained within the <a class="el" href="class_c_f_g.html">CFG</a> and optimize traversal over them. Look up graph matching algorithms or pattern matching (potentially) for more information on such algorithms, though I do not believe there is an existant literature on matching subgraphs for this purpose.</p>
+<p class="enddd"><a class="anchor" id="_todo000073"></a>*The parallelism in this program should be optimized by someone experienced in parallelization optimization </p>
 </dd>
 <dt>Member <a class="el" href="struct_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03_1_1_overload_info.html#ac186efd4bdc99fdf4783a4f5e0fdc878">Libadalang_ROSE_Translation::anonymous_namespace{Libadalang_to_ROSE.C}::OverloadInfo::literalEquivalent</a>  ()</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000044"></a>reconsider whether foldable is needed .. true, iff all arguments are literals or calls to literal-equivalent functions</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000043"></a>reconsider whether foldable is needed .. true, iff all arguments are literals or calls to literal-equivalent functions</p>
 <p class="enddd"></p>
 </dd>
 <dt>{<a class="el" href="_libadalang__to___r_o_s_e_8_c.html">Libadalang_to_ROSE.C</a>} Member <a class="el" href="namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang__to___r_o_s_e_8_c_03.html#a36e16c75d0e92fff6a2ab1c3e4158f4b">Libadalang_ROSE_Translation::anonymous_namespace{Libadalang_to_ROSE.C}::scopeCheckCallContext</a>  (SgFunctionCallExp &amp;exp, const <a class="el" href="class_sg_type.html">SgType</a> &amp;ty)</dt>
-<dd><a class="anchor" id="_todo000045"></a>implement full type check and rename to typeCheckCallContext ..  </dd>
+<dd><a class="anchor" id="_todo000044"></a>implement full type check and rename to typeCheckCallContext ..  </dd>
 <dt>{<a class="el" href="_libadalang_expression_8_c.html">LibadalangExpression.C</a>} Member <a class="el" href="namespace_libadalang___r_o_s_e___translation_1_1anonymous__namespace_02_libadalang_expression_8_c_03.html#aa194eaff67c366d23985059d59086e65">Libadalang_ROSE_Translation::anonymous_namespace{LibadalangExpression.C}::getOperator_fallback</a>  (ada_base_entity *lal_expr, bool unary, <a class="el" href="struct_libadalang___r_o_s_e___translation_1_1_ast_context.html">AstContext</a> ctx)</dt>
-<dd><a class="anchor" id="_todo000047"></a>remove from code base  </dd>
+<dd><a class="anchor" id="_todo000046"></a>remove from code base  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ae75a3bbddd6d10ea2c27cd40cc42065d">Libadalang_ROSE_Translation::initializePkgStandard</a>  (SgGlobal &amp;global, ada_base_entity *lal_root)</dt>
-<dd><a class="anchor" id="_todo000048"></a>this should disappear as soon as the Standard package is included in Asis  </dd>
+<dd><a class="anchor" id="_todo000047"></a>this should disappear as soon as the Standard package is included in Asis  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a9bd40dd74f290834c64c83c128f91772">Libadalang_ROSE_Translation::libadalangExcps</a>  ()</dt>
-<dd><a class="anchor" id="_todo000046"></a>revise with representation of Exceptions  </dd>
+<dd><a class="anchor" id="_todo000045"></a>revise with representation of Exceptions  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a87ca0a4949463fc7d2dc1737ee66f56d">Libadalang_ROSE_Translation::mkAdaDiscreteType</a>  ()</dt>
-<dd><a class="anchor" id="_todo000029"></a>consider renaming to SgAdaDiscreteFormalType  </dd>
+<dd><a class="anchor" id="_todo000028"></a>consider renaming to SgAdaDiscreteFormalType  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ae688f735ea34fdd5d5bd9c57eb247974">Libadalang_ROSE_Translation::mkAdaInheritedFunctionSymbol</a>  (SgFunctionSymbol &amp;baseSym, SgNamedType &amp;assocType, SgScopeStatement &amp;scope)</dt>
-<dd><a class="anchor" id="_todo000043"></a> support derived enum types  </dd>
+<dd><a class="anchor" id="_todo000042"></a> support derived enum types  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#adf0346eacd59d53501041b22ee7c5ca8">Libadalang_ROSE_Translation::mkAdaPackageBodyDecl</a>  (SgAdaPackageSpecDecl &amp;specdcl, SgAdaPackageBodyDecl *nondef_opt, SgScopeStatement &amp;scope)</dt>
-<dd><a class="anchor" id="_todo000035"></a>THIS IS NOT YET IMPLEMENTED.  </dd>
+<dd><a class="anchor" id="_todo000034"></a>THIS IS NOT YET IMPLEMENTED.  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a6c5cdee9563bcb25cdb61384d1d02d2d">Libadalang_ROSE_Translation::mkAdaProtectedBodyDecl</a>  (SgDeclarationStatement &amp;podecl, SgAdaProtectedBodyDecl *nondef_opt, SgAdaProtectedBody &amp;pobody, SgScopeStatement &amp;scope)</dt>
-<dd><a class="anchor" id="_todo000036"></a>CREATE <a class="el" href="class_a.html">A</a> NONDEFINING DECLARATION if nondef == nullptr  </dd>
+<dd><a class="anchor" id="_todo000035"></a>CREATE <a class="el" href="class_a.html">A</a> NONDEFINING DECLARATION if nondef == nullptr  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a27da52e4c827dad1b027beeaebb87597">Libadalang_ROSE_Translation::mkDeclarationScope</a>  (SgScopeStatement &amp;)</dt>
-<dd><a class="anchor" id="_todo000038"></a>revisit) AND from the translator when a pragma or aspect requires a scope for unresolved identifiers.  </dd>
+<dd><a class="anchor" id="_todo000037"></a>revisit) AND from the translator when a pragma or aspect requires a scope for unresolved identifiers.  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#aca4c6f1da7e45cb768f2673c7561c88c">Libadalang_ROSE_Translation::mkFunctionCallExp</a>  (SgExpression &amp;target, SgExprListExp &amp;arglst, bool usesOperatorSyntax, bool usesObjectCallSyntax)</dt>
-<dd><a class="anchor" id="_todo000041"></a>check for access to subroutine).  </dd>
+<dd><a class="anchor" id="_todo000040"></a>check for access to subroutine).  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a62ebc3e2bf33962a4eb40cd0907ddf76">Libadalang_ROSE_Translation::mkFunctionType</a>  (<a class="el" href="class_sg_type.html">SgType</a> &amp;returnType)</dt>
-<dd><a class="anchor" id="_todo000032"></a>add parameter list and ada parameter profiles (types + name)  </dd>
+<dd><a class="anchor" id="_todo000031"></a>add parameter list and ada parameter profiles (types + name)  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ad5dd37edd8e8e841e31eed061989b87a">Libadalang_ROSE_Translation::mkQualifiedExp</a>  (SgExpression &amp;expr, <a class="el" href="class_sg_type.html">SgType</a> &amp;ty)</dt>
-<dd><a class="anchor" id="_todo000042"></a>consider whether the explicit representation in code is necessary or whether it can be reproduced by the backend.  </dd>
+<dd><a class="anchor" id="_todo000041"></a>consider whether the explicit representation in code is necessary or whether it can be reproduced by the backend.  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a77ff4340351879b202d3292ee85b4ed8">Libadalang_ROSE_Translation::mkQualifiedType</a>  (SgExpression &amp;qual, <a class="el" href="class_sg_type.html">SgType</a> &amp;base)</dt>
-<dd><a class="anchor" id="_todo000028"></a>this is a stop gap function and should not be in the final code  </dd>
+<dd><a class="anchor" id="_todo000027"></a>this is a stop gap function and should not be in the final code  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a8ef1243cd0992268dc1394f011415be7">Libadalang_ROSE_Translation::mkRangeExp</a>  ()</dt>
-<dd><a class="anchor" id="_todo000040"></a>remove this function, once translation is complete  </dd>
-<dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a572dce824fa6bbfc5abd9a4b7bb5a371">Libadalang_ROSE_Translation::mkRecordParent</a>  (<a class="el" href="class_sg_type.html">SgType</a> &amp;n)</dt>
-<dd><a class="anchor" id="_todo000037"></a>should we represent base classes and other base types uniformly e.g., BaseClassExp(TypeExpression(class_type)) ??  </dd>
-<dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a09f83a7bc3e69b02c29a02ac0ac30210">Libadalang_ROSE_Translation::mkTypeUnknown</a>  ()</dt>
-<dd><a class="anchor" id="_todo000030"></a>should not be in the final AST implementation  </dd>
-<dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ad9a72107edfa40754c078124db2b9b9a">Libadalang_ROSE_Translation::mkUnresolvedName</a>  (const std::string &amp;n, SgScopeStatement &amp;scope)</dt>
 <dd><a class="anchor" id="_todo000039"></a>remove this function, once translation is complete  </dd>
+<dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a572dce824fa6bbfc5abd9a4b7bb5a371">Libadalang_ROSE_Translation::mkRecordParent</a>  (<a class="el" href="class_sg_type.html">SgType</a> &amp;n)</dt>
+<dd><a class="anchor" id="_todo000036"></a>should we represent base classes and other base types uniformly e.g., BaseClassExp(TypeExpression(class_type)) ??  </dd>
+<dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a09f83a7bc3e69b02c29a02ac0ac30210">Libadalang_ROSE_Translation::mkTypeUnknown</a>  ()</dt>
+<dd><a class="anchor" id="_todo000029"></a>should not be in the final AST implementation  </dd>
+<dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ad9a72107edfa40754c078124db2b9b9a">Libadalang_ROSE_Translation::mkUnresolvedName</a>  (const std::string &amp;n, SgScopeStatement &amp;scope)</dt>
+<dd><a class="anchor" id="_todo000038"></a>remove this function, once translation is complete  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#a3fa1a1177dc0057db5a7aeba99e3940e">Libadalang_ROSE_Translation::mkUnresolvedType</a>  (const std::string &amp;n)</dt>
-<dd><a class="anchor" id="_todo000031"></a>should not be in the final version of the translator  </dd>
+<dd><a class="anchor" id="_todo000030"></a>should not be in the final version of the translator  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#aa67284f317bb2e2814d6e1753fa970f5">Libadalang_ROSE_Translation::mkUseClause</a>  (SgDeclarationStatement &amp;used)</dt>
-<dd><a class="anchor" id="_todo000033"></a>revisit representation in ROSE (use package seems more similar to using dircetive)  </dd>
+<dd><a class="anchor" id="_todo000032"></a>revisit representation in ROSE (use package seems more similar to using dircetive)  </dd>
 <dt>Member <a class="el" href="namespace_libadalang___r_o_s_e___translation.html#ac39540526b7d415135749c17c9382c56">Libadalang_ROSE_Translation::mkWhenPath</a>  (SgExpression &amp;cond, SgBasicBlock &amp;blk)</dt>
-<dd><a class="anchor" id="_todo000034"></a>should we just use an SgExprListExp for multiple conditions?  </dd>
+<dd><a class="anchor" id="_todo000033"></a>should we just use an SgExprListExp for multiple conditions?  </dd>
 <dt>Member <a class="el" href="mangling_support_8h.html#a2fcc0aef1a2f3f1a1ceff11d6660d2ac">mangleExpression</a>  (const SgExpression *expr)</dt>
-<dd><a class="anchor" id="_todo000051"></a>Find a better way to deal with general template expression arguments.  </dd>
+<dd><a class="anchor" id="_todo000050"></a>Find a better way to deal with general template expression arguments.  </dd>
 <dt>Member <a class="el" href="mangling_support_8h.html#a5efafd16ac735d31cfd22d66b1fc6cb5">mangleQualifiersToString</a>  (const SgScopeStatement *scope)</dt>
-<dd><a class="anchor" id="_todo000050"></a>Compute local scope names correctly (consistently).  </dd>
+<dd><a class="anchor" id="_todo000049"></a>Compute local scope names correctly (consistently).  </dd>
 <dt>File <a class="el" href="_non_local_decls_8cc.html">NonLocalDecls.cc</a>  </dt>
-<dd><a class="anchor" id="_todo000078"></a>Implement gathering of local type declarations.  </dd>
+<dd><a class="anchor" id="_todo000077"></a>Implement gathering of local type declarations.  </dd>
 <dt>File <a class="el" href="_outliner_8hh.html">Outliner.hh</a>  </dt>
-<dd><a class="anchor" id="_todo000079"></a>Outline: arbitrary lists of statements taken from a single SgBasicBlock.  </dd>
-<dt>Member <a class="el" href="namespace_outliner.html#ad2da4464bd107c6d70fab7ad5cfed825">Outliner::validateSettings</a>  ()</dt>
-<dd><a class="anchor" id="_todo000080"></a>Ideally this should happen automatically by those functions that perform analysis so the user doesn't have to remember this, but I'm not familiar enough which the code to know which functions those are. Originally, the outliner only validated its settings when they were changed by its <a class="el" href="namespace_outliner.html#afe699976eeae02e6fdc121d489d84b9f" title="commandLineProcessing">commandLineProcessing</a> function, which still happes. [Robb <a class="el" href="namespace_p.html" title="Auto-generated documentation for the P namespace.">P</a> Matzke 2016-09-11]  </dd>
+<dd><a class="anchor" id="_todo000078"></a>Outline: arbitrary lists of statements taken from a single SgBasicBlock.  </dd>
+<dt>Member <a class="el" href="namespace_outliner.html#a55ca74f11000c896c74fae729784ebd6">Outliner::validateSettings</a>  ()</dt>
+<dd><a class="anchor" id="_todo000079"></a>Ideally this should happen automatically by those functions that perform analysis so the user doesn't have to remember this, but I'm not familiar enough which the code to know which functions those are. Originally, the outliner only validated its settings when they were changed by its <a class="el" href="namespace_outliner.html#aea1ebd822aed7f7e211d6ae35e8db4f5" title="commandLineProcessing">commandLineProcessing</a> function, which still happes. [Robb <a class="el" href="namespace_p.html" title="Auto-generated documentation for the P namespace.">P</a> Matzke 2016-09-11]  </dd>
 <dt>File <a class="el" href="_pragma_interface_8cc.html">PragmaInterface.cc</a>  </dt>
-<dd><a class="anchor" id="_todo000081"></a>Extend this interface.  </dd>
+<dd><a class="anchor" id="_todo000080"></a>Extend this interface.  </dd>
 <dt>Member <a class="el" href="process_template_handling_options_8h.html#a43b29e733f7358f8bc731824f8a166c4">processTemplateHandlingOptions</a>  (SgNode *node)</dt>
-<dd><a class="anchor" id="_todo000049"></a>Static data members might not be properly be handled. </dd>
+<dd><a class="anchor" id="_todo000048"></a>Static data members might not be properly be handled. </dd>
 <dt>Member <a class="el" href="class_rose_1_1_code_gen_1_1_driver.html#ad3f709d281a59ec4a7158a26c8b36a1e">Rose::CodeGen::Driver::add</a>  (SgSourceFile *file)</dt>
-<dd><a class="anchor" id="_todo000083"></a>detect other accessible file (included) (opt: add recursively)  </dd>
+<dd><a class="anchor" id="_todo000082"></a>detect other accessible file (included) (opt: add recursively)  </dd>
 <dt>Member <a class="el" href="class_rose_1_1_code_gen_1_1_driver.html#a22600108167f53b53c433d08981f0d50">Rose::CodeGen::Driver::init</a>  (SgProject *project_)</dt>
-<dd><a class="anchor" id="_todo000082"></a>get path and add to path_to_id_map  </dd>
+<dd><a class="anchor" id="_todo000081"></a>get path and add to path_to_id_map  </dd>
 <dt>Struct <a class="el" href="struct_rose_1_1_string_utility_1_1_string_with_line_number.html">Rose::StringUtility::StringWithLineNumber</a>  </dt>
-<dd><a class="anchor" id="_todo000093"></a>What does it mean to have a non-positive line number? What line number should be used for generated code when the <code class="param">filename</code> member is empty?  </dd>
+<dd><a class="anchor" id="_todo000092"></a>What does it mean to have a non-positive line number? What line number should be used for generated code when the <code class="param">filename</code> member is empty?  </dd>
 <dt>Struct <a class="el" href="struct_rose_1_1_traits_1_1_describe_field.html">Rose::Traits::DescribeField&lt; NodeT, FieldPtrT, fld_ptr &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000084"></a>c++17 with auto non-type template parameter: -&gt; remove the need for FieldPtrT -&gt; remove the need for partial spec (c++17 has "get base-type of field-pointer-type") -&gt; remove the need for describe_field_t::bind which is here because c++14 don't want to initialize a pointer-to-member template argument from a constexpr variable. (it requires <span class="tt">&amp;X::mbr</span> form) It must be: <span class="tt">using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;&amp;X::mbr&gt;;</span> not <span class="tt">constexpr auto Xmbr = &amp;X::mbr; using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;Xmbr&gt;;</span>.  </dd>
+<dd><a class="anchor" id="_todo000083"></a>c++17 with auto non-type template parameter: -&gt; remove the need for FieldPtrT -&gt; remove the need for partial spec (c++17 has "get base-type of field-pointer-type") -&gt; remove the need for describe_field_t::bind which is here because c++14 don't want to initialize a pointer-to-member template argument from a constexpr variable. (it requires <span class="tt">&amp;X::mbr</span> form) It must be: <span class="tt">using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;&amp;X::mbr&gt;;</span> not <span class="tt">constexpr auto Xmbr = &amp;X::mbr; using <a class="el" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = TPL&lt;Xmbr&gt;;</span>.  </dd>
 <dt>Struct <a class="el" href="struct_sage_interface_1_1_ada_1_1anonymous__namespace_02sage_interface_ada_8_c_03_1_1_decl_finder.html">SageInterface::Ada::anonymous_namespace{sageInterfaceAda.C}::DeclFinder</a>  </dt>
-<dd><a class="anchor" id="_todo000061"></a>remove after adding <a class="el" href="namespace_sage_interface_1_1_ada.html" title="Auto-generated documentation for the SageInterface::Ada namespace.">Ada</a> specific types to stripType  </dd>
+<dd><a class="anchor" id="_todo000060"></a>remove after adding <a class="el" href="namespace_sage_interface_1_1_ada.html" title="Contains Ada-specific functionality.">Ada</a> specific types to stripType  </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#a1bdf3748b46d6cbdfea5ac3bb78e05a3">SageInterface::Ada::associatedDeclaration</a>  (const <a class="el" href="class_sg_type.html">SgType</a> &amp;ty)</dt>
-<dd><a class="anchor" id="_todo000064"></a>remove after integrating functionality into <a class="el" href="class_sg_type.html">SgType</a>...  </dd>
+<dd><a class="anchor" id="_todo000063"></a>remove after integrating functionality into <a class="el" href="class_sg_type.html">SgType</a>...  </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#aebee532ab72348ee8150287fb6ffff09">SageInterface::Ada::baseEnumDeclaration</a>  (const <a class="el" href="class_sg_type.html">SgType</a> *ty)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000066"></a>can new enum types be introduced with SgTypedefDeclaration?) or a subtype.</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000065"></a>can new enum types be introduced with SgTypedefDeclaration?) or a subtype.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#abf37476ab2d63eea746e4df8cd684b2c">SageInterface::Ada::baseType</a>  (const <a class="el" href="class_sg_type.html">SgType</a> &amp;ty)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000065"></a> extend for discriminated types.</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000064"></a> extend for discriminated types.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#a731fb08e6d9eac6284d1c2dfb2010a34">SageInterface::Ada::calleeParameterList</a>  (const SgFunctionCallExp &amp;n)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000063"></a>handle computed functions (e.g., access to routine)</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000062"></a>handle computed functions (e.g., access to routine)</p>
 <p class="enddd"></p>
 </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#a1c243d611beb468ad657b01b61e89a2b">SageInterface::Ada::findPubliclyVisibleFunction</a>  (SgFunctionSymbol &amp;fnsym, const SgFunctionType &amp;drvFunTy, const SgNamedType &amp;dervTy)</dt>
-<dd><a class="anchor" id="_todo000067"></a>if no public function can be found return nullptr  </dd>
+<dd><a class="anchor" id="_todo000066"></a>if no public function can be found return nullptr  </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#ad453405acea37406743447a81deaa8c1">SageInterface::Ada::pathToGlobal</a>  (const SgScopeStatement &amp;n)</dt>
-<dd><a class="anchor" id="_todo000068"></a>consider adding global into the sequence (the namequalification already adds pkgStandard...)  </dd>
+<dd><a class="anchor" id="_todo000067"></a>consider adding global into the sequence (the namequalification already adds pkgStandard...)  </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#a32ad9ea120d003cf2c53329fcfc7f7d0">SageInterface::Ada::setSourcePositionInSubtreeToCompilerGenerated</a>  (SgLocatedNode *n)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000069"></a> Consider unifying the two functions.</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000068"></a> Consider unifying the two functions.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Member <a class="el" href="namespace_sage_interface_1_1_ada.html#a0cb4264626ee67c005fae9acf9bf25e2">SageInterface::Ada::typeOfExpr</a>  (const SgExpression &amp;exp)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000062"></a>could be integrated into SgExpression::get_type ...</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000061"></a>could be integrated into SgExpression::get_type ...</p>
 <p class="enddd"></p>
 </dd>
-<dt>Member <a class="el" href="namespace_sage_interface.html#ae1f0b974f7135ad31f1bb8c6c467f04c">SageInterface::appendArg</a>  (SgFunctionParameterList *, SgInitializedName *)</dt>
-<dd><a class="anchor" id="_todo000060"></a>function type , function symbol also need attention.  </dd>
+<dt>Member <a class="el" href="namespace_sage_interface.html#ab1e360139ef30a5708778e0e2bf8f57e">SageInterface::appendArg</a>  (SgFunctionParameterList *, SgInitializedName *)</dt>
+<dd><a class="anchor" id="_todo000059"></a>function type , function symbol also need attention.  </dd>
 <dt>Member <a class="el" href="namespace_sage_interface.html#ab43273a78429ec780cc36351457250b5">SageInterface::get_C_array_dimensions</a>  (const SgArrayType &amp;arrtype, SgInitializedName &amp;initname)</dt>
-<dd><a class="anchor" id="_todo000059"></a>make initname const  </dd>
+<dd><a class="anchor" id="_todo000058"></a>make initname const  </dd>
 <dt>Member <a class="el" href="namespace_sage_interface.html#ae7cbd683a1b04b01ce52e0e87865bfca">SageInterface::getForLoopInformations</a>  (SgForStatement *for_loop, SgVariableSymbol *&amp;iterator, SgExpression *&amp;lower_bound, SgExpression *&amp;upper_bound, SgExpression *&amp;stride)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000056"></a>handle more case. For example: declaration in initialization </p>
-<p class="interdd"><a class="anchor" id="_todo000057"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000058"></a>replace most assertions by error messages and 'return false;'  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000055"></a>handle more case. For example: declaration in initialization </p>
+<p class="interdd"><a class="anchor" id="_todo000056"></a></p>
+<p class="enddd"><a class="anchor" id="_todo000057"></a>replace most assertions by error messages and 'return false;'  </p>
 </dd>
-<dt>Member <a class="el" href="namespace_sage_interface.html#acfef4e4879b8d5dcd3881b3f2585452b">SageInterface::templateArgumentEquivalence</a>  (SgTemplateArgument *arg1, SgTemplateArgument *arg2)</dt>
-<dd><a class="anchor" id="_todo000055"></a>  </dd>
+<dt>Member <a class="el" href="namespace_sage_interface.html#a1f2a539cb72a25af52579848b072f741">SageInterface::templateArgumentEquivalence</a>  (SgTemplateArgument *arg1, SgTemplateArgument *arg2)</dt>
+<dd><a class="anchor" id="_todo000054"></a>  </dd>
 <dt>Member <a class="el" href="class_sawyer_1_1_container_1_1_address_map.html#ac9e7147002d95c6ae762062e8e0552b9">Sawyer::Container::AddressMap&lt; A, T &gt;::write</a>  (const <a class="el" href="class_sawyer_1_1_container_1_1_address_map.html#aa7a7317b6be4502317ab4357b5989660">Value</a> *buf, const <a class="el" href="class_sawyer_1_1_container_1_1_address_map_constraints.html">AddressMapConstraints&lt; AddressMap &gt;</a> &amp;c, <a class="el" href="namespace_sawyer_1_1_container.html#a35699ffedb6434460760008486f44237">MatchFlags</a> flags=0)</dt>
-<dd><a class="anchor" id="_todo000091"></a>FIXME[Robb Matzke 2014-09-01]: <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> order of values in the buffer being written by <a class="el" href="class_sawyer_1_1_container_1_1_address_map.html#ac9e7147002d95c6ae762062e8e0552b9">AddressMap::write</a> when writing in a backward direction is not all that useful. Perhaps the write should consume values from the end of the buffer instead of the beginning. </dd>
+<dd><a class="anchor" id="_todo000090"></a>FIXME[Robb Matzke 2014-09-01]: <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> order of values in the buffer being written by <a class="el" href="class_sawyer_1_1_container_1_1_address_map.html#ac9e7147002d95c6ae762062e8e0552b9">AddressMap::write</a> when writing in a backward direction is not all that useful. Perhaps the write should consume values from the end of the buffer instead of the beginning. </dd>
 <dt>Member <a class="el" href="class_sawyer_1_1_container_1_1_bit_vector.html#a9aea292e884c332e080857bfc430ad82">Sawyer::Container::BitVector::parse</a>  (std::string str)</dt>
-<dd><a class="anchor" id="_todo000092"></a>Decimal parsing is not fully supported.  </dd>
+<dd><a class="anchor" id="_todo000091"></a>Decimal parsing is not fully supported.  </dd>
 <dt>Class <a class="el" href="class_types_1_1_type_traits.html">Types::TypeTraits&lt; T &gt;</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000085"></a>Conditionally-compile 'long long' in the list of fundamental types. </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000084"></a>Conditionally-compile 'long long' in the list of fundamental types. </p>
 <p class="interdd"></p>
 <p class="enddd">What happens to 'enum' types in <a class="el" href="class_types_1_1_type_traits.html">TypeTraits</a>?  </p>
 </dd>
 <dt>Class <a class="el" href="class_x_m_l_util_1_1_x_m_l_elem_finder.html">XMLUtil::XMLElemFinder</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000086"></a>Current implementation seeks an exact name match (including case); expand so that clients can search for elements using a regular expression. </p>
-<p class="interdd"><a class="anchor" id="_todo000087"></a>Current implementation seeks an exact name match (including case); expand so that clients can search for elements using a regular expression. </p>
-<p class="enddd"><a class="anchor" id="_todo000089"></a>Current implementation seeks an exact name match (including case); expand so that clients can search for elements using a regular expression.  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000085"></a>Current implementation seeks an exact name match (including case); expand so that clients can search for elements using a regular expression. </p>
+<p class="interdd"><a class="anchor" id="_todo000086"></a>Current implementation seeks an exact name match (including case); expand so that clients can search for elements using a regular expression. </p>
+<p class="enddd"><a class="anchor" id="_todo000088"></a>Current implementation seeks an exact name match (including case); expand so that clients can search for elements using a regular expression.  </p>
 </dd>
 <dt>Member <a class="el" href="class_x_m_l_util_1_1_x_m_l_handler.html#a23f1b29575653352f8f79f435bbe9141">XMLUtil::XMLHandler::~XMLHandler</a>  (void)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000088"></a>POSSIBLE MEMORY LEAK: root_ </p>
-<p class="enddd"><a class="anchor" id="_todo000090"></a>POSSIBLE MEMORY LEAK: root_ </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000087"></a>POSSIBLE MEMORY LEAK: root_ </p>
+<p class="enddd"><a class="anchor" id="_todo000089"></a>POSSIBLE MEMORY LEAK: root_ </p>
 </dd>
 </dl>
 </div></div><!-- contents -->

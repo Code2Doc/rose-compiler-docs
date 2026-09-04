@@ -499,7 +499,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the function declaration associated with a function reference expression. </p>
-<p>This function acts as a wrapper to extract the underlying declaration from a function reference expression. It delegates the core logic to the overloaded version of <picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$ keyDecl $" src="form_0.png" width="45" height="13"/></picture> that operates directly on a declaration object.</p>
+<p>This function acts as a wrapper to extract the underlying declaration from a function reference expression. It delegates the core logic to the overloaded version of <picture><source srcset="form_7_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaInl" alt="$ keyDecl $" src="form_7.png" width="45" height="13"/></picture> that operates directly on a declaration object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function reference expression from which the declaration is to be retrieved.</td></tr>
@@ -768,7 +768,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Traverses and returns a type after applying a skipping mechanism based on a specified mode. </p>
-<p>This function utilizes the dispatch mechanism of the SG framework to apply a TypeSkipper visitor to the provided <a class="el" href="class_sg_type.html">SgType</a>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> skipping behavior is controlled by the mode parameter, which determines how the type hierarchy or attributes are traversed or bypassed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> utility to execute the TypeSkipMode logic.</p>
+<p>This function utilizes the dispatch mechanism of the SG framework to apply a TypeSkipper visitor to the provided <a class="el" href="class_sg_type.html">SgType</a>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> skipping behavior is controlled by the mode parameter, which determines how the type hierarchy or attributes are traversed or bypassed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> utility to execute the TypeSkipMode logic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ty</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input <a class="el" href="class_sg_type.html">SgType</a> reference that is to be processed by the skipper. </td></tr>

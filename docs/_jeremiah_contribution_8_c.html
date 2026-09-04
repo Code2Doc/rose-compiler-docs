@@ -225,7 +225,18 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves all variables initialized within the immediate scope of a given statement. </p>
-<p>Find the variables directly in a scope, excluding those in nested scopes. This is done by searching the scope directly, so it should only be used inside a function. It might be worth fixing this up to work in all contexts. </p>
+<p>Find the variables directly in a scope, excluding those in nested scopes. This is done by searching the scope directly, so it should only be used inside a function. It might be worth fixing this up to work in all contexts.</p>
+<p>This function performs a shallow inspection of the successors of the provided SgStatement. Unlike a standard tree traversal, this implementation is designed to avoid entering nested inner scope statements, focusing only on declarations and initializations that occur directly within the current scope level. It iterates through the traversal successor container in reverse order to collect variables from SgVariableDeclaration nodes and recursively processes SgForInitStatement nodes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sc</td><td><a class="el" href="class_a.html">A</a> pointer to the SgStatement whose immediate scope is being inspected.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> vector of SgInitializedName pointers representing the variables found directly within the scope of the provided statement.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>sc must not be a null pointer. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains all variables declared in the immediate successors of sc, including those from for-loop initialization statements.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses a reverse iteration over the successor container, which affects the order in which variables are inserted into the result vector. </dd></dl>
 
 </div>
 </div>

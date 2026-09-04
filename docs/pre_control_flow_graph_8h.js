@@ -14,7 +14,7 @@ var pre_control_flow_graph_8h =
     [ "legacy::PRE::Vertex", "namespacelegacy_1_1_p_r_e.html#a59ac0a528948ebd8128661b7c458738c", null ],
     [ "legacy::PRE::VertexIter", "namespacelegacy_1_1_p_r_e.html#a69ad5f27d57bd967510ecb2b694df404", null ],
     [ "legacy::PRE::Vertices", "namespacelegacy_1_1_p_r_e.html#a36431707646f229381470d1c9c3c3a5d", null ],
-    [ "legacy::PRE::addEdgeInsertionPoints", "namespacelegacy_1_1_p_r_e.html#a15f3cf18a952052c8212e5b45dd4f1ed", null ],
+    [ "legacy::PRE::addEdgeInsertionPoints", "namespacelegacy_1_1_p_r_e.html#aa2ac9f1a321bfc433abcf11f35597e89", null ],
     [ "legacy::PRE::makeCfg", "namespacelegacy_1_1_p_r_e.html#a9d8bb76781229582486f0139e20ad85b", null ],
     [ "legacy::PRE::printCfgAsDot", "namespacelegacy_1_1_p_r_e.html#ab6130a87f44f80ffff8d681e348d3462", null ]
 ];

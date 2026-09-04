@@ -96,7 +96,7 @@ $(function(){initNavTree('clang-frontend__8cpp_8dox.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a209d82290ccb019c31486c322b918daa" id="r_a209d82290ccb019c31486c322b918daa"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a209d82290ccb019c31486c322b918daa">roseInstallPrefix</a> (std::string &amp;result)</td></tr>
-<tr class="memdesc:a209d82290ccb019c31486c322b918daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the installation prefix of the ROSE environment.  <br /></td></tr>
+<tr class="memdesc:a209d82290ccb019c31486c322b918daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if we can get an installation prefix of rose based on the current running translator.  <br /></td></tr>
 <tr class="memitem:a9419166a12bb09d3391a285c9c6b9d9c" id="r_a9419166a12bb09d3391a285c9c6b9d9c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9419166a12bb09d3391a285c9c6b9d9c">clang_main</a> (int argc, char **argv, SgSourceFile &amp;sageFile)</td></tr>
 <tr class="memdesc:a9419166a12bb09d3391a285c9c6b9d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orchestrates the translation of Clang AST to a Sage AST.  <br /></td></tr>
 <tr class="memitem:a227a234a5291ee581b7aa62046009e97" id="r_a227a234a5291ee581b7aa62046009e97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a227a234a5291ee581b7aa62046009e97">finishSageAST</a> (<a class="el" href="class_clang_to_sage_translator.html">ClangToSageTranslator</a> &amp;translator)</td></tr>
@@ -207,74 +207,7 @@ Objective-C support is explicitly not available and will cause the function to a
       </table>
 </div><div class="memdoc">
 
-<p>Determines the installation prefix of the ROSE environment. </p>
-<p>Determines the installation prefix of the ROSE installation tree.</p>
-<p>This function attempts to identify whether the ROSE application is running from a build tree or an installation tree. It uses several strategies to resolve the installation prefix:</p><ol type="1">
-<li>If ifdef HAVE_DLADDR is defined, it uses dladdr() to inspect the memory address of the function itself to find the shared library path. It then parses the directory structure to identify the prefix.</li>
-<li>If ifdef USE_CMAKE is defined, it checks for the existence of a CMakeCache.txt file within the identified prefix directory to distinguish between build and install trees.</li>
-<li>It checks for specific directory names (like ".libs" or "src") to identify build trees.</li>
-<li>As a fallback, it checks the ROSE_IN_BUILD_TREE environment variable.</li>
-<li>If all else fails, it defaults to using the ROSE_AUTOMAKE_PREFIZ.</li>
-</ol>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation includes specific handling for ifdef <b>INSURE</b> to disable memory checking during certain pointer operations that might trigger false positives in tools like Insure++.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td><a class="el" href="class_a.html">A</a> reference to a std::string where the determined installation prefix will be stored if the function determines an installation tree is being used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the function identifies an installation tree and provides a prefix; false if it identifies a build tree or cannot determine the prefix via dladdr.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> environment must be properly configured with either ROSE_AUTOMAKE_PREFIX or the appropriate environment variables if dladdr is unavailable. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> value of the result parameter is updated with the detected prefix if the function returns true.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on platform-specific features like dladdr() and POSIX functions like dirname() and basename(). </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic for detecting the build tree via directory names (".libs" or "src") is specifically tailored for systems using libtool or specific CMake layouts.</dd></dl>
-<p>This function attempts to dynamically identify whether the ROSE library is running from a build directory or an installation directory. It uses the <span class="tt">dladdr()</span> function (if available via ifdef HAVE_DLADDR) to inspect the memory address of the function itself to find the library path. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic parses the directory structure to distinguish between build trees (e.g., containing ".libs" or "src") and installation trees. If ifdef USE_CMAKE is defined, it specifically checks for the existence of a <span class="tt">CMakeCache.txt</span> file in the library directory to differentiate between build and install states. If dynamic inspection fails or is unsupported, it falls back to checking the <span class="tt">ROSE_IN_BUILD_TREE</span> environment variable and defaults to the <span class="tt"><a class="el" href="rose__paths_8h.html#acc13416a937b3fe6dc45a3a5d13ebf3e">ROSE_AUTOMAKE_PREFIX</a></span> macro.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td><a class="el" href="class_a.html">A</a> reference to a std::string where the determined installation prefix will be stored.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the function identifies an installation prefix (not in a build tree), false if it identifies the current execution is within a build tree or if the prefix cannot be determined via dynamic inspection.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="rose__paths_8h.html#acc13416a937b3fe6dc45a3a5d13ebf3e">ROSE_AUTOMAKE_PREFIX</a></span> macro must be defined for the fallback mechanism. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">result</span> parameter is populated with the identified prefix string if an installation tree is detected.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function contains specific logic to handle memory monitoring tools like Insure++. It uses ifdef <b>INSURE</b> to temporarily disable checking when accessing memory regions that might be flagged as "READ_WILD" by the tool. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on POSIX-standard functions such as <span class="tt">dirname</span>, <span class="tt">basename</span>, and <span class="tt">strdup</span>. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>If <span class="tt">dladdr()</span> fails or is unavailable, the function may emit a warning to <span class="tt">cerr</span> regarding the use of a hard-wired prefix.</dd></dl>
-<p>This function attempts to identify whether the ROSE software is running from a build tree or an installation tree. It uses the <span class="tt">dladdr()</span> function to inspect the memory address of the current function to find the path of the loaded library. By analyzing the directory structure (e.g., checking for <span class="tt">.libs</span>, <span class="tt">src</span>, or <span class="tt">lib</span> directories) and searching for <span class="tt">CMakeCache.txt</span>, the function distinguishes between a build environment and a deployed installation.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles various build systems including Autotools and CMake. It specifically accounts for the directory structure differences between <span class="tt">libtool</span>-based builds (which use <span class="tt">.libs</span>) and CMake-based builds. If <span class="tt">dladdr()</span> is unavailable or fails, the function falls back to checking the <span class="tt">ROSE_IN_BUILD_TREE</span> environment variable and defaults to the <span class="tt"><a class="el" href="rose__paths_8h.html#acc13416a937b3fe6dc45a3a5d13ebf3e">ROSE_AUTOMAKE_PREFIX</a></span> macro.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td><a class="el" href="class_a.html">A</a> reference to a std::string where the identified installation prefix will be stored if an installation tree is detected.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the function identifies an installation tree and successfully retrieves a prefix; false if it identifies a build tree or if the prefix cannot be determined via library inspection.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> macro <span class="tt">HAVE_DLADDR</span> should be defined for the primary inspection logic to be active. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">result</span> string is populated with the installation prefix if the function returns true, otherwise it may be populated with <span class="tt"><a class="el" href="rose__paths_8h.html#acc13416a937b3fe6dc45a3a5d13ebf3e">ROSE_AUTOMAKE_PREFIX</a></span> or left unchanged depending on the fallback path.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function contains logic to temporarily disable <span class="tt">if</span> <span class="tt">ifdef</span> <span class="tt">__INSURE__</span> checking to prevent false positives during memory access validation of library-resident pointers. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt"><a class="el" href="rose__paths_8h.html#acc13416a937b3fe6dc45a3a5d13ebf3e">ROSE_AUTOMAKE_PREFIX</a></span> macro being defined during the build process. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>If <span class="tt">dladdr()</span> fails, a warning is emitted to <span class="tt">cerr</span> indicating that a hard-wired prefix is being used, which may impact the relocatability of the installation.</dd></dl>
-<p>This function attempts to dynamically locate the installation prefix by inspecting the memory address of the function itself using <span class="tt">dladdr()</span>. It analyzes the directory structure of the loaded library to distinguish between a build tree and an installation tree. If <span class="tt">dladdr()</span> is unavailable or fails, the function falls back to checking the <span class="tt">ROSE_IN_BUILD_TREE</span> environment variable and defaults to the <span class="tt"><a class="el" href="rose__paths_8h.html#acc13416a937b3fe6dc45a3a5d13ebf3e">ROSE_AUTOMAKE_PREFIX</a></span> macro.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles various build systems, including logic for CMake (detecting <span class="tt">CMakeCache.txt</span>) and legacy Automake (checking for <span class="tt">.libs</span> or <span class="tt">src</span> directory names). It also includes specific handling for memory monitoring tools like Insure++ by temporarily disabling checks during pointer manipulation of library-resident strings.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td><a class="el" href="class_a.html">A</a> reference to a std::string where the determined installation prefix will be stored.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the function successfully identifies an installation prefix (not a build tree); false if it identifies a build tree or if the prefix cannot be determined via dynamic inspection.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> macro <span class="tt">HAVE_DLADDR</span> should be defined for the dynamic inspection logic to be active. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">result</span> string is populated with either the detected installation prefix or the value of <span class="tt">ROSE_AUTOMAKE_PREFIZ</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt">dladdr()</span>, <span class="tt">dirname()</span>, <span class="tt">basename()</span>, and <span class="tt">strdup()</span>. Manual memory management is performed on strings allocated via <span class="tt">strdup()</span>. </dd>
-<dd>
-If <span class="tt">ifdef% USE_CMAKE</span> is active, the function relies on the presence of <span class="tt">CMakeCache.txt</span> in the library's directory to decide the prefix. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may emit a warning to <span class="tt">cerr</span> if it falls back to a hard-wired prefix, indicating that the installation may not be properly relocatable. </dd>
-<dd>
-When using Insure++, <span class="tt">_Insure_checking_enable(0)</span> is called to prevent false positives during the reading of memory in the library's address space.</dd></dl>
+<p>Check if we can get an installation prefix of rose based on the current running translator. </p>
 <p>Determines the installation prefix of the ROSE environment. </p>
 
 </div>

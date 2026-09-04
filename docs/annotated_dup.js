@@ -800,19 +800,48 @@ var annotated_dup =
       [ "FunctionReadWriteRecord_hash", "struct_read_write_sets_1_1_function_read_write_record__hash.html", "struct_read_write_sets_1_1_function_read_write_record__hash" ]
     ] ],
     [ "Rose", "namespace_rose.html", [
+      [ "Frontend", "namespace_rose_1_1_frontend.html", [
+        [ "Java", "namespace_rose_1_1_frontend_1_1_java.html", [
+          [ "Ecj", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html", [
+            [ "JvmT", "struct_rose_1_1_frontend_1_1_java_1_1_ecj_1_1_jvm_t.html", "struct_rose_1_1_frontend_1_1_java_1_1_ecj_1_1_jvm_t" ]
+          ] ]
+        ] ],
+        [ "Fortran", "namespace_rose_1_1_frontend_1_1_fortran.html", [
+          [ "Ofp", "namespace_rose_1_1_frontend_1_1_fortran_1_1_ofp.html", [
+            [ "JvmT", "struct_rose_1_1_frontend_1_1_fortran_1_1_ofp_1_1_jvm_t.html", "struct_rose_1_1_frontend_1_1_fortran_1_1_ofp_1_1_jvm_t" ],
+            [ "string", "class_rose_1_1_frontend_1_1_fortran_1_1_ofp_1_1string.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "builder", "namespace_rose_1_1builder.html", [
+        [ "BuildExprVisitor", "class_rose_1_1builder_1_1_build_expr_visitor.html", "class_rose_1_1builder_1_1_build_expr_visitor" ],
+        [ "BuildVisitor", "class_rose_1_1builder_1_1_build_visitor.html", "class_rose_1_1builder_1_1_build_visitor" ],
+        [ "PosInfo", "class_rose_1_1builder_1_1_pos_info.html", "class_rose_1_1builder_1_1_pos_info" ],
+        [ "SourcePosition", "struct_rose_1_1builder_1_1_source_position.html", "struct_rose_1_1builder_1_1_source_position" ],
+        [ "TraversalContext", "struct_rose_1_1builder_1_1_traversal_context.html", "struct_rose_1_1builder_1_1_traversal_context" ],
+        [ "SageTreeBuilderNull", "class_rose_1_1builder_1_1_sage_tree_builder_null.html", "class_rose_1_1builder_1_1_sage_tree_builder_null" ],
+        [ "SageTreeBuilder", "class_rose_1_1builder_1_1_sage_tree_builder.html", "class_rose_1_1builder_1_1_sage_tree_builder" ],
+        [ "Token", "class_rose_1_1builder_1_1_token.html", "class_rose_1_1builder_1_1_token" ],
+        [ "TokenStream", "class_rose_1_1builder_1_1_token_stream.html", "class_rose_1_1builder_1_1_token_stream" ]
+      ] ],
       [ "AST", "namespace_rose_1_1_a_s_t.html", [
+        [ "utils", "namespace_rose_1_1_a_s_t_1_1utils.html", [
+          [ "NodeList", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list.html", null ],
+          [ "NodeList&lt; N, Ns... &gt;", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_n_00_01_ns_8_8_8_01_4.html", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_n_00_01_ns_8_8_8_01_4" ],
+          [ "NodeList&lt; Node &gt;", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_node_01_4.html", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_node_01_4" ]
+        ] ],
         [ "Checker", "namespace_rose_1_1_a_s_t_1_1_checker.html", [
           [ "EdgeIntegrityTraversal", "struct_rose_1_1_a_s_t_1_1_checker_1_1_edge_integrity_traversal.html", "struct_rose_1_1_a_s_t_1_1_checker_1_1_edge_integrity_traversal" ]
-        ] ],
-        [ "cmdline", "namespace_rose_1_1_a_s_t_1_1cmdline.html", [
-          [ "__when_T", "struct_rose_1_1_a_s_t_1_1cmdline_1_1____when___t.html", "struct_rose_1_1_a_s_t_1_1cmdline_1_1____when___t" ],
-          [ "graphviz_t", "struct_rose_1_1_a_s_t_1_1cmdline_1_1graphviz__t.html", "struct_rose_1_1_a_s_t_1_1cmdline_1_1graphviz__t" ],
-          [ "checker_t", "struct_rose_1_1_a_s_t_1_1cmdline_1_1checker__t.html", "struct_rose_1_1_a_s_t_1_1cmdline_1_1checker__t" ]
         ] ],
         [ "Defects", "namespace_rose_1_1_a_s_t_1_1_defects.html", [
           [ "defect_t", "struct_rose_1_1_a_s_t_1_1_defects_1_1defect__t.html", null ],
           [ "defect_t&lt; Kind::any &gt;", "struct_rose_1_1_a_s_t_1_1_defects_1_1defect__t_3_01_kind_1_1any_01_4.html", "struct_rose_1_1_a_s_t_1_1_defects_1_1defect__t_3_01_kind_1_1any_01_4" ],
           [ "defect_t&lt; Kind::integrity_edges &gt;", "struct_rose_1_1_a_s_t_1_1_defects_1_1defect__t_3_01_kind_1_1integrity__edges_01_4.html", "struct_rose_1_1_a_s_t_1_1_defects_1_1defect__t_3_01_kind_1_1integrity__edges_01_4" ]
+        ] ],
+        [ "cmdline", "namespace_rose_1_1_a_s_t_1_1cmdline.html", [
+          [ "__when_T", "struct_rose_1_1_a_s_t_1_1cmdline_1_1____when___t.html", "struct_rose_1_1_a_s_t_1_1cmdline_1_1____when___t" ],
+          [ "graphviz_t", "struct_rose_1_1_a_s_t_1_1cmdline_1_1graphviz__t.html", "struct_rose_1_1_a_s_t_1_1cmdline_1_1graphviz__t" ],
+          [ "checker_t", "struct_rose_1_1_a_s_t_1_1cmdline_1_1checker__t.html", "struct_rose_1_1_a_s_t_1_1cmdline_1_1checker__t" ]
         ] ],
         [ "IO", "namespace_rose_1_1_a_s_t_1_1_i_o.html", [
           [ "DeleteAllNode", "struct_rose_1_1_a_s_t_1_1_i_o_1_1_delete_all_node.html", "struct_rose_1_1_a_s_t_1_1_i_o_1_1_delete_all_node" ],
@@ -839,23 +868,16 @@ var annotated_dup =
           [ "EdgeTraversal", "struct_rose_1_1_a_s_t_1_1_utility_1_1_edge_traversal.html", "struct_rose_1_1_a_s_t_1_1_utility_1_1_edge_traversal" ],
           [ "EdgeReplacer", "struct_rose_1_1_a_s_t_1_1_utility_1_1_edge_replacer.html", "struct_rose_1_1_a_s_t_1_1_utility_1_1_edge_replacer" ]
         ] ],
-        [ "utils", "namespace_rose_1_1_a_s_t_1_1utils.html", [
-          [ "NodeList", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list.html", null ],
-          [ "NodeList&lt; N, Ns... &gt;", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_n_00_01_ns_8_8_8_01_4.html", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_n_00_01_ns_8_8_8_01_4" ],
-          [ "NodeList&lt; Node &gt;", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_node_01_4.html", "struct_rose_1_1_a_s_t_1_1utils_1_1_node_list_3_01_node_01_4" ]
-        ] ],
         [ "NodeId", "class_rose_1_1_a_s_t_1_1_node_id.html", "class_rose_1_1_a_s_t_1_1_node_id" ]
       ] ],
-      [ "builder", "namespace_rose_1_1builder.html", [
-        [ "BuildExprVisitor", "class_rose_1_1builder_1_1_build_expr_visitor.html", "class_rose_1_1builder_1_1_build_expr_visitor" ],
-        [ "BuildVisitor", "class_rose_1_1builder_1_1_build_visitor.html", "class_rose_1_1builder_1_1_build_visitor" ],
-        [ "PosInfo", "class_rose_1_1builder_1_1_pos_info.html", "class_rose_1_1builder_1_1_pos_info" ],
-        [ "SourcePosition", "struct_rose_1_1builder_1_1_source_position.html", "struct_rose_1_1builder_1_1_source_position" ],
-        [ "TraversalContext", "struct_rose_1_1builder_1_1_traversal_context.html", "struct_rose_1_1builder_1_1_traversal_context" ],
-        [ "SageTreeBuilderNull", "class_rose_1_1builder_1_1_sage_tree_builder_null.html", "class_rose_1_1builder_1_1_sage_tree_builder_null" ],
-        [ "SageTreeBuilder", "class_rose_1_1builder_1_1_sage_tree_builder.html", "class_rose_1_1builder_1_1_sage_tree_builder" ],
-        [ "Token", "class_rose_1_1builder_1_1_token.html", "class_rose_1_1builder_1_1_token" ],
-        [ "TokenStream", "class_rose_1_1builder_1_1_token_stream.html", "class_rose_1_1builder_1_1_token_stream" ]
+      [ "MemPool", "namespace_rose_1_1_mem_pool.html", [
+        [ "CSVDump", "struct_rose_1_1_mem_pool_1_1_c_s_v_dump.html", "struct_rose_1_1_mem_pool_1_1_c_s_v_dump" ],
+        [ "DumpPoolInfo", "struct_rose_1_1_mem_pool_1_1_dump_pool_info.html", "struct_rose_1_1_mem_pool_1_1_dump_pool_info" ]
+      ] ],
+      [ "Cmdline", "namespace_rose_1_1_cmdline.html", [
+        [ "Ada", "namespace_rose_1_1_cmdline_1_1_ada.html", [
+          [ "CmdlineSettings", "struct_rose_1_1_cmdline_1_1_ada_1_1_cmdline_settings.html", "struct_rose_1_1_cmdline_1_1_ada_1_1_cmdline_settings" ]
+        ] ]
       ] ],
       [ "Builder", "namespace_rose_1_1_builder.html", [
         [ "Templates", "namespace_rose_1_1_builder_1_1_templates.html", [
@@ -864,13 +886,20 @@ var annotated_dup =
           [ "TemplateArgumentList&lt; T, Args... &gt;", "struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list_3_01_t_00_01_args_8_8_8_01_4.html", "struct_rose_1_1_builder_1_1_templates_1_1_template_argument_list_3_01_t_00_01_args_8_8_8_01_4" ]
         ] ]
       ] ],
-      [ "Callbacks", "namespace_rose_1_1_callbacks.html", [
-        [ "List", "class_rose_1_1_callbacks_1_1_list.html", "class_rose_1_1_callbacks_1_1_list" ]
-      ] ],
-      [ "Cmdline", "namespace_rose_1_1_cmdline.html", [
-        [ "Ada", "namespace_rose_1_1_cmdline_1_1_ada.html", [
-          [ "CmdlineSettings", "struct_rose_1_1_cmdline_1_1_ada_1_1_cmdline_settings.html", "struct_rose_1_1_cmdline_1_1_ada_1_1_cmdline_settings" ]
-        ] ]
+      [ "EditDistance", "namespace_rose_1_1_edit_distance.html", [
+        [ "LinearEditDistance", "namespace_rose_1_1_edit_distance_1_1_linear_edit_distance.html", [
+          [ "Node", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node.html", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node" ],
+          [ "NodeSelector", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node_selector.html", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node_selector" ],
+          [ "Analysis", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis.html", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis" ]
+        ] ],
+        [ "TreeEditDistance", "namespace_rose_1_1_edit_distance_1_1_tree_edit_distance.html", [
+          [ "SequenceGenerationTraversal", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_sequence_generation_traversal.html", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_sequence_generation_traversal" ],
+          [ "Coord2d", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_coord2d.html", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_coord2d" ],
+          [ "Edit", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_edit.html", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_edit" ],
+          [ "SubstitutionPredicate", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_substitution_predicate.html", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_substitution_predicate" ],
+          [ "Analysis", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis" ]
+        ] ],
+        [ "LevenshteinStack", "struct_rose_1_1_edit_distance_1_1_levenshtein_stack.html", "struct_rose_1_1_edit_distance_1_1_levenshtein_stack" ]
       ] ],
       [ "CodeGen", "namespace_rose_1_1_code_gen.html", [
         [ "API", "class_rose_1_1_code_gen_1_1_a_p_i.html", "class_rose_1_1_code_gen_1_1_a_p_i" ],
@@ -892,12 +921,6 @@ var annotated_dup =
         [ "HSV", "class_rose_1_1_color_1_1_h_s_v.html", "class_rose_1_1_color_1_1_h_s_v" ],
         [ "Gradient", "class_rose_1_1_color_1_1_gradient.html", "class_rose_1_1_color_1_1_gradient" ]
       ] ],
-      [ "Combinatorics", "namespace_rose_1_1_combinatorics.html", [
-        [ "Hasher", "class_rose_1_1_combinatorics_1_1_hasher.html", "class_rose_1_1_combinatorics_1_1_hasher" ],
-        [ "HasherGcrypt", "class_rose_1_1_combinatorics_1_1_hasher_gcrypt.html", "class_rose_1_1_combinatorics_1_1_hasher_gcrypt" ],
-        [ "HasherFnv", "class_rose_1_1_combinatorics_1_1_hasher_fnv.html", "class_rose_1_1_combinatorics_1_1_hasher_fnv" ],
-        [ "HasherSha256Builtin", "class_rose_1_1_combinatorics_1_1_hasher_sha256_builtin.html", "class_rose_1_1_combinatorics_1_1_hasher_sha256_builtin" ]
-      ] ],
       [ "CommandLine", "namespace_rose_1_1_command_line.html", [
         [ "DurationParser", "class_rose_1_1_command_line_1_1_duration_parser.html", "class_rose_1_1_command_line_1_1_duration_parser" ],
         [ "IntervalParser", "class_rose_1_1_command_line_1_1_interval_parser.html", "class_rose_1_1_command_line_1_1_interval_parser" ],
@@ -913,40 +936,8 @@ var annotated_dup =
         [ "Stream", "class_rose_1_1_diagnostics_1_1_stream.html", "class_rose_1_1_diagnostics_1_1_stream" ],
         [ "Facility", "class_rose_1_1_diagnostics_1_1_facility.html", "class_rose_1_1_diagnostics_1_1_facility" ]
       ] ],
-      [ "EditDistance", "namespace_rose_1_1_edit_distance.html", [
-        [ "LinearEditDistance", "namespace_rose_1_1_edit_distance_1_1_linear_edit_distance.html", [
-          [ "Node", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node.html", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node" ],
-          [ "NodeSelector", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node_selector.html", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_node_selector" ],
-          [ "Analysis", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis.html", "class_rose_1_1_edit_distance_1_1_linear_edit_distance_1_1_analysis" ]
-        ] ],
-        [ "TreeEditDistance", "namespace_rose_1_1_edit_distance_1_1_tree_edit_distance.html", [
-          [ "SequenceGenerationTraversal", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_sequence_generation_traversal.html", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_sequence_generation_traversal" ],
-          [ "Coord2d", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_coord2d.html", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_coord2d" ],
-          [ "Edit", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_edit.html", "struct_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_edit" ],
-          [ "SubstitutionPredicate", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_substitution_predicate.html", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_substitution_predicate" ],
-          [ "Analysis", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis.html", "class_rose_1_1_edit_distance_1_1_tree_edit_distance_1_1_analysis" ]
-        ] ],
-        [ "LevenshteinStack", "struct_rose_1_1_edit_distance_1_1_levenshtein_stack.html", "struct_rose_1_1_edit_distance_1_1_levenshtein_stack" ]
-      ] ],
       [ "FileSystem", "namespace_rose_1_1_file_system.html", [
         [ "baseNameMatches", "class_rose_1_1_file_system_1_1base_name_matches.html", "class_rose_1_1_file_system_1_1base_name_matches" ]
-      ] ],
-      [ "Frontend", "namespace_rose_1_1_frontend.html", [
-        [ "Fortran", "namespace_rose_1_1_frontend_1_1_fortran.html", [
-          [ "Ofp", "namespace_rose_1_1_frontend_1_1_fortran_1_1_ofp.html", [
-            [ "JvmT", "struct_rose_1_1_frontend_1_1_fortran_1_1_ofp_1_1_jvm_t.html", "struct_rose_1_1_frontend_1_1_fortran_1_1_ofp_1_1_jvm_t" ],
-            [ "string", "class_rose_1_1_frontend_1_1_fortran_1_1_ofp_1_1string.html", null ]
-          ] ]
-        ] ],
-        [ "Java", "namespace_rose_1_1_frontend_1_1_java.html", [
-          [ "Ecj", "namespace_rose_1_1_frontend_1_1_java_1_1_ecj.html", [
-            [ "JvmT", "struct_rose_1_1_frontend_1_1_java_1_1_ecj_1_1_jvm_t.html", "struct_rose_1_1_frontend_1_1_java_1_1_ecj_1_1_jvm_t" ]
-          ] ]
-        ] ]
-      ] ],
-      [ "MemPool", "namespace_rose_1_1_mem_pool.html", [
-        [ "CSVDump", "struct_rose_1_1_mem_pool_1_1_c_s_v_dump.html", "struct_rose_1_1_mem_pool_1_1_c_s_v_dump" ],
-        [ "DumpPoolInfo", "struct_rose_1_1_mem_pool_1_1_dump_pool_info.html", "struct_rose_1_1_mem_pool_1_1_dump_pool_info" ]
       ] ],
       [ "metaprog", "namespace_rose_1_1metaprog.html", [
         [ "details", "namespace_rose_1_1metaprog_1_1details.html", [
@@ -984,6 +975,11 @@ var annotated_dup =
         [ "StringWithLineNumber", "struct_rose_1_1_string_utility_1_1_string_with_line_number.html", "struct_rose_1_1_string_utility_1_1_string_with_line_number" ]
       ] ],
       [ "Traits", "namespace_rose_1_1_traits.html", [
+        [ "generated", "namespace_rose_1_1_traits_1_1generated.html", [
+          [ "describe_node_t", "struct_rose_1_1_traits_1_1generated_1_1describe__node__t.html", "struct_rose_1_1_traits_1_1generated_1_1describe__node__t" ],
+          [ "describe_field_t", "struct_rose_1_1_traits_1_1generated_1_1describe__field__t.html", "struct_rose_1_1_traits_1_1generated_1_1describe__field__t" ],
+          [ "node_from_variant_t", "struct_rose_1_1_traits_1_1generated_1_1node__from__variant__t.html", "struct_rose_1_1_traits_1_1generated_1_1node__from__variant__t" ]
+        ] ],
         [ "details", "namespace_rose_1_1_traits_1_1details.html", [
           [ "transcribe_field_desc_t", "struct_rose_1_1_traits_1_1details_1_1transcribe__field__desc__t.html", "struct_rose_1_1_traits_1_1details_1_1transcribe__field__desc__t" ],
           [ "check_iterable_t", "struct_rose_1_1_traits_1_1details_1_1check__iterable__t.html", "struct_rose_1_1_traits_1_1details_1_1check__iterable__t" ],
@@ -991,11 +987,6 @@ var annotated_dup =
           [ "inspect_field_t", "struct_rose_1_1_traits_1_1details_1_1inspect__field__t.html", null ],
           [ "inspect_field_t&lt; T, false &gt;", "struct_rose_1_1_traits_1_1details_1_1inspect__field__t_3_01_t_00_01false_01_4.html", "struct_rose_1_1_traits_1_1details_1_1inspect__field__t_3_01_t_00_01false_01_4" ],
           [ "inspect_field_t&lt; T, true &gt;", "struct_rose_1_1_traits_1_1details_1_1inspect__field__t_3_01_t_00_01true_01_4.html", "struct_rose_1_1_traits_1_1details_1_1inspect__field__t_3_01_t_00_01true_01_4" ]
-        ] ],
-        [ "generated", "namespace_rose_1_1_traits_1_1generated.html", [
-          [ "describe_node_t", "struct_rose_1_1_traits_1_1generated_1_1describe__node__t.html", "struct_rose_1_1_traits_1_1generated_1_1describe__node__t" ],
-          [ "describe_field_t", "struct_rose_1_1_traits_1_1generated_1_1describe__field__t.html", "struct_rose_1_1_traits_1_1generated_1_1describe__field__t" ],
-          [ "node_from_variant_t", "struct_rose_1_1_traits_1_1generated_1_1node__from__variant__t.html", "struct_rose_1_1_traits_1_1generated_1_1node__from__variant__t" ]
         ] ],
         [ "list_base_classes_details", "namespace_rose_1_1_traits_1_1list__base__classes__details.html", [
           [ "list_base_classes_t", "struct_rose_1_1_traits_1_1list__base__classes__details_1_1list__base__classes__t.html", "struct_rose_1_1_traits_1_1list__base__classes__details_1_1list__base__classes__t" ],
@@ -1031,6 +1022,15 @@ var annotated_dup =
         [ "OperationException", "class_rose_1_1_yaml_1_1_operation_exception.html", "class_rose_1_1_yaml_1_1_operation_exception" ],
         [ "ParsingException", "class_rose_1_1_yaml_1_1_parsing_exception.html", "class_rose_1_1_yaml_1_1_parsing_exception" ],
         [ "SerializeConfig", "struct_rose_1_1_yaml_1_1_serialize_config.html", "struct_rose_1_1_yaml_1_1_serialize_config" ]
+      ] ],
+      [ "Callbacks", "namespace_rose_1_1_callbacks.html", [
+        [ "List", "class_rose_1_1_callbacks_1_1_list.html", "class_rose_1_1_callbacks_1_1_list" ]
+      ] ],
+      [ "Combinatorics", "namespace_rose_1_1_combinatorics.html", [
+        [ "Hasher", "class_rose_1_1_combinatorics_1_1_hasher.html", "class_rose_1_1_combinatorics_1_1_hasher" ],
+        [ "HasherGcrypt", "class_rose_1_1_combinatorics_1_1_hasher_gcrypt.html", "class_rose_1_1_combinatorics_1_1_hasher_gcrypt" ],
+        [ "HasherFnv", "class_rose_1_1_combinatorics_1_1_hasher_fnv.html", "class_rose_1_1_combinatorics_1_1_hasher_fnv" ],
+        [ "HasherSha256Builtin", "class_rose_1_1_combinatorics_1_1_hasher_sha256_builtin.html", "class_rose_1_1_combinatorics_1_1_hasher_sha256_builtin" ]
       ] ],
       [ "ModuleBuilder", "class_rose_1_1_module_builder.html", "class_rose_1_1_module_builder" ],
       [ "ModuleBuilderFactory", "class_rose_1_1_module_builder_factory.html", "class_rose_1_1_module_builder_factory" ],
@@ -1201,26 +1201,137 @@ var annotated_dup =
       ] ]
     ] ],
     [ "Sawyer", "namespace_sawyer.html", [
+      [ "Container", "namespace_sawyer_1_1_container.html", [
+        [ "AddressMapImpl", "namespace_sawyer_1_1_container_1_1_address_map_impl.html", [
+          [ "SegmentMergePolicy", "class_sawyer_1_1_container_1_1_address_map_impl_1_1_segment_merge_policy.html", "class_sawyer_1_1_container_1_1_address_map_impl_1_1_segment_merge_policy" ],
+          [ "MatchedConstraints", "struct_sawyer_1_1_container_1_1_address_map_impl_1_1_matched_constraints.html", "struct_sawyer_1_1_container_1_1_address_map_impl_1_1_matched_constraints" ]
+        ] ],
+        [ "BitVectorSupport", "namespace_sawyer_1_1_container_1_1_bit_vector_support.html", [
+          [ "RemoveConst", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const" ],
+          [ "RemoveConst&lt; const T &gt;", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const_3_01const_01_t_01_4.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const_3_01const_01_t_01_4" ],
+          [ "LowToHigh", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_low_to_high.html", null ],
+          [ "HighToLow", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_high_to_low.html", null ],
+          [ "bitsPerWord", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1bits_per_word.html", null ],
+          [ "ClearBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_clear_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_clear_bits" ],
+          [ "SetBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_set_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_set_bits" ],
+          [ "CopyBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_copy_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_copy_bits" ],
+          [ "SwapBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_swap_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_swap_bits" ],
+          [ "EqualTo", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_equal_to.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_equal_to" ],
+          [ "LeastSignificantSetBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_set_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_set_bit" ],
+          [ "LeastSignificantClearBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_clear_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_clear_bit" ],
+          [ "MostSignificantSetBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_set_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_set_bit" ],
+          [ "MostSignificantClearBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_clear_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_clear_bit" ],
+          [ "CountSetBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_set_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_set_bits" ],
+          [ "CountClearBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_clear_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_clear_bits" ],
+          [ "LeastSignificantDifference", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference" ],
+          [ "MostSignificantDifference", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_difference.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_difference" ],
+          [ "InvertBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_invert_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_invert_bits" ],
+          [ "AndBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_and_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_and_bits" ],
+          [ "OrBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_or_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_or_bits" ],
+          [ "XorBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_xor_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_xor_bits" ],
+          [ "Increment", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_increment.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_increment" ],
+          [ "Decrement", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_decrement.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_decrement" ],
+          [ "AddBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_add_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_add_bits" ],
+          [ "CompareBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_compare_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_compare_bits" ],
+          [ "ToBytes", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_bytes.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_bytes" ],
+          [ "ToString", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_string.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_string" ]
+        ] ],
+        [ "Algorithm", "namespace_sawyer_1_1_container_1_1_algorithm.html", [
+          [ "CsiEquivalence", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_equivalence.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_equivalence" ],
+          [ "CsiShowSolution", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_show_solution.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_show_solution" ],
+          [ "CommonSubgraphIsomorphism", "class_sawyer_1_1_container_1_1_algorithm_1_1_common_subgraph_isomorphism.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_common_subgraph_isomorphism" ],
+          [ "FirstIsomorphicSubgraph", "class_sawyer_1_1_container_1_1_algorithm_1_1_first_isomorphic_subgraph.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_first_isomorphic_subgraph" ],
+          [ "MaximumIsomorphicSubgraphs", "class_sawyer_1_1_container_1_1_algorithm_1_1_maximum_isomorphic_subgraphs.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_maximum_isomorphic_subgraphs" ],
+          [ "ForwardTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_forward_traversal_tag.html", null ],
+          [ "ReverseTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_reverse_traversal_tag.html", null ],
+          [ "DepthFirstTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_traversal_tag.html", null ],
+          [ "BreadthFirstTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_traversal_tag.html", null ],
+          [ "GraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_traversal" ],
+          [ "DepthFirstForwardGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_graph_traversal" ],
+          [ "DepthFirstReverseGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_graph_traversal" ],
+          [ "BreadthFirstForwardGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_graph_traversal" ],
+          [ "BreadthFirstReverseGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_graph_traversal" ],
+          [ "GraphVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_vertex_traversal" ],
+          [ "DepthFirstForwardVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_vertex_traversal" ],
+          [ "DepthFirstReverseVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_vertex_traversal" ],
+          [ "BreadthFirstForwardVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_vertex_traversal" ],
+          [ "BreadthFirstReverseVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_vertex_traversal" ],
+          [ "GraphEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_edge_traversal" ],
+          [ "DepthFirstForwardEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_edge_traversal" ],
+          [ "DepthFirstReverseEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_edge_traversal" ],
+          [ "BreadthFirstForwardEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_edge_traversal" ],
+          [ "BreadthFirstReverseEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_edge_traversal" ],
+          [ "IdAccumulator", "class_sawyer_1_1_container_1_1_algorithm_1_1_id_accumulator.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_id_accumulator" ]
+        ] ],
+        [ "TraceDetail", "namespace_sawyer_1_1_container_1_1_trace_detail.html", [
+          [ "MapIndex", "class_sawyer_1_1_container_1_1_trace_detail_1_1_map_index.html", "class_sawyer_1_1_container_1_1_trace_detail_1_1_map_index" ],
+          [ "VectorIndex", "class_sawyer_1_1_container_1_1_trace_detail_1_1_vector_index.html", "class_sawyer_1_1_container_1_1_trace_detail_1_1_vector_index" ]
+        ] ],
+        [ "AddressMapTraits", "struct_sawyer_1_1_container_1_1_address_map_traits.html", "struct_sawyer_1_1_container_1_1_address_map_traits" ],
+        [ "AddressMapTraits&lt; const AddressMap &gt;", "struct_sawyer_1_1_container_1_1_address_map_traits_3_01const_01_address_map_01_4.html", "struct_sawyer_1_1_container_1_1_address_map_traits_3_01const_01_address_map_01_4" ],
+        [ "SegmentPredicate", "class_sawyer_1_1_container_1_1_segment_predicate.html", "class_sawyer_1_1_container_1_1_segment_predicate" ],
+        [ "AddressMapConstraints", "class_sawyer_1_1_container_1_1_address_map_constraints.html", "class_sawyer_1_1_container_1_1_address_map_constraints" ],
+        [ "AddressMap", "class_sawyer_1_1_container_1_1_address_map.html", "class_sawyer_1_1_container_1_1_address_map" ],
+        [ "AddressSegment", "class_sawyer_1_1_container_1_1_address_segment.html", "class_sawyer_1_1_container_1_1_address_segment" ],
+        [ "AllocatingBuffer", "class_sawyer_1_1_container_1_1_allocating_buffer.html", "class_sawyer_1_1_container_1_1_allocating_buffer" ],
+        [ "BiMap", "class_sawyer_1_1_container_1_1_bi_map.html", "class_sawyer_1_1_container_1_1_bi_map" ],
+        [ "BitVector", "class_sawyer_1_1_container_1_1_bit_vector.html", "class_sawyer_1_1_container_1_1_bit_vector" ],
+        [ "Buffer", "class_sawyer_1_1_container_1_1_buffer.html", "class_sawyer_1_1_container_1_1_buffer" ],
+        [ "DenseIntegerSet", "class_sawyer_1_1_container_1_1_dense_integer_set.html", "class_sawyer_1_1_container_1_1_dense_integer_set" ],
+        [ "DistinctList", "class_sawyer_1_1_container_1_1_distinct_list.html", "class_sawyer_1_1_container_1_1_distinct_list" ],
+        [ "GraphVertexNoKey", "class_sawyer_1_1_container_1_1_graph_vertex_no_key.html", "class_sawyer_1_1_container_1_1_graph_vertex_no_key" ],
+        [ "GraphEdgeNoKey", "class_sawyer_1_1_container_1_1_graph_edge_no_key.html", "class_sawyer_1_1_container_1_1_graph_edge_no_key" ],
+        [ "GraphVoidIndex", "class_sawyer_1_1_container_1_1_graph_void_index.html", "class_sawyer_1_1_container_1_1_graph_void_index" ],
+        [ "GraphBimapIndex", "class_sawyer_1_1_container_1_1_graph_bimap_index.html", "class_sawyer_1_1_container_1_1_graph_bimap_index" ],
+        [ "GraphHashIndex", "class_sawyer_1_1_container_1_1_graph_hash_index.html", "class_sawyer_1_1_container_1_1_graph_hash_index" ],
+        [ "GraphIndexTraits", "struct_sawyer_1_1_container_1_1_graph_index_traits.html", "struct_sawyer_1_1_container_1_1_graph_index_traits" ],
+        [ "GraphIndexTraits&lt; GraphVertexNoKey&lt; VertexValue &gt;, ConstVertexIterator &gt;", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_vertex_no_key_3_01_vertex_value_0160580aecaf16d35c2add9fea73fd7727.html", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_vertex_no_key_3_01_vertex_value_0160580aecaf16d35c2add9fea73fd7727" ],
+        [ "GraphIndexTraits&lt; GraphEdgeNoKey&lt; EdgeValue &gt;, ConstEdgeIterator &gt;", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_edge_no_key_3_01_edge_value_01_4_00_01_const_edge_iterator_01_4.html", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_edge_no_key_3_01_edge_value_01_4_00_01_const_edge_iterator_01_4" ],
+        [ "GraphTraits", "struct_sawyer_1_1_container_1_1_graph_traits.html", "struct_sawyer_1_1_container_1_1_graph_traits" ],
+        [ "GraphTraits&lt; const G &gt;", "struct_sawyer_1_1_container_1_1_graph_traits_3_01const_01_g_01_4.html", "struct_sawyer_1_1_container_1_1_graph_traits_3_01const_01_g_01_4" ],
+        [ "Graph", "class_sawyer_1_1_container_1_1_graph.html", "class_sawyer_1_1_container_1_1_graph" ],
+        [ "GraphIteratorBiMap", "class_sawyer_1_1_container_1_1_graph_iterator_bi_map.html", "class_sawyer_1_1_container_1_1_graph_iterator_bi_map" ],
+        [ "GraphIteratorMap", "class_sawyer_1_1_container_1_1_graph_iterator_map.html", "class_sawyer_1_1_container_1_1_graph_iterator_map" ],
+        [ "GraphIteratorSet", "class_sawyer_1_1_container_1_1_graph_iterator_set.html", "class_sawyer_1_1_container_1_1_graph_iterator_set" ],
+        [ "HashMap", "class_sawyer_1_1_container_1_1_hash_map.html", "class_sawyer_1_1_container_1_1_hash_map" ],
+        [ "IndexedListTraits", "struct_sawyer_1_1_container_1_1_indexed_list_traits.html", "struct_sawyer_1_1_container_1_1_indexed_list_traits" ],
+        [ "IndexedListTraits&lt; const T &gt;", "struct_sawyer_1_1_container_1_1_indexed_list_traits_3_01const_01_t_01_4.html", "struct_sawyer_1_1_container_1_1_indexed_list_traits_3_01const_01_t_01_4" ],
+        [ "IndexedList", "class_sawyer_1_1_container_1_1_indexed_list.html", "class_sawyer_1_1_container_1_1_indexed_list" ],
+        [ "Interval", "class_sawyer_1_1_container_1_1_interval.html", "class_sawyer_1_1_container_1_1_interval" ],
+        [ "IntervalMapTraits", "struct_sawyer_1_1_container_1_1_interval_map_traits.html", "struct_sawyer_1_1_container_1_1_interval_map_traits" ],
+        [ "IntervalMapTraits&lt; const IntervalMap &gt;", "struct_sawyer_1_1_container_1_1_interval_map_traits_3_01const_01_interval_map_01_4.html", "struct_sawyer_1_1_container_1_1_interval_map_traits_3_01const_01_interval_map_01_4" ],
+        [ "MergePolicy", "class_sawyer_1_1_container_1_1_merge_policy.html", "class_sawyer_1_1_container_1_1_merge_policy" ],
+        [ "IntervalMap", "class_sawyer_1_1_container_1_1_interval_map.html", "class_sawyer_1_1_container_1_1_interval_map" ],
+        [ "IntervalSet", "class_sawyer_1_1_container_1_1_interval_set.html", "class_sawyer_1_1_container_1_1_interval_set" ],
+        [ "IntervalSetMap", "class_sawyer_1_1_container_1_1_interval_set_map.html", "class_sawyer_1_1_container_1_1_interval_set_map" ],
+        [ "LineVector", "class_sawyer_1_1_container_1_1_line_vector.html", "class_sawyer_1_1_container_1_1_line_vector" ],
+        [ "Map", "class_sawyer_1_1_container_1_1_map.html", "class_sawyer_1_1_container_1_1_map" ],
+        [ "MappedBuffer", "class_sawyer_1_1_container_1_1_mapped_buffer.html", "class_sawyer_1_1_container_1_1_mapped_buffer" ],
+        [ "NullBuffer", "class_sawyer_1_1_container_1_1_null_buffer.html", "class_sawyer_1_1_container_1_1_null_buffer" ],
+        [ "Set", "class_sawyer_1_1_container_1_1_set.html", "class_sawyer_1_1_container_1_1_set" ],
+        [ "Stack", "class_sawyer_1_1_container_1_1_stack.html", "class_sawyer_1_1_container_1_1_stack" ],
+        [ "StaticBuffer", "class_sawyer_1_1_container_1_1_static_buffer.html", "class_sawyer_1_1_container_1_1_static_buffer" ],
+        [ "TraceMapIndexTag", "class_sawyer_1_1_container_1_1_trace_map_index_tag.html", null ],
+        [ "TraceVectorIndexTag", "class_sawyer_1_1_container_1_1_trace_vector_index_tag.html", null ],
+        [ "TraceIndexTraits", "struct_sawyer_1_1_container_1_1_trace_index_traits.html", "struct_sawyer_1_1_container_1_1_trace_index_traits" ],
+        [ "TraceIndexTraits&lt; Label, Value, TraceVectorIndexTag &gt;", "struct_sawyer_1_1_container_1_1_trace_index_traits_3_01_label_00_01_value_00_01_trace_vector_index_tag_01_4.html", "struct_sawyer_1_1_container_1_1_trace_index_traits_3_01_label_00_01_value_00_01_trace_vector_index_tag_01_4" ],
+        [ "Trace", "class_sawyer_1_1_container_1_1_trace.html", "class_sawyer_1_1_container_1_1_trace" ],
+        [ "TrackerSetIndex", "class_sawyer_1_1_container_1_1_tracker_set_index.html", "class_sawyer_1_1_container_1_1_tracker_set_index" ],
+        [ "TrackerVectorIndex", "class_sawyer_1_1_container_1_1_tracker_vector_index.html", "class_sawyer_1_1_container_1_1_tracker_vector_index" ],
+        [ "TrackerUnorderedIndex", "class_sawyer_1_1_container_1_1_tracker_unordered_index.html", "class_sawyer_1_1_container_1_1_tracker_unordered_index" ],
+        [ "TrackerTraits", "struct_sawyer_1_1_container_1_1_tracker_traits.html", "struct_sawyer_1_1_container_1_1_tracker_traits" ],
+        [ "Tracker", "class_sawyer_1_1_container_1_1_tracker.html", "class_sawyer_1_1_container_1_1_tracker" ]
+      ] ],
       [ "Attribute", "namespace_sawyer_1_1_attribute.html", [
         [ "DoesNotExist", "class_sawyer_1_1_attribute_1_1_does_not_exist.html", "class_sawyer_1_1_attribute_1_1_does_not_exist" ],
         [ "AlreadyExists", "class_sawyer_1_1_attribute_1_1_already_exists.html", "class_sawyer_1_1_attribute_1_1_already_exists" ],
         [ "Storage", "class_sawyer_1_1_attribute_1_1_storage.html", "class_sawyer_1_1_attribute_1_1_storage" ]
       ] ],
-      [ "Boost", "namespace_sawyer_1_1_boost.html", [
-        [ "VertexOuterIterator", "class_sawyer_1_1_boost_1_1_vertex_outer_iterator.html", "class_sawyer_1_1_boost_1_1_vertex_outer_iterator" ],
-        [ "ConstVertexOuterIterator", "class_sawyer_1_1_boost_1_1_const_vertex_outer_iterator.html", "class_sawyer_1_1_boost_1_1_const_vertex_outer_iterator" ],
-        [ "EdgeOuterIterator", "class_sawyer_1_1_boost_1_1_edge_outer_iterator.html", "class_sawyer_1_1_boost_1_1_edge_outer_iterator" ],
-        [ "ConstEdgeOuterIterator", "class_sawyer_1_1_boost_1_1_const_edge_outer_iterator.html", "class_sawyer_1_1_boost_1_1_const_edge_outer_iterator" ],
-        [ "VertexPropertyMap", "class_sawyer_1_1_boost_1_1_vertex_property_map.html", "class_sawyer_1_1_boost_1_1_vertex_property_map" ],
-        [ "ConstVertexPropertyMap", "class_sawyer_1_1_boost_1_1_const_vertex_property_map.html", "class_sawyer_1_1_boost_1_1_const_vertex_property_map" ],
-        [ "EdgePropertyMap", "class_sawyer_1_1_boost_1_1_edge_property_map.html", "class_sawyer_1_1_boost_1_1_edge_property_map" ],
-        [ "ConstEdgePropertyMap", "class_sawyer_1_1_boost_1_1_const_edge_property_map.html", "class_sawyer_1_1_boost_1_1_const_edge_property_map" ],
-        [ "ConstVertexIdPropertyMap", "class_sawyer_1_1_boost_1_1_const_vertex_id_property_map.html", "class_sawyer_1_1_boost_1_1_const_vertex_id_property_map" ],
-        [ "ConstEdgeIdPropertyMap", "class_sawyer_1_1_boost_1_1_const_edge_id_property_map.html", "class_sawyer_1_1_boost_1_1_const_edge_id_property_map" ],
-        [ "vertex_value_t", "struct_sawyer_1_1_boost_1_1vertex__value__t.html", "struct_sawyer_1_1_boost_1_1vertex__value__t" ],
-        [ "edge_value_t", "struct_sawyer_1_1_boost_1_1edge__value__t.html", "struct_sawyer_1_1_boost_1_1edge__value__t" ],
-        [ "vertex_id_t", "struct_sawyer_1_1_boost_1_1vertex__id__t.html", "struct_sawyer_1_1_boost_1_1vertex__id__t" ],
-        [ "edge_id_t", "struct_sawyer_1_1_boost_1_1edge__id__t.html", "struct_sawyer_1_1_boost_1_1edge__id__t" ]
+      [ "Language", "namespace_sawyer_1_1_language.html", [
+        [ "Clexer", "namespace_sawyer_1_1_language_1_1_clexer.html", [
+          [ "Token", "class_sawyer_1_1_language_1_1_clexer_1_1_token.html", "class_sawyer_1_1_language_1_1_clexer_1_1_token" ],
+          [ "TokenStream", "class_sawyer_1_1_language_1_1_clexer_1_1_token_stream.html", "class_sawyer_1_1_language_1_1_clexer_1_1_token_stream" ]
+        ] ]
       ] ],
       [ "CommandLine", "namespace_sawyer_1_1_command_line.html", [
         [ "Boost", "namespace_sawyer_1_1_command_line_1_1_boost.html", [
@@ -1288,127 +1399,6 @@ var annotated_dup =
         [ "Parser", "class_sawyer_1_1_command_line_1_1_parser.html", "class_sawyer_1_1_command_line_1_1_parser" ],
         [ "ParserResult", "class_sawyer_1_1_command_line_1_1_parser_result.html", "class_sawyer_1_1_command_line_1_1_parser_result" ]
       ] ],
-      [ "Container", "namespace_sawyer_1_1_container.html", [
-        [ "AddressMapImpl", "namespace_sawyer_1_1_container_1_1_address_map_impl.html", [
-          [ "SegmentMergePolicy", "class_sawyer_1_1_container_1_1_address_map_impl_1_1_segment_merge_policy.html", "class_sawyer_1_1_container_1_1_address_map_impl_1_1_segment_merge_policy" ],
-          [ "MatchedConstraints", "struct_sawyer_1_1_container_1_1_address_map_impl_1_1_matched_constraints.html", "struct_sawyer_1_1_container_1_1_address_map_impl_1_1_matched_constraints" ]
-        ] ],
-        [ "Algorithm", "namespace_sawyer_1_1_container_1_1_algorithm.html", [
-          [ "CsiEquivalence", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_equivalence.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_equivalence" ],
-          [ "CsiShowSolution", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_show_solution.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_csi_show_solution" ],
-          [ "CommonSubgraphIsomorphism", "class_sawyer_1_1_container_1_1_algorithm_1_1_common_subgraph_isomorphism.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_common_subgraph_isomorphism" ],
-          [ "FirstIsomorphicSubgraph", "class_sawyer_1_1_container_1_1_algorithm_1_1_first_isomorphic_subgraph.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_first_isomorphic_subgraph" ],
-          [ "MaximumIsomorphicSubgraphs", "class_sawyer_1_1_container_1_1_algorithm_1_1_maximum_isomorphic_subgraphs.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_maximum_isomorphic_subgraphs" ],
-          [ "ForwardTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_forward_traversal_tag.html", null ],
-          [ "ReverseTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_reverse_traversal_tag.html", null ],
-          [ "DepthFirstTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_traversal_tag.html", null ],
-          [ "BreadthFirstTraversalTag", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_traversal_tag.html", null ],
-          [ "GraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_traversal" ],
-          [ "DepthFirstForwardGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_graph_traversal" ],
-          [ "DepthFirstReverseGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_graph_traversal" ],
-          [ "BreadthFirstForwardGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_graph_traversal" ],
-          [ "BreadthFirstReverseGraphTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_graph_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_graph_traversal" ],
-          [ "GraphVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_vertex_traversal" ],
-          [ "DepthFirstForwardVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_vertex_traversal" ],
-          [ "DepthFirstReverseVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_vertex_traversal" ],
-          [ "BreadthFirstForwardVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_vertex_traversal" ],
-          [ "BreadthFirstReverseVertexTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_vertex_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_vertex_traversal" ],
-          [ "GraphEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_graph_edge_traversal" ],
-          [ "DepthFirstForwardEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_edge_traversal" ],
-          [ "DepthFirstReverseEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_reverse_edge_traversal" ],
-          [ "BreadthFirstForwardEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_forward_edge_traversal" ],
-          [ "BreadthFirstReverseEdgeTraversal", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_edge_traversal.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_breadth_first_reverse_edge_traversal" ],
-          [ "IdAccumulator", "class_sawyer_1_1_container_1_1_algorithm_1_1_id_accumulator.html", "class_sawyer_1_1_container_1_1_algorithm_1_1_id_accumulator" ]
-        ] ],
-        [ "BitVectorSupport", "namespace_sawyer_1_1_container_1_1_bit_vector_support.html", [
-          [ "RemoveConst", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const" ],
-          [ "RemoveConst&lt; const T &gt;", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const_3_01const_01_t_01_4.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_remove_const_3_01const_01_t_01_4" ],
-          [ "LowToHigh", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_low_to_high.html", null ],
-          [ "HighToLow", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_high_to_low.html", null ],
-          [ "bitsPerWord", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1bits_per_word.html", null ],
-          [ "ClearBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_clear_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_clear_bits" ],
-          [ "SetBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_set_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_set_bits" ],
-          [ "CopyBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_copy_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_copy_bits" ],
-          [ "SwapBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_swap_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_swap_bits" ],
-          [ "EqualTo", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_equal_to.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_equal_to" ],
-          [ "LeastSignificantSetBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_set_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_set_bit" ],
-          [ "LeastSignificantClearBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_clear_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_clear_bit" ],
-          [ "MostSignificantSetBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_set_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_set_bit" ],
-          [ "MostSignificantClearBit", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_clear_bit.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_clear_bit" ],
-          [ "CountSetBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_set_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_set_bits" ],
-          [ "CountClearBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_clear_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_count_clear_bits" ],
-          [ "LeastSignificantDifference", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_least_significant_difference" ],
-          [ "MostSignificantDifference", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_difference.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_most_significant_difference" ],
-          [ "InvertBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_invert_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_invert_bits" ],
-          [ "AndBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_and_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_and_bits" ],
-          [ "OrBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_or_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_or_bits" ],
-          [ "XorBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_xor_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_xor_bits" ],
-          [ "Increment", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_increment.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_increment" ],
-          [ "Decrement", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_decrement.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_decrement" ],
-          [ "AddBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_add_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_add_bits" ],
-          [ "CompareBits", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_compare_bits.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_compare_bits" ],
-          [ "ToBytes", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_bytes.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_bytes" ],
-          [ "ToString", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_string.html", "struct_sawyer_1_1_container_1_1_bit_vector_support_1_1_to_string" ]
-        ] ],
-        [ "TraceDetail", "namespace_sawyer_1_1_container_1_1_trace_detail.html", [
-          [ "MapIndex", "class_sawyer_1_1_container_1_1_trace_detail_1_1_map_index.html", "class_sawyer_1_1_container_1_1_trace_detail_1_1_map_index" ],
-          [ "VectorIndex", "class_sawyer_1_1_container_1_1_trace_detail_1_1_vector_index.html", "class_sawyer_1_1_container_1_1_trace_detail_1_1_vector_index" ]
-        ] ],
-        [ "AddressMapTraits", "struct_sawyer_1_1_container_1_1_address_map_traits.html", "struct_sawyer_1_1_container_1_1_address_map_traits" ],
-        [ "AddressMapTraits&lt; const AddressMap &gt;", "struct_sawyer_1_1_container_1_1_address_map_traits_3_01const_01_address_map_01_4.html", "struct_sawyer_1_1_container_1_1_address_map_traits_3_01const_01_address_map_01_4" ],
-        [ "SegmentPredicate", "class_sawyer_1_1_container_1_1_segment_predicate.html", "class_sawyer_1_1_container_1_1_segment_predicate" ],
-        [ "AddressMapConstraints", "class_sawyer_1_1_container_1_1_address_map_constraints.html", "class_sawyer_1_1_container_1_1_address_map_constraints" ],
-        [ "AddressMap", "class_sawyer_1_1_container_1_1_address_map.html", "class_sawyer_1_1_container_1_1_address_map" ],
-        [ "AddressSegment", "class_sawyer_1_1_container_1_1_address_segment.html", "class_sawyer_1_1_container_1_1_address_segment" ],
-        [ "AllocatingBuffer", "class_sawyer_1_1_container_1_1_allocating_buffer.html", "class_sawyer_1_1_container_1_1_allocating_buffer" ],
-        [ "BiMap", "class_sawyer_1_1_container_1_1_bi_map.html", "class_sawyer_1_1_container_1_1_bi_map" ],
-        [ "BitVector", "class_sawyer_1_1_container_1_1_bit_vector.html", "class_sawyer_1_1_container_1_1_bit_vector" ],
-        [ "Buffer", "class_sawyer_1_1_container_1_1_buffer.html", "class_sawyer_1_1_container_1_1_buffer" ],
-        [ "DenseIntegerSet", "class_sawyer_1_1_container_1_1_dense_integer_set.html", "class_sawyer_1_1_container_1_1_dense_integer_set" ],
-        [ "DistinctList", "class_sawyer_1_1_container_1_1_distinct_list.html", "class_sawyer_1_1_container_1_1_distinct_list" ],
-        [ "GraphVertexNoKey", "class_sawyer_1_1_container_1_1_graph_vertex_no_key.html", "class_sawyer_1_1_container_1_1_graph_vertex_no_key" ],
-        [ "GraphEdgeNoKey", "class_sawyer_1_1_container_1_1_graph_edge_no_key.html", "class_sawyer_1_1_container_1_1_graph_edge_no_key" ],
-        [ "GraphVoidIndex", "class_sawyer_1_1_container_1_1_graph_void_index.html", "class_sawyer_1_1_container_1_1_graph_void_index" ],
-        [ "GraphBimapIndex", "class_sawyer_1_1_container_1_1_graph_bimap_index.html", "class_sawyer_1_1_container_1_1_graph_bimap_index" ],
-        [ "GraphHashIndex", "class_sawyer_1_1_container_1_1_graph_hash_index.html", "class_sawyer_1_1_container_1_1_graph_hash_index" ],
-        [ "GraphIndexTraits", "struct_sawyer_1_1_container_1_1_graph_index_traits.html", "struct_sawyer_1_1_container_1_1_graph_index_traits" ],
-        [ "GraphIndexTraits&lt; GraphVertexNoKey&lt; VertexValue &gt;, ConstVertexIterator &gt;", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_vertex_no_key_3_01_vertex_value_0160580aecaf16d35c2add9fea73fd7727.html", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_vertex_no_key_3_01_vertex_value_0160580aecaf16d35c2add9fea73fd7727" ],
-        [ "GraphIndexTraits&lt; GraphEdgeNoKey&lt; EdgeValue &gt;, ConstEdgeIterator &gt;", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_edge_no_key_3_01_edge_value_01_4_00_01_const_edge_iterator_01_4.html", "struct_sawyer_1_1_container_1_1_graph_index_traits_3_01_graph_edge_no_key_3_01_edge_value_01_4_00_01_const_edge_iterator_01_4" ],
-        [ "GraphTraits", "struct_sawyer_1_1_container_1_1_graph_traits.html", "struct_sawyer_1_1_container_1_1_graph_traits" ],
-        [ "GraphTraits&lt; const G &gt;", "struct_sawyer_1_1_container_1_1_graph_traits_3_01const_01_g_01_4.html", "struct_sawyer_1_1_container_1_1_graph_traits_3_01const_01_g_01_4" ],
-        [ "Graph", "class_sawyer_1_1_container_1_1_graph.html", "class_sawyer_1_1_container_1_1_graph" ],
-        [ "GraphIteratorBiMap", "class_sawyer_1_1_container_1_1_graph_iterator_bi_map.html", "class_sawyer_1_1_container_1_1_graph_iterator_bi_map" ],
-        [ "GraphIteratorMap", "class_sawyer_1_1_container_1_1_graph_iterator_map.html", "class_sawyer_1_1_container_1_1_graph_iterator_map" ],
-        [ "GraphIteratorSet", "class_sawyer_1_1_container_1_1_graph_iterator_set.html", "class_sawyer_1_1_container_1_1_graph_iterator_set" ],
-        [ "HashMap", "class_sawyer_1_1_container_1_1_hash_map.html", "class_sawyer_1_1_container_1_1_hash_map" ],
-        [ "IndexedListTraits", "struct_sawyer_1_1_container_1_1_indexed_list_traits.html", "struct_sawyer_1_1_container_1_1_indexed_list_traits" ],
-        [ "IndexedListTraits&lt; const T &gt;", "struct_sawyer_1_1_container_1_1_indexed_list_traits_3_01const_01_t_01_4.html", "struct_sawyer_1_1_container_1_1_indexed_list_traits_3_01const_01_t_01_4" ],
-        [ "IndexedList", "class_sawyer_1_1_container_1_1_indexed_list.html", "class_sawyer_1_1_container_1_1_indexed_list" ],
-        [ "Interval", "class_sawyer_1_1_container_1_1_interval.html", "class_sawyer_1_1_container_1_1_interval" ],
-        [ "IntervalMapTraits", "struct_sawyer_1_1_container_1_1_interval_map_traits.html", "struct_sawyer_1_1_container_1_1_interval_map_traits" ],
-        [ "IntervalMapTraits&lt; const IntervalMap &gt;", "struct_sawyer_1_1_container_1_1_interval_map_traits_3_01const_01_interval_map_01_4.html", "struct_sawyer_1_1_container_1_1_interval_map_traits_3_01const_01_interval_map_01_4" ],
-        [ "MergePolicy", "class_sawyer_1_1_container_1_1_merge_policy.html", "class_sawyer_1_1_container_1_1_merge_policy" ],
-        [ "IntervalMap", "class_sawyer_1_1_container_1_1_interval_map.html", "class_sawyer_1_1_container_1_1_interval_map" ],
-        [ "IntervalSet", "class_sawyer_1_1_container_1_1_interval_set.html", "class_sawyer_1_1_container_1_1_interval_set" ],
-        [ "IntervalSetMap", "class_sawyer_1_1_container_1_1_interval_set_map.html", "class_sawyer_1_1_container_1_1_interval_set_map" ],
-        [ "LineVector", "class_sawyer_1_1_container_1_1_line_vector.html", "class_sawyer_1_1_container_1_1_line_vector" ],
-        [ "Map", "class_sawyer_1_1_container_1_1_map.html", "class_sawyer_1_1_container_1_1_map" ],
-        [ "MappedBuffer", "class_sawyer_1_1_container_1_1_mapped_buffer.html", "class_sawyer_1_1_container_1_1_mapped_buffer" ],
-        [ "NullBuffer", "class_sawyer_1_1_container_1_1_null_buffer.html", "class_sawyer_1_1_container_1_1_null_buffer" ],
-        [ "Set", "class_sawyer_1_1_container_1_1_set.html", "class_sawyer_1_1_container_1_1_set" ],
-        [ "Stack", "class_sawyer_1_1_container_1_1_stack.html", "class_sawyer_1_1_container_1_1_stack" ],
-        [ "StaticBuffer", "class_sawyer_1_1_container_1_1_static_buffer.html", "class_sawyer_1_1_container_1_1_static_buffer" ],
-        [ "TraceMapIndexTag", "class_sawyer_1_1_container_1_1_trace_map_index_tag.html", null ],
-        [ "TraceVectorIndexTag", "class_sawyer_1_1_container_1_1_trace_vector_index_tag.html", null ],
-        [ "TraceIndexTraits", "struct_sawyer_1_1_container_1_1_trace_index_traits.html", "struct_sawyer_1_1_container_1_1_trace_index_traits" ],
-        [ "TraceIndexTraits&lt; Label, Value, TraceVectorIndexTag &gt;", "struct_sawyer_1_1_container_1_1_trace_index_traits_3_01_label_00_01_value_00_01_trace_vector_index_tag_01_4.html", "struct_sawyer_1_1_container_1_1_trace_index_traits_3_01_label_00_01_value_00_01_trace_vector_index_tag_01_4" ],
-        [ "Trace", "class_sawyer_1_1_container_1_1_trace.html", "class_sawyer_1_1_container_1_1_trace" ],
-        [ "TrackerSetIndex", "class_sawyer_1_1_container_1_1_tracker_set_index.html", "class_sawyer_1_1_container_1_1_tracker_set_index" ],
-        [ "TrackerVectorIndex", "class_sawyer_1_1_container_1_1_tracker_vector_index.html", "class_sawyer_1_1_container_1_1_tracker_vector_index" ],
-        [ "TrackerUnorderedIndex", "class_sawyer_1_1_container_1_1_tracker_unordered_index.html", "class_sawyer_1_1_container_1_1_tracker_unordered_index" ],
-        [ "TrackerTraits", "struct_sawyer_1_1_container_1_1_tracker_traits.html", "struct_sawyer_1_1_container_1_1_tracker_traits" ],
-        [ "Tracker", "class_sawyer_1_1_container_1_1_tracker.html", "class_sawyer_1_1_container_1_1_tracker" ]
-      ] ],
       [ "Document", "namespace_sawyer_1_1_document.html", [
         [ "Markup", "namespace_sawyer_1_1_document_1_1_markup.html", [
           [ "TokenStream", "class_sawyer_1_1_document_1_1_markup_1_1_token_stream.html", "class_sawyer_1_1_document_1_1_markup_1_1_token_stream" ],
@@ -1459,11 +1449,21 @@ var annotated_dup =
         [ "TemporaryFile", "class_sawyer_1_1_file_system_1_1_temporary_file.html", "class_sawyer_1_1_file_system_1_1_temporary_file" ],
         [ "TemporaryDirectory", "class_sawyer_1_1_file_system_1_1_temporary_directory.html", "class_sawyer_1_1_file_system_1_1_temporary_directory" ]
       ] ],
-      [ "Language", "namespace_sawyer_1_1_language.html", [
-        [ "Clexer", "namespace_sawyer_1_1_language_1_1_clexer.html", [
-          [ "Token", "class_sawyer_1_1_language_1_1_clexer_1_1_token.html", "class_sawyer_1_1_language_1_1_clexer_1_1_token" ],
-          [ "TokenStream", "class_sawyer_1_1_language_1_1_clexer_1_1_token_stream.html", "class_sawyer_1_1_language_1_1_clexer_1_1_token_stream" ]
-        ] ]
+      [ "Boost", "namespace_sawyer_1_1_boost.html", [
+        [ "VertexOuterIterator", "class_sawyer_1_1_boost_1_1_vertex_outer_iterator.html", "class_sawyer_1_1_boost_1_1_vertex_outer_iterator" ],
+        [ "ConstVertexOuterIterator", "class_sawyer_1_1_boost_1_1_const_vertex_outer_iterator.html", "class_sawyer_1_1_boost_1_1_const_vertex_outer_iterator" ],
+        [ "EdgeOuterIterator", "class_sawyer_1_1_boost_1_1_edge_outer_iterator.html", "class_sawyer_1_1_boost_1_1_edge_outer_iterator" ],
+        [ "ConstEdgeOuterIterator", "class_sawyer_1_1_boost_1_1_const_edge_outer_iterator.html", "class_sawyer_1_1_boost_1_1_const_edge_outer_iterator" ],
+        [ "VertexPropertyMap", "class_sawyer_1_1_boost_1_1_vertex_property_map.html", "class_sawyer_1_1_boost_1_1_vertex_property_map" ],
+        [ "ConstVertexPropertyMap", "class_sawyer_1_1_boost_1_1_const_vertex_property_map.html", "class_sawyer_1_1_boost_1_1_const_vertex_property_map" ],
+        [ "EdgePropertyMap", "class_sawyer_1_1_boost_1_1_edge_property_map.html", "class_sawyer_1_1_boost_1_1_edge_property_map" ],
+        [ "ConstEdgePropertyMap", "class_sawyer_1_1_boost_1_1_const_edge_property_map.html", "class_sawyer_1_1_boost_1_1_const_edge_property_map" ],
+        [ "ConstVertexIdPropertyMap", "class_sawyer_1_1_boost_1_1_const_vertex_id_property_map.html", "class_sawyer_1_1_boost_1_1_const_vertex_id_property_map" ],
+        [ "ConstEdgeIdPropertyMap", "class_sawyer_1_1_boost_1_1_const_edge_id_property_map.html", "class_sawyer_1_1_boost_1_1_const_edge_id_property_map" ],
+        [ "vertex_value_t", "struct_sawyer_1_1_boost_1_1vertex__value__t.html", "struct_sawyer_1_1_boost_1_1vertex__value__t" ],
+        [ "edge_value_t", "struct_sawyer_1_1_boost_1_1edge__value__t.html", "struct_sawyer_1_1_boost_1_1edge__value__t" ],
+        [ "vertex_id_t", "struct_sawyer_1_1_boost_1_1vertex__id__t.html", "struct_sawyer_1_1_boost_1_1vertex__id__t" ],
+        [ "edge_id_t", "struct_sawyer_1_1_boost_1_1edge__id__t.html", "struct_sawyer_1_1_boost_1_1edge__id__t" ]
       ] ],
       [ "Lexer", "namespace_sawyer_1_1_lexer.html", [
         [ "Token", "class_sawyer_1_1_lexer_1_1_token.html", "class_sawyer_1_1_lexer_1_1_token" ],

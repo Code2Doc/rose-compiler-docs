@@ -46,7 +46,7 @@ var _graph_boost_8h =
     [ "boost::in_edges", "namespaceboost.html#a335c12e6c7dac2a28ccf79f10f2a7de4", null ],
     [ "boost::in_edges", "namespaceboost.html#af8a2317eea1b001d8fc878d8f5e1d565", null ],
     [ "boost::null_vertex", "namespaceboost.html#afecfd937febad52db4b7b747ade883b2", null ],
-    [ "boost::null_vertex", "namespaceboost.html#a6152e462949eaafabbd7ed6702e8e662", null ],
+    [ "boost::null_vertex", "namespaceboost.html#afecfd937febad52db4b7b747ade883b2", null ],
     [ "boost::num_edges", "namespaceboost.html#a421c29a4d0c192d4e6b33ac9d0dacc9d", null ],
     [ "boost::num_edges", "namespaceboost.html#a0517f0321473173571d37badd7bce763", null ],
     [ "boost::num_vertices", "namespaceboost.html#acbc5a0fefb82f13fa1a31d750940d929", null ],

@@ -1,18 +1,18 @@
 var _convert_8h =
 [
-    [ "Rose::StringUtility::centerJustify", "namespace_rose_1_1_string_utility.html#a9a0555dbee1c2686f41ee45ccfa0d790", null ],
-    [ "Rose::StringUtility::convertToLowerCase", "namespace_rose_1_1_string_utility.html#a26865d1cd822b1f533b35ec57be241be", null ],
-    [ "Rose::StringUtility::decode_base64", "namespace_rose_1_1_string_utility.html#ad414e5591b095cc324f0fafd34065395", null ],
-    [ "Rose::StringUtility::encode_base64", "namespace_rose_1_1_string_utility.html#a1af9920ee8e0775b7a8f64d0e5b5260c", null ],
-    [ "Rose::StringUtility::encode_base64", "namespace_rose_1_1_string_utility.html#ad3bc03479a5d3b94ccdd5afa31b09d8b", null ],
-    [ "Rose::StringUtility::fixLineTermination", "namespace_rose_1_1_string_utility.html#a8ac43219a1a34888b481d4f69574e417", null ],
-    [ "Rose::StringUtility::generate_checksum", "namespace_rose_1_1_string_utility.html#a1e2daa25e35616f1f07afcc0a84545f3", null ],
-    [ "Rose::StringUtility::leftJustify", "namespace_rose_1_1_string_utility.html#a5cbbe923b00f33fa514d3c9cc321f251", null ],
-    [ "Rose::StringUtility::makeOneLine", "namespace_rose_1_1_string_utility.html#aee88cfab20accf1edbcec0361e7bd495", null ],
-    [ "Rose::StringUtility::prefixLines", "namespace_rose_1_1_string_utility.html#a5e6f82514e15f8291c024fde13866889", null ],
-    [ "Rose::StringUtility::removeAnsiEscapes", "namespace_rose_1_1_string_utility.html#a3480146fe27ec79e853b506b432fe05d", null ],
-    [ "Rose::StringUtility::removeRedundantSubstrings", "namespace_rose_1_1_string_utility.html#a7b74bc193ec79eb2cea1c056687ef4b5", null ],
-    [ "Rose::StringUtility::rightJustify", "namespace_rose_1_1_string_utility.html#afeceb4c2f01a03c926807b50b943ee02", null ],
-    [ "Rose::StringUtility::trim", "namespace_rose_1_1_string_utility.html#a3d6077eb5326faad7cd19eb277ad3353", null ],
-    [ "Rose::StringUtility::untab", "namespace_rose_1_1_string_utility.html#a9ca0b70ac5b7d398952b501ef314fe6b", null ]
+    [ "Rose::StringUtility::centerJustify", "namespace_rose_1_1_string_utility.html#a7fcc82da3ba3f1b5d1d6b7e5ded0ef02", null ],
+    [ "Rose::StringUtility::convertToLowerCase", "namespace_rose_1_1_string_utility.html#a896325d0a98e77095ed2f7933be41501", null ],
+    [ "Rose::StringUtility::decode_base64", "namespace_rose_1_1_string_utility.html#a093bce6442db95694528198617a8940e", null ],
+    [ "Rose::StringUtility::encode_base64", "namespace_rose_1_1_string_utility.html#aef1f986aaf192c445dbc9ca014470f8d", null ],
+    [ "Rose::StringUtility::encode_base64", "namespace_rose_1_1_string_utility.html#a4f39b536c13cb7bb75576a35137224da", null ],
+    [ "Rose::StringUtility::fixLineTermination", "namespace_rose_1_1_string_utility.html#abacb79e26400c9a81bba35384abffcf3", null ],
+    [ "Rose::StringUtility::generate_checksum", "namespace_rose_1_1_string_utility.html#afd3c936514e7e8f924693fc8eb6bba5a", null ],
+    [ "Rose::StringUtility::leftJustify", "namespace_rose_1_1_string_utility.html#a3a3c2c1b14c81d232adff7ed6e9ec92a", null ],
+    [ "Rose::StringUtility::makeOneLine", "namespace_rose_1_1_string_utility.html#a6c194be16a16d978c51a7bd7fa2d69c4", null ],
+    [ "Rose::StringUtility::prefixLines", "namespace_rose_1_1_string_utility.html#a90210f359ff8c18be50f166df643a673", null ],
+    [ "Rose::StringUtility::removeAnsiEscapes", "namespace_rose_1_1_string_utility.html#a7e2ed9669537b917a862ae97f276fb8d", null ],
+    [ "Rose::StringUtility::removeRedundantSubstrings", "namespace_rose_1_1_string_utility.html#a929ef05b4e53de27724d7f58c2edec7c", null ],
+    [ "Rose::StringUtility::rightJustify", "namespace_rose_1_1_string_utility.html#a0c8bc038a85f0b5e13feb18276540ced", null ],
+    [ "Rose::StringUtility::trim", "namespace_rose_1_1_string_utility.html#ae6c86f3aacaca489322c92e74e70f4bc", null ],
+    [ "Rose::StringUtility::untab", "namespace_rose_1_1_string_utility.html#ab4a329694aec2ff4691f61f5e80a4f8a", null ]
 ];

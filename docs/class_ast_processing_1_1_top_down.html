@@ -125,7 +125,7 @@ Private Attributes</h2></td></tr>
 class AstProcessing::TopDown&lt; Evaluator, InheritedAttribute &gt;</div><p>Traversal Classes</p>
 <p>Three seperate traversal classes to provide the different traversals. Each of them takes two types of template parameters:</p><ol type="1">
 <li>Evaluator: Acts as a callback class. Has to implement the evaluate* Functions</li>
-<li>(Inherited|Synthesized)Attribute: <a class="el" href="namespace_types.html" title="Auto-generated documentation for the Types namespace.">Types</a> for the Inherited or Synthesized Attribute</li>
+<li>(Inherited|Synthesized)Attribute: <a class="el" href="namespace_types.html" title="Advanced compile-time type support, adapted from utility routines written by Alexandrescu (2001) for ...">Types</a> for the Inherited or Synthesized Attribute</li>
 </ol>
 <p>By having three base classes, the actual traversal can be done with less if statements</p>
 <p>By supplying the Base class as a template paramater, one can get rid of virtual function calls completely.</p>

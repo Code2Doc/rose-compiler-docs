@@ -8,7 +8,7 @@ var ast2dot_8_c =
     [ "dot::edge", "namespacedot.html#a09bab4a7f028a8ec468e5134bbfb14fe", null ],
     [ "dot::freshlyDiscovered", "namespacedot.html#ae61b209950ff6e1058b0305b8b6997fd", null ],
     [ "dot::freshlyDiscovered", "namespacedot.html#a60a30fc3558374baab248c882b06fea6", null ],
-    [ "dot::nameIfNeeded", "namespacedot.html#ae6d0a6efb3e02ee022591e08e417d4f1", null ],
+    [ "dot::nameIfNeeded", "namespacedot.html#a0249aed2bae09cfc2771fc592575407d", null ],
     [ "dot::node", "namespacedot.html#ac2cc16b4599996a7bc37999f0d5fa011", null ],
     [ "dot::print_dot", "namespacedot.html#abaf2e420a5bd608ef80167bd281e1d10", null ],
     [ "dot::save_dot", "namespacedot.html#a702b63032754e0bced3a5b65a517ffa5", null ],
