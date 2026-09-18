@@ -9,6 +9,7 @@
   'use strict';
 
   var data = window.CODE2DOC_GRAPH;
+  var POLICY = window.CODE2DOC_POLICY;
   var cy = null;
   var byId = Object.create(null);
   var selectedId = null;
@@ -17,15 +18,25 @@
   var outAdj = Object.create(null);
   var inAdj = Object.create(null);
 
-  // Which nodes are currently on the canvas. Below FULL_RENDER_LIMIT the whole
-  // graph is drawn, which keeps small program graphs behaving exactly as
-  // before; above it, rendering everything produces an illegible hairball
-  // (measured: 1,365 nodes takes ~16 s and shows no structure), so the graph is
-  // seeded from its entrypoints and expanded on demand.
+  // Which nodes are currently on the canvas. The view is a depth- and
+  // breadth-limited tree grown from the entrypoints by graph_policy.js: without
+  // a limit, rendering everything produces an illegible hairball (measured:
+  // 1,365 nodes takes ~16 s and shows no structure) and even a 58-node program
+  // graph opens as a wall of leaf calls.
   var visible = Object.create(null);
   var visibleCount = 0;
-  var FULL_RENDER_LIMIT = 260;
-  var SEED_ROOTS = 2;
+  var nodeDepth = Object.create(null);
+  var budgetHit = false;
+
+  // topo is the policy's view of the graph: ids, callee lists, names, roots.
+  var topo = null;
+  var policy = { depth: 3, children: 5, budget: 300 };
+
+  // What the user has done on top of the policy. expanded/collapsed are per
+  // node; pinned holds nodes reached by name rather than by expansion.
+  var expandedNodes = Object.create(null);
+  var collapsedNodes = Object.create(null);
+  var pinnedNodes = Object.create(null);
 
   var el = {
     cy: document.getElementById('cy'),
@@ -41,7 +52,10 @@
     drawerClose: document.getElementById('drawer-close'),
     fit: document.getElementById('btn-fit'),
     relayout: document.getElementById('btn-relayout'),
+    orient: document.getElementById('btn-orient'),
     reset: document.getElementById('btn-reset'),
+    depth: document.getElementById('ctl-depth'),
+    children: document.getElementById('ctl-children'),
     entrypoints: document.getElementById('entrypoints')
   };
 
@@ -75,46 +89,68 @@
       outAdj[s.id].push(t.id);
       inAdj[t.id].push(s.id);
     });
+
+    var names = Object.create(null);
+    data.nodes.forEach(function (n) { names[n.id] = n.name; });
+    topo = {
+      ids: data.nodes.map(function (n) { return n.id; }),
+      out: outAdj,
+      name: names,
+      roots: effectiveRoots()
+    };
   }
 
-  function hiddenNeighbourCount(id) {
-    var n = 0;
-    outAdj[id].forEach(function (x) { if (!visible[x]) n++; });
-    inAdj[id].forEach(function (x) { if (!visible[x]) n++; });
-    return n;
+  // meta.roots is the builder's answer and is preferred. A corpus with no
+  // in-degree-0 function at all would otherwise render nothing, so fall back to
+  // the widest callers -- the same fallback the old seeding used.
+  function effectiveRoots() {
+    var roots = (data.meta.roots || []).filter(function (id) { return byId[id]; });
+    if (roots.length) return roots;
+    return data.nodes.slice()
+      .sort(function (a, b) { return b.out_degree - a.out_degree; })
+      .slice(0, 2)
+      .map(function (n) { return n.id; });
+  }
+
+  // Counted over callees only, because callees are what expanding reveals. A
+  // badge promising more than a click delivers is worse than no badge.
+  function hiddenChildCount(id) {
+    return POLICY.hiddenChildCount(id, topo, visible);
+  }
+
+  function visibleChildCount(id) {
+    return POLICY.visibleChildCount(id, topo, visible);
   }
 
   function labelFor(id) {
-    var hidden = hiddenNeighbourCount(id);
+    var hidden = hiddenChildCount(id);
     // An explicit "+N" beats inventing a new visual language for "has more".
     return hidden ? byId[id].name + '  +' + hidden : byId[id].name;
   }
 
-  function show(ids) {
-    var added = 0;
-    ids.forEach(function (id) {
-      if (byId[id] && !visible[id]) { visible[id] = true; visibleCount++; added++; }
+  // Recompute the drawn set from the policy plus the user's expansions,
+  // collapses and pins. Every view change goes through here, so the canvas is
+  // always exactly what the current settings describe -- there is no
+  // incremental state to drift out of step.
+  function recompute() {
+    var result = POLICY.compute(topo, policy, {
+      expanded: expandedNodes,
+      collapsed: collapsedNodes,
+      pinned: pinnedNodes
     });
-    return added;
+    visible = result.visible;
+    nodeDepth = result.depth;
+    visibleCount = result.order.length;
+    budgetHit = result.budgetHit;
   }
 
-  function seed() {
-    visible = Object.create(null);
-    visibleCount = 0;
-    if (data.nodes.length <= FULL_RENDER_LIMIT) {
-      show(data.nodes.map(function (n) { return n.id; }));
-      return;
-    }
-    // meta.roots is pre-sorted by fan-out, so the head is the most substantial
-    // set of entrypoints.
-    var roots = (data.meta.roots || []).slice(0, SEED_ROOTS);
-    if (!roots.length) {
-      roots = data.nodes.slice()
-        .sort(function (a, b) { return b.out_degree - a.out_degree; })
-        .slice(0, SEED_ROOTS).map(function (n) { return n.id; });
-    }
-    show(roots);
-    roots.forEach(function (r) { show(outAdj[r] || []); });
+  // Back to the policy's own view: drop every manual expansion, collapse and
+  // pin.
+  function resetView() {
+    expandedNodes = Object.create(null);
+    collapsedNodes = Object.create(null);
+    pinnedNodes = Object.create(null);
+    recompute();
   }
 
   function buildElements() {
@@ -126,7 +162,9 @@
           id: id,
           label: labelFor(id),
           role: roleOf(n, rootSet),
-          expandable: hiddenNeighbourCount(id) > 0 ? 1 : 0
+          depth: nodeDepth[id] == null ? 0 : nodeDepth[id],
+          expandable: hiddenChildCount(id) > 0 ? 1 : 0,
+          collapsed: collapsedNodes[id] ? 1 : 0
         }
       });
     });
@@ -149,13 +187,31 @@
     if (keep && visible[keep]) highlight(keep);
   }
 
-  function expand(id) {
+  function expandNode(id) {
+    if (hiddenChildCount(id) === 0) return 0;
     var before = visibleCount;
-    show(outAdj[id] || []);
-    show(inAdj[id] || []);
-    if (visibleCount === before) return 0;
+    delete collapsedNodes[id];
+    expandedNodes[id] = true;
+    recompute();
     rerender(true);
     return visibleCount - before;
+  }
+
+  function collapseNode(id) {
+    if (visibleChildCount(id) === 0) return 0;
+    var before = visibleCount;
+    delete expandedNodes[id];
+    collapsedNodes[id] = true;
+    recompute();
+    rerender(true);
+    return before - visibleCount;
+  }
+
+  // One gesture for both: a node with undrawn callees opens, a node whose
+  // callees are all drawn folds them away.
+  function toggleNode(id) {
+    if (hiddenChildCount(id) > 0) return expandNode(id);
+    return -collapseNode(id);
   }
 
   function updateStats() {
@@ -163,8 +219,9 @@
     var shown = visibleCount < data.nodes.length
       ? visibleCount + ' of ' + m.node_count + ' shown · '
       : '';
+    var capped = budgetHit ? ' · view limit ' + policy.budget + ' reached' : '';
     el.stats.textContent = shown + m.node_count + ' functions · ' +
-      m.edge_count + ' calls · ' + m.documented + ' documented';
+      m.edge_count + ' calls · ' + m.documented + ' documented' + capped;
   }
 
   var STYLE = [
@@ -226,6 +283,13 @@
       style: { 'border-style': 'double', 'border-width': 3 }
     },
     {
+      // Deliberately folded, as against merely having more to show. Without
+      // this a collapsed entrypoint -- which takes the whole graph with it --
+      // is indistinguishable from a viewer that has broken.
+      selector: 'node[collapsed = 1]',
+      style: { 'border-style': 'dotted', 'border-width': 3.5, 'background-opacity': 0.5 }
+    },
+    {
       selector: 'node.selected',
       style: { 'border-color': css('--accent'), 'border-width': 3.5 }
     },
@@ -247,27 +311,54 @@
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
 
-  // Left-to-right: call depth grows rightward, breadth downward. Call trees are
-  // typically shallow and very wide, and top-down turns that into an
-  // unreadable horizontal band.
-  var LAYOUT = {
-    name: 'dagre',
-    rankDir: 'LR',
-    nodeSep: 14,
-    rankSep: 110,
-    edgeSep: 8,
-    animate: false,
-    fit: true,
-    padding: 30
+  // Left-to-right by default: call depth grows rightward, breadth downward.
+  // Call trees are typically shallow and very wide, and top-down turns that
+  // into an unreadable horizontal band. A narrow, deep slice of the graph reads
+  // better top-down though, so the direction is a toggle rather than a
+  // constant. The separations differ per direction because node boxes are wide
+  // and short: the gap along the rank axis carries the arrows, the gap across
+  // it has to clear the labels.
+  var ORIENTATIONS = {
+    LR: { nodeSep: 14, rankSep: 110, label: 'Horizontal \u21c4', next: 'TB' },
+    TB: { nodeSep: 26, rankSep: 70,  label: 'Vertical \u21c5',   next: 'LR' }
   };
+  var rankDir = 'LR';
+
+  function layoutOptions() {
+    var o = ORIENTATIONS[rankDir];
+    return {
+      name: 'dagre',
+      rankDir: rankDir,
+      nodeSep: o.nodeSep,
+      rankSep: o.rankSep,
+      edgeSep: 8,
+      animate: false,
+      fit: true,
+      padding: 30
+    };
+  }
 
   // Below this, labels stop being legible; better to open at a readable zoom
   // and let the user pan than to fit an unreadable whole.
   var MIN_READABLE_ZOOM = 0.62;
 
   function layout() {
-    cy.layout(LAYOUT).run();
+    cy.layout(layoutOptions()).run();
     clampZoom();
+  }
+
+  // The button names the orientation currently in force; its tooltip names the
+  // one a click would switch to.
+  function setOrientation(dir) {
+    rankDir = ORIENTATIONS[dir] ? dir : 'LR';
+    if (el.orient) {
+      el.orient.textContent = ORIENTATIONS[rankDir].label;
+      el.orient.title = 'Switch to a ' +
+        (rankDir === 'LR' ? 'vertical (top-to-bottom)' : 'horizontal (left-to-right)') +
+        ' layout';
+      el.orient.setAttribute('aria-label', el.orient.title);
+    }
+    if (cy) layout();
   }
 
   function clampZoom() {
@@ -349,6 +440,36 @@
       body.appendChild(a);
     }
 
+    // Above the prose for the same reason as the documentation link: these act
+    // on the graph rather than on the comment, and a generated description runs
+    // long enough to push them off the bottom of the drawer.
+    var hidden = hiddenChildCount(id);
+    var drawn = visibleChildCount(id);
+    if (hidden || drawn) {
+      var controls = make('div', 'node-controls');
+      if (hidden) {
+        var openBtn = make('button', 'btn', 'Expand ' + hidden + ' hidden calle' +
+                                            (hidden === 1 ? 'e' : 'es'));
+        openBtn.type = 'button';
+        openBtn.addEventListener('click', function () {
+          expandNode(id);
+          openInspector(id);
+        });
+        controls.appendChild(openBtn);
+      }
+      if (drawn) {
+        var shutBtn = make('button', 'btn', 'Collapse ' + drawn + ' calle' +
+                                            (drawn === 1 ? 'e' : 'es'));
+        shutBtn.type = 'button';
+        shutBtn.addEventListener('click', function () {
+          collapseNode(id);
+          openInspector(id);
+        });
+        controls.appendChild(shutBtn);
+      }
+      body.appendChild(section('Graph', controls));
+    }
+
     if (!doc) {
       body.appendChild(make('div', 'note',
         'This function is referenced by the call graph but was not documented ' +
@@ -379,18 +500,6 @@
         });
         body.appendChild(section('Notes', ul));
       }
-    }
-
-    var hidden = hiddenNeighbourCount(id);
-    if (hidden) {
-      var btn = make('button', 'btn', 'Expand ' + hidden + ' hidden neighbour' +
-                                      (hidden === 1 ? '' : 's'));
-      btn.type = 'button';
-      btn.addEventListener('click', function () {
-        expand(id);
-        openInspector(id);
-      });
-      body.appendChild(section('Graph', btn));
     }
 
     var callees = neighbourList(id, 'outgoing');
@@ -426,9 +535,10 @@
   function focusNode(id) {
     if (!byId[id]) return;
     if (!visible[id]) {
-      show([id]);
-      show(outAdj[id] || []);
-      show(inAdj[id] || []);
+      // Pin it: the policy keeps it drawn from now on, wherever it sits
+      // relative to the entrypoint trees, until the view is reset.
+      pinnedNodes[id] = true;
+      recompute();
       rerender(false);
     }
     var n = cy.getElementById(id);
@@ -501,6 +611,30 @@
     openInspector(id);
   }
 
+  /* -- view controls ------------------------------------------------------ */
+
+  // Changing a limit re-derives the whole view. Manual expansions and collapses
+  // are kept: they are statements about particular nodes, not about the limits,
+  // and discarding them on every keystroke would make the controls hostile to
+  // explore with.
+  function bindPolicyControl(input, key) {
+    if (!input) return;
+    input.value = policy[key];
+    input.addEventListener('change', function () {
+      var next = parseInt(input.value, 10);
+      if (isNaN(next)) { input.value = policy[key]; return; }
+      policy[key] = next;
+      recompute();
+      // Reflect any clamping the policy applied, so the box never shows a
+      // number the view is not honouring.
+      input.value = POLICY.compute(topo, policy, {
+        expanded: expandedNodes, collapsed: collapsedNodes, pinned: pinnedNodes
+      }).policy[key];
+      policy[key] = parseInt(input.value, 10);
+      rerender(true);
+    });
+  }
+
   /* -- boot --------------------------------------------------------------- */
 
   function init() {
@@ -512,6 +646,10 @@
       fail('Cytoscape failed to load. Check that vendor/ sits next to viewer.html.');
       return;
     }
+    if (!POLICY) {
+      fail('graph_policy.js failed to load. Check that it sits next to viewer.html.');
+      return;
+    }
     if (window.cytoscapeDagre) cytoscape.use(window.cytoscapeDagre);
 
     el.title.textContent = (data.meta && data.meta.title) || 'Call Graph';
@@ -519,7 +657,10 @@
 
 
     buildIndex();
-    seed();
+    policy.depth = POLICY.DEFAULTS.depth;
+    policy.children = POLICY.DEFAULTS.children;
+    policy.budget = POLICY.DEFAULTS.budget;
+    recompute();
 
     cy = cytoscape({
       container: el.cy,
@@ -534,7 +675,7 @@
     updateStats();
 
     cy.on('tap', 'node', function (evt) { openInspector(evt.target.id()); });
-    cy.on('dbltap', 'node', function (evt) { expand(evt.target.id()); });
+    cy.on('dbltap', 'node', function (evt) { toggleNode(evt.target.id()); });
     cy.on('tap', function (evt) { if (evt.target === cy) closeInspector(); });
 
     el.drawerClose.addEventListener('click', closeInspector);
@@ -560,10 +701,21 @@
       timer = setTimeout(function () { runSearch(v); }, 140);
     });
 
+    // Deliberately no clampZoom on completion. The clamp keeps an *automatic*
+    // layout from opening at an unreadable zoom, but Fit is an explicit request
+    // to see the whole graph: re-clamping it snapped the view straight back to
+    // the seeded window (measured: fit reaches 0.326, the clamp forced 0.620),
+    // which made the button look broken.
     el.fit.addEventListener('click', function () {
-      cy.animate({ fit: { padding: 30 } }, { duration: 220, complete: clampZoom });
+      cy.animate({ fit: { padding: 30 } }, { duration: 220 });
     });
     el.relayout.addEventListener('click', layout);
+    if (el.orient) {
+      setOrientation(rankDir);
+      el.orient.addEventListener('click', function () {
+        setOrientation(ORIENTATIONS[rankDir].next);
+      });
+    }
     // Entrypoint picker: with 45 entrypoints the canvas can only seed a couple,
     // so the rest need to be reachable without knowing their names in advance.
     var roots = data.meta.roots || [];
@@ -590,12 +742,16 @@
     if (el.reset) {
       el.reset.addEventListener('click', function () {
         closeInspector();
-        seed();
+        resetView();
         rerender(false);
       });
-      // Only meaningful when the graph is actually being seeded.
-      el.reset.hidden = data.nodes.length <= FULL_RENDER_LIMIT;
+      // Always meaningful now: every view is a policy view that the user can
+      // have expanded, collapsed or pinned their way out of.
+      el.reset.hidden = false;
     }
+
+    bindPolicyControl(el.depth, 'depth');
+    bindPolicyControl(el.children, 'children');
   }
 
   if (document.readyState === 'loading') {

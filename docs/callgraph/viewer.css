@@ -91,6 +91,26 @@ html, body {
 
 #entrypoints { max-width: 210px; }
 
+/* --- view controls ------------------------------------------------------ */
+
+#view-controls { display: flex; align-items: center; gap: 8px; }
+.ctl {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 12px; color: var(--fg-muted); white-space: nowrap;
+}
+.num {
+  width: 52px;
+  padding: 5px 6px;
+  font: inherit; font-size: 12px;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.num:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+.node-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+
 #stats { margin-left: auto; font-size: 12px; color: var(--fg-muted); white-space: nowrap; }
 
 /* --- legend ------------------------------------------------------------- */

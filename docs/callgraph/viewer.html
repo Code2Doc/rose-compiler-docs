@@ -18,7 +18,17 @@
     <span id="search-status" role="status" aria-live="polite"></span>
     <button id="btn-fit" class="btn" type="button">Fit</button>
     <button id="btn-relayout" class="btn" type="button">Re-layout</button>
+    <button id="btn-orient" class="btn" type="button"
+            title="Switch to a vertical (top-to-bottom) layout">Horizontal ⇄</button>
     <button id="btn-reset" class="btn" type="button" hidden>Reset</button>
+    <span id="view-controls">
+      <label class="ctl" title="How many levels of callees are drawn below each entrypoint">
+        Levels <input id="ctl-depth" class="num" type="number" min="0" max="32" step="1" value="3">
+      </label>
+      <label class="ctl" title="How many callees are drawn under each function before the rest are folded away">
+        Callees <input id="ctl-children" class="num" type="number" min="0" max="999" step="1" value="5">
+      </label>
+    </span>
     <select id="entrypoints" class="btn" hidden aria-label="Jump to an entrypoint"></select>
     <div id="legend">
       <span class="legend-item"><span class="swatch root"></span>entrypoint</span>
@@ -46,6 +56,7 @@
 
 </div>
 
+<script src="graph_policy.js"></script>
 <script src="vendor/cytoscape.min.js"></script>
 <script src="vendor/dagre.min.js"></script>
 <script src="vendor/cytoscape-dagre.js"></script>
