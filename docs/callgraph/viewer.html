@@ -40,6 +40,13 @@
 
   <main id="main">
     <div id="cy"></div>
+    <!-- Hangs from the top bar under Fit while a node is selected. Positioned
+         over the canvas rather than as a toolbar row, so showing it never
+         resizes the canvas under the graph. -->
+    <div id="node-controls" role="toolbar" aria-label="Selected function" hidden>
+      <button id="btn-expand" class="btn" type="button">Expand</button>
+      <button id="btn-collapse" class="btn" type="button">Collapse</button>
+    </div>
     <div id="empty-state">Loading&hellip;</div>
 
     <aside id="drawer" aria-label="Function details">

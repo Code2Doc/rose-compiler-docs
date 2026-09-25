@@ -54,6 +54,9 @@
     relayout: document.getElementById('btn-relayout'),
     orient: document.getElementById('btn-orient'),
     reset: document.getElementById('btn-reset'),
+    nodeControls: document.getElementById('node-controls'),
+    expand: document.getElementById('btn-expand'),
+    collapse: document.getElementById('btn-collapse'),
     depth: document.getElementById('ctl-depth'),
     children: document.getElementById('ctl-children'),
     entrypoints: document.getElementById('entrypoints')
@@ -185,6 +188,9 @@
     layout();
     updateStats();
     if (keep && visible[keep]) highlight(keep);
+    // Counts change with every rerender, and a policy change can drop the
+    // selected node off the canvas altogether.
+    refreshNodeControls();
   }
 
   function expandNode(id) {
@@ -440,36 +446,6 @@
       body.appendChild(a);
     }
 
-    // Above the prose for the same reason as the documentation link: these act
-    // on the graph rather than on the comment, and a generated description runs
-    // long enough to push them off the bottom of the drawer.
-    var hidden = hiddenChildCount(id);
-    var drawn = visibleChildCount(id);
-    if (hidden || drawn) {
-      var controls = make('div', 'node-controls');
-      if (hidden) {
-        var openBtn = make('button', 'btn', 'Expand ' + hidden + ' hidden calle' +
-                                            (hidden === 1 ? 'e' : 'es'));
-        openBtn.type = 'button';
-        openBtn.addEventListener('click', function () {
-          expandNode(id);
-          openInspector(id);
-        });
-        controls.appendChild(openBtn);
-      }
-      if (drawn) {
-        var shutBtn = make('button', 'btn', 'Collapse ' + drawn + ' calle' +
-                                            (drawn === 1 ? 'e' : 'es'));
-        shutBtn.type = 'button';
-        shutBtn.addEventListener('click', function () {
-          collapseNode(id);
-          openInspector(id);
-        });
-        controls.appendChild(shutBtn);
-      }
-      body.appendChild(section('Graph', controls));
-    }
-
     if (!doc) {
       body.appendChild(make('div', 'note',
         'This function is referenced by the call graph but was not documented ' +
@@ -509,6 +485,61 @@
 
     el.drawer.classList.add('open');
     highlight(id);
+    refreshNodeControls();
+  }
+
+  /* -- node controls ------------------------------------------------------ */
+
+  function calleeLabel(verb, n, adjective) {
+    if (!n) return verb;
+    return verb + ' ' + n + (adjective ? ' ' + adjective : '') +
+           ' calle' + (n === 1 ? 'e' : 'es');
+  }
+
+  // Expand/Collapse act on the selected node, so they exist only while one is
+  // selected and drawn. Both stay visible and disable rather than vanish, so
+  // the strip keeps its shape as the selection moves between nodes.
+  function refreshNodeControls() {
+    var bar = el.nodeControls;
+    if (!bar) return;
+    var id = selectedId;
+    if (!id || !visible[id]) { bar.hidden = true; return; }
+
+    var hidden = hiddenChildCount(id);
+    var drawn = visibleChildCount(id);
+    var calls = (outAdj[id] || []).length;
+    el.expand.textContent = calleeLabel('Expand', hidden, 'hidden');
+    el.expand.disabled = !hidden;
+    el.expand.title = hidden ? 'Draw this function’s hidden callees (or double-click it)'
+                    : calls ? 'Every callee is already drawn' : 'This function calls nothing';
+    el.collapse.textContent = calleeLabel('Collapse', drawn);
+    el.collapse.disabled = !drawn;
+    el.collapse.title = drawn ? 'Fold away this function’s drawn callees (or double-click it)'
+                      : 'No callees are drawn';
+    bar.hidden = false;
+    placeNodeControls();
+  }
+
+  // Under the Fit button, wherever the top bar's wrapping has put it, but kept
+  // clear of the open inspector so the drawer never covers it.
+  function placeNodeControls() {
+    var bar = el.nodeControls;
+    if (!bar || bar.hidden) return;
+    var main = bar.offsetParent;
+    if (!main) return;
+    var mainRect = main.getBoundingClientRect();
+    var left = el.fit.getBoundingClientRect().left - mainRect.left;
+    var limit = mainRect.width - bar.offsetWidth - 8;
+    if (el.drawer.classList.contains('open')) limit -= el.drawer.offsetWidth;
+    bar.style.left = Math.max(8, Math.min(left, limit)) + 'px';
+  }
+
+  function actOnSelected(action) {
+    var id = selectedId;
+    if (!id) return;
+    action(id);
+    // Re-open to refresh the inspector's "(hidden)" markers as well.
+    openInspector(id);
   }
 
   function neighbourList(id, direction) {
@@ -550,6 +581,7 @@
     selectedId = null;
     el.drawer.classList.remove('open');
     cy.elements().removeClass('faded selected incident');
+    refreshNodeControls();
   }
 
   function highlight(id) {
@@ -710,6 +742,11 @@
       cy.animate({ fit: { padding: 30 } }, { duration: 220 });
     });
     el.relayout.addEventListener('click', layout);
+    if (el.nodeControls) {
+      el.expand.addEventListener('click', function () { actOnSelected(expandNode); });
+      el.collapse.addEventListener('click', function () { actOnSelected(collapseNode); });
+      window.addEventListener('resize', placeNodeControls);
+    }
     if (el.orient) {
       setOrientation(rankDir);
       el.orient.addEventListener('click', function () {

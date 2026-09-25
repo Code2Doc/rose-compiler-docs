@@ -17,7 +17,7 @@
   'use strict';
 
   // depth 3 / 5 children measured against both shipped corpora: on the outline
-  // tutorial it draws 28 of 58 nodes, on SageInterface+SageBuilder 295 of
+  // tutorial it draws 28 of 58 nodes, on SageInterface+SageBuilder 293 of
   // 1,365. budget is the backstop -- a corpus deeper and wider than either
   // cannot flood the canvas, and the viewer says so when it bites.
   var DEFAULTS = { depth: 3, children: 5, budget: 300 };
