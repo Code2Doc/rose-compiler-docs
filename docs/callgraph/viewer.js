@@ -57,6 +57,8 @@
     nodeControls: document.getElementById('node-controls'),
     expand: document.getElementById('btn-expand'),
     collapse: document.getElementById('btn-collapse'),
+    refine: document.getElementById('btn-refine'),
+    legendRefined: document.getElementById('legend-refined'),
     depth: document.getElementById('ctl-depth'),
     children: document.getElementById('ctl-children'),
     entrypoints: document.getElementById('entrypoints')
@@ -167,7 +169,8 @@
           role: roleOf(n, rootSet),
           depth: nodeDepth[id] == null ? 0 : nodeDepth[id],
           expandable: hiddenChildCount(id) > 0 ? 1 : 0,
-          collapsed: collapsedNodes[id] ? 1 : 0
+          collapsed: collapsedNodes[id] ? 1 : 0,
+          refined: getRefined(id) ? 1 : 0
         }
       });
     });
@@ -226,8 +229,10 @@
       ? visibleCount + ' of ' + m.node_count + ' shown · '
       : '';
     var capped = budgetHit ? ' · view limit ' + policy.budget + ' reached' : '';
+    var refined = refinedCount();
+    var refinedText = refined ? ' · ' + refined + ' refined' : '';
     el.stats.textContent = shown + m.node_count + ' functions · ' +
-      m.edge_count + ' calls · ' + m.documented + ' documented' + capped;
+      m.edge_count + ' calls · ' + m.documented + ' documented' + capped + refinedText;
   }
 
   var STYLE = [
@@ -294,6 +299,13 @@
       // is indistinguishable from a viewer that has broken.
       selector: 'node[collapsed = 1]',
       style: { 'border-style': 'dotted', 'border-width': 3.5, 'background-opacity': 0.5 }
+    },
+    {
+      // A refinement run covers this function. Only the border colour changes,
+      // so the marker composes with the role fill and with the double and
+      // dotted borders the view policy draws.
+      selector: 'node[refined = 1]',
+      style: { 'border-color': css('--refined') }
     },
     {
       selector: 'node.selected',
@@ -403,12 +415,205 @@
     return s;
   }
 
+  // The comment store is read through this one accessor and nothing else
+  // touches it (plan §3.2): when the bodies are sharded, this is the one place
+  // that changes. getRefined() below is its sibling for the refinement overlay.
+  function getDoc(id) {
+    return (data.docs && data.docs[id]) || null;
+  }
+
+  // Summary / Description / Parameters / Returns / Notes for one parsed
+  // comment. Shared by the inspector's main document and by every rung of the
+  // refinement ladder, so the two renderings can never drift apart.
+  function docSections(doc) {
+    var frag = document.createDocumentFragment();
+    if (doc.brief)       frag.appendChild(section('Summary', prose(doc.brief)));
+    if (doc.description) frag.appendChild(section('Description', prose(doc.description)));
+
+    if (doc.params && doc.params.length) {
+      var dl = document.createElement('dl');
+      dl.className = 'params';
+      doc.params.forEach(function (p) {
+        dl.appendChild(make('dt', null, p[0]));
+        dl.appendChild(make('dd', null, p[1] || '—'));
+      });
+      frag.appendChild(section('Parameters', dl));
+    }
+
+    if (doc.returns) frag.appendChild(section('Returns', prose(doc.returns)));
+
+    if (doc.tags && doc.tags.length) {
+      var ul = make('ul', 'tags');
+      doc.tags.forEach(function (t) {
+        var li = make('li', t[0]);
+        li.appendChild(make('span', 'tag-name', t[0]));
+        li.appendChild(text(t[1] || ''));
+        ul.appendChild(li);
+      });
+      frag.appendChild(section('Notes', ul));
+    }
+    return frag;
+  }
+
+  /* -- refinement --------------------------------------------------------- */
+
+  // The overlay is optional: graph_data.refined.js loads before this script
+  // when a build carries one and is silently absent otherwise. Like the docs
+  // map, it is read only through the accessors below.
+  function overlay() {
+    var r = window.CODE2DOC_REFINED;
+    return (r && r.docs) ? r : null;
+  }
+
+  function getRefined(id) {
+    var r = overlay();
+    return (r && r.docs[id]) || null;
+  }
+
+  function refinedRun(entry) {
+    var r = overlay();
+    return (r && r.runs && entry && r.runs[entry.run]) || null;
+  }
+
+  // Refined functions that this payload actually draws, for the legend and
+  // the stats line. The builder already scopes the overlay to the payload, so
+  // the filter is a guard against a mismatched pair of files, not the norm.
+  function refinedCount() {
+    var r = overlay();
+    if (!r) return 0;
+    return Object.keys(r.docs).filter(function (id) { return !!byId[id]; }).length;
+  }
+
+  function fmtCosine(c) { return c == null ? '\u2014' : c.toFixed(2); }
+
+  // The score at iteration n is the similarity of comment n to comment n-1,
+  // so it measures stability, not quality. Within the run's threshold is
+  // "stable". Iteration 0 has nothing to compare against, and a leaf after
+  // iteration 1 is carried forward unchanged, so both are neutral rather
+  // than scored.
+  function cosineClass(it, entry, run) {
+    if (it.cosine == null || it.n === 0) return 'cos-none';
+    if (!entry.is_parent && it.n > 1) return 'cos-none';
+    if (!run || run.threshold == null) return 'cos-none';
+    return (1 - it.cosine) <= run.threshold ? 'cos-stable' : 'cos-changed';
+  }
+
+  function cosineTitle(it, cls, run) {
+    if (it.n === 0) return 'Baseline: the comment before refinement, not scored';
+    var s = 'Cosine similarity to the previous iteration: ' + fmtCosine(it.cosine);
+    if (cls === 'cos-stable') s += ' (within threshold ' + run.threshold + ': stable)';
+    else if (cls === 'cos-changed') s += ' (beyond threshold ' + run.threshold + ': still changing)';
+    else if (it.cosine != null) s += ' (carried forward unchanged)';
+    return s;
+  }
+
+  function iterationHasContent(it) {
+    return !!(it && (it.brief || it.description ||
+                     (it.params && it.params.length) || it.returns ||
+                     (it.tags && it.tags.length)));
+  }
+
+  // The drawer's refinement section: a provenance line, one rung per
+  // iteration with its cosine badge, and the selected iteration's comment
+  // rendered exactly like the main document. Without overlay data for this
+  // function it explains what refinement is and how to produce it.
+  function renderRefinement(id) {
+    var wrap = make('div', 'section refinement');
+    wrap.appendChild(make('div', 'section-label', 'Iterative refinement'));
+    var entry = getRefined(id);
+
+    if (!entry) {
+      wrap.appendChild(make('div', 'note',
+        'No refinement run covers this function. Iterative refinement documents ' +
+        'its callees first, feeds their documentation into this function\u2019s ' +
+        'prompt, and repeats until the comments stop changing (cosine similarity ' +
+        'between iterations within the run\u2019s threshold).'));
+      var xmlDir = (data.meta && (data.meta.xml_dir || data.meta.run_dir)) || '<xml-dir>';
+      wrap.appendChild(make('pre', 'sig',
+        'python3 refine_subtree.py --root ' + id + ' --xml-dir ' + xmlDir));
+      wrap.appendChild(make('div', 'note',
+        'That driver arrives in Phase 2. Until then a runSummary.py run with ' +
+        'func_id set to this refid produces the data, but it starts from the ' +
+        'XML\u2019s existing comments, not from the one-shot comment shown above.'));
+      return wrap;
+    }
+
+    var run = refinedRun(entry) || {};
+    var prov = make('p', 'provenance');
+    prov.appendChild(make('span', 'badge refined', entry.is_parent ? 'parent' : 'leaf'));
+    var bits = [];
+    if (run.model) bits.push(run.model);
+    if (run.iterations_run != null) {
+      bits.push(run.iterations_run + ' of ' +
+                (run.iterations_configured != null ? run.iterations_configured : '?') +
+                ' iterations');
+    }
+    if (run.threshold != null) bits.push('threshold ' + run.threshold);
+    if (run.converged === true) bits.push('converged');
+    else if (run.converged === false) bits.push('not converged');
+    if (run.timestamp) bits.push(String(run.timestamp).slice(0, 10));
+    prov.appendChild(text(bits.join(' \u00b7 ')));
+    if (run.root && byId[run.root]) {
+      prov.appendChild(text(' \u00b7 rooted at '));
+      var rb = make('button', null, run.root_name || byId[run.root].name);
+      rb.type = 'button';
+      rb.addEventListener('click', function () { focusNode(run.root); });
+      prov.appendChild(rb);
+    } else if (run.root_name) {
+      prov.appendChild(text(' \u00b7 rooted at ' + run.root_name));
+    }
+    wrap.appendChild(prov);
+
+    var ladder = make('div', 'ladder');
+    ladder.setAttribute('role', 'tablist');
+    var stage = make('div', 'stage');
+    var rungs = [];
+
+    // Only the stage is swapped when a rung is chosen; the ladder and the
+    // rest of the drawer stay put.
+    function show(n) {
+      rungs.forEach(function (b, i) {
+        b.classList.toggle('active', i === n);
+        b.setAttribute('aria-selected', i === n ? 'true' : 'false');
+      });
+      stage.textContent = '';
+      var it = entry.iterations[n];
+      if (!iterationHasContent(it)) {
+        stage.appendChild(make('div', 'note', n === 0
+          ? 'No comment existed before refinement.'
+          : 'No comment was recorded at this iteration.'));
+      } else {
+        stage.appendChild(docSections(it));
+      }
+    }
+
+    entry.iterations.forEach(function (it, i) {
+      var b = make('button', 'rung', it.n === 0 ? '0 baseline' : String(it.n));
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      var cls = cosineClass(it, entry, run);
+      b.title = cosineTitle(it, cls, run);
+      b.appendChild(make('span', 'cos ' + cls, fmtCosine(it.cosine)));
+      b.addEventListener('click', function () { show(i); });
+      rungs.push(b);
+      ladder.appendChild(b);
+    });
+    wrap.appendChild(ladder);
+    wrap.appendChild(stage);
+    if (!entry.is_parent) {
+      wrap.appendChild(make('div', 'note',
+        'Leaf function: regenerated once at iteration 1, then carried forward unchanged.'));
+    }
+    show(Math.max(0, Math.min(entry.final, entry.iterations.length - 1)));
+    return wrap;
+  }
+
   function openInspector(id) {
     var node = byId[id];
     if (!node) return;
     selectedId = id;
 
-    var doc = (data.docs && data.docs[id]) || null;
+    var doc = getDoc(id);
     var isRoot = (data.meta.roots || []).indexOf(id) !== -1;
 
     el.drawerName.textContent = node.qualified_name || node.name;
@@ -419,6 +624,7 @@
     el.drawerSub.appendChild(
       make('span', 'badge ' + node.doc_state,
            node.doc_state === 'generated' ? 'generated doc' : 'no doc'));
+    if (getRefined(id)) el.drawerSub.appendChild(make('span', 'badge refined', 'refined'));
     if (node.compound) {
       var origin = node.compound_kind === 'file'
         ? node.compound
@@ -451,32 +657,10 @@
         'This function is referenced by the call graph but was not documented ' +
         'in this run. No generated comment is available for it.'));
     } else {
-      if (doc.brief)       body.appendChild(section('Summary', prose(doc.brief)));
-      if (doc.description) body.appendChild(section('Description', prose(doc.description)));
-
-      if (doc.params && doc.params.length) {
-        var dl = document.createElement('dl');
-        dl.className = 'params';
-        doc.params.forEach(function (p) {
-          dl.appendChild(make('dt', null, p[0]));
-          dl.appendChild(make('dd', null, p[1] || '—'));
-        });
-        body.appendChild(section('Parameters', dl));
-      }
-
-      if (doc.returns) body.appendChild(section('Returns', prose(doc.returns)));
-
-      if (doc.tags && doc.tags.length) {
-        var ul = make('ul', 'tags');
-        doc.tags.forEach(function (t) {
-          var li = make('li', t[0]);
-          li.appendChild(make('span', 'tag-name', t[0]));
-          li.appendChild(text(t[1] || ''));
-          ul.appendChild(li);
-        });
-        body.appendChild(section('Notes', ul));
-      }
+      body.appendChild(docSections(doc));
     }
+
+    body.appendChild(renderRefinement(id));
 
     var callees = neighbourList(id, 'outgoing');
     if (callees.length) body.appendChild(section('Calls (' + callees.length + ')', callees.list));
@@ -516,6 +700,23 @@
     el.collapse.disabled = !drawn;
     el.collapse.title = drawn ? 'Fold away this function’s drawn callees (or double-click it)'
                       : 'No callees are drawn';
+    // Refine names what a click delivers and is never disabled: when no run
+    // covers the function, the click explains how to produce one.
+    if (el.refine) {
+      var entry = getRefined(id);
+      if (entry) {
+        var run = refinedRun(entry);
+        var n = entry.final;
+        el.refine.textContent = 'Refined \u00b7 ' + n + (n === 1 ? ' iteration' : ' iterations') +
+          (run && run.converged === false ? ' \u00b7 not converged' : '');
+        el.refine.title = 'Show how this comment evolved across the refinement run';
+      } else {
+        el.refine.textContent = 'Refine\u2026';
+        el.refine.title = 'No iterative refinement covers this function yet; ' +
+                          'shows what it is and how to run one';
+      }
+      el.refine.disabled = false;
+    }
     bar.hidden = false;
     placeNodeControls();
   }
@@ -528,9 +729,13 @@
     var main = bar.offsetParent;
     if (!main) return;
     var mainRect = main.getBoundingClientRect();
+    var drawerWidth = el.drawer.classList.contains('open') ? el.drawer.offsetWidth : 0;
+    // Three buttons no longer fit beside the open inspector on a narrow
+    // window. Bound the strip to the room that is left so it wraps onto a
+    // second row instead of sliding under the drawer, which sits above it.
+    bar.style.maxWidth = Math.max(120, mainRect.width - drawerWidth - 16) + 'px';
     var left = el.fit.getBoundingClientRect().left - mainRect.left;
-    var limit = mainRect.width - bar.offsetWidth - 8;
-    if (el.drawer.classList.contains('open')) limit -= el.drawer.offsetWidth;
+    var limit = mainRect.width - bar.offsetWidth - 8 - drawerWidth;
     bar.style.left = Math.max(8, Math.min(left, limit)) + 'px';
   }
 
@@ -745,8 +950,18 @@
     if (el.nodeControls) {
       el.expand.addEventListener('click', function () { actOnSelected(expandNode); });
       el.collapse.addEventListener('click', function () { actOnSelected(collapseNode); });
+      if (el.refine) {
+        el.refine.addEventListener('click', function () {
+          var id = selectedId;
+          if (!id) return;
+          openInspector(id);
+          var sec = el.drawerBody.querySelector('.refinement');
+          if (sec && sec.scrollIntoView) sec.scrollIntoView({ block: 'start' });
+        });
+      }
       window.addEventListener('resize', placeNodeControls);
     }
+    if (el.legendRefined) el.legendRefined.hidden = refinedCount() === 0;
     if (el.orient) {
       setOrientation(rankDir);
       el.orient.addEventListener('click', function () {

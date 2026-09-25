@@ -14,6 +14,8 @@
   --root:          #b8460e;
   --root-soft:     #ffe8d6;
   --external:      #9aa4af;
+  --refined:       #2f7d4f;
+  --refined-soft:  #dcf3e4;
   --code-bg:       #f2f4f7;
   --shadow:        0 2px 12px rgba(16, 22, 26, 0.12);
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
@@ -34,6 +36,8 @@
     --root:        #e07b40;
     --root-soft:   #3a2415;
     --external:    #4a5158;
+    --refined:     #4fbf7a;
+    --refined-soft:#15301f;
     --code-bg:     #21262d;
     --shadow:      0 2px 12px rgba(0, 0, 0, 0.5);
   }
@@ -123,6 +127,9 @@ html, body {
 .swatch.root       { background: var(--root-soft);   border-color: var(--root); }
 .swatch.documented { background: var(--accent-soft); border-color: var(--accent); }
 .swatch.external   { background: transparent;        border-style: dashed; }
+.swatch.refined    { background: var(--refined-soft); border-color: var(--refined); }
+/* display:flex above would otherwise override the hidden attribute. */
+.legend-item[hidden] { display: none; }
 
 /* --- graph -------------------------------------------------------------- */
 
@@ -133,7 +140,7 @@ html, body {
    bar's bottom border. viewer.js sets `left` to sit under the Fit button. */
 #node-controls {
   position: absolute; top: 0; left: 14px;
-  display: flex; gap: 8px;
+  display: flex; flex-wrap: wrap; gap: 8px;
   padding: 7px 10px 8px;
   background: var(--bg-panel);
   border: 1px solid var(--border);
@@ -206,6 +213,7 @@ html, body {
 .badge.root       { color: var(--root);   background: var(--root-soft);   border-color: var(--root); }
 .badge.generated  { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
 .badge.missing    { color: var(--fg-faint); border-style: dashed; }
+.badge.refined    { color: var(--refined); background: var(--refined-soft); border-color: var(--refined); }
 
 .sig {
   margin: 0 0 14px;
@@ -278,3 +286,60 @@ ul.tags li.warning .tag-name { color: var(--root); }
   border-radius: 6px;
 }
 .doclink:hover { background: var(--accent-soft); }
+
+/* --- refinement ladder -------------------------------------------------- */
+
+.provenance {
+  margin: 0 0 9px;
+  font-size: 12.5px; line-height: 1.6;
+  color: var(--fg-muted);
+}
+.provenance button {
+  padding: 0;
+  font: inherit; font-family: var(--mono); font-size: 12px;
+  color: var(--accent);
+  background: none; border: none;
+  cursor: pointer;
+}
+.provenance button:hover { text-decoration: underline; }
+
+.ladder { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.rung {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 8px;
+  font: inherit; font-size: 12px;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.rung:hover { border-color: var(--refined); }
+.rung.active {
+  font-weight: 600;
+  background: var(--refined-soft);
+  border-color: var(--refined);
+}
+
+/* The score on a rung is the similarity of that iteration's comment to the
+   one before it, banded against the run's threshold. */
+.cos {
+  padding: 0 5px;
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  color: var(--fg-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.cos-stable  { color: var(--refined); background: var(--refined-soft); border-color: var(--refined); }
+.cos-changed { color: var(--root);    background: var(--root-soft);    border-color: var(--root); }
+.cos-none    { color: var(--fg-faint); border-style: dashed; }
+
+.stage {
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.stage .section:last-child { margin-bottom: 0; }
+.refinement .note + .sig { margin-top: 10px; }
+.refinement .sig { margin-bottom: 10px; }

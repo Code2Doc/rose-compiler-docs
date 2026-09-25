@@ -34,6 +34,7 @@
       <span class="legend-item"><span class="swatch root"></span>entrypoint</span>
       <span class="legend-item"><span class="swatch documented"></span>documented</span>
       <span class="legend-item"><span class="swatch external"></span>undocumented</span>
+      <span id="legend-refined" class="legend-item" hidden><span class="swatch refined"></span>refined</span>
     </div>
     <span id="stats"></span>
   </header>
@@ -46,6 +47,7 @@
     <div id="node-controls" role="toolbar" aria-label="Selected function" hidden>
       <button id="btn-expand" class="btn" type="button">Expand</button>
       <button id="btn-collapse" class="btn" type="button">Collapse</button>
+      <button id="btn-refine" class="btn" type="button">Refine&hellip;</button>
     </div>
     <div id="empty-state">Loading&hellip;</div>
 
@@ -77,10 +79,17 @@
   var m = /[?&]data=([A-Za-z0-9._-]+\.js)/.exec(window.location.search);
   // Restricted to a bare filename: no slashes, no traversal.
   var payload = m ? m[1] : 'graph_data.js';
-  ['' + payload, 'viewer.js'].forEach(function (src) {
+  // The refinement overlay is optional and named after the payload
+  // (graph_data.js -> graph_data.refined.js). Most builds have none, so a
+  // failed load is silent: the element is removed and nothing else happens.
+  var overlay = payload.replace(/\.js$/, '.refined.js');
+  [payload, overlay, 'viewer.js'].forEach(function (src) {
     var s = document.createElement('script');
     s.src = src;
     s.async = false;
+    if (src === overlay) {
+      s.onerror = function () { if (s.parentNode) s.parentNode.removeChild(s); };
+    }
     document.head.appendChild(s);
   });
 })();
