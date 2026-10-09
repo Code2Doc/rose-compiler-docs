@@ -100,9 +100,9 @@ $(function(){initNavTree('group__sawyer__action__factories.html','',''); });
 <tr class="memitem:gaf6e6a1646aa788325a12ea20b01b7e3e" id="r_gaf6e6a1646aa788325a12ea20b01b7e3e"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_show_help.html#aad72f691ab1d8d082810123d4217dc82">ShowHelp::Ptr</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaf6e6a1646aa788325a12ea20b01b7e3e">Sawyer::CommandLine::showHelp</a> ()</td></tr>
 <tr class="memdesc:gaf6e6a1646aa788325a12ea20b01b7e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance of the <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help.html">ShowHelp</a> class.  <br /></td></tr>
 <tr class="memitem:ga915f55d665aa5d84d3c6d157a6deca3a" id="r_ga915f55d665aa5d84d3c6d157a6deca3a"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html#af846ebb02032e2369d19f9c26fec4962">ShowHelpAndExit::Ptr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga915f55d665aa5d84d3c6d157a6deca3a">Sawyer::CommandLine::showHelpAndExit</a> (int <a class="el" href="f18-parse-demo_8cpp.html#a3dfa47eda25228e5115c8e7f5f277849">exitStatus</a>)</td></tr>
-<tr class="memdesc:ga915f55d665aa5d84d3c6d157a6deca3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a singleton instance of <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html">ShowHelpAndExit</a> with a specified exit status.  <br /></td></tr>
+<tr class="memdesc:ga915f55d665aa5d84d3c6d157a6deca3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the help documentation and terminates the program with a specified exit status.  <br /></td></tr>
 <tr class="memitem:gaab1c5b93fde31adf2acdc2649e9708f3" id="r_gaab1c5b93fde31adf2acdc2649e9708f3"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html#aef34fa4a0ba319fdc5f5ec1250c13f64">ConfigureDiagnostics::Ptr</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaab1c5b93fde31adf2acdc2649e9708f3">Sawyer::CommandLine::configureDiagnostics</a> (const std::string &amp;switchKey, <a class="el" href="class_sawyer_1_1_message_1_1_facilities.html">Message::Facilities</a> &amp;facilities, bool exitOnHelp)</td></tr>
-<tr class="memdesc:gaab1c5b93fde31adf2acdc2649e9708f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the diagnostic settings for the application.  <br /></td></tr>
+<tr class="memdesc:gaab1c5b93fde31adf2acdc2649e9708f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and configures the diagnostic settings for the application.  <br /></td></tr>
 <tr class="memitem:ga586605f73e008f02bb97f18b66cdca8a" id="r_ga586605f73e008f02bb97f18b66cdca8a"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics_quiet.html#a7d4711ef7a136ffe96e263924beb9e84">ConfigureDiagnosticsQuiet::Ptr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga586605f73e008f02bb97f18b66cdca8a">Sawyer::CommandLine::configureDiagnosticsQuiet</a> (<a class="el" href="class_sawyer_1_1_message_1_1_facilities.html">Message::Facilities</a> &amp;facilities)</td></tr>
 <tr class="memdesc:ga586605f73e008f02bb97f18b66cdca8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the diagnostics settings to a quiet mode for specific message facilities.  <br /></td></tr>
 <tr class="memitem:ga1593dd4aed80aa06a97f1321e18792ad" id="r_ga1593dd4aed80aa06a97f1321e18792ad"><td class="memTemplParams" colspan="2">template&lt;class Functor&gt; </td></tr>
@@ -144,20 +144,21 @@ Factories</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Configures the diagnostic settings for the application. </p>
-<p>This function acts as a wrapper to initialize or retrieve the singleton instance of the <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html">ConfigureDiagnostics</a> class. It processes a command-line switch key to apply specific diagnostic configurations to the provided message facilities.</p>
+<p>Initializes and configures the diagnostic settings for the application. </p>
+<p>This function serves as a high-level wrapper for the <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html">ConfigureDiagnostics</a> factory method. It facilitates the setup of diagnostic parameters by delegating the instantiation and configuration logic to the <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html#a16b21deaf170f4cdec3c83b235099ab4">ConfigureDiagnostics::instance</a> singleton-like factory. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is used to bind specific command-line switch keys to message facilities, ensuring that logging and diagnostic output are correctly routed based on the provided configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">switchKey</td><td><a class="el" href="class_a.html">A</a> string representing the command-line switch or key used to identify the specific diagnostic configuration to apply. </td></tr>
-    <tr><td class="paramname">facilities</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="class_sawyer_1_1_message_1_1_facilities.html">Message::Facilities</a> object that will be updated with the new diagnostic settings. </td></tr>
-    <tr><td class="paramname">exitOnHelp</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether the application should terminate immediately after displaying help information.</td></tr>
+    <tr><td class="paramname">switchKey</td><td><a class="el" href="class_a.html">A</a> string representing the unique key associated with the switch configuration used to identify the diagnostic settings. </td></tr>
+    <tr><td class="paramname">facilities</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="class_sawyer_1_1_message_1_1_facilities.html">Message::Facilities</a> object which manages the logging or messaging facilities for the diagnostic instance. </td></tr>
+    <tr><td class="paramname">exitOnHelp</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether the application should terminate immediately if a help flag is encountered during the configuration process.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer of type <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html#aef34fa4a0ba319fdc5f5ec1250c13f64">ConfigureDiagnostics::Ptr</a> representing the configured diagnostics instance.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> facilities object must be a valid, initialized instance of <a class="el" href="class_sawyer_1_1_message_1_1_facilities.html">Message::Facilities</a>. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> facilities object will reflect the configuration specified by the switchKey.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function delegates the core logic to the <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html#a16b21deaf170f4cdec3c83b235099ab4">ConfigureDiagnostics::instance</a> static method. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> Ptr (smart pointer) containing the newly created and configured <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html">ConfigureDiagnostics</a> instance.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> facilities reference must remain valid for the duration of the configuration process to avoid undefined behavior.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> facilities parameter must be a valid, initialized <a class="el" href="class_sawyer_1_1_message_1_1_facilities.html">Message::Facilities</a> object.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html">ConfigureDiagnostics</a> object is allocated on the heap and returned as a managed pointer.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function acts as a proxy to the <a class="el" href="class_sawyer_1_1_command_line_1_1_configure_diagnostics.html#a16b21deaf170f4cdec3c83b235099ab4">ConfigureDiagnostics::instance</a> factory method and follows the factory pattern for diagnostic setup. </dd></dl>
 
 </div>
 </div>
@@ -229,17 +230,19 @@ Factories</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves a singleton instance of <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html">ShowHelpAndExit</a> with a specified exit status. </p>
-<p>This function acts as a factory method or accessor for the <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html">ShowHelpAndExit</a> singleton. It wraps the call to the static instance method of the <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html">ShowHelpAndExit</a> class, ensuring that the application can trigger a help display and subsequent termination with the provided exit code.</p>
+<p>Displays the help documentation and terminates the program with a specified exit status. </p>
+<p>This function serves as a high-level wrapper that triggers the display of the application's help interface and subsequently exits the process. It delegates the core logic to the singleton instance of the <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help.html">ShowHelp</a> class, ensuring that the help message is printed consistently and the program exits with the provided integer status code.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="f18-parse-demo_8cpp.html#a3dfa47eda25228e5115c8e7f5f277849">exitStatus</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> integer status code that will be used when the application exits.</td></tr>
+    <tr><td class="paramname"><a class="el" href="f18-parse-demo_8cpp.html#a3dfa47eda25228e5115c8e7f5f277849">exitStatus</a></td><td>An integer representing the exit code that the program should return to the operating system upon termination.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> pointer (specifically a <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html#af846ebb02032e2369d19f9c26fec4962">ShowHelpAndExit::Ptr</a>) to the singleton instance configured with the provided exit status.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> exitStatus should be a valid integer representing the intended process exit code (typically 0 for success or non-zero for errors). </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Returns a valid pointer to a <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help_and_exit.html">ShowHelpAndExit</a> object. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> Ptr containing the singleton instance of the <a class="el" href="class_sawyer_1_1_command_line_1_1_show_help.html">ShowHelp</a> class responsible for the execution of the help display and exit sequence.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Calling this function will lead to the termination of the current process following the display of the help information.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application must be in a state where standard output/error streams are available for displaying the help text.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates with the provided exitStatus, and the help information has been rendered to the user.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around the ShowHelp::instance(int) singleton accessor. </dd></dl>
 
 </div>
 </div>

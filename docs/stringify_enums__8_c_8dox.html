@@ -103,9 +103,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5dcef4242505fed627de542036c29064" id="r_a5dcef4242505fed627de542036c29064"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5dcef4242505fed627de542036c29064">isAnonymous</a> (const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
 <tr class="memdesc:a5dcef4242505fed627de542036c29064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if any scope within the provided collection is anonymous.  <br /></td></tr>
 <tr class="memitem:ab61fdc95c480e8f8cdc6b775607f57dd" id="r_ab61fdc95c480e8f8cdc6b775607f57dd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab61fdc95c480e8f8cdc6b775607f57dd">parseExtern</a> (TokenStream &amp;tokens, <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
-<tr class="memdesc:ab61fdc95c480e8f8cdc6b775607f57dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an extern declaration and manages scope creation.  <br /></td></tr>
+<tr class="memdesc:ab61fdc95c480e8f8cdc6b775607f57dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an 'extern' declaration and manages scope creation.  <br /></td></tr>
 <tr class="memitem:abdc4dcfb19497924b15886277253661e" id="r_abdc4dcfb19497924b15886277253661e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abdc4dcfb19497924b15886277253661e">parseNamespace</a> (TokenStream &amp;tokens, <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
-<tr class="memdesc:abdc4dcfb19497924b15886277253661e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a namespace declaration from a token stream and updates the scope stack.  <br /></td></tr>
+<tr class="memdesc:abdc4dcfb19497924b15886277253661e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a namespace declaration and updates the current scope hierarchy.  <br /></td></tr>
 <tr class="memitem:a20c22e8fe24ca73635da5a02fc3a5952" id="r_a20c22e8fe24ca73635da5a02fc3a5952"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a20c22e8fe24ca73635da5a02fc3a5952">parseClass</a> (TokenStream &amp;tokens, <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
 <tr class="memdesc:a20c22e8fe24ca73635da5a02fc3a5952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a class or struct definition from a token stream and manages scope entry.  <br /></td></tr>
 <tr class="memitem:a9ad716541693b94dc5a76feddd0db6d3" id="r_a9ad716541693b94dc5a76feddd0db6d3"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9ad716541693b94dc5a76feddd0db6d3">parseIntegralConstant</a> (TokenStream &amp;tokens)</td></tr>
@@ -113,7 +113,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a2f3720f21633146e86208ea5177acdb2" id="r_a2f3720f21633146e86208ea5177acdb2"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2f3720f21633146e86208ea5177acdb2">parseCommaExpr</a> (TokenStream &amp;tokens)</td></tr>
 <tr class="memdesc:a2f3720f21633146e86208ea5177acdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a comma-separated expression from a token stream.  <br /></td></tr>
 <tr class="memitem:a4badecdb563f70be9b5dfe00b27a4125" id="r_a4badecdb563f70be9b5dfe00b27a4125"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4badecdb563f70be9b5dfe00b27a4125">parseConstExpr</a> (TokenStream &amp;tokens)</td></tr>
-<tr class="memdesc:a4badecdb563f70be9b5dfe00b27a4125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a constant expression from the provided token stream.  <br /></td></tr>
+<tr class="memdesc:a4badecdb563f70be9b5dfe00b27a4125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an expression intended for use as a constant value.  <br /></td></tr>
 <tr class="memitem:a7f9317eae75a4027fe99331eac785bf5" id="r_a7f9317eae75a4027fe99331eac785bf5"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7f9317eae75a4027fe99331eac785bf5">parseTermExpr</a> (TokenStream &amp;tokens)</td></tr>
 <tr class="memdesc:a7f9317eae75a4027fe99331eac785bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a single term expression from a stream of tokens and returns its integer value.  <br /></td></tr>
 <tr class="memitem:ac3eb045c39bd33bc717904c89ddb46ef" id="r_ac3eb045c39bd33bc717904c89ddb46ef"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac3eb045c39bd33bc717904c89ddb46ef">parseParenExpr</a> (TokenStream &amp;tokens)</td></tr>
@@ -147,35 +147,35 @@ Functions</h2></td></tr>
 <tr class="memitem:a20a74f807f35072edf218d63a5cd2434" id="r_a20a74f807f35072edf218d63a5cd2434"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a20a74f807f35072edf218d63a5cd2434">parseLogicalOrExpr</a> (TokenStream &amp;tokens)</td></tr>
 <tr class="memdesc:a20a74f807f35072edf218d63a5cd2434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a logical OR expression from a stream of tokens.  <br /></td></tr>
 <tr class="memitem:a76991f4098421316d0104624b79b0210" id="r_a76991f4098421316d0104624b79b0210"><td class="memItemLeft"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a76991f4098421316d0104624b79b0210">parseAssignExpr</a> (TokenStream &amp;tokens)</td></tr>
-<tr class="memdesc:a76991f4098421316d0104624b79b0210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses assignment expressions and ternary operators from a token stream.  <br /></td></tr>
+<tr class="memdesc:a76991f4098421316d0104624b79b0210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses assignment expressions and ternary conditional operators.  <br /></td></tr>
 <tr class="memitem:a526d5f383c5c1a10ad7cdcde1b6b00a9" id="r_a526d5f383c5c1a10ad7cdcde1b6b00a9"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a526d5f383c5c1a10ad7cdcde1b6b00a9">fullyQualifiedEnumName</a> (const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
 <tr class="memdesc:a526d5f383c5c1a10ad7cdcde1b6b00a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a fully qualified name string from a collection of scopes.  <br /></td></tr>
 <tr class="memitem:a8e9108915d75fd5ed616c5b406518e46" id="r_a8e9108915d75fd5ed616c5b406518e46"><td class="memItemLeft"><a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8e9108915d75fd5ed616c5b406518e46">generateNamespaces</a> (const std::string initial, const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> nOmit)</td></tr>
-<tr class="memdesc:a8e9108915d75fd5ed616c5b406518e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates and tracks a hierarchy of namespace declarations within a lattice structure.  <br /></td></tr>
+<tr class="memdesc:a8e9108915d75fd5ed616c5b406518e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates and prints nested C++ namespace declarations while updating a namespace lattice.  <br /></td></tr>
 <tr class="memitem:a9ca926365a5a00cfe5e6be3fd9dc4f54" id="r_a9ca926365a5a00cfe5e6be3fd9dc4f54"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9ca926365a5a00cfe5e6be3fd9dc4f54">generateDeclaration</a> (const std::string &amp;fileName, const <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> &amp;loc, const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
-<tr class="memdesc:a9ca926365a5a00cfe5e6be3fd9dc4f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates C++ declaration strings for an enumeration type.  <br /></td></tr>
+<tr class="memdesc:a9ca926365a5a00cfe5e6be3fd9dc4f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates C++ function declarations for enum string conversion utilities.  <br /></td></tr>
 <tr class="memitem:a9303d08b0b23c554ae61fc2138928313" id="r_a9303d08b0b23c554ae61fc2138928313"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9303d08b0b23c554ae61fc2138928313">generateImplementation</a> (const std::string &amp;fileName, const <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> &amp;loc, const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes, const <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> &amp;members)</td></tr>
-<tr class="memdesc:a9303d08b0b23c554ae61fc2138928313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates C++ implementation code for an enumeration.  <br /></td></tr>
+<tr class="memdesc:a9303d08b0b23c554ae61fc2138928313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates C++ source code implementation for an enumeration type.  <br /></td></tr>
 <tr class="memitem:a7d985f9b0b29fdec36d38779ccf88b63" id="r_a7d985f9b0b29fdec36d38779ccf88b63"><td class="memItemLeft"><a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7d985f9b0b29fdec36d38779ccf88b63">readOldMembers</a> (const boost::filesystem::path &amp;fileName)</td></tr>
-<tr class="memdesc:a7d985f9b0b29fdec36d38779ccf88b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads enumeration member definitions from a specified file.  <br /></td></tr>
+<tr class="memdesc:a7d985f9b0b29fdec36d38779ccf88b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an external file to load legacy enumeration definitions into an <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> object.  <br /></td></tr>
 <tr class="memitem:aa57c79f47d2c5d327beafcf66173affc" id="r_aa57c79f47d2c5d327beafcf66173affc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa57c79f47d2c5d327beafcf66173affc">checkBackwardCompatibility</a> (const std::string &amp;fileName, const <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> &amp;loc, const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes, const <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> &amp;members)</td></tr>
-<tr class="memdesc:aa57c79f47d2c5d327beafcf66173affc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that enum member values have not changed between versions to ensure backward compatibility.  <br /></td></tr>
+<tr class="memdesc:aa57c79f47d2c5d327beafcf66173affc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that enum member values have not changed between versions to ensure backward compatibility.  <br /></td></tr>
 <tr class="memitem:a1a9fdfde26a5b932519a02e07e8d2d67" id="r_a1a9fdfde26a5b932519a02e07e8d2d67"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a1a9fdfde26a5b932519a02e07e8d2d67">compatibleEnumName</a> (const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
 <tr class="memdesc:a1a9fdfde26a5b932519a02e07e8d2d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a valid, stringified identifier based on a collection of scopes.  <br /></td></tr>
 <tr class="memitem:adb4f97ab0ca4c254da1121d41ba9ce05" id="r_adb4f97ab0ca4c254da1121d41ba9ce05"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb4f97ab0ca4c254da1121d41ba9ce05">generateCompatibleDeclaration</a> (const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
-<tr class="memdesc:adb4f97ab0ca4c254da1121d41ba9ce05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a C++ declaration for a compatible enum-based interface.  <br /></td></tr>
+<tr class="memdesc:adb4f97ab0ca4c254da1121d41ba9ce05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a C++ source code declaration for a compatible enum interface.  <br /></td></tr>
 <tr class="memitem:aacc233b537d5ba1e0dede4bed6d4c28c" id="r_aacc233b537d5ba1e0dede4bed6d4c28c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aacc233b537d5ba1e0dede4bed6d4c28c">generateCompatibleImplementation</a> (const <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
-<tr class="memdesc:aacc233b537d5ba1e0dede4bed6d4c28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates C++ source code for a compatible enum implementation.  <br /></td></tr>
+<tr class="memdesc:aacc233b537d5ba1e0dede4bed6d4c28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates C++ source code for a compatible enum stringification implementation.  <br /></td></tr>
 <tr class="memitem:a035c3ff7bb68a6f518e87cd85edc0da8" id="r_a035c3ff7bb68a6f518e87cd85edc0da8"><td class="memItemLeft"><a class="el" href="stringify_enums_8_c.html#a010b95fe3ef818ef463931d979c9b757">Flags</a>&#160;</td><td class="memItemRight"><a class="el" href="#a035c3ff7bb68a6f518e87cd85edc0da8">readFlags</a> (TokenStream &amp;tokens, const Token &amp;token)</td></tr>
-<tr class="memdesc:a035c3ff7bb68a6f518e87cd85edc0da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses and extracts configuration flags from the current line of a token stream.  <br /></td></tr>
+<tr class="memdesc:a035c3ff7bb68a6f518e87cd85edc0da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a line of text to extract specific configuration flags.  <br /></td></tr>
 <tr class="memitem:ac4f59a9506f6834d9b2b694f91acbe82" id="r_ac4f59a9506f6834d9b2b694f91acbe82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac4f59a9506f6834d9b2b694f91acbe82">parseEnum</a> (TokenStream &amp;tokens, <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> &amp;scopes)</td></tr>
-<tr class="memdesc:ac4f59a9506f6834d9b2b694f91acbe82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an enumeration definition from a token stream and handles code generation.  <br /></td></tr>
+<tr class="memdesc:ac4f59a9506f6834d9b2b694f91acbe82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an enumeration definition from a token stream and manages its scope and generation.  <br /></td></tr>
 <tr class="memitem:a93dacab01b1654fee5d649bb389b665c" id="r_a93dacab01b1654fee5d649bb389b665c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a93dacab01b1654fee5d649bb389b665c">generateOnce</a> ()</td></tr>
 <tr class="memdesc:a93dacab01b1654fee5d649bb389b665c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the initial header guard and warning message for the generated file.  <br /></td></tr>
 <tr class="memitem:a5b8c02b994b961cae6bd414b78c996ed" id="r_a5b8c02b994b961cae6bd414b78c996ed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5b8c02b994b961cae6bd414b78c996ed">generateStringifierClass</a> ()</td></tr>
 <tr class="memdesc:a5b8c02b994b961cae6bd414b78c996ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the source code for the <a class="el" href="class_rose_1_1_stringifier.html">Rose::Stringifier</a> class.  <br /></td></tr>
 <tr class="memitem:ab92b00eedbadf2056eae192671ff50d0" id="r_ab92b00eedbadf2056eae192671ff50d0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab92b00eedbadf2056eae192671ff50d0">generateDocumentation</a> ()</td></tr>
-<tr class="memdesc:ab92b00eedbadf2056eae192671ff50d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a formatted string representation of the namespace lattice structure.  <br /></td></tr>
+<tr class="memdesc:ab92b00eedbadf2056eae192671ff50d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a formatted C++ namespace hierarchy stringification to standard output.  <br /></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry point of the application that orchestrates the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> compilation pipeline.  <br /></td></tr>
 </table>
@@ -209,20 +209,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verifies that enum member values have not changed between versions to ensure backward compatibility. </p>
-<p>This function iterates through the provided enum members and compares their current values against previously recorded values stored in the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a1ae8531ea87a7f5e497adf0ffd53208c">oldEnumMembers</a></span> database. If an enum member is found to have a different value than its recorded predecessor, an error message is printed to standard error, and a global compatibility error flag is set. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips checks for anonymous scopes and members marked with the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a3f3de3e0d751949b8d0b60ffb302944aa7ec1a9a36c51e0bf5e051e1cf8bfd334">NO_CHECK</a></span> flag. If a member is new (not found in the database), its value is inserted into the database for future comparisons.</p>
+<p>Validates that enum member values have not changed between versions to ensure backward compatibility. </p>
+<p>This function iterates through the members of a given enumeration scope to detect breaking changes. It constructs a fully qualified name for the enum and checks each member against a persistent database of previously recorded values (oldEnumMembers). If a member exists in the database but its current value differs from the recorded value, an error is logged to stderr and a global compatibility error flag is set. If a member is new, its value is inserted into the database for future tracking. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips processing if the scope is anonymous or if the member is explicitly marked with the NO_CHECK flag.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the file currently being processed. </td></tr>
-    <tr><td class="paramname">loc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> location information (line/column) within the source file where the error occurred. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scope information used to determine the fully qualified name of the enum. </td></tr>
-    <tr><td class="paramname">members</td><td><a class="el" href="class_a.html">A</a> collection of nodes representing the members of the enum to be checked.</td></tr>
+    <tr><td class="paramname">fileName</td><td><a class="el" href="class_a.html">A</a> string representing the file path where the current definition is located. </td></tr>
+    <tr><td class="paramname">loc</td><td><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> object providing the specific line/column information for error reporting. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchical context of the enum. </td></tr>
+    <tr><td class="paramname">members</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> nodes containing the keys and values of the enum members.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#a1ae8531ea87a7f5e497adf0ffd53208c">oldEnumMembers</a></span> database must be initialized and accessible. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If a value mismatch is detected, <span class="tt"><a class="el" href="stringify_enums_8_c.html#a17bd84d0cab5ea48e1db949d69e29b00">hadCompatibilityErrors</a></span> is set to true and an error is logged to <span class="tt">std::cerr</span>. New enum members are added to <span class="tt"><a class="el" href="stringify_enums_8_c.html#a1ae8531ea87a7f5e497adf0ffd53208c">oldEnumMembers</a></span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt"><a class="el" href="#a5dcef4242505fed627de542036c29064" title="Checks if any scope within the provided collection is anonymous.">isAnonymous</a></span> helper to skip anonymous scopes and <span class="tt"><a class="el" href="#a526d5f383c5c1a10ad7cdcde1b6b00a9" title="Constructs a fully qualified name string from a collection of scopes.">fullyQualifiedEnumName</a></span> to construct the lookup key. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If a value mismatch is detected, the function prints an error message to std::cerr and modifies the global state by setting 'hadCompatibilityErrors' to true.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> 'scopes' parameter must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> 'members' parameter must be a valid, iterable collection of <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> nodes. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global/member variable 'oldEnumMembers' must be initialized and accessible.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If a new enum member is encountered, it is inserted into the 'oldEnumMembers' database. </dd>
+<dd>
+If a value change is detected, the global 'hadCompatibilityErrors' flag is updated.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function ignores anonymous scopes to avoid name collisions or undefined behavior. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function respects the NO_CHECK flag within the member's flags to allow skipping specific checks. </dd></dl>
 
 </div>
 </div>
@@ -242,19 +252,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates a valid, stringified identifier based on a collection of scopes. </p>
-<p>This function iterates through a collection of scope objects and concatenates their names into a single string starting with the prefix "stringify". <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function implements a heuristic to ensure the resulting string is a valid C++ identifier by inserting underscores between concatenated segments when a transition between uppercase and lowercase/digit characters is detected (e.g., CamelCase to camelCase). It specifically filters out scopes that are formatted as template parameters (starting with '&lt;') or have the specific name "Rose".</p>
+<p>This function iterates through a collection of scope objects and concatenates their names into a single string starting with the prefix "stringify". <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function implements a heuristic to ensure the resulting string is a valid C++ identifier by inserting underscores between segments when a transition between uppercase and lowercase/digit characters is detected (e.g., transitioning from an uppercase letter to another uppercase letter, or from a lowercase/digit to a lowercase letter). It specifically filters out scopes that start with a '&lt;' character or are named "Rose".</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects used to construct the identifier.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string representing the concatenated and formatted scope names.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scopes container must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Returns a non-empty string starting with "stringify".</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses the BOOST_FOREACH macro for iteration. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic relies on character case transitions to decide whether to append an underscore, facilitating the creation of a single continuous identifier from multiple parts. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string representing the concatenated and formatted scope names, prefixed with "stringify".</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> container must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is a valid C++ identifier that does not contain illegal characters like '&lt;' and follows specific casing-based underscore insertion rules.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <span class="tt">boost::starts_with</span> utility and the <span class="tt">BOOST_FOREACH</span> macro. </dd></dl>
 
 </div>
 </div>
@@ -274,15 +282,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a fully qualified name string from a collection of scopes. </p>
-<p>This function iterates through a collection of scope objects and concatenates their names using the scope resolution operator (::) as a delimiter. It filters out scopes that have empty names or names that begin with a '&lt;' character, which typically represent template parameters or non-namespace identifiers.</p>
+<p>This function iterates through a collection of scope objects and concatenates their names using the C++ scope resolution operator (::) as a delimiter. It filters out scopes that have empty names or names that begin with a '&lt;' character, which typically represents template parameters or special markers that should not be part of the qualified name string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchy of names to be concatenated.</td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchy of names to be joined.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the concatenated names of the valid scopes, separated by "::". If no valid scopes are found, an empty string is returned.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scopes container must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> container must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a string representing the hierarchical path of the provided scopes.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses the BOOST_FOREACH macro for iteration. </dd></dl>
 
@@ -303,17 +311,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates a C++ declaration for a compatible enum-based interface. </p>
-<p>This function constructs and prints a C++ code snippet to standard output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> snippet defines a set of functions within a <span class="tt"><a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a></span> namespace that provide compatibility for a specific enum type. It handles the formatting of fully qualified names, including namespace prefixes, and includes deprecation warnings if the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a1d301162e9506c43bf4eece3a69a192f">deprecateCompatible</a></span> flag is set. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code includes both a function that returns a value based on an input integer and a function that returns a constant vector of integers.</p>
+<p>Generates a C++ source code declaration for a compatible enum interface. </p>
+<p>This function produces a formatted C++ code snippet intended for output to a stream (std::cout). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code defines a set of functions within the "Rose" namespace that provide compatibility layers for specific enum types. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function constructs a string representing the fully qualified name of the enum and uses a compatible identifier (generated via compatibleEnumName) to declare both a string conversion function and a vector retrieval function. If the global flag <span class="tt"><a class="el" href="stringify_enums_8_c.html#a1d301162e9506c43bf4eece3a69a192f">deprecateCompatible</a></span> is set, the generated code will also include SAWYER_DEPRECATED macros pointing to the original enum name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object representing the scope for which the declaration is being generated.</td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchical path of the enum to be declared.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> object must be valid and accessible. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the provided scopes are anonymous, no output is produced. Otherwise, a formatted C++ declaration is printed to <span class="tt">std::cout</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on external global or static variables such as <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> and <span class="tt">deprecodeCompatible</span>, as well as helper functions like <span class="tt"><a class="el" href="#a5dcef4242505fed627de542036c29064" title="Checks if any scope within the provided collection is anonymous.">isAnonymous</a></span>, <span class="tt"><a class="el" href="#a526d5f383c5c1a10ad7cdcde1b6b00a9" title="Constructs a fully qualified name string from a collection of scopes.">fullyQualifiedEnumName</a></span>, and <span class="tt"><a class="el" href="#a1a9fdfde26a5b932519a02e07e8d2d67" title="Generates a valid, stringified identifier based on a collection of scopes.">compatibleEnumName</a></span>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the provided scopes represent an anonymous scope, the function returns immediately without generating any output.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> parameter must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global/member variable <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> must be correctly initialized to represent the parent namespace context. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global/member variable <span class="tt"><a class="el" href="stringify_enums_8_c.html#a1d301162e9506c43bf4eece3a69a192f">deprecateCompatible</a></span> must be a boolean indicating whether deprecation warnings should be included.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If the scopes are not anonymous, a formatted C++ declaration block is printed to the standard output stream.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of <span class="tt"><a class="el" href="#a5dcef4242505fed627de542036c29064" title="Checks if any scope within the provided collection is anonymous.">isAnonymous</a></span>, <span class="tt"><a class="el" href="#a526d5f383c5c1a10ad7cdcde1b6b00a9" title="Constructs a fully qualified name string from a collection of scopes.">fullyQualifiedEnumName</a></span>, and <span class="tt"><a class="el" href="#a1a9fdfde26a5b932519a02e07e8d2d67" title="Generates a valid, stringified identifier based on a collection of scopes.">compatibleEnumName</a></span> helper functions to resolve names and formatting. </dd></dl>
 
 </div>
 </div>
@@ -332,18 +346,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates C++ source code for a compatible enum implementation. </p>
-<p>This function generates a string of C++ code that defines a compatible interface for an enumeration within the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> namespace. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code provides two functions: one for stringifying an integer value with options for prefix stripping and canonical naming, and another for retrieving a vector of all valid enum values. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on an existing <span class="tt"><a class="el" href="namespacestringify.html" title="Auto-generated documentation for the stringify namespace.">stringify</a></span> namespace containing the core logic.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function checks if the provided scopes are anonymous; if so, it performs no action. Otherwise, it uses the fully qualified name of the enum to construct the implementation.</p>
+<p>Generates C++ source code for a compatible enum stringification implementation. </p>
+<p>This function produces a string of C++ code that defines a helper function and a getter function within the "Rose" namespace. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code is designed to provide a human-readable string representation of an enum value, supporting features such as prefix stripping, canonical name formatting, and fallback to numeric string conversion via boost::lexical_cast. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation specifically targets enums that are not anonymous.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to a <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object representing the enumeration scope to be processed.</td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchical namespace and enum structure used to derive the names for the generated implementation.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> object must contain valid information regarding the enumeration's fully qualified name and compatible name. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the scopes are not anonymous, the function outputs the generated C++ implementation to the standard output stream (std::cout).</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code uses <span class="tt">boost::lexical_cast</span> for integer-to-string conversion and relies on the existence of <span class="tt"><a class="el" href="namespacestringify.html" title="Auto-generated documentation for the stringify namespace.">stringify</a>::[enumName]</span> in the target environment. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the provided scopes represent an anonymous scope, the function returns immediately without generating or printing any code.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> parameter must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> functions <span class="tt"><a class="el" href="#a5dcef4242505fed627de542036c29064" title="Checks if any scope within the provided collection is anonymous.">isAnonymous</a></span>, <span class="tt"><a class="el" href="#a526d5f383c5c1a10ad7cdcde1b6b00a9" title="Constructs a fully qualified name string from a collection of scopes.">fullyQualifiedEnumName</a></span>, and <span class="tt"><a class="el" href="#a1a9fdfde26a5b932519a02e07e8d2d67" title="Generates a valid, stringified identifier based on a collection of scopes.">compatibleEnumName</a></span> must be accessible and correctly implemented.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If the scopes are not anonymous, the generated C++ code is printed to the standard output (std::cout).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code relies on the existence of a <span class="tt"><a class="el" href="namespacestringify.html" title="Auto-generated documentation for the stringify namespace.">stringify</a></span> namespace containing the appropriate stringification logic for the given enum. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code also requires the <span class="tt">boost/lexical_cast.hpp</span> header to be available for the fallback numeric conversion. </dd></dl>
 
 </div>
 </div>
@@ -371,22 +390,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates C++ declaration strings for an enumeration type. </p>
-<p>This function produces C++ code snippets that declare helper functions for converting enum constants to strings and retrieving all enum values as a vector. It prints metadata including the source file name, line number, and the fully qualified name of the enum. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output is formatted to include a warning that the code is automatically generated. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles namespace nesting by calculating the necessary closing braces based on the provided scope hierarchy.</p>
+<p>Generates C++ function declarations for enum string conversion utilities. </p>
+<p>This function automates the creation of boilerplate C++ code used to map enum constants to their string representations. It prints a header comment containing the source file path and line number, followed by a series of function declarations (including const char* returns, std::string returns, and a vector of all values) wrapped within the appropriate namespace hierarchy. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles the closing of nested namespaces based on the depth of the provided scopes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> path or name of the source file where the original enum is defined. </td></tr>
-    <tr><td class="paramname">loc</td><td><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> object containing the line number information (specifically the first element) to identify the source of the declaration. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> representing the hierarchy of the enum, used to determine the fully qualified name and the target name for the generated functions.</td></tr>
+    <tr><td class="paramname">fileName</td><td><a class="el" href="class_a.html">A</a> string representing the path to the source file where the original enum is defined. </td></tr>
+    <tr><td class="paramname">loc</td><td><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> object containing the line number information (first member) to identify the exact position of the enum in the source file. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchical nesting (namespaces/classes) of the enum.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scopes object must not represent an anonymous enumeration; if the scopes are anonymous, the function returns immediately without generating any output. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the scopes are not anonymous, the function prints formatted C++ declarations to the standard output, including closing braces for any necessary namespaces.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses relative path logic if the fileName starts with a predefined relativeBase string. </dd>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scopes collection must not represent an anonymous scope; if the scopes are anonymous, the function returns immediately without generating output. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Standard output is populated with formatted C++ code declarations and comment blocks, including the necessary closing braces for the namespace hierarchy.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function writes directly to std::cout. Ensure that the output stream is appropriately redirected or captured if file generation is intended.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a relative base path (relativeBase) to truncate the fileName for cleaner output if the file resides within the project root. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code includes a comment warning: "// DO NOT EDIT -- This implementation 
-      was automatically generated". </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of closing braces printed is determined by the result of the generateNamespaces function call. </dd></dl>
 
 </div>
 </div>
@@ -405,11 +425,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates a formatted string representation of the namespace lattice structure. </p>
-<p>This function iterates through the roots of the namespace lattice and performs a depth-first forward graph traversal using the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library. For each vertex encountered during the traversal, it prints a formatted C++ namespace declaration and closing brace to the standard output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> indentation level is managed dynamically based on the current depth of the traversal to ensure the generated output is properly nested.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#a2f41b24dc200c9282e62079a0ef7f96d">namespaceLatticeRoots</a></span> and <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae6c22d0d19fbf323be1b7564899a1bf4">namespaceLattice</a></span> objects must be properly initialized and contain valid vertices for traversal.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function outputs a structured, indented representation of the namespace hierarchy to <span class="tt">std::cout</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on <span class="tt"><a class="el" href="class_sawyer_1_1_container_1_1_algorithm_1_1_depth_first_forward_graph_traversal.html">Sawyer::Container::Algorithm::DepthFirstForwardGraphTraversal</a></span> to navigate the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a84ed1dbbcafaa4bb8da0adc4e2454c78">NamespaceLattice</a></span> structure. </dd></dl>
+<p>Generates a formatted C++ namespace hierarchy stringification to standard output. </p>
+<p>This function traverses a hierarchical namespace lattice structure to produce a human-readable representation of nested namespaces. It utilizes a Depth-First Forward <a class="el" href="class_graph.html">Graph</a> Traversal algorithm provided by the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library to visit each vertex in the lattice. As the traversal enters a vertex, it prints the namespace declaration with appropriate indentation; as it leaves a vertex, it prints the closing brace. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> indentation level is managed dynamically based on the current depth of the traversal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td>This function does not take any parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void This function does not return a value.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function writes directly to std::cout. Ensure that the standard output stream is available and directed to the intended destination.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> namespaceLatticeRoots container must be initialized and contain valid root vertices for the traversal to begin. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> namespaceLattice graph must be a valid, traversable structure.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output will contain a formatted string representing the namespace hierarchy, with indentation levels corresponding to the nesting depth of the lattice.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> indentation is calculated using 4 spaces per depth level. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library's DepthFirstForwardGraphTraversal to manage the graph exploration logic. </dd></dl>
 
 </div>
 </div>
@@ -442,23 +470,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates C++ implementation code for an enumeration. </p>
-<p>This function automates the creation of C++ source code that provides string conversion and value retrieval capabilities for a given enumeration. It generates a switch-based function to map integer values to their string representations, an overloaded string function with stripping capabilities, and a function to retrieve all valid enum values as a vector. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation includes metadata about the source file and line number where the enum was defined.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function first checks if the scope is anonymous; if so, it aborts. It then builds a reverse mapping of enum values to names, filtering out members marked with the NO_STRINGIFY flag. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code is printed to standard output, handling namespace nesting and file path relativization.</p>
+<p>Generates C++ source code implementation for an enumeration type. </p>
+<p>This function automates the creation of C++ boilerplate code for an enum, specifically generating string conversion functions, a version with a prefix stripping capability, and a function to retrieve all valid enum values as a vector. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation includes a header comment indicating the source file and line number, and handles the nesting of namespaces based on the provided scope hierarchy. It maps enum members to their string representations, excluding those marked with the NO_STRINGIFY flag.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> path to the source file where the enumeration is defined. </td></tr>
-    <tr><td class="paramname">loc</td><td><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> object containing the line number information for the enumeration. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> hierarchy of scopes (namespaces/classes) in which the enumeration resides. </td></tr>
-    <tr><td class="paramname">members</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> collection of members belonging to the enumeration, including their associated values and flags.</td></tr>
+    <tr><td class="paramname">fileName</td><td><a class="el" href="class_a.html">A</a> string representing the path to the source file being processed. Used to generate the "DO NOT EDIT" header comment. </td></tr>
+    <tr><td class="paramname">loc</td><td><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#aeabdceeefc7a1921d507549afe9753e2">Location</a> object containing the line number information (first member) to identify the source of the enum definition. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="struct_scope.html">Scope</a> objects representing the hierarchical nesting (namespaces/classes) where the enum is defined. </td></tr>
+    <tr><td class="paramname">members</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> containing the keys and values of the enumeration, used to populate the switch-case and vector logic.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> parameter must not represent an anonymous scope. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function writes the generated C++ implementation code to <span class="tt">std::cout</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code uses <span class="tt">boost::lexical_cast</span> and <span class="tt">boost::starts_with</span>, so the environment must have the Boost libraries available. </dd>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the provided scopes represent an anonymous scope, the function returns immediately without generating any output. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt">BOOST_FOREACH</span> for iterating over containers. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function writes directly to standard output (std::cout).</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> container must not represent an anonymous scope. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">members</span> container must be a valid, iterable collection of enum nodes. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Standard output will contain formatted C++ code including namespace declarations, string conversion functions, and a value retrieval function.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a reverse mapping (ReverseMembers) to efficiently map integer values back to their string names for the switch-case implementation. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes the BOOST_FOREACH macro for iterating over containers and boost::starts_with for string manipulation. </dd></dl>
 
 </div>
 </div>
@@ -486,22 +519,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates and tracks a hierarchy of namespace declarations within a lattice structure. </p>
-<p>This function iterates through a collection of scopes to construct a nested namespace hierarchy. It manages a <span class="tt"><a class="el" href="stringify_enums_8_c.html#a84ed1dbbcafaa4bb8da0adc4e2454c78">NamespaceLattice</a></span> by inserting vertices for each new namespace encountered and establishing edges to represent parent-child relationships. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also handles an initial namespace string and prints the resulting namespace declarations to standard output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic skips a specified number of scopes from the end of the <span class="tt">scopes</span> collection using the <span class="tt">nOmit</span> parameter.</p>
+<p>Generates and prints nested C++ namespace declarations while updating a namespace lattice. </p>
+<p>This function iterates through a sequence of scopes to construct a hierarchical representation of namespaces. It prints the "namespace name {" syntax to standard output. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function maintains a <a class="el" href="stringify_enums_8_c.html#a84ed1dbbcafaa4bb8da0adc4e2454c78">NamespaceLattice</a> structure, ensuring that the relationship between parent and child namespaces is recorded. If a namespace in the scope list does not exist in the lattice, it is inserted as a new vertex, and an edge is created from the current parent vertex to the new child vertex. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also handles an initial namespace root if provided.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">initial</td><td><a class="el" href="class_a.html">A</a> string representing the starting namespace. If not empty, it is treated as a root namespace in the lattice. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of scope objects, where each object contains a <span class="tt"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></span> string used to build the namespace hierarchy. </td></tr>
-    <tr><td class="paramname">nOmit</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of scopes to omit from the end of the <span class="tt">scopes</span> collection during processing.</td></tr>
+    <tr><td class="paramname">initial</td><td><a class="el" href="class_a.html">A</a> string representing the starting namespace name. If not empty, it is treated as the root of the current namespace chain. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> collection of <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> objects, where each scope contains a name representing a level in the namespace hierarchy. </td></tr>
+    <tr><td class="paramname">nOmit</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of trailing scopes in the <span class="tt">scopes</span> container to skip during the generation process.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> total number of namespace declarations successfully generated and printed.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae6c22d0d19fbf323be1b7564899a1bf4">namespaceLattice</a></span> and <span class="tt"><a class="el" href="stringify_enums_8_c.html#a2f41b24dc200c9282e62079a0ef7f96d">namespaceLatticeRoots</a></span> objects must be properly initialized and accessible within the scope of this function. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae6c22d0d19fbf323be1b7564899a1bf4">namespaceLattice</a></span> is updated with new vertices and edges representing the processed scopes, and the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a2f41b24dc200c9282e62079a0ef7f96d">namespaceLatticeRoots</a></span> map is updated if new root namespaces are created.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt">boost::starts_with</span> to skip scopes whose names begin with a '&lt;' character. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> total number of namespace declarations successfully printed to the output.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae6c22d0d19fbf323be1b7564899a1bf4">namespaceLattice</a></span> and <span class="tt"><a class="el" href="stringify_enums_8_c.html#a2f41b24dc200c9282e62079a0ef7f96d">namespaceLatticeRoots</a></span> structures must be initialized and accessible within the function's scope. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae6c22d0d19fbf323be1b7564899a1bf4">namespaceLattice</a></span> is updated to reflect the hierarchy described by the <span class="tt">initial</span> string and the <span class="tt">scopes</span> provided. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output will contain the formatted namespace strings.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function prints directly to <span class="tt">std::cout</span>. Ensure that the output stream is appropriately configured for the intended environment.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips any scope whose name starts with the '&lt;' character, treating them as non-namespace entities. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function outputs directly to <span class="tt">std::cout</span>. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an "upsert" logic for the lattice, meaning it will re-use existing vertices if the namespace name is already present in the lattice. </dd></dl>
 
 </div>
 </div>
@@ -521,14 +555,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates the initial header guard and warning message for the generated file. </p>
-<p>This function handles the initial output stream operations to prepare a generated C++ header file. It first prints a warning message indicating that the file is automatically generated and should not be edited manually. Subsequently, it implements logic to determine the appropriate include guard (header guard) based on the state of the <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> flag and the content of the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> string.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic follows these rules:</p><ol type="1">
+<p>This function handles the output of the boilerplate text for an automatically generated C++ header file. It first prints a warning message indicating that the file should not be edited manually. It then determines the appropriate header guard macro based on the state of the <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> flag and the content of the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> string. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic follows these rules:</p><ol type="1">
 <li>If <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> is true, it uses the <span class="tt">ROSE_STRINGIFY_H</span> guard.</li>
 <li>If <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> is false and <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> is empty, it uses the <span class="tt">stringify_H</span> guard.</li>
-<li>Otherwise, it constructs a guard using the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> prefix (e.g., <span class="tt">Namespace_stringify_H</span>).</li>
+<li>Otherwise, it constructs a guard using the <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> prefix, e.g., <span class="tt">Namespace_stringify_H</span>.</li>
 </ol>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global or accessible variables <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> and <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> must be properly initialized. <span class="tt">std::cout</span> must be available for output.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output stream will contain a warning comment and a ifndef/define preprocessor directive pair for the appropriate header guard.</dd></dl>
+<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses std::cout to write directly to the standard output stream.</p>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global or accessible variables <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> and <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> must be properly initialized before calling this function. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output stream will contain the header warning and the appropriate ifndef and define preprocessor directives.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the existence of external variables <span class="tt"><a class="el" href="stringify_enums_8_c.html#afeee885b51b5b9dcf389df8cbe609c2c">emitCompatible</a></span> and <span class="tt"><a class="el" href="stringify_enums_8_c.html#a458602fa573dba2db98b06fa7a2c9783">outerNamespace</a></span> which are not passed as parameters. </dd></dl>
 
 </div>
@@ -549,10 +583,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates the source code for the <a class="el" href="class_rose_1_1_stringifier.html">Rose::Stringifier</a> class. </p>
-<p>This function outputs a C++ code snippet to the standard output stream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code defines a class named <span class="tt">Stringifier</span> within the <span class="tt"><a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a></span> namespace. This class acts as a wrapper around a function pointer of type <span class="tt">std::string(*)(<a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>, const char*, bool)</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary purpose of the generated class is to provide a convenient, short-named object to invoke long-named enum stringifier functions, thereby improving code readability and reducing verbosity when printing 64-bit integer-based enums.</p>
+<p>This function outputs a C++ code snippet to the standard output stream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code defines a class named <span class="tt">Stringifier</span> within the <span class="tt"><a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a></span> namespace. This class acts as a wrapper around a function pointer of type <span class="tt">std::string(*)(<a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>, const char*, bool)</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary purpose of the generated class is to provide a convenient, short-named object to invoke long-named enum stringifier functions, thereby improving code readability when dealing with complex, deeply nested enum types.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>None.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="class_rose_1_1_stringifier.html">Rose::Stringifier</a></span> class definition is printed to <span class="tt">std::cout</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated class uses an overloaded <span class="tt">operator()</span> to allow the <span class="tt">Stringifier</span> object to be called like a function. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> generated code includes a class definition that uses an overloaded <span class="tt">operator()</span> to allow the <span class="tt">Stringifier</span> object to be called like a function. </dd></dl>
 
 </div>
 </div>
@@ -582,7 +616,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if at least one scope in the collection has a name starting with "&lt;anonymous"; false otherwise.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> scopes parameter must be a valid, iterable collection of <a class="el" href="struct_scope.html">Scope</a> objects. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the scopes collection remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the boost::starts_with utility for string prefix comparison. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the boost::starts_with utility for string prefix comparison. </dd></dl>
 
 </div>
 </div>
@@ -629,7 +663,7 @@ Functions</h2></td></tr>
 <p>Entry point of the application that performs an AST traversal to detect loops.</p>
 <p>Entry point of the application that performs AST traversal and symbol table output.</p>
 <p>Entry point for the ROSE-based analysis tool.</p>
-<p>Entry point for the tool that parses C++ source files to generate declarations or definitions.</p>
+<p>Entry point for the code generation tool that parses C++ files to generate stringifiers and compatibility databases.</p>
 <p>Entry point of the application that transforms sprintf calls to snprintf calls.</p>
 <p>Entry point of the application that orchestrates the ROSE frontend and backend processes.</p>
 <p>Entry point of the application that performs interprocedural control flow graph analysis.</p>
@@ -642,8 +676,8 @@ Functions</h2></td></tr>
 <p>Entry point for the parser adapter execution.</p>
 <p>Entry point for the LAL adapter execution process.</p>
 <p>Entry point for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> execution.</p>
-<p>Entry point of the application that orchestrates library initialization, command-line parsing, AST construction, and code generation.</p>
-<p>Entry point of the tool that retrieves and prints configuration values.</p>
+<p>Entry point for the tool that parses input files and generates output based on a selected backend.</p>
+<p>Entry point for the configuration lookup tool.</p>
 <p>Entry point of the application that initializes ROSE and executes the frontend and backend.</p>
 <p>Executes a series of nested loop operations to perform matrix element assignments.</p>
 <p>Entry point of the program that performs a nested loop assignment.</p>
@@ -673,7 +707,7 @@ Functions</h2></td></tr>
 <p>Entry point of the application that processes a source project to build and analyze Control Flow Graphs.</p>
 <p>Entry point for the ROSE pattern search example application.</p>
 <p>Entry point of the application that performs AST traversal on input files.</p>
-<p>Entry point for the Rose-based program execution and transformation pipeline.</p>
+<p>Entry point for the ROSE compiler transformation tool.</p>
 <p>Entry point of the application that performs loop transformations on a C++ project.</p>
 <p>Entry point of the application that performs Def-Use and Liveness analysis on a <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> project.</p>
 <p>Entry point for the visitor traversal application.</p>
@@ -1036,7 +1070,7 @@ Any user-defined attributes must be registered using REGISTER_ATTRIBUTE_FOR_FILE
 <dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 upon successful execution of the initialization, parsing, and DOT generation processes.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>An SgProject object is created representing the parsed source code, and a DOT file is generated on the filesystem if the process completes successfully.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates DOT representation files for the AST of a given SgProject.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates a DOT representation of the Abstract Syntax Tree (AST) for a given project.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
 <p>This function serves as the main driver for the ROSE-based application. It initializes the ROSE environment using the ROSE_INITIALIZE macro, parses the input source files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and subsequently invokes <a class="el" href="structgenerate_d_o_t_extended.html">generateDOTExtended</a> to produce a visual representation of the AST in DOT format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2191,7 +2225,7 @@ If the <span class="tt">abortme</span> flag is set during the liveness analysis 
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an <a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> to facilitate the transformation traversal. </dd>
 <dd>
 To prevent iterator invalidation during the modification of the declaration list, the iterator is re-synchronized using std::find after each transformation.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework, parses command-line arguments, configures transformation interfaces, and iterates through the source files in an SgProject to apply various loop transformations and optimization passes such as finite differencing and partial redundancy elimination. Finally, it unparses the modified project and optionally triggers a compilation step.</p>
+<p>This function serves as the main driver for the ROSE compiler infrastructure. It orchestrates the entire transformation pipeline, which includes initializing the ROSE environment, parsing command-line arguments, loading source files into an SgProject, and performing various optimization passes such as loop transformations, finite differencing, and partial redundancy elimination. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the global scope of each loaded file, identifies function definitions, and applies AST-based transformations using the <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>. Finally, it unparses the modified AST back to source code and optionally triggers an object file compilation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
@@ -2199,14 +2233,21 @@ To prevent iterator invalidation during the modification of the declaration list
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 on successful execution, -1 if insufficient arguments are provided, or the return value from the project compilation process if the generation option is enabled.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files in the project are transformed according to the specified command-line options, and the modified code is unparsed to the output.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singleton instances such as <a class="el" href="class_cmd_options.html">CmdOptions</a> and <a class="el" href="class_read_annotation.html" title="An interface to read into type(class) and operator(function) annotations.">ReadAnnotation</a>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution and completion of all requested transformations. Returns -1 if the number of arguments is insufficient (no input files provided). Returns the exit code of the compiler output process if the "-gobj" option is enabled.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs in-place transformations on the AST; if the transformation logic (e.g., <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>) is not robust, it may lead to iterator invalidation or corrupted AST structures. </dd>
 <dd>
-If ifdef USE_OMEGA is defined, dependency statistics are recorded and printed. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singletons (e.g., <a class="el" href="class_cmd_options.html">CmdOptions</a>, <a class="el" href="class_operator_side_effect_annotation.html">OperatorSideEffectAnnotation</a>) which must be properly initialized via ROSE_INITIALIZE.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be compatible with the current system architecture as checked by the ROSE_INITIALIZE macro. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration list traversal by re-finding the iterator.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input arguments must contain at least one valid file path to be processed.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files are transformed according to the specified command-line flags. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformed AST is unparsed and written back to the file system. </dd>
+<dd>
+If the "-gobj" flag is present, an object file is generated and its compilation status is returned.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration traversal by re-finding the current iterator position using std::find. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of dependency statistics (DepStats) is conditionally compiled based on the USE_OMEGA macro.</dd></dl>
 <p>This function serves as the main driver for the Rose-based application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> environment using the ROSE_INITIALIZE macro, parses input files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and executes a custom traversal mechanism. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is used to populate an <a class="el" href="class_inherited_attribute.html">InheritedAttribute</a> object by visiting nodes within the SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2605,39 +2646,55 @@ If ROSE_BUILD_CPP_LANGUAGE_SUPPORT is not defined, an error message is printed t
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic for inserting language dialects into the argument vector depends on whether define ROSE_COMPILER_FOR_LANGUAGE is present. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of creating an SgProject when no arguments are provided is currently noted as a TODO to be moved into the frontend function.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the ROSE environment, sets up diagnostic logging, and parses command-line arguments to identify a specific configuration key. It then reads a configuration file based on the parsed settings and attempts to find the value associated with the provided key. If the key is "libdirs", the function performs a special transformation to convert space-separated paths into colon-separated paths before printing. All output is passed through a makefile-escape utility to ensure compatibility.</p>
+<p>This function serves as the main driver for a utility designed to retrieve and display specific configuration values from a configuration file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process begins by initializing the ROSE environment and the diagnostics logging system. It then parses command-line arguments to identify a target key and a configuration file path. After loading the configuration, the function searches for the specified key. If the key is found, its value is printed to standard output, with special handling for the "libdirs" key to convert space-separated paths into a colon-separated format suitable for library search paths. All output is escaped for Makefile compatibility. If the key is not found, a fatal error is logged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided to the program. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 if the key is successfully found and printed. Returns 1 if the key is not found in the configuration, resulting in a fatal error log.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates via exit(0) on success or exit(1) on failure.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on external components such as parseCommandLine, readConfigFile, and the Diagnostics system.</dd></dl>
-<p>This function serves as the main driver for the tool. It performs the following high-level steps:</p><ol type="1">
-<li>Initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and the logging system.</li>
-<li>Configures and executes a command-line parser to extract arguments and input files.</li>
-<li>Parses the provided input files to populate the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) within the global Ast::Project instance.</li>
-<li>Performs post-parsing semantic analysis, such as checking for unused abstract classes, if warning settings are enabled.</li>
-<li>Identifies the appropriate backend generator based on the provided settings and executes the generation process.</li>
-<li>Returns an exit code based on the presence of errors encountered during the process.</li>
+<dl class="section return"><dt>Returns</dt><dd>This function does not return a value to the caller directly; instead, it terminates the process using exit(). It returns 0 upon successful retrieval and printing of the requested key, and returns 1 if the requested key is not found in the configuration.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will terminate the entire process via exit(0) or exit(1). </dd>
+<dd>
+If the "libdirs" key is accessed, the output format changes from space-separated to colon-separated.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via ROSE_INITIALIZE. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must be valid and follow the expected format required by parseCommandLine. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates after printing the requested value or logging an error. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output contains the escaped value of the requested key if found.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes a special case for the "libdirs" key to ensure compatibility with standard Unix-like library search path formats. </dd>
+<dd>
+All output sent to stdout is processed through makefileEscape to ensure safety in Makefile environments.</dd></dl>
+<p>This function orchestrates the entire lifecycle of the application. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> execution flow consists of four primary phases:</p><ol type="1">
+<li>Initialization: Sets up the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library, initializes the logging system (mlog), and configures message facilities.</li>
+<li>Command-Line Parsing: Utilizes a command-line parser to extract arguments and registers all available generators to ensure all possible flags are recognized.</li>
+<li>AST Construction: Iterates through the provided file arguments, parsing each file to populate the global Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) Project. It also performs post-parsing semantic checks, such as identifying abstract classes that lack derived implementations, if warning settings are enabled.</li>
+<li>Code Generation: Identifies the appropriate generator backend based on the provided settings, passes the remaining command-line arguments to that backend, and executes the generation process on the constructed AST.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments passed to the program. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer exit code: returns 1 if any errors were encountered during execution (nErrors &gt; 0), otherwise returns 0.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and logging facilities must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST project will contain all successfully parsed files, and output files will be generated via the selected backend.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global or singleton objects such as <span class="tt"><a class="el" href="rose-config_8_c.html#ad74b5ffc82ad5accdc2ab798a63a3a7c">mlog</a></span>, <span class="tt">settings</span>, <span class="tt">nErrors</span>, and <span class="tt">Ast::Project::instance()</span>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 if the process completed successfully without errors, and returns 1 if any errors (nErrors &gt; 0) were encountered during the execution.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the backend generator retrieved via Generator::lookup is not null; an assertion will trigger if it is. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include and define logic implicitly through the underlying library and parser setup.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the number of arguments processed by the parser does not exceed the total number of arguments provided in argc.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be compatible with the current environment. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input files provided in argv must be accessible and readable by the process.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST Project is populated with all successfully parsed files. </dd>
+<dd>
+Output files are generated to the filesystem by the selected backend. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application exits with a status code indicating success or failure.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a Stopwatch to provide performance metrics for the parsing and generation phases in the logs. </dd>
+<dd>
+Semantic warnings regarding abstract classes are only processed if <span class="tt">settings.showingWarnings</span> is enabled.</dd></dl>
 <p>This function serves as the main driver for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> application. It instantiates a <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> object and invokes its translate method, passing the command-line arguments provided to the program. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> return value of the main function is determined by the success or failure of the translation process as reported by the test object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2835,20 +2892,19 @@ Intel Pin is initialized and the instrumented program is started.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is designed to bridge static analysis (ROSE) with dynamic instrumentation (Pin). </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function call to PIN_StartProgram() is terminal and does not return control to this function.</dd></dl>
-<p>This function serves as the main driver for a code generation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging library, parses command-line arguments to identify input files and generation modes, and processes each input file through a token-based scanner. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool can generate C++ declarations, definitions, or stringifier classes based on the provided configuration. It also handles compatibility checks by reading and potentially updating a database of existing enum members. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic tracks scopes (namespaces, classes, structs, enums) using a stack-based approach to ensure brace balance and correct structural identification.</p>
+<p>This function serves as the main driver for a source-to-source transformation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging and library environment, parses command-line arguments to identify input files, and iterates through each file to perform lexical analysis using a TokenStream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function implements a state-machine-like approach to track scopes (namespaces, classes, structs) and identifies specific C++ constructs such as namespaces, classes, extern declarations, and enums. Based on the execution mode (GENERATE_DECLARATIONS, GENERATE_DEFINITIONS, or GENERATE_NOTHING), it outputs C++ boilerplate, header guards, and stringifier class definitions to standard output. Additionally, it can update a compatibility database with existing enum members to ensure backward compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments. Expected to contain paths to the input files to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code (implicitly 0 upon successful completion of the logic).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool will output generated C++ code to standard output and may update compatibility files on disk if no errors were encountered.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes include directives for various Boost libraries and standard C++ headers in its generated output. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic relies on a ifdef or if block for debugging purposes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not explicitly return a value in the provided snippet, but follows standard C++ main conventions.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function writes directly to std::cout and std::cerr. If the output is redirected, ensure the destination is writable. Unbalanced braces in the input files will trigger error messages to stderr.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of initialization, and the environment must support standard file I/O operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must point to valid, readable files for processing.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will have either printed generated C++ code to stdout, updated a compatibility database file on disk, or performed no action, depending on the input parameters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the global logging facility will be updated.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool relies on the Boost.Filesystem library for file validation and Boost.ForEach for iterating over collections. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic is dependent on the TokenStream being able to correctly identify C++ tokens.</dd></dl>
 <p>This function serves as the main driver for the application. It initializes the ROSE framework, parses the input source files into an SgProject using the frontend, and performs a specific static analysis check to find switch statements lacking a default case. It also manages performance tracking via the <a class="el" href="class_timing_performance.html">TimingPerformance</a> class and generates an AST performance report if verbosity is enabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3263,7 +3319,7 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 <p>Entry point of the application that performs an AST traversal to detect loops.</p>
 <p>Entry point of the application that performs AST traversal and symbol table output.</p>
 <p>Entry point for the ROSE-based analysis tool.</p>
-<p>Entry point for the tool that parses C++ source files to generate declarations or definitions.</p>
+<p>Entry point for the code generation tool that parses C++ files to generate stringifiers and compatibility databases.</p>
 <p>Entry point of the application that transforms sprintf calls to snprintf calls.</p>
 <p>Entry point of the application that orchestrates the ROSE frontend and backend processes.</p>
 <p>Entry point of the application that performs interprocedural control flow graph analysis.</p>
@@ -3276,8 +3332,8 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 <p>Entry point for the parser adapter execution.</p>
 <p>Entry point for the LAL adapter execution process.</p>
 <p>Entry point for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> execution.</p>
-<p>Entry point of the application that orchestrates library initialization, command-line parsing, AST construction, and code generation.</p>
-<p>Entry point of the tool that retrieves and prints configuration values.</p>
+<p>Entry point for the tool that parses input files and generates output based on a selected backend.</p>
+<p>Entry point for the configuration lookup tool.</p>
 <p>Entry point of the application that initializes ROSE and executes the frontend and backend.</p>
 <p>Executes a series of nested loop operations to perform matrix element assignments.</p>
 <p>Entry point of the program that performs a nested loop assignment.</p>
@@ -3307,7 +3363,7 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 <p>Entry point of the application that processes a source project to build and analyze Control Flow Graphs.</p>
 <p>Entry point for the ROSE pattern search example application.</p>
 <p>Entry point of the application that performs AST traversal on input files.</p>
-<p>Entry point for the Rose-based program execution and transformation pipeline.</p>
+<p>Entry point for the ROSE compiler transformation tool.</p>
 <p>Entry point of the application that performs loop transformations on a C++ project.</p>
 <p>Entry point of the application that performs Def-Use and Liveness analysis on a <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> project.</p>
 <p>Entry point for the visitor traversal application.</p>
@@ -3670,7 +3726,7 @@ Any user-defined attributes must be registered using REGISTER_ATTRIBUTE_FOR_FILE
 <dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 upon successful execution of the initialization, parsing, and DOT generation processes.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>An SgProject object is created representing the parsed source code, and a DOT file is generated on the filesystem if the process completes successfully.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates DOT representation files for the AST of a given SgProject.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates a DOT representation of the Abstract Syntax Tree (AST) for a given project.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
 <p>This function serves as the main driver for the ROSE-based application. It initializes the ROSE environment using the ROSE_INITIALIZE macro, parses the input source files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and subsequently invokes <a class="el" href="structgenerate_d_o_t_extended.html">generateDOTExtended</a> to produce a visual representation of the AST in DOT format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4825,7 +4881,7 @@ If the <span class="tt">abortme</span> flag is set during the liveness analysis 
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an <a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> to facilitate the transformation traversal. </dd>
 <dd>
 To prevent iterator invalidation during the modification of the declaration list, the iterator is re-synchronized using std::find after each transformation.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework, parses command-line arguments, configures transformation interfaces, and iterates through the source files in an SgProject to apply various loop transformations and optimization passes such as finite differencing and partial redundancy elimination. Finally, it unparses the modified project and optionally triggers a compilation step.</p>
+<p>This function serves as the main driver for the ROSE compiler infrastructure. It orchestrates the entire transformation pipeline, which includes initializing the ROSE environment, parsing command-line arguments, loading source files into an SgProject, and performing various optimization passes such as loop transformations, finite differencing, and partial redundancy elimination. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the global scope of each loaded file, identifies function definitions, and applies AST-based transformations using the <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>. Finally, it unparses the modified AST back to source code and optionally triggers an object file compilation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
@@ -4833,14 +4889,21 @@ To prevent iterator invalidation during the modification of the declaration list
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 on successful execution, -1 if insufficient arguments are provided, or the return value from the project compilation process if the generation option is enabled.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files in the project are transformed according to the specified command-line options, and the modified code is unparsed to the output.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singleton instances such as <a class="el" href="class_cmd_options.html">CmdOptions</a> and <a class="el" href="class_read_annotation.html" title="An interface to read into type(class) and operator(function) annotations.">ReadAnnotation</a>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution and completion of all requested transformations. Returns -1 if the number of arguments is insufficient (no input files provided). Returns the exit code of the compiler output process if the "-gobj" option is enabled.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs in-place transformations on the AST; if the transformation logic (e.g., <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>) is not robust, it may lead to iterator invalidation or corrupted AST structures. </dd>
 <dd>
-If ifdef USE_OMEGA is defined, dependency statistics are recorded and printed. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singletons (e.g., <a class="el" href="class_cmd_options.html">CmdOptions</a>, <a class="el" href="class_operator_side_effect_annotation.html">OperatorSideEffectAnnotation</a>) which must be properly initialized via ROSE_INITIALIZE.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be compatible with the current system architecture as checked by the ROSE_INITIALIZE macro. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration list traversal by re-finding the iterator.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input arguments must contain at least one valid file path to be processed.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files are transformed according to the specified command-line flags. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformed AST is unparsed and written back to the file system. </dd>
+<dd>
+If the "-gobj" flag is present, an object file is generated and its compilation status is returned.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration traversal by re-finding the current iterator position using std::find. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of dependency statistics (DepStats) is conditionally compiled based on the USE_OMEGA macro.</dd></dl>
 <p>This function serves as the main driver for the Rose-based application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> environment using the ROSE_INITIALIZE macro, parses input files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and executes a custom traversal mechanism. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is used to populate an <a class="el" href="class_inherited_attribute.html">InheritedAttribute</a> object by visiting nodes within the SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5239,39 +5302,55 @@ If ROSE_BUILD_CPP_LANGUAGE_SUPPORT is not defined, an error message is printed t
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic for inserting language dialects into the argument vector depends on whether define ROSE_COMPILER_FOR_LANGUAGE is present. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of creating an SgProject when no arguments are provided is currently noted as a TODO to be moved into the frontend function.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the ROSE environment, sets up diagnostic logging, and parses command-line arguments to identify a specific configuration key. It then reads a configuration file based on the parsed settings and attempts to find the value associated with the provided key. If the key is "libdirs", the function performs a special transformation to convert space-separated paths into colon-separated paths before printing. All output is passed through a makefile-escape utility to ensure compatibility.</p>
+<p>This function serves as the main driver for a utility designed to retrieve and display specific configuration values from a configuration file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process begins by initializing the ROSE environment and the diagnostics logging system. It then parses command-line arguments to identify a target key and a configuration file path. After loading the configuration, the function searches for the specified key. If the key is found, its value is printed to standard output, with special handling for the "libdirs" key to convert space-separated paths into a colon-separated format suitable for library search paths. All output is escaped for Makefile compatibility. If the key is not found, a fatal error is logged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided to the program. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 if the key is successfully found and printed. Returns 1 if the key is not found in the configuration, resulting in a fatal error log.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates via exit(0) on success or exit(1) on failure.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on external components such as parseCommandLine, readConfigFile, and the Diagnostics system.</dd></dl>
-<p>This function serves as the main driver for the tool. It performs the following high-level steps:</p><ol type="1">
-<li>Initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and the logging system.</li>
-<li>Configures and executes a command-line parser to extract arguments and input files.</li>
-<li>Parses the provided input files to populate the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) within the global Ast::Project instance.</li>
-<li>Performs post-parsing semantic analysis, such as checking for unused abstract classes, if warning settings are enabled.</li>
-<li>Identifies the appropriate backend generator based on the provided settings and executes the generation process.</li>
-<li>Returns an exit code based on the presence of errors encountered during the process.</li>
+<dl class="section return"><dt>Returns</dt><dd>This function does not return a value to the caller directly; instead, it terminates the process using exit(). It returns 0 upon successful retrieval and printing of the requested key, and returns 1 if the requested key is not found in the configuration.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will terminate the entire process via exit(0) or exit(1). </dd>
+<dd>
+If the "libdirs" key is accessed, the output format changes from space-separated to colon-separated.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via ROSE_INITIALIZE. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must be valid and follow the expected format required by parseCommandLine. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates after printing the requested value or logging an error. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output contains the escaped value of the requested key if found.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes a special case for the "libdirs" key to ensure compatibility with standard Unix-like library search path formats. </dd>
+<dd>
+All output sent to stdout is processed through makefileEscape to ensure safety in Makefile environments.</dd></dl>
+<p>This function orchestrates the entire lifecycle of the application. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> execution flow consists of four primary phases:</p><ol type="1">
+<li>Initialization: Sets up the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library, initializes the logging system (mlog), and configures message facilities.</li>
+<li>Command-Line Parsing: Utilizes a command-line parser to extract arguments and registers all available generators to ensure all possible flags are recognized.</li>
+<li>AST Construction: Iterates through the provided file arguments, parsing each file to populate the global Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) Project. It also performs post-parsing semantic checks, such as identifying abstract classes that lack derived implementations, if warning settings are enabled.</li>
+<li>Code Generation: Identifies the appropriate generator backend based on the provided settings, passes the remaining command-line arguments to that backend, and executes the generation process on the constructed AST.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments passed to the program. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer exit code: returns 1 if any errors were encountered during execution (nErrors &gt; 0), otherwise returns 0.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and logging facilities must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST project will contain all successfully parsed files, and output files will be generated via the selected backend.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global or singleton objects such as <span class="tt"><a class="el" href="rose-config_8_c.html#ad74b5ffc82ad5accdc2ab798a63a3a7c">mlog</a></span>, <span class="tt">settings</span>, <span class="tt">nErrors</span>, and <span class="tt">Ast::Project::instance()</span>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 if the process completed successfully without errors, and returns 1 if any errors (nErrors &gt; 0) were encountered during the execution.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the backend generator retrieved via Generator::lookup is not null; an assertion will trigger if it is. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include and define logic implicitly through the underlying library and parser setup.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the number of arguments processed by the parser does not exceed the total number of arguments provided in argc.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be compatible with the current environment. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input files provided in argv must be accessible and readable by the process.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST Project is populated with all successfully parsed files. </dd>
+<dd>
+Output files are generated to the filesystem by the selected backend. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application exits with a status code indicating success or failure.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a Stopwatch to provide performance metrics for the parsing and generation phases in the logs. </dd>
+<dd>
+Semantic warnings regarding abstract classes are only processed if <span class="tt">settings.showingWarnings</span> is enabled.</dd></dl>
 <p>This function serves as the main driver for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> application. It instantiates a <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> object and invokes its translate method, passing the command-line arguments provided to the program. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> return value of the main function is determined by the success or failure of the translation process as reported by the test object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5469,20 +5548,19 @@ Intel Pin is initialized and the instrumented program is started.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is designed to bridge static analysis (ROSE) with dynamic instrumentation (Pin). </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function call to PIN_StartProgram() is terminal and does not return control to this function.</dd></dl>
-<p>This function serves as the main driver for a code generation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging library, parses command-line arguments to identify input files and generation modes, and processes each input file through a token-based scanner. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool can generate C++ declarations, definitions, or stringifier classes based on the provided configuration. It also handles compatibility checks by reading and potentially updating a database of existing enum members. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic tracks scopes (namespaces, classes, structs, enums) using a stack-based approach to ensure brace balance and correct structural identification.</p>
+<p>This function serves as the main driver for a source-to-source transformation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging and library environment, parses command-line arguments to identify input files, and iterates through each file to perform lexical analysis using a TokenStream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function implements a state-machine-like approach to track scopes (namespaces, classes, structs) and identifies specific C++ constructs such as namespaces, classes, extern declarations, and enums. Based on the execution mode (GENERATE_DECLARATIONS, GENERATE_DEFINITIONS, or GENERATE_NOTHING), it outputs C++ boilerplate, header guards, and stringifier class definitions to standard output. Additionally, it can update a compatibility database with existing enum members to ensure backward compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments. Expected to contain paths to the input files to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code (implicitly 0 upon successful completion of the logic).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool will output generated C++ code to standard output and may update compatibility files on disk if no errors were encountered.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes include directives for various Boost libraries and standard C++ headers in its generated output. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic relies on a ifdef or if block for debugging purposes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not explicitly return a value in the provided snippet, but follows standard C++ main conventions.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function writes directly to std::cout and std::cerr. If the output is redirected, ensure the destination is writable. Unbalanced braces in the input files will trigger error messages to stderr.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of initialization, and the environment must support standard file I/O operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must point to valid, readable files for processing.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will have either printed generated C++ code to stdout, updated a compatibility database file on disk, or performed no action, depending on the input parameters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the global logging facility will be updated.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool relies on the Boost.Filesystem library for file validation and Boost.ForEach for iterating over collections. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic is dependent on the TokenStream being able to correctly identify C++ tokens.</dd></dl>
 <p>This function serves as the main driver for the application. It initializes the ROSE framework, parses the input source files into an SgProject using the frontend, and performs a specific static analysis check to find switch statements lacking a default case. It also manages performance tracking via the <a class="el" href="class_timing_performance.html">TimingPerformance</a> class and generates an AST performance report if verbosity is enabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5957,19 +6035,19 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
       </table>
 </div><div class="memdoc">
 
-<p>Parses assignment expressions and ternary operators from a token stream. </p>
-<p>This function implements the parsing logic for assignment-level expressions, including compound assignment operators (e.g., +=, -=, *=, etc.) and the ternary conditional operator (condition ? true_branch : false_branch). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function first attempts to parse a logical OR expression and then checks if the subsequent token constitutes an assignment operator or a ternary operator start.</p>
-<p>For assignment operators, the function detects if the operator is invalid for constant expressions and reports an error if the quiet flag is not set. It then recursively calls itself to continue parsing the expression. For ternary operators, it parses the true branch and expects a colon separator followed by the false branch.</p>
+<p>Parses assignment expressions and ternary conditional operators. </p>
+<p>This function implements the parsing logic for assignment operations (e.g., =, +=, -=, etc.) and the ternary conditional operator (condition ? true_expr : false_expr). It first attempts to parse a logical OR expression and then checks if the subsequent token represents an assignment operator. If an assignment operator is detected, the function validates that it is not being used in a context where constant expressions are required, consumes the operator, and recursively calls itself to parse the right-hand side. Additionally, it handles the ternary operator by checking for the '?' token, parsing the consequent expression, and looking for the ':' delimiter to parse the alternative expression.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the sequence of tokens to be parsed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> evaluated 64-bit integer result of the parsed expression.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream <span class="tt">tokens</span> must be in a valid state and pointing to the start of an expression. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function consumes tokens from the stream corresponding to the parsed assignment or ternary expression.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If an assignment operator is encountered that cannot appear in a constant expression, an error message is printed to <span class="tt">std::cerr</span> provided that the <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae4426f467d61ae456b95844d4d9c2dcd">quiet</a></span> variable is false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> representing the evaluated result of the parsed assignment or ternary expression.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If an assignment operator is encountered in a context that does not allow it (e.g., within a constant expression), an error message is printed to stderr (provided quiet mode is disabled) and the operator is consumed.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream must contain a valid sequence of tokens, and the stream must not be empty when the function is called.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream's position is advanced by the number of tokens consumed during the parsing of the assignment or ternary expression.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses recursion to handle the right-hand side of assignment operators and the alternative branch of the ternary operator. </dd></dl>
 
 </div>
 </div>
@@ -6083,19 +6161,21 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 </div><div class="memdoc">
 
 <p>Parses a class or struct definition from a token stream and manages scope entry. </p>
-<p>This function identifies the beginning of a class or struct definition by checking for the "class" or "struct" keywords. It iterates through the token stream to extract the class name and handles the parsing of inheritance lists (indicated by a colon). If a valid class body start (an opening brace) is found, a new scope is pushed onto the provided scopes stack. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also handles the consumption of the opening brace to prepare the parser for the class members.</p>
+<p>This function identifies the beginning of a class or struct definition by inspecting the current token in the stream. It handles the extraction of the class name (including anonymous classes), skips over inheritance lists (indicated by a colon), and advances the stream to the opening brace of the class body. If a valid class/struct definition is found, a new scope is pushed onto the provided <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> container.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the sequence of tokens to be parsed. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object used to track the current hierarchy of scopes.</td></tr>
+    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream being parsed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> stream is modified as tokens are consumed during the parsing process. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object used to track the current nesting level. <a class="el" href="class_a.html">A</a> new <a class="el" href="struct_scope.html">Scope</a> is added to this object if a class/struct definition is successfully identified.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first token in the tokens stream must match either the "class" or "struct" keyword. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If a valid class definition is found, a new <a class="el" href="struct_scope.html">Scope</a> object containing the class name and its location is appended to the scopes container, and the opening brace is consumed from the token stream.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the class name is the last word in a sequence of tokens of type TOK_WORD following the initial keyword. </dd>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the first token in the stream is either "class" or "struct". If the initial token does not match these keywords, an assertion failure will occur.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream must not be empty, and the first token must be either "class" or "struct". </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If a class/struct definition is found, the TokenStream's position is advanced past the opening brace, and a new <a class="el" href="struct_scope.html">Scope</a> is appended to the scopes container. If no valid definition is found (e.g., no opening brace is encountered), the TokenStream remains at its state prior to the function call, and no new scope is added.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles anonymous classes by defaulting the name to "&lt;anonymous-class&gt;" if no valid word tokens follow the class/struct keyword. </dd>
 <dd>
-If the class name is followed by a colon (but not a double colon), the function skips tokens until it reaches an opening brace or the end of the file. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also skips tokens between the class name and the opening brace if an inheritance colon (":") is present. </dd></dl>
 
 </div>
 </div>
@@ -6165,17 +6245,19 @@ If the class name is followed by a colon (but not a double colon), the function 
       </table>
 </div><div class="memdoc">
 
-<p>Parses a constant expression from the provided token stream. </p>
-<p>This function serves as an entry point for parsing expressions that are evaluated as constants. It delegates the actual parsing logic to the parseAssignExpr function, which handles the recursive descent parsing of assignment-level expressions.</p>
+<p>Parses an expression intended for use as a constant value. </p>
+<p>This function serves as the entry point for parsing expressions that must be evaluatable at compile-time or within a constant context. It delegates the actual parsing logic to the assignment expression parser, effectively treating the highest level of the expression hierarchy as the base for constant evaluation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the sequence of tokens to be parsed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsed value of the constant expression as a 64-bit integer.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tokens stream must be in a valid state and positioned at the start of the expression to be parsed. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> position of the token stream is advanced past the parsed constant expression. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> representing the evaluated result of the parsed constant expression.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Since this function relies on parseAssignExpr, any assignment operators encountered within the token stream may trigger error reporting if the parser detects they are being used in an invalid constant context.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream must be initialized and contain a valid sequence of tokens representing a syntactically correct expression.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream position is advanced by the number of tokens consumed during the parsing process.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function acts as a wrapper around parseAssignExpr to provide a semantic distinction between general expression parsing and constant expression parsing within the grammar. </dd></dl>
 
 </div>
 </div>
@@ -6198,21 +6280,34 @@ If the class name is followed by a colon (but not a double colon), the function 
       </table>
 </div><div class="memdoc">
 
-<p>Parses an enumeration definition from a token stream and handles code generation. </p>
-<p>This function processes C++ style enum declarations within a stream of tokens. It identifies the enum name, handles various declaration styles (including class-style enums), and manages scope insertion. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function parses enum flags, individual member names, associated flags, and explicit integer values. It also manages the prevention of duplicate enum definitions and supports different generation modes such as GENERATE_DECLARATIONS and GENERATE_DEFINITIONS.</p>
+<p>Parses an enumeration definition from a token stream and manages its scope and generation. </p>
+<p>This function implements the parsing logic for C++ style enum declarations. It identifies the enum keyword, processes optional flags, and handles various declaration styles including named enums, anonymous enums, and class-scoped enums. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages the creation of new scopes, detects duplicate enum definitions, and iterates through enum members to assign values (either via explicit assignment or auto-incrementing). Depending on the generation mode, it triggers the generation of declarations, definitions, or compatibility checks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the source tokens to be parsed. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object used to track and manage the current symbolic scopes and hierarchy.</td></tr>
+    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the sequence of tokens to be parsed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> stream is advanced as tokens are consumed. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object used to track the hierarchical namespace and scope information of the current parsing context.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first token in the tokens stream must match the "enum" keyword. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If a valid enum is parsed, a new scope is added to the scopes object, and the enum name is registered in the emittedEnums tracker. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> currentEnumMembers list is updated with the parsed members.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles both standard enums and enums declared with the 'class' keyword. It supports optional member values assigned via the '=' operator and handles comma-separated member lists.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>If an enum with the same fully qualified name has already been emitted, an error is reported and parsing for this specific enum terminates. </dd>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If an enum with the same fully qualified name has already been processed, an error is reported to stderr and the function returns early without parsing the current definition. </dd>
 <dd>
-If the tokens do not follow the expected syntax (e.g., missing closing brace or unexpected tokens), error messages are printed to stderr unless the quiet mode is enabled. </dd></dl>
+If the token stream does not start with the "enum" keyword, the function will trigger an assertion failure.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first token in the <span class="tt">tokens</span> stream must be the "enum" keyword. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">scopes</span> object must be initialized and capable of accepting new <a class="el" href="struct_scope.html">Scope</a> objects.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If a valid enum is parsed, a new scope is added to the <span class="tt">scopes</span> object. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">tokens</span> stream position is advanced past the parsed enum definition. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="stringify_enums_8_c.html#a8cd28937e5e05509609fc7cc8f8b7409">currentEnumMembers</a></span> map is cleared and updated with the members of the newly parsed enum. </dd>
+<dd>
+If <span class="tt"><a class="el" href="stringify_enums_8_c.html#a35bdadf781d311914c9c747e42f0e1ab">generate</a></span> is set to <span class="tt"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316ba2ea816ebfde9e6ac14029435c589d4eb">GENERATE_DECLARATIONS</a></span> or <span class="tt"><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316ba8bfc72124ef939fdd79dce8c69c8be5e">GENERATE_DEFINITIONS</a></span>, corresponding generation functions are invoked.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function supports the "class" keyword syntax for enums (e.g., enum class name { ... }). </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles optional member values using <span class="tt"><a class="el" href="#a4badecdb563f70be9b5dfe00b27a4125" title="Parses an expression intended for use as a constant value.">parseConstExpr</a></span> and manages comma-separated lists of enum constants. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs backward compatibility checks if <span class="tt"><a class="el" href="stringify_enums_8_c.html#a6c7d9a0c182013e8524eca81476c9448">checkCompatibility</a></span> is not empty. </dd></dl>
 
 </div>
 </div>
@@ -6265,18 +6360,19 @@ If the tokens do not follow the expected syntax (e.g., missing closing brace or 
       </table>
 </div><div class="memdoc">
 
-<p>Parses an extern declaration and manages scope creation. </p>
-<p>This function processes an "extern" token within a stream. It checks if the declaration follows a specific pattern involving a string literal and a brace. If the pattern matches (extern "string" {), a new scope is pushed onto the provided scopes container with a formatted name. Otherwise, it simply consumes the "extern" token.</p>
+<p>Parses an 'extern' declaration and manages scope creation. </p>
+<p>This function processes an 'extern' keyword within the token stream. It checks if the declaration follows a specific pattern: the 'extern' keyword followed by a string literal and an opening brace '{'. If this pattern is matched, a new scope is pushed onto the scopes stack, named after the provided string literal, and the tokens are advanced accordingly. If the pattern does not match, the function simply consumes the 'extern' token.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream being parsed. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> container used to manage the symbol table hierarchy.</td></tr>
+    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the sequence of tokens to be parsed. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object used to manage the hierarchy of symbol scopes.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first token in the tokens stream must match the "extern" keyword, as enforced by an assertion. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the pattern "extern" followed by a string and an opening brace is found, a new <a class="el" href="struct_scope.html">Scope</a> object is added to the scopes container and three tokens are consumed. If the pattern does not match, only the initial "extern" token is consumed.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the integrity of the TokenStream and assumes the existence of a valid <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> structure. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first token in the token stream must be the "extern" keyword. This is enforced via an internal assertion. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If the pattern 'extern &lt;string&gt; {' is found, a new <a class="el" href="struct_scope.html">Scope</a> object is added to the scopes container, and the first three tokens are consumed. Otherwise, only the 'extern' token is consumed.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the assertion fails (i.e., the current token is not "extern"), the program will terminate via ASSERT_require.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> name of the newly created scope is formatted as "&lt;extern [lexeme]&gt;", where [lexeme] is the content of the string token found at the second position. </dd></dl>
 
 </div>
 </div>
@@ -6424,18 +6520,20 @@ Integer overflow or underflow may occur during multiplication, division, or modu
       </table>
 </div><div class="memdoc">
 
-<p>Parses a namespace declaration from a token stream and updates the scope stack. </p>
-<p>This function processes a sequence of tokens to identify and handle namespace declarations. It checks if the current token is the "namespace" keyword. It then determines if the namespace is anonymous (starting with an opening brace '{') or named (a word followed by an opening brace). Upon identifying a namespace, a new <a class="el" href="struct_scope.html">Scope</a> object is pushed onto the provided scopes stack, tracking the namespace name and its location.</p>
+<p>Parses a namespace declaration and updates the current scope hierarchy. </p>
+<p>This function identifies and processes namespace declarations within a token stream. It handles two specific cases: anonymous namespaces (indicated by a '{' immediately following the 'namespace' keyword) and named namespaces (indicated by a word followed by a '{'). When a namespace is identified, a new <a class="el" href="struct_scope.html">Scope</a> object is constructed with the appropriate name and location, then pushed onto the provided scopes stack. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also logs the entry into the new scope for debugging purposes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the source tokens to be parsed. </td></tr>
-    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object used to maintain the hierarchy of active scopes.</td></tr>
+    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the sequence of tokens to be parsed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> stream is modified as tokens are consumed. </td></tr>
+    <tr><td class="paramname">scopes</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="stringify_enums_8_c.html#ace23f4cd1f2534e2df146de62363b7c5">Scopes</a> object (a stack of <a class="el" href="struct_scope.html">Scope</a> objects) where the newly identified namespace scope will be appended.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first token in the tokens stream must match the "namespace" keyword, as verified by an assertion. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If a namespace is identified, a new <a class="el" href="struct_scope.html">Scope</a> is appended to the scopes container. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tokens corresponding to the namespace name and the opening brace are consumed from the stream.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses SAWYER_MESG for debug logging to track scope entry and includes file/location information. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function assumes that the first token in the stream is the "namespace" keyword. If the token stream does not start with "namespace", an assertion failure will occur.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current token at the head of the <span class="tt">tokens</span> stream must be the "namespace" keyword. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If a namespace is successfully parsed, a new <a class="el" href="struct_scope.html">Scope</a> is added to the <span class="tt">scopes</span> container, and the relevant tokens (the name and/or the opening brace) are consumed from the <span class="tt">tokens</span> stream.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt"><a class="el" href="_assert_8h.html#a78e8f09ab5fb0c4aa9ed20991ed93a3d">ASSERT_require</a></span> to enforce the presence of the "namespace" keyword at the start of the parsing operation. </dd></dl>
 
 </div>
 </div>
@@ -6704,19 +6802,20 @@ Errors are printed to std::cerr if the 'quiet' flag is false and an invalid oper
       </table>
 </div><div class="memdoc">
 
-<p>Parses and extracts configuration flags from the current line of a token stream. </p>
-<p>This function inspects the text content of the line associated with a specific token within a provided token stream. It searches for specific substrings, namely "NO_STRINGIFY" and "NO_CHECK", to determine which configuration flags should be enabled. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes boost::contains to perform substring matching within the line text.</p>
+<p>Parses a line of text to extract specific configuration flags. </p>
+<p>This function inspects the entire line of text associated with a given token within a TokenStream. It searches for specific substring patterns ("NO_STRINGIFY" and "NO_CHECK") using substring matching. If these patterns are found, the corresponding flags are enabled within a <a class="el" href="stringify_enums_8_c.html#a010b95fe3ef818ef463931d979c9b757">Flags</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream object containing the sequence of tokens and their associated line information. </td></tr>
-    <tr><td class="paramname">token</td><td><a class="el" href="class_a.html">A</a> constant reference to the specific Token being inspected to identify the relevant line for flag searching.</td></tr>
+    <tr><td class="paramname">tokens</td><td><a class="el" href="class_a.html">A</a> reference to the TokenStream containing the source text and the mapping of tokens to their respective lines. </td></tr>
+    <tr><td class="paramname">token</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> specific Token object being inspected to determine its associated line content.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#a010b95fe3ef818ef463931d979c9b757">Flags</a> object containing the set of flags identified from the token's line.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tokens parameter must contain a valid line associated with the provided token. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Returns a <a class="el" href="stringify_enums_8_c.html#a010b95fe3ef818ef463931d979c9b757">Flags</a> object where the NO_STRINGIFY or NO_CHECK bits are set if the corresponding substrings were found in the token's line.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the boost library for string searching capabilities. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="stringify_enums_8_c.html#a010b95fe3ef818ef463931d979c9b757">Flags</a> object containing the set of detected configuration flags.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on substring matching; therefore, if the flag keywords appear as part of a larger word or within a comment on the same line, they will still be detected and set.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> TokenStream 'tokens' must be valid and contain the line information associated with the provided 'token'.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <a class="el" href="stringify_enums_8_c.html#a010b95fe3ef818ef463931d979c9b757">Flags</a> object is returned with the detected flags enabled; the input TokenStream and Token remain unchanged.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation uses boost::contains for pattern matching, which performs a simple substring search. </dd></dl>
 
 </div>
 </div>
@@ -6735,22 +6834,25 @@ Errors are printed to std::cerr if the 'quiet' flag is false and an invalid oper
       </table>
 </div><div class="memdoc">
 
-<p>Reads enumeration member definitions from a specified file. </p>
-<p>This function parses a file containing old enumeration definitions. It reads the file line by line and uses a regular expression to identify pairs of names and values. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes <span class="tt">boost::regex</span> to match patterns consisting of a non-whitespace name followed by a non-whitespace value, while also accounting for potential comment lines starting with '#'. Each valid pair found is inserted into an <span class="tt"><a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a></span> object.</p>
+<p>Parses an external file to load legacy enumeration definitions into an <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> object. </p>
+<p>This function reads a text-based definition file line by line to extract key-value pairs representing old member names and their associated integer values. It utilizes regular expressions to identify valid entries and handles comments or malformed lines. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses boost::regex for pattern matching and boost::lexical_cast for converting string representations of values into 64-bit integers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> filesystem path to the file containing the enumeration definitions.</td></tr>
+    <tr><td class="paramname">fileName</td><td><a class="el" href="class_a.html">A</a> boost::filesystem::path pointing to the file containing the enumeration definitions to be read.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An <span class="tt"><a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a></span> object containing the parsed names and their associated <span class="tt"><a class="el" href="struct_enum_value.html">EnumValue</a></span>s. If the file cannot be opened, an empty <span class="tt"><a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a></span> object is returned.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file specified by <span class="tt">fileName</span> must exist and be readable by the process. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned <span class="tt"><a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a></span> object will contain all validly parsed entries from the file.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the file stream fails to open, an error message is printed to <span class="tt">std::cerr</span>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> object containing the successfully parsed name-value pairs. If the file cannot be opened, an empty <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> object is returned.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the file cannot be opened, an error message is printed to std::cerr. </dd>
 <dd>
-If a line does not match the expected pattern and the <span class="tt"><a class="el" href="stringify_enums_8_c.html#ae4426f467d61ae456b95844d4d9c2dcd">quiet</a></span> flag is false, a syntax error message including the line number is printed to <span class="tt">std::cerr</span>. </dd>
+If a line does not match the expected pattern and the 'quiet' flag is false, a syntax error message including the line number is printed to std::cerr. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on <span class="tt">boost::lexical_cast</span> to convert the string representation of the value into an <span class="tt"><a class="el" href="msvc__stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a></span>. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the second captured group in the regex is a valid representation of an int6/int64_t; failure to cast may throw an exception.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file specified by fileName must exist and be readable by the current process. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Returns an <a class="el" href="stringify_enums_8_c.html#ada53be46ca952cd28e3a4c7da120005d">EnumMembers</a> object populated with all valid entries found in the file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the returned object is independent of the input file's contents other than the parsed data.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic ignores lines that are purely comments (starting with #) or lines that do not match the expected whitespace-separated format. </dd>
+<dd>
+This function relies on the global or accessible 'quiet' variable to determine whether to suppress syntax error reporting. </dd></dl>
 
 </div>
 </div>
@@ -6774,7 +6876,7 @@ If a line does not match the expected pattern and the <span class="tt"><a class=
 </div><div class="memdoc">
 
 <p>Formats a file path and a specific location into a string representation. </p>
-<p>This function constructs a string that identifies a specific location within a file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output format follows the pattern <span class="tt">filename:line.column</span>, where the line and column numbers are converted from 0-based indices to 1-based indices for human-readable reporting. It utilizes <span class="tt">std::ostringstream</span> to concatenate the path string, the incremented line index, and the incremented column index.</p>
+<p>This function constructs a string that identifies a specific location within a file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> output format follows the pattern <span class="tt">filename:line.column</span>, where the line and column numbers are converted from 0-based indices to 1-based indices for human readability. It utilizes a string stream to concatenate the path string, separators, and the adjusted coordinate values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> filesystem path to the file being referenced. </td></tr>
@@ -6782,10 +6884,10 @@ If a line does not match the expected pattern and the <span class="tt"><a class=
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the formatted file path and 1-based location.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">filename</span> parameter should be a valid, accessible path. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the formatted file path, line number, and column number.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> filename path must be a valid boost::filesystem::path object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Returns a non-empty string if the filename is not empty.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs a simple 1-based offset adjustment (adding 1) to the provided 0-based indices. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function increments the first and second elements of the location pair by 1 to convert from 0-indexed programming logic to 1-indexed human-readable notation. </dd></dl>
 
 </div>
 </div>

@@ -424,16 +424,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Do partial redundancy elimination on all functions within the scope n. </p>
-<p>Performs partial redundancy elimination on the provided syntax graph node.</p>
-<p>This function implements the partial redundancy elimination (<a class="el" href="namespacelegacy_1_1_p_r_e.html" title="Auto-generated documentation for the legacy::PRE namespace.">PRE</a>) optimization pass on the given SgNode. It utilizes a visitor pattern via the <a class="el" href="classlegacy_1_1_do_pre_on_each_function_visitor.html">DoPreOnEachFunctionVisitor</a> class to traverse the syntax graph. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformation is applied using a preorder traversal strategy to ensure that computations are moved or eliminated effectively across the control flow graph.</p>
+<p>Performs partial redundancy elimination on the provided syntax tree node.</p>
+<p>This function implements the Partial Redundancy Elimination (<a class="el" href="namespacelegacy_1_1_p_r_e.html" title="Auto-generated documentation for the legacy::PRE namespace.">PRE</a>) optimization pass on a given SgNode. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> optimization aims to identify and eliminate computations that are redundant on some, but not all, execution paths. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes a visitor pattern, specifically employing the <a class="el" href="classlegacy_1_1_do_pre_on_each_function_visitor.html">DoPreOnEachFunctionVisitor</a>, to traverse the syntax tree and apply the necessary transformations to optimize the code by inserting computations on paths where they were previously missing, thereby making them fully redundant.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> root node of the syntax graph to which the partial redundancy elimination optimization will be applied.</td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode representing the root of the syntax tree or the specific function scope to which the optimization should be applied.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>n must be a valid, non-null pointer to an SgNode representing a valid portion of the syntax graph. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> syntax graph starting at node n is modified such that computationally redundant expressions that are partially redundant across different paths are eliminated. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input pointer n must be a valid, non-null pointer to an SgNode representing a valid part of the syntax tree.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> syntax tree rooted at n will have been modified such that partial redundancies have been eliminated, potentially introducing new computations to make existing computations fully redundant.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function modifies the input SgNode in-place. Users must ensure that no other processes are concurrently accessing or modifying the tree structure during this optimization pass.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> effectiveness of this optimization depends on the accuracy of the control flow and data flow information available within the provided SgNode structure. </dd></dl>
 
 </div>
 </div>

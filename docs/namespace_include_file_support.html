@@ -105,7 +105,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8b6955086b51533ec7d20b2816c47ed4" id="r_a8b6955086b51533ec7d20b2816c47ed4"><td class="memItemLeft">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8b6955086b51533ec7d20b2816c47ed4">headerFilePrefix</a> (SgIncludeFile *includeFile)</td></tr>
-<tr class="memdesc:a8b6955086b51533ec7d20b2816c47ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a set of header file prefixes from a given include file node.  <br /></td></tr>
+<tr class="memdesc:a8b6955086b51533ec7d20b2816c47ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a set of header file prefixes from an include file node.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Auto-generated documentation for the <a class="el" href="namespace_include_file_support.html" title="Auto-generated documentation for the IncludeFileSupport namespace.">IncludeFileSupport</a> namespace. </p>
@@ -125,18 +125,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Extracts a set of header file prefixes from a given include file node. </p>
-<p>This function performs a preorder traversal of the provided SgIncludeFile node using a specialized <a class="el" href="class_include_file_support_1_1_prefix_traversal.html">PrefixTraversal</a> object. During the traversal, it identifies and collects all include paths or prefixes associated with the include file structure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes an <a class="el" href="class_include_file_support_1_1_inherited_attribute.html">InheritedAttribute</a> to maintain state during the traversal process.</p>
+<p>Extracts a set of header file prefixes from an include file node. </p>
+<p>This function performs a preorder traversal of the provided SgIncludeFile node using a <a class="el" href="class_include_file_support_1_1_prefix_traversal.html">PrefixTraversal</a> object. During the traversal, it identifies and collects all include paths that are added as prefixes within the scope of the include file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes an <a class="el" href="class_include_file_support_1_1_inherited_attribute.html">InheritedAttribute</a> to maintain state during the traversal process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">includeFile</td><td><a class="el" href="class_a.html">A</a> pointer to the SgIncludeFile node to be traversed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> set of strings containing the unique include paths/prefixes discovered during the traversal.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::set of strings containing the unique include paths collected during the traversal.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>includeFile must not be a null pointer. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains all prefixes identified by the <a class="el" href="class_include_file_support_1_1_prefix_traversal.html">PrefixTraversal</a> algorithm.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal relies on the <a class="el" href="class_include_file_support_1_1_prefix_traversal.html">PrefixTraversal</a> class to populate the added_include_path_set member variable. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains all prefixes discovered during the traversal of the includeFile subtree.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal follows a preorder pattern, meaning the parent nodes are processed before their children. </dd></dl>
 
 </div>
 </div>

@@ -149,7 +149,7 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a74d1c1b85f7cb2fe0296d7fa3de20bf9" id="r_a74d1c1b85f7cb2fe0296d7fa3de20bf9"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a74d1c1b85f7cb2fe0296d7fa3de20bf9">splitIntoLines</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a74d1c1b85f7cb2fe0296d7fa3de20bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a single string into a vector of strings based on newline characters.  <br /></td></tr>
+<tr class="memdesc:a74d1c1b85f7cb2fe0296d7fa3de20bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a given string into a vector of strings based on newline characters.  <br /></td></tr>
 <tr class="memitem:aef1bd0b2d10700f5fdba6e4f8920057a" id="r_aef1bd0b2d10700f5fdba6e4f8920057a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aef1bd0b2d10700f5fdba6e4f8920057a">eraseBlankLines</a> (std::vector&lt; std::string &gt; &amp;lines)</td></tr>
 <tr class="memdesc:aef1bd0b2d10700f5fdba6e4f8920057a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all lines from a vector of strings that consist only of whitespace.  <br /></td></tr>
 <tr class="memitem:a8d4216cb967cbd1e1ee6f98b00fbb3cf" id="r_a8d4216cb967cbd1e1ee6f98b00fbb3cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8d4216cb967cbd1e1ee6f98b00fbb3cf">trimBlankLines</a> (std::vector&lt; std::string &gt; &amp;lines)</td></tr>
@@ -183,7 +183,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ab918c14df93c769b14ae1f63d355e1b0" id="r_ab918c14df93c769b14ae1f63d355e1b0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab918c14df93c769b14ae1f63d355e1b0">usingColor</a> ()</td></tr>
 <tr class="memdesc:ab918c14df93c769b14ae1f63d355e1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether color output should be enabled based on current settings and environment.  <br /></td></tr>
 <tr class="memitem:a23c1104543b35bcae45a35b04047d4a8" id="r_a23c1104543b35bcae45a35b04047d4a8"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a23c1104543b35bcae45a35b04047d4a8">messageString</a> (<a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> importance, const std::string &amp;mesg)</td></tr>
-<tr class="memdesc:a23c1104543b35bcae45a35b04047d4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a message string with a prefix and ANSI color codes based on importance.  <br /></td></tr>
+<tr class="memdesc:a23c1104543b35bcae45a35b04047d4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a message string with a specific importance level and ANSI color codes.  <br /></td></tr>
 <tr class="memitem:a245edb334a91ff919192b64ea2a9c043" id="r_a245edb334a91ff919192b64ea2a9c043"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a245edb334a91ff919192b64ea2a9c043">message</a> (<a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> importance, const <a class="el" href="class_rosebud_1_1_ast_1_1_file.html#a2d87bb69ac4f94be69f9873662dd1681">Ast::File::Ptr</a> &amp;file, const <a class="el" href="#aa07ea2a305acbf638dae2a40fdd240f1">Token</a> &amp;token, const std::string &amp;mesg)</td></tr>
 <tr class="memdesc:a245edb334a91ff919192b64ea2a9c043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches a message with a specific importance level to the logging system.  <br /></td></tr>
 <tr class="memitem:a1a3100db8595fc72e1cd2d7b548ecc7b" id="r_a1a3100db8595fc72e1cd2d7b548ecc7b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1a3100db8595fc72e1cd2d7b548ecc7b">message</a> (<a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> importance, const <a class="el" href="class_rosebud_1_1_ast_1_1_file.html#a2d87bb69ac4f94be69f9873662dd1681">Ast::File::Ptr</a> &amp;file, const std::vector&lt; <a class="el" href="#aa07ea2a305acbf638dae2a40fdd240f1">Token</a> &gt; &amp;tokens, const std::string &amp;mesg)</td></tr>
@@ -191,9 +191,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aebda63991f5999c9ec2e113abf987ed3" id="r_aebda63991f5999c9ec2e113abf987ed3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aebda63991f5999c9ec2e113abf987ed3">message</a> (<a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> importance, const <a class="el" href="class_rosebud_1_1_ast_1_1_file.html#a2d87bb69ac4f94be69f9873662dd1681">Ast::File::Ptr</a> &amp;file, const <a class="el" href="#aa07ea2a305acbf638dae2a40fdd240f1">Token</a> &amp;begin, const <a class="el" href="#aa07ea2a305acbf638dae2a40fdd240f1">Token</a> &amp;focus, const <a class="el" href="#aa07ea2a305acbf638dae2a40fdd240f1">Token</a> &amp;end, const std::string &amp;mesg)</td></tr>
 <tr class="memdesc:aebda63991f5999c9ec2e113abf987ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a formatted message to the standard error stream with associated file location.  <br /></td></tr>
 <tr class="memitem:ab79ef9aebd9d1715073d5a3e403cd74c" id="r_ab79ef9aebd9d1715073d5a3e403cd74c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab79ef9aebd9d1715073d5a3e403cd74c">message</a> (<a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> importance, const <a class="el" href="class_rosebud_1_1_ast_1_1_file.html#a2d87bb69ac4f94be69f9873662dd1681">Ast::File::Ptr</a> &amp;file, const std::string &amp;mesg)</td></tr>
-<tr class="memdesc:ab79ef9aebd9d1715073d5a3e403cd74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with a specified importance level to the standard error stream.  <br /></td></tr>
+<tr class="memdesc:ab79ef9aebd9d1715073d5a3e403cd74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a formatted message to the standard error stream based on its importance level.  <br /></td></tr>
 <tr class="memitem:ae294f3d2c85f6a6096b1ff3e2ed801b8" id="r_ae294f3d2c85f6a6096b1ff3e2ed801b8"><td class="memItemLeft"><a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae294f3d2c85f6a6096b1ff3e2ed801b8">classHierarchy</a> (const <a class="el" href="#a6031ddd688a6bf65c202c170378107ba">Classes</a> &amp;classes)</td></tr>
-<tr class="memdesc:ae294f3d2c85f6a6096b1ff3e2ed801b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a class hierarchy graph from a collection of class definitions.  <br /></td></tr>
+<tr class="memdesc:ae294f3d2c85f6a6096b1ff3e2ed801b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a directed graph representing the inheritance hierarchy of a set of classes.  <br /></td></tr>
 <tr class="memitem:af678dcbbb9fd5680e9b71df90b2875b1" id="r_af678dcbbb9fd5680e9b71df90b2875b1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af678dcbbb9fd5680e9b71df90b2875b1">checkClassHierarchy</a> (<a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> &amp;h)</td></tr>
 <tr class="memdesc:af678dcbbb9fd5680e9b71df90b2875b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the class hierarchy for cycles.  <br /></td></tr>
 <tr class="memitem:ad48bc7c05c3bab7d74d903da4efa3bf6" id="r_ad48bc7c05c3bab7d74d903da4efa3bf6"><td class="memItemLeft"><a class="el" href="#a6031ddd688a6bf65c202c170378107ba">Classes</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad48bc7c05c3bab7d74d903da4efa3bf6">topDown</a> (<a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> &amp;h)</td></tr>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a60bed7c7952ecefb678449fdb1addbd8" id="r_a60bed7c7952ecefb678449fdb1addbd8"><td class="memItemLeft"><a class="el" href="#a6031ddd688a6bf65c202c170378107ba">Classes</a>&#160;</td><td class="memItemRight"><a class="el" href="#a60bed7c7952ecefb678449fdb1addbd8">derivedClasses</a> (const <a class="el" href="class_rosebud_1_1_ast_1_1_class.html#ad5af2eb5df879a34ebe4f3f32f9a0768">Ast::Class::Ptr</a> &amp;<a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, const <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> &amp;h)</td></tr>
 <tr class="memdesc:a60bed7c7952ecefb678449fdb1addbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all classes that directly inherit from a specified class within a hierarchy.  <br /></td></tr>
 <tr class="memitem:ae0c692583b455fc77c1235a289c71bc8" id="r_ae0c692583b455fc77c1235a289c71bc8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae0c692583b455fc77c1235a289c71bc8">isBaseClass</a> (const <a class="el" href="class_rosebud_1_1_ast_1_1_class.html#ad5af2eb5df879a34ebe4f3f32f9a0768">Ast::Class::Ptr</a> &amp;<a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, const <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> &amp;h)</td></tr>
-<tr class="memdesc:ae0c692583b455fc77c1235a289c71bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a given class acts as a base class within a hierarchy.  <br /></td></tr>
+<tr class="memdesc:ae0c692583b455fc77c1235a289c71bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a given class acts as a base class within the hierarchy.  <br /></td></tr>
 <tr class="memitem:a77e6ee9d8eb3a33a82c5a3b7d52703e8" id="r_a77e6ee9d8eb3a33a82c5a3b7d52703e8"><td class="memItemLeft">std::vector&lt; <a class="el" href="class_rosebud_1_1_ast_1_1_property.html#a86464e1d33bdf86b5dfa6479c4768b40">Ast::Property::Ptr</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a77e6ee9d8eb3a33a82c5a3b7d52703e8">allConstructorArguments</a> (const <a class="el" href="class_rosebud_1_1_ast_1_1_class.html#ad5af2eb5df879a34ebe4f3f32f9a0768">Ast::Class::Ptr</a> &amp;<a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>, const <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> &amp;h_)</td></tr>
 <tr class="memdesc:a77e6ee9d8eb3a33a82c5a3b7d52703e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all properties marked as constructor arguments within a class hierarchy.  <br /></td></tr>
 <tr class="memitem:a73a422f85116202221b5723806a4eba1" id="r_a73a422f85116202221b5723806a4eba1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a73a422f85116202221b5723806a4eba1">firstPublicBaseClass</a> (const <a class="el" href="class_rosebud_1_1_ast_1_1_class.html#ad5af2eb5df879a34ebe4f3f32f9a0768">Ast::Class::Ptr</a> &amp;<a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a>)</td></tr>
@@ -446,7 +446,7 @@ Features of the ROSETTA backend</h2>
 <div class="line">    <span class="keywordflow">return</span> call;</div>
 <div class="line">}</div>
 <div class="ttc" id="af18-parse-demo__8cpp_8dox_html_a2e146c0cee62f1b04ef3afa9d95ce508"><div class="ttname"><a href="f18-parse-demo__8cpp_8dox.html#a2e146c0cee62f1b04ef3afa9d95ce508">argList</a></div><div class="ttdeci">std::list&lt; std::string &gt; argList(int argc, char *const argv[])</div><div class="ttdoc">Converts a C-style array of command-line arguments into a list of strings.</div></div>
-<div class="ttc" id="arosebud__8_c_8dox_html_a5c8025dafee8f54036f45b1f68c19436"><div class="ttname"><a href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></div><div class="ttdeci">**param file A pointer to the AST file object containing the tokens to be parsed *param runningCppStack The current stack of C parsing contexts *(unused in this implementation). **@return An Ast returns an empty pointer if no property is found or if a parsing error occurs **pre The file parameter must not be null *post If a property is successfully the file token stream is advanced to the end *of the property and the property object is populated with name</div><div class="ttdef"><b>Definition</b> rosebud_8C.dox:658</div></div>
+<div class="ttc" id="arosebud__8_c_8dox_html_a5c8025dafee8f54036f45b1f68c19436"><div class="ttname"><a href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></div><div class="ttdeci">**param file A pointer to the AST file object containing the tokens to be parsed *param runningCppStack The current stack of C parsing contexts *(unused in this implementation). **@return An Ast returns an empty pointer if no property is found or if a parsing error occurs **pre The file parameter must not be null *post If a property is successfully the file token stream is advanced to the end *of the property and the property object is populated with name</div><div class="ttdef"><b>Definition</b> rosebud_8C.dox:723</div></div>
 </div><!-- fragment --><p>Since ROSETTA uses raw pointers, it is up to the user to know when an object is no longer part of any tree and no longer pointed to by anything else in ROSE. Sometimes an analysis will cache its results, and thus have pointers into the AST. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> best practice with ROSETTA-generated code is to never free any AST vertex.</p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span> (<span class="keyword">auto</span> child = parent-&gt;get_child()) {</div>
 <div class="line">    parent-&gt;set_child(<span class="keyword">nullptr</span>);</div>
@@ -882,7 +882,7 @@ Comparison with ROSETTA</h1>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> single string containing the original comment updated with the newly appended text, formatted with correct Doxygen delimiters and prefixes.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input strings should be valid UTF-8 or ASCII strings. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string will contain a validly formatted Doxygen comment block if the input was a valid Doxygen comment.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on helper functions <span class="tt"><a class="el" href="#a74d1c1b85f7cb2fe0296d7fa3de20bf9" title="Splits a single string into a vector of strings based on newline characters.">splitIntoLines</a></span> and <span class="tt"><a class="el" href="#a3e5a122b4bafada7a2e4f6cdbd4ade17" title="Wraps a collection of text lines into a formatted block comment.">makeBlockComment</a></span>, as well as the <span class="tt">boost::join</span> utility from the Boost library. </dd>
+<dl class="section note"><dt>Note</dt><dd>This function relies on helper functions <span class="tt"><a class="el" href="#a74d1c1b85f7cb2fe0296d7fa3de20bf9" title="Splits a given string into a vector of strings based on newline characters.">splitIntoLines</a></span> and <span class="tt"><a class="el" href="#a3e5a122b4bafada7a2e4f6cdbd4ade17" title="Wraps a collection of text lines into a formatted block comment.">makeBlockComment</a></span>, as well as the <span class="tt">boost::join</span> utility from the Boost library. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses regular expressions to parse the comment structure, specifically looking for C-style comment delimiters. </dd></dl>
 
@@ -1066,7 +1066,7 @@ Comparison with ROSETTA</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character to be escaped. </td></tr>
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current quoting context (e.g., a double quote or single quote). If ch matches context, it will be escaped.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current quoting context (e.g., a double quote or single quote). If ch matches context, it will be escaped.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1097,11 +1097,11 @@ Comparison with ROSETTA</h1>
 </div><div class="memdoc">
 
 <p>Escapes all characters in a string based on a provided context. </p>
-<p>This function iterates through every character in the input string <span class="tt">s</span> and applies an escaping transformation to each character using an overloaded version of <span class="tt"><a class="el" href="#a2039ca85061534fec00c385a5d46f426" title="Escapes a single character based on a provided context.">cEscape</a></span> that operates on individual characters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformation logic is determined by the <span class="tt"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></span> parameter, which defines the rules for which characters need to be escaped (e.g., within a string literal, a comment, or a preprocessor directive).</p>
+<p>This function iterates through every character in the input string <span class="tt">s</span> and applies an escaping transformation to each character using an overloaded version of <span class="tt"><a class="el" href="#a2039ca85061534fec00c385a5d46f426" title="Escapes a single character based on a provided context.">cEscape</a></span> that operates on individual characters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformation logic is determined by the <span class="tt"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></span> parameter, which defines the rules for which characters need to be escaped (e.g., within a string literal, a comment, or a preprocessor directive).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string containing the characters that need to be escaped. </td></tr>
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current escaping context, which dictates the escaping rules applied to each character.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current escaping context, which dictates the escaping rules applied to each character.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1159,22 +1159,24 @@ Comparison with ROSETTA</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a class hierarchy graph from a collection of class definitions. </p>
+<p>Constructs a directed graph representing the inheritance hierarchy of a set of classes. </p>
 <p><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> the class hierarchy from the specified class definitions.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> edges in the graph point from base classes to derived classes.</p>
-<p>This function iterates through a collection of class objects to build a directed graph representing the inheritance hierarchy. It first performs a pass to create vertices for each class definition, checking for duplicate definitions within the provided collection. If a duplicate is found, an error message is logged identifying the conflicting files. In a second pass, the function iterates through the inheritance relationships of each class to create directed edges between base classes and derived classes.</p>
+<p>This function processes a collection of class definitions to build a directed graph (<a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a>) where each class is represented as a vertex and inheritance relationships are represented as edges. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation proceeds in two distinct phases:</p><ol type="1">
+<li><a class="el" href="struct_vertex.html">Vertex</a> Creation: It iterates through the provided classes, ensuring each class is uniquely represented in the graph. If a class is already defined in the hierarchy, an error message is logged identifying the duplicate definition and the location of the previous definition.</li>
+<li><a class="el" href="struct_edge.html">Edge</a> Creation: It iterates through the classes again to establish inheritance links. For each class, it examines its inheritance list. If a superclass (base class) is already present in the graph, a directed edge is inserted from the superclass vertex to the current class vertex.</li>
+</ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">classes</td><td><a class="el" href="class_a.html">A</a> collection of class pointers representing the set of class definitions to be processed.</td></tr>
+    <tr><td class="paramname">classes</td><td><a class="el" href="class_a.html">A</a> collection of class objects (<a class="el" href="#a6031ddd688a6bf65c202c170378107ba">Classes</a>) to be processed into the hierarchy. Each element in the collection must be a valid, non-null pointer to a class.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> object containing the vertices (class definitions) and edges (inheritance relationships) extracted from the input.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">classes</span> collection should contain valid, non-null class pointers. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> object will contain all unique classes from the input as vertices and all valid inheritance links as edges.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If a class is encountered that has already been added to the hierarchy, an error is reported via the <span class="tt"><a class="el" href="#ac4cc5d03eed4d766cc6cf82dbba22ecc" title="Logs a formatted message to the standard error stream.">message</a></span> function, including details about the current and previous definition locations. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the inheritance pointers within each class point to valid class objects that are also present in the <span class="tt">classes</span> collection to establish edges. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> object containing the constructed graph of vertices (classes) and edges (inheritance relationships).</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will trigger an assertion failure if any class pointer in the input collection is null. Additionally, an error message is logged if duplicate class definitions are encountered.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input 'classes' collection must contain valid, non-null pointers to class objects. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> populated <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> object is returned, containing all unique classes from the input as vertices and all valid inheritance relationships as directed edges.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the ability to find the ancestor <a class="el" href="class_rosebud_1_1_ast_1_1_file.html">Ast::File</a> for error reporting when duplicate classes are detected. </dd></dl>
 
 </div>
 </div>
@@ -1491,19 +1493,22 @@ This implementation includes logic for handling character swaps, extending the s
       </table>
 </div><div class="memdoc">
 
-<p>Determines whether a given class acts as a base class within a hierarchy. </p>
-<p>This function checks if the provided class pointer <span class="tt"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></span> represents a base class by verifying its existence within the provided <span class="tt"><a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a></span> object and checking if it has any outgoing edges. In the context of the class hierarchy graph, a class is considered a base class if it has at least one outgoing edge (nOutEdges &gt; 0), representing a derivation relationship.</p>
+<p>Determines whether a given class acts as a base class within the hierarchy. </p>
+<p>This function checks if the specified class node in the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) serves as a parent class by verifying its existence in the class hierarchy and checking for outgoing edges. It performs a lookup in the provided hierarchy using the class's unique key. If the class is found, the function inspects the out-degree of the corresponding vertex; a non-zero out-degree indicates that the class has derived classes, thus making it a base class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_rosebud_1_1_ast_1_1_class.html">Ast::Class</a> object to be checked. </td></tr>
-    <tr><td class="paramname">h</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> object containing the graph structure of the classes.</td></tr>
+    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a pointer of an <a class="el" href="class_rosebud_1_1_ast_1_1_class.html">Ast::Class</a> object representing the class to be checked. Must not be null. </td></tr>
+    <tr><td class="paramname">h</td><td><a class="el" href="class_a.html">A</a> constant reference to the <a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a> object containing the structural relationships between classes.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the class is found in the hierarchy and has one or more outgoing edges; false otherwise.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointer <span class="tt"><a class="el" href="xomp__accelerator__sched__test__v2_8c.html#a48faa9373e4ff5ed39dce18d5deea0cb">c</a></span> must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the hierarchy <span class="tt">h</span> remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <span class="tt">findVertexKey</span> method of the <span class="tt"><a class="el" href="#ae6fbb87c89ad2836612897a94bfb843b">Hierarchy</a></span> class to locate the vertex corresponding to the class. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the class exists in the hierarchy and has at least one outgoing edge (representing a derived class); false otherwise.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the class pointer 'c' is valid and not null. Passing a null pointer will trigger an assertion failure.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> class pointer 'c' must be non-null. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> hierarchy 'h' must be properly initialized and contain the necessary vertex mapping for the provided class.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the hierarchy 'h' remains unchanged.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> complexity of this operation is primarily determined by the efficiency of the findVertexKey lookup within the hierarchy. </dd></dl>
 
 </div>
 </div>
@@ -1918,19 +1923,23 @@ This implementation includes logic for handling character swaps, extending the s
       </table>
 </div><div class="memdoc">
 
-<p>Logs a message with a specified importance level to the standard error stream. </p>
-<p>This function handles the output of diagnostic messages. It iterates through each line of the provided message string, formatting it with the appropriate importance prefix and the filename associated with the provided AST file pointer. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> message is printed to std::cerr. If the importance level is set to ERROR or FATAL, a global error counter (nErrors) is incremented. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function suppresses DEBUG level messages unless the global debugging setting is enabled.</p>
+<p>Logs a formatted message to the standard error stream based on its importance level. </p>
+<p>This function handles the dispatching of system messages to the console. It evaluates the importance level against the current global debugging settings to determine if the message should be printed. If the message is to be displayed, the input string is split into individual lines, and each line is formatted with appropriate metadata (such as filename and importance prefixes) before being sent to std::cerr. Additionally, the function tracks the total number of critical failures by incrementing a global error counter if the importance level is categorized as ERROR or FATAL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">importance</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> severity level of the message (e.g., DEBUG, ERROR, FATAL). </td></tr>
-    <tr><td class="paramname">file</td><td><a class="el" href="class_a.html">A</a> pointer to the AST file object containing the source information for the message. </td></tr>
-    <tr><td class="paramname">mesg</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string content of the message to be logged.</td></tr>
+    <tr><td class="paramname">importance</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> severity level of the message (e.g., DEBUG, INFO, ERROR, FATAL). Determines the formatting and whether the message is suppressed. </td></tr>
+    <tr><td class="paramname">file</td><td><a class="el" href="class_a.html">A</a> shared pointer to the AST file object associated with the message. Used to retrieve the filename for the log output. </td></tr>
+    <tr><td class="paramname">mesg</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> raw string content of the message to be logged.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> file parameter must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If importance is ERROR or FATAL, the global error counter nErrors is incremented.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of global or accessible variables such as <span class="tt"><a class="el" href="#af576c5d42b1390aaa97e3101d45fb68c">settings</a></span>, <span class="tt"><a class="el" href="#a0ba7e44d2bcede0eafbd8f4a13abc0f0">nErrors</a></span>, and helper functions like <span class="tt"><a class="el" href="#a74d1c1b85f7cb2fe0296d7fa3de20bf9" title="Splits a single string into a vector of strings based on newline characters.">splitIntoLines</a></span> and <span class="tt"><a class="el" href="#a23c1104543b35bcae45a35b04047d4a8" title="Formats a message string with a prefix and ANSI color codes based on importance.">messageString</a></span>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the 'file' pointer is not null. Passing a null pointer will trigger an assertion failure.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> 'file' parameter must be a valid, non-null pointer to an <a class="el" href="class_rosebud_1_1_ast_1_1_file.html">Ast::File</a> object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If the importance level is ERROR or FATAL, the global error counter (nErrors) is incremented.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function's output behavior is dependent on the global 'settings.debugging' flag. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on splitIntoLines for multi-line string processing and messageString for ANSI color application and prefixing. </dd></dl>
 
 </div>
 </div>
@@ -2106,17 +2115,19 @@ This implementation includes logic for handling character swaps, extending the s
 </div><div class="memdoc">
 
 <p>Logs a formatted message to the standard error stream. </p>
-<p>This function iterates through each line of the provided message string, processes them individually, and prints them to std::cerr. Each line is prefixed with the executable name and formatted according to the specified importance level. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes splitIntoLines to handle multi-line input and messageString to apply the appropriate importance-based formatting.</p>
+<p>This function processes a multi-line message string by splitting it into individual lines. Each line is then formatted with a specific importance level (which may include ANSI color codes) and prefixed with the name of the current executable. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting formatted strings are printed sequentially to std::cerr.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">importance</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> severity or importance level of the message, which determines the formatting applied to each line. </td></tr>
-    <tr><td class="paramname">mesg</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string containing the message content to be logged.</td></tr>
+    <tr><td class="paramname">importance</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance level of the message, determining the prefix and potential ANSI color formatting. </td></tr>
+    <tr><td class="paramname">mesg</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string containing the message content, which may include newline characters.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance parameter must be a valid member of the <a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> enumeration. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> formatted lines of the message are printed to the standard error stream (std::cerr).</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of splitIntoLines, <a class="el" href="namespace_sawyer.html#aacae5f7a098ecf0e3a514879aa168712" title="Retrieves the name or path of the currently executing process.">Sawyer::thisExecutableName</a>, and messageString functions. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance parameter must be a valid member of the <a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> enum. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Each line of the input message is printed to the standard error stream (std::cerr). If the importance level is ERROR or FATAL, the global error counter may be incremented via the underlying messageString call.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function writes directly to std::cerr. Ensure that the output stream is available and that the application has appropriate permissions to write to the standard error device.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on splitIntoLines for parsing the input string, messageString for formatting, and thisExecutableName for the prefix. </dd></dl>
 
 </div>
 </div>
@@ -2278,21 +2289,21 @@ This implementation includes logic for handling character swaps, extending the s
       </table>
 </div><div class="memdoc">
 
-<p>Formats a message string with a prefix and ANSI color codes based on importance. </p>
+<p>Formats a message string with a specific importance level and ANSI color codes. </p>
 <p>Convert an importance level and message to an error output string.</p>
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string may have ANSI color codes and will have line termination.</p>
-<p>This function takes a message and an importance level, then returns a string formatted with a specific prefix (e.g., "info: ", "error: ") and ANSI escape sequences for terminal coloring. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation checks if color output is enabled via <a class="el" href="#ab918c14df93c769b14ae1f63d355e1b0" title="Determines whether color output should be enabled based on current settings and environment.">usingColor()</a>. If enabled, it retrieves the appropriate color specification from a color set and constructs the ANSI escape sequences for foreground, background, and bold text. If the importance level is ERROR or FATAL, a global error counter nErrors is incremented.</p>
+<p>This function takes a message and an importance level, then constructs a formatted string. If color output is enabled via <a class="el" href="#ab918c14df93c769b14ae1f63d355e1b0" title="Determines whether color output should be enabled based on current settings and environment.">usingColor()</a>, the function applies ANSI escape sequences to the message based on the provided importance level. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> formatting includes foreground colors, background colors, and bold text attributes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also handles the incrementing of a global error counter (nErrors) when the importance level is set to ERROR or FATAL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">importance</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance level of the message, which determines the prefix and the ANSI color styling applied. </td></tr>
+    <tr><td class="paramname">importance</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance level of the message, which determines the prefix (e.g., "debug:", "info:", "error:") and the associated ANSI color. </td></tr>
     <tr><td class="paramname">mesg</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> actual message content to be formatted.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> formatted string containing the ANSI escape sequence for styling, the importance-based prefix, the reset escape sequence, and the original message.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance parameter must be a valid member of the <a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> enumeration.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the importance is ERROR or FATAL, the global variable nErrors is incremented by one.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the <a class="el" href="#ab918c14df93c769b14ae1f63d355e1b0" title="Determines whether color output should be enabled based on current settings and environment.">usingColor()</a> function to determine whether to apply ANSI escape sequences. It also uses boost::lexical_cast and boost::join for string manipulation. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> formatted string containing the importance prefix, ANSI escape sequences for coloring, the message content, and a reset escape sequence.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> importance parameter must be a valid member of the <a class="el" href="namespace_sawyer_1_1_message.html#abfb4d3240797db3a74bbf691f708a1c9">Sawyer::Message::Importance</a> enum. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If the importance is ERROR or FATAL, the global variable nErrors is incremented.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the <a class="el" href="#ab918c14df93c769b14ae1f63d355e1b0" title="Determines whether color output should be enabled based on current settings and environment.">usingColor()</a> function to determine if ANSI escape sequences should be applied. It uses boost::lexical_cast and boost::join for string manipulation and ANSI code construction. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an internal lambda to compute the ANSI escape sequences for the given importance level. </dd></dl>
 
@@ -2513,21 +2524,21 @@ This implementation includes logic for handling character swaps, extending the s
       </table>
 </div><div class="memdoc">
 
-<p>Splits a single string into a vector of strings based on newline characters. </p>
+<p>Splits a given string into a vector of strings based on newline characters. </p>
 <p>Split a multi-line string into one string per line.</p>
 <p>Splits the input string at its line termination characters and return a vector of the resulting lines without their line termination characters. Since ROSE source code is prohibited from using carriage returns, we only have to worry about line feeds.</p>
-<p>This function takes an input string and partitions it into multiple substrings using the newline character ('<br  />
-') as the delimiter. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes the boost::split algorithm from the Boost library, specifically using boost::is_any_of to identify the delimiter.</p>
+<p>This function takes a single input string and partitions it into multiple substrings using the newline character ('<br  />
+') as the delimiter. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation utilizes the boost::split algorithm from the Boost library, specifically using the boost::is_any_of predicate to identify the delimiter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string to be split into lines.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> vector of strings, where each element represents a line from the original string.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> vector of strings, where each element represents a line extracted from the input string.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid, initialized std::string object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains substrings extracted from <span class="tt">s</span>, separated by the '<br  />
-' delimiter.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains substrings of <span class="tt">s</span> separated by the '<br  />
+' character.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function relies on the Boost library for the splitting logic. </dd></dl>
 
 </div>

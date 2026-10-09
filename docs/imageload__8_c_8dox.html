@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 <p>Entry point of the application that performs an AST traversal to detect loops.</p>
 <p>Entry point of the application that performs AST traversal and symbol table output.</p>
 <p>Entry point for the ROSE-based analysis tool.</p>
-<p>Entry point for the tool that parses C++ source files to generate declarations or definitions.</p>
+<p>Entry point for the code generation tool that parses C++ files to generate stringifiers and compatibility databases.</p>
 <p>Entry point of the application that transforms sprintf calls to snprintf calls.</p>
 <p>Entry point of the application that orchestrates the ROSE frontend and backend processes.</p>
 <p>Entry point of the application that performs interprocedural control flow graph analysis.</p>
@@ -237,8 +237,8 @@ Functions</h2></td></tr>
 <p>Entry point for the parser adapter execution.</p>
 <p>Entry point for the LAL adapter execution process.</p>
 <p>Entry point for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> execution.</p>
-<p>Entry point of the application that orchestrates library initialization, command-line parsing, AST construction, and code generation.</p>
-<p>Entry point of the tool that retrieves and prints configuration values.</p>
+<p>Entry point for the tool that parses input files and generates output based on a selected backend.</p>
+<p>Entry point for the configuration lookup tool.</p>
 <p>Entry point of the application that initializes ROSE and executes the frontend and backend.</p>
 <p>Executes a series of nested loop operations to perform matrix element assignments.</p>
 <p>Entry point of the program that performs a nested loop assignment.</p>
@@ -268,7 +268,7 @@ Functions</h2></td></tr>
 <p>Entry point of the application that processes a source project to build and analyze Control Flow Graphs.</p>
 <p>Entry point for the ROSE pattern search example application.</p>
 <p>Entry point of the application that performs AST traversal on input files.</p>
-<p>Entry point for the Rose-based program execution and transformation pipeline.</p>
+<p>Entry point for the ROSE compiler transformation tool.</p>
 <p>Entry point of the application that performs loop transformations on a C++ project.</p>
 <p>Entry point of the application that performs Def-Use and Liveness analysis on a <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> project.</p>
 <p>Entry point for the visitor traversal application.</p>
@@ -631,7 +631,7 @@ Any user-defined attributes must be registered using REGISTER_ATTRIBUTE_FOR_FILE
 <dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 upon successful execution of the initialization, parsing, and DOT generation processes.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>An SgProject object is created representing the parsed source code, and a DOT file is generated on the filesystem if the process completes successfully.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates DOT representation files for the AST of a given SgProject.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates a DOT representation of the Abstract Syntax Tree (AST) for a given project.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
 <p>This function serves as the main driver for the ROSE-based application. It initializes the ROSE environment using the ROSE_INITIALIZE macro, parses the input source files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and subsequently invokes <a class="el" href="structgenerate_d_o_t_extended.html">generateDOTExtended</a> to produce a visual representation of the AST in DOT format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1786,7 +1786,7 @@ If the <span class="tt">abortme</span> flag is set during the liveness analysis 
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an <a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> to facilitate the transformation traversal. </dd>
 <dd>
 To prevent iterator invalidation during the modification of the declaration list, the iterator is re-synchronized using std::find after each transformation.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework, parses command-line arguments, configures transformation interfaces, and iterates through the source files in an SgProject to apply various loop transformations and optimization passes such as finite differencing and partial redundancy elimination. Finally, it unparses the modified project and optionally triggers a compilation step.</p>
+<p>This function serves as the main driver for the ROSE compiler infrastructure. It orchestrates the entire transformation pipeline, which includes initializing the ROSE environment, parsing command-line arguments, loading source files into an SgProject, and performing various optimization passes such as loop transformations, finite differencing, and partial redundancy elimination. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the global scope of each loaded file, identifies function definitions, and applies AST-based transformations using the <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>. Finally, it unparses the modified AST back to source code and optionally triggers an object file compilation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
@@ -1794,14 +1794,21 @@ To prevent iterator invalidation during the modification of the declaration list
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 on successful execution, -1 if insufficient arguments are provided, or the return value from the project compilation process if the generation option is enabled.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files in the project are transformed according to the specified command-line options, and the modified code is unparsed to the output.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singleton instances such as <a class="el" href="class_cmd_options.html">CmdOptions</a> and <a class="el" href="class_read_annotation.html" title="An interface to read into type(class) and operator(function) annotations.">ReadAnnotation</a>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution and completion of all requested transformations. Returns -1 if the number of arguments is insufficient (no input files provided). Returns the exit code of the compiler output process if the "-gobj" option is enabled.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs in-place transformations on the AST; if the transformation logic (e.g., <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>) is not robust, it may lead to iterator invalidation or corrupted AST structures. </dd>
 <dd>
-If ifdef USE_OMEGA is defined, dependency statistics are recorded and printed. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singletons (e.g., <a class="el" href="class_cmd_options.html">CmdOptions</a>, <a class="el" href="class_operator_side_effect_annotation.html">OperatorSideEffectAnnotation</a>) which must be properly initialized via ROSE_INITIALIZE.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be compatible with the current system architecture as checked by the ROSE_INITIALIZE macro. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration list traversal by re-finding the iterator.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input arguments must contain at least one valid file path to be processed.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files are transformed according to the specified command-line flags. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformed AST is unparsed and written back to the file system. </dd>
+<dd>
+If the "-gobj" flag is present, an object file is generated and its compilation status is returned.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration traversal by re-finding the current iterator position using std::find. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of dependency statistics (DepStats) is conditionally compiled based on the USE_OMEGA macro.</dd></dl>
 <p>This function serves as the main driver for the Rose-based application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> environment using the ROSE_INITIALIZE macro, parses input files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and executes a custom traversal mechanism. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is used to populate an <a class="el" href="class_inherited_attribute.html">InheritedAttribute</a> object by visiting nodes within the SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2200,39 +2207,55 @@ If ROSE_BUILD_CPP_LANGUAGE_SUPPORT is not defined, an error message is printed t
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic for inserting language dialects into the argument vector depends on whether define ROSE_COMPILER_FOR_LANGUAGE is present. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of creating an SgProject when no arguments are provided is currently noted as a TODO to be moved into the frontend function.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the ROSE environment, sets up diagnostic logging, and parses command-line arguments to identify a specific configuration key. It then reads a configuration file based on the parsed settings and attempts to find the value associated with the provided key. If the key is "libdirs", the function performs a special transformation to convert space-separated paths into colon-separated paths before printing. All output is passed through a makefile-escape utility to ensure compatibility.</p>
+<p>This function serves as the main driver for a utility designed to retrieve and display specific configuration values from a configuration file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process begins by initializing the ROSE environment and the diagnostics logging system. It then parses command-line arguments to identify a target key and a configuration file path. After loading the configuration, the function searches for the specified key. If the key is found, its value is printed to standard output, with special handling for the "libdirs" key to convert space-separated paths into a colon-separated format suitable for library search paths. All output is escaped for Makefile compatibility. If the key is not found, a fatal error is logged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided to the program. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 if the key is successfully found and printed. Returns 1 if the key is not found in the configuration, resulting in a fatal error log.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates via exit(0) on success or exit(1) on failure.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on external components such as parseCommandLine, readConfigFile, and the Diagnostics system.</dd></dl>
-<p>This function serves as the main driver for the tool. It performs the following high-level steps:</p><ol type="1">
-<li>Initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and the logging system.</li>
-<li>Configures and executes a command-line parser to extract arguments and input files.</li>
-<li>Parses the provided input files to populate the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) within the global Ast::Project instance.</li>
-<li>Performs post-parsing semantic analysis, such as checking for unused abstract classes, if warning settings are enabled.</li>
-<li>Identifies the appropriate backend generator based on the provided settings and executes the generation process.</li>
-<li>Returns an exit code based on the presence of errors encountered during the process.</li>
+<dl class="section return"><dt>Returns</dt><dd>This function does not return a value to the caller directly; instead, it terminates the process using exit(). It returns 0 upon successful retrieval and printing of the requested key, and returns 1 if the requested key is not found in the configuration.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will terminate the entire process via exit(0) or exit(1). </dd>
+<dd>
+If the "libdirs" key is accessed, the output format changes from space-separated to colon-separated.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via ROSE_INITIALIZE. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must be valid and follow the expected format required by parseCommandLine. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates after printing the requested value or logging an error. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output contains the escaped value of the requested key if found.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes a special case for the "libdirs" key to ensure compatibility with standard Unix-like library search path formats. </dd>
+<dd>
+All output sent to stdout is processed through makefileEscape to ensure safety in Makefile environments.</dd></dl>
+<p>This function orchestrates the entire lifecycle of the application. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> execution flow consists of four primary phases:</p><ol type="1">
+<li>Initialization: Sets up the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library, initializes the logging system (mlog), and configures message facilities.</li>
+<li>Command-Line Parsing: Utilizes a command-line parser to extract arguments and registers all available generators to ensure all possible flags are recognized.</li>
+<li>AST Construction: Iterates through the provided file arguments, parsing each file to populate the global Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) Project. It also performs post-parsing semantic checks, such as identifying abstract classes that lack derived implementations, if warning settings are enabled.</li>
+<li>Code Generation: Identifies the appropriate generator backend based on the provided settings, passes the remaining command-line arguments to that backend, and executes the generation process on the constructed AST.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments passed to the program. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer exit code: returns 1 if any errors were encountered during execution (nErrors &gt; 0), otherwise returns 0.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and logging facilities must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST project will contain all successfully parsed files, and output files will be generated via the selected backend.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global or singleton objects such as <span class="tt"><a class="el" href="rose-config_8_c.html#ad74b5ffc82ad5accdc2ab798a63a3a7c">mlog</a></span>, <span class="tt">settings</span>, <span class="tt">nErrors</span>, and <span class="tt">Ast::Project::instance()</span>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 if the process completed successfully without errors, and returns 1 if any errors (nErrors &gt; 0) were encountered during the execution.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the backend generator retrieved via Generator::lookup is not null; an assertion will trigger if it is. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include and define logic implicitly through the underlying library and parser setup.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the number of arguments processed by the parser does not exceed the total number of arguments provided in argc.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be compatible with the current environment. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input files provided in argv must be accessible and readable by the process.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST Project is populated with all successfully parsed files. </dd>
+<dd>
+Output files are generated to the filesystem by the selected backend. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application exits with a status code indicating success or failure.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a Stopwatch to provide performance metrics for the parsing and generation phases in the logs. </dd>
+<dd>
+Semantic warnings regarding abstract classes are only processed if <span class="tt">settings.showingWarnings</span> is enabled.</dd></dl>
 <p>This function serves as the main driver for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> application. It instantiates a <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> object and invokes its translate method, passing the command-line arguments provided to the program. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> return value of the main function is determined by the success or failure of the translation process as reported by the test object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2430,20 +2453,19 @@ Intel Pin is initialized and the instrumented program is started.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is designed to bridge static analysis (ROSE) with dynamic instrumentation (Pin). </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function call to PIN_StartProgram() is terminal and does not return control to this function.</dd></dl>
-<p>This function serves as the main driver for a code generation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging library, parses command-line arguments to identify input files and generation modes, and processes each input file through a token-based scanner. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool can generate C++ declarations, definitions, or stringifier classes based on the provided configuration. It also handles compatibility checks by reading and potentially updating a database of existing enum members. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic tracks scopes (namespaces, classes, structs, enums) using a stack-based approach to ensure brace balance and correct structural identification.</p>
+<p>This function serves as the main driver for a source-to-source transformation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging and library environment, parses command-line arguments to identify input files, and iterates through each file to perform lexical analysis using a TokenStream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function implements a state-machine-like approach to track scopes (namespaces, classes, structs) and identifies specific C++ constructs such as namespaces, classes, extern declarations, and enums. Based on the execution mode (GENERATE_DECLARATIONS, GENERATE_DEFINITIONS, or GENERATE_NOTHING), it outputs C++ boilerplate, header guards, and stringifier class definitions to standard output. Additionally, it can update a compatibility database with existing enum members to ensure backward compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments. Expected to contain paths to the input files to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code (implicitly 0 upon successful completion of the logic).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool will output generated C++ code to standard output and may update compatibility files on disk if no errors were encountered.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes include directives for various Boost libraries and standard C++ headers in its generated output. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic relies on a ifdef or if block for debugging purposes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not explicitly return a value in the provided snippet, but follows standard C++ main conventions.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function writes directly to std::cout and std::cerr. If the output is redirected, ensure the destination is writable. Unbalanced braces in the input files will trigger error messages to stderr.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of initialization, and the environment must support standard file I/O operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must point to valid, readable files for processing.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will have either printed generated C++ code to stdout, updated a compatibility database file on disk, or performed no action, depending on the input parameters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the global logging facility will be updated.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool relies on the Boost.Filesystem library for file validation and Boost.ForEach for iterating over collections. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic is dependent on the TokenStream being able to correctly identify C++ tokens.</dd></dl>
 <p>This function serves as the main driver for the application. It initializes the ROSE framework, parses the input source files into an SgProject using the frontend, and performs a specific static analysis check to find switch statements lacking a default case. It also manages performance tracking via the <a class="el" href="class_timing_performance.html">TimingPerformance</a> class and generates an AST performance report if verbosity is enabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2858,7 +2880,7 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 <p>Entry point of the application that performs an AST traversal to detect loops.</p>
 <p>Entry point of the application that performs AST traversal and symbol table output.</p>
 <p>Entry point for the ROSE-based analysis tool.</p>
-<p>Entry point for the tool that parses C++ source files to generate declarations or definitions.</p>
+<p>Entry point for the code generation tool that parses C++ files to generate stringifiers and compatibility databases.</p>
 <p>Entry point of the application that transforms sprintf calls to snprintf calls.</p>
 <p>Entry point of the application that orchestrates the ROSE frontend and backend processes.</p>
 <p>Entry point of the application that performs interprocedural control flow graph analysis.</p>
@@ -2871,8 +2893,8 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 <p>Entry point for the parser adapter execution.</p>
 <p>Entry point for the LAL adapter execution process.</p>
 <p>Entry point for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> execution.</p>
-<p>Entry point of the application that orchestrates library initialization, command-line parsing, AST construction, and code generation.</p>
-<p>Entry point of the tool that retrieves and prints configuration values.</p>
+<p>Entry point for the tool that parses input files and generates output based on a selected backend.</p>
+<p>Entry point for the configuration lookup tool.</p>
 <p>Entry point of the application that initializes ROSE and executes the frontend and backend.</p>
 <p>Executes a series of nested loop operations to perform matrix element assignments.</p>
 <p>Entry point of the program that performs a nested loop assignment.</p>
@@ -2902,7 +2924,7 @@ If SgProject::get_verbose() is greater than 0, a diagnostic message is printed t
 <p>Entry point of the application that processes a source project to build and analyze Control Flow Graphs.</p>
 <p>Entry point for the ROSE pattern search example application.</p>
 <p>Entry point of the application that performs AST traversal on input files.</p>
-<p>Entry point for the Rose-based program execution and transformation pipeline.</p>
+<p>Entry point for the ROSE compiler transformation tool.</p>
 <p>Entry point of the application that performs loop transformations on a C++ project.</p>
 <p>Entry point of the application that performs Def-Use and Liveness analysis on a <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> project.</p>
 <p>Entry point for the visitor traversal application.</p>
@@ -3265,7 +3287,7 @@ Any user-defined attributes must be registered using REGISTER_ATTRIBUTE_FOR_FILE
 <dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 upon successful execution of the initialization, parsing, and DOT generation processes.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>An SgProject object is created representing the parsed source code, and a DOT file is generated on the filesystem if the process completes successfully.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates DOT representation files for the AST of a given SgProject.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the existence of the <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a21b65fb45f7767ce26f9cc1c9222dbe1" title="Initializes the frontend process using command-line arguments.">frontend</a></span> and <span class="tt"><a class="el" href="utility____functions__8_c_8dox.html#a554e49eadbe7c550761bb94df50a6b3b" title="Generates a DOT representation of the Abstract Syntax Tree (AST) for a given project.">generateDOT</a></span> functions within the ROSE framework.</dd></dl>
 <p>This function serves as the main driver for the ROSE-based application. It initializes the ROSE environment using the ROSE_INITIALIZE macro, parses the input source files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and subsequently invokes <a class="el" href="structgenerate_d_o_t_extended.html">generateDOTExtended</a> to produce a visual representation of the AST in DOT format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4420,7 +4442,7 @@ If the <span class="tt">abortme</span> flag is set during the liveness analysis 
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an <a class="el" href="class_ast_interface_impl.html">AstInterfaceImpl</a> to facilitate the transformation traversal. </dd>
 <dd>
 To prevent iterator invalidation during the modification of the declaration list, the iterator is re-synchronized using std::find after each transformation.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework, parses command-line arguments, configures transformation interfaces, and iterates through the source files in an SgProject to apply various loop transformations and optimization passes such as finite differencing and partial redundancy elimination. Finally, it unparses the modified project and optionally triggers a compilation step.</p>
+<p>This function serves as the main driver for the ROSE compiler infrastructure. It orchestrates the entire transformation pipeline, which includes initializing the ROSE environment, parsing command-line arguments, loading source files into an SgProject, and performing various optimization passes such as loop transformations, finite differencing, and partial redundancy elimination. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the global scope of each loaded file, identifies function definitions, and applies AST-based transformations using the <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>. Finally, it unparses the modified AST back to source code and optionally triggers an object file compilation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
@@ -4428,14 +4450,21 @@ To prevent iterator invalidation during the modification of the declaration list
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 on successful execution, -1 if insufficient arguments are provided, or the return value from the project compilation process if the generation option is enabled.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> framework must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files in the project are transformed according to the specified command-line options, and the modified code is unparsed to the output.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singleton instances such as <a class="el" href="class_cmd_options.html">CmdOptions</a> and <a class="el" href="class_read_annotation.html" title="An interface to read into type(class) and operator(function) annotations.">ReadAnnotation</a>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution and completion of all requested transformations. Returns -1 if the number of arguments is insufficient (no input files provided). Returns the exit code of the compiler output process if the "-gobj" option is enabled.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs in-place transformations on the AST; if the transformation logic (e.g., <a class="el" href="class_loop_transform_interface.html">LoopTransformInterface</a>) is not robust, it may lead to iterator invalidation or corrupted AST structures. </dd>
 <dd>
-If ifdef USE_OMEGA is defined, dependency statistics are recorded and printed. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global singletons (e.g., <a class="el" href="class_cmd_options.html">CmdOptions</a>, <a class="el" href="class_operator_side_effect_annotation.html">OperatorSideEffectAnnotation</a>) which must be properly initialized via ROSE_INITIALIZE.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be compatible with the current system architecture as checked by the ROSE_INITIALIZE macro. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration list traversal by re-finding the iterator.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input arguments must contain at least one valid file path to be processed.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> source files are transformed according to the specified command-line flags. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> transformed AST is unparsed and written back to the file system. </dd>
+<dd>
+If the "-gobj" flag is present, an object file is generated and its compilation status is returned.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles potential iterator invalidation during the declaration traversal by re-finding the current iterator position using std::find. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of dependency statistics (DepStats) is conditionally compiled based on the USE_OMEGA macro.</dd></dl>
 <p>This function serves as the main driver for the Rose-based application. It initializes the <a class="el" href="namespace_rose.html" title="Auto-generated documentation for the Rose namespace.">Rose</a> environment using the ROSE_INITIALIZE macro, parses input files into an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) via the frontend, and executes a custom traversal mechanism. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is used to populate an <a class="el" href="class_inherited_attribute.html">InheritedAttribute</a> object by visiting nodes within the SgProject.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4834,39 +4863,55 @@ If ROSE_BUILD_CPP_LANGUAGE_SUPPORT is not defined, an error message is printed t
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic for inserting language dialects into the argument vector depends on whether define ROSE_COMPILER_FOR_LANGUAGE is present. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> behavior of creating an SgProject when no arguments are provided is currently noted as a TODO to be moved into the frontend function.</dd></dl>
-<p>This function serves as the main driver for the application. It initializes the ROSE environment, sets up diagnostic logging, and parses command-line arguments to identify a specific configuration key. It then reads a configuration file based on the parsed settings and attempts to find the value associated with the provided key. If the key is "libdirs", the function performs a special transformation to convert space-separated paths into colon-separated paths before printing. All output is passed through a makefile-escape utility to ensure compatibility.</p>
+<p>This function serves as the main driver for a utility designed to retrieve and display specific configuration values from a configuration file. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process begins by initializing the ROSE environment and the diagnostics logging system. It then parses command-line arguments to identify a target key and a configuration file path. After loading the configuration, the function searches for the specified key. If the key is found, its value is printed to standard output, with special handling for the "libdirs" key to convert space-separated paths into a colon-separated format suitable for library search paths. All output is escaped for Makefile compatibility. If the key is not found, a fatal error is logged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided to the program. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 if the key is successfully found and printed. Returns 1 if the key is not found in the configuration, resulting in a fatal error log.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via the ROSE_INITIALIZE macro. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates via exit(0) on success or exit(1) on failure.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on external components such as parseCommandLine, readConfigFile, and the Diagnostics system.</dd></dl>
-<p>This function serves as the main driver for the tool. It performs the following high-level steps:</p><ol type="1">
-<li>Initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and the logging system.</li>
-<li>Configures and executes a command-line parser to extract arguments and input files.</li>
-<li>Parses the provided input files to populate the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) within the global Ast::Project instance.</li>
-<li>Performs post-parsing semantic analysis, such as checking for unused abstract classes, if warning settings are enabled.</li>
-<li>Identifies the appropriate backend generator based on the provided settings and executes the generation process.</li>
-<li>Returns an exit code based on the presence of errors encountered during the process.</li>
+<dl class="section return"><dt>Returns</dt><dd>This function does not return a value to the caller directly; instead, it terminates the process using exit(). It returns 0 upon successful retrieval and printing of the requested key, and returns 1 if the requested key is not found in the configuration.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will terminate the entire process via exit(0) or exit(1). </dd>
+<dd>
+If the "libdirs" key is accessed, the output format changes from space-separated to colon-separated.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ROSE environment must be capable of being initialized via ROSE_INITIALIZE. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must be valid and follow the expected format required by parseCommandLine. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> program terminates after printing the requested value or logging an error. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> standard output contains the escaped value of the requested key if found.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes a special case for the "libdirs" key to ensure compatibility with standard Unix-like library search path formats. </dd>
+<dd>
+All output sent to stdout is processed through makefileEscape to ensure safety in Makefile environments.</dd></dl>
+<p>This function orchestrates the entire lifecycle of the application. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> execution flow consists of four primary phases:</p><ol type="1">
+<li>Initialization: Sets up the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library, initializes the logging system (mlog), and configures message facilities.</li>
+<li>Command-Line Parsing: Utilizes a command-line parser to extract arguments and registers all available generators to ensure all possible flags are recognized.</li>
+<li>AST Construction: Iterates through the provided file arguments, parsing each file to populate the global Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) Project. It also performs post-parsing semantic checks, such as identifying abstract classes that lack derived implementations, if warning settings are enabled.</li>
+<li>Code Generation: Identifies the appropriate generator backend based on the provided settings, passes the remaining command-line arguments to that backend, and executes the generation process on the constructed AST.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments passed to the program. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
+    <tr><td class="paramname">argv</td><td>An array of C-style strings representing the command-line arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer exit code: returns 1 if any errors were encountered during execution (nErrors &gt; 0), otherwise returns 0.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and logging facilities must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST project will contain all successfully parsed files, and output files will be generated via the selected backend.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on global or singleton objects such as <span class="tt"><a class="el" href="rose-config_8_c.html#ad74b5ffc82ad5accdc2ab798a63a3a7c">mlog</a></span>, <span class="tt">settings</span>, <span class="tt">nErrors</span>, and <span class="tt">Ast::Project::instance()</span>. </dd>
+<dl class="section return"><dt>Returns</dt><dd>An integer status code. Returns 0 if the process completed successfully without errors, and returns 1 if any errors (nErrors &gt; 0) were encountered during the execution.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the backend generator retrieved via Generator::lookup is not null; an assertion will trigger if it is. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses include and define logic implicitly through the underlying library and parser setup.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the number of arguments processed by the parser does not exceed the total number of arguments provided in argc.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be compatible with the current environment. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input files provided in argv must be accessible and readable by the process.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST Project is populated with all successfully parsed files. </dd>
+<dd>
+Output files are generated to the filesystem by the selected backend. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> application exits with a status code indicating success or failure.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a Stopwatch to provide performance metrics for the parsing and generation phases in the logs. </dd>
+<dd>
+Semantic warnings regarding abstract classes are only processed if <span class="tt">settings.showingWarnings</span> is enabled.</dd></dl>
 <p>This function serves as the main driver for the <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> application. It instantiates a <a class="el" href="class_rose_test_translator.html">RoseTestTranslator</a> object and invokes its translate method, passing the command-line arguments provided to the program. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> return value of the main function is determined by the success or failure of the translation process as reported by the test object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5064,20 +5109,19 @@ Intel Pin is initialized and the instrumented program is started.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is designed to bridge static analysis (ROSE) with dynamic instrumentation (Pin). </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function call to PIN_StartProgram() is terminal and does not return control to this function.</dd></dl>
-<p>This function serves as the main driver for a code generation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging library, parses command-line arguments to identify input files and generation modes, and processes each input file through a token-based scanner. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool can generate C++ declarations, definitions, or stringifier classes based on the provided configuration. It also handles compatibility checks by reading and potentially updating a database of existing enum members. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic tracks scopes (namespaces, classes, structs, enums) using a stack-based approach to ensure brace balance and correct structural identification.</p>
+<p>This function serves as the main driver for a source-to-source transformation utility. It initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> logging and library environment, parses command-line arguments to identify input files, and iterates through each file to perform lexical analysis using a TokenStream. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function implements a state-machine-like approach to track scopes (namespaces, classes, structs) and identifies specific C++ constructs such as namespaces, classes, extern declarations, and enums. Based on the execution mode (GENERATE_DECLARATIONS, GENERATE_DEFINITIONS, or GENERATE_NOTHING), it outputs C++ boilerplate, header guards, and stringifier class definitions to standard output. Additionally, it can update a compatibility database with existing enum members to ensure backward compatibility.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of command-line arguments provided. </td></tr>
-    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments.</td></tr>
+    <tr><td class="paramname">argv</td><td>An array of character pointers representing the command-line arguments. Expected to contain paths to the input files to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An integer status code (implicitly 0 upon successful completion of the logic).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of being initialized. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool will output generated C++ code to standard output and may update compatibility files on disk if no errors were encountered.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function utilizes include directives for various Boost libraries and standard C++ headers in its generated output. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic relies on a ifdef or if block for debugging purposes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 upon successful execution. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not explicitly return a value in the provided snippet, but follows standard C++ main conventions.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function writes directly to std::cout and std::cerr. If the output is redirected, ensure the destination is writable. Unbalanced braces in the input files will trigger error messages to stderr.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library must be capable of initialization, and the environment must support standard file I/O operations. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> command-line arguments must point to valid, readable files for processing.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will have either printed generated C++ code to stdout, updated a compatibility database file on disk, or performed no action, depending on the input parameters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the global logging facility will be updated.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> tool relies on the Boost.Filesystem library for file validation and Boost.ForEach for iterating over collections. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parsing logic is dependent on the TokenStream being able to correctly identify C++ tokens.</dd></dl>
 <p>This function serves as the main driver for the application. It initializes the ROSE framework, parses the input source files into an SgProject using the frontend, and performs a specific static analysis check to find switch statements lacking a default case. It also manages performance tracking via the <a class="el" href="class_timing_performance.html">TimingPerformance</a> class and generates an AST performance report if verbosity is enabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

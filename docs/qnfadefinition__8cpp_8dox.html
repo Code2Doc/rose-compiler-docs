@@ -322,7 +322,7 @@ Functions</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid QString. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned value is a boolean representing the parsed state or the fallback.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on QVariant(s).toBool() for secondary parsing logic, which may include numeric strings (e.g., "1" as true).</dd></dl>
-<p>This function attempts to parse a QString into a boolean value. It checks for specific truthy keywords such as "true" or "enabled". It also checks for falsy keywords like "false" or "disabled". If the string is not one of these specific keywords, the function attempts to use QVariant's conversion logic to determine the boolean value. If the input string is empty, the function defaults to the provided previous value.</p>
+<p>This function attempts to parse a QString into a boolean value. It checks for specific truthy keywords such as "true" or "enabled". If the string is not one of the explicit falsy keywords ("false" or "disabled"), it attempts to use QVariant's conversion logic to determine the boolean state. If the input string is empty, the function defaults to the provided previous state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string to be converted to a boolean. </td></tr>
@@ -330,10 +330,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the string represents a truthy value, false if it represents a falsy value, or the value of the previous parameter if the string is empty.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid QString. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns a boolean value based on the string content or the fallback.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on QVariant(s).toBool() for secondary parsing logic, which may involve standard Qt string-to-bool conversion rules. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the string represents a truthy value, false if it represents a falsy value, or the value of <code class="param">previous</code> if the string is empty.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <code class="param">s</code> should be a valid QString. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned value is a boolean representing the parsed state or the fallback.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on QVariant(s).toBool() for secondary parsing logic, which may involve standard Qt string-to-bool conversion rules. </dd></dl>
 
 </div>
 </div>

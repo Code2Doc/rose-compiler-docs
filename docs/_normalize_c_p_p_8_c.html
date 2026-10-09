@@ -218,16 +218,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Normalizes the structure of a for-loop AST node. </p>
-<p>This function performs a normalization pass on a specific for-loop node within the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST). It utilizes a visitor pattern via the <a class="el" href="class_normalize_loop_traverse.html">NormalizeLoopTraverse</a> functor to traverse the node and apply necessary structural transformations or canonicalizations required for downstream compiler phases.</p>
+<p>This function performs a structural normalization on a given for-loop node within the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST). It utilizes a specialized visitor pattern, specifically the <a class="el" href="class_normalize_loop_traverse.html">NormalizeLoopTraverse</a> implementation, to traverse the loop structure and apply necessary transformations to ensure a canonical representation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fa</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_ast_interface.html" title="provides an abstract interface to access/modify AST nodes.">AstInterface</a> object used to access the AST context and utilities. </td></tr>
-    <tr><td class="paramname">head</td><td><a class="el" href="class_a.html">A</a> constant pointer to the <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> representing the head of the for-loop to be normalized.</td></tr>
+    <tr><td class="paramname">fa</td><td><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_ast_interface.html" title="provides an abstract interface to access/modify AST nodes.">AstInterface</a> object used to manage the AST operations. </td></tr>
+    <tr><td class="paramname">head</td><td><a class="el" href="class_a.html">A</a> constant pointer to the AstNode representing the head of the for-loop to be normalized.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> head parameter must not be a null pointer and must represent a valid for-loop node. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> for-loop node and its constituent components are transformed into a normalized canonical form within the provided <a class="el" href="class_ast_interface.html" title="provides an abstract interface to access/modify AST nodes.">AstInterface</a> context.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes that the provided <a class="el" href="class_ast_node_ptr.html">AstNodePtr</a> 'head' points to a valid node of a for-loop type. Passing a null pointer or an incompatible node type may lead to undefined behavior during traversal.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> 'fa' interface must be properly initialized and the 'head' node must belong to a valid, well-formed AST. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST subtree rooted at 'head' is modified in-place to adhere to the normalized loop format.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function acts as a high-level wrapper around the <a class="el" href="class_normalize_loop_traverse.html">NormalizeLoopTraverse</a> visitor, delegating the core logic to the traversal engine.</dd></dl>
 <p>This function initiates a traversal process specifically designed to normalize the syntax or structure of a for-loop node within the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST). It utilizes a specialized visitor pattern, specifically the <a class="el" href="class_normalize_loop_traverse.html">NormalizeLoopTraverse</a> functor, to perform the underlying transformation logic on the provided AST node.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

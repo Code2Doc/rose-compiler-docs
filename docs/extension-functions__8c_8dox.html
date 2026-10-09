@@ -254,7 +254,7 @@ Functions</h2></td></tr>
 <p>This function serves as the finalize callback for a custom SQLite aggregate function used to compute the median. It retrieves the persistent aggregate context, iterates through the collected data points stored in a map, and computes the final median value based on whether the result is an integer or a floating-point number. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function cleans up the allocated memory for the map and the context structure to prevent memory leaks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to retrieve the aggregate state and set the final result.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to retrieve the aggregate state and set the final result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -541,7 +541,7 @@ Functions</h2></td></tr>
 <p>This function serves as a custom SQL function implementation for SQLite. It extracts two double-precision floating-point numbers from the provided arguments and computes the result of the atan2(y, x) operation. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation handles NULL values by returning a SQL NULL result.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to store and return the result. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to store and return the result. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of pointers to the SQLite values passed as arguments to the function.</td></tr>
   </table>
@@ -581,7 +581,7 @@ Functions</h2></td></tr>
 <p>This function serves as a custom SQL function implementation for the ceiling operation. It inspects the type of the first argument provided in the argument vector and applies the ceiling logic accordingly. If the input is an integer, it is returned as is. If the input is NULL, the result is NULL. For all other types (primarily floating-point), the function converts the value to a double, applies the standard C library <span class="tt">ceil</span> function, and returns the result as a 64-bit integer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to store and return the result. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to store and return the result. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of pointers to the SQLite values passed as arguments to the function.</td></tr>
   </table>
@@ -622,7 +622,7 @@ Functions</h2></td></tr>
 <p>This function serves as a custom SQLite function implementation to locate the index of a substring. It extracts text values from the provided SQLite arguments and utilizes an internal substring search mechanism. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles varying argument counts to allow for an optional starting offset.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the function arguments. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first argument is the main string, the second is the substring to search for, and the third (optional) is the starting index.</td></tr>
   </table>
@@ -862,7 +862,7 @@ This function relies on the internal _substr implementation for the actual searc
 <p>This function serves as a custom SQLite aggregate or scalar function implementation. It computes the Soundex encoding for two input string arguments and compares their resulting codes character by character. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function counts how many of the first four characters of the two Soundex codes match.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the function arguments.</td></tr>
   </table>
@@ -972,7 +972,7 @@ If either input argument is SQLITE_NULL, the function sets the result to NULL.</
 <p>This function implements the floor operation, which returns the largest integer less than or equal to the input value. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation inspects the type of the first argument provided to the function. If the input is an integer, it is returned as-is. If the input is NULL, the result is NULL. For all other types (primarily floating-point), the function converts the value to a double, applies the standard C floor function, and returns the result as a 64-bit integer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of pointers to the argument values.</td></tr>
   </table>
@@ -1088,7 +1088,7 @@ If either input argument is SQLITE_NULL, the function sets the result to NULL.</
 <p>This function acts as a custom SQLite scalar function implementation. It takes a source string and an integer representing the number of characters to extract. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the input string using SQLite-specific character traversal utilities, effectively performing a substring operation from the start of the string up to the specified length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to return the result or errors. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to return the result or errors. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the function arguments. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first argument (argv[0]) is expected to be the source text, and the second argument (argv[1]) is expected to be the integer length.</td></tr>
   </table>
@@ -1212,7 +1212,7 @@ If memory allocation for the result string fails, an error is reported via sqlit
 <p>This function serves as the finalize callback for a custom SQLite aggregate function designed to compute the lower quartile (25th percentile). It retrieves the accumulated context from the SQLite aggregate context, calculates the target index for the lower quartile by dividing the total count by four, and then delegates the final value extraction to the median finalization logic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the aggregate state and return the final result.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the aggregate state and return the final result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1381,7 +1381,7 @@ If memory allocation for the result string fails, an error is reported via sqlit
 <p>This function serves as the finalize step in a SQLite aggregate function implementation. It retrieves the persistent aggregate context (<a class="el" href="struct_mode_ctx.html">ModeCtx</a>) associated with the current SQL statement. If the context exists, it calculates the median index by dividing the total count of elements by two and then delegates the final result generation to the internal _medianFinalize function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the state of the aggregate function.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the state of the aggregate function.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1456,7 +1456,7 @@ If the right partition count falls below the required threshold, p-&gt;done is s
 <p>This function serves as the finalizer for a custom SQLite aggregate function. It retrieves the aggregate context, iterates through the accumulated data map to perform any necessary cleanup or final calculations, and then sets the final result in the SQLite context. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses map_iterate to traverse the internal map and map_destroy to clean up the map structure. If only one mode was identified, the function returns either an integer or a double depending on the stored type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to retrieve the aggregate context and set the final result.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to retrieve the aggregate context and set the final result.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1536,7 +1536,7 @@ If the right partition count falls below the required threshold, p-&gt;done is s
 <p>This function serves as the step function for an SQLite aggregate function designed to calculate the mode (the most frequent value) of a dataset. It processes one value at a time from the input stream, maintaining a frequency map within the aggregate context. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function dynamically initializes a map based on whether the input type is SQLITE_INTEGER or a floating-point type. It uses a custom map implementation to track occurrences of values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to retrieve or create the persistent aggregate state (<a class="el" href="struct_mode_ctx.html">ModeCtx</a>). </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to retrieve or create the persistent aggregate state (<a class="el" href="struct_mode_ctx.html">ModeCtx</a>). </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments passed to the function.</td></tr>
   </table>
@@ -1701,7 +1701,7 @@ This function uses recursion; extremely deep trees may lead to stack overflow. <
 <p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation calculates the UTF-8 character length of the input to ensure padding is applied based on character count rather than byte count. It uses sqlite3_malloc for memory allocation and handles potential out-of-memory conditions by returning a SQLITE_ERROR.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the function arguments. argv[0] is expected to be the input string (text). argv[1] is expected to be the target length (64-bit integer).</td></tr>
   </table>
@@ -1750,7 +1750,7 @@ Memory allocated via sqlite3_malloc is freed within the function before returnin
 <p>This function is designed as a custom SQLite scalar function. It takes an input string and a target length, then prepends the necessary number of space characters (' ') to the beginning of the string so that the resulting string's length (in bytes) matches the specified length. If the input string is already longer than or equal to the target length, the original string is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to communicate results or errors back to the SQLite engine. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to communicate results or errors back to the SQLite engine. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. This function expects exactly 2 arguments. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments passed to the function. argv[0] is the input string, and argv[1] is the target length (<a class="el" href="extension-functions_8c.html#a85cb35fbe5bf2961d7ad5f26814a91a2">i64</a>).</td></tr>
   </table>
@@ -1798,7 +1798,7 @@ If memory allocation fails during the padding process, a SQLITE_ERROR_NOMEM erro
 <p>This function is designed as a custom SQLite scalar function. It takes an input string and a target length, then appends space characters (' ') to the end of the string until the number of UTF-8 characters reaches the specified length. If the input string's character count is already equal to or greater than the target length, the original string is returned as a duplicate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to return results or errors. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to return results or errors. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the function arguments. argv[0] is expected to be the input string (UTF-8). argv[1] is expected to be the target length (64-bit integer).</td></tr>
   </table>
@@ -1848,7 +1848,7 @@ If memory allocation fails during the padding process, the function returns a SQ
 <p>This function serves as a custom SQL function implementation for SQLite. It retrieves the value of the mathematical constant PI (approximately 3.14159) from the system's M_PI macro and sets it as the result of the SQL function call within the provided SQLite context.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the execution of the function and return the result. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the execution of the function and return the result. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function from the SQL statement. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of sqlite3_value pointers representing the arguments passed to the function.</td></tr>
   </table>
@@ -1888,7 +1888,7 @@ If memory allocation fails during the padding process, the function returns a SQ
 <p>This function serves as a custom SQLite scalar function implementation to calculate the result of r1 raised to the power of r2 (r1^r2). It extracts two double-precision floating-point values from the provided arguments, performs the calculation using the standard C math library function <span class="tt">pow</span>, and handles potential mathematical errors by checking the global <span class="tt">errno</span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result or error. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result or error. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments, where argv[0] is the base and argv[1] is the exponent.</td></tr>
   </table>
@@ -1968,7 +1968,7 @@ If memory allocation fails during the padding process, the function returns a SQ
 <p>This function implements a "proper case" algorithm where the first letter of every word is converted to uppercase and all subsequent letters in the word are converted to lowercase. Words are delimited by whitespace characters identified by the isblank function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function processes the input string character by character, maintaining a state to track whether the current character is the start of a new word.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result or errors. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result or errors. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments passed to the function.</td></tr>
   </table>
@@ -2051,7 +2051,7 @@ If memory allocation fails during the padding process, the function returns a SQ
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> specified extension functions are available for use in SQL queries executed on the <span class="tt">db</span> connection.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation currently lacks error checking for the <span class="tt">sqlite3_create_function</span> calls. </dd>
 <dd>
-Certain string functions like <span class="tt">ltrim</span>, <span class="tt">rtrim</span>, and <span class="tt"><a class="el" href="_case__8cc_8dox.html#a38d84583a6beb999acc99de1c64e4184" title="Removes leading and trailing whitespace from a string.">trim</a></span> are only registered if the ifndef <span class="tt"><a class="el" href="extension-functions_8c.html#ab5e462d325a2ee9216d0006e013e542b">HAVE_TRIM</a></span> macro is active. </dd></dl>
+Certain string functions like <span class="tt">ltrim</span>, <span class="tt">rtrim</span>, and <span class="tt"><a class="el" href="_case__8cc_8dox.html#a38d84583a6beb999acc99de1c64e4184" title="Empty function or ill-formed function detected. /.">trim</a></span> are only registered if the ifndef <span class="tt"><a class="el" href="extension-functions_8c.html#ab5e462d325a2ee9216d0006e013e542b">HAVE_TRIM</a></span> macro is active. </dd></dl>
 
 </div>
 </div>
@@ -2083,7 +2083,7 @@ Certain string functions like <span class="tt">ltrim</span>, <span class="tt">rt
 <p>This function is designed as a custom SQLite function implementation. It takes an input string and an integer count, then constructs a new string consisting of the input string repeated the specified number of times. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation allocates memory dynamically using sqlite3_malloc to store the resulting concatenated string and the original string copy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the function's execution and return results or errors to the SQLite engine. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the function's execution and return results or errors to the SQLite engine. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of sqlite3_value pointers representing the arguments passed to the function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first argument (argv[0]) is expected to be the input string, and the second argument (argv[1]) is expected to be the 64-bit integer count.</td></tr>
   </table>
@@ -2134,7 +2134,7 @@ All dynamically allocated memory using sqlite3_malloc within the function is fre
 <p>This function is designed as a custom SQLite scalar function. It takes a single string argument, reverses the sequence of its characters, and returns the reversed string. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation allocates memory using sqlite3_malloc to construct the reversed string and iterates through the input string to copy characters in reverse order.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the function execution and return results. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the sqlite3_context structure used to manage the function execution and return results. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of sqlite3_value pointers representing the arguments passed to the function.</td></tr>
   </table>
@@ -2183,7 +2183,7 @@ If the input string is extremely large, the memory allocation via sqlite3_malloc
 <p>This function acts as a custom SQLite scalar function. It takes a string and an integer, then calculates the remaining portion of the string after skipping the first 'l' characters. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation iterates through the input string to determine its length, calculates the offset for the new starting point, and allocates memory to return the resulting substring.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result or errors. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to return the result or errors. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments passed to the function. argv[0] is expected to be the input string (text). argv[1] is expected to be the number of characters to skip from the beginning.</td></tr>
   </table>
@@ -2234,7 +2234,7 @@ If either input argument is SQLITE_NULL, the function returns NULL immediately. 
 <p>This function is designed to be used as a custom SQLite scalar function. It evaluates the sign of the first argument provided to the function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles different SQLite data types including integers, doubles, and NULL values. For integers, it returns 1 if positive, -1 if negative, and 0 if zero. For floating-point numbers (doubles), it returns 1.0 if positive, -1.0 if negative, and 0.0 if zero. If the input is NULL, the result is NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to store the result. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to store the result. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of pointers to the SQLite values passed as arguments.</td></tr>
   </table>
@@ -2527,7 +2527,7 @@ If nByte is non-negative, the memory range [z, z + nByte) must be valid. </dd></
 <p>This function is designed as a custom SQLite scalar function. It inspects the type of the first argument provided to the function and performs a squaring operation. If the input is an integer, it performs integer multiplication; if the input is a double or any other type that can be cast to a double, it performs floating-point multiplication. If the input is NULL, the result is returned as NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to store and return the result. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to store and return the result. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of pointers to the SQLite values passed as arguments to the function.</td></tr>
   </table>
@@ -2567,7 +2567,7 @@ If nByte is non-negative, the memory range [z, z + nByte) must be valid. </dd></
 <p>This function serves as the finalize callback for a SQLite aggregate function calculating the sample standard deviation. It retrieves the accumulated state from the aggregate context. If the number of processed elements is greater than one, it computes the sample standard deviation using the formula sqrt(sum_of_squares_residual / (count - 1)). If the count is one or less, it returns 0.0 to avoid division by zero and to represent the lack of variance.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context containing the aggregated data.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context containing the aggregated data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2605,7 +2605,7 @@ If nByte is non-negative, the memory range [z, z + nByte) must be valid. </dd></
 <p>This function acts as a custom SQLite scalar function. It iterates through the first input string (the source) and checks each character against the second input string (the filter criteria). If a character from the first string is found within the second string, the subsequent sequence of characters from the second string (up to the next match or end of string) is appended to the output buffer. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses manual memory allocation via sqlite3_malloc and character-by-character traversal using sqliteCharVal and sqliteNextChar.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to return the result or errors. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to return the result or errors. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments passed to the function. argv[0] is the source string to be filtered. argv[1] is the string containing the valid characters/patterns to extract.</td></tr>
   </table>
@@ -2700,7 +2700,7 @@ If memory allocation fails, an error code SQLITE_NOMEM will be set in the contex
 <p>This function is used as a finalize callback in a SQLite aggregate function. It retrieves the persistent aggregate context, calculates the index corresponding to the 75th percentile (upper quartile) by multiplying the total count by 0.75, and then delegates the final computation to the median finalization logic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to access the aggregate state via sqlite3_aggregate_context.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context used to access the aggregate state via sqlite3_aggregate_context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2729,7 +2729,7 @@ If memory allocation fails, an error code SQLITE_NOMEM will be set in the contex
 <p>This function serves as the finalize callback for a SQLite aggregate function designed to compute the sample variance. It retrieves the accumulated state from the SQLite aggregate context. If the number of processed elements is greater than one, it calculates the sample variance using the formula (sum of squares - (sum^2 / count)) / (count - 1), represented here by the stored running sum of squares (rS) divided by (cnt - 1). If there are one or fewer elements, it returns 0.0 to avoid division by zero and to represent the lack of variance in a single-element set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite context used for the aggregate calculation, providing access to the aggregate state.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite context used for the aggregate calculation, providing access to the aggregate state.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2767,7 +2767,7 @@ If memory allocation fails, an error code SQLITE_NOMEM will be set in the contex
 <p>This function serves as the step function for a SQLite aggregate implementation. It implements Welford's online algorithm to compute the running mean and the sum of squares of differences from the mean (M2) in a single pass. This approach is numerically stable and avoids the precision loss associated with the traditional sum-of-squares formula.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to retrieve or allocate the aggregate state. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SQLite function context, used to retrieve or allocate the aggregate state. </td></tr>
     <tr><td class="paramname">argc</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of arguments passed to the function. </td></tr>
     <tr><td class="paramname">argv</td><td>An array of SQLite values representing the arguments passed to the function.</td></tr>
   </table>

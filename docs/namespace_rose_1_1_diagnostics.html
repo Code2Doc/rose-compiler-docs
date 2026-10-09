@@ -109,7 +109,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a9c02e0c0aeaa0ae2a6f0536818c8b139" id="r_a9c02e0c0aeaa0ae2a6f0536818c8b139"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9c02e0c0aeaa0ae2a6f0536818c8b139">isInitialized</a> ()</td></tr>
 <tr class="memdesc:a9c02e0c0aeaa0ae2a6f0536818c8b139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the object has been initialized.  <br /></td></tr>
 <tr class="memitem:a535ca6f395aa7dbd8ed4b215200ca8db" id="r_a535ca6f395aa7dbd8ed4b215200ca8db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a535ca6f395aa7dbd8ed4b215200ca8db">initAndRegister</a> (<a class="el" href="class_sawyer_1_1_message_1_1_facility.html">Facility</a> *<a class="el" href="#a4017fad3a33cdd3349ffdfda2ebaaf01">mlog</a>, const std::string &amp;<a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a>)</td></tr>
-<tr class="memdesc:a535ca6f395aa7dbd8ed4b215200ca8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a logging facility and registers it within the global registry.  <br /></td></tr>
+<tr class="memdesc:a535ca6f395aa7dbd8ed4b215200ca8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object and registers it within the global facilities collection.  <br /></td></tr>
 <tr class="memitem:a7fc286b2843ad23364fc3d7036666d29" id="r_a7fc286b2843ad23364fc3d7036666d29"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7fc286b2843ad23364fc3d7036666d29">deregister</a> (<a class="el" href="class_sawyer_1_1_message_1_1_facility.html">Facility</a> *<a class="el" href="#a4017fad3a33cdd3349ffdfda2ebaaf01">mlog</a>)</td></tr>
 <tr class="memdesc:a7fc286b2843ad23364fc3d7036666d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a facility from the global registry.  <br /></td></tr>
 <tr class="memitem:a85b26ba5d382cd9ee8e4f7fbc668023b" id="r_a85b26ba5d382cd9ee8e4f7fbc668023b"><td class="memItemLeft"><a class="el" href="class_rose_1_1_diagnostics_1_1_stream_printf.html">StreamPrintf</a>&#160;</td><td class="memItemRight"><a class="el" href="#a85b26ba5d382cd9ee8e4f7fbc668023b">mfprintf</a> (std::ostream &amp;stream)</td></tr>
@@ -455,21 +455,22 @@ Sending output to other locations</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a logging facility and registers it within the global registry. </p>
+<p>Initializes a <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object and registers it within the global facilities collection. </p>
 <p>Initialize and register a logging facility.</p>
 <p>Initializes the specified facility by giving it a name and pointing it to the same place as the other ROSE diagnostic streams. Then register the facility with ROSE's global list of facilities so it can be controlled from the command-line. Registering a facility does not copy it&ndash;it only saves a reference to it. Therefore, either facilties should be statically declared or they should be de-registered before they go out of scope.</p>
-<p>This function performs the initialization of a <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object pointed to by mlog using the provided name and a predefined destination. After the object is initialized, it is inserted into the global mfacilities registry, which handles the adjustment of existing facility entries to maintain consistency.</p>
+<p>This function performs two primary operations: first, it initializes the <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object pointed to by mlog with the provided name and a predefined destination. Second, it registers this newly initialized facility into the global mfacilities collection, triggering an adjustment of importance levels to ensure synchronization with the existing system state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="#a4017fad3a33cdd3349ffdfda2ebaaf01">mlog</a></td><td><a class="el" href="class_a.html">A</a> pointer to the <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object to be initialized and registered. Must not be null. </td></tr>
-    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="class_a.html">A</a> string representing the unique identifier for the new facility.</td></tr>
+    <tr><td class="paramname"><a class="el" href="#a4017fad3a33cdd3349ffdfda2ebaaf01">mlog</a></td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object that will be initialized. This pointer must not be null. </td></tr>
+    <tr><td class="paramname"><a class="el" href="rosebud__8_c_8dox.html#a5c8025dafee8f54036f45b1f68c19436">name</a></td><td><a class="el" href="class_a.html">A</a> constant reference to a string representing the unique identifier to be assigned to the new <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>mlog must not be a null pointer. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> object pointed to by mlog is updated with the new name and destination, and the facility is added to the mfacilities collection.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on a globally accessible or accessible-scope variable named <span class="tt"><a class="el" href="#a1ba0507284dc0ed4bf22f0a5f3fe5ac4">destination</a></span> and a registry named <span class="tt"><a class="el" href="#a518754e6eccdb424e64d07eea65c41f2">mfacilities</a></span>. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Passing a null pointer for mlog will trigger an assertion failure. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> mlog parameter must not be null; passing a null pointer will trigger an assertion failure.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> mlog pointer must be valid and point to an allocated <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a> object pointed to by mlog is updated with the new name and destination, and it is successfully integrated into the mfacilities container.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initialization uses a global or predefined 'destination' variable to configure the <a class="el" href="class_rose_1_1_diagnostics_1_1_facility.html">Facility</a>'s output target. </dd></dl>
 
 </div>
 </div>

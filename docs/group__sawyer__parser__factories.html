@@ -155,7 +155,7 @@ $(function(){initNavTree('group__sawyer__parser__factories.html','',''); });
 <tr class="memitem:ga73fab030adbea0b990794f609ece9f76" id="r_ga73fab030adbea0b990794f609ece9f76"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_string_set_parser.html#a904d71077358e89e0a68365e66f6de53">StringSetParser::Ptr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga73fab030adbea0b990794f609ece9f76">Sawyer::CommandLine::stringSetParser</a> ()</td></tr>
 <tr class="memdesc:ga73fab030adbea0b990794f609ece9f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the singleton instance of the <a class="el" href="class_sawyer_1_1_command_line_1_1_string_set_parser.html">StringSetParser</a>.  <br /></td></tr>
 <tr class="memitem:gad6ed684aef62698f6856e0a98097f810" id="r_gad6ed684aef62698f6856e0a98097f810"><td class="memItemLeft"><a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html#a70441692d740f6749523fd5380218dc9">ListParser::Ptr</a>&#160;</td><td class="memItemRight"><a class="el" href="#gad6ed684aef62698f6856e0a98097f810">Sawyer::CommandLine::listParser</a> (const <a class="el" href="class_sawyer_1_1_command_line_1_1_value_parser.html#a3de19c96113379c520bcbd1e23b1b6db">ValueParser::Ptr</a> &amp;p, const std::string &amp;sep)</td></tr>
-<tr class="memdesc:gad6ed684aef62698f6856e0a98097f810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of a <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a>.  <br /></td></tr>
+<tr class="memdesc:gad6ed684aef62698f6856e0a98097f810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory constructor for creating a new <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> instance.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Factories for creating instances of <a class="el" href="class_sawyer_1_1_command_line_1_1_value_parser.html">Sawyer::CommandLine::ValueParser</a> subclasses.</p>
@@ -588,19 +588,20 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new instance of a <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a>. </p>
-<p>This function serves as a factory method to instantiate a <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> object. It delegates the creation logic to the static instance method of the <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> class, passing along the provided value parser and the specified separator string.</p>
+<p>Factory constructor for creating a new <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> instance. </p>
+<p>This function serves as a convenience wrapper to instantiate a <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> object. It delegates the instantiation logic to the <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html#a12ceaf5a68914534cb989e60643468a9">ListParser::instance</a> factory method, configuring the parser with a specific element type parser and a custom delimiter string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="class_sawyer_1_1_command_line_1_1_value_parser.html">ValueParser</a> instance that will be used by the resulting <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a>. </td></tr>
-    <tr><td class="paramname">sep</td><td><a class="el" href="class_a.html">A</a> string representing the delimiter used to separate elements within the list.</td></tr>
+    <tr><td class="paramname">p</td><td><a class="el" href="class_a.html">A</a> smart pointer to a <a class="el" href="class_sawyer_1_1_command_line_1_1_value_parser.html">ValueParser</a> that defines the data type of the individual elements contained within the list. </td></tr>
+    <tr><td class="paramname">sep</td><td><a class="el" href="class_a.html">A</a> string representing the delimiter or regular expression used to separate elements within the list.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> shared pointer (<a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html#a70441692d740f6749523fd5380218dc9">ListParser::Ptr</a>) to the newly created <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> instance.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided <a class="el" href="class_sawyer_1_1_command_line_1_1_value_parser.html">ValueParser</a> pointer <span class="tt">p</span> should be valid and not null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Returns a valid <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> instance configured with the provided parser and separator.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is an exported utility function within the SAWYER framework. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> smart pointer (Ptr) to the newly created <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> instance.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> provided pointer 'p' must be a valid, non-null pointer to a <a class="el" href="class_sawyer_1_1_command_line_1_1_value_parser.html">ValueParser</a> instance to ensure the parser can correctly identify element types.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter 'p' must not be a null pointer. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> fully initialized <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html">ListParser</a> object is returned, capable of parsing sequences of elements of type 'p' using 'sep' as the delimiter.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a high-level interface for the <a class="el" href="class_sawyer_1_1_command_line_1_1_list_parser.html#a12ceaf5a68914534cb989e60643468a9">ListParser::instance</a> singleton-style factory method. </dd></dl>
 
 </div>
 </div>

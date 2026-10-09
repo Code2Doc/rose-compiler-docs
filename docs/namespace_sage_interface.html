@@ -953,7 +953,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a2e66b833bf8ffbf3e4774c82f0bb8f58" id="r_a2e66b833bf8ffbf3e4774c82f0bb8f58"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2e66b833bf8ffbf3e4774c82f0bb8f58">updateDefiningNondefiningLinks</a> (SgFunctionDeclaration *<a class="el" href="deep_colored_functions2__8_c_8dox.html#a3870bfdd1545f46a9dba1ccc7d0abde8">func</a>, SgScopeStatement *scope)</td></tr>
 <tr class="memdesc:a2e66b833bf8ffbf3e4774c82f0bb8f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update defining and nondefining links due to a newly introduced function declaration. Should be used after inserting the function into a scope.  <br /></td></tr>
 <tr class="memitem:a46b7437a96a6d062f5d770f78184c011" id="r_a46b7437a96a6d062f5d770f78184c011"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a46b7437a96a6d062f5d770f78184c011">reportModifiedStatements</a> (const std::string &amp;label, SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a46b7437a96a6d062f5d770f78184c011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a report of all statements in the AST subtree marked as modified.  <br /></td></tr>
+<tr class="memdesc:a46b7437a96a6d062f5d770f78184c011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports all nodes in the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) that have been marked as modified.  <br /></td></tr>
 <tr class="memitem:a5c27f6587ac3103dad56952dca46b78d" id="r_a5c27f6587ac3103dad56952dca46b78d"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a5c27f6587ac3103dad56952dca46b78d">reportModifiedLocatedNodes</a> (const std::string &amp;label, SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a5c27f6587ac3103dad56952dca46b78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports all nodes in the AST that are marked with the modified flag.  <br /></td></tr>
 <tr class="memitem:a182faab2f49ea0481149caf10bf48a0a" id="r_a182faab2f49ea0481149caf10bf48a0a"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> bool&#160;</td><td class="memItemRight"><a class="el" href="#a182faab2f49ea0481149caf10bf48a0a">skipTranslateToUseCppDeclaration</a> (<a class="el" href="class_preprocessing_info.html">PreprocessingInfo</a> *currentPreprocessingInfo)</td></tr>
@@ -2716,19 +2716,19 @@ If the root parameter is NULL, the function does not perform a subtree-specific 
 </div><div class="memdoc">
 
 <p>This collects the SgLocatedNodes that are marked as modified (a flag automatically set by all set_* generated functions) (useful in debugging). </p>
-<p>Identifies and collects all nodes within an AST subtree that are marked as modified.</p>
-<p>This function performs a deep traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the specified root node. It utilizes a specialized visitor pattern (<a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>) to perform a preorder traversal. During the traversal, the function inspects each node to determine if it is an instance of SgLocatedNode and checks its internal 'isModified' flag. Nodes that satisfy both conditions are aggregated into a unique set. This utility is primarily intended for debugging token-based unparsing processes to track which statements have undergone transformations.</p>
+<p>Identifies and collects all nodes marked with the modified flag within a given AST subtree.</p>
+<p>This function performs a deep traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the specified node. It utilizes a specialized visitor pattern (<a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>) to perform a preorder traversal of the tree. During the traversal, the function inspects each node to determine if it is an instance of SgLocatedNode and checks if its internal 'isModified' flag is set to true. This utility is primarily used for debugging token-based unparsing processes to track which statements have undergone transformations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode from which the traversal begins. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will traverse the entire subtree rooted at this node.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode from which the traversal begins. This node serves as the entry point for the search.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::set of SgLocatedNode* pointers, where each pointer represents a node that was found to be both a located node and marked with the isModified flag.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Passing a NULL pointer as the 'node' parameter may lead to undefined behavior depending on the implementation of the traversal engine.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node must be a valid, non-null pointer to an SgNode or a derived class within the Sage interface.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains all unique SgLocatedNode objects found in the subtree that have their isModified flag set to true. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> original AST structure remains unmodified.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses an internal helper class, LocatedNodeTraversal, which inherits from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to encapsulate the traversal logic and the collection of results. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::set of SgLocatedNode* pointers containing all nodes encountered during the traversal that are both located nodes and have been explicitly marked as modified.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Passing a NULL pointer as the 'node' parameter may lead to undefined behavior or segmentation faults depending on the implementation of the traversal engine.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node must be a valid, non-null pointer to an SgNode or a derived class.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains a unique collection of modified nodes, and the original AST structure remains unmodified.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a local helper class, LocatedNodeTraversal, which inherits from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to encapsulate the collection logic and the traversal state. </dd></dl>
 
 </div>
 </div>
@@ -3034,18 +3034,19 @@ If ifndef ROSE_USE_INTERNAL_FRONTEND_DEVELOPMENT is active, the function accumul
 </div><div class="memdoc">
 
 <p>This collects the statements that are marked as transformed (useful in debugging). </p>
-<p>Collects all statements within a node that are marked as transformed.</p>
-<p>This function performs a preorder traversal of the provided AST node and its descendants. It utilizes an internal helper class, StatementTraversal, which inherits from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to visit each node. During the traversal, the function identifies nodes that are instances of SgStatement and checks if their transformation flag is set to true. All such statements are collected into a set and returned. This utility is primarily used for debugging purposes, specifically for verifying token-based unparsing results.</p>
+<p>Collects all statements within an AST node that are explicitly marked as transformed.</p>
+<p>This function performs a deep traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node to identify and aggregate specific statements. It utilizes an internal visitor pattern (via the StatementTraversal class inheriting from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>) to perform a preorder traversal of the tree. During the traversal, the function inspects each node to determine if it is a valid SgStatement and checks the internal transformation flag. This utility is primarily intended for debugging purposes, specifically for verifying the accuracy of token-based unparsing processes by tracking which parts of the code have undergone transformations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> root node of the AST subtree to be searched for transformed statements.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode from which the traversal begins. This node and all its descendants will be inspected.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::set containing pointers to all SgStatement objects found within the subtree that have been explicitly marked as transformations.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node must be a valid, non-null pointer to an SgNode or a derived class. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains all identified transformed statements, and the original AST structure remains unmodified.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses a preorder traversal strategy. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::set of SgStatement* pointers containing all statements found during the traversal that have their transformation flag set to true.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Passing a null pointer as the node parameter may lead to undefined behavior depending on the implementation of the traversal engine.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node must be a valid, non-null pointer to an SgNode or a derived class within the Sage interface.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned set contains a unique collection of statements marked as transformed, and the original AST structure remains unmodified.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a preorder traversal strategy, meaning it visits parent nodes before their children. </dd></dl>
 
 </div>
 </div>
@@ -6182,18 +6183,18 @@ If the declaration is a SgFunctionParameterList, the function requires that the 
 
 <p><a class="el" href="stringify_enums_8_c.html#ab889b18e8df49e02f8ce92d9b8d8316b">Generate</a> a useful name to describe the SgNode. </p>
 <p>Retrieves a human-readable name for a given IR node.</p>
-<p>This function serves as a general-purpose utility for extracting a string representation of an Intermediate Representation (IR) node. It implements a hierarchical traversal strategy, attempting to resolve the name by inspecting the node's type and its underlying structure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function recursively probes various node types, including statements, expressions, located nodes, tokens, symbols, and types, to find the most specific identifier available.</p>
+<p>This function serves as a general-purpose utility for extracting a string representation of an Intermediate Representation (IR) node, primarily used for debugging purposes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation employs a recursive type-checking strategy (dispatching via isSgStatement, isSgExpression, etc.) to traverse the node hierarchy. It attempts to find the most specific identifiable name by checking if the node is a located node, a statement, an expression, a token, a symbol, or a type. If the node cannot be resolved through these specific interfaces, it falls back to the node's class name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode to be identified. This node can be of various subtypes such as SgStatement, SgExpression, <a class="el" href="class_sg_symbol.html">SgSymbol</a>, or <a class="el" href="class_sg_type.html">SgType</a>.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode to be queried. This node can be of any subclass of SgNode within the ROSE framework.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the resolved name of the node. Returns "undefined_name" if a specific name cannot be resolved through the hierarchy, or the class name of the node as a fallback.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function contains a ROSE_ASSERT that requires the input node to be non-null. If the function encounters an unhandled SgLocatedNode type that does not match expected sub-interfaces, it will trigger a printf error and call <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a>, terminating the program.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input parameter <code class="param">node</code> must not be NULL.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the resolved name of the node. Returns "undefined_name" if the node is valid but no specific name could be extracted, or the class name as a final fallback.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function will trigger a <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a> and terminate the program if the node is a SgLocatedNode that cannot be resolved to a statement, expression, located node support, or token.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input parameter <code class="param">node</code> must not be NULL. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses ROSE_ASSERT to enforce this precondition.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns a valid string and does not modify the state of the input <code class="param">node</code>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is primarily intended for debugging purposes. While it currently handles a wide range of node types, the implementation is intended to be expanded in future iterations to handle more complex structures like expressions more comprehensively. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is designed to be extensible; while it currently handles statements, expressions, and types, future implementations may include more complex logic for handling specific expression types. </dd></dl>
 
 </div>
 </div>
@@ -8325,17 +8326,17 @@ template&lt;typename NodeType&gt; </div>
 
 <p>Find referenced symbols within an expression. </p>
 <p>Retrieves all variable symbols referenced within a specific expression.</p>
-<p>This function performs a deep traversal of the provided expression tree to identify all occurrences of variable references. It utilizes an internal visitor pattern, specifically a class derived from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>, to traverse the AST nodes. During the preorder traversal, the visitor checks each node to determine if it represents a variable reference expression. If a match is found, the associated symbol is extracted and collected into a list.</p>
+<p>This function performs a deep traversal of the provided expression tree to identify all occurrences of variable references. It utilizes an internal visitor pattern, specifically a class derived from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>, to traverse the AST nodes. During the preorder traversal, the visitor checks each node to determine if it represents a variable reference expression. If a match is found, the associated SgVariableSymbol is extracted and collected into a list.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expr</td><td><a class="el" href="class_a.html">A</a> pointer to the SgExpression node to be analyzed.</td></tr>
+    <tr><td class="paramname">expr</td><td><a class="el" href="class_a.html">A</a> pointer to the SgExpression node that serves as the root of the sub-tree to be searched for symbols.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> vector containing pointers to all SgVariableSymbol objects found within the expression.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input pointer <span class="tt">expr</span> should not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains all symbols identified during the traversal.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal follows a preorder pattern. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input parameter <span class="tt">expr</span> should be a valid, non-null pointer to an SgExpression object.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains all identified variable symbols, and the original expression tree remains unmodified.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the <span class="tt">isSgVarRefExp</span> helper function to identify relevant nodes during the traversal. </dd></dl>
 
 </div>
 </div>
@@ -17119,20 +17120,20 @@ scope must not be NULL.</dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Prints a report of all statements in the AST subtree marked as modified. </p>
-<p>This function serves as a debugging utility to identify and log nodes within the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) that have been flagged with the 'isModified' attribute. It is particularly useful for verifying the integrity of token-based unparsing processes. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function attempts to resolve the source file associated with the provided node (either directly or via its global scope) and then iterates through a collection of modified statements, printing their filenames and class names to the standard output.</p>
+<p>Reports all nodes in the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) that have been marked as modified. </p>
+<p>This function serves as a debugging utility to identify which statements within a given AST subtree have the 'isModified' flag set. It traverses the provided node and its descendants to find modified SgStatement objects. For each modified statement found, the function prints the filename (resolving physical filenames if necessary), the memory address of the statement, and its class name to the standard output. This is particularly useful for verifying the correctness of token-based unparsing and transformation processes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">label</td><td><a class="el" href="class_a.html">A</a> string label used to identify the context of this specific report in the output logs. </td></tr>
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode that serves as the root for the search. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will traverse the subtree starting from this node to find modified statements.</td></tr>
+    <tr><td class="paramname">label</td><td><a class="el" href="class_a.html">A</a> string label used to identify the context of this specific report in the console output (e.g., to track which part of a transformation triggered the report). </td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the starting SgNode in the AST from which the search for modified statements begins.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on a ROSE_ASSERT that the input 'node' is not NULL. Passing a NULL pointer will trigger an assertion failure.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input 'node' must be a valid, non-NULL pointer to an SgNode. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST structure must be properly formed to allow for traversal.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the AST or the input parameters. It produces formatted diagnostic output to the standard output stream.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the filename is identified as "transformation", the function attempts to use <a class="el" href="class_transformation_support.html#a0e88c151bbbac95b85d995f0cc71fc69">TransformationSupport::getSourceFile</a> to retrieve a more accurate physical filename. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on ROSE_ASSERT(node != NULL); passing a null pointer will trigger an assertion failure.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> node parameter must not be NULL.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs side effects by printing diagnostic information to the standard output (stdout). It does not modify the state of the AST or the provided nodes.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function attempts to resolve the source file information by checking if the node is an SgSourceFile or an SgGlobal. If the filename is identified as "transformation", it attempts to use <a class="el" href="class_transformation_support.html" title="This class simplifies the development of queries on the AST resulting in a list of AST nodes.">TransformationSupport</a> to retrieve the actual physical filename. </dd></dl>
 
 </div>
 </div>

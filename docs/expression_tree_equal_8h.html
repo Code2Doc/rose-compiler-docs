@@ -124,22 +124,29 @@ Functions</h2></td></tr>
 
 <p>Are two expressions equal (using a deep comparison)? </p>
 <p>Are two expressions equal (using a deep comparison)?</p>
-<p>This function recursively traverses two SgExpression trees to determine if they are structurally identical. It compares the variant types of the nodes and then descends into the children of the nodes (such as operands in binary/unary operators, elements in expression lists, or arguments in function calls). For certain node types, such as variable references or function references, equality is determined by comparing the underlying declarations. For value expressions, it compares the literal values.</p>
+<p>This function recursively traverses two SgExpression trees to determine if they are structurally identical. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison considers the type of the expression, the values of literal expressions, and the underlying declarations for references and function calls. For complex nodes like binary operations, unary operations, and conditional expressions, the function recursively validates all child operands.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#a3ae7250ea1c766616dca7aaf4f657c14">a</a></td><td><a class="el" href="class_a.html">A</a> pointer to the first SgExpression tree to compare. </td></tr>
-    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></td><td><a class="el" href="class_a.html">A</a> pointer to the second SgExpression tree to compare.</td></tr>
+    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#a3ae7250ea1c766616dca7aaf4f657c14">a</a></td><td><a class="el" href="class_a.html">A</a> pointer to the first SgExpression tree to be compared. </td></tr>
+    <tr><td class="paramname"><a class="el" href="xomp__accelerator__sched__test_8c.html#aa242a9d8afb254d7ca68236fc725e0d6">b</a></td><td><a class="el" href="class_a.html">A</a> pointer to the second Sg-Expression tree to be compared.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the two expression trees are structurally equivalent and have matching values/declarations where applicable; false otherwise.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers a and b should ideally not be null, although the function contains logic for certain null-like expression types. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> structural integrity of the expression trees remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses a recursive approach, which may lead to stack overflow for extremely deep expression trees. </dd>
+<dl class="section return"><dt>Returns</dt><dd>True if the two expression trees are structurally equivalent in terms of their type, operands, and relevant metadata; false otherwise.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function uses recursion and may lead to stack overflow if the expression trees are excessively deep. </dd>
 <dd>
-Certain expression types like SgDeleteExp and SgNewExp are explicitly not considered equal, and SgConstructorInitializer is currently marked with a FIXME. </dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> equality of function calls is only considered true if the function is determined to be side-effect free via isFunctionSideEffectFree. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a define macro named HANDLEVAL to reduce boilerplate when comparing various SgValueExp types.</dd></dl>
+Certain expression types, such as SgConstructorInitializer, SgDeleteExp, and SgNewExp, are hardcoded to return false, even if they share similar structures.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pointers 'a' and 'b' should point to valid, non-null SgExpression objects. </dd>
+<dd>
+For certain node types (e.g., BinaryOp, UnaryOp), the function assumes the corresponding node type exists in both 'a' and 'b' via assertions.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input expression trees 'a' and 'b' remain unmodified.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles various expression variants including literals (int, float, string, etc.), variable references, function calls, and aggregate initializers. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison for SgFunctionRefExp and SgVarRefExp relies on the equality of their underlying symbol declarations. </dd>
+<dd>
+There are known FIXME markers in the implementation for SgConstructorInitializer and SgRefExp that may affect the accuracy of the comparison.</dd></dl>
 <p>This function recursively traverses two SgExpression trees to determine if they are structurally identical. It compares the variant types of the nodes and then descends into the children of the nodes (such as operands in binary/unary operations, arguments in function calls, or elements in expression lists). For certain node types, such as variable references or function references, equality is determined by comparing their underlying declarations.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -180,18 +187,20 @@ Certain expression types like SgDeleteExp and SgNewExp are explicitly treated as
 
 <p>Are corresponding expressions in two lists equal (using a deep comparison)? </p>
 <p>Are corresponding expressions in two lists equal (using a deep comparison)?</p>
-<p>This function performs an element-wise comparison between two lists of expression pointers. It iterates through both lists simultaneously, invoking expressionTreeEqual for each corresponding pair of elements. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison is considered successful only if both lists have the same number of elements and every pair of elements is determined to be equal.</p>
+<p>Compares two lists of expression pointers for structural equality.</p>
+<p>This function performs a sequential comparison between two lists of expression pointers. It iterates through both lists simultaneously, verifying that each corresponding pair of expressions is structurally identical using the expressionTreeEqual function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function also ensures that both lists contain the exact same number of elements.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">as</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> first list of expression pointers to be compared. </td></tr>
-    <tr><td class="paramname">bs</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> second list of expression pointers to be compared.</td></tr>
+    <tr><td class="paramname">as</td><td><a class="el" href="class_a.html">A</a> constant reference to a list of SgExpression pointers (<a class="el" href="_sage_tree_builder_8h.html#a3e7ca563887e794ecb5b17cc99a1c0d1">SgExpressionPtrList</a>) representing the first sequence of expression trees to compare. </td></tr>
+    <tr><td class="paramname">bs</td><td><a class="el" href="class_a.html">A</a> constant reference to a list of SgExpression pointers (<a class="el" href="_sage_tree_builder_8h.html#a3e7ca563887e794ecb5b17cc99a1c0d1">SgExpressionPtrList</a>) representing the second sequence of expression trees to compare.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if both lists contain the same number of elements and all corresponding elements are equal according to expressionTreeEqual; false otherwise.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input lists as and bs must contain valid <a class="el" href="sage_container_8h.html#a77af36899f4a3a51217ec4e9cff9ce17">SgExpressionPtr</a> elements that can be safely dereferenced by expressionTreeEqual. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the input lists as and bs remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the implementation of expressionTreeEqual to determine the equality of individual expression nodes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if both lists have the same length and every pair of expressions at the same index is structurally equal; false otherwise.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the deep structural equality check of expressionTreeEqual; if the underlying trees are excessively deep, this may lead to stack overflow.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input lists <span class="tt">as</span> and <span class="tt">bs</span> should contain valid, non-null SgExpression pointers.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input lists <span class="tt">as</span> and <span class="tt">bs</span> remain unmodified throughout the comparison process.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns false immediately if a mismatch in structural equality is detected or if one list is longer than the other.</dd></dl>
 <p>This function performs a deep comparison between two lists of expression pointers. It iterates through both lists simultaneously, comparing each pair of expressions using the expressionTreeEqual function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison ensures that both lists contain the same number of elements and that every corresponding pair of expressions is considered equal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

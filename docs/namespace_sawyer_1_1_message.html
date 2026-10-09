@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ada33f405549439c344a5d0c6dfc03b3c" id="r_ada33f405549439c344a5d0c6dfc03b3c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ada33f405549439c344a5d0c6dfc03b3c">initializeLibrary</a> ()</td></tr>
 <tr class="memdesc:ada33f405549439c344a5d0c6dfc03b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a> library and its internal components.  <br /></td></tr>
 <tr class="memitem:ace9c8fe0c6dbf529db3fa6509f3928be" id="r_ace9c8fe0c6dbf529db3fa6509f3928be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ace9c8fe0c6dbf529db3fa6509f3928be">shutdown</a> ()</td></tr>
-<tr class="memdesc:ace9c8fe0c6dbf529db3fa6509f3928be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a global shutdown of the system components and resets logging facilities.  <br /></td></tr>
+<tr class="memdesc:ace9c8fe0c6dbf529db3fa6509f3928be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates the global system shutdown sequence and cleans up core resources.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1018,13 +1018,21 @@ Users should use the <code>instance</code> class methods instead of constructors
       </table>
 </div><div class="memdoc">
 
-<p>Performs a global shutdown of the system components and resets logging facilities. </p>
+<p>Initiates the global system shutdown sequence and cleans up core resources. </p>
 <p>Reset global variables to initial states.</p>
 <p>This function resets global variables such as <a class="el" href="#a54e251cf36d75cd197a5628b4bb87f31" title="merr">merr</a>, <a class="el" href="#acd499f89583295899897c1ba6336966a" title="mlog">mlog</a>, and <a class="el" href="#a518754e6eccdb424e64d07eea65c41f2" title="mfacilities">mfacilities</a> to their default-constructed state. Sometimes it's necessary to do this during program exit, otherwise the C++ runtime might terminate the <a class="el" href="namespace_sawyer_1_1_boost.html" title="Auto-generated documentation for the Sawyer::Boost namespace.">Boost</a> thread synchronization library before <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a>, which leads to exceptions or segmentation faults when <a class="el" href="namespace_sawyer.html" title="Auto-generated documentation for the Sawyer namespace.">Sawyer</a>'s stream destructors run. In fact, <a class="el" href="#ada33f405549439c344a5d0c6dfc03b3c" title="initializeLibrary">initializeLibrary</a> arranges for this shutdown function to be called by exit.</p>
-<p>This function is responsible for the orderly termination of the application's core services. It invokes the shutdown procedure for the <a class="el" href="class_sawyer_1_1_message_1_1_gang.html">Gang</a> namespace, resets the global mlog facility to a default state, shuts down all registered mfacilities, and clears the error destination pointer.</p>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system must be in a state where resources managed by <a class="el" href="class_sawyer_1_1_message_1_1_gang.html">Gang</a>, mfacilities, and mlog are ready to be released.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global logging facility mlog is reset, mfacilities are shut down, and the error destination merr is cleared.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function should typically be called during the application's cleanup phase or upon receiving a termination signal. </dd></dl>
+<p>This function performs a coordinated teardown of the application's primary components. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> shutdown process follows a specific sequence: it first deallocates Namespace (NS) related gang resources via <a class="el" href="class_sawyer_1_1_message_1_1_gang.html#a415ce09a32d2d07cd2c9f86d5955b235">Gang::shutdownNS()</a>, resets the global logging facility to a default state, triggers the cleanup of all managed facilities via mfacilities.shutdown(), and finally resets the error destination pointer to a null-state <a class="el" href="#a8303ffa916b56acb3514453e07ea79b5">DestinationPtr</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td>This function does not take any parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Calling this function after the system has already been partially deconstructed may lead to undefined behavior if dependencies between components are not respected.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system components (<a class="el" href="class_sawyer_1_1_message_1_1_gang.html">Gang</a>, mlog, mfacilities, and merr) must be properly initialized and in a valid state for destruction.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Namespace resources are deallocated, the logging facility is reset, all managed facilities are cleared, and the error destination is nullified. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> system is left in a clean, uninitialized state.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is intended to be called during the final stage of the application lifecycle to ensure no memory leaks or dangling pointers remain in the global scope. </dd></dl>
 
 </div>
 </div>

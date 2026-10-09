@@ -144,7 +144,7 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a276c5c124cfce790ae78e27405896fdd" id="r_a276c5c124cfce790ae78e27405896fdd"><td class="memTemplParams" colspan="2">template&lt;typename NodeT, typename PreFuncT, typename PostFuncT&gt; </td></tr>
 <tr class="memitem:a276c5c124cfce790ae78e27405896fdd template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a276c5c124cfce790ae78e27405896fdd">traverse</a> (NodeT *node_, PreFuncT &amp;pre=<a class="el" href="namespace_rose_1_1_traits_1_1traversal__details.html#a94bcb6acfc4eeb9a62bffeac3ad94226">traversal_details::nop_noargs_f</a>, PostFuncT &amp;post=<a class="el" href="namespace_rose_1_1_traits_1_1traversal__details.html#a94bcb6acfc4eeb9a62bffeac3ad94226">traversal_details::nop_noargs_f</a>)</td></tr>
-<tr class="memdesc:a276c5c124cfce790ae78e27405896fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a tree traversal on a given node using provided pre- and post-order functions.  <br /></td></tr>
+<tr class="memdesc:a276c5c124cfce790ae78e27405896fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a traversal of a node structure applying pre- and post-traversal functions.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -312,19 +312,19 @@ template&lt;typename NodeT, typename PreFuncT, typename PostFuncT&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Performs a tree traversal on a given node using provided pre- and post-order functions. </p>
-<p>This function initiates a traversal process starting from the specified node. It utilizes a dispatcher mechanism to apply a pre-order function before visiting children and a post-order function after visiting children. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on <a class="el" href="struct_rose_1_1_traits_1_1traversal__details_1_1_dispatcher.html">traversal_details::Dispatcher</a> to handle the dispatching logic based on the node type and the provided function objects.</p>
+<p>Performs a traversal of a node structure applying pre- and post-traversal functions. </p>
+<p>This function initiates a traversal process on a given node of type NodeT. It utilizes a dispatcher mechanism from the <a class="el" href="namespace_rose_1_1_traits_1_1traversal__details.html">traversal_details</a> namespace to execute specific logic associated with the node's structure. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal applies a pre-function before visiting children/sub-elements and a post-function after visiting them. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on a dispatcher that handles the dispatching logic based on the provided pre- and post-traversal functors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">node_</td><td><a class="el" href="class_a.html">A</a> pointer to the root node of the traversal. </td></tr>
-    <tr><td class="paramname">pre</td><td><a class="el" href="class_a.html">A</a> reference to a function object to be executed before visiting the children of a node (pre-order). Defaults to a no-operation function. </td></tr>
-    <tr><td class="paramname">post</td><td><a class="el" href="class_a.html">A</a> reference to a function object to be executed after visiting the children of a node (post-order). Defaults to a no-operation function.</td></tr>
+    <tr><td class="paramname">node_</td><td><a class="el" href="class_a.html">A</a> pointer to the root node of the structure to be traversed. </td></tr>
+    <tr><td class="paramname">pre</td><td><a class="el" href="class_a.html">A</a> reference to a functor to be executed before the traversal of a node's children. Defaults to a no-operation function (nop_noargs_f). </td></tr>
+    <tr><td class="paramname">post</td><td><a class="el" href="class_a.html">A</a> reference to a functor to be executed after the traversal of a node's children. Defaults to a no-operation function (nop_noargs_f).</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>node_ should be a valid, non-null pointer to a node of type NodeT. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is completed, and the pre- and post-order functions have been applied to the nodes in the hierarchy.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal behavior depends on the implementation of the Dispatcher and the structure of NodeT. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>node_ must not be a null pointer if the dispatcher requires a valid node to operate. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is completed, and the pre- and post-functions have been applied to the nodes encountered during the traversal.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal behavior is heavily dependent on the implementation of the <a class="el" href="struct_rose_1_1_traits_1_1traversal__details_1_1_dispatcher.html">traversal_details::Dispatcher</a> and the specific type of NodeT provided. </dd></dl>
 
 </div>
 </div>

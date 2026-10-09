@@ -102,7 +102,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a3a972b92869c5d5de134e43739dd03aa" id="r_a3a972b92869c5d5de134e43739dd03aa"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a3a972b92869c5d5de134e43739dd03aa">rose_getline_impl</a> (char **lineptr, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, Stream &amp;stream)</td></tr>
 <tr class="memdesc:a3a972b92869c5d5de134e43739dd03aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a line from a stream and dynamically manages the buffer size.  <br /></td></tr>
 <tr class="memitem:a03059f7c9e0213807d571fd63ddf913f" id="r_a03059f7c9e0213807d571fd63ddf913f"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a03059f7c9e0213807d571fd63ddf913f">rose_getline</a> (char **lineptr, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, FILE *stream)</td></tr>
-<tr class="memdesc:a03059f7c9e0213807d571fd63ddf913f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a line from the specified stream and stores it in the buffer.  <br /></td></tr>
+<tr class="memdesc:a03059f7c9e0213807d571fd63ddf913f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a line from a file stream and dynamically manages the buffer size.  <br /></td></tr>
 <tr class="memitem:a904658e55a95e09cf8d55200c98d0ca2" id="r_a904658e55a95e09cf8d55200c98d0ca2"><td class="memItemLeft">ssize_t&#160;</td><td class="memItemRight"><a class="el" href="#a904658e55a95e09cf8d55200c98d0ca2">rose_getline</a> (char **lineptr, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> *<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>, std::istream &amp;stream)</td></tr>
 <tr class="memdesc:a904658e55a95e09cf8d55200c98d0ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a line from the provided input stream and stores it in the buffer.  <br /></td></tr>
 <tr class="memitem:a6ead385707b5f9847a20bc8606819588" id="r_a6ead385707b5f9847a20bc8606819588"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a6ead385707b5f9847a20bc8606819588">rose_getline</a> (FILE *stream)</td></tr>
@@ -195,20 +195,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reads a line from the specified stream and stores it in the buffer. </p>
-<p>This function acts as a wrapper for the underlying implementation of the getline functionality. It reads characters from the provided file stream until a newline character or end-of-file is encountered. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages the buffer pointed to by lineptr, potentially reallocating memory to accommodate the length of the line read.</p>
+<p>Reads a line from a file stream and dynamically manages the buffer size. </p>
+<p>Reads a line from the specified stream and stores it in the buffer.</p>
+<p>This function serves as a high-level wrapper for the internal implementation of the line-reading mechanism. It reads characters from the provided FILE stream until a newline character is encountered or the end of the stream is reached. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is responsible for managing the memory pointed to by lineptr, automatically reallocating and expanding the buffer capacity as needed to accommodate the input line.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lineptr</td><td><a class="el" href="class_a.html">A</a> pointer to a pointer to a buffer. On success, the buffer points to the allocated string. If *lineptr is NULL, the function allocates a new buffer. </td></tr>
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> variable that stores the size of the buffer pointed to by *lineptr. </td></tr>
-    <tr><td class="paramname">stream</td><td><a class="el" href="class_a.html">A</a> pointer to a FILE object representing the input stream.</td></tr>
+    <tr><td class="paramname">lineptr</td><td><a class="el" href="class_a.html">A</a> pointer to a char pointer that points to the buffer where the read line will be stored. This buffer is dynamically reallocated within the function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> variable that holds the current size of the allocated buffer. This value is updated by the function to reflect the new buffer size after any reallocations. </td></tr>
+    <tr><td class="paramname">stream</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> FILE stream from which characters are being read.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of characters read, including the newline character, on success. Returns -1 on error, and sets errno appropriately.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> stream parameter must be a valid, open FILE pointer. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> buffer pointed to by *lineptr is updated to contain the read line, and *n is updated to reflect the new buffer size.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the implementation provided by rose_getline_impl.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of characters read (including the newline character, but excluding the null terminator) on success. Returns -1 if an error occurs during reallocation or if the end of the stream is reached without reading any characters.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If reallocation fails, the pointer in *lineptr is set to NULL and *n is set to 0. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> caller must ensure that the initial buffer management follows the rules of dynamic memory allocation.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>lineptr, n, and stream must not be NULL. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pair (lineptr, n) must be consistent: either both must be NULL/0 or both must be non-NULL/non-zero.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>If successful, *lineptr points to a null-terminated string containing the line read, and *n reflects the new capacity of the buffer. </dd>
+<dd>
+If an error occurs, *n is set to 0 and the function returns -1.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a wrapper around rose_getline_impl. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles buffer expansion automatically, reducing the burden on the caller to predict the line length.</dd></dl>
 <p>This function acts as a wrapper for the underlying implementation of the getline functionality. It reads characters from the input stream until a newline character is encountered or the end of the file is reached. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages buffer allocation and resizing to ensure the entire line is captured.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -346,7 +354,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the characters read from the stream up to the newline character. Returns an empty string if no characters were read or if an error occurred during reading.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">stream</span> must be in a valid state and ready for reading. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> memory allocated by the internal rose_getline call is guaranteed to be released.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a compatible <span class="tt"><a class="el" href="rose____getline__8h_8dox.html#a03059f7c9e0213807d571fd63ddf913f" title="Reads a line from the specified stream and stores it in the buffer.">rose_getline</a></span> function that accepts a pointer to a char pointer and a pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> for buffer management.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a compatible <span class="tt"><a class="el" href="rose____getline__8h_8dox.html#a03059f7c9e0213807d571fd63ddf913f" title="Reads a line from a file stream and dynamically manages the buffer size.">rose_getline</a></span> function that accepts a pointer to a char pointer and a pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> for buffer management.</dd></dl>
 <p>This function serves as a wrapper around the lower-level rose_getline function. It manages the lifecycle of a temporary buffer using a local RAII structure named Resources. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function allocates memory via the underlying rose_getline call and ensures that the allocated buffer is freed when the Resources object goes out of scope. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> content of the buffer is then converted into a std::string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -357,7 +365,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the characters read from the stream up to the newline delimiter. Returns an empty string if no characters were read or if an error occurred during reading.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input stream <span class="tt">stream</span> must be in a valid state and ready for reading. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> memory allocated by the internal rose_getline call is guaranteed to be released.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a compatible <span class="tt"><a class="el" href="rose____getline__8h_8dox.html#a03059f7c9e0213807d571fd63ddf913f" title="Reads a line from the specified stream and stores it in the buffer.">rose_getline</a></span> function that accepts a pointer to a char pointer and a pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> for buffer management. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of a compatible <span class="tt"><a class="el" href="rose____getline__8h_8dox.html#a03059f7c9e0213807d571fd63ddf913f" title="Reads a line from a file stream and dynamically manages the buffer size.">rose_getline</a></span> function that accepts a pointer to a char pointer and a pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> for buffer management. </dd></dl>
 
 </div>
 </div>
@@ -386,23 +394,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads a line from a stream and dynamically manages the buffer size. </p>
-<p>This function implements a line-reading mechanism similar to the POSIX getline function. It reads characters from the provided stream one by one until a newline character is encountered or the end of the stream is reached. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages the memory pointed to by lineptr, automatically reallocating the buffer and doubling its size (with a minimum of 256 bytes) whenever the current capacity is exceeded.</p>
+<p>This function implements a line-reading mechanism similar to the POSIX getline function. It reads characters from the provided stream one by one until a newline character is encountered or the end of the stream is reached. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function manages the memory pointed to by lineptr, automatically reallocating and expanding the buffer using a doubling strategy (with a minimum size of 256 bytes) whenever the current buffer capacity is exceeded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lineptr</td><td><a class="el" href="class_a.html">A</a> pointer to a char pointer that points to the buffer where the read line will be stored. This buffer is dynamically reallocated using realloc. </td></tr>
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> variable that holds the current size of the allocated buffer. This value is updated by the function if the buffer is resized. </td></tr>
+    <tr><td class="paramname">lineptr</td><td><a class="el" href="class_a.html">A</a> pointer to a char pointer that points to the buffer where the read line will be stored. This buffer is dynamically reallocated within the function. </td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="class_a.html">A</a> pointer to a <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> variable that holds the current size of the allocated buffer. This value is updated by the function to reflect the new buffer size after any reallocations. </td></tr>
     <tr><td class="paramname">stream</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Stream object from which characters are being read.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of characters read (excluding the newline character), or -1 if an error occurs during reallocation or if the stream reaches EOF without any characters being read. If characters were read before EOF, the number of characters read is returned.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> number of characters read (including the newline character, but excluding the null terminator) on success. If an error occurs during reallocation, returns -1. If the end of the stream is reached without reading any characters, returns -1.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>lineptr, n, and stream must not be NULL. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> pair (lineptr, n) must be consistent: either both must be NULL/0 or both must be non-NULL/non-zero.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If the function returns successfully, lineptr points to a null-terminated string containing the characters read from the stream up to the newline. </dd>
+<dl class="section post"><dt>Postcondition</dt><dd>If successful, *lineptr points to a null-terminated string containing the line read, and *n reflects the new capacity of the buffer. </dd>
 <dd>
-If a reallocation occurs, the value of *n is updated to the new buffer size.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses realloc to expand the buffer. If realloc fails, the function sets *n to 0 and returns -1. </dd>
+If reallocation fails, *n is set to 0 and the function returns -1.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses realloc to expand the buffer. If realloc fails, the original buffer is not freed by this function, but the pointer is set to NULL and n is set to 0. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on get_next_char to fetch characters from the stream. </dd></dl>
 

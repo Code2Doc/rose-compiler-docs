@@ -244,7 +244,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a71c8121584f44ff7bbe25a41151816cc" id="r_a71c8121584f44ff7bbe25a41151816cc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a71c8121584f44ff7bbe25a41151816cc">checkConfigToken</a> (const char *configToken)</td></tr>
 <tr class="memdesc:a71c8121584f44ff7bbe25a41151816cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates if the provided configuration token matches the predefined system token.  <br /></td></tr>
 <tr class="memitem:addf2aa27a67bba8220bd5398de53f560" id="r_addf2aa27a67bba8220bd5398de53f560"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#addf2aa27a67bba8220bd5398de53f560">checkVersionNumber</a> (const std::string &amp;need)</td></tr>
-<tr class="memdesc:addf2aa27a67bba8220bd5398de53f560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current ROSE version meets or exceeds a required version number.  <br /></td></tr>
+<tr class="memdesc:addf2aa27a67bba8220bd5398de53f560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares a required version string against the current system version.  <br /></td></tr>
 <tr class="memitem:a8c32a996cfe1fa6b2bd6637e78118831" id="r_a8c32a996cfe1fa6b2bd6637e78118831"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8c32a996cfe1fa6b2bd6637e78118831">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="class_rose_1_1_location.html">Location</a> &amp;<a class="el" href="test04_8_c.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</td></tr>
 <tr class="memdesc:a8c32a996cfe1fa6b2bd6637e78118831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the stream insertion operator for the <a class="el" href="class_rose_1_1_location.html">Location</a> class.  <br /></td></tr>
 <tr class="memitem:a9ed575411c07672994299fe4716a5ec5" id="r_a9ed575411c07672994299fe4716a5ec5"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a9ed575411c07672994299fe4716a5ec5">print_to_string</a> (const char *format, va_list va_args)</td></tr>
@@ -5785,7 +5785,7 @@ template&lt;class Value&gt; </div>
 <div class="line"><a class="code hl_define" href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a>(<a class="code hl_variable" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> != <span class="keyword">nullptr</span>);</div>
 <div class="ttc" id="a_r_o_s_e___a_s_s_e_r_t_8h_html_ac9f4fc9bf4f2fabed3195887675711cf"><div class="ttname"><a href="_r_o_s_e___a_s_s_e_r_t_8h.html#ac9f4fc9bf4f2fabed3195887675711cf">ROSE_ASSERT</a></div><div class="ttdeci">#define ROSE_ASSERT</div><div class="ttdef"><b>Definition</b> ROSE_ASSERT.h:55</div></div>
 <div class="ttc" id="aclass_sg_type_html"><div class="ttname"><a href="class_sg_type.html">SgType</a></div><div class="ttdef"><b>Definition</b> dataStructureTest_1.C:6</div></div>
-<div class="ttc" id="arosebud__8_c_8dox_html_aa71e9d96a125fdf363134896dfb0e61a"><div class="ttname"><a href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a></div><div class="ttdeci">**param file A pointer to the AST file object containing the tokens to be parsed *param runningCppStack The current stack of C parsing contexts *(unused in this implementation). **@return An Ast returns an empty pointer if no property is found or if a parsing error occurs **pre The file parameter must not be null *post If a property is successfully the file token stream is advanced to the end *of the property and the property object is populated with * type</div><div class="ttdef"><b>Definition</b> rosebud_8C.dox:658</div></div>
+<div class="ttc" id="arosebud__8_c_8dox_html_aa71e9d96a125fdf363134896dfb0e61a"><div class="ttname"><a href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a></div><div class="ttdeci">**param file A pointer to the AST file object containing the tokens to be parsed *param runningCppStack The current stack of C parsing contexts *(unused in this implementation). **@return An Ast returns an empty pointer if no property is found or if a parsing error occurs **pre The file parameter must not be null *post If a property is successfully the file token stream is advanced to the end *of the property and the property object is populated with * type</div><div class="ttdef"><b>Definition</b> rosebud_8C.dox:723</div></div>
 </div><!-- fragment --><p>This can now be expressed more succinctly and functionally as:</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="class_sg_type.html">SgType</a> *<a class="code hl_variable" href="rosebud__8_c_8dox.html#aa71e9d96a125fdf363134896dfb0e61a">type</a> = <a class="code hl_function" href="#ad3e23a3b8fcebb0c8b46b9788a94ca40">affirm</a>(<a class="code hl_function" href="#ad3e23a3b8fcebb0c8b46b9788a94ca40">affirm</a>(<a class="code hl_function" href="#ad3e23a3b8fcebb0c8b46b9788a94ca40">affirm</a>(ass)-&gt;get_rhs_operand())-&gt;get_type());</div>
 <div class="ttc" id="anamespace_rose_html_ad3e23a3b8fcebb0c8b46b9788a94ca40"><div class="ttname"><a href="#ad3e23a3b8fcebb0c8b46b9788a94ca40">Rose::affirm</a></div><div class="ttdeci">std::enable_if&lt; is_invocable&lt; Predicate, Value &gt;::value, Value &amp; &gt;::type affirm(Value &amp;&amp;value, Predicate predicate)</div><div class="ttdoc">Validates a value against a predicate and returns it if the predicate evaluates to true.</div></div>
@@ -6510,25 +6510,22 @@ template&lt;class <a class="el" href="_control_dependence_graph_8_c.html#af40713
       </table>
 </div><div class="memdoc">
 
-<p>Checks if the current ROSE version meets or exceeds a required version number. </p>
+<p>Compares a required version string against the current system version. </p>
 <p>Check ROSE version number.</p>
 <p>Checks that the ROSE library version number is equal to or greater than the specified version string. Both version numbers are split at the "." characters and each part of the library version number is compared with the corresponding part of the <code class="param">need</code> version number from left to right until an inequality is found. If the unequal library part is greater than the corresponding <code class="param">need</code> part, then this function fails (returns false), otherwise it succeeds. Comparisons are numeric. If no inequality is found among the corresponding pairs, then this function returns true even if the version numbers have different numbers of parts.</p>
 <p>For example, if the library version number is "1.2.3", this function returns true when <code class="param">need</code> is "", "1", "1.0", "1.1", "1.2.0", "1.2.1", "1.2.2", "1.2.3", "1.2.3.0", "1.2.3.1", etc., and it returns false when <code class="param">need</code> is "2", "1.3", "1.2.4", "1.2.4.0", etc.</p>
-<p>This function compares a provided version string against the current ROSE package version defined during the build process. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> comparison is performed component-wise by splitting the version strings by the '.' delimiter. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function iterates through the numeric parts of both strings and returns true if the current version is greater than or equal to the required version at every corresponding index.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> current version is determined using the define ROSE_PACKAGE_VERSION or define VERSION macros.</p>
+<p>This function performs a semantic version comparison between a provided version string and the version of the ROSE package defined at compile-time. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation splits both version strings into individual components using the '.' delimiter. It then iterates through the components, converting each part to an unsigned integer for numerical comparison.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">need</td><td><a class="el" href="class_a.html">A</a> string representing the required version number (e.g., "1.2.3").</td></tr>
+    <tr><td class="paramname">need</td><td><a class="el" href="class_a.html">A</a> string representing the required version number (e.g., "1.2.3"). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> components are expected to be numeric.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the current ROSE version is greater than or equal to the specified version number, false otherwise.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">need</span> must be a valid version string consisting of numeric components separated by dots. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function does not modify the input string.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses <span class="tt">boost::lexical_cast</span> to convert string components to unsigned integers for comparison. </dd>
-<dd>
-If one version string is a prefix of the other (e.g., "1.2" vs "1.2.3"), the function returns true. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>If the version components contain non-numeric characters that cannot be cast to an unsigned integer, <span class="tt">boost::lexical_cast</span> will throw an exception. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the current system version is greater than or equal to the required version number. Returns false if the system version is strictly less than the required version.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function relies on boost::lexical_cast; if any component of the input string 'need' cannot be converted to an unsigned integer, a boost::bad_lexical_cast exception will be thrown.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string 'need' must be a valid string containing dot-separated numeric components. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> macro ROSE_PACKAGE_VERSION or VERSION must be defined at compile-time.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns a boolean result indicating the compatibility of the version numbers without modifying the input string or the global version state.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If one version string has fewer components than the other (e.g., comparing "1.2" to "1.2.1"), the function treats the shorter version as compatible if all existing components match. </dd></dl>
 
 </div>
 </div>
@@ -7025,17 +7022,17 @@ statementPointer-&gt;get_file_info() must not be NULL.</dd></dl>
 </div><div class="memdoc">
 
 <p>Extracts the directory path from a given file name string. </p>
-<p>This function identifies the directory component of a file path by searching for the last occurrence of the forward slash ('/') character. If no slash is found, it assumes the file is in the current directory.</p>
+<p>This function searches for the last occurrence of the forward slash character '/' within the provided file name string. If a slash is found, the function returns the substring preceding that slash, representing the directory path. If no slash is found, it indicates the file is in the current directory, and the function returns ".".</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> full string representing the file path to be parsed.</td></tr>
+    <tr><td class="paramname">fileName</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> string representing the full or relative path to a file.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the path preceding the last forward slash. Returns "." if no forward slash is found in the input string.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">fileName</span> should be a valid path string. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is a substring of the input or a single period.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This implementation specifically looks for the '/' delimiter and does not account for platform-specific separators like backslashes used in Windows environments. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing the directory path extracted from the input file name. Returns "." if no directory separator is present.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">fileName</span> should be a valid string representation of a path. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is a valid substring of the input or ".".</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation specifically looks for the '/' character and does not account for Windows-style backslash '\' separators. </dd></dl>
 
 </div>
 </div>
@@ -92362,14 +92359,14 @@ If <span class="tt">canonic</span> is true, the string is prefixed with "SgUPC_A
 <p>This function parses the provided string to locate the last occurrence of the forward slash ('/') character. It identifies the substring that follows this delimiter, effectively stripping the directory path and leaving only the base file name. If no slash is found, or if the slash is the final character in the string, the original string is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileNameWithPath</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> full path string from which the file name should be extracted.</td></tr>
+    <tr><td class="paramname">fileNameWithPath</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> full string representing the path and file name from which the path should be removed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing only the file name portion of the input path. If no path delimiter is present, returns the original string.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">fileNameWithPath</span> should be a valid, null-terminated string representation of a path. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string contains no forward slash characters unless the input string ended with a slash.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This implementation specifically looks for the '/' character and does not account for Windows-style backslash ('\') delimiters. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string containing only the file name portion of the input path.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">fileNameWithPath</span> should be a valid UTF-8 or ASCII encoded string. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is a substring of the input, specifically the portion following the last '/' character.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This implementation specifically looks for the forward slash ('/') character as a directory separator. It does not account for backslash ('\') separators used in Windows-style paths. </dd></dl>
 
 </div>
 </div>

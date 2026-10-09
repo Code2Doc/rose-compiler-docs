@@ -256,7 +256,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a51d5a7c8571deb44a90da1dc2d3fb5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts comma separators into numeric sequences within a string for readability.  <br /></td></tr>
 <tr id="func-members-1" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a2a9836b2467940ca49381e594b1a44f9" id="r_a2a9836b2467940ca49381e594b1a44f9"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9">cEscape</a> (char ch, char <a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd">context</a>)</td></tr>
-<tr class="memdesc:a2a9836b2467940ca49381e594b1a44f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes a single character based on a provided context.  <br /></td></tr>
+<tr class="memdesc:a2a9836b2467940ca49381e594b1a44f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes a single character into its string representation based on a given context.  <br /></td></tr>
 <tr class="memitem:a06a4d21fd4fefcedab5da0af4f2ab6e4" id="r_a06a4d21fd4fefcedab5da0af4f2ab6e4"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a06a4d21fd4fefcedab5da0af4f2ab6e4">cEscape</a> (const std::string &amp;s, char <a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd">context</a>)</td></tr>
 <tr class="memdesc:a06a4d21fd4fefcedab5da0af4f2ab6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes all characters in a string based on a provided context.  <br /></td></tr>
 <tr id="func-members-2" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -320,7 +320,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad3bc03479a5d3b94ccdd5afa31b09d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes raw byte data into a Base64 string.  <br /></td></tr>
 <tr id="func-members-7" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a4eacbea6dbd1a6d1bc13743482b072d4" id="r_a4eacbea6dbd1a6d1bc13743482b072d4"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a4eacbea6dbd1a6d1bc13743482b072d4">split</a> (char <a class="el" href="structseparator.html">separator</a>, const std::string &amp;str, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxparts, bool trim_white_space)</td></tr>
-<tr class="memdesc:a4eacbea6dbd1a6d1bc13743482b072d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into multiple substrings based on a single character delimiter.  <br /></td></tr>
+<tr class="memdesc:a4eacbea6dbd1a6d1bc13743482b072d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into multiple parts based on a single character delimiter.  <br /></td></tr>
 <tr class="memitem:a1fdb922cd51e4a42fd3b0186768cec83" id="r_a1fdb922cd51e4a42fd3b0186768cec83"><td class="memItemLeft">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1fdb922cd51e4a42fd3b0186768cec83">split</a> (const std::string &amp;<a class="el" href="structseparator.html">separator</a>, const std::string &amp;str, <a class="el" href="clang-builtin-opencl_8h.html#a028b7cbca0d37bbc9bc219370525227f">size_t</a> maxparts, bool trim_white_space)</td></tr>
 <tr class="memdesc:a1fdb922cd51e4a42fd3b0186768cec83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into multiple substrings based on a specified separator.  <br /></td></tr>
 <tr id="func-members-8" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -653,7 +653,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string formatted for safe use in a Bourne shell.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid UTF-8 or ASCII string. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is guaranteed to be shell-safe, meaning it will be interpreted as a single literal token by a Bourne shell.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character based on a provided context.">cEscape</a></span> for C-style escaping and <span class="tt">boost::replace_all_copy</span> for backslash escaping. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character into its string representation based on a given context.">cEscape</a></span> for C-style escaping and <span class="tt">boost::replace_all_copy</span> for backslash escaping. </dd></dl>
 
 </div>
 </div>
@@ -719,19 +719,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Escapes a single character based on a provided context. </p>
-<p>This function takes a character and returns its string representation, applying escape sequences for special characters such as newlines, tabs, and backslashes. It also handles the escaping of double and single quotes depending on whether the provided context character matches the quote type. For non-printable characters that do not have a predefined escape sequence, the function generates an octal escape sequence in the format \ooo.</p>
+<p>Escapes a single character into its string representation based on a given context. </p>
+<p>This function takes a single character and converts it into a string format suitable for escaped output. It handles standard escape sequences (such as newline, tab, and backspace) and specifically manages double and single quotes based on the provided context character. For non-printable characters that do not have a predefined escape sequence, the function converts the character into an octal escape sequence format (\ooo).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ch</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character to be escaped. </td></tr>
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current quoting context, used to determine if quotes should be escaped.</td></tr>
+    <tr><td class="paramname">ch</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input character to be escaped. </td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current surrounding context. If ch is a double quote (") or a single quote ('), it will only be escaped if 
+               the context character matches the character being escaped.
+
+@return A std::string containing the escaped version of the input character.
+
+@pre The input character &lt;tt&gt;ch&lt;/tt&gt; should be a valid char.
+@post The returned string will contain either the character itself (if printable and 
+      not requiring escape), a predefined escape sequence (e.g., "<br  />
+"), or an 
+      octal representation (e.g., "\007").
+
+@warning This function uses &lt;tt&gt;isprint&lt;/tt&gt; to determine if a character is printable; 
+         behavior may depend on the current C locale.
+@warning The function uses &lt;tt&gt;snprintf&lt;/tt&gt; with a fixed-size buffer for octal conversion; 
+         while safe for standard ASCII, it assumes the character can be represented 
+         within the 8-byte buffer.
+
+@note The function handles the following specific escape sequences: \a, \b, \t, \n, 
+      \v, \f, \r, \", \', and \. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::string containing the escaped representation of the input character.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input character <span class="tt">ch</span> should be treated as an unsigned char when converting to octal to avoid sign extension issues. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string will contain a printable sequence representing <span class="tt">ch</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses snprintf to format octal sequences for non-printable characters. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>For any character that is not printable and not in the predefined list, the function generates an octal escape sequence in the format \ followed by three octal digits. </dd></dl>
 
 </div>
 </div>
@@ -758,18 +773,18 @@ Functions</h2></td></tr>
 <p>Escapes characters that are special to C/C++.</p>
 <p>Replaces special characters in the input so that it is suitable for the contents of a C string literal (if <code class="param">context</code> is a double quote character) or the contents of a C character constant (if <code class="param">context</code> is a single quote). That is, things like double quotes, line-feeds, tabs, non-printables, etc. are replace by their C backslash escaped versions. Returns the resulting string.</p>
 <p>Note that if the first argument is a string then the context defaults to string literals, and if the first argument is a single character then the context defaults to character literals. Although this is usually what one wants, it's possible to change the context in both situations.</p>
-<p>This function iterates through every character in the input string <span class="tt">s</span> and applies the character-level escaping logic defined in the <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character based on a provided context.">cEscape</a></span> overload that accepts a single <span class="tt">char</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting string contains the transformed characters, ensuring that the string is properly formatted according to the rules of the specified <span class="tt"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></span>.</p>
+<p>This function iterates through every character in the input string <span class="tt">s</span> and applies the character-level escaping logic defined in the <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character into its string representation based on a given context.">cEscape</a></span> overload that accepts a single <span class="tt">char</span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting string contains the transformed characters, ensuring that the string is properly formatted according to the rules of the specified <span class="tt"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string containing the characters that need to be escaped. </td></tr>
-    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Creates a context-sensitive NFA structure bounded by start and stop sequences.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current escaping context, which determines how individual characters are processed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="qnfa__8cpp_8dox.html#adeb7e153558d24763f5215622f4469bd" title="Constructs a context-sensitive NFA structure defined by a start and stop sequence.">context</a></td><td><a class="el" href="class_a.html">A</a> character representing the current escaping context, which determines how individual characters are processed.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> new string containing the escaped version of the input string <span class="tt">s</span>.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <span class="tt">std::string</span> is returned with the same length as the original unless the underlying character-level <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character based on a provided context.">cEscape</a></span> function expands the character count (e.g., by adding backslashes).</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of an overload of <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character based on a provided context.">cEscape</a></span> that accepts a <span class="tt">char</span> and a <span class="tt">char</span> context. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="class_a.html">A</a> new <span class="tt">std::string</span> is returned with the same length as the original unless the underlying character-level <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character into its string representation based on a given context.">cEscape</a></span> function expands the character count (e.g., by adding backslashes).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the existence of an overload of <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character into its string representation based on a given context.">cEscape</a></span> that accepts a <span class="tt">char</span> and a <span class="tt">char</span> context. </dd></dl>
 
 </div>
 </div>
@@ -3099,21 +3114,22 @@ template&lt;typename <a class="el" href="_control_dependence_graph_8_c.html#af40
       </table>
 </div><div class="memdoc">
 
-<p>Splits a string into multiple substrings based on a single character delimiter. </p>
-<p>This function serves as an overload for the string splitting utility, converting a single character separator into a string of length one. It partitions the input string <span class="tt">str</span> into a vector of substrings, where each substring is delimited by the provided <span class="tt"><a class="el" href="structseparator.html">separator</a></span>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function allows for limiting the number of resulting parts and provides an option to trim leading and trailing whitespace from each resulting substring.</p>
+<p>Splits a string into multiple parts based on a single character delimiter. </p>
+<p>This function serves as an overload for the primary split function, allowing the use of a single character as a separator instead of a string. It internally converts the character into a single-character string and delegates the splitting logic to the string-based implementation of the split function. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves scanning the input string for occurrences of the separator and partitioning the string into substrings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structseparator.html">separator</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character used as the delimiter to split the string. </td></tr>
-    <tr><td class="paramname">str</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that is to be partitioned. </td></tr>
-    <tr><td class="paramname">maxparts</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> maximum number of substrings to be returned. If this value is 0, the entire string is returned as a single element in the vector. </td></tr>
-    <tr><td class="paramname">trim_white_space</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether to remove whitespace from the beginning and end of each resulting substring.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structseparator.html">separator</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> character used as the delimiter to partition the input string. </td></tr>
+    <tr><td class="paramname">str</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that is to be split into parts. </td></tr>
+    <tr><td class="paramname">maxparts</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> maximum number of substrings to be returned. If this value is 0, the function will split the entire string. </td></tr>
+    <tr><td class="paramname">trim_white_space</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether leading and trailing whitespace should be removed from each resulting substring.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> vector of strings containing the substrings extracted from the original string.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">str</span> should be a valid, initialized <span class="tt">std::string</span> object. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains at most <span class="tt">maxparts</span> elements (if <span class="tt">maxparts</span> &gt; 0), unless the string contains more delimiters than the limit allows.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function internally calls an overload of <span class="tt"><a class="el" href="#a4eacbea6dbd1a6d1bc13743482b072d4" title="Splits a string into multiple substrings based on a single character delimiter.">split</a></span> that accepts a <span class="tt">std::string</span> as the separator. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> std::vector&lt;std::string&gt; containing the substrings extracted from the input string.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>If the input string is empty, the function will return an empty vector.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string 'str' should be a valid, initialized std::string object. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned vector contains the split parts of the string, and if trim_white_space is true, each element in the vector is stripped of surrounding whitespace.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is a convenience wrapper around the string-based split overload. </dd></dl>
 
 </div>
 </div>
@@ -4007,7 +4023,7 @@ Newline ('<br  />
 <p>Escapes a string for safe usage within a YAML document. </p>
 <p>Escapes characters that are special to YAML strings.</p>
 <p>Assumes that the context is outside of any quoting and possibly adds quotes.</p>
-<p>This function determines the appropriate YAML representation for a given string. It applies various rules to decide whether the string should be wrapped in double quotes or left as a plain scalar. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation checks for empty strings, uses an underlying escape function <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character based on a provided context.">cEscape</a></span> to handle special characters, and evaluates the string's content for characters that necessitate quoting, such as non-alphanumeric boundaries, double spaces, or colons. It also ensures that boolean-like strings (e.g., "true", "false", "yes", "no") are handled correctly to prevent unintended type conversion in YAML parsers.</p>
+<p>This function determines the appropriate YAML representation for a given string. It applies various rules to decide whether the string should be wrapped in double quotes or left as a plain scalar. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation checks for empty strings, uses an underlying escape function <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character into its string representation based on a given context.">cEscape</a></span> to handle special characters, and evaluates the string's content for characters that necessitate quoting, such as non-alphanumeric boundaries, double spaces, or colons. It also ensures that boolean-like strings (e.g., "true", "false", "yes", "no") are handled correctly to prevent unintended type conversion in YAML parsers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string that needs to be escaped for YAML format.</td></tr>
@@ -4017,7 +4033,7 @@ Newline ('<br  />
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> string formatted for YAML, either as a plain scalar or a quoted and escaped string.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid UTF-8 or ASCII string. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned string is a valid YAML scalar representation of the input.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character based on a provided context.">cEscape</a></span> for character-level escaping and <span class="tt">boost::contains</span> and <span class="tt">boost::to_lower_copy</span> for content analysis. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on <span class="tt"><a class="el" href="#a2a9836b2467940ca49381e594b1a44f9" title="Escapes a single character into its string representation based on a given context.">cEscape</a></span> for character-level escaping and <span class="tt">boost::contains</span> and <span class="tt">boost::to_lower_copy</span> for content analysis. </dd></dl>
 
 </div>
 </div>
