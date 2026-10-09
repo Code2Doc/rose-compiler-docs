@@ -115,7 +115,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Computes a simple additive hash of a string. </p>
-<p>This function generates a hash value by iterating through each character in the provided string and accumulating their numerical ASCII/character values into a single unsigned long sum. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> algorithm uses a basic summation approach, which is computationally inexpensive but prone to collisions.</p>
+<p>This function generates a hash value by iterating through each character of the input string and accumulating their numerical ASCII/UTF-8 values into a single unsigned long sum. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> algorithm uses a basic summation approach, which is computationally inexpensive but does not provide high collision resistance.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string to be hashed.</td></tr>
@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> resulting unsigned long hash value representing the sum of the character values in the string.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input string <span class="tt">s</span> should be a valid <span class="tt">std::string</span> object. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned value is a non-negative unsigned long.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This is a non-cryptographic hash function. Because it only performs addition, different permutations of the same characters (e.g., "abc" and "cba") will result in the same hash value. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This hashing algorithm is highly susceptible to collisions, as any permutation of the same characters will result in the same hash value. </dd></dl>
 
 </div>
 </div>

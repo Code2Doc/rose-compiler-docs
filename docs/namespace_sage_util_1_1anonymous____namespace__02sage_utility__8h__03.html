@@ -408,7 +408,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the declaration associated with a variable reference expression. </p>
-<p>This function extracts the underlying symbol from a variable reference expression, casts it to an SgVariableSymbol, and then retrieves the associated declaration. It is used to navigate from a usage of a variable back to its original definition within the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST).</p>
+<p>This function extracts the underlying symbol from a variable reference expression, casts it to an SgVariableSymbol, and then retrieves the associated declaration. It is used to navigate from a usage of a variable back to its original definition/declaration in the symbol table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> variable reference expression whose declaration is to be retrieved.</td></tr>
@@ -416,9 +416,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the SgInitializedName representing the declaration of the variable.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> expression <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must contain a valid symbol that can be safely dereferenced and cast to an SgVariableSymbol. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to the original declaration of the variable referenced by <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the SG_DEREF macro for pointer dereferencing and assumes that the symbol returned by <span class="tt">n.get_symbol()</span> is not null. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter n must contain a valid symbol that can be safely dereferenced to an SgVariableSymbol. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to the declaration of the symbol contained within n.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function relies on the SG_DEREF macro for type casting and assumes the validity of the underlying symbol pointers. </dd></dl>
 
 </div>
 </div>
@@ -446,8 +446,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the SgInitializedName contained within the declaration.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input SgVariableDeclaration <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must contain exactly one variable in its internal variable list. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to a valid SgInitializedName object.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgVariableDeclaration n must contain exactly one variable in its variable list. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to the SgInitializedName of the single variable in n.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function will trigger a ROSE_ASSERT failure if the number of variables in the declaration is not exactly one.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is marked as inline for performance optimization during AST traversal. </dd></dl>
 
@@ -768,7 +768,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Traverses and returns a type after applying a skipping mechanism based on a specified mode. </p>
-<p>This function utilizes the dispatch mechanism of the SG framework to apply a TypeSkipper visitor to the provided <a class="el" href="class_sg_type.html">SgType</a>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> skipping behavior is controlled by the mode parameter, which determines how the type hierarchy or attributes are traversed or bypassed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <a class="el" href="namespacesg.html#a4cb21835a6f67a379ae869a622fbe99a" title="uncovers the type of SgNode and passes it to an function &quot;handle&quot; in RoseVisitor. which should be ove...">sg::dispatch</a> utility to execute the TypeSkipMode logic.</p>
+<p>This function utilizes the dispatch mechanism of the SG framework to apply a TypeSkipper visitor to the provided <a class="el" href="class_sg_type.html">SgType</a>. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> skipping behavior is controlled by the mode parameter, which determines how the type hierarchy or attributes are traversed or bypassed. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the <a class="el" href="namespacesg.html#a5304a1d6d7df35d096395852ba0c4b05" title="Dispatches a visitor to a specific SgNode.">sg::dispatch</a> utility to execute the TypeSkipMode logic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ty</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input <a class="el" href="class_sg_type.html">SgType</a> reference that is to be processed by the skipper. </td></tr>
@@ -859,16 +859,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the type associated with a given SgExpression. </p>
-<p>This function provides a convenience wrapper to access the underlying type of an expression. It retrieves the type pointer from the expression and applies the SG_DEREF macro to return a reference to the <a class="el" href="class_sg_type.html">SgType</a>.</p>
+<p>This function provides a convenience wrapper to access the underlying type of an expression node. It retrieves the type pointer from the expression and dereferences it to return a reference to the <a class="el" href="class_sg_type.html">SgType</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgExpression object from which the type is to be retrieved.</td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgExpression node from which the type is to be retrieved.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_sg_type.html">SgType</a> associated with the provided expression.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> expression n must have a valid, non-null type associated with it. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference refers to the same <a class="el" href="class_sg_type.html">SgType</a> object held by the expression. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference refers to the same <a class="el" href="class_sg_type.html">SgType</a> object held by the expression.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function uses the SG_DEREF macro to perform the dereferencing operation. </dd></dl>
 
 </div>
 </div>

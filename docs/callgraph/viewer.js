@@ -61,7 +61,8 @@
     legendRefined: document.getElementById('legend-refined'),
     depth: document.getElementById('ctl-depth'),
     children: document.getElementById('ctl-children'),
-    entrypoints: document.getElementById('entrypoints')
+    entrypoints: document.getElementById('entrypoints'),
+    picker: document.getElementById('graph-picker')
   };
 
   function fail(message) {
@@ -486,6 +487,38 @@
 
   function fmtCosine(c) { return c == null ? '\u2014' : c.toFixed(2); }
 
+  // Whether the selected function's own subtree settled: every refined
+  // function reachable from it moved less than the run's threshold at the
+  // last iteration, or was carried forward. The run's verdict says whether
+  // *any* function in the whole run was still moving, which is the wrong
+  // granularity for a per-function button: a stable leaf would read "not
+  // converged" because an unrelated function moved.
+  function subtreeStability(id) {
+    var seen = Object.create(null);
+    var queue = [id];
+    var moving = 0, known = false;
+    while (queue.length) {
+      var cur = queue.shift();
+      if (seen[cur]) continue;
+      seen[cur] = true;
+      var entry = getRefined(cur);
+      if (entry) {
+        var run = refinedRun(entry);
+        var last = entry.iterations[entry.final];
+        if (run && run.threshold != null && last) {
+          known = true;
+          if (last.cosine != null && (1 - last.cosine) > run.threshold) moving++;
+        }
+      }
+      (outAdj[cur] || []).forEach(function (k) { if (!seen[k]) queue.push(k); });
+    }
+    return { stable: known ? moving === 0 : null, moving: moving };
+  }
+
+  function seededFromOneShot(run) {
+    return !!(run && run.baseline_source === 'dox');
+  }
+
   // The score at iteration n is the similarity of comment n to comment n-1,
   // so it measures stability, not quality. Within the run's threshold is
   // "stable". Iteration 0 has nothing to compare against, and a leaf after
@@ -499,7 +532,11 @@
   }
 
   function cosineTitle(it, cls, run) {
-    if (it.n === 0) return 'Baseline: the comment before refinement, not scored';
+    if (it.n === 0) {
+      return seededFromOneShot(run)
+        ? 'The one-shot comment the refinement started from, not scored'
+        : 'Baseline: the comment before refinement, not scored';
+    }
     var s = 'Cosine similarity to the previous iteration: ' + fmtCosine(it.cosine);
     if (cls === 'cos-stable') s += ' (within threshold ' + run.threshold + ': stable)';
     else if (cls === 'cos-changed') s += ' (beyond threshold ' + run.threshold + ': still changing)';
@@ -549,8 +586,15 @@
                 ' iterations');
     }
     if (run.threshold != null) bits.push('threshold ' + run.threshold);
-    if (run.converged === true) bits.push('converged');
-    else if (run.converged === false) bits.push('not converged');
+    // The run-level verdict belongs here, attributed to the run; the button
+    // and its badge speak for the selected subtree instead.
+    if (run.converged === true) bits.push('run converged');
+    else if (run.converged === false) {
+      bits.push(run.iterations_configured != null
+        ? 'run stopped at its ' + run.iterations_configured + '-iteration limit'
+        : 'run not converged');
+    }
+    if (seededFromOneShot(run)) bits.push('seeded from one-shot');
     if (run.timestamp) bits.push(String(run.timestamp).slice(0, 10));
     prov.appendChild(text(bits.join(' \u00b7 ')));
     if (run.root && byId[run.root]) {
@@ -588,7 +632,8 @@
     }
 
     entry.iterations.forEach(function (it, i) {
-      var b = make('button', 'rung', it.n === 0 ? '0 baseline' : String(it.n));
+      var b = make('button', 'rung',
+        it.n === 0 ? (seededFromOneShot(run) ? '0 one-shot' : '0 baseline') : String(it.n));
       b.type = 'button';
       b.setAttribute('role', 'tab');
       var cls = cosineClass(it, entry, run);
@@ -652,11 +697,15 @@
       body.appendChild(a);
     }
 
-    if (!doc) {
+    // A refinement run carries every version of the comment, the one-shot
+    // included as rung 0, so when one covers the function the ladder is the
+    // document and the base comment is not shown twice (decided 2026-10-09).
+    var refinedEntry = getRefined(id);
+    if (!doc && !refinedEntry) {
       body.appendChild(make('div', 'note',
         'This function is referenced by the call graph but was not documented ' +
         'in this run. No generated comment is available for it.'));
-    } else {
+    } else if (!refinedEntry) {
       body.appendChild(docSections(doc));
     }
 
@@ -705,11 +754,14 @@
     if (el.refine) {
       var entry = getRefined(id);
       if (entry) {
-        var run = refinedRun(entry);
         var n = entry.final;
+        var stab = subtreeStability(id);
         el.refine.textContent = 'Refined \u00b7 ' + n + (n === 1 ? ' iteration' : ' iterations') +
-          (run && run.converged === false ? ' \u00b7 not converged' : '');
-        el.refine.title = 'Show how this comment evolved across the refinement run';
+          (stab.stable === false ? ' \u00b7 still changing' : '');
+        el.refine.title = stab.stable === false
+          ? stab.moving + ' function' + (stab.moving === 1 ? '' : 's') +
+            ' in this subtree still moved past the threshold at the last iteration'
+          : 'Show how this comment evolved across the refinement run';
       } else {
         el.refine.textContent = 'Refine\u2026';
         el.refine.title = 'No iterative refinement covers this function yet; ' +
@@ -872,6 +924,43 @@
     });
   }
 
+  /* -- graph picker ------------------------------------------------------- */
+
+  // graph_catalog.js, when a build carries one, lists the payloads installed
+  // beside the viewer. With more than one the picker appears and switching
+  // reloads the page with ?data=<file>: payloads are whole documents, not
+  // something to swap under a running layout.
+  var PAYLOAD_NAME = /^[A-Za-z0-9._-]+\.js$/;
+
+  function currentPayload() {
+    var m = /[?&]data=([A-Za-z0-9._-]+\.js)/.exec(window.location.search);
+    return m ? m[1] : 'graph_data.js';
+  }
+
+  function initPicker() {
+    var sel = el.picker;
+    var catalog = window.CODE2DOC_CATALOG;
+    if (!sel || !Array.isArray(catalog)) return;
+    var entries = catalog.filter(function (e) {
+      return e && typeof e.file === 'string' && PAYLOAD_NAME.test(e.file);
+    });
+    if (entries.length < 2) return;
+    var current = currentPayload();
+    entries.forEach(function (e) {
+      var o = document.createElement('option');
+      o.value = e.file;
+      o.textContent = e.title || e.file;
+      if (e.file === current) o.selected = true;
+      sel.appendChild(o);
+    });
+    sel.hidden = false;
+    sel.addEventListener('change', function () {
+      if (PAYLOAD_NAME.test(this.value) && this.value !== current) {
+        window.location.href = 'viewer.html?data=' + this.value;
+      }
+    });
+  }
+
   /* -- boot --------------------------------------------------------------- */
 
   function init() {
@@ -1004,6 +1093,7 @@
 
     bindPolicyControl(el.depth, 'depth');
     bindPolicyControl(el.children, 'children');
+    initPicker();
   }
 
   if (document.readyState === 'loading') {

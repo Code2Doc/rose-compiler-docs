@@ -100,73 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acfff911a1fdddaeeef7157b78a7883e0" id="r_acfff911a1fdddaeeef7157b78a7883e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acfff911a1fdddaeeef7157b78a7883e0">removeRedundantCopyInConstruction</a> (SgInitializedName *in)</td></tr>
 <tr class="memdesc:acfff911a1fdddaeeef7157b78a7883e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a redundant assignment initializer from a constructor initialization list.  <br /></td></tr>
 <tr class="memitem:ac98c4697493b180c3cda9af1c981a47c" id="r_ac98c4697493b180c3cda9af1c981a47c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac98c4697493b180c3cda9af1c981a47c">markAsTransformation</a> (SgNode *ast)</td></tr>
-<tr class="memdesc:ac98c4697493b180c3cda9af1c981a47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks nodes within an AST as being part of a transformation.  <br /></td></tr>
-<tr class="memitem:a1269c7cb6a85f73318ee9b90cb389299" id="r_a1269c7cb6a85f73318ee9b90cb389299"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1269c7cb6a85f73318ee9b90cb389299">doInline</a> (SgFunctionCallExp *funcall, bool allowRecursion)</td></tr>
-<tr class="memdesc:a1269c7cb6a85f73318ee9b90cb389299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs function inlining by replacing a function call with the function's body.  <br /></td></tr>
+<tr class="memdesc:ac98c4697493b180c3cda9af1c981a47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks specific AST nodes and their associated file information as part of a transformation.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a1269c7cb6a85f73318ee9b90cb389299" name="a1269c7cb6a85f73318ee9b90cb389299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1269c7cb6a85f73318ee9b90cb389299">&#9670;&#160;</a></span>doInline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool doInline </td>
-          <td>(</td>
-          <td class="paramtype">SgFunctionCallExp *</td>          <td class="paramname"><span class="paramname"><em>funcall</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allowRecursion</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Performs function inlining by replacing a function call with the function's body. </p>
-<p>Performs inlining of a function call expression into its caller.</p>
-<p>This function implements a complex AST transformation to inline the body of a called function into the caller's context. It handles various C++ constructs including member function calls (dot and arrow operators), virtual function checks, and lambda expressions. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation involves deep-copying the target function's body, renaming labels to prevent collisions, creating new local variables to shadow formal parameters with actual arguments, and transforming return statements into goto statements that jump to a newly created end-of-inline label.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">funccall</td><td><a class="el" href="class_a.html">A</a> pointer to the SgFunctionCallExp representing the function call site to be inlined. </td></tr>
-    <tr><td class="paramname">allowRecursion</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether direct recursion is permitted during inlining.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the inlining transformation was successfully performed; false if the function could not be inlined (e.g., due to virtual functions, header files, compiler-generated code, or incompatible recursion settings).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>funcall must not be NULL and must have a valid parent in the AST. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If successful, the funcall expression is replaced by a sequence of statements representing the inlined body, and the AST is updated to maintain consistency (e.g., updated lvalue flags).</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips inlining for functions within system headers, compiler-generated code, and the <span class="tt"><a class="el" href="namespacestd.html" title="Auto-generated documentation for the std namespace.">std</a>::</span> namespace. </dd>
-<dd>
-For member functions, the function attempts to handle the <span class="tt">this</span> pointer by creating a local variable initialized with the caller's <span class="tt">this</span> pointer. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles lambda captures by mapping closure variables to capture variables during the transformation process. </dd>
-<dd>
-Preprocessor directives like include or define are not processed by this function, but the function respects logic related to header file suffixes.</dd></dl>
-<p>This function implements a complex AST transformation to inline the body of a called function into the site of the call. It handles various C++ constructs including member function calls (dot and arrow operators), virtual function checks, and lambda expressions. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves creating a deep copy of the target function's body, remapping formal parameters to new local variables initialized with actual arguments, and handling the 'this' pointer for non-static member functions. It also manages the transformation of return statements into goto statements targeting a newly created label at the end of the inlined block.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">funcall</td><td><a class="el" href="class_a.html">A</a> pointer to the SgFunctionCallExp representing the function call site to be inlined. </td></tr>
-    <tr><td class="paramname">allowRecursion</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether direct recursion is permitted during the inlining process.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the inlining transformation was successfully performed; false if the function could not be inlined (e.g., due to virtual functions, compiler-generated code, system headers, or unsupported template instantiations).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>funcall must not be NULL and must have a valid parent in the AST. </dd>
-<dd>
-If allowRecursion is false, the function must not be a direct recursive call to itself. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If successful, the funcall expression is replaced by a series of statements representing the inlined body, and the original function's body is effectively integrated into the caller's scope.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips inlining for functions within system headers, compiler-generated code, and the <span class="tt"><a class="el" href="namespacestd.html" title="Auto-generated documentation for the std namespace.">std</a>::</span> namespace. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles the complexity of lambda captures by reconstructing the necessary closure variables and class declarations within the inlined scope. </dd>
-<dd>
-Uses renameLabels to prevent label collisions in the inlined code. </dd>
-<dd>
-Uses markAsTransformation to ensure the transformed nodes are retained in the output AST. </dd></dl>
-
-</div>
-</div>
 <a id="ab34cf06d160de52bac38fa5a66b0653b" name="ab34cf06d160de52bac38fa5a66b0653b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab34cf06d160de52bac38fa5a66b0653b">&#9670;&#160;</a></span>generateAssignmentMaybe()</h2>
 
@@ -217,17 +153,21 @@ Uses markAsTransformation to ensure the transformed nodes are retained in the ou
       </table>
 </div><div class="memdoc">
 
-<p>Marks nodes within an AST as being part of a transformation. </p>
-<p>This function performs a deep traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) using a preorder traversal strategy. It utilizes an internal visitor pattern (FixFileInfo) to identify all nodes that are instances of SgLocatedNode. For each located node found, the function updates the associated file information (Sg_File_Info) at the start of the construct, the end of the construct, and the operator position (if the node is an SgExpression). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> update involves flagging these locations as having undergone a transformation and marking them as output for the code generation phase.</p>
+<p>Marks specific AST nodes and their associated file information as part of a transformation. </p>
+<p>This function performs a preorder traversal of the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) using a custom visitor pattern (FixFileInfo). It identifies nodes that are instances of SgLocatedNode and updates their associated Sg_File_Info objects. Specifically, it flags the start and end of constructions, as well as operator positions within expressions, with transformation and code generation output flags. This is used to track which parts of the AST are subject to transformations during the compilation or analysis pipeline.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ast</td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode of the AST to be traversed and modified.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> ast parameter should be a valid, non-null pointer to an SgNode. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>All SgLocatedNode instances within the AST, including their start/end construct positions and expression operator positions, will have their Sg_File_Info objects updated with transformation and code generation flags.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a local struct inheriting from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to implement the visitor pattern, ensuring that the traversal logic is encapsulated within the function scope. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input pointer ast must be a valid, non-null pointer to an SgNode representing the root or a subtree of the AST.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> Sg_File_Info objects associated with the start/end of constructs and operator positions within SgLocatedNodes are updated to include the transformation and output-in-code-generation flags.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function modifies the state of the AST nodes in-place.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a nested struct FixFileInfo inheriting from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to implement the visitor pattern. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic specifically targets SgLocatedNode, SgExpression, and their internal construction/operator position metadata. </dd></dl>
 
 </div>
 </div>
@@ -247,24 +187,22 @@ Uses markAsTransformation to ensure the transformed nodes are retained in the ou
 </div><div class="memdoc">
 
 <p>Removes a redundant assignment initializer from a constructor initialization list. </p>
-<p>This function optimizes the SgInitializedName node by stripping away an intermediate SgAssignInitializer layer. It identifies if the initializer is an assignment initializer and extracts the underlying SgConstructorInitializer, effectively promoting the constructor initializer directly to the initialized name.</p>
+<p>This function optimizes the SgInitializedName node by replacing an SgAssignInitializer with the underlying SgInitializer. In the context of constructor initialization, an assignment-style initializer is often redundant if the actual initialization logic is already encapsulated within an SgConstructorInitializer. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function updates the initializer of the input node and corrects the parent-child relationship in the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgInitializedName node to be processed.</td></tr>
+    <tr><td class="paramname">in</td><td><a class="el" href="class_a.html">A</a> pointer to the SgInitializedName node that contains the redundant assignment initializer to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter <span class="tt">in</span> must be a valid, non-null pointer to an SgInitializedName. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initializer of <span class="tt">in</span> must be an instance of SgAssignInitializer. </dd>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node <span class="tt">in</span> must have an initializer that is an instance of SgAssignInitializer. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> operand of the SgAssignInitializer must be an instance of SgInitializer. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> extracted SgInitializer must be an instance of SgConstructorInitializer.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> operand of the SgAssignInitializer must specifically be an SgConstructorInitializer.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initializer of the <span class="tt">in</span> node is updated to point directly to the underlying SgConstructorInitializer. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent of the extracted SgConstructorInitializer is updated to be <span class="tt">in</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>There is an unresolved FIXME regarding whether the original SgAssignInitializer node requires manual deletion to prevent memory leaks. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent of the new initializer is set to the <span class="tt">in</span> node.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>There is an unresolved FIXME regarding whether the original SgAssignInitializer node requires explicit deletion to prevent memory leaks. </dd></dl>
 
 </div>
 </div>

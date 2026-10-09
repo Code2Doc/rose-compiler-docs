@@ -96,7 +96,7 @@ $(function(){initNavTree('_ast_consistency_tests__8_c_8dox.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a095a4e9db91553c1a77cfb2bfac0c14f" id="r_a095a4e9db91553c1a77cfb2bfac0c14f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a095a4e9db91553c1a77cfb2bfac0c14f">testAstForUniqueNodes</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a095a4e9db91553c1a77cfb2bfac0c14f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that all nodes within an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) are unique.  <br /></td></tr>
+<tr class="memdesc:a095a4e9db91553c1a77cfb2bfac0c14f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that all nodes within the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) are unique.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a095a4e9db91553c1a77cfb2bfac0c14f" name="a095a4e9db91553c1a77cfb2bfac0c14f"></a>
@@ -114,17 +114,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verifies that all nodes within an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) are unique. </p>
-<p>This function performs a structural validation on the provided AST starting from the given node. It utilizes the <a class="el" href="class_test_ast_for_unique_nodes_in_a_s_t.html">TestAstForUniqueNodesInAST</a> utility to traverse the tree and ensure that no two pointers within the tree structure refer to the same memory address, thereby detecting potential issues with node duplication or incorrect tree cloning.</p>
+<p>Validates that all nodes within the provided Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) are unique. </p>
+<p>Verifies that all nodes within an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) are unique.</p>
+<p>This function serves as a wrapper to trigger a structural integrity test on an AST. It delegates the core validation logic to the <a class="el" href="class_test_ast_for_unique_nodes_in_a_s_t.html#ae8323ac1525a517b941dbe813e52247f">TestAstForUniqueNodesInAST::test</a> method. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary purpose is to ensure that the tree structure does not contain any duplicate node pointers, which prevents issues related to shared subtrees or corrupted tree topologies.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode of the AST to be tested.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode of the AST to be inspected for pointer uniqueness.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>node must not be a null pointer. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function completes the uniqueness check, potentially triggering a test failure if duplicate nodes are detected.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function is primarily used for regression testing and structural integrity verification during AST manipulation.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function assumes the integrity of the tree structure; if the AST contains cycles or invalid pointers, the underlying test may fail or result in undefined behavior during traversal.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node pointer must not be null.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST starting from the provided node is verified for uniqueness. If duplicates are detected, the underlying test mechanism will report the error.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This test was implemented to ensure that no two nodes in the AST share the same memory address, maintaining a strict tree hierarchy.</dd></dl>
 <p>This function performs a structural validation on the provided AST starting from the given node. It utilizes the <a class="el" href="class_test_ast_for_unique_nodes_in_a_s_t.html">TestAstForUniqueNodesInAST</a> utility to traverse the tree and ensure that no two pointers within the tree structure refer to the same memory address, thereby detecting potential issues with node duplication or incorrect tree cloning.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

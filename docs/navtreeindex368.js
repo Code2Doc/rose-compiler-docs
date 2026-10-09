@@ -1,5 +1,7 @@
 var NAVTREEINDEX368 =
 {
+"struct_sg_node_helper_1_1_extended_call_info.html#aab0ed314a2bb6c734438acc2182ed662":[16,0,68,1,7],
+"struct_sg_node_helper_1_1_extended_call_info.html#abf2207a4320768bbde26d87c57db3acd":[15,0,156,1,1],
 "struct_sg_node_helper_1_1_extended_call_info.html#abf2207a4320768bbde26d87c57db3acd":[16,0,68,1,1],
 "struct_sg_node_helper_1_1_extended_call_info.html#ac6cb0d8c16f52454c7d214a9dd19c0e6":[15,0,156,1,2],
 "struct_sg_node_helper_1_1_extended_call_info.html#ac6cb0d8c16f52454c7d214a9dd19c0e6":[16,0,68,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX368 =
 "struct_trans_anal_s_c_c_graph_node_1_1_twin_node_struct.html#a8ee6c4690b60f0100e447387d534e81d":[16,0,1987,0,5],
 "struct_trans_anal_s_c_c_graph_node_1_1_twin_node_struct.html#ab0780b49ec472122281e898dcef086e1":[16,0,1987,0,1],
 "struct_tree_layout_generator_1_1_additional_node_info.html":[16,0,2006,0],
-"struct_tree_layout_generator_1_1_additional_node_info.html#a0af9b8b0ced0fe598db8db035764ad52":[16,0,2006,0,0],
-"struct_tree_layout_generator_1_1_additional_node_info.html#a21841f23999cc8ae6f7d633f656f4eab":[16,0,2006,0,2],
-"struct_tree_layout_generator_1_1_additional_node_info.html#abd9263f9b970a3faf0f675507d730855":[16,0,2006,0,3]
+"struct_tree_layout_generator_1_1_additional_node_info.html#a0af9b8b0ced0fe598db8db035764ad52":[16,0,2006,0,0]
 };

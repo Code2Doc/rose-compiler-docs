@@ -105,9 +105,9 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a38150c0c439080c0a13519bbbb18a17b" id="r_a38150c0c439080c0a13519bbbb18a17b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a38150c0c439080c0a13519bbbb18a17b">postProcessingSupport</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:a38150c0c439080c0a13519bbbb18a17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs AST post-processing tasks to ensure consistency and correctness of the IR.  <br /></td></tr>
+<tr class="memdesc:a38150c0c439080c0a13519bbbb18a17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs comprehensive AST post-processing and structural fixups on a given node.  <br /></td></tr>
 <tr class="memitem:abfb503342d8968e2389a6a17bea69e6c" id="r_abfb503342d8968e2389a6a17bea69e6c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abfb503342d8968e2389a6a17bea69e6c">AstPostProcessing</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:abfb503342d8968e2389a6a17bea69e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs post-processing operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node or hierarchy.  <br /></td></tr>
+<tr class="memdesc:abfb503342d8968e2389a6a17bea69e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs structural post-processing and maintenance on an AST node or hierarchy.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -145,23 +145,32 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs post-processing operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node or hierarchy. </p>
+<p>Performs structural post-processing and maintenance on an AST node or hierarchy. </p>
 <p>This does all post-processing fixup and translation of the Sage III AST.</p>
-<p>This function executes various post-processing tasks on the provided SgNode. It handles different node types such as SgProject, SgFile, and SgSourceFile. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is designed to perform fixups and updates to the AST after parsing is complete. It also manages the clearing of the global mangled name map to ensure consistency during the post-processing phase.</p>
-<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses a switch statement based on the node's variant type. For SgProject and SgFile/SgSourceFile, it invokes postProcessingSupport if the parser is not set to exit immediately after parsing. It also includes logic to warn if the function is called on a node other than an SgProject, as calling it on smaller scopes can lead to performance degradation due to repeated memory pool traversals.</p>
+<p>Performs post-processing operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node or hierarchy.</p>
+<p>This function is responsible for executing necessary fixups and structural updates on the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) after the initial parsing phase. It manages the consistency of the IR by clearing stale caches, such as the global mangled name map, and ensures that the AST is in a valid state for analysis. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles different types of SgNodes (such as SgProject, SgFile, or SgSourceFile) by delegating to postProcessingSupport if the node is not configured to exit immediately after parsing.</p>
+<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation includes performance tracking via <a class="el" href="class_timing_performance.html">TimingPerformance</a> and performs critical cache management, specifically clearing the SgNode global mangled name map to prevent stale data from affecting subsequent processing steps involving scope or name resolution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode that serves as the root or target for the post-processing operations.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode to be post-processed. This is typically the root of the AST (e.g., an SgProject or SgSourceFile).</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>node must not be NULL. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global mangled name map (SgNode::get_globalMangledNameMap()) is cleared.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the node is an SgDirectory, the function will trigger a ROSE_ABORT. </dd>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function triggers a <a class="el" href="_r_o_s_e___a_b_o_r_t_8h.html#a22a360d21e08f28d45bffc6e87d352c5">ROSE_ABORT()</a> if the input node is NULL or if an SgDirectory is passed (as directory support is not implemented). </dd>
 <dd>
-If the node is an SgBinaryComposite and ROSE_ENABLE_BINARY_ANALYSIS is defined, the function will trigger a ROSE_ABORT. </dd>
+Calling this function on nodes other than SgProject may lead to performance degradation due to repeated, inefficient memory pool traversals. </dd>
 <dd>
-Calling this function on nodes other than SgProject may result in quadratic performance overhead.</dd></dl>
+If the global mangled name map is not empty upon entry, the function will clear it and may output diagnostic information.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input parameter <code class="param">node</code> must not be NULL. </dd>
+<dd>
+If the node is an SgProject, it is preferred that the function is called at the project level to avoid quadratic complexity issues.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> global mangled name map is guaranteed to be empty after the function completes. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST structure rooted at <code class="param">node</code> is updated with any necessary structural fixups provided by the underlying support functions.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function includes performance monitoring to track the overhead of the post-processing phase within the ROSE framework. </dd>
+<dd>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function checks the 'exit_after_parser' flag to avoid redundant processing on nodes where the AST was not newly generated.</dd></dl>
 <p>This function executes various post-processing tasks on the provided SgNode. It handles different node types such as SgProject, SgFile, and SgSourceFile. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function is responsible for managing the global mangled name map, clearing caches, and triggering further post-processing support via postProcessingSupport. It includes logic to avoid redundant traversals by checking if the AST was generated or if the parser has already exited.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -197,25 +206,24 @@ If the node is an SgBinaryComposite and ROSE_ENABLE_BINARY_ANALYSIS is defined, 
       </table>
 </div><div class="memdoc">
 
-<p>Performs AST post-processing tasks to ensure consistency and correctness of the IR. </p>
+<p>Performs comprehensive AST post-processing and structural fixups on a given node. </p>
 <p>Postprocessing that is not likely to be handled in the EDG/Sage III translation.</p>
-<p>This function executes a series of complex fixup operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary purpose is to resolve inconsistencies introduced during the initial translation phase (e.g., from EDG or other frontends). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles tasks such as resetting parent pointers, fixing up symbol tables, managing template instantiations, resolving defining and non-defining declarations, and ensuring source position consistency. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic varies depending on whether the node represents a C/C++ translation or other supported languages like <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, Ada, or Python.</p>
+<p>Performs AST post-processing tasks to ensure consistency and correctness of the IR.</p>
+<p>This function is responsible for a wide array of maintenance tasks required to ensure the integrity, consistency, and usability of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) after the initial translation phase. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation varies significantly depending on the language being processed. For C/C++, it performs complex tasks such as resetting parent pointers, fixing up template instantiations, resolving symbol tables, handling C++ "using" declarations, and managing template specializations. For other languages (like <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> or Java), it executes a different set of specialized fixups (e.g., handling <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a> use declarations or array/function reference resolution).</p>
+<p><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function essentially acts as a final pass to reconcile discrepancies introduced by the frontend/translator (like EDG) and to prepare the AST for downstream analysis or unparsing by ensuring all pointers, scopes, and source position information are consistent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> root node of the AST subtree (e.g., SgProject, SgFile, or SgSourceFile) to be processed.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode (typically an SgProject, SgDirectory, or SgSourceFile) from which the post-processing traversal begins.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="structnode.html">node</a></span> parameter must not be NULL. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST subtree rooted at <span class="tt"><a class="el" href="structnode.html">node</a></span> is updated with consistent parent pointers, resolved symbol tables, and corrected declaration/instantiation metadata.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function's behavior is highly dependent on the language detected via <span class="tt"><a class="el" href="namespace_sage_interface.html" title="Auto-generated documentation for the SageInterface namespace.">SageInterface</a></span>. For C/C++, it performs extensive fixups including template specialization marking and constant folding resets. </dd>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Calling this function with an SgProject or SgDirectory node is generally safe, but the function contains logic that may attempt to traverse the entire project tree, which can be computationally expensive.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node must not be NULL.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST rooted at the provided node is transformed into a consistent state where parent pointers, symbol tables, and template information are reconciled. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> "isModified" flags on nodes are reset to allow for tracking subsequent transformations.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function contains language-specific branches. For C/C++, it relies heavily on the EDG translation interface and performs extensive template and scope fixups. For <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, it specifically handles array/function reference resolution and use declarations. </dd>
 <dd>
-For non-C/C++ languages, the function performs a more limited set of operations, such as fixing up null pointers and template declarations. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may trigger warnings via <span class="tt"><a class="el" href="#a44b85a8a5208f4e800a7946027370f32">mprintf</a></span> if global scopes are found to be empty in certain file types. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>Calling this function with an <span class="tt">SgProject</span> or <span class="tt">SgDirectory</span> node is historically sensitive, though recent updates have relaxed some assertions regarding these node types. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs heavy-duty traversals and computations that can be computationally expensive on large ASTs.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function may trigger various debug assertions and print progress messages to the console if the SgProject verbosity level is set high.</dd></dl>
 <p>This function executes a series of complex fixup operations on an Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) node. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> primary purpose is to resolve inconsistencies introduced during the initial translation phase (e.g., from EDG or other frontends). <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles tasks such as resetting parent pointers, fixing up symbol tables, resolving template instantiations, managing defining and non-defining declarations, and ensuring source position consistency. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> logic branches significantly depending on whether the node represents a C/C++ AST or other supported languages like <a class="el" href="namespace_fortran.html" title="Auto-generated documentation for the Fortran namespace.">Fortran</a>, Ada, or Python.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

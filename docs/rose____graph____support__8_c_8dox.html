@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the target node index from an edge descriptor. </p>
-<p>This function extracts the target vertex identifier from a specific edge descriptor implementation used within an undirected graph context. It accesses the internal member representing the destination of the edge.</p>
+<p>This function extracts the target vertex identifier from a specific edge descriptor implementation used within an undirected graph context. It accesses the internal member representing the target node of the edge.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">edge_descriptor</td><td><a class="el" href="class_a.html">A</a> reference to an edge descriptor object containing the target node information. </td></tr>
@@ -165,7 +165,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> integer representation of the target node index.</dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>edge_descriptor must be a valid, initialized instance of boost::detail::edge_desc_impl&lt;boost::undirected_tag, long unsigned int&gt;. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the edge_descriptor and the SgGraph object remains unchanged. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> return value corresponds to the value stored in edge_descriptor.m_target. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2_users_2billx_2git_2rose_2src_2frontend_2_experimental__ada__r_o_s_e__connection_2_ada_maker_8h-example.html#_a136">/Users/billx/git/rose/src/frontend/Experimental_Ada_ROSE_Connection/AdaMaker.h</a>, and <a class="el" href="_2_users_2billx_2git_2rose_2src_2frontend_2_experimental__libadalang__r_o_s_e__connection_2_ada_maker_8h-example.html#_a134">/Users/billx/git/rose/src/frontend/Experimental_Libadalang_ROSE_Connection/AdaMaker.h</a>.</dd>
+</dl>
 
 </div>
 </div>

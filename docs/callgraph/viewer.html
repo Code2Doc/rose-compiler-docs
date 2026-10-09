@@ -13,6 +13,7 @@
 
   <header id="topbar">
     <span id="title">Call Graph</span>
+    <select id="graph-picker" class="btn" hidden aria-label="Choose a call graph"></select>
     <input id="search" type="search" placeholder="Search functions&hellip;  (press /)"
            autocomplete="off" spellcheck="false" aria-label="Search functions">
     <span id="search-status" role="status" aria-live="polite"></span>
@@ -83,11 +84,14 @@
   // (graph_data.js -> graph_data.refined.js). Most builds have none, so a
   // failed load is silent: the element is removed and nothing else happens.
   var overlay = payload.replace(/\.js$/, '.refined.js');
-  [payload, overlay, 'viewer.js'].forEach(function (src) {
+  // graph_catalog.js lists the payloads installed beside the viewer, for the
+  // graph picker; like the overlay it is optional and silent when absent.
+  var optional = [overlay, 'graph_catalog.js'];
+  [payload, overlay, 'graph_catalog.js', 'viewer.js'].forEach(function (src) {
     var s = document.createElement('script');
     s.src = src;
     s.async = false;
-    if (src === overlay) {
+    if (optional.indexOf(src) !== -1) {
       s.onerror = function () { if (s.parentNode) s.parentNode.removeChild(s); };
     }
     document.head.appendChild(s);

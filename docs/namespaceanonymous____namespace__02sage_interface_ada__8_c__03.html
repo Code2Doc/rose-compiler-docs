@@ -111,7 +111,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae4cf3cf04db7ced0b951f976f3ec1b88" id="r_ae4cf3cf04db7ced0b951f976f3ec1b88"><td class="memItemLeft">const SgTypedefDeclaration &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae4cf3cf04db7ced0b951f976f3ec1b88">dominant_declaration</a> (const SgTypedefType &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
 <tr class="memdesc:ae4cf3cf04db7ced0b951f976f3ec1b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the most significant or defining typedef declaration for a given typedef type.  <br /></td></tr>
 <tr class="memitem:a1fb1095a29d807d02e4b29cb6eab80f4" id="r_a1fb1095a29d807d02e4b29cb6eab80f4"><td class="memItemLeft"><a class="el" href="class_sg_type.html">SgType</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a1fb1095a29d807d02e4b29cb6eab80f4">base_type</a> (const SgTypedefType &amp;<a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>)</td></tr>
-<tr class="memdesc:a1fb1095a29d807d02e4b29cb6eab80f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the underlying base type of a typedef declaration.  <br /></td></tr>
+<tr class="memdesc:a1fb1095a29d807d02e4b29cb6eab80f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the underlying base type of a given typedef type.  <br /></td></tr>
 <tr class="memitem:ae9a79259a58ee145070e3332ee50c7d8" id="r_ae9a79259a58ee145070e3332ee50c7d8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae9a79259a58ee145070e3332ee50c7d8">convertSymbolTablesToCaseSensitive_internal</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:ae9a79259a58ee145070e3332ee50c7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the symbol table of a scope statement to be case-sensitive.  <br /></td></tr>
 <tr class="memitem:ad48b5708f12779204dac2310665da265" id="r_ad48b5708f12779204dac2310665da265"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#ad48b5708f12779204dac2310665da265">getSpecFromBody</a> (const SageScopeStatement &amp;defn) -&gt; decltype(std::declval&lt; SageDeclarationStatement &gt;().get_spec() -&gt;get_definition())</td></tr>
@@ -139,18 +139,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the underlying base type of a typedef declaration. </p>
-<p>This function extracts the base type from a given typedef type by first identifying the dominant declaration associated with the typedef and then accessing its base type. It uses the SG_DEREF macro to dereference the resulting pointer to return a reference to the <a class="el" href="class_sg_type.html">SgType</a>.</p>
+<p>Retrieves the underlying base type of a given typedef type. </p>
+<p>This function resolves the fundamental type underlying a typedef by first identifying the dominant declaration of the provided typedef type. Once the primary declaration is found, the function extracts the base type associated with that declaration. This is essential for type resolution when dealing with nested or aliased type definitions.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgTypedefType object representing the typedef declaration.</td></tr>
+    <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgTypedefType object representing the typedef to be analyzed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_sg_type.html">SgType</a> representing the base type of the typedef.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input SgTypedefType n must have a valid dominant declaration. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>Returns a reference to an existing <a class="el" href="class_sg_type.html">SgType</a> object.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function relies on the implementation of dominant_declaration and the SG_DEREF macro to navigate the type hierarchy. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the <a class="el" href="class_sg_type.html">SgType</a> representing the base type of the resolved dominant declaration.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function uses the SG_DEREF macro, which assumes that the pointer returned by get_base_type() is not null. Dereferencing a null pointer will lead to undefined behavior.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input SgTypedefType must have a valid, resolvable dominant declaration that contains a non-null base type.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function returns a valid reference to an <a class="el" href="class_sg_type.html">SgType</a> object representing the underlying type.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation relies on the resolution of the typedef chain via <a class="el" href="#ae4cf3cf04db7ced0b951f976f3ec1b88" title="Retrieves the most significant or defining typedef declaration for a given typedef type.">dominant_declaration()</a> and the subsequent extraction of the base type from the resulting declaration. </dd></dl>
 
 </div>
 </div>
@@ -199,7 +200,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the most significant or defining typedef declaration for a given typedef type. </p>
-<p>This function traverses the hierarchy of typedef declarations to find the "dominant" declaration. It starts by inspecting the declaration associated with the provided SgTypedefType. If the initial declaration is itself a typedef that points to another typedef (a defining declaration), the function follows that link. This is useful for resolving nested or aliased typedefs to their underlying primary definition.</p>
+<p>This function traverses the hierarchy of typedef declarations to find the "dominant" declaration. It starts by inspecting the declaration associated with the provided SgTypedefType. If the initial declaration is itself a typedef that points to another defining declaration, the function follows that link to find the underlying definition. This is useful for resolving nested or aliased typedefs to their primary source.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgTypedefType object representing the typedef to be analyzed.</td></tr>
@@ -207,9 +208,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a.html">A</a> reference to the dominant SgTypedelDeclaration found during the traversal.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration associated with the input SgTypedefType <span class="tt"><a class="el" href="_tarjan_intervals_8_c.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a></span> must be a valid SgTypedefDeclaration. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an assertion to ensure that isSgTypedefDeclaration(n.get_declaration()) does not return null.</dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to a valid SgTypedefDeclaration that is either the original declaration or its defining declaration.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function assumes that the underlying AST structure is well-formed and that the chain of typedef definitions is not infinitely recursive. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> declaration associated with the input SgTypedefType must be a valid SgTypedefDeclaration. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function uses an assertion to ensure the initial declaration is not null.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> returned reference points to a valid SgTypedefDeclaration that represents the base or defining declaration in the typedef chain.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function relies on the helper function isSgTypedefDeclaration to perform type checking and casting. </dd></dl>
 
 </div>
 </div>

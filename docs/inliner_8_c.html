@@ -131,7 +131,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:acfff911a1fdddaeeef7157b78a7883e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a redundant assignment initializer from a constructor initialization list.  <br /></td></tr>
 <tr class="memitem:ac53798842b03157324622a4bf57b3bcb" id="r_ac53798842b03157324622a4bf57b3bcb"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ac53798842b03157324622a4bf57b3bcb">markAsTransformation</a> (SgNode *ast)</td></tr>
 <tr class="memitem:a1269c7cb6a85f73318ee9b90cb389299" id="r_a1269c7cb6a85f73318ee9b90cb389299"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1269c7cb6a85f73318ee9b90cb389299">doInline</a> (SgFunctionCallExp *funcall, bool allowRecursion)</td></tr>
-<tr class="memdesc:a1269c7cb6a85f73318ee9b90cb389299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs function inlining by replacing a function call with the function's body.  <br /></td></tr>
+<tr class="memdesc:a1269c7cb6a85f73318ee9b90cb389299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs inlining of a function call expression into its caller.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -173,26 +173,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs function inlining by replacing a function call with the function's body. </p>
-<p>Performs inlining of a function call expression into its caller.</p>
-<p>This function implements a complex AST transformation to inline the body of a called function into the caller's context. It handles various C++ constructs including member function calls (dot and arrow operators), virtual function checks, and lambda expressions. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation involves deep-copying the target function's body, renaming labels to prevent collisions, creating new local variables to shadow formal parameters with actual arguments, and transforming return statements into goto statements that jump to a newly created end-of-inline label.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">funccall</td><td><a class="el" href="class_a.html">A</a> pointer to the SgFunctionCallExp representing the function call site to be inlined. </td></tr>
-    <tr><td class="paramname">allowRecursion</td><td><a class="el" href="class_a.html">A</a> boolean flag indicating whether direct recursion is permitted during inlining.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the inlining transformation was successfully performed; false if the function could not be inlined (e.g., due to virtual functions, header files, compiler-generated code, or incompatible recursion settings).</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>funcall must not be NULL and must have a valid parent in the AST. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>If successful, the funcall expression is replaced by a sequence of statements representing the inlined body, and the AST is updated to maintain consistency (e.g., updated lvalue flags).</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function skips inlining for functions within system headers, compiler-generated code, and the <span class="tt"><a class="el" href="namespacestd.html" title="Auto-generated documentation for the std namespace.">std</a>::</span> namespace. </dd>
-<dd>
-For member functions, the function attempts to handle the <span class="tt">this</span> pointer by creating a local variable initialized with the caller's <span class="tt">this</span> pointer. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function handles lambda captures by mapping closure variables to capture variables during the transformation process. </dd>
-<dd>
-Preprocessor directives like include or define are not processed by this function, but the function respects logic related to header file suffixes.</dd></dl>
+<p>Performs inlining of a function call expression into its caller. </p>
 <p>This function implements a complex AST transformation to inline the body of a called function into the site of the call. It handles various C++ constructs including member function calls (dot and arrow operators), virtual function checks, and lambda expressions. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> process involves creating a deep copy of the target function's body, remapping formal parameters to new local variables initialized with actual arguments, and handling the 'this' pointer for non-static member functions. It also manages the transformation of return statements into goto statements targeting a newly created label at the end of the inlined block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -292,24 +273,22 @@ Uses markAsTransformation to ensure the transformed nodes are retained in the ou
 </div><div class="memdoc">
 
 <p>Removes a redundant assignment initializer from a constructor initialization list. </p>
-<p>This function optimizes the SgInitializedName node by stripping away an intermediate SgAssignInitializer layer. It identifies if the initializer is an assignment initializer and extracts the underlying SgConstructorInitializer, effectively promoting the constructor initializer directly to the initialized name.</p>
+<p>This function optimizes the SgInitializedName node by replacing an SgAssignInitializer with the underlying SgInitializer. In the context of constructor initialization, an assignment-style initializer is often redundant if the actual initialization logic is already encapsulated within an SgConstructorInitializer. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function updates the initializer of the input node and corrects the parent-child relationship in the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in</td><td><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> SgInitializedName node to be processed.</td></tr>
+    <tr><td class="paramname">in</td><td><a class="el" href="class_a.html">A</a> pointer to the SgInitializedName node that contains the redundant assignment initializer to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parameter <span class="tt">in</span> must be a valid, non-null pointer to an SgInitializedName. </dd>
-<dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initializer of <span class="tt">in</span> must be an instance of SgAssignInitializer. </dd>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node <span class="tt">in</span> must have an initializer that is an instance of SgAssignInitializer. </dd>
 <dd>
 <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> operand of the SgAssignInitializer must be an instance of SgInitializer. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> extracted SgInitializer must be an instance of SgConstructorInitializer.</dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> operand of the SgAssignInitializer must specifically be an SgConstructorInitializer.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> initializer of the <span class="tt">in</span> node is updated to point directly to the underlying SgConstructorInitializer. </dd>
 <dd>
-<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent of the extracted SgConstructorInitializer is updated to be <span class="tt">in</span>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>There is an unresolved FIXME regarding whether the original SgAssignInitializer node requires manual deletion to prevent memory leaks. </dd></dl>
+<a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> parent of the new initializer is set to the <span class="tt">in</span> node.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>There is an unresolved FIXME regarding whether the original SgAssignInitializer node requires explicit deletion to prevent memory leaks. </dd></dl>
 
 </div>
 </div>

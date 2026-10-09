@@ -98,9 +98,9 @@ $(function(){initNavTree('check_is_modified_flag_8h.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abd8ed09cc055056e6e488c36ee990c99" id="r_abd8ed09cc055056e6e488c36ee990c99"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#abd8ed09cc055056e6e488c36ee990c99">reportNodesMarkedAsModified</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:abd8ed09cc055056e6e488c36ee990c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports all nodes marked as modified within an AST subtree to the standard output.  <br /></td></tr>
+<tr class="memdesc:abd8ed09cc055056e6e488c36ee990c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports all nodes within an AST subtree that have been flagged as modified.  <br /></td></tr>
 <tr class="memitem:ae1d525b93d20e29ade21f434e4380008" id="r_ae1d525b93d20e29ade21f434e4380008"><td class="memItemLeft"><a class="el" href="rosedll_8h.html#a526910c303031fe78eee386204e4760f">ROSE_DLL_API</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ae1d525b93d20e29ade21f434e4380008">unsetNodesMarkedAsModified</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
-<tr class="memdesc:ae1d525b93d20e29ade21f434e4380008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the modified flag on all nodes within a given AST subtree.  <br /></td></tr>
+<tr class="memdesc:ae1d525b93d20e29ade21f434e4380008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the modification flag on all nodes within a given AST subtree.  <br /></td></tr>
 <tr class="memitem:a1edfbeb85b36c8ca1c827ab32a0a0146" id="r_a1edfbeb85b36c8ca1c827ab32a0a0146"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1edfbeb85b36c8ca1c827ab32a0a0146">checkIsModifiedFlag</a> (SgNode *<a class="el" href="structnode.html">node</a>)</td></tr>
 <tr class="memdesc:a1edfbeb85b36c8ca1c827ab32a0a0146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if any node in a subtree is marked as modified and resets their flags.  <br /></td></tr>
 </table>
@@ -161,18 +161,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reports all nodes marked as modified within an AST subtree to the standard output. </p>
+<p>Reports all nodes within an AST subtree that have been flagged as modified. </p>
 <p>Reports all nodes marked as modified within a given subtree.</p>
-<p>This function performs a preorder traversal of the AST subtree rooted at the provided node. During the traversal, it utilizes an internal implementation of <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to inspect each node. If a node's modified flag is set to true (via get_isModified()), the function prints the node's memory address and its class name to the console. This is primarily intended for debugging purposes to track changes within the AST.</p>
+<p>This function performs a deep traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided root node. It utilizes a custom visitor pattern (inheriting from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>) to inspect each node in the subtree. During a preorder traversal, the function checks the internal 'isModified' flag of each node. If a node is marked as modified, its memory address and class name are printed to the standard output. This is primarily intended as a debugging utility to track changes made to the AST during various transformation passes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode from which the traversal begins.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the starting SgNode of the AST subtree to be traversed. If the pointer is null, the traversal will not proceed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>node must not be a null pointer. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function performs a traversal and prints information to stdout; the state of the AST remains unchanged.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function uses a nested class implementation of <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a> to encapsulate the visiting logic.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function performs direct I/O via printf and should be used sparingly in production code, as it can significantly impact performance during large AST traversals.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node pointer must be valid and point to a properly initialized SgNode or a valid subtree.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> state of the AST remains unchanged; the function only reads the 'isModified' flags and does not modify any node properties.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal follows a preorder pattern, meaning the parent node is inspected before its children.</dd></dl>
 <p>This function performs a preorder traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node. During the traversal, it identifies any nodes where the <span class="tt">isModified</span> flag is set to true. For every such node found, the function prints its memory address and its class name to the standard output. This is primarily used as a debugging utility to track changes within the AST.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -201,17 +203,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resets the modified flag on all nodes within a given AST subtree. </p>
-<p>This function performs a deep traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node. It utilizes an internal visitor class, <span class="tt">NodesMarkedAsModified</span>, which inherits from <span class="tt"><a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a></span>. During a preorder traversal, the function checks each node to see if its <span class="tt">isModified</span> flag is set to true; if so, it invokes <span class="tt">set_isModified(false)</span> to clear the flag.</p>
+<p>Resets the modification flag on all nodes within a given AST subtree. </p>
+<p>Resets the modified flag on all nodes within a given AST subtree.</p>
+<p>This function performs a deep traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided root node. It utilizes a visitor pattern implementation (specifically an internal class inheriting from <a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a>) to identify any nodes where the 'isModified' flag is currently set to true and explicitly sets that flag to false. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy, ensuring that the modification status is cleared systematically throughout the hierarchy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root <span class="tt">SgNode</span> from which the traversal begins.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the root SgNode from which the traversal begins. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> function will process this node and all its descendants.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt"><a class="el" href="structnode.html">node</a></span> pointer must not be null. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>All nodes reachable from the input <span class="tt"><a class="el" href="structnode.html">node</a></span> that previously had their <span class="tt">isModified</span> flag set to true will now have their <span class="tt">isModified</span> flag set to false.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> <span class="tt">set_isModified()</span> function is specifically noted as the only setter access function that does not trigger a recursive modification flag update.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function modifies the state of the nodes within the AST. Users should ensure that no other threads are concurrently modifying the AST structure or the flags of these nodes to avoid race conditions.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input pointer 'node' must not be null. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST structure must be valid and traversable.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>All nodes within the subtree rooted at 'node' that previously had their 'isModified' flag set to true will now have it set to false.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation uses an internal visitor class 'NodesMarkedAsModified' to encapsulate the logic for the flag reset, maintaining a clean separation between the traversal mechanism and the node manipulation.</dd></dl>
 <p>This function performs a deep traversal of the Abstract Syntax <a class="el" href="class_tree.html">Tree</a> (AST) starting from the provided node. It utilizes a custom visitor class, <span class="tt">NodesMarkedAsModified</span>, derived from <span class="tt"><a class="el" href="class_ast_simple_processing.html">AstSimpleProcessing</a></span>, to visit each node in a preorder traversal. For every node encountered during the traversal, the function checks if the <span class="tt">isModified</span> flag is set to true; if so, it explicitly sets the flag to false using <span class="tt">set_isModified(false)</span>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

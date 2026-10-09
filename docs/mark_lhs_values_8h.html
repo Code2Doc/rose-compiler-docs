@@ -124,16 +124,18 @@ Functions</h2></td></tr>
 <p>Mark relavant expressions as l-values explicitly. </p>
 <p>Mark relavant expressions as l-values explicitly.</p>
 <p>Marks the left-hand side (LHS) values within an AST node.</p>
-<p>This function performs a traversal of the provided SgNode to identify and mark nodes that represent left-hand side (LHS) values. It utilizes the <a class="el" href="class_mark_lhs_values.html" title="Explicitly mark lhs operands of specific operators as lvalues.">MarkLhsValues</a> traversal class to execute the marking logic. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal is performed using a preorder strategy to ensure that parent nodes are processed before their children, maintaining consistency with standard interface expectations.</p>
+<p>This function initiates a specialized AST fixup process to identify nodes that represent left-hand side values (l-values) in assignment or modification operations. It utilizes the <a class="el" href="class_mark_lhs_values.html" title="Explicitly mark lhs operands of specific operators as lvalues.">MarkLhsValues</a> traversal class to perform a systematic pass over the provided subtree. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> implementation employs a pre-order traversal strategy to ensure that parent nodes are processed before their children, maintaining a consistent interface with other AST processing utilities.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode that serves as the root of the sub-tree to be traversed and marked.</td></tr>
+    <tr><td class="paramname"><a class="el" href="structnode.html">node</a></td><td><a class="el" href="class_a.html">A</a> pointer to the SgNode representing the root of the AST subtree to be processed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>node must not be a null pointer. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> nodes within the provided node's subtree that represent LHS values will be marked according to the logic defined in <a class="el" href="class_mark_lhs_values.html" title="Explicitly mark lhs operands of specific operators as lvalues.">MarkLhsValues</a>.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> timing performance measurement for this operation has been disabled to prevent pollution of timing reports during high-frequency calls.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> input node pointer must be valid and not null. <a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> AST structure must be properly formed to allow for a successful traversal.</dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> nodes within the subtree rooted at 'node' that qualify as left-hand side values will have been identified and marked according to the logic defined in MarkLHSValues.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Ensure that the AST is in a state where l-value identification is semantically valid (e.g., after name resolution/binding).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="requirements.html#The" title="class satisfies the following concept requirements:">The</a> traversal order is hardcoded to 'preorder' to ensure uniformity across the AST fixup interfaces.</dd></dl>
 <p>This function performs a traversal of the provided SgNode to identify and mark nodes that represent left-hand side values (l-values). It utilizes the <a class="el" href="class_mark_lhs_values.html" title="Explicitly mark lhs operands of specific operators as lvalues.">MarkLhsValues</a> traversal class to execute a preorder traversal starting from the input node. This process is essential for subsequent analysis or transformation phases that require knowledge of which nodes are assignable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

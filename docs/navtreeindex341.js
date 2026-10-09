@@ -1,5 +1,7 @@
 var NAVTREEINDEX341 =
 {
+"stringify_enums_8_c.html#a1d301162e9506c43bf4eece3a69a192f":[17,0,1,0,13,80,57],
+"stringify_enums_8_c.html#a21133e0ff4562d24102f7f41516ace79":[17,0,1,0,13,80,44],
 "stringify_enums_8_c.html#a28a906e0bdd88dff01b1b93b96a830ba":[17,0,1,0,13,80,35],
 "stringify_enums_8_c.html#a2b84577f7489d088ef2355e4a7f6b722":[17,0,1,0,13,80,15],
 "stringify_enums_8_c.html#a2e16cf093aecfde41c3025a246e59f44":[17,0,1,0,13,80,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX341 =
 "struct___type___definition___struct.html#a922d02c6d3309ab075420b73aa0fa656":[16,0,108,23],
 "struct___type___definition___struct.html#aa8bda108431b63ff60cfd6af8fbe3c00":[16,0,108,14],
 "struct___type___definition___struct.html#aa91557db9ce5a6173ba53dd6d42b8bba":[16,0,108,6],
-"struct___type___definition___struct.html#ab0a21376275c882c497bbd9f84cc7116":[16,0,108,9],
-"struct___type___definition___struct.html#ac166e467cdb2b48a0e77ccc294d08c23":[16,0,108,13],
-"struct___type___definition___struct.html#ad873f5db65526c538248ee424d2bf04b":[16,0,108,16]
+"struct___type___definition___struct.html#ab0a21376275c882c497bbd9f84cc7116":[16,0,108,9]
 };

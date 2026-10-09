@@ -97,6 +97,7 @@ html, body {
 .btn:disabled:active { transform: none; }
 
 #entrypoints { max-width: 210px; }
+#graph-picker { max-width: 260px; font-weight: 600; }
 
 /* --- view controls ------------------------------------------------------ */
 
